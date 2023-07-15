@@ -22,7 +22,7 @@ const DashboardHome1 = () => {
     useEffect(()=>{
         const fetchCount = async()=>{
             try{
-   const res = await axios.get(`http://localhost:8080/api/post/count`)
+   const res = await axios.get(`/post/count`)
     //  setSap(res.data)
      setSap(res.data[0].id_count)
      console.log(sap)
