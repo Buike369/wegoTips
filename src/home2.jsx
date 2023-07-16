@@ -114,7 +114,7 @@ const Home2=() =>{
   }
  const [error,setError]=useState("")
   const [post1,setPosts1] = useState([])
-   const [post2,setPosts2] = useState([])
+   const [post,setPosts] = useState([])
    const [post3,setPosts3] = useState([])
    const [post4,setPosts4] = useState([])
   const cat = useLocation().search
@@ -215,18 +215,18 @@ useEffect(()=>{
 },[post3])
 
 
-useEffect(()=>{
-  const fetchData2 = async ()=>{
-    try{
- const res = await axios.get(`https://tea.earnars.com/api/post/forex/tip3`)
-   setPosts2(res.data)
-    }catch(err){
-    setError(err)
+// useEffect(()=>{
+//   const fetchData2 = async ()=>{
+//     try{
+//  const res = await axios.get(`https://tea.earnars.com/api/post/forex/tip3`)
+//    setPosts(res.data)
+//     }catch(err){
+//     setError(err)
 
-    }
-  }
-  fetchData2()
-},[post2])
+//     }
+//   }
+//   fetchData2()
+// },[post])
 
 useEffect(()=>{
   const fetchData1 = async ()=>{
@@ -440,7 +440,7 @@ useEffect(()=>{
 >
 
 
-  {post2.map((app,id)=>(
+  {/* {post.map((app,id)=>(
                         <div className="sport2 cappin yellowC" key={id}>
                             <div className="divS"><span className="Nog">Trade No: </span>FX-{date}/{app.r_trade_no}</div>
 
@@ -466,7 +466,7 @@ useEffect(()=>{
                             <div className= {app.r_check === "earned"?"EarnLoss":"EarnLoss losscolor"}><FontAwesomeIcon icon={faCheckDouble} className="icon_brand_size"/>{app.r_check === "earned"?"Earned":"Loss"}</div>
      
                         </div>
-                        ))}
+                        ))} */}
 
                         </Carousel>
                   

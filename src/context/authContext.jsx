@@ -43,7 +43,7 @@ export const AuthContextProvider = ({children})=>{
      useEffect(()=>{
       const getSubscriptionPay = async()=>{
         try{
-       const res = await axios.get(`https://tea.earnars.com/api/user/subscription-pay/${currentUser.id}`)
+       const res = await axios.get(`https://tea.earnars.com/api/user/subscription-pay/${currentUser.id || ""}`)
         setIsPaid(res.data.pop().subscription_pay)
         }catch(err){
           console.log(err)
