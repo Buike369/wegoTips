@@ -111,7 +111,7 @@ liquid asset markets in the world.
  background:"linear-gradient(206deg, rgb(51 50 85) 31%, rgb(50 49 90 / 54%) 62%, rgb(53 56 92 / 44%) 76%)",backgroundPosition:"center center",backgroundRepeat:"no-repeat",backgroundSize:"cover"}}>
             <div className="onV">
             <img src="/img/icinC1.svg" alt="every source of fund" className="everyday"/>
-                <p className="startedf">Low Barriers to Entry</p>
+                <p className="startedf">Low Barriers To Entry</p>
                 </div>
                 <div className="everyDay">
                 Getting Started with forex 
@@ -132,7 +132,7 @@ following our expert forecast.</div>
 background: "linear-gradient(206deg, rgb(51 50 85) 31%, rgb(50 49 90 / 54%) 62%, rgb(53 56 92 / 44%) 76%)",backgroundPosition:"center center",backgroundRepeat:"no-repeat",backgroundSize:"cover"}}>
             <div className="onV">
             <img src="/img/icinC1.svg" alt="every source of fund" className="everyday"/>
-                <p className="startedf">A 24-hours market</p>
+                <p className="startedf">A 24-Hours Market</p>
                 </div>
                 <div className="everyDay">There is no waiting for the 
 opening bell. From the 

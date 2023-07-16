@@ -6,6 +6,7 @@ import "./style/home.css";
 import "./style/home2.css"
 import Footer from "./footer"
 import { Link} from "react-router-dom";
+import "./style/slide.css"
 
 const CryptoPage = () => {
 
@@ -85,7 +86,7 @@ const CryptoPage = () => {
         <div className="MakingMoney">
         Making Money Daily on <span className="forexy">CRYPTOCURRENCY</span> trading is as easy as following our daily expert predictions
         </div>
-       <Link to="/login" className="ifi"> <div className="NowUpSign">SIGN UP NOW</div></Link>
+      <div style={{display:"flex",justifyContent:"center",alignItems:"center"}}><Link to="/login" className="ifi"> <button className="NowUpSign" >SIGN UP NOW</button></Link> </div>
         <div style={{padding:"0px 12px"}} >
         <p className="SportBetting">What Is Cryptocurrency Trading</p>
         <div className="outcomeBeen1">
@@ -127,7 +128,7 @@ a risk management strategy.</div>
   background: "linear-gradient(206deg, rgb(51 50 85) 31%, rgb(50 49 90 / 54%) 62%, rgb(53 56 92 / 44%) 76%)",backgroundPosition:"center center",backgroundRepeat:"no-repeat",backgroundSize:"cover"}}>
             <div className="onV">
             <img src="/img/icinC1.svg" alt="every source of fund" className="everyday"/>
-                <p className="startedf">A 24-hour market</p>
+                <p className="startedf">A 24-Hours Market</p>
                 </div>
                 <div className="everyDay">There is no waiting for the 
 opening bell. From the 
@@ -147,7 +148,7 @@ sleep.
      background: "linear-gradient(206deg, rgb(51 50 85) 31%, rgb(50 49 90 / 54%) 62%, rgb(53 56 92 / 44%) 76%)",backgroundPosition:"center center",backgroundRepeat:"no-repeat",backgroundSize:"cover"}}>
             <div className="onV">
             <img src="/img/icinC1.svg" alt="every source of fund" className="everyday"/>
-                <p className="startedf">Low Barriers to Entry</p>
+                <p className="startedf">Low Barriers To Entry</p>
                 </div>
                 <div className="everyDay">Getting Started with crypto 
 trading has one of the
@@ -175,38 +176,72 @@ for another
       
 
 
-<div className="SportsImg1">
-   <div className="SportsImg">
-   <img src="/img/images.jpg" alt="" title="" className="marqueelogo" style={{width: "160px", maxWidth:"none"}}/>
-   <img src="/img/bett.svg" alt=""  title="" className="marqueelogo" style={{width: "160px", maxWidth:"none"}}/>
-   <img src="/img/Betway.png" alt=""  title="" className="marqueelogo" style={{width: "160px", maxWidth:"none"}}/>
-   <img src="/img/kingk.png" alt=""  title="" className="marqueelogo" style={{width: "110px", maxWidth:"none"}}/>
-   <img src="/img/betKing.svg" alt=""  title="" className="marqueelogo" style={{width: "160px", maxWidth:"none"}}/>
-   <img src="/img/images.jpg" alt=""  title="" className="marqueelogo" style={{width: "160px", maxWidth:"none"}}/>
+<div className="slider">
+<div className="slide-track">
+   <div className="slide">
+    <img src="/img/apari.png" alt="" title="" className="marqueelogo" style={{width: "160px", maxWidth:"none"}}/>
+  
+    </div>
+     <div className="slide">
+   <img src="/img/fxtm.svg" alt="" title="" className="marqueelogo" style={{width: "170px", maxWidth:"none"}}/>
    </div>
+    <div className="slide">
+   <img src="/img/ex.svg" alt="" title="" className="marqueelogo" style={{width: "180px", maxWidth:"none"}}/>
+   </div>
+   <div className="slide">
+    <img src="/img/oct.svg" alt="" title="" className="marqueelogo" style={{width: "170px", maxWidth:"none"}}/>
+   
+   </div>
+    <div className="slide">
+   <img src="/img/fbs.svg" alt="" title="" className="marqueelogo" style={{width: "60px", maxWidth:"none"}}/>
+   </div>
+    <div className="slide">
+   <img src="/img/hfm.svg" alt="" title="" className="marqueelogo" style={{width: "110px", maxWidth:"none"}}/>
+   </div>
+       <div className="slide">
+   <img src="/img/oct.svg" alt="" title="" className="marqueelogo" style={{width: "170px", maxWidth:"none"}}/>
+   </div>
+       <div className="slide">
+           <img src="/img/fbs.svg" alt="" title="" className="marqueelogo" style={{width: "60px", maxWidth:"none"}}/>
+   </div>
+       <div className="slide">
+   <img src="/img/ex.svg" alt="" title="" className="marqueelogo" style={{width: "180px", maxWidth:"none"}}/>
+   </div>
+       <div className="slide">
+   <img src="/img/apari.png" alt="" title="" className="marqueelogo" style={{width: "160px", maxWidth:"none"}}/>
+   </div>
+       <div className="slide">
+         <img src="/img/fxtm.svg" alt="" title="" className="marqueelogo" style={{width: "170px", maxWidth:"none"}}/>
+
+   </div>
+       <div className="slide">
+   <img src="/img/hfm.svg" alt="" title="" className="marqueelogo" style={{width: "110px", maxWidth:"none"}}/>
+   </div>
+ 
+</div>
 </div>
 
 
 
         <div className="BettingTu">Crypto Trading Tutorial Videos</div>
-        <div className="figma">
-        <div className="firey fora">
-            <div className="firey1">
+        <div className="figma rengma">
+        <div className="firey fora rengma2">
+            <div className="firey1 rengma1">
             <iframe className ="pn" width="100%" height="100%" src="https://www.youtube.com/embed/0UTzqjCbPsQ" title="Binance Futures: The Step By Step Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-            <div className="firey1">
+            <div className="firey1 rengma1">
             <iframe className="pn"  width="100%" height="100%" src="https://www.youtube.com/embed/Rb2wYoFHWEY" title="Section 1 - How to Register an Account" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-            <div className="firey1">
+            <div className="firey1 rengma1">
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/he3W11XtCGo" title="Section 2 - How to Verify your Account" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-            <div className="firey1">
+            <div className="firey1 rengma1">
             <iframe className="pn" width="100%" height="100%" src="https://www.youtube.com/embed/HWSyqAOi3s0" title="Section 3 - How to Deposit Funds" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-            <div className="firey1">
+            <div className="firey1 rengma1">
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/C-Lso4v0Rew" title="Beginner&#39;s guide to trading on Binance Spot" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-            <div className="firey1">
+            <div className="firey1 rengma1">
             <iframe className="pn" width="100%" height="100%" src="https://www.youtube.com/embed/BUjRz9SS3LY" title="Section 6 - How to Withdraw Funds" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             

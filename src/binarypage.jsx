@@ -7,6 +7,7 @@ import AOS from 'aos';
 import "./style/home2.css"
 import Footer from "./footer"
 import { Link} from "react-router-dom";
+import "./style/slide.css"
 
 const BinaryPage = () => {
 
@@ -174,16 +175,52 @@ make if you win.</div>
         <p className="everyDay Dayword">Binary Brokers are platforms that sell binary options at a fixed price (e.g., $100) 
 and offer some fixed percentage return in case of in-the-money settlement.</p>
        
-<div className="SportsImg1">
-   <div className="SportsImg">
-   <img src="/img/images.jpg" alt="" title="" className="marqueelogo" style={{width: "160px", maxWidth:"none"}}/>
-   <img src="/img/bett.svg" alt=""  title="" className="marqueelogo" style={{width: "160px", maxWidth:"none"}}/>
-   <img src="/img/Betway.png" alt=""  title="" className="marqueelogo" style={{width: "160px", maxWidth:"none"}}/>
-   <img src="/img/kingk.png" alt=""  title="" className="marqueelogo" style={{width: "110px", maxWidth:"none"}}/>
-   <img src="/img/betKing.svg" alt=""  title="" className="marqueelogo" style={{width: "160px", maxWidth:"none"}}/>
-   <img src="/img/images.jpg" alt=""  title="" className="marqueelogo" style={{width: "160px", maxWidth:"none"}}/>
+
+<div className="slider">
+<div className="slide-track">
+   <div className="slide">
+    <img src="/img/apari.png" alt="" title="" className="marqueelogo" style={{width: "160px", maxWidth:"none"}}/>
+  
+    </div>
+     <div className="slide">
+   <img src="/img/fxtm.svg" alt="" title="" className="marqueelogo" style={{width: "170px", maxWidth:"none"}}/>
    </div>
+    <div className="slide">
+   <img src="/img/ex.svg" alt="" title="" className="marqueelogo" style={{width: "180px", maxWidth:"none"}}/>
+   </div>
+   <div className="slide">
+    <img src="/img/oct.svg" alt="" title="" className="marqueelogo" style={{width: "170px", maxWidth:"none"}}/>
+   
+   </div>
+    <div className="slide">
+   <img src="/img/fbs.svg" alt="" title="" className="marqueelogo" style={{width: "60px", maxWidth:"none"}}/>
+   </div>
+    <div className="slide">
+   <img src="/img/hfm.svg" alt="" title="" className="marqueelogo" style={{width: "110px", maxWidth:"none"}}/>
+   </div>
+       <div className="slide">
+   <img src="/img/oct.svg" alt="" title="" className="marqueelogo" style={{width: "170px", maxWidth:"none"}}/>
+   </div>
+       <div className="slide">
+           <img src="/img/fbs.svg" alt="" title="" className="marqueelogo" style={{width: "60px", maxWidth:"none"}}/>
+   </div>
+       <div className="slide">
+   <img src="/img/ex.svg" alt="" title="" className="marqueelogo" style={{width: "180px", maxWidth:"none"}}/>
+   </div>
+       <div className="slide">
+   <img src="/img/apari.png" alt="" title="" className="marqueelogo" style={{width: "160px", maxWidth:"none"}}/>
+   </div>
+       <div className="slide">
+         <img src="/img/fxtm.svg" alt="" title="" className="marqueelogo" style={{width: "170px", maxWidth:"none"}}/>
+
+   </div>
+       <div className="slide">
+   <img src="/img/hfm.svg" alt="" title="" className="marqueelogo" style={{width: "110px", maxWidth:"none"}}/>
+   </div>
+ 
 </div>
+</div>
+
 
         <div className="BettingTu">Binary Option Tutorial Videos</div>
         <div className='figma'>

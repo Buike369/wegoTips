@@ -137,7 +137,7 @@ With $1 dollar or ₦500 naira you can start staking. You also have the chance t
       background: "linear-gradient(206deg, rgb(51 50 85) 31%, rgb(50 49 90 / 54%) 62%, rgb(53 56 92 / 44%) 76%)",backgroundPosition:"center center",backgroundRepeat:"no-repeat",backgroundSize:"cover"}}>
               <div className="onV">
             <img src="/img/icinC1.svg" alt="every source of fund" className="everyday"/>
-                <p className="startedf">Convinience & non stop</p>
+                <p className="startedf">Convinience & Non Stop</p>
                 </div>
                 <div className="everyDay">Most games can’t be played
 every day, maybe because 

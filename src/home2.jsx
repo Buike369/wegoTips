@@ -10,6 +10,7 @@ import AOS from 'aos';
 import "./style/home2.css"
 import axios from "axios";
 import { useLocation } from "react-router"
+import {myPort} from "./env"
 
 
 
@@ -119,6 +120,8 @@ const Home2=() =>{
   const cat = useLocation().search
   
 
+
+
   const current = new Date();
   // const date = `${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`;
   const date = `  ${current.getFullYear()}/${current.getMonth()+1}/${current.getDate()}`;
@@ -186,7 +189,7 @@ const Sports1 =()=>{
 useEffect(()=>{
   const fetchData4 = async ()=>{
     try{
- const res = await axios.get(`/post/binary/tip3`)
+ const res = await axios.get(`myPort/post/binary/tip3`)
    setPosts4(res.data)
 
     }catch(err){
@@ -200,7 +203,7 @@ useEffect(()=>{
 useEffect(()=>{
   const fetchData3 = async ()=>{
     try{
- const res = await axios.get(`/post/crypto/tip3`)
+ const res = await axios.get(`myPort/post/crypto/tip3`)
    setPosts3(res.data)
  
     }catch(err){
@@ -215,7 +218,7 @@ useEffect(()=>{
 useEffect(()=>{
   const fetchData2 = async ()=>{
     try{
- const res = await axios.get(`/post/forex/tip3`)
+ const res = await axios.get(`myPort/post/forex/tip3`)
    setPosts2(res.data)
     }catch(err){
     setError(err)
@@ -228,7 +231,7 @@ useEffect(()=>{
 useEffect(()=>{
   const fetchData1 = async ()=>{
     try{
- const res = await axios.get(`/post/sports/tip3`)
+ const res = await axios.get(`myPort/post/sports/tip3`)
    setPosts1(res.data)
     }catch(err){
        setError(err)

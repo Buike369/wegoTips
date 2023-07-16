@@ -263,6 +263,13 @@
     width: 50px
 }
 
+/* .rengma::-webkit{
+scrollbar-color: #007 #bada55 !important;
+} */
+
+
+
+
 .SportsImg1 {
     width: 100%;
     padding: 0 10px;
@@ -425,8 +432,27 @@
 
 @media(min-width:1250px) {
     .sportPa {
-
         max-width: 1200px;
+    }
+   
+}
 
+@media(min-width:769px) {
+  
+    .rengma {
+        width: 100%;
+        position: relative;
+        overflow-x: scroll;
+    }
+
+    .rengma1 {
+        width: 600px !important;
+        max-width: 16% !important;
+    }
+
+    .rengma2 {
+        width: 2400px;
+        overflow: hidden;
+        position: relative;
     }
 }

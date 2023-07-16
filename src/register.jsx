@@ -5,6 +5,7 @@ import axios from "axios"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEye,faEyeSlash} from '@fortawesome/free-solid-svg-icons'
 import { faGooglePlusG}from '@fortawesome/free-brands-svg-icons'
+import {myPort} from "./env"
 
 const Register =()=>{
 
@@ -41,7 +42,7 @@ const Register =()=>{
     e.preventDefault()
    try{
    
-        await axios.post("/auth/register",inputs)
+        await axios.post("myPort/auth/register",inputs)
         navigate('/login')
 
    }catch(err){
