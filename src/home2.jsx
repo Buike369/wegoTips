@@ -186,7 +186,7 @@ const Sports1 =()=>{
 useEffect(()=>{
   const fetchData4 = async ()=>{
     try{
- const res = await axios.get(`/post/binary/tip3`)
+ const res = await axios.get(`https://tea.earnars.com/api/post/binary/tip3`)
    setPosts4(res.data)
 
     }catch(err){
@@ -200,7 +200,7 @@ useEffect(()=>{
 useEffect(()=>{
   const fetchData3 = async ()=>{
     try{
- const res = await axios.get(`/post/crypto/tip3`)
+ const res = await axios.get(`https://tea.earnars.com/api/post/crypto/tip3`)
    setPosts3(res.data)
  
     }catch(err){
@@ -215,7 +215,7 @@ useEffect(()=>{
 useEffect(()=>{
   const fetchData2 = async ()=>{
     try{
- const res = await axios.get(`/post/forex/tip3`)
+ const res = await axios.get(`https://tea.earnars.com/api/post/forex/tip3`)
    setPosts2(res.data)
     }catch(err){
     setError(err)
@@ -228,7 +228,7 @@ useEffect(()=>{
 useEffect(()=>{
   const fetchData1 = async ()=>{
     try{
- const res = await axios.get(`/post/sports/tip3`)
+ const res = await axios.get(`https://tea.earnars.com/api/post/sports/tip3`)
    setPosts1(res.data)
     }catch(err){
        setError(err)
