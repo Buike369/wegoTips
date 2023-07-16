@@ -161,7 +161,7 @@ const Mytip =()=>{
       // useEffect(()=>{
       //   const userCoupon = async ()=>{
       //     try{
-      //       const res = await axios.get('/post/coupon')
+      //       const res = await axios.get('https://tea.earnars.com/api/post/coupon')
       //       setCoupon(res.data)
       //     }catch(err){
       //       console.log(err)
