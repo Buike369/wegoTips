@@ -22,7 +22,7 @@ const DashboardHome1 = () => {
     useEffect(()=>{
         const fetchCount = async()=>{
             try{
-   const res = await axios.get(`http://localhost:8080/api/post/count`)
+   const res = await axios.get(`https://tea.earnars.com/api/post/count`)
     //  setSap(res.data)
      setSap(res.data[0].id_count)
      console.log(sap)
@@ -37,7 +37,7 @@ const DashboardHome1 = () => {
   //   useEffect(()=>{
   //       const activeUserCount = async()=>{
   //           try{
-  //  const res = await axios.get(`http://localhost:8080/api/user/active-user`)
+  //  const res = await axios.get(`https://tea.earnars.com/api/user/active-user`)
   //   //  setSap(res.data)
   //    setSap1(res.data[0].activeUserCount)
   //    console.log(sap1)
@@ -52,7 +52,7 @@ const DashboardHome1 = () => {
     useEffect(()=>{
         const activeUserCount1 = async()=>{
             try{
-   const res = await axios.get(`/user/active-count`)
+   const res = await axios.get(`https://tea.earnars.com/api/user/active-count`)
    
      setSap1(res.data[0].active_count)
     //  console.log(res.data[0].active_count)
@@ -69,7 +69,7 @@ const DashboardHome1 = () => {
      useEffect(()=>{
         const inActiveUserCount2 = async()=>{
             try{
-   const res = await axios.get(`/user/inactive-count`)
+   const res = await axios.get(`https://tea.earnars.com/api/user/inactive-count`)
    
      setSap2(res.data[0].inActive_count)
     //  console.log(res.data)
