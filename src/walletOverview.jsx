@@ -223,7 +223,7 @@ const airtimePurchase2=async(e)=>{
                         const mainWallet1 = mainWallet;
                         const mon1 = [withdrawalInfo,{main:mainWallet1,id:currentUser.id}]   
                    try{
-                    const res = await axios.post("/user/withdrawal",mon1)
+                    const res = await axios.post("https://tea.earnars.com/api/user/withdrawal",mon1)
                    setMessage(res.data.msg)
                     setTimeout(()=>{
                          setMessage("")
@@ -256,7 +256,7 @@ const airtimePurchase2=async(e)=>{
                         },3000)
                     }else{
                           try{
-                     await axios.post("/user/transfer",{amountTransferred:amount1,main:mainWallet,affliateAmount:affliateWallet,id:currentUser.id})
+                     await axios.post("https://tea.earnars.com/api/user/transfer",{amountTransferred:amount1,main:mainWallet,affliateAmount:affliateWallet,id:currentUser.id})
                   
                    }catch(err){
                 
@@ -288,7 +288,7 @@ const airtimePurchase2=async(e)=>{
              console.log("main Wallet cannot be empty")
      }else{
           try{
-           await axios.post("/user/subscription",{
+           await axios.post("https://tea.earnars.com/api/user/subscription",{
             id:currentUser.id,amount:subscriptionAmount,mainWallet:mainWallet
            })
            setMessage("Subscription was successful")
@@ -373,7 +373,7 @@ const ego = [ {amount:depositCash.amount,id:currentUser.id,mainA:mainWallet},dep
   useEffect(()=>{
     const pala = async()=>{
         try{
-    const res =  await axios.get(`/user/main-wallet/${currentUser?.id}`)
+    const res =  await axios.get(`https://tea.earnars.com/api/user/main-wallet/${currentUser?.id}`)
    setMainWallet(res.data[0].amount)
 
         }catch(err){
@@ -386,7 +386,7 @@ const ego = [ {amount:depositCash.amount,id:currentUser.id,mainA:mainWallet},dep
    useEffect(()=>{
     const pala1 = async()=>{
         try{
-    const res =  await axios.get(`/user/affiliate-wallet/${currentUser?.id}`)
+    const res =  await axios.get(`https://tea.earnars.com/api/user/affiliate-wallet/${currentUser?.id}`)
    setAffliateWallet(res.data[0].amount)
 
         }catch(err){
@@ -399,7 +399,7 @@ const ego = [ {amount:depositCash.amount,id:currentUser.id,mainA:mainWallet},dep
   useEffect(()=>{
     const pala2 = async()=>{
         try{
-    const res =  await axios.get(`/user/referral-user/${currentUser?.id}`)
+    const res =  await axios.get(`https://tea.earnars.com/api/user/referral-user/${currentUser?.id}`)
    setReferrals2(res.data)
     // console.log(res)
 
@@ -414,7 +414,7 @@ const ego = [ {amount:depositCash.amount,id:currentUser.id,mainA:mainWallet},dep
   useEffect(()=>{
     const pala3 = async()=>{
         try{
-    const res =  await axios.get(`/user/wallet-overview/${currentUser?.id}`)
+    const res =  await axios.get(`https://tea.earnars.com/api/user/wallet-overview/${currentUser?.id}`)
    setWalletOverview(res.data)
         }catch(err){
          setError(err)
@@ -430,7 +430,7 @@ const ego = [ {amount:depositCash.amount,id:currentUser.id,mainA:mainWallet},dep
 
       const getSubscriptionStatus =async()=>{
         try{
-       const pas =await axios.get(`/user/subscription-status/${currentUser.id}`)
+       const pas =await axios.get(`https://tea.earnars.com/api/user/subscription-status/${currentUser.id}`)
       setSubActive(pas.data.pop().status)
    
         }catch(err){
