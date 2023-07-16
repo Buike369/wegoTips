@@ -416,7 +416,7 @@ useEffect(()=>{
 
 : ""}
 
-               { sports ==="Forex"? 
+               {/* { sports ==="Forex"? 
                         
                                  <Carousel
   swipeable={true}
@@ -437,7 +437,7 @@ useEffect(()=>{
   dotListClass="custom-dot-list-style"
   itemClass="carousel-item-padding-40-px"
   className="king"
->
+> */}
 
 
   {/* {post.map((app,id)=>(
@@ -468,9 +468,9 @@ useEffect(()=>{
                         </div>
                         ))} */}
 
-                        </Carousel>
+                        {/* </Carousel>
                   
-               :""}
+               :""} */}
              
 
                { sports === "cryptocurrency"? 
