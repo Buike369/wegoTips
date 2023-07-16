@@ -301,9 +301,9 @@ useEffect(()=>{
 
           {/* secton5   */}
 
-           <div className="teleCom">
+           <div className="teleCom turu">
               
-               <div className="commT bg-green-box" style={{ backgroundImage:`url("/img/pad.png")`,backgroundPosition:"left right bottom top",backgroundRepeat:"no-repeat",padding:"18px 15px",backgroundSize:"cover"}}>
+               <div className="commT bg-green-box" >
                    <div className="FreeComm">Forex Trading</div>
                    <img src="/img/forexIcon.png" alt="not found" className="ballSport1 ffoo"/>
                    <img src="/img/forex12.png" alt="not found" className="ballSport ffoo"/>
@@ -315,7 +315,7 @@ useEffect(()=>{
                        <p className="RateSuccess">75% Success Rate</p>
                    </div>
                </div>
-               <div className="commT dese bg-white-box " style={{ backgroundImage:`url("/img/pad.png")`,backgroundPosition:"left right bottom top",backgroundRepeat:"no-repeat",padding:"18px 15px",backgroundSize:"cover"}}> 
+               <div className="commT dese bg-white-box " > 
                    <div className="FreeComm">Sports Prediction</div>
                    <img src="/img/sport.png" alt="not found" className="ballSport1 ffoo"/>
                    <img src="/img/sports1.png" alt="not found" className="ballSport ffoo"/>
@@ -329,9 +329,9 @@ useEffect(()=>{
            </div>
 
         <div className="divRatT">
-           <div className="teleCom">
+           <div className="teleCom turu">
                
-               <div className="commT bg-yellow-box" style={{backgroundImage: `url("/img/pad.png")`,backgroundPosition:"left right bottom top",backgroundRepeat:"no-repeat",padding:"18px 15px",backgroundSize:"cover"}}>
+               <div className="commT bg-yellow-box">
                    <div className="FreeComm">Cryptocurrency Trading</div>
                    <img src="/img/crypto.png" alt="not found" className="ballSport1 ffoo"/>
                    <img src="/img/crypto1.png" alt="not found" className="ballSport ffoo"/>
@@ -343,7 +343,7 @@ useEffect(()=>{
                        <p className="RateSuccess">85% Success Rate</p>
                    </div>
                </div>
-               <div className="commT dese bg-blue-box" style={{backgroundImage: `url("/img/pad.png")`,backgroundPosition:"left right bottom top",backgroundRepeat:"no-repeat",padding:"18px 15px",backgroundSize:"cover"}}>
+               <div className="commT dese bg-blue-box">
                    <div className="FreeComm">Binary Option Trading</div>
                    <img src="/img/binary.png" alt="not found" className="ballSport1 ffoo"/>
                    <img src="/img/binary1.png" alt="not found" className="ballSport ffoo"/>

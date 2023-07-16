@@ -14,6 +14,7 @@
     box-shadow: 0 -2px 14px -5px rgb(15 15 36 / 28%), 0px 3px 16px -4px rgb(15 15 15 / 17%);
         background: linear-gradient(71deg, #323956, #4a4f79, #86b3ef);
         background-clip: padding-box;  
+        /* background: #333255; */
 }
 
 
@@ -578,6 +579,7 @@ padding:10px 10px 0px 10px;
 .with{
     color:#ffffff;
 }
+
 .Fitwem {
 
     padding: 6px 7px;
@@ -745,7 +747,7 @@ padding:10px 10px 0px 10px;
             flex-direction: column;
             gap: 0;
          
-            padding: 0 6px;
+            padding: 0 10px;
         }
         .Make15{
             flex-direction: column;
@@ -761,11 +763,7 @@ padding:10px 10px 0px 10px;
     .Rtme {
         max-width: 1200px;
     } 
-    .home5{
-        width:100%;
-        background-color:#333255;
-        padding:10px 10px 40px 10px
-    }
+   
 }
 
 @media(max-width:464px){
@@ -773,6 +771,14 @@ padding:10px 10px 0px 10px;
         width:98% !important;
         max-width: 300px;
     }
+}
+
+@media(min-width:769px) {
+    .home5 {
+            width: 100%;
+            background-color: #333255 !important;
+            padding: 10px 10px 40px 10px
+        }
 }
 @media(min-width:501px) and (max-width:768px){
     .ballSport {
