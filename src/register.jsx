@@ -41,7 +41,7 @@ const Register =()=>{
     e.preventDefault()
    try{
    
-        await axios.post("/auth/register",inputs)
+        await axios.post("https://tea.earnars.com/api/auth/register",inputs)
         navigate('/login')
 
    }catch(err){
