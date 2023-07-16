@@ -303,7 +303,7 @@ useEffect(()=>{
 
            <div className="teleCom turu">
               
-               <div className="commT bg-green-box" >
+               <div className="commT " >
                    <div className="FreeComm">Forex Trading</div>
                    <img src="/img/forexIcon.png" alt="not found" className="ballSport1 ffoo"/>
                    <img src="/img/forex12.png" alt="not found" className="ballSport ffoo"/>
@@ -605,7 +605,7 @@ useEffect(()=>{
               <div className="Rtme">
            
               <div className="TrustSeal" style={{ 
-      backgroundImage: `url("/img/sample.png")`,backgroundPosition:"left right bottom top",backgroundRepeat:"no-repeat",padding:"18px 5px",backgroundSize:"cover"}} >
+      backgroundImage: `url("earnars.com/public/img/sample.png")`,backgroundPosition:"left right bottom top",backgroundRepeat:"no-repeat",padding:"18px 5px",backgroundSize:"cover"}} >
                  <div className="SealY">Earnars Trust Seal</div>
                  <p className="ifYou">If you judiciously follow our predictions and apply our risk reward ratio and dont turn profit at the end of the month, We will refund your subscription money or your next month subscription becomes free.</p>
 <p className="ifYou lio">T&C Apply</p>
