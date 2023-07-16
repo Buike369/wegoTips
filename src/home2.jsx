@@ -604,9 +604,9 @@ useEffect(()=>{
              <div className="fear">
               <div className="Rtme">
            
-              <div className="TrustSeal" style={{ 
-      backgroundImage: `url("earnars.com/public/img/sample.png")`,backgroundPosition:"left right bottom top",backgroundRepeat:"no-repeat",padding:"18px 5px",backgroundSize:"cover"}} >
+              <div className="TrustSeal" style={{paddingTop:"14px"}} >
                  <div className="SealY">Earnars Trust Seal</div>
+                  <div style={{width:"120px",margin:"0 auto 10px auto",borderBottom:" 1px solid #45527a"}}></div>
                  <p className="ifYou">If you judiciously follow our predictions and apply our risk reward ratio and dont turn profit at the end of the month, We will refund your subscription money or your next month subscription becomes free.</p>
 <p className="ifYou lio">T&C Apply</p>
               </div>
