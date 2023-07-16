@@ -54,6 +54,7 @@ const Login =()=>{
     return(
         <div className="BgColor" style={{backgroundImage: "linear-gradient(to right, rgba(106, 116, 167, 0.34), rgba(119, 135, 182, 0.95))"}}>
             <div className="Form_Divbb">
+                <div style={{padding:"0px 5px"}}>
            <div className="Form_Div renttt">
                <form>
                   
@@ -70,11 +71,12 @@ const Login =()=>{
                          <p>Or register with</p>
                          <div className="Or_With"></div>
                      </div>
-                     <div className="Googgle">Google</div>
+                     <div className="Googgle1" >Google</div>
                      {/* <GoogleLogin clientId="451426581815-pp6r4p2ao4p9pmntdfjqn2arug1ojr31.apps.googleusercontent.com" buttonText="login wih Google" onSuccess={responseGoogle} onFailure={responseGoogle} cookiePolicy={`single_host_origin`}/> */}
                      <p className="Have_An">Don't have an account?</p>
                      <div className="LOGIN_HERE_NOW"><Link to="/register" className="p_LoGIn">Register HERE</Link></div>
                </form>
+           </div>
            </div>
            </div>
         </div>

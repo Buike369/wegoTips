@@ -1,4 +1,4 @@
-import React, {useContext} from "react"
+import React, {useContext,useState} from "react"
 import { BrowserRouter,Routes, Route,Navigate,Redirect } from "react-router-dom";
 
 import Register from "./register"
@@ -31,11 +31,13 @@ import { AuthContext } from './context/authContext';
 
 
 import Navbar from "./navbar"
+
 import DashboardHome from "./Dashboard/dashboardHome"
 // import { Link, useLocation } from "react-router-dom";
 
 function App() {
 
+  const [admin,setAdmin] = useState(false)
   const { currentUser } = useContext(AuthContext);
 
   const tr = window.location.pathname;
@@ -68,7 +70,7 @@ function App() {
            <Route path="/premium" element={<Premium/>} />
            <Route path="/" element={<SampleHome/>} />
           	<Route path="*" element={<Navigate to="/" />} />
-           <Route path="/dashboard" element={< DashboardHome />} />
+          {admin === true ? <Route path="/dashboard" element={< DashboardHome />} /> : <Route path="/" element={<SampleHome />} />} 
            <Route path="/contact" element={< Contact />} />
            <Route path="/disclaimer" element={< Disclaimer/>} />
           {/* <Route path="/airtime" element={<Airtime />} /> */}

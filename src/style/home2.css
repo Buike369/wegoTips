@@ -542,9 +542,12 @@ padding:10px 10px 0px 10px;
 .Great{
     padding-top:60px;
     padding-bottom: 50px;
-    background-color:#67668329;;
+        background-color: #42416a;
+            height: 300px;
+            box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+    /* background-color:#67668329;;
     height:300px;
-    box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+    box-shadow: 0 4px 30px rgb(0 0 0 / 10%); */
     border-radius: 10px;
 }
 .fit{
