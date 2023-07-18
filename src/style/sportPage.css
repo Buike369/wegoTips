@@ -363,7 +363,9 @@ scrollbar-color: #007 #bada55 !important;
         overflow-x: scroll;
 
     }
-
+.figma::-webkit-scrollbar{
+    display:none;
+}
     .firey {
         /* flex-direction: column;
         gap: 12px; */

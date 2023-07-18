@@ -56,8 +56,8 @@
 
 }
 .FreeComm{
-    padding:10px;
-    border-bottom: 2px solid rgb(200 208 233 / 29%);
+    padding:20px 10px 8px 10px;
+    /* border-bottom: 2px solid rgb(200 208 233 / 29%); */
     text-align: center;
     font-size: 22px;
     font-weight: 500;
@@ -109,7 +109,7 @@
 .RateSuccess{
     font-size: 22px;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color:#a6b1d1;
 }
 .divRatT{
@@ -620,9 +620,9 @@ padding:10px 10px 0px 10px;
     max-width: 530px;
      margin: 0 auto;
 }
-    .FreeComm {
+    /* .FreeComm {
         border-bottom: 2px solid rgb(200 208 233 / 29%);  
-    }
+    } */
     .Forex1 {
         width:720px;
         max-width: 720px;

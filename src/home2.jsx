@@ -305,6 +305,7 @@ useEffect(()=>{
               
                <div className="commT " >
                    <div className="FreeComm">Forex Trading</div>
+                  <div style={{padding:"0 20px"}}><div style={{width:"100%",borderBottom:"2px solid rgb(76 93 145 / 29%)",margin:"0 auto"}}></div></div>
                    <img src="/img/forexIcon.png" alt="not found" className="ballSport1 ffoo"/>
                    <img src="/img/forex12.png" alt="not found" className="ballSport ffoo"/>
                    <p className="Saving">Earn</p>
@@ -317,6 +318,7 @@ useEffect(()=>{
                </div>
                <div className="commT dese bg-white-box " > 
                    <div className="FreeComm">Sports Prediction</div>
+                   <div style={{padding:"0 20px"}}><div style={{width:"100%",borderBottom:"2px solid rgb(76 93 145 / 29%)",margin:"0 auto"}}></div></div>
                    <img src="/img/sport.png" alt="not found" className="ballSport1 ffoo"/>
                    <img src="/img/sports1.png" alt="not found" className="ballSport ffoo"/>
 
@@ -325,6 +327,9 @@ useEffect(()=>{
                    <p className="dailyOn">Profits</p>
                    <p className="AirTime">Weekly</p>
                   <div className="successRate100"><p className="RateSuccess">95% Success Rate</p></div>
+                  <div>
+                    
+                  </div>
                </div>
            </div>
 
@@ -333,6 +338,7 @@ useEffect(()=>{
                
                <div className="commT bg-yellow-box">
                    <div className="FreeComm">Cryptocurrency Trading</div>
+                   <div style={{padding:"0 20px"}}><div style={{width:"100%",borderBottom:"2px solid rgb(76 93 145 / 29%)",margin:"0 auto"}}></div></div>
                    <img src="/img/crypto.png" alt="not found" className="ballSport1 ffoo"/>
                    <img src="/img/crypto1.png" alt="not found" className="ballSport ffoo"/>
                    <p className="Saving">Earn</p>
@@ -345,6 +351,7 @@ useEffect(()=>{
                </div>
                <div className="commT dese bg-blue-box">
                    <div className="FreeComm">Binary Option Trading</div>
+                   <div style={{padding:"0 20px"}}><div style={{width:"100%",borderBottom:"2px solid rgb(76 93 145 / 29%)",margin:"0 auto"}}></div></div>
                    <img src="/img/binary.png" alt="not found" className="ballSport1 ffoo"/>
                    <img src="/img/binary1.png" alt="not found" className="ballSport ffoo"/>
                    <p className="Saving">Earn</p>
