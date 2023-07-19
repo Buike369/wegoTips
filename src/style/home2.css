@@ -301,7 +301,7 @@
     padding:10px 2px;
     text-align: center;
     /* background-color: #5f6c9e; */
-        backdrop-filter: blur(44px);
+        /* backdrop-filter: blur(44px); */
     font-size: 20px;
     font-weight: 700;
     width:30%;
@@ -613,8 +613,8 @@ padding:10px 10px 0px 10px;
     }
 
 .TrustSeal {
-  
-    background: linear-gradient(135deg, #0a0846 0%, #353559 100%);
+background: linear-gradient(258deg, #040320d9 0%, #353559 100%);
+    /* background: linear-gradient(135deg, #0a0846 0%, #353559 100%); */
     border: 1px solid rgb(61 65 129 / 15%); 
     width: 100%;
     max-width: 530px;
