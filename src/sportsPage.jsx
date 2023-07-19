@@ -9,6 +9,7 @@ import { Link} from "react-router-dom";
 import Footer from "./footer"
 import "./style/slide.css"
 import { AuthContext } from './context/authContext';
+import background from "./img/sample.PNG";
 
 const SportsPage = () => {
 
@@ -94,7 +95,7 @@ const SportsPage = () => {
         <p className="SportBetting">What Is Sports Betting</p>
         <div className="outcomeBeen1">
         <div className="outcomeBeen" style={{ 
-      backgroundImage: `url("/img/sample.png")`
+      backgroundImage: `url(${background})`
 ,backgroundPosition:"left right bottom top",backgroundRepeat:"no-repeat",padding:"18px 15px",backgroundSize:"cover"}}>
         <span className="forexy1"> Sports </span>betting is the activity of predicting sports results and placing a wager on the outcome.  <span className="forexy1">Sport </span>betting is legally recognized across the world and has actually been an alternative source of income for millions of sport fans across the world.  
         </div>

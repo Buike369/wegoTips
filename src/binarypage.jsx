@@ -8,6 +8,7 @@ import "./style/home2.css"
 import Footer from "./footer"
 import { Link} from "react-router-dom";
 import "./style/slide.css"
+import background from "./img/sample.PNG";
 
 const BinaryPage = () => {
 
@@ -97,7 +98,7 @@ const BinaryPage = () => {
         <p className="SportBetting">What Is Binary Trading</p>
         <div className="outcomeBeen1">
         <div className="outcomeBeen" style={{ 
-      backgroundImage: `url("/img/sample.png")`,backgroundPosition:"left right bottom top",backgroundRepeat:"no-repeat",padding:"18px 15px",backgroundSize:"cover"}}>
+      backgroundImage: `url(${background})`,backgroundPosition:"left right bottom top",backgroundRepeat:"no-repeat",padding:"18px 15px",backgroundSize:"cover"}}>
         A <span className="forexy1">Binary</span> option is a type of option with a fixed payout in which you 
 predict the outcome from two possible results. If your prediction is 
 correct, you receive the agreed payout. If not, you lose your initial 

@@ -7,6 +7,7 @@ import "./style/home2.css"
 import Footer from "./footer"
 import { Link} from "react-router-dom";
 import "./style/slide.css"
+import background from "./img/sample.PNG";
 
 const CryptoPage = () => {
 
@@ -91,7 +92,7 @@ const CryptoPage = () => {
         <p className="SportBetting">What Is Cryptocurrency Trading</p>
         <div className="outcomeBeen1">
         <div className="outcomeBeen" style={{ 
-      backgroundImage: `url("/img/sample.png")`,backgroundPosition:"left right bottom top",backgroundRepeat:"no-repeat",padding:"18px 15px",backgroundSize:"cover"}}>
+      backgroundImage: `url(${background})`,backgroundPosition:"left right bottom top",backgroundRepeat:"no-repeat",padding:"18px 15px",backgroundSize:"cover"}}>
         <span className="forexy1">   Cryptocurrency </span>trading happens when you buy or sell digital 
 currencies with the aim of making a profit when their is change in value 
 of the underlying asset. There are two main ways to trade 

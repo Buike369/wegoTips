@@ -6,6 +6,7 @@ import "./style/home.css";
 import "./style/home2.css"
 import "./style/sportsP.css"
 import "./style/slide.css"
+import background from "./img/sample.PNG";
 
 import { Link} from "react-router-dom";
 import Footer from "./footer"
@@ -94,7 +95,7 @@ const ForexPage = () => {
         <p className="SportBetting">What Is Forex Trading</p>
         <div className="outcomeBeen1">
         <div className="outcomeBeen" style={{ 
-      backgroundImage: `url("/img/sample.png")`,backgroundPosition:"left right bottom top",backgroundRepeat:"no-repeat",padding:"18px 15px",backgroundSize:"cover"}}>
+      backgroundImage: `url(${background})`,backgroundPosition:"left right bottom top",backgroundRepeat:"no-repeat",padding:"18px 15px",backgroundSize:"cover"}}>
        <span className="forexy1"> Forex </span>trading or FX trading (also known as foreign exchange) happens 
 when you buy or sell one countries currencies against another 
 (e.g GBP/USD) with the aim of making a profit from the changing 
