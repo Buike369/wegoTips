@@ -40,10 +40,10 @@ export const AuthContextProvider = ({children})=>{
 
      },[currentUser,forgotEmail]);
 
-     useEffect(()=>{
+        
       const getSubscriptionPay = async()=>{
         try{
-       const res = await axios.get(`https://tea.earnars.com/api/user/subscription-pay/${currentUser.id || ""}`)
+       const res = await axios.get(`https://tea.earnars.com/api/user/subscription-pay/${currentUser.id}`)
         setIsPaid(res.data.pop().subscription_pay)
         }catch(err){
           console.log(err)
@@ -51,10 +51,14 @@ export const AuthContextProvider = ({children})=>{
         
       }
 
+      useEffect(()=>{
+          if(currentUser){
+             getSubscriptionPay()
+             }
+     },[currentUser]);
+  
 
-       getSubscriptionPay()
-
-     })
+   
      
      return <AuthContext.Provider value={{currentUser,forgotEmail,isPaid,setIsPaid,login,logout,forgotPassword}}>{children}</AuthContext.Provider>
 }

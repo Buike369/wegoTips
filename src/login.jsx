@@ -48,6 +48,9 @@ const Login =()=>{
     // console.log("success")
    }catch(err){
     setError(err.response.data.msg)
+      setTimeout(()=>{
+            setError("")
+           },3000)
     // console.log(err.response.data.msg)
    }    
     }

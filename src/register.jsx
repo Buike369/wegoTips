@@ -5,7 +5,7 @@ import axios from "axios"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEye,faEyeSlash} from '@fortawesome/free-solid-svg-icons'
 import { faGooglePlusG}from '@fortawesome/free-brands-svg-icons'
-import {myPort} from "./env"
+
 
 const Register =()=>{
 
@@ -13,40 +13,47 @@ const Register =()=>{
         username:"",
         email:"",
         password:"",
-      
     })
+
+    const [success,setSuccess] = useState("")
     const [inputs50,setInputs50]=useState({
          showPassword: false,
     })
     const navigate = useNavigate()
     const[over18,setOver18]=useState(false);
     const [term,setTerm]=useState(false)
-
     const [err,setError]= useState(null)
 
     const handleChange = e =>{
         setInputs(prev=>({...prev,[e.target.name]:e.target.value}))
-
     }
 
       const handleChange1 = (event) => {
-    setOver18(event.target.checked);
-      
+    setOver18(event.target.checked);  
   }
 
        const handleChange2 = (event) => {
-    
       setTerm(event.target.checked);
   }
+
     const handleSumit = async (e)=>{
     e.preventDefault()
    try{
    
-        await axios.post("myPort/auth/register",inputs)
+      const res =  await axios.post("https://tea.earnars.com/api/auth/register",inputs)
+        setSuccess(res.response.data.msg)
+         setTimeout(()=>{
+            setSuccess("")
+           },3000)
+
+
         navigate('/login')
 
    }catch(err){
     setError(err.response.data.msg)
+       setTimeout(()=>{
+            setError("")
+           },3000)
    }    
     }
 

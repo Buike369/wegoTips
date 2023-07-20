@@ -11,6 +11,7 @@ import "./style/home2.css"
 import axios from "axios";
 import { useLocation } from "react-router"
 import {myPort} from "./env"
+import background from "./img/sample.PNG";
 
 
 
@@ -303,7 +304,7 @@ useEffect(()=>{
 
            <div className="teleCom turu">
               
-               <div className="commT " >
+               <div className="commT "  >
                    <div className="FreeComm">Forex Trading</div>
                   <div style={{padding:"0 20px"}}><div style={{width:"100%",borderBottom:"1px solid rgb(87 104 157 / 29%)",margin:"0 auto 10px auto"}}></div></div>
                    <img src="/img/forexIcon.png" alt="not found" className="ballSport1 ffoo"/>
