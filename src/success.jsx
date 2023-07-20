@@ -2,9 +2,6 @@ import React,{useState,useContext} from "react";
 import "./style/register.css";
 import "./style/login.css";
 import "./style/otp.css"
-
-import { Link,useNavigate} from "react-router-dom";
-import axios from "axios"
 import {AuthContext}from "./context/authContext"
 
 

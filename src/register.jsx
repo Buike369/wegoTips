@@ -39,7 +39,7 @@ const Register =()=>{
     const handleSumit = async (e)=>{
     e.preventDefault()
    try{
-        await axios.post("http://tea.earnars.com/api/auth/register",inputs)
+        await axios.post("https://tea.earnars.com/api/auth/register",inputs)
         navigate('/login')
 
    }catch(err){

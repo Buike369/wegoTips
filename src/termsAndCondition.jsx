@@ -2,11 +2,8 @@ import React from "react"
 import Footer from "./footer"
 import "./style/about.css"
 
-
-
 const TermsAndCondition=()=>{
 
-   
     return(
         <div className="About_Dive_Page" style={{    backgroundImage: "linear-gradient(to right, rgba(106, 116, 167, 0.34), rgba(119, 135, 182, 0.95))",paddingTop:"10px"}}>
              <div className="About_Dive_Page1">

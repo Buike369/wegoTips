@@ -20,7 +20,7 @@ const Otp =()=>{
     
     const handleSumit1 = async (e) =>{
     e.preventDefault()
-  console.log(email)
+
    try{
     // await axios.post("/auth/forgotpassword",email2)
     await forgotPassword(email)
