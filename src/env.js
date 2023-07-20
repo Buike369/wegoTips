@@ -1,4 +1,2 @@
 
-
-
-export const myPort = "https://tea.earnars.com/api"
+export const myPort = "http://tea.earnars.com/api"

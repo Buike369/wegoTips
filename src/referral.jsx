@@ -52,7 +52,7 @@ console.log(rap)
     e.preventDefault()
    try{
    
-        await axios.post("https://tea.earnars.com/api/auth/register1",rap)
+        await axios.post("http://tea.earnars.com/api/auth/register1",rap)
         navigate('/login')
 
    }catch(err){

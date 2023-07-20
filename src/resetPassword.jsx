@@ -15,7 +15,7 @@ import {AuthContext}from "./context/authContext"
 const ResetPassword =()=>{
 
  const pa = useParams().id;
- console.log(pa)
+
      
     const [inputs,setInputs]=useState({
         password:"",
@@ -71,7 +71,7 @@ const ResetPassword =()=>{
            setCheckPassword(inputs.password) 
            const passWord = async()=>{
             try{
-               await axios.post(`/auth/resetpass!45!@word/${pa}`,{password:checkPassword})
+               await axios.post(`http://tea.earnars.com/api/auth/resetpass!45!@word/${pa}`,{password:checkPassword})
                navigate("/success")
             }catch(err){
                    console.log(err)

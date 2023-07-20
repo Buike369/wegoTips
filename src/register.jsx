@@ -39,7 +39,7 @@ const Register =()=>{
     const handleSumit = async (e)=>{
     e.preventDefault()
    try{
-        await axios.post("https://tea.earnars.com/api/auth/register",inputs)
+        await axios.post("http://tea.earnars.com/api/auth/register",inputs)
         navigate('/login')
 
    }catch(err){
@@ -66,7 +66,7 @@ const Register =()=>{
             <div className="Form_Div">
                 <form>
                    {success && <p style={{color:"#fff"}}>{success}</p>}
-                   {err && <p style={{color:"#fff"}}>{err}</p>}
+
                      <p className="New_Account">Register New Account</p>
                     <div> <input type="text" placeholder="User_name"  className="Full_Name" onChange={handleChange} name="username"/></div>
                     <div> <input type="email" placeholder="Email" className="Full_Name" onChange={handleChange} name="email"/></div>
