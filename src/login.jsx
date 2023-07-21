@@ -11,9 +11,9 @@ import {AuthContext}from "./context/authContext"
 
 const Login =()=>{
 
-    const responseGoogle=(response)=>{
-    console.log(response)
-    }
+    // const responseGoogle=(response)=>{
+    // console.log(response)
+    // }
 
     const [inputs,setInputs]=useState({
         email:"",
@@ -51,7 +51,7 @@ const Login =()=>{
       setTimeout(()=>{
             setError("")
            },3000)
-    // console.log(err.response.data.msg)
+    console.log(err)
    }    
     }
     return(

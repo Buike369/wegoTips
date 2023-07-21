@@ -27,6 +27,8 @@ const Home2=() =>{
   const [show7,setShow7]= useState(false)
 
   const [sports,setSports]= useState("Forex")
+
+ 
  
   const drop =()=>{
      setShow(!show)
@@ -304,7 +306,8 @@ useEffect(()=>{
 
            <div className="teleCom turu">
               
-               <div className="commT "  >
+               <div className="commT"  data-aos="fade-up" data-aos-duration="3000"
+             data-aos-easing="linear" >
                    <div className="FreeComm">Forex Trading</div>
                   <div style={{padding:"0 20px"}}><div style={{width:"100%",borderBottom:"1px solid rgb(87 104 157 / 29%)",margin:"0 auto 10px auto"}}></div></div>
                    <img src="/img/forexIcon.png" alt="not found" className="ballSport1 ffoo"/>
@@ -317,7 +320,8 @@ useEffect(()=>{
                        <p className="RateSuccess">75% Success Rate</p>
                    </div>
                </div>
-               <div className="commT dese bg-white-box " > 
+               <div className="commT dese bg-white-box " data-aos="fade-up" data-aos-duration="3000"
+             data-aos-easing="linear" > 
                    <div className="FreeComm">Sports Prediction</div>
                    <div style={{padding:"0 20px"}}><div style={{width:"100%",borderBottom:"1px solid rgb(87 104 157 / 29%)",margin:"0 auto 10px auto"}}></div></div>
                    <img src="/img/sport.png" alt="not found" className="ballSport1 ffoo"/>
@@ -337,7 +341,8 @@ useEffect(()=>{
         <div className="divRatT">
            <div className="teleCom turu">
                
-               <div className="commT bg-yellow-box">
+               <div className="commT bg-yellow-box" data-aos="fade-up" data-aos-duration="3000"
+             data-aos-easing="linear">
                    <div className="FreeComm">Cryptocurrency Trading</div>
                    <div style={{padding:"0 20px"}}><div style={{width:"100%",borderBottom:"1px solid rgb(87 104 157 / 29%)",margin:"0 auto 10px auto"}}></div></div>
                    <img src="/img/crypto.png" alt="not found" className="ballSport1 ffoo"/>
@@ -350,7 +355,8 @@ useEffect(()=>{
                        <p className="RateSuccess">85% Success Rate</p>
                    </div>
                </div>
-               <div className="commT dese bg-blue-box">
+               <div className="commT dese bg-blue-box" data-aos="fade-up" data-aos-duration="3000"
+             data-aos-easing="linear">
                    <div className="FreeComm">Binary Option Trading</div>
                    <div style={{padding:"0 20px"}}><div style={{width:"100%",borderBottom:"1px solid rgb(87 104 157 / 29%)",margin:"0 auto 10px auto"}}></div></div>
                    <img src="/img/binary.png" alt="not found" className="ballSport1 ffoo"/>

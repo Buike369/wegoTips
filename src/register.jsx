@@ -40,13 +40,19 @@ const Register =()=>{
     e.preventDefault()
    try{
         await axios.post("https://tea.earnars.com/api/auth/register",inputs)
+
+        setSuccess("successfully registration")
+         setTimeout(()=>{
+            setSuccess("")
+           },3000)
         navigate('/login')
 
    }catch(err){
-    setError(err.response.data.msg)
-       setTimeout(()=>{
-            setError("")
-           },3000)
+    // setError(err.response.data.msg)
+    //    setTimeout(()=>{
+    //         setError("")
+    //        },3000)
+    console.log(err)
    }    
     }
 
@@ -65,9 +71,10 @@ const Register =()=>{
               <div style={{padding:"0px 5px"}}>
             <div className="Form_Div">
                 <form>
-                   {success && <p style={{color:"#fff"}}>{success}</p>}
+                   {/* {success && <p style={{color:"#fff"}}>{success}</p>} */}
 
                      <p className="New_Account">Register New Account</p>
+                      {success && <p style={{color:"#fff"}}>{success}</p>}
                     <div> <input type="text" placeholder="User_name"  className="Full_Name" onChange={handleChange} name="username"/></div>
                     <div> <input type="email" placeholder="Email" className="Full_Name" onChange={handleChange} name="email"/></div>
                   
