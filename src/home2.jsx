@@ -392,8 +392,9 @@ useEffect(()=>{
                    <div className={sports === "binary"?"Forex12 pin":"Forex12"} onClick={bina}>Binary</div>
                </div>
                </div>
-               { sports === "sports"?
-             
+
+           {sports === "sports" ? 
+             <div>
                <Carousel
   swipeable={true}
   draggable={true}
@@ -415,16 +416,15 @@ useEffect(()=>{
    className="king"
  
 >
-      
-
-               {(post1.length === 0) ? sportItem.map((app,id)=>(<div className="sport2 cappin yellowD" >
+               {post1.length === 0 ? sportItem.map((app,id)=>(
+               <div className="sport2 cappin yellowD" key={id}>
                        <div className="divS"><span className="Nog">Game No: </span>SP-{date}/{app.game_no}</div>
                        <p className="dailyP21">Daily Profit</p>
                        <p className="Dyc">{app.profit}%</p>
                        <p className="addErn">odd:{app.odd}</p>
                        <div className={app.action === "earned"?"EarnLoss":"EarnLoss losscolor"}>{app.action === "earned"?"Earned":"Loss"}</div>
 
-                   </div> )):post1.map((app,id)=>(
+                   </div> )): post1.map((app,id)=>(
                    <div className="sport2 cappin yellowD" key={id}>
                        <div className="divS"><span className="Nog">Game No: </span>SP-{date}/{app.game_no}</div>
                        <p className="dailyP21">Daily Profit</p>
@@ -433,15 +433,23 @@ useEffect(()=>{
                        <div className={app.action === "earned"?"EarnLoss":"EarnLoss losscolor"}>{app.action === "earned"?"Earned":"Loss"}</div>
 
                    </div>
-                   ))}
-                  
+                   ))
+  
+                 }
+
+               
+
+
+
+
        
 </Carousel>
+</div>
+:""}
 
-: ""}
 
                { sports ==="Forex"? 
-                        
+                        <div>
                                  <Carousel
   swipeable={true}
   draggable={true}
@@ -518,12 +526,13 @@ useEffect(()=>{
                         ))}
 
                         </Carousel>
+                        </div>
                   
                :""}
              
 
                { sports === "cryptocurrency"? 
-                 
+                 <div>
                  <Carousel
                  swipeable={true}
                  draggable={true}
@@ -598,11 +607,11 @@ useEffect(()=>{
  
                     </div>))}
                     </Carousel>
-               :""}
- 
-
+                    </div>
+                    :""}
 
  { sports=== "binary"? 
+            <div>
                    <Carousel
                    swipeable={true}
                    draggable={true}
@@ -626,7 +635,7 @@ useEffect(()=>{
                  
 
                 {(post4.length === 0)? binaryItem.map((app,id)=>(
-                  <div  className="slide1">
+                 
                     <div className="sport2 cappin yellowB" key={id}>
                         <div className="divS"><span className="Nog Nog5">Trade No: </span>BN-{date}/{app.b_trade_no}</div>
 
@@ -652,9 +661,9 @@ useEffect(()=>{
                         <div className={app.b_check === "earned"?"EarnLoss":"EarnLoss losscolor"}> {app.b_check === "earned"?"Earned":"Loss"}</div>
  
                     </div>
-                    </div>
+                
                     )):post4.map((app,id)=>(
-                  <div  className="slide1">
+              
                     <div className="sport2 cappin yellowB" key={id}>
                         <div className="divS"><span className="Nog Nog5">Trade No: </span>BN-{date}/{app.b_trade_no}</div>
 
@@ -680,11 +689,12 @@ useEffect(()=>{
                         <div className={app.b_check === "earned"?"EarnLoss":"EarnLoss losscolor"}> {app.b_check === "earned"?"Earned":"Loss"}</div>
  
                     </div>
-                    </div>
+                  
                     ))}
                   
                     </Carousel>
-               :""}
+                    </div>
+               :""} 
 
 
 
