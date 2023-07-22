@@ -36,26 +36,45 @@ const Register =()=>{
       setTerm(event.target.checked);
   }
 
-    const handleSumit = async (e)=>{
-    e.preventDefault()
-   try{
-        await axios.post("https://tea.earnars.com/api/auth/register",inputs)
+  //   const handleSumit = async (e)=>{
+  //   e.preventDefault()
+  //  try{
+  //       await axios.post("https://tea.earnars.com/api/auth/register",inputs)
 
-        setSuccess("successfully registration")
-         setTimeout(()=>{
-            setSuccess("")
-           },3000)
-        navigate('/login')
+  //       setSuccess("successfully registration")
+  //        setTimeout(()=>{
+  //           setSuccess("")
+  //          },3000)
+  //       navigate('/login')
 
-   }catch(err){
-    // setError(err.response.data.msg)
-    //    setTimeout(()=>{
-    //         setError("")
-    //        },3000)
-    console.log(err)
-   }    
+  //  }catch(err){
+  //   // setError(err.response.data.msg)
+  //   //    setTimeout(()=>{
+  //   //         setError("")
+  //   //        },3000)
+  //   console.log(err)
+  //  }    
+  //   }
+
+
+       const handleSumit =(e)=>{
+          e.preventDefault()
+  
+         axios.post("https://tea.earnars.com/api/auth/register",inputs).then((response)=>{
+            console.log(response)
+             navigate('/login')
+         }).catch((err)=>{
+          console.log(err)
+         })
+
+        // setSuccess("successfully registration")
+        //  setTimeout(()=>{
+        //     setSuccess("")
+        //    },3000)
+        // navigate('/login')
+
+      
     }
-
 
     const handleClickShowPassword = () => {
         setInputs50(previ=>({ ...previ, showPassword: !inputs50.showPassword }));

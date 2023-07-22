@@ -29,7 +29,10 @@ const Home2=() =>{
   const [sports,setSports]= useState("Forex")
 
  
- 
+  const sportItem = [{game_no:1,profit:"20",odd:"2.5",action:"loss"},{game_no:2,profit:"35",odd:"4.5",action:"earned"},{game_no:3,profit:"55",odd:"0.5",action:"earned"},{game_no:4,profit:"70",odd:"4.5",action:"earned"}]
+   const cryptoItem = [{c_trade_no:1,c_pair:"VBN/BTC",c_condition:"long",c_entry_point:"500",c_exit_point:"700",c_check:"loss",c_take_profit:"460"},{c_trade_no:2,c_pair:"AGRO/USDC",c_condition:"long",c_entry_point:"410",c_exit_point:"400",c_check:"earned",c_take_profit:"460"},{c_trade_no:3,c_pair:"UTC/USDT",c_condition:"long",c_entry_point:"300",c_exit_point:"400",c_check:"earned",c_take_profit:"460"},{c_trade_no:4,c_pair:"YTY/USDT",c_condition:"long",c_entry_point:"500",c_exit_point:"300",c_check:"loss",c_take_profit:"460"}]
+    const forexItem = [{r_trade_no:1,r_pair:"BTC/USDT",r_condition:"long",r_entry_point:"500",r_exit_point:"700",r_take_profit:"460",r_check:"loss"},{r_trade_no:2,r_pair:"PAC/USDC",r_condition:"long",r_entry_point:"410",r_exit_point:"400",r_take_profit:1000,r_check:"earned"},{r_trade_no:3,r_pair:"EAR/BTC",r_condition:"long",r_entry_point:"300",r_exit_point:"400",r_take_profit:1000,r_check:"earned"},{r_trade_no:4,r_pair:"HTC/USDT",r_condition:"long",r_entry_point:"500",r_exit_point:"300",r_take_profit:1000,r_check:"loss"}]
+     const binaryItem = [{b_trade_no:1,b_pair:"BTC/USDC",b_condition:"long",b_expire_time:"6:00",b_profit:"700",b_check:"loss"},{b_trade_no:2,b_pair:"YKC/USDC",b_condition:"short",b_expire_time:"3:35",b_profit:"800",b_check:"earned"},{b_trade_no:3,b_pair:"ADC/USDT",b_condition:"long",b_expire_time:"4:00",b_profit:"40",b_check:"loss"},{b_trade_no:4,b_pair:"KCK/USDC",b_condition:"long",b_expire_time:"5:00",b_profit:"800",b_check:"earned"}]
   const drop =()=>{
      setShow(!show)
      setShow1(false)
@@ -414,7 +417,14 @@ useEffect(()=>{
 >
       
 
-               {post1.map((app,id)=>(
+               {(post1.length === 0) ? sportItem.map((app,id)=>(<div className="sport2 cappin yellowD" >
+                       <div className="divS"><span className="Nog">Game No: </span>SP-{date}/{app.game_no}</div>
+                       <p className="dailyP21">Daily Profit</p>
+                       <p className="Dyc">{app.profit}%</p>
+                       <p className="addErn">odd:{app.odd}</p>
+                       <div className={app.action === "earned"?"EarnLoss":"EarnLoss losscolor"}>{app.action === "earned"?"Earned":"Loss"}</div>
+
+                   </div> )):post1.map((app,id)=>(
                    <div className="sport2 cappin yellowD" key={id}>
                        <div className="divS"><span className="Nog">Game No: </span>SP-{date}/{app.game_no}</div>
                        <p className="dailyP21">Daily Profit</p>
@@ -430,7 +440,7 @@ useEffect(()=>{
 
 : ""}
 
-               {/* { sports ==="Forex"? 
+               { sports ==="Forex"? 
                         
                                  <Carousel
   swipeable={true}
@@ -451,10 +461,35 @@ useEffect(()=>{
   dotListClass="custom-dot-list-style"
   itemClass="carousel-item-padding-40-px"
   className="king"
-> */}
+>
 
 
-  {/* {post.map((app,id)=>(
+  {(post.length === 0) ? forexItem.map((app,id)=>(
+                        <div className="sport2 cappin yellowC" key={id}>
+                            <div className="divS"><span className="Nog">Trade No: </span>FX-{date}/{app.r_trade_no}</div>
+
+                            <div className="busyer">
+                            <div className="pairs">
+                                <p className="Usdj ">Pair: <span className="upcase">{app.r_pair}</span></p>
+                                <p className="Usdj">Condition: <span className="lowcase">{app.r_condition}</span></p>
+                            </div>
+                           <div className="pairs">
+                               <div>
+                                   <p className="Usdj">Entry point-{app.r_entry_point}</p>
+                                   <p className="Usdj">Exit point-{app.r_exit_point}</p>
+                               </div>
+                               <div className="Fitwem">
+                                   <p className="Usdj addpo">Take Profit</p>
+                                   <p className="Usdj addpo1" >{app.r_take_profit} pips</p>
+                               </div>
+                           </div>
+
+                           </div>
+                           
+                          
+                            <div className= {app.r_check === "earned"?"EarnLoss":"EarnLoss losscolor"}><FontAwesomeIcon icon={faCheckDouble} className="icon_brand_size"/>{app.r_check === "earned"?"Earned":"Loss"}</div>
+     
+                        </div>)) :post.map((app,id)=>(
                         <div className="sport2 cappin yellowC" key={id}>
                             <div className="divS"><span className="Nog">Trade No: </span>FX-{date}/{app.r_trade_no}</div>
 
@@ -480,11 +515,11 @@ useEffect(()=>{
                             <div className= {app.r_check === "earned"?"EarnLoss":"EarnLoss losscolor"}><FontAwesomeIcon icon={faCheckDouble} className="icon_brand_size"/>{app.r_check === "earned"?"Earned":"Loss"}</div>
      
                         </div>
-                        ))} */}
+                        ))}
 
-                        {/* </Carousel>
+                        </Carousel>
                   
-               :""} */}
+               :""}
              
 
                { sports === "cryptocurrency"? 
@@ -510,7 +545,33 @@ useEffect(()=>{
                   className="king"
                >
 
-                   {post3.map((app,id)=>(
+                   {(post3.length === 0) ? cryptoItem.map((app,id)=>(
+                    <div className="sport2 cappin yellowA" key={id}>
+                        <div className="divS"><span className="Nog Nog4">Trade No: </span>CT-{date}/{app.c_trade_no}</div>
+
+                        <div className="busyer">
+                        <div className="pairs">
+                            <p className="Usdj">Pair:<span className="upcase">{app.c_pair}</span></p>
+                            <p className="Usdj">Condition:<span className="lowcase">{app.c_condition}</span></p>
+                        </div>
+                       <div className="pairs">
+                           <div>
+                               <p className="Usdj">Entry point-{app.c_entry_point}</p>
+                               <p className="Usdj">Exit point-{app.c_exit_point}</p>
+                           </div>
+                           <div className="Fitwem">
+                               <p className="Usdj Nog4">Take Profit</p>
+                               <p className="Usdj Nog4fade">{app.c_take_profit}%</p>
+                           </div>
+                       </div>
+
+                       </div>
+                       
+                      
+                        <div className={app.c_check === "earned"?"EarnLoss":"EarnLoss losscolor"}>{app.c_check === "earned"?"Earned":"Loss"}</div>
+ 
+                    </div>
+                    )):post3.map((app,id)=>(
                     <div className="sport2 cappin yellowA" key={id}>
                         <div className="divS"><span className="Nog Nog4">Trade No: </span>CT-{date}/{app.c_trade_no}</div>
 
@@ -535,38 +596,64 @@ useEffect(()=>{
                       
                         <div className={app.c_check === "earned"?"EarnLoss":"EarnLos losscolor"}>{app.c_check === "earned"?"Earned":"Loss"}</div>
  
-                    </div>
-                    ))}
+                    </div>))}
                     </Carousel>
                :""}
  
 
 
  { sports=== "binary"? 
-                //    <Carousel
-                //    swipeable={true}
-                //    draggable={true}
-                //    showDots={false}
-                //    responsive={responsive1}
-                //    ssr={true} // means to render carousel on server-side.
-                //    infinite={true}
-                //    // autoPlay={this.props.deviceType !== "mobile" ? true : false}
-                //    autoPlay={true}
-                //    autoPlaySpeed={3000}
-                //    keyBoardControl={true}
-                //    customTransition="all .5"
-                //    transitionDuration={500}
-                //    containerClass="carousel-container"
-                //    removeArrowOnDeviceType={["tablet", "mobile"]}
-                //    // deviceType={this.props.deviceType}
-                //    dotListClass="custom-dot-list-style"
-                //    itemClass="carousel-item-padding-40-px"
-                //     className="king"
-                //  >
-                 <div>
-                  <div className="pack">
-                    <div className="slide-track">
-                {post4.map((app,id)=>(
+                   <Carousel
+                   swipeable={true}
+                   draggable={true}
+                   showDots={false}
+                   responsive={responsive1}
+                   ssr={true} // means to render carousel on server-side.
+                   infinite={true}
+                   // autoPlay={this.props.deviceType !== "mobile" ? true : false}
+                   autoPlay={true}
+                   autoPlaySpeed={3000}
+                   keyBoardControl={true}
+                   customTransition="all .5"
+                   transitionDuration={500}
+                   containerClass="carousel-container"
+                   removeArrowOnDeviceType={["tablet", "mobile"]}
+                   // deviceType={this.props.deviceType}
+                   dotListClass="custom-dot-list-style"
+                   itemClass="carousel-item-padding-40-px"
+                    className="king"
+                 >
+                 
+
+                {(post4.length === 0)? binaryItem.map((app,id)=>(
+                  <div  className="slide1">
+                    <div className="sport2 cappin yellowB" key={id}>
+                        <div className="divS"><span className="Nog Nog5">Trade No: </span>BN-{date}/{app.b_trade_no}</div>
+
+                        <div className="busyer">
+                        <div className="pairs">
+                            <p className="Usdj">Pair: {app.b_pair}</p>
+                            <p className="Usdj">Condition: {app.b_condition}</p>
+                        </div>
+                       <div className="pairs">
+                           <div>
+                               <p className="Usdj">TIME : {app.b_expire_time}</p>
+                             
+                           </div>
+                           <div className="Fitwem">
+                               <p className="Usdj Nog5">Take Profit</p>
+                               <p className="Usdj Nog5fade">{app.b_profit}%</p>
+                           </div>
+                       </div>
+
+                       </div>
+                       
+                      
+                        <div className={app.b_check === "earned"?"EarnLoss":"EarnLoss losscolor"}> {app.b_check === "earned"?"Earned":"Loss"}</div>
+ 
+                    </div>
+                    </div>
+                    )):post4.map((app,id)=>(
                   <div  className="slide1">
                     <div className="sport2 cappin yellowB" key={id}>
                         <div className="divS"><span className="Nog Nog5">Trade No: </span>BN-{date}/{app.b_trade_no}</div>
@@ -595,10 +682,8 @@ useEffect(()=>{
                     </div>
                     </div>
                     ))}
-                    </div>
-                    </div>
-                    </div>
-                    // </Carousel>
+                  
+                    </Carousel>
                :""}
 
 
