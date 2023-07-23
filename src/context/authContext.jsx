@@ -55,7 +55,7 @@ export const AuthContextProvider = ({children})=>{
           if(currentUser){
              getSubscriptionPay()
              }
-     },[currentUser]);
+     },[isPaid]);
   
 
    

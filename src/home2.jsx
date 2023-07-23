@@ -27,6 +27,7 @@ const Home2=() =>{
   const [show7,setShow7]= useState(false)
 
   const [sports,setSports]= useState("Forex")
+  const [loading,setLoading] = useState(true)
 
  
   const sportItem = [{game_no:1,profit:"20",odd:"2.5",action:"loss"},{game_no:2,profit:"35",odd:"4.5",action:"earned"},{game_no:3,profit:"55",odd:"0.5",action:"earned"},{game_no:4,profit:"70",odd:"4.5",action:"earned"}]
@@ -192,57 +193,102 @@ const Sports1 =()=>{
     setSports("sports")
 }
 
-useEffect(()=>{
-  const fetchData4 = async ()=>{
-    try{
- const res = await axios.get(`myPort/post/binary/tip3`)
-   setPosts4(res.data)
-
-    }catch(err){
-    setError(err)
-
-    }
-  }
-  fetchData4()
-},[post4])
-
-useEffect(()=>{
-  const fetchData3 = async ()=>{
-    try{
- const res = await axios.get(`myPort/post/crypto/tip3`)
-   setPosts3(res.data)
- 
-    }catch(err){
-    setError(err)
-
-    }
-  }
-  fetchData3()
-},[post3])
-
-
 // useEffect(()=>{
-//   const fetchData2 = async ()=>{
+//   const fetchData4 = async ()=>{
 //     try{
-//  const res = await axios.get(`https://tea.earnars.com/api/post/forex/tip3`)
-//    setPosts(res.data)
+//  const res = await axios.get(`myPort/post/binary/tip3`)
+//    setPosts4(res.data)
+
 //     }catch(err){
 //     setError(err)
 
 //     }
 //   }
-//   fetchData2()
-// },[post])
+//   fetchData4()
+// },[post4])
 
 useEffect(()=>{
-  const fetchData1 = async ()=>{
-    try{
- const res = await axios.get(`myPort/post/sports/tip3`)
-   setPosts1(res.data)
-    }catch(err){
-       setError(err)
+  const fetchData4 = ()=>{
 
-    }
+  axios.get(`https://tea.earnars.com/api/post/binary/tip3`).then((response)=>{
+setPosts4(response.data)
+setLoading(false)
+  }).catch((err)=>{
+  // setError(err)
+  console.log(err)
+  }) 
+  }
+  fetchData4()
+},[post4])
+
+// useEffect(()=>{
+//   const fetchData3 = async ()=>{
+//     try{
+//  const res = await axios.get(`https://tea.earnars.com/api/post/crypto/tip3`)
+//    setPosts3(res.data)
+ 
+//     }catch(err){
+//     setError(err)
+
+//     }
+//   }
+//   fetchData3()
+// },[post3])
+
+useEffect(()=>{
+  const fetchData3 =()=>{
+  axios.get(`https://tea.earnars.com/api/post/crypto/tip3`).then((response)=>{
+  setPosts3(response.data)
+  setLoading(false)
+  }).catch((err)=>{
+      //  setError(err)
+      console.log(err)
+  })
+  
+  }
+  fetchData3()
+},[post3])
+
+
+useEffect(()=>{
+  const fetchData2 = ()=>{
+ 
+ axios.get(`https://tea.earnars.com/api/post/forex/tip3`).then((response)=>{
+  setPosts(response.data)
+ }).catch((err)=>{
+//  setError(err)
+ console.log(err)
+ })
+    
+  }
+  
+   fetchData2()
+ },[post])
+
+// useEffect(()=>{
+//   const fetchData1 = async ()=>{
+//     try{
+//  const res = await axios.get(`https://tea.earnars.com/api/post/sports/tip3`)
+//    setPosts1(res.data)
+//     }catch(err){
+//        setError(err)
+
+//     }
+//   }
+//   fetchData1()
+// },[post1])
+
+
+useEffect(()=>{
+  const fetchData1 = ()=>{
+ 
+ axios.get(`https://tea.earnars.com/api/post/sports/tip3`).then((response)=>{
+   setPosts1(response.data)
+   setLoading(false)
+ }).catch((err)=>{
+  // setError(err)
+  console.log(err)
+ }) 
   }
   fetchData1()
 },[post1])
@@ -416,7 +462,7 @@ useEffect(()=>{
    className="king"
  
 >
-               {post1.length === 0 ? sportItem.map((app,id)=>(
+               { (loading) ?  sportItem.map((app,id)=>(
                <div className="sport2 cappin yellowD" key={id}>
                        <div className="divS"><span className="Nog">Game No: </span>SP-{date}/{app.game_no}</div>
                        <p className="dailyP21">Daily Profit</p>
@@ -472,7 +518,7 @@ useEffect(()=>{
 >
 
 
-  {(post.length === 0) ? forexItem.map((app,id)=>(
+  {(loading) ? forexItem.map((app,id)=>(
                         <div className="sport2 cappin yellowC" key={id}>
                             <div className="divS"><span className="Nog">Trade No: </span>FX-{date}/{app.r_trade_no}</div>
 
@@ -554,7 +600,7 @@ useEffect(()=>{
                   className="king"
                >
 
-                   {(post3.length === 0) ? cryptoItem.map((app,id)=>(
+                   {(loading) ? cryptoItem.map((app,id)=>(
                     <div className="sport2 cappin yellowA" key={id}>
                         <div className="divS"><span className="Nog Nog4">Trade No: </span>CT-{date}/{app.c_trade_no}</div>
 
@@ -634,7 +680,7 @@ useEffect(()=>{
                  >
                  
 
-                {(post4.length === 0)? binaryItem.map((app,id)=>(
+                {(loading)? binaryItem.map((app,id)=>(
                  
                     <div className="sport2 cappin yellowB" key={id}>
                         <div className="divS"><span className="Nog Nog5">Trade No: </span>BN-{date}/{app.b_trade_no}</div>
@@ -661,9 +707,7 @@ useEffect(()=>{
                         <div className={app.b_check === "earned"?"EarnLoss":"EarnLoss losscolor"}> {app.b_check === "earned"?"Earned":"Loss"}</div>
  
                     </div>
-                
                     )):post4.map((app,id)=>(
-              
                     <div className="sport2 cappin yellowB" key={id}>
                         <div className="divS"><span className="Nog Nog5">Trade No: </span>BN-{date}/{app.b_trade_no}</div>
 
