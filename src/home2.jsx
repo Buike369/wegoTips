@@ -10,7 +10,7 @@ import AOS from 'aos';
 import "./style/home2.css"
 import axios from "axios";
 import { useLocation } from "react-router"
-import {myPort} from "./env"
+
 import background from "./img/sample.PNG";
 
 
@@ -170,7 +170,7 @@ const Home2=() =>{
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 1.25,
+      items: 1,
       slidesToSlide: 1 // optional, default to 1.
     }
   }
@@ -261,7 +261,7 @@ useEffect(()=>{
  })
     
   }
-  
+
    fetchData2()
  },[post])
 
@@ -443,8 +443,8 @@ useEffect(()=>{
              <div>
                <Carousel
   swipeable={true}
-  draggable={true}
-  showDots={false}
+  draggable={false}
+  showDots={true}
   responsive={responsive1}
   ssr={true} // means to render carousel on server-side.
   infinite={true}
@@ -498,8 +498,8 @@ useEffect(()=>{
                         <div>
                                  <Carousel
   swipeable={true}
-  draggable={true}
-  showDots={false}
+  draggable={false}
+  showDots={true}
   responsive={responsive1}
   ssr={true} // means to render carousel on server-side.
   infinite={true}
@@ -581,8 +581,8 @@ useEffect(()=>{
                  <div>
                  <Carousel
                  swipeable={true}
-                 draggable={true}
-                 showDots={false}
+                 draggable={false}
+                 showDots={true}
                  responsive={responsive1}
                  ssr={true} // means to render carousel on server-side.
                  infinite={true}
@@ -660,8 +660,8 @@ useEffect(()=>{
             <div>
                    <Carousel
                    swipeable={true}
-                   draggable={true}
-                   showDots={false}
+                   draggable={false}
+                   showDots={true}
                    responsive={responsive1}
                    ssr={true} // means to render carousel on server-side.
                    infinite={true}

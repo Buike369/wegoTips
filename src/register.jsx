@@ -5,7 +5,7 @@ import axios from "axios"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEye,faEyeSlash} from '@fortawesome/free-solid-svg-icons'
 import { faGooglePlusG}from '@fortawesome/free-brands-svg-icons'
-
+import validator from "validator"
 
 const Register =()=>{
 
@@ -14,6 +14,7 @@ const Register =()=>{
         email:"",
         password:"",
     })
+    const [isValid,setIsValid] = useState(false)
 
     const [success,setSuccess] = useState("")
     const [inputs50,setInputs50]=useState({
@@ -26,6 +27,8 @@ const Register =()=>{
 
     const handleChange = e =>{
         setInputs(prev=>({...prev,[e.target.name]:e.target.value}))
+
+        // setIsValid(validator.isEmail(inputs.email) && (validator.isGmail(inputs.email) || validator.isYahoo(inputs.email)))
     }
 
       const handleChange1 = (event) => {
@@ -36,44 +39,21 @@ const Register =()=>{
       setTerm(event.target.checked);
   }
 
-  //   const handleSumit = async (e)=>{
-  //   e.preventDefault()
-  //  try{
-  //       await axios.post("https://tea.earnars.com/api/auth/register",inputs)
-
-  //       setSuccess("successfully registration")
-  //        setTimeout(()=>{
-  //           setSuccess("")
-  //          },3000)
-  //       navigate('/login')
-
-  //  }catch(err){
-  //   // setError(err.response.data.msg)
-  //   //    setTimeout(()=>{
-  //   //         setError("")
-  //   //        },3000)
-  //   console.log(err)
-  //  }    
-  //   }
-
 
        const handleSumit =(e)=>{
           e.preventDefault()
   
          axios.post("https://tea.earnars.com/api/auth/register",inputs).then((response)=>{
             console.log(response)
-             navigate('/login')
+            setSuccess("Successful registration")
+         setTimeout(()=>{
+            setSuccess("")
+           },3000)
+        navigate('/login')
+             
          }).catch((err)=>{
           console.log(err)
-         })
-
-        // setSuccess("successfully registration")
-        //  setTimeout(()=>{
-        //     setSuccess("")
-        //    },3000)
-        // navigate('/login')
-
-      
+         }) 
     }
 
     const handleClickShowPassword = () => {
@@ -90,13 +70,13 @@ const Register =()=>{
               <div style={{padding:"0px 5px"}}>
             <div className="Form_Div">
                 <form>
-                   {/* {success && <p style={{color:"#fff"}}>{success}</p>} */}
+      {success && <div style={{color:"#fff",position:"absolute",zIndex:"500",left:"50%",right:"50%",top:"-5%",padding:"5px 10px",backgroundColor:"#20263a",width:"100%",transform:"translate(-50%,-50%)",textAlign:"center",borderRadius:"5px"}}>{success}</div>}
 
                      <p className="New_Account">Register New Account</p>
                       {success && <p style={{color:"#fff"}}>{success}</p>}
                     <div> <input type="text" placeholder="User_name"  className="Full_Name" onChange={handleChange} name="username"/></div>
                     <div> <input type="email" placeholder="Email" className="Full_Name" onChange={handleChange} name="email"/></div>
-                  
+                  {/* {isValid ? "": <p style={{color:"#fff"}}>invalid email </p>} */}
 
                     <div className="sers"> <input type={inputs50.showPassword ? "text":"password"} placeholder="Password" className="Full_Name" onChange ={handleChange} name="password" value={inputs.password}
                   />

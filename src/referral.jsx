@@ -44,22 +44,18 @@ const Referral =()=>{
   }
 
   const rap =[inputs, {code:usd} ]
-  console.log(rap)
 
-
-console.log(rap)
-    const handleSumit = async (e)=>{
+    const handleSumit = (e)=>{
     e.preventDefault()
-   try{
-   
-        await axios.post("https://tea.earnars.com/api/auth/register1",rap)
-        navigate('/login')
 
-   }catch(err){
-    setError(err)
-   }    
+    axios.post("https://tea.earnars.com/api/auth/register1",rap).then((response)=>{
+             navigate('/login')
+    }).catch((err)=>{
+setError(err)
+console.log(err)
+    })
+        
     }
-
 
     const handleClickShowPassword = () => {
         setInputs50(previ=>({ ...previ, showPassword: !inputs50.showPassword }));
