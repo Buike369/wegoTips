@@ -29,7 +29,7 @@ const DashboardUser = () => {
         const res = await axios.get('https://tea.earnars.com/api/post')
  
         setUserInfo(res.data)
-        // console.log(res.data)
+      
       }catch(err){
         console.log(err)
       }
@@ -44,7 +44,7 @@ const DashboardUser = () => {
    const res = await axios.get(`https://tea.earnars.com/api/user/active-count`)
    
      setSap(res.data[0].active_count)
-    //  console.log(res.data)
+   
             }catch(err){
           console.log(err)
             }

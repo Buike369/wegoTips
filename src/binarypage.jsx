@@ -112,7 +112,8 @@ only two outcomes – win or lose.
         <div className="ifNi"></div>
         <div className="EasyTi" >
             <div className="EasyTim" style={{ 
-    background: "linear-gradient(206deg, rgb(51 50 85) 31%, rgb(50 49 90 / 54%) 62%, rgb(53 56 92 / 44%) 76%)",backgroundPosition:"center center",backgroundRepeat:"no-repeat",backgroundSize:"cover"}}>
+    background: "linear-gradient(206deg, rgb(51 50 85) 31%, rgb(50 49 90 / 54%) 62%, rgb(53 56 92 / 44%) 76%)",backgroundPosition:"center center",backgroundRepeat:"no-repeat",backgroundSize:"cover"}}  data-aos="fade-up" data-aos-duration="3000"
+             data-aos-easing="linear" >
             <div className="onV">
             <img src="/img/icinC1.svg" alt="every source of fund" className="everyday"/>
                 <p className="startedf">Easy To Trade</p>
@@ -132,7 +133,8 @@ magnitude of price movement
 when binary trading.</div>
             </div>
             <div className="EasyTim" style={{ 
-      background: "linear-gradient(206deg, rgb(51 50 85) 31%, rgb(50 49 90 / 54%) 62%, rgb(53 56 92 / 44%) 76%)",backgroundPosition:"center center",backgroundRepeat:"no-repeat",backgroundSize:"cover"}}>
+      background: "linear-gradient(206deg, rgb(51 50 85) 31%, rgb(50 49 90 / 54%) 62%, rgb(53 56 92 / 44%) 76%)",backgroundPosition:"center center",backgroundRepeat:"no-repeat",backgroundSize:"cover"}}  data-aos="fade-up" data-aos-duration="3000"
+             data-aos-easing="linear" >
             <div className="onV">
             <img src="/img/icinC1.svg" alt="every source of fund" className="everyday"/>
                 <p className="startedf">High  R.O.I  Potential</p>
@@ -149,7 +151,8 @@ returns of approximately 10%.
 </div>
             </div>
             <div className="EasyTim" style={{ 
-     background: "linear-gradient(206deg, rgb(51 50 85) 31%, rgb(50 49 90 / 54%) 62%, rgb(53 56 92 / 44%) 76%)",backgroundPosition:"center center",backgroundRepeat:"no-repeat",backgroundSize:"cover"}} >
+     background: "linear-gradient(206deg, rgb(51 50 85) 31%, rgb(50 49 90 / 54%) 62%, rgb(53 56 92 / 44%) 76%)",backgroundPosition:"center center",backgroundRepeat:"no-repeat",backgroundSize:"cover"}}  data-aos="fade-up" data-aos-duration="3000"
+             data-aos-easing="linear" >
             <div className="onV">
             <img src="/img/icinC1.svg" alt="every source of fund" className="everyday"/>
                 <p className="startedf"> Known Risk And Reward </p>
@@ -227,13 +230,13 @@ and offer some fixed percentage return in case of in-the-money settlement.</p>
         <div className='figma'>
         <div className="firey how">
             <div className="firey1">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/zBlvE9pX-IQ" title="How to Register and Verify Pocket Option Account" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe className="pn"  width="100%" height="100%" src="https://www.youtube.com/embed/zBlvE9pX-IQ" title="How to Register and Verify Pocket Option Account" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <div className="firey1">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/7dGSYzLpY7I" title="POCKET OPTIONS TUTORIAL - FUNDING YOUR BROKER TO MAKE MONEY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe className="pn"  width="100%" height="100%" src="https://www.youtube.com/embed/7dGSYzLpY7I" title="POCKET OPTIONS TUTORIAL - FUNDING YOUR BROKER TO MAKE MONEY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <div className="firey1">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Z5e1CbNbxdU" title="How To WITHDRAW Money From Pocket Option - 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe className="pn"  width="100%" height="100%" src="https://www.youtube.com/embed/Z5e1CbNbxdU" title="How To WITHDRAW Money From Pocket Option - 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </div>
         </div>

@@ -116,7 +116,7 @@ const Profile = () =>{
             <div className="Profile_Div">
                 <div className="FimeOp">
                 <p className="ProfilePp" >Profile Overview</p>
-               <div className="ppCopy"><span style={{color:"#0ceb0c"}}>Referral code : </span> <input type="text" className="copyCode copyCode4"  value={text} readOnly/><div onClick={handleCopyClick} className="copyCode copyCode1 copyCode2">copy</div></div>
+               <div className="ppCopy"><span style={{color:"#0ceb0c"}}>Referral Link : </span> <input type="text" className="copyCode copyCode4"  value={text} readOnly/><div onClick={handleCopyClick} className="copyCode copyCode1 copyCode2">copy</div></div>
                 </div>
                 <div className="ProfilePp_PP">
                     <div className="yink"><img src="/img/invite.jpg" alt="" className="ProfilePp_P2P" /></div>

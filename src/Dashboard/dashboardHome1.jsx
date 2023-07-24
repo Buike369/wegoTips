@@ -18,6 +18,7 @@ const DashboardHome1 = () => {
      const [sap,setSap]=useState(null)
       const [sap1,setSap1]=useState(null)
        const [sap2,setSap2]=useState(null)
+       const [totalDeposit,setTotalDeposit] = useState(null)
 
     useEffect(()=>{
         const fetchCount = async()=>{
@@ -81,45 +82,91 @@ const DashboardHome1 = () => {
         inActiveUserCount2()
     },[sap2])
 
+
+    useEffect(()=>{
+        const totalDeposit6 = async()=>{
+            try{
+   const res = await axios.get(`https://tea.earnars.com/api/user/totalDeposit`)
+   
+     setTotalDeposit(res.data[0].total_deposit)
+    //  console.log(res.data)
+            }catch(err){
+          console.log(err)
+            }
+
+        }
+        totalDeposit6()
+    },[totalDeposit])
+
     const data = [
         {
-          name: 'Page A',
+          name: 'january',
           uv: 4000,
           pv: 2400,
           amt: 2400,
         },
         {
-          name: 'Page B',
+          name: 'Febuary',
           uv: 3000,
           pv: 1398,
           amt: 2210,
         },
         {
-          name: 'Page C',
+          name: 'March',
           uv: 2000,
           pv: 9800,
           amt: 2290,
         },
         {
-          name: 'Page D',
+          name: 'April',
           uv: 2780,
           pv: 3908,
           amt: 2000,
         },
         {
-          name: 'Page E',
+          name: 'May',
           uv: 1890,
           pv: 4800,
           amt: 2181,
         },
         {
-          name: 'Page F',
+          name: 'June',
           uv: 2390,
           pv: 3800,
           amt: 2500,
         },
         {
-          name: 'Page G',
+          name: 'July',
+          uv: 3490,
+          pv: 4300,
+          amt: 2100,
+        },
+        {
+          name: 'August',
+          uv: 3490,
+          pv: 4300,
+          amt: 2100,
+        },
+        {
+          name: 'September',
+          uv: 3490,
+          pv: 4300,
+          amt: 2100,
+        },
+        {
+          name: 'October',
+          uv: 3490,
+          pv: 4300,
+          amt: 2100,
+        },
+          {
+          name: 'November',
+          uv: 3490,
+          pv: 4300,
+          amt: 2100,
+        },
+          {
+          name: 'December',
           uv: 3490,
           pv: 4300,
           amt: 2100,
@@ -152,15 +199,15 @@ const DashboardHome1 = () => {
                 <div className="dashOverView totalBot">
                     <div className="Total Users">
                         <p className="Userstext1">Total Deposit</p>
-                        <p className="UserNum1">N500,000,000</p>
+                        <p className="UserNum1">₦{totalDeposit}</p>
                     </div>
                     <div className="Total Users">
                         <p className="Userstext1">Total Withdrawals</p>
-                        <p className="UserNum1">N11,150,000</p>
+                        <p className="UserNum1">₦11,150,000</p>
                     </div>
                     <div className="Total Users">
                         <p className="Userstext1">Total Bill Spend</p>
-                        <p className="UserNum1">N100,000</p>
+                        <p className="UserNum1">₦100,000</p>
                     </div>
                 </div>
                 </div>

@@ -18,6 +18,7 @@ const WalletOverView =()=>{
     const [subAmount,setSubAmount]=useState(25000)
     const [withdraw,setWithdraw]= useState("")
     const [transfer,setTransfer]= useState("")
+     const [message5,setMessage5]= useState("")
     const [pinAmount,setPinAmount]=useState("Enter Amount")
     const [move,setMove] = useState(true)
     const [active,setActive] = useState(true)
@@ -199,18 +200,26 @@ const trig =()=>{
     setActive(!active)
 }
 
-const airtimePurchase2=async(e)=>{
+const airtimePurchase2=(e)=>{
     e.preventDefault()
    console.log(airtimeInfo)
     
    const pass =[airtimeInfo,{main:mainWallet,id:currentUser.id}]
-   if(parseInt(mainWallet) > parseInt(airtimeInfo.amount)){
-    try{
-    await axios.post("https://tea.earnars.com/api/flutterwave/airtime",pass)
 
-   }catch(err){
-    console.log(err)
+   if((airtimeInfo.amount === "") || (airtimeInfo. mobileNumber === "")){
+      console.log("amount or phone_number field is empty")
    }
+
+   if(parseInt(mainWallet) > parseInt(airtimeInfo.amount)){
+ 
+     axios.post("https://tea.earnars.com/api/flutterwave/airtime",pass).then((response)=>{
+
+     }).catch((err)=>{
+        console.log(err)
+     })
+
+ 
+  
    }else{
    console.log("insufficient fund for airtime purchase")
    }
@@ -226,9 +235,9 @@ const airtimePurchase2=async(e)=>{
                         const mon1 = [withdrawalInfo,{main:mainWallet1,id:currentUser.id}]   
          
                    axios.post("https://tea.earnars.com/api/user/withdrawal",mon1).then((response)=>{
-                              setMessage(response.data.msg)
+                              setMessage5(response.data.msg)
                     setTimeout(()=>{
-                         setMessage("")
+                         setMessage5("")
                          setModal(!modal);
                     },8000)
                    }).catch((err)=>{
@@ -237,7 +246,11 @@ const airtimePurchase2=async(e)=>{
                    })
 
                    }else{
-                    setError("your main wallet is low for transaction")
+                    setMessage5("your main wallet is low for transaction")
+                     setTimeout(()=>{
+                         setMessage5("")
+                        
+                    },3000)
                    }
                     }
 
@@ -629,7 +642,8 @@ const ego = [{amount:depositCash.amount,id:currentUser.id,mainA:mainWallet},depo
                         <div className="popo">
                     <div className="DepositY">{deposit === "depositMe"? "Deposit" :deposit === "subScriptionP" ? "Subscrpition Payment" :"" }</div>
                      {message && <p className="popo1">{message}</p>}
-                    <p className="AnyPay">Convinient payment method for You.</p>
+                    <p className="AnyPay">{deposit === "depositMe"?"Convinient payment method for You.":""}</p>
+                    {deposit === "depositMe"? 
                     <div className="DivflutterWave">
                         <div className="Wave1">
                             <p className="PinW">Flutterwave Secured Payment.</p>
@@ -640,6 +654,10 @@ const ego = [{amount:depositCash.amount,id:currentUser.id,mainA:mainWallet},depo
                         </div>
                     
                     </div>
+                    :<div>
+<p className="PinW">Available Balance</p>
+                        <p className="WidrawMoney">₦{mainWallet}.00</p>
+                        </div>}
                     <form>
                         {/* {active? 
                         <div className="ProccedRent">
@@ -661,7 +679,7 @@ const ego = [{amount:depositCash.amount,id:currentUser.id,mainA:mainWallet},depo
                     <div className="SecondDivFolder">
                         <div className="popo">
                         <p className="DepositY">Withdraw</p>
-                        {message && <p className="popo1">{message}</p>}
+                        {message5 && <p className="popo1">{message5}</p>}
                         <p className="PinW">Available Balance</p>
                         <p className="WidrawMoney">₦{mainWallet}.00</p>
                         <form>
@@ -758,6 +776,7 @@ const ego = [{amount:depositCash.amount,id:currentUser.id,mainA:mainWallet},depo
                     {transfer === "transferMe"? 
                     <div className="ThirdDivFolder">
                         <p className="DepositY">Transfer</p>
+                        {error && <p className="popo1">{error}</p>}
                         <p className="PinW">Affliaite Balance</p>
                         <p className="WidrawMoney">₦{affliateWallet}</p>
                         <form>

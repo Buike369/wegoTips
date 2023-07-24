@@ -1,4 +1,4 @@
-import React,{useState,useContext} from 'react'
+import React,{useState,useContext,useEffect} from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import "./style/sportPage.css"
 import {  faPlus,faMinus} from '@fortawesome/free-solid-svg-icons'
@@ -7,6 +7,7 @@ import "./style/home2.css"
 import "./style/sportsP.css"
 import "./style/slide.css"
 import background from "./img/sample.PNG";
+import AOS from 'aos';
 
 import { Link} from "react-router-dom";
 import Footer from "./footer"
@@ -77,6 +78,10 @@ const ForexPage = () => {
     setShow5(!show5)
   }
  
+ useEffect(()=>{
+    AOS.init();
+  },[])
+
   return (
     <div style={{ backgroundImage: "linear-gradient(to right, rgba(106, 116, 167, 0.34), rgba(119, 135, 182, 0.95))"
 }} >
@@ -109,7 +114,8 @@ liquid asset markets in the world.
         <div className="ifNi"></div>
         <div className="EasyTi">
             <div className="EasyTim" style={{ 
- background:"linear-gradient(206deg, rgb(51 50 85) 31%, rgb(50 49 90 / 54%) 62%, rgb(53 56 92 / 44%) 76%)",backgroundPosition:"center center",backgroundRepeat:"no-repeat",backgroundSize:"cover"}}>
+ background:"linear-gradient(206deg, rgb(51 50 85) 31%, rgb(50 49 90 / 54%) 62%, rgb(53 56 92 / 44%) 76%)",backgroundPosition:"center center",backgroundRepeat:"no-repeat",backgroundSize:"cover"}} data-aos="fade-up" data-aos-duration="3000"
+             data-aos-easing="linear">
             <div className="onV">
             <img src="/img/icinC1.svg" alt="every source of fund" className="everyday"/>
                 <p className="startedf">Low Barriers To Entry</p>
@@ -130,7 +136,8 @@ making money online by just
 following our expert forecast.</div>
             </div>
             <div className="EasyTim" style={{ 
-background: "linear-gradient(206deg, rgb(51 50 85) 31%, rgb(50 49 90 / 54%) 62%, rgb(53 56 92 / 44%) 76%)",backgroundPosition:"center center",backgroundRepeat:"no-repeat",backgroundSize:"cover"}}>
+background: "linear-gradient(206deg, rgb(51 50 85) 31%, rgb(50 49 90 / 54%) 62%, rgb(53 56 92 / 44%) 76%)",backgroundPosition:"center center",backgroundRepeat:"no-repeat",backgroundSize:"cover"}} data-aos="fade-up" data-aos-duration="3000"
+             data-aos-easing="linear">
             <div className="onV">
             <img src="/img/icinC1.svg" alt="every source of fund" className="everyday"/>
                 <p className="startedf">A 24-Hours Market</p>
@@ -154,7 +161,8 @@ sleep.
 </div>
             </div>
             <div className="EasyTim" style={{ 
-     background: "linear-gradient(206deg, rgb(51 50 85) 31%, rgb(50 49 90 / 54%) 62%, rgb(53 56 92 / 44%) 76%)",backgroundPosition:"center center",backgroundRepeat:"no-repeat",backgroundSize:"cover"}}>
+     background: "linear-gradient(206deg, rgb(51 50 85) 31%, rgb(50 49 90 / 54%) 62%, rgb(53 56 92 / 44%) 76%)",backgroundPosition:"center center",backgroundRepeat:"no-repeat",backgroundSize:"cover"}} data-aos="fade-up" data-aos-duration="3000"
+             data-aos-easing="linear">
             <div className="onV">
             <img src="/img/icinC1.svg" alt="every source of fund" className="everyday"/>
                 <p className="startedf">Leverage</p>
@@ -242,20 +250,22 @@ management, this high degree
        <div className="figma">
         <div className="firey how">
             <div className="firey1">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/IUL29Vh6rF8" title="[ENGLISH] Tutorial - How to start trading with OctaTrader on your Android device" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe className="pn"  width="100%" height="100%" src="https://www.youtube.com/embed/IUL29Vh6rF8" title="[ENGLISH] Tutorial - How to start trading with OctaTrader on your Android device" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <div className="firey1">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/kMey3FMxsnE" title="[ENGLISH] Tutorial - How to start trading with OctaTrader on web" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe className="pn"  width="100%" height="100%" src="https://www.youtube.com/embed/kMey3FMxsnE" title="[ENGLISH] Tutorial - How to start trading with OctaTrader on web" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <div className="firey1">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/TgyisJAsGvE" title="How to make a deposit with Instant Bank Transfers" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe className="pn"  width="100%" height="100%" src="https://www.youtube.com/embed/TgyisJAsGvE" title="How to make a deposit with Instant Bank Transfers" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </div>
         </div>
 
         <div>
-          <div id="Faqc" className="faqSportMa">
-            <div className="firstTom faqSports">FAQ</div>
+          <div id="Faqc" className="faqSportMa" data-aos="fade-up" data-aos-duration="3000"
+             data-aos-easing="linear">
+            <div className="firstTom faqSports" data-aos="fade-down" data-aos-duration="3000"
+             data-aos-easing="linear">FAQ</div>
             <div>
               <div className="HowFarBro" onClick={drop}>
                 <span>
