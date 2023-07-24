@@ -40,12 +40,21 @@ const Mobileheader = () => {
         setOpen("opened");
         setShow21(!show21)
           setOpen1(!open1);
+           document.body.classList.add('cac')
+
+      }
+       const seOpen4 =()=>{
+        setOpen("opened");
+        setShow21(!show21)
+          setOpen1(!open1);
+          document.body.classList.remove('cac') 
 
       }
 
       const mark =()=>{
         seOpen();
          setShow21(!show21)
+         document.body.classList.remove('cac')
 
       }
   return (
@@ -61,7 +70,7 @@ const Mobileheader = () => {
         <div>
        
   
- <button className={open1?"menu bg":"opened bg"} onClick={seOpen} aria-label="Main Menu">
+ <button className={open1?"menu bg":"opened bg"} onClick={ open1?seOpen : seOpen4} aria-label="Main Menu">
       <svg width="50" height="50" viewBox="0 0 100 100">
         <path className="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
         <path className="line line2" d="M 20,50 H 80" />

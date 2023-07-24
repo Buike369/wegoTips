@@ -152,6 +152,7 @@ const WalletOverView =()=>{
      setWithdraw('')
      setModal(!modal)
      setTransfer("")
+      document.body.classList.add('hou')
  }
      
  const subscript =()=>{
@@ -159,6 +160,7 @@ const WalletOverView =()=>{
     setWithdraw('')
     setModal(!modal)
     setTransfer("")
+     document.body.classList.add('hou')
 }
  const withdrawT =()=>{
     setWithdraw('withdrawMe')

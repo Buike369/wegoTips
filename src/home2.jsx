@@ -170,7 +170,7 @@ const Home2=() =>{
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 1.25,
+      items: 1,
       slidesToSlide: 1 // optional, default to 1.
     }
   }
@@ -429,7 +429,8 @@ useEffect(()=>{
            <div className="Rtme">
                <div className="loud" style={{color:(sports === "cryptocurrency") ? "#5df362":(sports=== "binary")? "#a4a6ef" :(sports ==="sports") ? "#6fffd2a8" : "#e1ca3b"}}>Our Results Speaks Louder</div>
                <div className="ye"></div>
-               <div className="faith">
+               <div >
+               <div className="faith" >
                <div className="Forex1">
                    <div className={sports==="Forex"?"Forex12 pin":"Forex12"} onClick={forf}>Forex</div>
                    <div className={sports === "sports"?"Forex12 pin":"Forex12"} onClick={Sports1}>Sports</div>
@@ -438,9 +439,10 @@ useEffect(()=>{
                    <div className={sports === "binary"?"Forex12 pin":"Forex12"} onClick={bina}>Binary</div>
                </div>
                </div>
+               </div>
 
            {sports === "sports" ? 
-             <div>
+             <div style={{padding:"0 10px"}} >
                <Carousel
   swipeable={true}
   draggable={false}
@@ -495,7 +497,8 @@ useEffect(()=>{
 
 
                { sports ==="Forex"? 
-                        <div>
+               <div style={{padding:"0 10px"}}>
+                       
                                  <Carousel
   swipeable={true}
   draggable={false}
@@ -519,7 +522,7 @@ useEffect(()=>{
 
 
   {(loading) ? forexItem.map((app,id)=>(
-                        <div className="sport2 cappin yellowC" key={id}>
+                        <div className="sport2 cappin yellowC " key={id}>
                             <div className="divS"><span className="Nog">Trade No: </span>FX-{date}/{app.r_trade_no}</div>
 
                             <div className="busyer">
@@ -573,12 +576,13 @@ useEffect(()=>{
 
                         </Carousel>
                         </div>
+
                   
                :""}
              
 
                { sports === "cryptocurrency"? 
-                 <div>
+                 <div style={{padding:"0 10px"}}>
                  <Carousel
                  swipeable={true}
                  draggable={false}
@@ -657,7 +661,7 @@ useEffect(()=>{
                     :""}
 
  { sports=== "binary"? 
-            <div>
+            <div style={{padding:"0 10px"}}>
                    <Carousel
                    swipeable={true}
                    draggable={false}

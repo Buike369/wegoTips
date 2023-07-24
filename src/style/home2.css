@@ -777,8 +777,8 @@ background: linear-gradient(258deg, #040320d9 0%, #353559 100%);
 
 @media(max-width:464px){
     .cappin{
-        width:98% !important;
-        max-width: 300px;
+        width:100% !important;
+        max-width: 100%;
     }
 }
 

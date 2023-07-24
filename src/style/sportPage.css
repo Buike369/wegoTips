@@ -203,6 +203,12 @@
     align-items: center;
     justify-content: space-between;
 }
+.gomas{
+display: flex;
+    padding: 0 10px;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .firey1 {
     width: 32%;
