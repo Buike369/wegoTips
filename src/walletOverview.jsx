@@ -694,9 +694,9 @@ const ego = [{amount:depositCash.amount,id:currentUser.id,mainA:mainWallet},depo
                               <div className="OTPDIV1">
                                 <p style={{color:"gray",fontSize:"14px",marginBottom:"5px"}}>Choose your network:</p>
                  <div className="OTPDiv">
-                   <div className="codePP" onClick={iconD2}> <img src="/img/airtel.png" alt="" style={{width:"100%",borderRadius:"10px"}} /> <FontAwesomeIcon icon={faCircleCheck} className={network === "airtel"? `circleCheck ${iconShow}`:"circleCheck"}/> </div> 
-                    <div className="codePP" onClick={iconD1}> <img src="/img/mtn.png" alt="" style={{width:"100%",borderRadius:"10px"}} /><FontAwesomeIcon icon={faCircleCheck} className={network === "MTN"? `circleCheck ${iconShow}`:"circleCheck"} /> </div> 
-                     <div className="codePP" onClick={iconD}><img src="/img/glo.jpg" alt="" style={{width:"100%",borderRadius:"10px"}} />
+                   <div className="codePP" onClick={iconD2}> <img src="/img/Airtel-logo.jpg" alt="" style={{width:"100%",borderRadius:"10px",height:"100%"}} /> <FontAwesomeIcon icon={faCircleCheck} className={network === "airtel"? `circleCheck ${iconShow}`:"circleCheck"}/> </div> 
+                    <div className="codePP" onClick={iconD1}> <img src="/img/New-mtn-logo.jpg" alt="" style={{width:"100%",borderRadius:"10px",height:"100%"}} /><FontAwesomeIcon icon={faCircleCheck} className={network === "MTN"? `circleCheck ${iconShow}`:"circleCheck"} /> </div> 
+                     <div className="codePP" onClick={iconD}><img src="/img/Glo2.jpg" alt="" style={{width:"100%",borderRadius:"10px",height:"100%"}} />
                      <FontAwesomeIcon icon={faCircleCheck} className={network === "Glo"? `circleCheck ${iconShow}`:"circleCheck"} /> </div> 
                     
 
@@ -728,9 +728,9 @@ const ego = [{amount:depositCash.amount,id:currentUser.id,mainA:mainWallet},depo
                               <div className="OTPDIV1">
                                 <p style={{color:"gray",fontSize:"14px",marginBottom:"5px"}}>Choose your network:</p>
                  <div className="OTPDiv">
-                   <div className="codePP" onClick={iconD2}> <img src="/img/airtel.png" alt="" style={{width:"100%",borderRadius:"10px"}} /> <FontAwesomeIcon icon={faCircleCheck} className={network === "airtel"? `circleCheck ${iconShow}`:"circleCheck"}/> </div> 
-                    <div className="codePP" onClick={iconD1}> <img src="/img/New-mtn-logo.jpg" alt="" style={{width:"100%",borderRadius:"10px"}} /><FontAwesomeIcon icon={faCircleCheck} className={network === "MTN"? `circleCheck ${iconShow}`:"circleCheck"} /> </div> 
-                     <div className="codePP" onClick={iconD}><img src="/img/glo.jpg" alt="" style={{width:"100%",borderRadius:"10px"}} />
+                   <div className="codePP" onClick={iconD2}> <img src="/img/Airtel-logo.jpg" alt="" style={{width:"100%",borderRadius:"10px",height:"100%"}} /> <FontAwesomeIcon icon={faCircleCheck} className={network === "airtel"? `circleCheck ${iconShow}`:"circleCheck"}/> </div> 
+                    <div className="codePP" onClick={iconD1} > <img src="/img/New-mtn-logo.jpg" alt="" style={{width:"100%",borderRadius:"10px",height:"100%"}} /><FontAwesomeIcon icon={faCircleCheck} className={network === "MTN"? `circleCheck ${iconShow}`:"circleCheck"} /> </div> 
+                     <div className="codePP" onClick={iconD}><img src="/img/Glo2.jpg" alt="" style={{width:"100%",borderRadius:"10px",height:"100%"}} />
                      <FontAwesomeIcon icon={faCircleCheck} className={network === "Glo"? `circleCheck ${iconShow}`:"circleCheck"} /> </div> 
                     
 
