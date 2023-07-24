@@ -183,43 +183,64 @@ and offer some fixed percentage return in case of in-the-money settlement.</p>
 <div className="slider">
 <div className="slide-track">
    <div className="slide">
-    <img src="/img/apari.png" alt="" title="" className="marqueelogo" style={{width: "160px", maxWidth:"none"}}/>
-  
+    <div style={{height:"80px",width:"180px"}}>
+    <img src="/img/ipop.png" alt="" title="" className="marqueelogo" style={{width: "100%", height:"100%"}}/>
+      </div>
     </div>
      <div className="slide">
-   <img src="/img/fxtm.svg" alt="" title="" className="marqueelogo" style={{width: "170px", maxWidth:"none"}}/>
+          <div style={{height:"80px",width:"180px"}}>
+   <img src="/img/padad.png" alt="" title="" className="marqueelogo" style={{width:"100%",  height:"100%"}}/>
    </div>
+    </div>
     <div className="slide">
-   <img src="/img/ex.svg" alt="" title="" className="marqueelogo" style={{width: "180px", maxWidth:"none"}}/>
+      <div style={{height:"80px",width:"180px"}}>
+   <img src="/img/cent.jpg" alt="" title="" className="marqueelogo" style={{width: "100%",  height:"100%"}}/>
+   </div>
    </div>
    <div className="slide">
-    <img src="/img/oct.svg" alt="" title="" className="marqueelogo" style={{width: "170px", maxWidth:"none"}}/>
-   
+       <div style={{height:"80px",width:"180px"}}>
+    <img src="/img/derv.svg" alt="" title="" className="marqueelogo" style={{width: "100%",  height:"100%"}}/>
+   </div>
    </div>
     <div className="slide">
-   <img src="/img/fbs.svg" alt="" title="" className="marqueelogo" style={{width: "60px", maxWidth:"none"}}/>
+       <div style={{height:"80px",width:"180px"}}>
+   <img src="/img/kucoin.png" alt="" title="" className="marqueelogo" style={{width: "100%",  height:"100%"}}/>
+   </div>
    </div>
     <div className="slide">
-   <img src="/img/hfm.svg" alt="" title="" className="marqueelogo" style={{width: "110px", maxWidth:"none"}}/>
+      <div style={{height:"80px",width:"180px"}}>
+   <img src="/img/hfm.svg" alt="" title="" className="marqueelogo" style={{width: "100%",  height:"100%"}}/>
+   </div>
    </div>
        <div className="slide">
-   <img src="/img/oct.svg" alt="" title="" className="marqueelogo" style={{width: "170px", maxWidth:"none"}}/>
+        <div style={{height:"80px",width:"180px"}}>
+   <img src="/img/ipop.png" alt="" title="" className="marqueelogo" style={{width: "100%",  height:"100%"}}/>
+   </div>
    </div>
        <div className="slide">
-           <img src="/img/fbs.svg" alt="" title="" className="marqueelogo" style={{width: "60px", maxWidth:"none"}}/>
+         <div style={{height:"80px",width:"180px"}}>
+           <img src="/img/padad.png" alt="" title="" className="marqueelogo" style={{width: "100%",  height:"100%"}}/>
+   </div>
    </div>
        <div className="slide">
-   <img src="/img/ex.svg" alt="" title="" className="marqueelogo" style={{width: "180px", maxWidth:"none"}}/>
+        <div style={{height:"80px",width:"180px"}}>
+   <img src="/img/cent.jpg" alt="" title="" className="marqueelogo" style={{width: "100%",  height:"100%"}}/>
+   </div>
    </div>
        <div className="slide">
-   <img src="/img/apari.png" alt="" title="" className="marqueelogo" style={{width: "160px", maxWidth:"none"}}/>
+        <div style={{height:"80px",width:"180px"}}>
+   <img src="/img/derv.svg" alt="" title="" className="marqueelogo" style={{width: "100%", height:"100%"}}/>
+   </div>
    </div>
        <div className="slide">
-         <img src="/img/fxtm.svg" alt="" title="" className="marqueelogo" style={{width: "170px", maxWidth:"none"}}/>
-
+         <div style={{height:"80px",width:"180px"}}>
+         <img src="/img/kucoin.png" alt="" title="" className="marqueelogo" style={{width: "100%",  height:"100%"}}/>
+  </div>
    </div>
        <div className="slide">
-   <img src="/img/hfm.svg" alt="" title="" className="marqueelogo" style={{width: "110px", maxWidth:"none"}}/>
+                 <div style={{height:"80px",width:"180px"}}>
+   <img src="/img/hfm.svg" alt="" title="" className="marqueelogo" style={{width: "100%", height:"100%"}}/>
+   </div>
    </div>
  
 </div>

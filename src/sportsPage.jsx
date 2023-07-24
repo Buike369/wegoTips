@@ -170,40 +170,64 @@ You can also enjoy sports betting anywhere and anytime e.g from the comfort of y
 <div className="slider">
    <div className="slide-track">
     <div className="slide">
-   <img src="/img/images.jpg" alt="" title="" className="marqueelogo" style={{width: "160px", maxWidth:"none"}}/>
+          <div style={{height:"80px",width:"180px"}}>
+   <img src="/img/images.jpg" alt="" title="" className="marqueelogo" style={{width: "160px",height:"100%"}}/>
+   </div>
    </div>
    <div className="slide">
-   <img src="/img/bett.svg" alt="" title="" className="marqueelogo" style={{width: "160px", maxWidth:"none"}}/>
+     <div style={{height:"80px",width:"180px"}}>
+   <img src="/img/bett.svg" alt="" title="" className="marqueelogo" style={{width: "160px",height:"100%"}}/>
+   </div>
    </div>
    <div className="slide">
-   <img src="/img/Betway.png" alt="" title="" className="marqueelogo" style={{width: "160px", maxWidth:"none"}}/>
+     <div style={{height:"80px",width:"180px"}}>
+   <img src="/img/Betway.png" alt="" title="" className="marqueelogo" style={{width: "160px",height:"100%"}}/>
+   </div>
    </div>
    <div className="slide">
-   <img src="/img/kingK.png" alt="" title="" className="marqueelogo" style={{width: "110px", maxWidth:"none"}}/>
+     <div style={{height:"80px",width:"180px"}}>
+   <img src="/img/kingK.png" alt="" title="" className="marqueelogo" style={{width: "110px", height:"100%"}}/>
+   </div>
    </div>
    <div className="slide">
-   <img src="/img/betKing.svg" alt="" title="" className="marqueelogo" style={{width: "160px", maxWidth:"none"}}/>
+    <div style={{height:"80px",width:"180px"}}>
+   <img src="/img/betKing.svg" alt="" title="" className="marqueelogo" style={{width: "160px", height:"100%"}}/>
+   </div>
    </div>
    <div className="slide">
-   <img src="/img/images.jpg" alt="" title="" className="marqueelogo" style={{width: "160px", maxWidth:"none"}}/>
+    <div style={{height:"80px",width:"180px"}}>
+   <img src="/img/images.jpg" alt="" title="" className="marqueelogo" style={{width: "160px",height:"100%"}}/>
+   </div>
    </div>
     <div className="slide">
-   <img src="/img/images.jpg" alt="" title="" className="marqueelogo" style={{width: "160px", maxWidth:"none"}}/>
+      <div style={{height:"80px",width:"180px"}}>
+   <img src="/img/Betway.png" alt="" title="" className="marqueelogo" style={{width: "160px",height:"100%"}}/>
    </div>
-   <div>
-   <img src="/img/bett.svg" alt="" title="" className="marqueelogo" style={{width: "160px", maxWidth:"none"}}/>
    </div>
-   <div className="slide">
-   <img src="/img/Betway.png" alt="" title="" className="marqueelogo" style={{width: "160px", maxWidth:"none"}}/>
+   <div  className="slide">
+     <div style={{height:"80px",width:"180px"}}>
+   <img src="/img/bett.svg" alt="" title="" className="marqueelogo" style={{width: "160px", height:"100%"}}/>
    </div>
-   <div className="slide">
-   <img src="/img/kingK.png" alt="" title="" className="marqueelogo" style={{width: "110px", maxWidth:"none"}}/>
    </div>
    <div className="slide">
-   <img src="/img/betKing.svg" alt="" title="" className="marqueelogo" style={{width: "160px", maxWidth:"none"}}/>
+        <div style={{height:"80px",width:"180px"}}>
+   <img src="/img/images.jpg" alt="" title="" className="marqueelogo" style={{width: "160px",height:"100%"}}/>
+   </div>
    </div>
    <div className="slide">
-   <img src="/img/images.jpg" alt="" title="" className="marqueelogo" style={{width: "160px", maxWidth:"none"}}/>
+    <div style={{height:"80px",width:"180px"}}>
+   <img src="/img/kingK.png" alt="" title="" className="marqueelogo" style={{width: "110px", height:"100%"}}/>
+   </div>
+   </div>
+   <div className="slide">
+    <div style={{height:"80px",width:"180px"}}>
+   <img src="/img/betKing.svg" alt="" title="" className="marqueelogo" style={{width: "160px", height:"100%"}}/>
+   </div>
+   </div>
+   <div className="slide">
+    <div style={{height:"80px",width:"180px"}}>
+   <img src="/img/images.jpg" alt="" title="" className="marqueelogo" style={{width: "100%", height:"100%"}}/>
+   </div>
    </div>
    </div>
 </div>
