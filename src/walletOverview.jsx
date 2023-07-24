@@ -6,7 +6,7 @@ import { AuthContext } from './context/authContext';
 import axios from "axios"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faCircleCheck} from '@fortawesome/free-solid-svg-icons'
-import {myPort} from "./env"
+
 
 const WalletOverView =()=>{
 
@@ -34,13 +34,13 @@ const WalletOverView =()=>{
     const [visit,setVisit] = useState()
     const [subscriptionAmount,setSubscriptionAmount] = useState(2500)
      const [error,setError]= useState("")
-     const [successSub,setSuccessSub] = useState()
-    const [referralId,setRefferalId] = useState(0)
-     const [referredId,setRefferedId] = useState(1)
+    //  const [successSub,setSuccessSub] = useState()
+    // const [referralId,setRefferalId] = useState(0)
+    //  const [referredId,setRefferedId] = useState(1)
      const [walletOverview,setWalletOverview] = useState([])
     const [depositCash,setDepositCash]= useState([])
     const [referrals2,setReferrals2] = useState([])
-    const [Active,setActivem] = useState("active")
+    // const [Active,setActivem] = useState("active")
     const [subActive,setSubActive]=useState("inActive")
     const [message,setMessage]=useState("")
     const [withdrawalInfo,setWithdrawalInfo] = useState({
@@ -206,7 +206,7 @@ const airtimePurchase2=async(e)=>{
    const pass =[airtimeInfo,{main:mainWallet,id:currentUser.id}]
    if(parseInt(mainWallet) > parseInt(airtimeInfo.amount)){
     try{
-    await axios.post("myPort/flutterwave/airtime",pass)
+    await axios.post("https://tea.earnars.com/api/flutterwave/airtime",pass)
 
    }catch(err){
     console.log(err)
@@ -263,7 +263,7 @@ const airtimePurchase2=async(e)=>{
 
                     }).catch((err)=>{
                             console.log(err)
-                            setError(err)
+                            // setError(err)
                      setTimeout(()=>{
                           setError("")
                         },3000)
@@ -303,7 +303,7 @@ const airtimePurchase2=async(e)=>{
            },3000)
          
            }).catch((err)=>{
-              setError(err)
+            //   setError(err)
               console.log(err)
            })
       
@@ -323,20 +323,20 @@ const airtimePurchase2=async(e)=>{
               
     
  const config = {
-    public_key: 'FLWPUBK_TEST-968ad24101fcac26e1750f77e2a2d46b-X',
+    public_key: 'FLWPUBK-a2e5c30edf925c9bfb96e5c540c22fb9-X',
     tx_ref: Date.now(),
     amount: parseInt(amount),
     currency: 'NGN',
     payment_options: 'card,mobilemoney,ussd',
     customer: {
       email: currentUser.email,
-       phone_number: '070********',
+       phone_number:currentUser.phone_number,
       name: currentUser.username,
     },
     customizations: {
       title: 'Deposit',
-      description: 'Payment for items in cart',
-      logo: 'http://localhost:3000/public/img/Earnars1@72x1.png',
+      description: 'Payment to fund ur main wallet',
+      logo: 'https://earnars.com/public/img/Earnars1@72x1.png',
     },
   };
 
@@ -349,7 +349,7 @@ const airtimePurchase2=async(e)=>{
      handleFlutterPayment({
             callback: (response) => {
                 // console.log(response)
-            //   setDepositCash(response)
+              setDepositCash(response)
                 closePaymentModal()
                  setTimeout(()=>{
                      setModal(!modal)
@@ -361,7 +361,7 @@ const airtimePurchase2=async(e)=>{
           });
   }
 
-const ego = [ {amount:depositCash.amount,id:currentUser.id,mainA:mainWallet},depositCash.customer]
+const ego = [{amount:depositCash.amount,id:currentUser.id,mainA:mainWallet},depositCash.customer]
 
   useEffect(()=>{
     const handleDeposit = () =>{
@@ -371,7 +371,9 @@ const ego = [ {amount:depositCash.amount,id:currentUser.id,mainA:mainWallet},dep
                           console.log(err)
                       })
                     }
-handleDeposit()
+           if(depositCash.length > 0){
+            handleDeposit()
+           }
 
   },[depositCash])
 
@@ -380,7 +382,7 @@ handleDeposit()
   axios.get(`https://tea.earnars.com/api/user/main-wallet/${currentUser?.id}`).then((response)=>{
      setMainWallet(response.data[0].amount)
   }).catch((err)=>{
-    setError(err)
+    // setError(err)
     console.log(err)
   })   
     }
@@ -393,7 +395,7 @@ handleDeposit()
   axios.get(`https://tea.earnars.com/api/user/affiliate-wallet/${currentUser?.id}`).then((response)=>{
    setAffliateWallet(response.data[0].amount)
   }).catch((err)=>{
-  setError(err)
+//   setError(err)
   console.log(err)
   })      
     }
@@ -418,7 +420,7 @@ handleDeposit()
   useEffect(()=>{
     const pala3 = ()=>{
       
-    axios.get(`https://tea.earnars.com/api/user/wallet-overview/${currentUser?.id}`).then((response)=>{
+    axios.get(`https://tea.earnars.com/api/user/wallet-overview/${currentUser.id}`).then((response)=>{
      setWalletOverview(response.data)
     }).catch((err)=>{
  setError(err)
@@ -439,10 +441,9 @@ handleDeposit()
  console.log(err)
     })
      }
-
       getSubscriptionStatus()
 
-   })
+   },[])
   
 
     return(
@@ -728,7 +729,7 @@ handleDeposit()
                                 <p style={{color:"gray",fontSize:"14px",marginBottom:"5px"}}>Choose your network:</p>
                  <div className="OTPDiv">
                    <div className="codePP" onClick={iconD2}> <img src="/img/airtel.png" alt="" style={{width:"100%",borderRadius:"10px"}} /> <FontAwesomeIcon icon={faCircleCheck} className={network === "airtel"? `circleCheck ${iconShow}`:"circleCheck"}/> </div> 
-                    <div className="codePP" onClick={iconD1}> <img src="/img/mtn.png" alt="" style={{width:"100%",borderRadius:"10px"}} /><FontAwesomeIcon icon={faCircleCheck} className={network === "MTN"? `circleCheck ${iconShow}`:"circleCheck"} /> </div> 
+                    <div className="codePP" onClick={iconD1}> <img src="/img/New-mtn-logo.jpg" alt="" style={{width:"100%",borderRadius:"10px"}} /><FontAwesomeIcon icon={faCircleCheck} className={network === "MTN"? `circleCheck ${iconShow}`:"circleCheck"} /> </div> 
                      <div className="codePP" onClick={iconD}><img src="/img/glo.jpg" alt="" style={{width:"100%",borderRadius:"10px"}} />
                      <FontAwesomeIcon icon={faCircleCheck} className={network === "Glo"? `circleCheck ${iconShow}`:"circleCheck"} /> </div> 
                     

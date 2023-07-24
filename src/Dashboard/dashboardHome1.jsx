@@ -25,7 +25,7 @@ const DashboardHome1 = () => {
    const res = await axios.get(`https://tea.earnars.com/api/post/count`)
     //  setSap(res.data)
      setSap(res.data[0].id_count)
-     console.log(sap)
+    //  console.log(sap)
             }catch(err){
           console.log(err)
             }

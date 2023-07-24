@@ -170,7 +170,7 @@ const Home2=() =>{
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 1,
+      items: 1.25,
       slidesToSlide: 1 // optional, default to 1.
     }
   }

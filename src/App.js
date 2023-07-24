@@ -37,7 +37,7 @@ import DashboardHome from "./Dashboard/dashboardHome"
 
 function App() {
 
-  const [admin,setAdmin] = useState(false)
+  const [admin,setAdmin] = useState(true)
   const { currentUser } = useContext(AuthContext);
 
   const tr = window.location.pathname;

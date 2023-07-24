@@ -4,22 +4,18 @@ import {useNavigate} from "react-router-dom";
 import {AuthContext} from './context/authContext';
 import Select from 'react-select'
 import axios from "axios"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEye,faEyeSlash} from '@fortawesome/free-solid-svg-icons'
 import countryList from 'react-select-country-list'
 
 
 
 const Profile = () =>{
 
-
-  //  const resetLink = `http://localhost:3000/referral/${currentUser?.referral_code}`;
  
     const {currentUser} = useContext(AuthContext);
 
     const resetLink = `https://earnars.com/referral/${currentUser?.referral_code}`;
-    const [value, setValue] = useState('')
-    const [err,setError] = useState(null)
+    const [message, setMessage] = useState('')
+    const [err,setError] = useState("")
     const [text,setText]= useState(resetLink)
     const [isCopied, setIsCopied] = useState(false);
     const [you,setYou] = useState([])
@@ -28,15 +24,15 @@ const Profile = () =>{
 
     const [inputs,setInputs] = useState({
       country:"",
-      phoneNumber:""
+      phoneNumber:"",
+      bankName:"",
+      accountName:"",
+      accountNumber:""
 
     })
 
-        const [inputs50,setInputs50] = useState({
-         showPassword: false,
-    })
+   
 
-    // console.log(currentUser)
     const [display,setDisplay] = useState(false)
     const options = useMemo(() => countryList().getData(), [])
 
@@ -45,9 +41,7 @@ const Profile = () =>{
 
     }
 
-    // const handleClickShowPassword = () => {
-    //     setInputs50(previ=>({ ...previ, showPassword: !inputs50.showPassword }));
-    //   };
+   
 
     const changeHandler = e => {
         setInputs({
@@ -82,15 +76,22 @@ const Profile = () =>{
 
       const navigate = useNavigate()
 
-      const handleSumit = async (e)=>{
+      const handleSumit = (e)=>{
         e.preventDefault()
-       try{
-        // await update(inputs)
-         await axios.put("https://tea.earnars.com/api/post/"+ currentUser.id,inputs)
-    
-       }catch(err){
-        console.log(err.response.data)
-       }    
+
+        if((inputs.country === "") ||(inputs.phoneNumber === "") || (inputs.bankName === "") || (inputs.accountName === "") || (inputs.accountNumber === "")){
+          setError("inputs field cannot be empty")
+          setTimeout(()=>{
+              setError(" ")
+          },3000)
+        }else{
+           axios.put("https://tea.earnars.com/api/post/"+ currentUser.id,inputs).then((response)=>{
+               setMessage("Update Was Successful")
+           }).catch((err)=>{
+           console.log(err)
+           })
+        }
+       
         }
 
       useEffect(()=>{
@@ -106,19 +107,7 @@ const Profile = () =>{
             }
             disk()
         })   
-        //  useEffect(()=>{
-        //     const disk =async()=>{
-
-        //         try {
-        //        const res= await axios.get("/user/info/" + currentUser.id)
-        //         setYou(res.data[0])
-            
-        //     }catch(err){
-        //         console.log(err)
-        //     }
-        //     }
-        //     disk()
-        // },[])
+       
 
     return(
         <div className="PpDiv" style={{backgroundImage: "linear-gradient(to right, rgba(106, 116, 167, 0.34), rgba(119, 135, 182, 0.95))"}}>
@@ -146,26 +135,14 @@ const Profile = () =>{
                 <div className="EditProfileButtoon" onClick={()=>setDisplay(!display)}>update profile</div>
                 </div>
 
+
+  
                 <div>
                     <form>
-                        {display ? 
-                        <div className="WithDec">
-                            
-                        <div className="WentSon">
-                            {/* <div className="UserEm">
-                                <p className="nameFin upon">Name</p>
-                                <div><input type="text" 
-                                name="username" placeholder="Enter your name" className="Profile_Dente" onChange={handleChange} value={inputs.username}/></div>
-                            </div> */}
-                            {/* <div className="UserEm">
-                                <p className="nameFin upon">Email</p>
-                                <div><input type="email" placeholder="Enter your email" 
-                                name="email" 
-                                onChange={handleChange}className="Profile_Dente" value={inputs.email}/></div>
-                            </div> */}
-                        </div>
-                        
-                        <div className="WentSon">
+                      
+
+                         <div className="WithDec">
+                             <div className="WentSon">
                             <div  className="UserEm">
                                 <p className="nameFin upon">Country</p>
                                 <div>
@@ -184,40 +161,25 @@ const Profile = () =>{
                                 className="Profile_Dente" /></div>
                             </div>
                         </div>
-                        
-                        <div className="WentSon">
-                            
-                            {/* <div className="UserEm">
-                                <p className="nameFin upon">Password</p>
-                                <div>
-                                   <div className="sers"> <input type={inputs50.showPassword ? "text":"password"} placeholder="Password" className="Full_Name" onChange ={handleChange} name="password" value={inputs.password}
-                  />
-                  {inputs50.showPassword ?<FontAwesomeIcon icon={faEye} className="PlusIcon plusIcon2 ser1" onClick={handleClickShowPassword}/>:<FontAwesomeIcon icon={faEyeSlash} className="PlusIcon plusIcon2 ser1" onClick={handleClickShowPassword}/> }</div>
-                                </div>
-                            </div> */}
-                        </div>
-                        
-
-                         <div className="UpDatePls" onClick={handleSumit}>Update</div>
-                         </div>
-                         :""}
-
-
                          <p className="AddBankAccount">Add Bank Account Details</p>
-                         <div className="WithDec">
                         <div className="WentSon">
                             
                             <div className="UserEm">
                                 <p className="nameFin upon">Bank Name</p>
-                                <div><input type="text" placeholder="Choose your bank" className="Profile_Dente"/></div>
+                                <div><input type="text" placeholder="Choose your bank" className="Profile_Dente" name="bankName"  onChange={handleChange}/></div>
                             </div>
                             <div className="UserEm">
                                 <p className="nameFin upon">Account Name</p>
-                                <div><input type="email" placeholder="Enter account number" className="Profile_Dente"/></div>
+                                <div><input type="text" placeholder="Enter account name" className="Profile_Dente" name="accountName" onChange={handleChange }/></div>
                             </div>
                         </div>
+                        <div className="UserEm">
+                                <p className="nameFin upon">Account Number</p>
+                                <div><input type="number" placeholder="Enter account number" className="Profile_Dente" name="accountNumber" onChange={handleChange }/></div>
+                            </div>
                         <div></div>
-                        <div className="UpDatePls">Update</div>
+                        {/* <div className="UpDatePls">Update</div> */}
+                         <div className="UpDatePls" onClick={handleSumit}>Update</div>
 
                         <div className="NoteDDiv">
                         <div className="RoteDiv"></div>
@@ -226,7 +188,7 @@ const Profile = () =>{
                     </div>
 
                     <p className="mustbebak">
-                       Your bank name must be correspond with the full name you used during registration. Once your bank details are updated it cannot be changed unless valid ducuments are provided. 
+                       Your bank name must correspond with the full name you used during registration. Once your bank details are updated it cannot be changed unless valid documents are provided. 
                     </p>
                         </div>
 
