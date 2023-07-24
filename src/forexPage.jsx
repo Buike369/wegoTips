@@ -8,10 +8,11 @@ import "./style/sportsP.css"
 import "./style/slide.css"
 import background from "./img/sample.PNG";
 import AOS from 'aos';
+import { AuthContext } from './context/authContext';
 
 import { Link} from "react-router-dom";
 import Footer from "./footer"
-import { AuthContext } from './context/authContext';
+
 
 const ForexPage = () => {
 
@@ -93,9 +94,10 @@ const ForexPage = () => {
         <div className="MakingMoney">
         Making Money Daily on <span className="forexy">FOREX</span> trading is as easy as following our daily expert forecast.
         </div>
-        
+{/*         
       <Link to="/login" className="ifi"> <div className="NowUpSign"> SIGN UP NOW
-      </div></Link>
+      </div></Link> */}
+       {currentUser ? " " :  <div style={{display:"flex",justifyContent:"center",alignItems:"center"}}><Link to="/login" className="ifi"> <button className="NowUpSign" >SIGN UP NOW</button></Link> </div>}  
         <div style={{padding:"0px 12px"}} >
         <p className="SportBetting">What Is Forex Trading</p>
         <div className="outcomeBeen1">

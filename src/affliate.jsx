@@ -23,7 +23,8 @@ const Affliate =()=>{
                </div>
                <div className="EarnNaira">Earn $25 dollars or ₦12,500 Naira per referral</div>
 
-                <Link to="/login" className="ifi"> <div className="NowUpSign">Watch Now</div></Link>
+                {/* <Link to="/login" className="ifi"> <div className="NowUpSign">Watch Now</div></Link> */}
+                 {currentUser? "": <div style={{display:"flex",justifyContent:"center",alignItems:"center"}}><Link to="/login" className="ifi"> <button className="NowUpSign" >Watch Now</button></Link> </div> } 
                <div className="SimpleLet">Its easy and Simple .Lets get started with the following Steps.</div>
 
                <div className="Create_account_holder_Div">

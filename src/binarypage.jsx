@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React,{useState,useEffect,useContext} from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import "./style/sportPage.css"
 import {  faPlus,faMinus} from '@fortawesome/free-solid-svg-icons'
@@ -9,10 +9,11 @@ import Footer from "./footer"
 import { Link} from "react-router-dom";
 import "./style/slide.css"
 import background from "./img/sample.PNG";
+import { AuthContext } from './context/authContext';
 
 const BinaryPage = () => {
 
-
+ const {currentUser} = useContext(AuthContext);
     const [show,setShow]= useState(false)
     const [show1,setShow1]= useState(false)
     const [show2,setShow2]= useState(false)
@@ -93,7 +94,8 @@ const BinaryPage = () => {
         <div className="MakingMoney">
         Making Money Daily on <span className="forexy">Binary </span>trading is as easy as following our daily expert predictions
         </div>
-        <Link to="/login" className="ifi"><div className="NowUpSign">SIGN UP NOW</div></Link>
+      {currentUser ? " " :  <div style={{display:"flex",justifyContent:"center",alignItems:"center"}}><Link to="/login" className="ifi"> <button className="NowUpSign" >SIGN UP NOW</button></Link> </div>}  
+        {/* <Link to="/login" className="ifi"><div className="NowUpSign">SIGN UP NOW</div></Link> */}
         <div style={{padding:"0px 12px"}}>
         <p className="SportBetting">What Is Binary Trading</p>
         <div className="outcomeBeen1">

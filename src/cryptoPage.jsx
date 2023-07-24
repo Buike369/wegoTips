@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React,{useState,useEffect,useContext} from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import "./style/sportPage.css"
 import {  faPlus,faMinus} from '@fortawesome/free-solid-svg-icons'
@@ -9,8 +9,10 @@ import AOS from 'aos';
 import { Link} from "react-router-dom";
 import "./style/slide.css"
 import background from "./img/sample.PNG";
+import { AuthContext } from './context/authContext';
 
 const CryptoPage = () => {
+  const {currentUser} = useContext(AuthContext);
 
 
     const [show,setShow]= useState(false)
@@ -90,7 +92,8 @@ const CryptoPage = () => {
         <div className="MakingMoney">
         Making Money Daily on <span className="forexy">CRYPTOCURRENCY</span> trading is as easy as following our daily expert predictions
         </div>
-      <div style={{display:"flex",justifyContent:"center",alignItems:"center"}}><Link to="/login" className="ifi"> <button className="NowUpSign" >SIGN UP NOW</button></Link> </div>
+        {currentUser ? " " :  <div style={{display:"flex",justifyContent:"center",alignItems:"center"}}><Link to="/login" className="ifi"> <button className="NowUpSign" >SIGN UP NOW</button></Link> </div>}  
+      {/* <div style={{display:"flex",justifyContent:"center",alignItems:"center"}}><Link to="/login" className="ifi"> <button className="NowUpSign" >SIGN UP NOW</button></Link> </div> */}
         <div style={{padding:"0px 12px"}} >
         <p className="SportBetting">What Is Cryptocurrency Trading</p>
         <div className="outcomeBeen1">

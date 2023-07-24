@@ -95,7 +95,8 @@ const SportsPage = () => {
         Making Money Daily on <span className="forexy">SPORTS</span> trading is as easy as following our daily expert predictions
         </div>
         
-        <Link to="/login" className="ifi"><div className="NowUpSign">  SIGN UP NOW</div></Link>
+        {/* <Link to="/login" className="ifi"><div className="NowUpSign">  SIGN UP NOW</div></Link> */}
+        {currentUser ? " " :  <div style={{display:"flex",justifyContent:"center",alignItems:"center"}}><Link to="/login" className="ifi"> <button className="NowUpSign" >SIGN UP NOW</button></Link> </div>}  
         <div style={{padding:"0px 12px"}}>
         <p className="SportBetting">What Is Sports Betting</p>
         <div className="outcomeBeen1">
