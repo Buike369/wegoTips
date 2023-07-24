@@ -427,7 +427,7 @@ useEffect(()=>{
         
 
            <div className="Rtme">
-               <div className="loud">Our Results Speaks Louder</div>
+               <div className="loud" style={{color:(sports === "cryptocurrency") ? "#5df362":(sports=== "binary")? "#a4a6ef" :(sports ==="sports") ? "#6fffd2a8" : "#e1ca3b"}}>Our Results Speaks Louder</div>
                <div className="ye"></div>
                <div className="faith">
                <div className="Forex1">
@@ -464,7 +464,7 @@ useEffect(()=>{
 >
                { (loading) ?  sportItem.map((app,id)=>(
                <div className="sport2 cappin yellowD" key={id}>
-                       <div className="divS"><span className="Nog">Game No: </span>SP-{date}/{app.game_no}</div>
+                       <div className="divS"><span className="Nog rere">Game No: </span>SP-{date}/{app.game_no}</div>
                        <p className="dailyP21">Daily Profit</p>
                        <p className="Dyc">{app.profit}%</p>
                        <p className="addErn">odd:{app.odd}</p>
@@ -472,7 +472,7 @@ useEffect(()=>{
 
                    </div> )): post1.map((app,id)=>(
                    <div className="sport2 cappin yellowD" key={id}>
-                       <div className="divS"><span className="Nog">Game No: </span>SP-{date}/{app.game_no}</div>
+                       <div className="divS"><span className="Nog rere">Game No: </span>SP-{date}/{app.game_no}</div>
                        <p className="dailyP21">Daily Profit</p>
                        <p className="Dyc">{app.daily_profit}%</p>
                        <p className="addErn">odd:{app.odd}</p>
@@ -758,7 +758,7 @@ useEffect(()=>{
               <div className="Rtme">
            
               <div className="TrustSeal" style={{paddingTop:"14px"}} >
-                 <div className="SealY">Earnars Trust Seal</div>
+                 <div className="SealY" style={{color:(sports === "cryptocurrency") ? "#5df362":(sports=== "binary")? "#7b7ee2" :(sports ==="sports") ? "#6fffd2a8" : "#e1ca3b"}}>Earnars Trust Seal</div>
                   <div style={{width:"120px",margin:"0 auto 10px auto",borderBottom:" 1px solid #45527a"}}></div>
                  <p className="ifYou">If you judiciously follow our predictions and apply our risk reward ratio and dont turn profit at the end of the month, We will refund your subscription money or your next month subscription becomes free.</p>
 <p className="ifYou lio">T&C Apply</p>
@@ -774,7 +774,7 @@ useEffect(()=>{
            <div className="Make15">
                <div>
                    <div>
-                       <p className="millionM">Make 1 million Naira monthly </p>
+                       <p className="millionM"  style={{color:(sports === "cryptocurrency") ? "#5df362":(sports=== "binary")? "#7b7ee2" :(sports ==="sports") ? "#6fffd2a8" : "#e1ca3b"}} >Make 1 million Naira monthly </p>
                        <p className="OnRef">On Referral Commission</p>
                    </div>
                </div>
@@ -817,7 +817,7 @@ useEffect(()=>{
 
       <div className="WhatD">
          <div className="Rtme">
-         <div className="UsAbout">What Earnars Say About Us</div>
+         <div className="UsAbout" style={{color:(sports === "cryptocurrency") ? "#5df362":(sports=== "binary")? "#a4a6ef" :(sports ==="sports") ? "#6fffd2a8" : "#e1ca3b"}}>What Earnars Say About Us</div>
         
          {/* <div className="divUnder1"></div> */}
          <div className="CarouseDivDiv marginMu fadama">
