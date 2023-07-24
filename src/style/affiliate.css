@@ -145,14 +145,15 @@
     width:26%;
 }
 .Package_Up{
+        background-color: #4f5d8f00;
+            background-image: linear-gradient(41deg, #6e7ba9 0%, #172a686e 100%);
+            width: 66%;
+            margin: 20px auto;
+            padding: 30px 10px;
+            border-radius: 5px;
+            box-shadow: 0px 2px 12px #1e2b5c8c;
   
-background-color: #3c476e;
-    background-image: linear-gradient(45deg, #00030ca8 0%, #172a6857 100%);
-    width: 66%;
-    margin: 20px auto;
-    padding: 30px 10px;
-    border-radius: 5px;
-    box-shadow: 0px 2px 12px #1e2b5c;
+
 }
 .Each_Time_your{
     text-align: center;
