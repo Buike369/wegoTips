@@ -69,7 +69,7 @@ const DashboardUser = () => {
         {/* <div className="helpin1"><div className="Searchh" >Search</div></div> */}
       </div>
 
-         <div className="TimeDiv12">
+         {/* <div className="TimeDiv12">
               <ul className="TimeDiv">
                 <li className="phone">S/N</li>
                 <li className="phoneNu">PHONENUMER</li>
@@ -105,7 +105,43 @@ const DashboardUser = () => {
           
                 </div>
               </div>
-            </div>
+            </div> */}
+
+
+            <div role="region" aria-labelledby="caption" tabindex="0">
+  <table className='linema'>
+   
+    <thead>
+      <tr>
+        <th style={{width:"50px"}}>S/N</th>
+        <th style={{width:"100px"}}>PHONENUMBER</th>
+        <th style={{width:"150px"}}>USERNAME</th>
+        <th style={{width:"300px"}}>EMAIL</th>
+        <th>STATUS</th>
+        <th>ACTION</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+       {filteredData.map((user,id)=>(
+       
+      <tr key={id} className={(user.id %2 === 0)?" ADDTimeDbg":"ADDTimeDbg1"}>
+        <th className={(user.id %2 === 0)?" ADDTimeDbg":"ADDTimeDbg1"}>{user.id}</th>
+        <td>{user.phone_number}</td>
+        <td>{user.username}</td>
+        <td>{user.email}</td>
+        <td>{user.active?"Active":"Inactive"}</td>
+        <td>4</td>
+        
+      </tr>
+  
+         ))}
+      
+   
+     
+    </tbody>
+  </table>
+</div>
            
       
     </div>

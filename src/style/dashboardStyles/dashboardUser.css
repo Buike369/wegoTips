@@ -88,5 +88,94 @@
     padding:10px 10px;
     font-weight: 800;
     font-size: 16px;
-    border-radius: 4px;
+    border-radius: 4px;   
+
 }
+
+
+
+
+
+
+
+
+
+
+
+.linema {
+    font-family: "Fraunces", serif;
+    font-size: 125%;
+    white-space: nowrap;
+    margin: 0;
+    border: none;
+    border-collapse: separate;
+    border-spacing: 0;
+    table-layout: fixed;
+    background-color: #3c476e;
+    padding:10px 10px;
+ 
+    /* border: 1px solid black; */
+}
+
+.linema td,
+.linema th {
+    border: none;
+    padding: 0.5rem 1rem;
+}
+
+.linema thead th {
+    padding: 10px 3px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 10vw;
+        background-color: #1d2848;
+}
+
+
+.linema td {
+    /* background: #fff; */
+    padding: 4px 5px;
+    text-align: center;
+}
+
+.linema tbody th {
+    font-weight: 100;
+    font-style: italic;
+    text-align: left;
+    position: relative;
+}
+
+.linema thead th:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 5;
+    background-color: #1d2848;
+    
+}
+.linema thead tr,
+.linema body tr{
+    overflow-x: scroll;
+}
+
+.linema tbody th {
+    position: sticky;
+    left: 0;
+    /* background-color: #3c476e; */
+   
+    z-index: 1;
+}
+
+
+
+[role="region"][aria-labelledby][tabindex] {
+    width: 100%;
+    max-height: 98vh;
+    overflow: scroll;
+}
+
+[role="region"][aria-labelledby][tabindex]:focus {
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+    outline: 0;
+}
+
