@@ -27,10 +27,13 @@ const Otp =()=>{
     //  navigate('/otp')
      
      setSuccess("Send Successfully, check ur Email ")
+     setTimeout(()=>{
+          setSuccess("")
+     },5000)
     
    }catch(err){
     setError(err.response.data.msg)
-    console.log(err.response.data.msg)
+    // console.log(err.response.data.msg)
    } 
      
     

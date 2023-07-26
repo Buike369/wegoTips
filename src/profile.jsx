@@ -79,7 +79,7 @@ const Profile = () =>{
       const handleSumit = (e)=>{
         e.preventDefault()
 
-        if((inputs.country === "") ||(inputs.phoneNumber === "") || (inputs.bankName === "") || (inputs.accountName === "") || (inputs.accountNumber === "")){
+        if((inputs.country.length === 0) ||(inputs.phoneNumber.length === "") || (inputs.bankName.length === 0) || (inputs.accountName.length === 0) || (inputs.accountNumber.length === 0)){
           setError("inputs field cannot be empty")
           setTimeout(()=>{
               setError(" ")

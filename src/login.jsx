@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEye,faEyeSlash} from '@fortawesome/free-solid-svg-icons'
 import { Link,useNavigate} from "react-router-dom";
 import {AuthContext}from "./context/authContext"
+import validator from 'validator';
+import SuccessN from "./success1"
 
 // import {GoogleLogin} from  'react-google-login'
 
@@ -41,6 +43,18 @@ const Login =()=>{
 
     const handleSumit1 = async (e) =>{
     e.preventDefault()
+    if(validator.isEmail(inputs.email) === false){
+            setError("invalid Email")
+      setTimeout(()=>{
+            setError("")
+           },3000)
+ 
+    }else if((inputs.email.length === 0) || (inputs.password.length === 0 )){
+        setError("email or password filed is empty")
+      setTimeout(()=>{
+            setError("")
+           },3000)
+    }else{
    try{
     await login(inputs)
      navigate('/')
@@ -51,8 +65,8 @@ const Login =()=>{
       setTimeout(()=>{
             setError("")
            },3000)
-    console.log(err)
-   }    
+   
+   }  }   
     }
     return(
         <div className="BgColor" style={{backgroundImage: "linear-gradient(to right, rgba(106, 116, 167, 0.34), rgba(119, 135, 182, 0.95))"}}>
@@ -82,6 +96,7 @@ const Login =()=>{
            </div>
            </div>
            </div>
+             {/* <SuccessN/> */}
         </div>
     )
 }

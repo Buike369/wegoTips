@@ -17,7 +17,9 @@ export const AuthContextProvider = ({children})=>{
     }
 
       const forgotPassword = async(email2)=>{
-       const res = await axios.post("https://tea.earnars.com/api/auth/password-reset",email2);
+      //  const res = await axios.post("http://localhost:8080/api/auth/password-reset",email2);
+        const res = await axios.post("https://tea.earnars.com/api/auth/password-reset",email2);
+
        setForgotEmail(res.data.msg)
       //  console.log(res)
     }

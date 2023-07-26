@@ -6,6 +6,7 @@ import "./style/forgotpassword.css"
 import { Link,useNavigate} from "react-router-dom";
 import axios from "axios"
 import {AuthContext}from "./context/authContext"
+import validator from 'validator';
 
 
 
@@ -29,6 +30,7 @@ const ForgotPassword =()=>{
     
 
     const [err,setError]= useState(null)
+    // const [success,setSuccess]= useState("")
 
     const handleChange = e =>{
    setEmail2( prev=>({...prev,[e.target.name]:e.target.value}))
@@ -43,17 +45,33 @@ const ForgotPassword =()=>{
 
     const handleSumit1 = async (e) =>{
     e.preventDefault()
-
-   try{
+    if(email2.email.length === 0){
+           setError("input field is empty")
+           setTimeout(()=>{
+             setError("")
+           },3000)
+    }else
+      if(validator.isEmail(email2.email) === true){
+          try{
     // await axios.post("/auth/forgotpassword",email2)
     await forgotPassword(email2)
      navigate('/otp')
-     console.log('success')
+
     
    }catch(err){
     setError(err.response.data.msg)
-    console.log(err.response.data.msg)
+     setTimeout(()=>{
+             setError("")
+           },3000)
+
    } 
+      }else{
+           setError("invalid email")
+            setTimeout(()=>{
+             setError("")
+           },3000)
+      }
+  
      
     
     }

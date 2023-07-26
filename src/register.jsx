@@ -5,9 +5,21 @@ import axios from "axios"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEye,faEyeSlash} from '@fortawesome/free-solid-svg-icons'
 import { faGooglePlusG}from '@fortawesome/free-brands-svg-icons'
-import validator from "validator"
+import validator from 'validator';
+import { GoogleLogin } from "react-google-login"
+import SuccessN from "./success1"
 
 const Register =()=>{
+
+  // const responseGoogle = async (response)=>{
+  //   try{
+  
+  //     const res = await axios.post("http://localhost:8080/auth/google", {tokenId:response.tokenId})
+  //     console.log(res.data)
+  //   }catch(err){
+  //      console.log(err)
+  //   }
+  // }
 
     const [inputs,setInputs]=useState({
         username:"",
@@ -16,7 +28,8 @@ const Register =()=>{
     })
     const [isValid,setIsValid] = useState(false)
 
-    const [success,setSuccess] = useState("")
+    const [message,setMessage] = useState("")
+    const [message1,setMessage1] = useState("")
     const [inputs50,setInputs50]=useState({
          showPassword: false,
     })
@@ -42,18 +55,54 @@ const Register =()=>{
 
        const handleSumit =(e)=>{
           e.preventDefault()
-  
-         axios.post("https://tea.earnars.com/api/auth/register",inputs).then((response)=>{
-            console.log(response)
-            setSuccess("Successful registration")
-         setTimeout(()=>{
-            setSuccess("")
+     if(inputs.password.length <= 8){
+      setError("password strength is poor ")
+            setTimeout(()=>{
+            setError("")
            },3000)
-        navigate('/login')
+     }else if((inputs.password.length === 0) || (inputs.email.length === 0) || (inputs.username.length === 0) ){
+          setError("password or email or username  field is empty") 
+          setTimeout(()=>{
+            setError("")
+           },3000)
+     }else if(inputs.password.length  > 20){
+       setError("password length is too long ")
+            setTimeout(()=>{
+            setError("")
+           },3000)
+     }else if(validator.isEmail(inputs.email) === false){
+          setError("invalid email ")
+            setTimeout(()=>{
+            setError("")
+           },3000)
+     }else{
+         axios.post("https://tea.earnars.com/api/auth/register",inputs).then((response)=>{
+            // console.log(response.data)
+            // setMessage(response.data.msg)
+            if(response.data === "User already exist"){
+               setMessage1(response.data)
+                 setTimeout(()=>{
+            setMessage1("")
+           },3000)  
+            }else{
+               setMessage(response.data)
+              setTimeout(()=>{
+            setMessage("")
+              navigate('/login')
+           },5000)
+        // navigate('/login')
+            }
+       
              
          }).catch((err)=>{
-          console.log(err)
+          setError("internal server error")
+           setTimeout(()=>{
+      setError("")
+            
+           },3000)
+           
          }) 
+          }
     }
 
     const handleClickShowPassword = () => {
@@ -70,10 +119,10 @@ const Register =()=>{
               <div style={{padding:"0px 5px"}}>
             <div className="Form_Div">
                 <form>
-      {success && <div style={{color:"#fff",position:"absolute",zIndex:"500",left:"50%",right:"50%",top:"-5%",padding:"5px 10px",backgroundColor:"#20263a",width:"100%",transform:"translate(-50%,-50%)",textAlign:"center",borderRadius:"5px"}}>{success}</div>}
+      {/* {message && <div style={{color:"#fff",position:"absolute",zIndex:"500",left:"50%",right:"50%",top:"-5%",padding:"5px 10px",backgroundColor:"#20263a",width:"100%",transform:"translate(-50%,-50%)",textAlign:"center",borderRadius:"5px"}}>{message}</div>} */}
 
                      <p className="New_Account">Register New Account</p>
-                      {success && <p style={{color:"#fff"}}>{success}</p>}
+                      {/* {message && <p style={{color:"#fff"}}>{message}</p>} */}
                     <div> <input type="text" placeholder="User_name"  className="Full_Name" onChange={handleChange} name="username"/></div>
                     <div> <input type="email" placeholder="Email" className="Full_Name" onChange={handleChange} name="email"/></div>
                   {/* {isValid ? "": <p style={{color:"#fff"}}>invalid email </p>} */}
@@ -82,6 +131,8 @@ const Register =()=>{
                   />
                   {inputs50.showPassword ?<FontAwesomeIcon icon={faEye} className="PlusIcon plusIcon2 ser1" onClick={handleClickShowPassword}/>:<FontAwesomeIcon icon={faEyeSlash} className="PlusIcon plusIcon2 ser1" onClick={handleClickShowPassword}/> }</div>
                   {err && <p className="errpage">{err}</p>}
+                  {message1 && <p className="errpage" style={{color:"#fff"}}>{message1}</p>}
+                  
 
                      <div className="Checkbox_div"><input type="checkbox" name="over18" onChange={handleChange1} className="Bym"/> <label className="Over_18">By checking this box you declare that you are over 18yrs of age.</label></div>
                     
@@ -94,6 +145,7 @@ const Register =()=>{
                         
                          <div className="Or_With"></div>
                      </div>
+                     {/* <GoogleLogin clientId ="451426581815-ms0de6c6i4mk58d9k5d3e44q9ipqufq7.apps.googleusercontent.com" buttonText="Login with google" onSuccess={responseGoogle} onFailure={responseGoogle} cookiePolicy = {`single_host_origin`}/> */}
                      <div className="Googgle"><FontAwesomeIcon icon={faGooglePlusG} className="gooleI" /><div>Google</div><FontAwesomeIcon icon={faGooglePlusG} className="goole" /></div>
                      <p className="Already_Account">Already have an account?</p>
                      <div className="LOGIN_HERE_NOW"><Link to="/login" className="p_LoGIn">LOGIN HERE</Link></div>
@@ -102,6 +154,8 @@ const Register =()=>{
             </div>
             </div>
             </div>
+
+            {message  &&  <SuccessN succ={message}/> }
 
         </div>
     )
