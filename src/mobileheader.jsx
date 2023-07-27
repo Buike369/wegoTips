@@ -18,6 +18,8 @@ const Mobileheader = () => {
  const [register,setRegister] = useState(false)
     const [showMe,setShowMe] = useState(false)
     const [showMe1,setShowMe1] = useState(false)
+
+     const tr = window.location.pathname;
     
     const [feedBack,setFeedBack]=useState("")
     window.onscroll =()=>{
@@ -67,6 +69,7 @@ const Mobileheader = () => {
                   <img src="/img/Earnars1@72x1.png" className="emanu"/>
                 </a>
         </div>
+         {(tr === "/register") || (tr === "/login") ? " " :
         <div>
        
   
@@ -78,6 +81,7 @@ const Mobileheader = () => {
       </svg>
     </button>
         </div>
+}
 
 
         
