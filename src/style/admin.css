@@ -1,0 +1,26 @@
+.page{
+ 
+       box-shadow: none;
+        background-color: inherit;
+        border: 1px solid #6666728f;
+        color:#fff
+     
+}
+.inpupage{
+    border-radius: 5px;
+    outline:0;      
+}
+
+.textAdmin{
+    color:#ffffff;
+    font-size: 20px;
+}
+.adColor{
+    color:#8c8b99;
+}
+
+.Full_Name:focus {
+
+    box-shadow: 0px 2px 2px #181828fa !important;
+   
+}

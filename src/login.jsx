@@ -7,6 +7,7 @@ import { Link,useNavigate} from "react-router-dom";
 import {AuthContext}from "./context/authContext"
 import validator from 'validator';
 import SuccessN from "./success1"
+import "./style/admin.css"
 
 // import {GoogleLogin} from  'react-google-login'
 
@@ -69,29 +70,29 @@ const Login =()=>{
    }  }   
     }
     return(
-        <div className="BgColor" style={{backgroundImage: "linear-gradient(to right, rgba(106, 116, 167, 0.34), rgba(119, 135, 182, 0.95))"}}>
+        <div className="BgColor" style={{backgroundImage: "linear-gradient(to right, rgb(4 7 22), rgb(10 9 22))"}}>
             <div className="Form_Divbb">
                 <div style={{padding:"0px 5px"}}>
-           <div className="Form_Div renttt">
+           <div className="Form_Div renttt page">
                <form>
                   
-                  <div className="welcome4">Welcome</div>
-                  <div> <input type="email" placeholder="Email" className="Full_Name" name="email" onChange={handleChange}/></div>
-                  <div className="sers"> <input type={inputs2.showPassword ? "text":"password"} placeholder="Password" className="Full_Name" onChange ={handleChange} name="password" 
+                  <div className="welcome4 textAdmin">Welcome</div>
+                  <div> <input type="email" placeholder="Email" className="Full_Name inpupage page " name="email" onChange={handleChange}/></div>
+                  <div className="sers"> <input type={inputs2.showPassword ? "text":"password"} placeholder="Password" className="Full_Name inpupage page" onChange ={handleChange} name="password" 
                   />
                   {inputs2.showPassword ?<FontAwesomeIcon icon={faEye} className="PlusIcon plusIcon2 ser1" onClick={handleClickShowPassword}/>:<FontAwesomeIcon icon={faEyeSlash} className="PlusIcon plusIcon2 ser1" onClick={handleClickShowPassword}/> }</div>
-                  <div onClick={handleSumit1} className="loginn">LOGIN</div>
+                  <div onClick={handleSumit1} className="loginn page">LOGIN</div>
                   {err && <p className="errorP">{err}</p>}
                   <p className="FofD">Forget password ? <a href="/forgotpassword" className="sesetP"><span className="ClickMe">Click Here</span></a> </p>
                   <div className="Or_with2">
                          <div className="Or_With"></div>
-                         <p>Or register with</p>
+                         <p className="adColor">Or login with</p>
                          <div className="Or_With"></div>
                      </div>
-                     <div className="Googgle1" >Google</div>
+                     <div className="Googgle1 page" >Google</div>
                      {/* <GoogleLogin clientId="451426581815-pp6r4p2ao4p9pmntdfjqn2arug1ojr31.apps.googleusercontent.com" buttonText="login wih Google" onSuccess={responseGoogle} onFailure={responseGoogle} cookiePolicy={`single_host_origin`}/> */}
-                     <p className="Have_An">Don't have an account?</p>
-                     <div className="LOGIN_HERE_NOW"><Link to="/register" className="p_LoGIn">Register HERE</Link></div>
+                     <p className="Have_An adColor">Don't have an account?</p>
+                     <div className="LOGIN_HERE_NOW"><Link to="/register" className="p_LoGIn">Register Here</Link></div>
                </form>
            </div>
            </div>

@@ -68,8 +68,8 @@ const Footer =()=>{
                           <li className="Footer_header_title">CONTACT US</li>
                           {/* <li className="Footer_list_space"><a href="#">Terms & Conditions</a></li> */}
                           <li className="Footer_list_space"><p> WhatsApp:<a href="https://wa.me/08059279660">+234 805 927 9660</a></p></li>
-                          <li className="Footer_list_space"><p>Email Us: <a href="#">service@earnars.com</a></p></li>
-                          <li className="Footer_list_space"><p>Advert: <a href="">advert@earnars.com</a></p></li>
+                          <li className="Footer_list_space"><p>Email Us: <a href="mailto:service@earnars.com">service@earnars.com</a></p></li>
+                          <li className="Footer_list_space"><p>Advert: <a href="mailto:advert@earnars.com">advert@earnars.com</a></p></li>
                       </ul>
                   </div>
                   <div>

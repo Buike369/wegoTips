@@ -30,7 +30,8 @@ import ResetPassword from "./resetPassword"
 import { AuthContext } from './context/authContext';
 
 
-
+import Admin from "./admin"
+import AdminLogin from "./adminLogin"
 import Navbar from "./navbar"
 
 import DashboardHome from "./Dashboard/dashboardHome"
@@ -60,8 +61,7 @@ function App() {
           {!currentUser ? <Route path="/otp" element={<OTP />} /> : <Route path="/" element={<SampleHome />} />} 
           {!currentUser ? <Route path="/success" element={<Success />} /> : <Route path="/" element={<SampleHome />} />} 
           <Route path="/referral/:id" element={<Referral />} />
-          {!currentUser ? <Route path="/resetpassword#@7890abch!uitrm$y/:id" element={<ResetPassword />} /> : <Route path="/" element={<SampleHome />} />} 
-           <Route path="/sport" element={<SportPage/>} />
+        <Route path="/resetpassword/:id" element={<ResetPassword />} />
            <Route path="/forex" element={<ForexPage/>} />
            <Route path="/cryptocurrency" element={<CryptoPage/>} />
             <Route path="/binary" element={<BinaryPage/>} />
@@ -76,6 +76,8 @@ function App() {
            <Route path="/disclaimer" element={< Disclaimer/>} />
           {/* <Route path="/airtime" element={<Airtime />} /> */}
            <Route path="/termscondition" element={<TermsAndCondition  />} />
+          <Route path="/admin" element={<Admin />} />
+          <Route path="/admin/login" element={<AdminLogin/>} />
          
          
          
