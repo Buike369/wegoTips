@@ -3,7 +3,7 @@
     max-width: 1200px;
     /* height:100vh; */
     margin:100px auto;
-    border:1px solid gray;
+    border:1px solid #80808085;
     /* background-color:#0300416e ; */
     padding:20px 15px;
         /* background: linear-gradient(164deg, rgb(51 61 98 / 93%) 31%, rgb(59 86 149 / 24%) 62%, rgb(11 17 48 / 77%) 76%); */
@@ -25,7 +25,7 @@
 .overView{
     padding: 12px 10px;
         color: #fff;
-        border: 1px solid gray;
+        border: 1px solid #80808085;
         /* background-color: #1e2a50; */
         width: 32%;
         text-align: center;
@@ -63,20 +63,20 @@ background-color:#00104180;
 .Status_Active{
     text-align: center;
     margin: 32px 0 15px 0;
-    color:#fff;
+    color:#8a83a7;
     font-weight: 600;
     font-size: 18px;
 }
 .Actn{
     padding:5px 10px;
     font-size: 18px;
-        border: 1px solid gray;
+        border: 1px solid #80808085;
             border-radius: 8px;
             color: #7e7878;
     /* background-color: greenyellow; */
     
     margin-left: 10px;
-    border-radius: 3px;
+    border-radius: 6px;
 }
 /* .Firet{
  border-radius: 10px;
@@ -85,7 +85,7 @@ background-color:#00104180;
 .Main_WALL{
     width:30%;
     height:auto;
-    border: 1px solid gray;
+    border: 1px solid #80808085;
     border-radius: 10px;
         box-shadow: rgb(8 9 22) 0px 13px 27px -5px, rgb(6 8 22) 0px 8px 16px -8px;
 
@@ -104,7 +104,7 @@ background-color:#00104180;
     justify-content: center;
     align-items: center;
         background-color: #ffffff21;
-            color: #fff;
+            color: #bfc0c7;
 
 }
 .Is_KB1{
@@ -131,12 +131,13 @@ background-color:#00104180;
 }
 .add1:hover{
     background-color:#00104180;
-    color:#fff
+    color:#fff;
 }
 .add1{
     background-color: #556fbd3b;
-    color: #fff;
+    color: #d8d7db;
     border-bottom-left-radius: 10px;
+    cursor:pointer
 }
 .add2{
     /* background-color:#001041; */
@@ -153,19 +154,20 @@ background-color:#00104180;
 .Trans{
     padding:10px;
     text-align: center;
-    /* background-color:#001041; */
-    color:#fff;
+    background-color:inherit;
+    color:#d8d7db;
     cursor: pointer;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 .Trans:hover{
-    background-color:#00104180;
+    background-color:#fff;
+    color:#000
 }
 .Pay_Bills{
     width:30%;
     background-color:#262834;
-    color:#fff;
+    color:#bfc0c7;
     text-align: center;
     display:flex;
     justify-content: center;
@@ -240,7 +242,7 @@ background-color:#00104180;
     padding:10px  0;
     width:25%;
     text-align: center;
-    color:#fff
+    color:#d8d7db
 }
 .DopoR{
     display:flex;
@@ -275,7 +277,7 @@ background-color:#00104180;
 .Silver_Weekly{
     width:70%;
     box-shadow: rgb(9 9 22) 0px 13px 27px -5px, rgb(3 3 8) 0px 8px 16px -8px;
-        border: 1px solid gray;
+        border: 1px solid #80808085;
         border-radius: 10px;
     /* box-shadow: rgb(80 80 118 / 25%) 0px 13px 27px -5px, rgb(152 164 195 / 30%) 0px 8px 16px -8px; */
     
@@ -315,7 +317,7 @@ background-color:#00104180;
 .NOWYY{
    padding:12px;
    color:#fff;
-    border-top: 1px solid gray;
+    border-top: 1px solid #80808085;
    /* background-color:#3558bd; 
    */
    text-align: center; 
@@ -327,10 +329,10 @@ background-color:#00104180;
 .BUbU{
     border:none;
     padding:8px 15px;
-    background-color: #3558bd;
-    border-radius: 4px;
+    background-color: inherit;
+    border-radius: 8px;
     color:#fff;
-    border:1px solid #fff;
+    border:1px solid #80808085;
     cursor: pointer;
 
 }
@@ -341,8 +343,9 @@ background-color:#00104180;
 .InvestorBy{
     margin-top: 25px;
     background-color: #0e0c28;
-    border-radius: 5px;
+    border-radius: 8px;
     padding:15px 25px;
+    border: 1px solid #80808085;
 
 }
 .fback{
@@ -626,7 +629,7 @@ overflow: hidden;
         margin-bottom: 8px;
     }
     .AccessTo {
-        width: 70%;
+        width: 100%;
     }
     .Wallet_Up_Div {
         padding-top: 22px;

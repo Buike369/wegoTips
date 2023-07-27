@@ -465,7 +465,7 @@ const ego = [{amount:depositCash.amount,id:currentUser.id,mainA:mainWallet},depo
         <div className="Parent_Over_File_Bg BgColorT"   style={{backgroundImage: "linear-gradient(to right, rgb(4, 7, 22), rgb(10, 9, 22))"}}>
 
 
-
+<div style={{padding:"0 5px"}}>
     <div className="WallForm">
        {error && <p style={{position:"absolute",top:"18%",left:"50%",color:"#fff",textAlign:"center",background:"red",padding:"10px 5px"}}>{error}</p>}
             <div className="Wallet_P_Div Wallet_Up_Div">
@@ -800,6 +800,7 @@ const ego = [{amount:depositCash.amount,id:currentUser.id,mainA:mainWallet},depo
             </div>
            :"" }
             
+            </div>
             </div>
         </div>
     )
