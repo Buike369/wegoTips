@@ -59,13 +59,17 @@ const ResetPassword =()=>{
 
  const checkSubmit = async()=>{
     if(inputs.password1 !== inputs.password){
-        // setError1("password do not match")
-        setTimeout(
-           setError1("password do not match"),1000  
-        )
+        setError1("password do not match")
+       setTimeout(()=>{
+           setError1("")
+       },3000)
     //   setError1("password do not match")
     }else if((inputs.password.length < 10) || (inputs.password1.length < 10)){
         setError1("Increase password strength")
+           setTimeout(()=>{
+           setError1("")
+       },3000)
+       
     }else{
         if(inputs.password1 === inputs.password){
            setCheckPassword(inputs.password) 

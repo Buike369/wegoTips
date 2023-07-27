@@ -65,6 +65,7 @@ function App() {
            <Route path="/forex" element={<ForexPage/>} />
            <Route path="/cryptocurrency" element={<CryptoPage/>} />
             <Route path="/binary" element={<BinaryPage/>} />
+          <Route path="/sport" element={<SportPage />} />
           {currentUser ? <Route path="/tip" element={<Mytip />} /> : <Route path="/" element={<SampleHome />} /> } 
            <Route path="/betcalculator" element={<Virc/>} />
            <Route path="/about" element={<About/>} />

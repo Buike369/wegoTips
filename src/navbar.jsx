@@ -44,6 +44,7 @@ const Navbar= () => {
                 </a>
               
             </div>
+             {(tr === "/register") || (tr === "/login") ? " " :<>
             <div>
               <ul className="header_list">
                 <li className="Prediction_dropDown">
@@ -78,6 +79,7 @@ const Navbar= () => {
                 </li> */}
               </ul>
             </div>
+
             <div>
               {currentUser ? (
               <div>
@@ -108,6 +110,8 @@ const Navbar= () => {
                
               )}
             </div>
+  </>
+              }
           </div>
         </div>
         }

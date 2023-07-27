@@ -87,6 +87,9 @@ const Profile = () =>{
         }else{
            axios.put("https://tea.earnars.com/api/post/"+ currentUser.id,inputs).then((response)=>{
                setMessage("Update Was Successful")
+                 setTimeout(()=>{
+              setMessage(" ")
+          },3000)
            }).catch((err)=>{
            console.log(err)
            })

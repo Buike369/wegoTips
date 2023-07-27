@@ -462,7 +462,7 @@ const ego = [{amount:depositCash.amount,id:currentUser.id,mainA:mainWallet},depo
   
 
     return(
-        <div className="Parent_Over_File_Bg BgColorT"   style={{backgroundImage: "linear-gradient(to right, rgba(106, 116, 167, 0.34), rgba(119, 135, 182, 0.95))"}}>
+        <div className="Parent_Over_File_Bg BgColorT"   style={{backgroundImage: "linear-gradient(to right, rgb(4, 7, 22), rgb(10, 9, 22))"}}>
 
 
 
@@ -478,7 +478,7 @@ const ego = [{amount:depositCash.amount,id:currentUser.id,mainA:mainWallet},depo
                 </div>
                 </div>
 
-                <p className="Status_Active">Account Status <span className="Actn" style={{backgroundColor:subActive==="active"?"greenyellow":"gray"}}>{subActive}</span></p>
+                <p className="Status_Active">Account Status <span className="Actn" style={{backgroundColor:subActive==="active"?"greenyellow":"#080816"}}>{subActive}</span></p>
                 
 
                 <div className={divFlex}>
