@@ -1330,7 +1330,7 @@ useEffect(()=>{
 </div> 
  <div style={{padding:"4px 10px"}}>           
 <div className="earnSayPp">
-  <p className="partnerShip">"Through Earnars partnership program I made 250k in just two weeks by referring 20friends to the platform."</p>
+  <p className="partnerShip">"I made Over 1 Million in Less Than 30 Days by just following Earnars.com prediction on Sports and Forex Trading.I would recommend earnars to any body any time."</p>
   <div className="favourPath">
     <div><img src="/img/create.png" alt="" className="popopo"/></div>
      <div>
@@ -1342,7 +1342,7 @@ useEffect(()=>{
 </div>
 <div style={{padding:"4px 10px"}}>
 <div className="earnSayPp">
-  <p className="partnerShip">"Through Earnars partnership program I made 250k in just two weeks by referring 20friends to the platform."</p>
+  <p className="partnerShip">"Your company is truly upstanding and is behind its product 100%. Keep up the excellent work. Earnars is the most valuable prediction portal i have EVER come across. I love your system."</p>
   <div className="favourPath">
     <div><img src="/img/create.png" alt="" className="popopo"/></div>
      <div>
