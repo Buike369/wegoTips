@@ -85,8 +85,7 @@ const SportsPage = () => {
   },[])
 
   return (
-    <div style={{ backgroundImage: "linear-gradient(to right, rgba(106, 116, 167, 0.34), rgba(119, 135, 182, 0.95))"
-}}>
+    <div style={{backgroundColor:"#0f0b34"}}>
         <div className="sportPa">
         <div>
           <img src="/img/earnarsBanner34.png" className="AffliateBanner" alt=""/>
@@ -100,9 +99,7 @@ const SportsPage = () => {
         <div style={{padding:"0px 12px"}}>
         <p className="SportBetting">What Is Sports Betting</p>
         <div className="outcomeBeen1">
-        <div className="outcomeBeen" style={{ 
-      backgroundImage: `url(${background})`
-,backgroundPosition:"left right bottom top",backgroundRepeat:"no-repeat",padding:"18px 15px",backgroundSize:"cover"}}>
+        <div className="outcomeBeen" >
         <span className="forexy1"> Sports </span>betting is the activity of predicting sports results and placing a wager on the outcome.  <span className="forexy1">Sport </span>betting is legally recognized across the world and has actually been an alternative source of income for millions of sport fans across the world.  
         </div>
         </div>
@@ -112,7 +109,7 @@ const SportsPage = () => {
         <div className="ifNi"></div>
         <div className="EasyTi" >
             <div className="EasyTim" style={{ 
-      background: "linear-gradient(206deg, rgb(51 50 85) 31%, rgb(50 49 90 / 54%) 62%, rgb(53 56 92 / 44%) 76%)",backgroundPosition:"center center",backgroundRepeat:"no-repeat",backgroundSize:"cover"}} data-aos="fade-up" data-aos-duration="3000"
+      background: "rgb(51, 50, 85)",backgroundPosition:"center center",backgroundRepeat:"no-repeat",backgroundSize:"cover"}} data-aos="fade-up" data-aos-duration="3000"
              data-aos-easing="linear">
             <div className="onV">
             <img src="/img/icinC1.svg" alt="every source of fund" className="everyday"/>
@@ -132,7 +129,7 @@ before you begin staking.
 With $1 dollar or ₦500 naira you can start staking. You also have the chance to bet with the same amount from time to time.</div>
             </div>
             <div className="EasyTim" style={{ 
-      background: "linear-gradient(206deg, rgb(51 50 85) 31%, rgb(50 49 90 / 54%) 62%, rgb(53 56 92 / 44%) 76%)",backgroundPosition:"center center",backgroundRepeat:"no-repeat",backgroundSize:"cover"}} data-aos="fade-up" data-aos-duration="3000"
+      background: "rgb(51, 50, 85)",backgroundPosition:"center center",backgroundRepeat:"no-repeat",backgroundSize:"cover"}} data-aos="fade-up" data-aos-duration="3000"
              data-aos-easing="linear">
             <div className="onV">
             <img src="/img/icinC1.svg" alt="every source of fund" className="everyday"/>
@@ -143,7 +140,7 @@ With $1 dollar or ₦500 naira you can start staking. You also have the chance t
 </div>
             </div>
             <div className="EasyTim" style={{ 
-      background: "linear-gradient(206deg, rgb(51 50 85) 31%, rgb(50 49 90 / 54%) 62%, rgb(53 56 92 / 44%) 76%)",backgroundPosition:"center center",backgroundRepeat:"no-repeat",backgroundSize:"cover"}} data-aos="fade-up" data-aos-duration="3000"
+      background: "rgb(51, 50, 85)",backgroundPosition:"center center",backgroundRepeat:"no-repeat",backgroundSize:"cover"}} data-aos="fade-up" data-aos-duration="3000"
              data-aos-easing="linear">
               <div className="onV">
             <img src="/img/icinC1.svg" alt="every source of fund" className="everyday"/>
@@ -258,7 +255,7 @@ You can also enjoy sports betting anywhere and anytime e.g from the comfort of y
              data-aos-easing="linear" >
             <div className="firstTom faqSports" data-aos="fade-down" data-aos-duration="3000"
              data-aos-easing="linear">FAQ</div>
-            <div>
+            <div className="homeChange">
               <div className="HowFarBro" onClick={drup}>
                 <span>How do I register  with a broker?</span>{" "}
                 <span className="IconSpace">
@@ -274,7 +271,7 @@ with more than one broker.
                 ""
               )}
             </div>
-            <div>
+            <div  className="homeChange">
               <div className="HowFarBro" onClick={drup1}>
                 <span>I dont Know anything about betting,What should I do?</span>
                 <span className="IconSpace">
@@ -289,7 +286,7 @@ with more than one broker.
                 ""
               )}
             </div>
-            <div>
+            <div className="homeChange">
               <div className="HowFarBro" onClick={drup2}>
                 <span> How can I fund my account?</span>
                 <span className="IconSpace">
@@ -304,7 +301,7 @@ with more than one broker.
                 ""
               )}
             </div>
-            <div>
+            <div className="homeChange">
               <div className="HowFarBro" onClick={drup3}>
                 <span> Can your company bet for me and pay me percentage monthly? </span>
                 <span className="IconSpace">
@@ -320,7 +317,7 @@ We do not manage users funds or bet for any user, we only forecast/predicts game
                 ""
               )}
             </div>
-            <div>
+            <div className="homeChange">
               <div className="HowFarBro" onClick={drup4}>
                 <span>How much do I bet in every game?</span>
                 <span className="IconSpace">
@@ -335,7 +332,7 @@ We do not manage users funds or bet for any user, we only forecast/predicts game
                 ""
               )}
             </div>
-            <div>
+            <div className="homeChange">
               <div className="HowFarBro" onClick={drup5}>
                 <span> What is the guarantee am going to make money betting?</span>
                 <span className="IconSpace">

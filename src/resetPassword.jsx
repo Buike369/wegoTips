@@ -90,17 +90,18 @@ const ResetPassword =()=>{
  }
 
     return(
-        <div className="BgColor" style={{backgroundImage: "linear-gradient(to right, rgba(106, 116, 167, 0.34), rgba(119, 135, 182, 0.95))"}}>
+        <div className="BgColor" style={{background:"#0f0b34"}}>
             <div className="Form_Divbb">
+                <div style={{padding:"0 5px"}}>
            <div className="Form_Div renttt">
                <form>
                   
                   <div className="welcome4">Change Password</div>
                   {error1 && <p style={{color:"#fff"}}>{error1}</p>}
                   <p className="NewpAss">New Password</p>
-                  <div> <input type= {inputs2.showPassword ? "text":"password"} placeholder="password" className="Full_Name pCard1" name="password" onChange={handleChange}/></div>
+                  <div style={{marginBottom:"10px"}}> <input type= {inputs2.showPassword ? "text":"password"} placeholder="password" className="Full_Name inpupage page" name="password" onChange={handleChange}/></div>
                    <p className="NewpAss">Confirm Password</p>
-                  <div className="sers"> <input type={inputs2.showPassword ? "text":"password"} placeholder= "confirm_Password" className="Full_Name" onChange ={handleChange} name="password1" 
+                  <div className="sers"> <input type={inputs2.showPassword ? "text":"password"} placeholder= "confirm_Password" className="Full_Name inpupage page" onChange ={handleChange} name="password1" 
                   />
                   {inputs2.showPassword ?<FontAwesomeIcon icon={faEye} className="PlusIcon plusIcon2 ser1" onClick={handleClickShowPassword}/>:<FontAwesomeIcon icon={faEyeSlash} className="PlusIcon plusIcon2 ser1" onClick={handleClickShowPassword}/> }</div>
                    {/* <div className="Checkbox_div"><input type="checkbox" name="over18"  className="Bym"/> <label className="Over_18">I accept the Terms and Conditions</label></div> */}
@@ -108,6 +109,7 @@ const ResetPassword =()=>{
 
                   
                </form>
+           </div>
            </div>
            </div>
         </div>

@@ -10,6 +10,7 @@ import AOS from 'aos';
 import "./style/home2.css"
 import axios from "axios";
 import { useLocation } from "react-router"
+import "./style/background.css"
 
 import background from "./img/sample.PNG";
 
@@ -174,6 +175,26 @@ const Home2=() =>{
       slidesToSlide: 1 // optional, default to 1.
     }
   }
+
+  
+  const responsive2 = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 2,
+      slidesToSlide: 1// optional, default to 1.
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+      slidesToSlide: 1 // optional, default to 1.
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+      slidesToSlide: 1 // optional, default to 1.
+    }
+  }
+
 
 
 
@@ -358,7 +379,7 @@ useEffect(()=>{
                <div className="commT"  data-aos="fade-up" data-aos-duration="3000"
              data-aos-easing="linear" >
                    <div className="FreeComm">Forex Trading</div>
-                  <div style={{padding:"0 20px"}}><div style={{width:"100%",borderBottom:"1px solid rgb(87 104 157 / 29%)",margin:"0 auto 10px auto"}}></div></div>
+                  <div style={{padding:"0 40px"}}><div style={{width:"100%",borderBottom:"1px solid rgb(99 91 146)",margin:"0 auto 10px auto"}}></div></div>
                    <img src="/img/forexIcon.png" alt="not found" className="ballSport1 ffoo"/>
                    <img src="/img/forex12.png" alt="not found" className="ballSport ffoo"/>
                    <p className="Saving">Earn</p>
@@ -372,7 +393,7 @@ useEffect(()=>{
                <div className="commT dese bg-white-box " data-aos="fade-up" data-aos-duration="3000"
              data-aos-easing="linear" > 
                    <div className="FreeComm">Sports Prediction</div>
-                   <div style={{padding:"0 20px"}}><div style={{width:"100%",borderBottom:"1px solid rgb(87 104 157 / 29%)",margin:"0 auto 10px auto"}}></div></div>
+                   <div style={{padding:"0 40px"}}><div style={{width:"100%",borderBottom:"1px solid rgb(99 91 146)",margin:"0 auto 10px auto"}}></div></div>
                    <img src="/img/sport.png" alt="not found" className="ballSport1 ffoo"/>
                    <img src="/img/sports1.png" alt="not found" className="ballSport ffoo"/>
 
@@ -393,7 +414,7 @@ useEffect(()=>{
                <div className="commT bg-yellow-box" data-aos="fade-up" data-aos-duration="3000"
              data-aos-easing="linear">
                    <div className="FreeComm">Cryptocurrency Trading</div>
-                   <div style={{padding:"0 20px"}}><div style={{width:"100%",borderBottom:"1px solid rgb(87 104 157 / 29%)",margin:"0 auto 10px auto"}}></div></div>
+                   <div style={{padding:"0 40px"}}><div style={{width:"100%",borderBottom:"1px solid rgb(99 91 146)",margin:"0 auto 10px auto"}}></div></div>
                    <img src="/img/crypto.png" alt="not found" className="ballSport1 ffoo"/>
                    <img src="/img/crypto1.png" alt="not found" className="ballSport ffoo"/>
                    <p className="Saving">Earn</p>
@@ -407,7 +428,7 @@ useEffect(()=>{
                <div className="commT dese bg-blue-box" data-aos="fade-up" data-aos-duration="3000"
              data-aos-easing="linear">
                    <div className="FreeComm">Binary Option Trading</div>
-                   <div style={{padding:"0 20px"}}><div style={{width:"100%",borderBottom:"1px solid rgb(87 104 157 / 29%)",margin:"0 auto 10px auto"}}></div></div>
+                   <div style={{padding:"0 40px"}}><div style={{width:"100%",borderBottom:"1px solid rgb(99 91 146)",margin:"0 auto 10px auto"}}></div></div>
                    <img src="/img/binary.png" alt="not found" className="ballSport1 ffoo"/>
                    <img src="/img/binary1.png" alt="not found" className="ballSport ffoo"/>
                    <p className="Saving">Earn</p>
@@ -427,7 +448,7 @@ useEffect(()=>{
         
 
            <div className="Rtme">
-               <div className="loud" style={{color:(sports === "cryptocurrency") ? "#5df362":(sports=== "binary")? "#a4a6ef" :(sports ==="sports") ? "#6fffd2a8" : "#e1ca3b"}}>Our Results Speaks Louder</div>
+               <div className="loud" style={{color:(sports === "cryptocurrency") ? "#5df362":(sports=== "binary")? "#a4a6ef" :(sports ==="sports") ? "#6fffd2a8" : "#e1ca3b"}}>Top Tipsters</div>
                <div className="ye"></div>
                <div >
                <div className="faith" >
@@ -465,22 +486,97 @@ useEffect(()=>{
  
 >
                { (loading) ?  sportItem.map((app,id)=>(
-               <div className="sport2 cappin yellowD" key={id}>
-                       <div className="divS"><span className="Nog rere">Game No: </span>SP-{date}/{app.game_no}</div>
-                       <p className="dailyP21">Daily Profit</p>
-                       <p className="Dyc">{app.profit}%</p>
-                       <p className="addErn">odd:{app.odd}</p>
-                       <div className={app.action === "earned"?"EarnLoss":"EarnLoss losscolor"}>{app.action === "earned"?"Earned":"Loss"}</div>
+              //  <div className="sport2 cappin yellowD" key={id}>
+              //          <div className="divS"><span className="Nog rere">Game No: </span>SP-{date}/{app.game_no}</div>
+              //          <p className="dailyP21">Daily Profit</p>
+              //          <p className="Dyc">{app.profit}%</p>
+              //          <p className="addErn">odd:{app.odd}</p>
+              //          <div className={app.action === "earned"?"EarnLoss":"EarnLoss losscolor"}>{app.action === "earned"?"Earned":"Loss"}</div>
 
-                   </div> )): post1.map((app,id)=>(
-                   <div className="sport2 cappin yellowD" key={id}>
-                       <div className="divS"><span className="Nog rere">Game No: </span>SP-{date}/{app.game_no}</div>
-                       <p className="dailyP21">Daily Profit</p>
-                       <p className="Dyc">{app.daily_profit}%</p>
-                       <p className="addErn">odd:{app.odd}</p>
-                       <div className={app.action === "earned"?"EarnLoss":"EarnLoss losscolor"}>{app.action === "earned"?"Earned":"Loss"}</div>
+              //      </div> 
+                <div style={{padding:"10px 0 25px 0"}}>
+                          <div className="cardProfileDiv" key={id} style={{border:"1px solid rgb(78 172 156)"}}>
+          <div className="catImgDivProfile"><img src="/img/kucoin.png" alt="" style={{width:"100%",height:"100%",borderTopRightRadius:"10px",borderTopLeftRadius:"10px"}}/></div>
+           <div className="imgcardPic"><img src="/img/create.png" alt="" className="catImgDivProfile1"/></div>
+          <div className="donKing">Don Knight</div>
+          <div className="ipconFig">
+            <div>
+              <div className="imgWay">
+                <div><img src="/img/followers.png" alt=""/></div>
+                <div>
+                  <p className="followerp1">24k</p>
+                  <p className="followerp" >Followers</p>
+                </div>
+              </div>
+            </div>
+             <div>
+               <div className="imgWay" >
+                <div><img src="/img/following.png" alt=""/></div>
+                <div>
+                  <p className="followerp1">24k</p>
+                  <p className="followerp">Following</p>
+                </div>
+              </div>
+             </div>
+          </div>
+          <div className="typing">
+            <div className="pork1">+4,345</div>
+            <div className="pork">+2,434</div>
+          </div>
+           <div className="findingPP">
+            <div className="followerp">ROI</div>
+            <div className="followerp">Profit</div>
+          </div>
 
-                   </div>
+          <div className="houseRuMM">View Profile</div>
+        </div>
+                       </div>
+                   )): post1.map((app,id)=>(
+                  //  <div className="sport2 cappin yellowD" key={id}>
+                  //      <div className="divS"><span className="Nog rere">Game No: </span>SP-{date}/{app.game_no}</div>
+                  //      <p className="dailyP21">Daily Profit</p>
+                  //      <p className="Dyc">{app.daily_profit}%</p>
+                  //      <p className="addErn">odd:{app.odd}</p>
+                  //      <div className={app.action === "earned"?"EarnLoss":"EarnLoss losscolor"}>{app.action === "earned"?"Earned":"Loss"}</div>
+
+                  //  </div>
+                    <div style={{padding:"10px 0 25px 0"}}>
+                          <div className="cardProfileDiv" key={id} style={{border:"1px solid rgb(78 172 156)"}}>
+          <div className="catImgDivProfile"><img src="/img/kucoin.png" alt="" style={{width:"100%",height:"100%",borderTopRightRadius:"10px",borderTopLeftRadius:"10px"}}/></div>
+           <div className="imgcardPic"><img src="/img/create.png" alt="" className="catImgDivProfile1"/></div>
+          <div className="donKing">Don Knight</div>
+          <div className="ipconFig">
+            <div>
+              <div className="imgWay">
+                <div><img src="/img/followers.png" alt=""/></div>
+                <div>
+                  <p className="followerp1">24k</p>
+                  <p className="followerp" >Followers</p>
+                </div>
+              </div>
+            </div>
+             <div>
+               <div className="imgWay" >
+                <div><img src="/img/following.png" alt=""/></div>
+                <div>
+                  <p className="followerp1">24k</p>
+                  <p className="followerp">Following</p>
+                </div>
+              </div>
+             </div>
+          </div>
+          <div className="typing">
+            <div className="pork1">+4,345</div>
+            <div className="pork">+2,434</div>
+          </div>
+           <div className="findingPP">
+            <div className="followerp">ROI</div>
+            <div className="followerp">Profit</div>
+          </div>
+
+          <div className="houseRuMM">View Profile</div>
+        </div>
+                       </div>
                    ))
   
                  }
@@ -522,56 +618,129 @@ useEffect(()=>{
 
 
   {(loading) ? forexItem.map((app,id)=>(
-                        <div className="sport2 cappin yellowC " key={id}>
-                            <div className="divS"><span className="Nog">Trade No: </span>FX-{date}/{app.r_trade_no}</div>
+                        // <div className="sport2 cappin yellowC " key={id}>
+                        //     <div className="divS"><span className="Nog">Trade No: </span>FX-{date}/{app.r_trade_no}</div>
 
-                            <div className="busyer">
-                            <div className="pairs">
-                                <p className="Usdj ">Pair: <span className="upcase">{app.r_pair}</span></p>
-                                <p className="Usdj">Condition: <span className="lowcase">{app.r_condition}</span></p>
-                            </div>
-                           <div className="pairs">
-                               <div>
-                                   <p className="Usdj">Entry point-{app.r_entry_point}</p>
-                                   <p className="Usdj">Exit point-{app.r_exit_point}</p>
-                               </div>
-                               <div className="Fitwem">
-                                   <p className="Usdj addpo">Take Profit</p>
-                                   <p className="Usdj addpo1" >{app.r_take_profit} pips</p>
-                               </div>
-                           </div>
+                        //     <div className="busyer">
+                        //     <div className="pairs">
+                        //         <p className="Usdj ">Pair: <span className="upcase">{app.r_pair}</span></p>
+                        //         <p className="Usdj">Condition: <span className="lowcase">{app.r_condition}</span></p>
+                        //     </div>
+                        //    <div className="pairs">
+                        //        <div>
+                        //            <p className="Usdj">Entry point-{app.r_entry_point}</p>
+                        //            <p className="Usdj">Exit point-{app.r_exit_point}</p>
+                        //        </div>
+                        //        <div className="Fitwem">
+                        //            <p className="Usdj addpo">Take Profit</p>
+                        //            <p className="Usdj addpo1" >{app.r_take_profit} pips</p>
+                        //        </div>
+                        //    </div>
 
-                           </div>
+                        //    </div>
                            
                           
-                            <div className= {app.r_check === "earned"?"EarnLoss":"EarnLoss losscolor"}><FontAwesomeIcon icon={faCheckDouble} className="icon_brand_size"/>{app.r_check === "earned"?"Earned":"Loss"}</div>
+                        //     <div className= {app.r_check === "earned"?"EarnLoss":"EarnLoss losscolor"}><FontAwesomeIcon icon={faCheckDouble} className="icon_brand_size"/>{app.r_check === "earned"?"Earned":"Loss"}</div>
      
-                        </div>)) :post.map((app,id)=>(
-                        <div className="sport2 cappin yellowC" key={id}>
-                            <div className="divS"><span className="Nog">Trade No: </span>FX-{date}/{app.r_trade_no}</div>
+                        // </div>
+                        <div style={{padding:"10px 0 25px 0"}}>
+                          <div className="cardProfileDiv" key={id} >
+          <div className="catImgDivProfile"><img src="/img/kucoin.png" alt="" style={{width:"100%",height:"100%",borderTopRightRadius:"10px",borderTopLeftRadius:"10px"}}/></div>
+           <div className="imgcardPic"><img src="/img/create.png" alt="" className="catImgDivProfile1"/></div>
+          <div className="donKing">Don Knight</div>
+          <div className="ipconFig">
+            <div>
+              <div className="imgWay">
+                <div><img src="/img/followers.png" alt=""/></div>
+                <div>
+                  <p className="followerp1">24k</p>
+                  <p className="followerp" >Followers</p>
+                </div>
+              </div>
+            </div>
+             <div>
+               <div className="imgWay" >
+                <div><img src="/img/following.png" alt=""/></div>
+                <div>
+                  <p className="followerp1">24k</p>
+                  <p className="followerp">Following</p>
+                </div>
+              </div>
+             </div>
+          </div>
+          <div className="typing">
+            <div className="pork1">+4,345</div>
+            <div className="pork">+2,434</div>
+          </div>
+           <div className="findingPP">
+            <div className="followerp">ROI</div>
+            <div className="followerp">Profit</div>
+          </div>
 
-                            <div className="busyer">
-                            <div className="pairs">
-                                <p className="Usdj ">Pair: <span className="upcase">{app.r_pair}</span></p>
-                                <p className="Usdj">Condition: <span className="lowcase">{app.r_condition}</span></p>
-                            </div>
-                           <div className="pairs">
-                               <div>
-                                   <p className="Usdj">Entry point-{app.r_entry_point}</p>
-                                   <p className="Usdj">Exit point-{app.r_exit_point}</p>
-                               </div>
-                               <div className="Fitwem">
-                                   <p className="Usdj addpo">Take Profit</p>
-                                   <p className="Usdj addpo1" >{app.r_take_profit} pips</p>
-                               </div>
-                           </div>
+          <div className="houseRuMM">View Profile</div>
+        </div>
+                       </div> )) :post.map((app,id)=>(
+                        // <div className="sport2 cappin yellowC" key={id}>
+                        //     <div className="divS"><span className="Nog">Trade No: </span>FX-{date}/{app.r_trade_no}</div>
 
-                           </div>
+                        //     <div className="busyer">
+                        //     <div className="pairs">
+                        //         <p className="Usdj ">Pair: <span className="upcase">{app.r_pair}</span></p>
+                        //         <p className="Usdj">Condition: <span className="lowcase">{app.r_condition}</span></p>
+                        //     </div>
+                        //    <div className="pairs">
+                        //        <div>
+                        //            <p className="Usdj">Entry point-{app.r_entry_point}</p>
+                        //            <p className="Usdj">Exit point-{app.r_exit_point}</p>
+                        //        </div>
+                        //        <div className="Fitwem">
+                        //            <p className="Usdj addpo">Take Profit</p>
+                        //            <p className="Usdj addpo1" >{app.r_take_profit} pips</p>
+                        //        </div>
+                        //    </div>
+
+                        //    </div>
                            
                           
-                            <div className= {app.r_check === "earned"?"EarnLoss":"EarnLoss losscolor"}><FontAwesomeIcon icon={faCheckDouble} className="icon_brand_size"/>{app.r_check === "earned"?"Earned":"Loss"}</div>
+                        //     <div className= {app.r_check === "earned"?"EarnLoss":"EarnLoss losscolor"}><FontAwesomeIcon icon={faCheckDouble} className="icon_brand_size"/>{app.r_check === "earned"?"Earned":"Loss"}</div>
      
-                        </div>
+                        // </div>
+                        <div style={{padding:"10px 0 25px 0"}}>
+                          <div className="cardProfileDiv" key={id} >
+          <div className="catImgDivProfile"><img src="/img/kucoin.png" alt="" style={{width:"100%",height:"100%",borderTopRightRadius:"10px",borderTopLeftRadius:"10px"}}/></div>
+           <div className="imgcardPic"><img src="/img/create.png" alt="" className="catImgDivProfile1"/></div>
+          <div className="donKing">Don Knight</div>
+          <div className="ipconFig">
+            <div>
+              <div className="imgWay">
+                <div><img src="/img/followers.png" alt=""/></div>
+                <div>
+                  <p className="followerp1">24k</p>
+                  <p className="followerp" >Followers</p>
+                </div>
+              </div>
+            </div>
+             <div>
+               <div className="imgWay" >
+                <div><img src="/img/following.png" alt=""/></div>
+                <div>
+                  <p className="followerp1">24k</p>
+                  <p className="followerp">Following</p>
+                </div>
+              </div>
+             </div>
+          </div>
+          <div className="typing">
+            <div className="pork1">+4,345</div>
+            <div className="pork">+2,434</div>
+          </div>
+           <div className="findingPP">
+            <div className="followerp">ROI</div>
+            <div className="followerp">Profit</div>
+          </div>
+
+          <div className="houseRuMM">View Profile</div>
+        </div></div>
                         ))}
 
                         </Carousel>
@@ -605,57 +774,132 @@ useEffect(()=>{
                >
 
                    {(loading) ? cryptoItem.map((app,id)=>(
-                    <div className="sport2 cappin yellowA" key={id}>
-                        <div className="divS"><span className="Nog Nog4">Trade No: </span>CT-{date}/{app.c_trade_no}</div>
+                    // <div className="sport2 cappin yellowA" key={id}>
+                    //     <div className="divS"><span className="Nog Nog4">Trade No: </span>CT-{date}/{app.c_trade_no}</div>
 
-                        <div className="busyer">
-                        <div className="pairs">
-                            <p className="Usdj">Pair:<span className="upcase">{app.c_pair}</span></p>
-                            <p className="Usdj">Condition:<span className="lowcase">{app.c_condition}</span></p>
-                        </div>
-                       <div className="pairs">
-                           <div>
-                               <p className="Usdj">Entry point-{app.c_entry_point}</p>
-                               <p className="Usdj">Exit point-{app.c_exit_point}</p>
-                           </div>
-                           <div className="Fitwem">
-                               <p className="Usdj Nog4">Take Profit</p>
-                               <p className="Usdj Nog4fade">{app.c_take_profit}%</p>
-                           </div>
-                       </div>
+                    //     <div className="busyer">
+                    //     <div className="pairs">
+                    //         <p className="Usdj">Pair:<span className="upcase">{app.c_pair}</span></p>
+                    //         <p className="Usdj">Condition:<span className="lowcase">{app.c_condition}</span></p>
+                    //     </div>
+                    //    <div className="pairs">
+                    //        <div>
+                    //            <p className="Usdj">Entry point-{app.c_entry_point}</p>
+                    //            <p className="Usdj">Exit point-{app.c_exit_point}</p>
+                    //        </div>
+                    //        <div className="Fitwem">
+                    //            <p className="Usdj Nog4">Take Profit</p>
+                    //            <p className="Usdj Nog4fade">{app.c_take_profit}%</p>
+                    //        </div>
+                    //    </div>
 
-                       </div>
+                    //    </div>
                        
                       
-                        <div className={app.c_check === "earned"?"EarnLoss":"EarnLoss losscolor"}>{app.c_check === "earned"?"Earned":"Loss"}</div>
+                    //     <div className={app.c_check === "earned"?"EarnLoss":"EarnLoss losscolor"}>{app.c_check === "earned"?"Earned":"Loss"}</div>
  
-                    </div>
+                    // </div>
+                      <div style={{padding:"10px 0 25px 0"}}>
+                          <div className="cardProfileDiv" key={id} style={{border:"1px solid #5df362"}}>
+          <div className="catImgDivProfile"><img src="/img/kucoin.png" alt="" style={{width:"100%",height:"100%",borderTopRightRadius:"10px",borderTopLeftRadius:"10px"}}/></div>
+           <div className="imgcardPic"><img src="/img/create.png" alt="" className="catImgDivProfile1"/></div>
+          <div className="donKing">Don Knight</div>
+          <div className="ipconFig">
+            <div>
+              <div className="imgWay">
+                <div><img src="/img/followers.png" alt=""/></div>
+                <div>
+                  <p className="followerp1">24k</p>
+                  <p className="followerp" >Followers</p>
+                </div>
+              </div>
+            </div>
+             <div>
+               <div className="imgWay" >
+                <div><img src="/img/following.png" alt=""/></div>
+                <div>
+                  <p className="followerp1">24k</p>
+                  <p className="followerp">Following</p>
+                </div>
+              </div>
+             </div>
+          </div>
+          <div className="typing">
+            <div className="pork1">+4,345</div>
+            <div className="pork">+2,434</div>
+          </div>
+           <div className="findingPP">
+            <div className="followerp">ROI</div>
+            <div className="followerp">Profit</div>
+          </div>
+
+          <div className="houseRuMM">View Profile</div>
+        </div>
+                       </div>
                     )):post3.map((app,id)=>(
-                    <div className="sport2 cappin yellowA" key={id}>
-                        <div className="divS"><span className="Nog Nog4">Trade No: </span>CT-{date}/{app.c_trade_no}</div>
+                    // <div className="sport2 cappin yellowA" key={id}>
+                    //     <div className="divS"><span className="Nog Nog4">Trade No: </span>CT-{date}/{app.c_trade_no}</div>
 
-                        <div className="busyer">
-                        <div className="pairs">
-                            <p className="Usdj">Pair:<span className="upcase">{app.c_pair}</span></p>
-                            <p className="Usdj">Condition:<span className="lowcase">{app.c_condition}</span></p>
-                        </div>
-                       <div className="pairs">
-                           <div>
-                               <p className="Usdj">Entry point-{app.c_entry_point}</p>
-                               <p className="Usdj">Exit point-{app.c_exit_point}</p>
-                           </div>
-                           <div className="Fitwem">
-                               <p className="Usdj Nog4">Take Profit</p>
-                               <p className="Usdj Nog4fade">{app.c_take_profit}%</p>
-                           </div>
-                       </div>
+                    //     <div className="busyer">
+                    //     <div className="pairs">
+                    //         <p className="Usdj">Pair:<span className="upcase">{app.c_pair}</span></p>
+                    //         <p className="Usdj">Condition:<span className="lowcase">{app.c_condition}</span></p>
+                    //     </div>
+                    //    <div className="pairs">
+                    //        <div>
+                    //            <p className="Usdj">Entry point-{app.c_entry_point}</p>
+                    //            <p className="Usdj">Exit point-{app.c_exit_point}</p>
+                    //        </div>
+                    //        <div className="Fitwem">
+                    //            <p className="Usdj Nog4">Take Profit</p>
+                    //            <p className="Usdj Nog4fade">{app.c_take_profit}%</p>
+                    //        </div>
+                    //    </div>
 
-                       </div>
+                    //    </div>
                        
                       
-                        <div className={app.c_check === "earned"?"EarnLoss":"EarnLos losscolor"}>{app.c_check === "earned"?"Earned":"Loss"}</div>
+                    //     <div className={app.c_check === "earned"?"EarnLoss":"EarnLos losscolor"}>{app.c_check === "earned"?"Earned":"Loss"}</div>
  
-                    </div>))}
+                    // </div>
+                      <div style={{padding:"10px 0 25px 0"}}>
+                          <div className="cardProfileDiv" key={id} style={{border:"1px solid #5df362"}}>
+          <div className="catImgDivProfile"><img src="/img/kucoin.png" alt="" style={{width:"100%",height:"100%",borderTopRightRadius:"10px",borderTopLeftRadius:"10px"}}/></div>
+           <div className="imgcardPic"><img src="/img/create.png" alt="" className="catImgDivProfile1"/></div>
+          <div className="donKing">Don Knight</div>
+          <div className="ipconFig">
+            <div>
+              <div className="imgWay">
+                <div><img src="/img/followers.png" alt=""/></div>
+                <div>
+                  <p className="followerp1">24k</p>
+                  <p className="followerp" >Followers</p>
+                </div>
+              </div>
+            </div>
+             <div>
+               <div className="imgWay" >
+                <div><img src="/img/following.png" alt=""/></div>
+                <div>
+                  <p className="followerp1">24k</p>
+                  <p className="followerp">Following</p>
+                </div>
+              </div>
+             </div>
+          </div>
+          <div className="typing">
+            <div className="pork1">+4,345</div>
+            <div className="pork">+2,434</div>
+          </div>
+           <div className="findingPP">
+            <div className="followerp">ROI</div>
+            <div className="followerp">Profit</div>
+          </div>
+
+          <div className="houseRuMM">View Profile</div>
+        </div>
+                       </div>
+                    ))}
                     </Carousel>
                     </div>
                     :""}
@@ -686,57 +930,131 @@ useEffect(()=>{
 
                 {(loading)? binaryItem.map((app,id)=>(
                  
-                    <div className="sport2 cappin yellowB" key={id}>
-                        <div className="divS"><span className="Nog Nog5">Trade No: </span>BN-{date}/{app.b_trade_no}</div>
+                    // <div className="sport2 cappin yellowB" key={id}>
+                    //     <div className="divS"><span className="Nog Nog5">Trade No: </span>BN-{date}/{app.b_trade_no}</div>
 
-                        <div className="busyer">
-                        <div className="pairs">
-                            <p className="Usdj">Pair: {app.b_pair}</p>
-                            <p className="Usdj">Condition: {app.b_condition}</p>
-                        </div>
-                       <div className="pairs">
-                           <div>
-                               <p className="Usdj">TIME : {app.b_expire_time}</p>
+                    //     <div className="busyer">
+                    //     <div className="pairs">
+                    //         <p className="Usdj">Pair: {app.b_pair}</p>
+                    //         <p className="Usdj">Condition: {app.b_condition}</p>
+                    //     </div>
+                    //    <div className="pairs">
+                    //        <div>
+                    //            <p className="Usdj">TIME : {app.b_expire_time}</p>
                              
-                           </div>
-                           <div className="Fitwem">
-                               <p className="Usdj Nog5">Take Profit</p>
-                               <p className="Usdj Nog5fade">{app.b_profit}%</p>
-                           </div>
-                       </div>
+                    //        </div>
+                    //        <div className="Fitwem">
+                    //            <p className="Usdj Nog5">Take Profit</p>
+                    //            <p className="Usdj Nog5fade">{app.b_profit}%</p>
+                    //        </div>
+                    //    </div>
 
-                       </div>
+                    //    </div>
                        
                       
-                        <div className={app.b_check === "earned"?"EarnLoss":"EarnLoss losscolor"}> {app.b_check === "earned"?"Earned":"Loss"}</div>
+                    //     <div className={app.b_check === "earned"?"EarnLoss":"EarnLoss losscolor"}> {app.b_check === "earned"?"Earned":"Loss"}</div>
  
-                    </div>
+                    // </div>
+                      <div style={{padding:"10px 0 25px 0"}}>
+                          <div className="cardProfileDiv" key={id} style={{border:"1px solid rgb(164 166 239)"}}>
+          <div className="catImgDivProfile"><img src="/img/kucoin.png" alt="" style={{width:"100%",height:"100%",borderTopRightRadius:"10px",borderTopLeftRadius:"10px"}}/></div>
+           <div className="imgcardPic"><img src="/img/create.png" alt="" className="catImgDivProfile1"/></div>
+          <div className="donKing">Don Knight</div>
+          <div className="ipconFig">
+            <div>
+              <div className="imgWay">
+                <div><img src="/img/followers.png" alt=""/></div>
+                <div>
+                  <p className="followerp1">24k</p>
+                  <p className="followerp" >Followers</p>
+                </div>
+              </div>
+            </div>
+             <div>
+               <div className="imgWay" >
+                <div><img src="/img/following.png" alt=""/></div>
+                <div>
+                  <p className="followerp1">24k</p>
+                  <p className="followerp">Following</p>
+                </div>
+              </div>
+             </div>
+          </div>
+          <div className="typing">
+            <div className="pork1">+4,345</div>
+            <div className="pork">+2,434</div>
+          </div>
+           <div className="findingPP">
+            <div className="followerp">ROI</div>
+            <div className="followerp">Profit</div>
+          </div>
+
+          <div className="houseRuMM">View Profile</div>
+        </div>
+                       </div>
                     )):post4.map((app,id)=>(
-                    <div className="sport2 cappin yellowB" key={id}>
-                        <div className="divS"><span className="Nog Nog5">Trade No: </span>BN-{date}/{app.b_trade_no}</div>
+                    // <div className="sport2 cappin yellowB" key={id}>
+                    //     <div className="divS"><span className="Nog Nog5">Trade No: </span>BN-{date}/{app.b_trade_no}</div>
 
-                        <div className="busyer">
-                        <div className="pairs">
-                            <p className="Usdj">Pair: {app.b_pair}</p>
-                            <p className="Usdj">Condition: {app.b_condition}</p>
-                        </div>
-                       <div className="pairs">
-                           <div>
-                               <p className="Usdj">TIME : {app.b_expire_time}</p>
+                    //     <div className="busyer">
+                    //     <div className="pairs">
+                    //         <p className="Usdj">Pair: {app.b_pair}</p>
+                    //         <p className="Usdj">Condition: {app.b_condition}</p>
+                    //     </div>
+                    //    <div className="pairs">
+                    //        <div>
+                    //            <p className="Usdj">TIME : {app.b_expire_time}</p>
                              
-                           </div>
-                           <div className="Fitwem">
-                               <p className="Usdj Nog5">Take Profit</p>
-                               <p className="Usdj Nog5fade">{app.b_profit}%</p>
-                           </div>
-                       </div>
+                    //        </div>
+                    //        <div className="Fitwem">
+                    //            <p className="Usdj Nog5">Take Profit</p>
+                    //            <p className="Usdj Nog5fade">{app.b_profit}%</p>
+                    //        </div>
+                    //    </div>
 
-                       </div>
+                    //    </div>
                        
                       
-                        <div className={app.b_check === "earned"?"EarnLoss":"EarnLoss losscolor"}> {app.b_check === "earned"?"Earned":"Loss"}</div>
+                    //     <div className={app.b_check === "earned"?"EarnLoss":"EarnLoss losscolor"}> {app.b_check === "earned"?"Earned":"Loss"}</div>
  
-                    </div>
+                    // </div>
+                      <div style={{padding:"10px 0 25px 0"}}>
+                          <div className="cardProfileDiv" key={id} style={{border:"1px solid rgb(164 166 239)"}}>
+          <div className="catImgDivProfile"><img src="/img/kucoin.png" alt="" style={{width:"100%",height:"100%",borderTopRightRadius:"10px",borderTopLeftRadius:"10px"}}/></div>
+           <div className="imgcardPic"><img src="/img/create.png" alt="" className="catImgDivProfile1"/></div>
+          <div className="donKing">Don Knight</div>
+          <div className="ipconFig">
+            <div>
+              <div className="imgWay">
+                <div><img src="/img/followers.png" alt=""/></div>
+                <div>
+                  <p className="followerp1">24k</p>
+                  <p className="followerp" >Followers</p>
+                </div>
+              </div>
+            </div>
+             <div>
+               <div className="imgWay" >
+                <div><img src="/img/following.png" alt=""/></div>
+                <div>
+                  <p className="followerp1">24k</p>
+                  <p className="followerp">Following</p>
+                </div>
+              </div>
+             </div>
+          </div>
+          <div className="typing">
+            <div className="pork1">+4,345</div>
+            <div className="pork">+2,434</div>
+          </div>
+           <div className="findingPP">
+            <div className="followerp">ROI</div>
+            <div className="followerp">Profit</div>
+          </div>
+
+          <div className="houseRuMM">View Profile</div>
+        </div>
+                       </div>
                   
                     ))}
                   
@@ -758,9 +1076,19 @@ useEffect(()=>{
            {/*section7 */}
 
            <div className="home5">
+
+              {/* <div class="sky"> */}
+    
+    {/* <div className="stars"></div>
+    <div className="stars1"></div>
+    <div className="stars2"></div> */}
+   
+
+            <div className="containerT">
              <div className="fear">
-              <div className="Rtme">
+              <div className="Rtme" >
            
+           <div style={{padding:"0px 10px"}}>
               <div className="TrustSeal" style={{paddingTop:"14px"}} >
                  <div className="SealY" style={{color:(sports === "cryptocurrency") ? "#5df362":(sports=== "binary")? "#7b7ee2" :(sports ==="sports") ? "#6fffd2a8" : "#e1ca3b"}}>Earnars Trust Seal</div>
                   <div style={{width:"120px",margin:"0 auto 10px auto",borderBottom:" 1px solid #45527a"}}></div>
@@ -769,9 +1097,11 @@ useEffect(()=>{
               </div>
               </div>
               </div>
+              </div>
 
 
            <div className="Rtme">
+             <div style={{padding:"0px 10px"}}>
            <div  className="Great" >
              <div className="with">Partners With Great Benefits  </div>
             <div className="ye"></div>
@@ -808,12 +1138,153 @@ useEffect(()=>{
            </div>
            </div>
 
+          <div className="youpin">
+
+              <div className="topPrediction">Top Predictions</div>
+              <div className="UponT">
+                <div className="sportPetNe">Sports Predictions</div>
+                <div className="SportPredictionLD">
+          
+                <div>
+                  <table className="predictnB" style={{border:"none",outline:"none"}}>
+                    <thead>
+                       <th >Date</th>
+        <th>Kick off</th>
+        <th>Match</th>
+        <th>Tips</th>
+        <th >odd</th>
+        <th >Stake</th>
+        <th>Profits</th>
+           <th>Results</th>
+        
+                    </thead>
+                    <tbody>
+                      <th>Jan 20</th>
+                      <td>13:00</td>
+                       <td>Eng v Ban Asia Cup T20	</td>
+                        <td>Ban to win</td>
+                         <td>1.72</td>
+                          <td>60.00 GBP</td>
+                          <td>-60.00 GBP</td>
+                          <td>1.72</td>
+                    </tbody>
+                  </table>
+                </div>
+                <div className="viewMorePeopl"><div className="ViewMoreButtons">See More</div></div>
+                </div>
+              
+
+               <div className="sportPetNe">Forex Predictions</div>
+                <div className="SportPredictionLD">
+          
+                <div>
+                  <table className="predictnB">
+                    <thead>
+                       <th>Date</th>
+        <th>Kick off</th>
+        <th >Match</th>
+        <th >Tips</th>
+        <th>odd</th>
+        <th>Stake</th>
+        <th>Profits</th>
+           <th>Results</th>
+        
+                    </thead>
+                    <tbody>
+                      <th>Jan 20</th>
+                      <td>13:00</td>
+                       <td>Eng v Ban Asia Cup T20	</td>
+                        <td>Ban to win</td>
+                         <td>1.72</td>
+                          <td>60.00 GBP</td>
+                          <td>-60.00 GBP</td>
+                          <td>1.72</td>
+                    </tbody>
+                  </table>
+                </div>
+                 <div className="viewMorePeopl"><div className="ViewMoreButtons">See More</div></div>
+                </div>
+                
+                 <div className="sportPetNe">Cryptocurrency Predictions</div>
+                <div className="SportPredictionLD">
+          
+                <div>
+                  <table  className="predictnB">
+                    <thead>
+                       <th >Date</th>
+        <th >Kick off</th>
+        <th >Match</th>
+        <th >Tips</th>
+        <th>odd</th>
+        <th>Stake</th>
+        <th>Profits</th>
+           <th>Results</th>
+        
+                    </thead>
+                    <tbody>
+                      <th>Jan 20</th>
+                      <td>13:00</td>
+                       <td>Eng v Ban Asia Cup T20	</td>
+                        <td>Ban to win</td>
+                         <td>1.72</td>
+                          <td>60.00 GBP</td>
+                          <td>-60.00 GBP</td>
+                          <td>1.72</td>
+                    </tbody>
+                  </table>
+                </div>
+                 <div className="viewMorePeopl"><div className="ViewMoreButtons">See More</div></div>
+                </div>
+
+                <div className="sportPetNe">Binary Predictions</div>
+                <div className="SportPredictionLD">
+          
+                <div>
+                  <table  className="predictnB">
+                    <thead>
+                       <th>Date</th>
+        <th >Kick off</th>
+        <th >Match</th>
+        <th>Tips</th>
+        <th>odd</th>
+        <th>Stake</th>
+        <th>Profits</th>
+           <th>Results</th>
+        
+                    </thead>
+                    <tbody>
+                      <th>Jan 20</th>
+                      <td>13:00</td>
+                       <td>Eng v Ban Asia Cup T20	</td>
+                        <td>Ban to win</td>
+                         <td>1.72</td>
+                          <td>60.00 GBP</td>
+                          <td>-60.00 GBP</td>
+                          <td>1.72</td>
+                    </tbody>
+                  </table>
+                </div>
+                 <div className="viewMorePeopl"><div className="ViewMoreButtons">See More</div></div>
+                </div>
+
+                </div>
+
+              
+               </div>
+               {/* </div> */}
+               </div>
+
+           </div>
+
                {/*  */}
                {/*  */}
+
                
                </div>
 
                {/*  */}
+
+
 
     
 
@@ -821,15 +1292,15 @@ useEffect(()=>{
 
       <div className="WhatD">
          <div className="Rtme">
-         <div className="UsAbout" style={{color:(sports === "cryptocurrency") ? "#5df362":(sports=== "binary")? "#a4a6ef" :(sports ==="sports") ? "#6fffd2a8" : "#e1ca3b"}}>What Earnars Say About Us</div>
+         <div className="earnerPeople" style={{color:(sports === "cryptocurrency") ? "#5df362":(sports=== "binary")? "#a4a6ef" :(sports ==="sports") ? "#6fffd2a8" : "#e1ca3b"}}>What Earnars Say About Us</div>
         
          {/* <div className="divUnder1"></div> */}
-         <div className="CarouseDivDiv marginMu fadama">
+         <div className=" marginMu fadama ">
          <Carousel
   swipeable={false}
   draggable={false}
   showDots={false}
-  responsive={responsive}
+  responsive={responsive2}
   ssr={true} // means to render carousel on server-side.
   infinite={true}
   // autoPlay={this.props.deviceType !== "mobile" ? true : false}
@@ -843,52 +1314,58 @@ useEffect(()=>{
   // deviceType={this.props.deviceType}
   dotListClass="custom-dot-list-style"
   itemClass="carousel-item-padding-40-px"
+  style={{display:"flex",justifyContent:"space-between"}}
 >
-            <div className="carousel_Div carouselPW">
-             <div className="STRn">
-                 <div className="you pairy">
-                     <div className="Stuffy">
-                     <p className="backthan">Accurate Prediction Portal</p>
-                     <p className="pickStuff">Your company is truly upstanding and is behind its product 100%. Keep up the excellent work. Earnars is the most valuable prediction portal i  have EVER come across. I love your system."
-- Christopher X.</p>
-                     </div>
-                 </div>
-              
-             </div>
-            </div>
-            <div className="carousel_Div">
-            <div className="STRn">
-                 <div className="you pairy">
-                     <div className="Stuffy">
-                     <p className="backthan">Over 1Million Naira Made</p>
-                     <p className="pickStuff">I made Over 1 Million in Less Than 30 Days by just following Earnars.com prediction on Sports and Forex Trading.I would recommend earnars to any body any time.
-            - Balogun Olamide</p>
-                     </div>
-                 </div>
-                
-             </div>
-            </div>
-            <div className="carousel_Div">
-            <div className="STRn">
-                 <div className="you pairy">
-                     <div className="Stuffy">
-                     <p className="backthan">250k Made In Two Weeks</p>
-                     <p className="pickStuff">Through Earnars partnership program I made 250k in just two weeks by referring 20friends to the platform.
-      -Amaka Amogu</p>
-                     </div>
-                 </div>
-                
-             </div>
-            </div>
+ <div style={{padding:"4px 10px"}}>      
+<div className="earnSayPp">
+  <p className="partnerShip">"Through Earnars partnership program I made 250k in just two weeks by referring 20friends to the platform."</p>
+  <div className="favourPath">
+    <div><img src="/img/create.png" alt="" className="popopo"/></div>
+     <div>
+      <div className="amakaDiv">-Chukwubuike Amogu</div>
+      <div className="country">Nigeria</div>
+     </div>
+  </div>
+</div>
+</div> 
+ <div style={{padding:"4px 10px"}}>           
+<div className="earnSayPp">
+  <p className="partnerShip">"Through Earnars partnership program I made 250k in just two weeks by referring 20friends to the platform."</p>
+  <div className="favourPath">
+    <div><img src="/img/create.png" alt="" className="popopo"/></div>
+     <div>
+      <div className="amakaDiv">-Amaka Ngozi</div>
+      <div className="country">Nigeria</div>
+     </div>
+  </div>
+</div>
+</div>
+<div style={{padding:"4px 10px"}}>
+<div className="earnSayPp">
+  <p className="partnerShip">"Through Earnars partnership program I made 250k in just two weeks by referring 20friends to the platform."</p>
+  <div className="favourPath">
+    <div><img src="/img/create.png" alt="" className="popopo"/></div>
+     <div>
+      <div className="amakaDiv">-Amaka Amogu</div>
+      <div className="country">Nigeria</div>
+     </div>
+  </div>
+</div>
+</div>
+         
           </Carousel>
         </div>
 
-                   <div>
+
+
+
+
+                   <div style={{padding:"0 5px"}}>
           <div id="Faqc" data-aos="fade-up" data-aos-duration="3000"
              data-aos-easing="linear">
             <div className="firstTom" data-aos="fade-down" data-aos-duration="3000"
-             data-aos-easing="linear">FAQ</div>
-            <div>
+             data-aos-easing="linear" style={{color:"#fff"}}>FAQ</div>
+            <div className="homeChange">
               <div className="HowFarBro" onClick={drop}>
                 <span>I have never traded the forex or crypto market before. How do I Start?</span>{" "}
                 <span className="IconSpace">
@@ -904,7 +1381,7 @@ useEffect(()=>{
                 ""
               )}
             </div>
-            <div>
+            <div className="homeChange">
               <div className="HowFarBro" onClick={drop1}>
                 <span>I don't know how to bet on sports. How do I start?</span>
                 <span className="IconSpace">
@@ -919,7 +1396,7 @@ useEffect(()=>{
                 ""
               )}
             </div>
-            <div>
+            <div className="homeChange">
               <div className="HowFarBro" onClick={drop2}>
                 <span> I don't Have an account with any forex platform. Can I get any recommendations? </span>
                 <span className="IconSpace">
@@ -934,7 +1411,7 @@ useEffect(()=>{
                 ""
               )}
             </div>
-            <div>
+            <div className="homeChange">
               <div className="HowFarBro" onClick={drop3}>
                 <span> I am not registered with any cryptocurrency trading platform. Can I get any recommendations? </span>
                 <span className="IconSpace">
@@ -949,7 +1426,7 @@ useEffect(()=>{
                 ""
               )}
             </div>
-            <div>
+            <div className="homeChange">
               <div className="HowFarBro" onClick={drop4}>
                 <span> How much does it cost to subscribe monthly? </span>
                 <span className="IconSpace">
@@ -964,7 +1441,7 @@ useEffect(()=>{
                 ""
               )}
             </div>
-            <div>
+            <div className="homeChange">
               <div className="HowFarBro" onClick={drop5}>
                 <span>What if I don't make a profit at the end of the month with your predictions? </span>
                 <span className="IconSpace">
@@ -979,7 +1456,7 @@ useEffect(()=>{
                 ""
               )}
             </div>
-            <div>
+            <div className="homeChange">
               <div className="HowFarBro" onClick={drop6}>
                 <span> If my referral subscribes every month will I still get paid my referral commission? </span>
                 <span className="IconSpace">
@@ -994,7 +1471,7 @@ useEffect(()=>{
                 ""
               )}
             </div>
-            <div>
+            <div className="homeChange">
               <div className="HowFarBro" onClick={drop7}>
                 <span> Can i invest my money with your company so you trade & bet for me and pay me percentage monthly?</span>
                 <span className="IconSpace">

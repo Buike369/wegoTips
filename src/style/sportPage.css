@@ -10,6 +10,7 @@
     max-width: 600px;
     margin: 20px auto 20px auto;
     font-size: 24px;
+        font-family: monospace;
     text-align: center;
     color: #fff;
         font-weight: 800;
@@ -52,7 +53,8 @@
 
 .SportBetting {
     /* color: #e0be00; */
-    color:#131226;
+    color:#e0be00;
+        font-family: monospace;
     margin: 45px auto 20px auto;
     text-align: center;
     font-size: 28px;
@@ -86,6 +88,7 @@
 .WhyStart {
     text-align: center;
     color: #e0be00;
+        font-family: monospace;
     font-size: 24px;
     font-weight: 700;
     margin-top: 60px;
@@ -124,7 +127,10 @@
 }
 
 .everyDay {
-    font-size: 16px;
+    font-size: 15px;
+    font-family: monospace;
+    line-height: 20px;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
 }
 
 .startedf {
@@ -330,6 +336,12 @@ scrollbar-color: #007 #bada55 !important;
         font-size: 15px;
     }
 
+        .ifNi {
+           
+            margin: 0 auto 20px auto;
+           
+        }
+
     .everyDay {
         font-size: 15px;
     }
@@ -411,7 +423,7 @@ scrollbar-color: #007 #bada55 !important;
          margin: 22px auto 14px auto;
     }
     .WhyStart{
-        margin-top: 22px;
+        margin-top: 32px;
     }
 
     .cap3 {

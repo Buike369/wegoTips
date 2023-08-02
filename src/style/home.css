@@ -47,7 +47,7 @@ label .menu {
     left: 50px;
     width: 30px;
     height: 2px;
-    background: #69D2e7;
+    /* background: #69D2e7; */
     display: block;
     -webkit-transform-origin: center;
     transform-origin: center;
@@ -155,7 +155,9 @@ ul{
 
 .header_list li a{
     color:#e8e8ef;
+    font-family: 'Roboto Serif', serif;;
     text-decoration: none;
+    font-size: 15px;
 }
 
 .header_list li a:hover{
@@ -228,6 +230,7 @@ ul{
     margin-bottom: 12px;
     margin-top:30px ;
     transition: ease all 2s;
+    font-family: monospace;
 }
 .EarnP:hover{
     font-variation-settings: "wght" 700; 
@@ -403,7 +406,8 @@ ul{
     color:#fff;
 }
 .react-multiple-carousel__arrow{
-    background-color:#354269 !important ;
+    background-color:inherit !important ;
+    border:1px solid gray !important;
 }
 .GameNO{
     display:flex;
@@ -807,11 +811,15 @@ color:#fff;
 }
 .HowFarBro{
     /* background-color:#1b213a; */
-    background-color: #272644;
+    /* background-color: #272644; */
     color: #b2b6bd;
+    font-family: monospace;
+
+  
     padding:10px 15px;
     font-size: 16px;
     font-weight: 500;
+    
     cursor:pointer;
     display: flex;
     align-items: center;
@@ -843,14 +851,16 @@ color:#fff;
 }
 
 .HowFarBro:hover{
-    background-color: #445997;
-    color: #ffff08;
+
+    color: gray;
+   
 
 }
 .ILOVEK{
     padding:10px 15px;
-    background-color: #fff;
-    color:#000;
+    /* background-color: #fff; */
+    color:#93b13b;
+    line-height: 20px;
     font-size: 16px;
 }
 .imghy{
@@ -960,6 +970,15 @@ color:#fff;
     .header{
         display:none
     }
+        .HowFarBro span {
+            font-size: 15px;
+            font-family: monospace
+        }
+                .ILOVEK {
+                  
+                font-family: monospace;
+                    font-size: 15px;
+                }
     .FREE1 {
         max-width: 540px !important;
     }

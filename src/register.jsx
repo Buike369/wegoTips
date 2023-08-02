@@ -112,7 +112,7 @@ const Register =()=>{
 
     
     return(
-        <div className="BgColor" style={{backgroundImage: "linear-gradient(to right, rgb(4 7 22), rgb(10 9 22))"}}>
+        <div className="BgColor" style={{background:"#0f0b34"}}>
 
             <div className="formDivPAd">
             
@@ -122,7 +122,7 @@ const Register =()=>{
                 <form>
       {/* {message && <div style={{color:"#fff",position:"absolute",zIndex:"500",left:"50%",right:"50%",top:"-5%",padding:"5px 10px",backgroundColor:"#20263a",width:"100%",transform:"translate(-50%,-50%)",textAlign:"center",borderRadius:"5px"}}>{message}</div>} */}
 
-                     <p className="New_Account textAdmin">Register New Account</p>
+                     <p className="New_Account textAdmin">Create an Account</p>
                       {/* {message && <p style={{color:"#fff"}}>{message}</p>} */}
                     <div> <input type="text" placeholder="User_name"  className="Full_Name inpupage page" onChange={handleChange} name="username"/></div>
                     <div> <input type="email" placeholder="Email" className="Full_Name inpupage page" onChange={handleChange} name="email"/></div>

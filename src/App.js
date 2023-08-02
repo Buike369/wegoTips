@@ -57,7 +57,7 @@ function App() {
           {currentUser ? <Route path="/wallet" element={<WalletOverView />} /> : <Route path="/" element={<SampleHome />} />}   
            <Route path="/affliate" element={<Affliate/>} />
           {currentUser ? <Route path="/profile" element={<Profile />} /> : <Route path="/" element={<SampleHome />} /> } 
-          {!currentUser ? <Route path="/forgotPassword" element={<ForgotPassword />} /> : <Route path="/" element={<SampleHome />} /> } 
+          {!currentUser ? <Route path="/forgotpassword" element={<ForgotPassword />} /> : <Route path="/" element={<SampleHome />} /> } 
           {!currentUser ? <Route path="/otp" element={<OTP />} /> : <Route path="/" element={<SampleHome />} />} 
           {!currentUser ? <Route path="/success" element={<Success />} /> : <Route path="/" element={<SampleHome />} />} 
           <Route path="/referral/:id" element={<Referral />} />

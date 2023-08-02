@@ -69,7 +69,7 @@ const Mobileheader = () => {
                   <img src="/img/Earnars1@72x1.png" className="emanu"/>
                 </a>
         </div>
-         {(tr === "/register") || (tr === "/login") ? " " :
+         {(tr === "/register") || (tr === "/login") || (tr === "/otp") || (tr === "/resetpassword/:id") || (tr === "/forgotpassword") || (tr === "/referral/:id") ? " " :
         <div>
        
   

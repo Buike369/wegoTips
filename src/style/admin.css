@@ -2,9 +2,16 @@
  
        box-shadow: none;
         background-color: inherit;
-        border: 1px solid #6666728f;
+        border: 1px solid #433b72;
         color:#fff
      
+}
+
+input:-internal-autofill-selected {
+    appearance: menulist-button;
+    background-image: none !important;
+    background-color: inherit !important;
+    color: fieldtext !important;
 }
 .inpupage{
     border-radius: 5px;

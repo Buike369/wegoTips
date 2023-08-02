@@ -70,13 +70,14 @@ const Login =()=>{
    }  }   
     }
     return(
-        <div className="BgColor" style={{backgroundImage: "linear-gradient(to right, rgb(4 7 22), rgb(10 9 22))"}}>
+        <div className="BgColor" style={{background:"#0f0b34"}}>
+            {/* backgroundImage: "linear-gradient(to right, rgb(4 7 22), rgb(10 9 22))" */}
             <div className="Form_Divbb">
                 <div style={{padding:"0px 5px"}}>
            <div className="Form_Div renttt page">
                <form>
                   
-                  <div className="welcome4 textAdmin">Welcome</div>
+                  <div className="welcome4 textAdmin">Login to Earnars</div>
                   <div> <input type="email" placeholder="Email" className="Full_Name inpupage page " name="email" onChange={handleChange}/></div>
                   <div className="sers"> <input type={inputs2.showPassword ? "text":"password"} placeholder="Password" className="Full_Name inpupage page" onChange ={handleChange} name="password" 
                   />

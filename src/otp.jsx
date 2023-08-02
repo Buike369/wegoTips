@@ -40,8 +40,9 @@ const Otp =()=>{
     }
     
     return(
-        <div className="BgColor" style={{backgroundImage: "linear-gradient(to right, rgba(106, 116, 167, 0.34), rgba(119, 135, 182, 0.95))"}}>
+        <div className="BgColor" style={{backgroundColor:"#0f0b34"}}>
             <div className="Form_Divbb">
+                      <div style={{padding:"0 5px"}}>
            <div className="Form_Div renttt">
                <form>
                   
@@ -67,6 +68,7 @@ const Otp =()=>{
                      <p className="Have_An">Don't receive link?<a onClick={handleSumit1 } className="sesetP"><span className="p_LoGIn">Resend Link</span></a></p>
                      
                </form>
+           </div>
            </div>
            </div>
         </div>
