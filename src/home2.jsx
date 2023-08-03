@@ -1314,7 +1314,7 @@ useEffect(()=>{
   // deviceType={this.props.deviceType}
   dotListClass="custom-dot-list-style"
   itemClass="carousel-item-padding-40-px"
-  style={{display:"flex",justifyContent:"space-between"}}
+  
 >
  <div style={{padding:"4px 10px"}}>      
 <div className="earnSayPp">

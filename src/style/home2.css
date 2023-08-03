@@ -148,7 +148,9 @@
     border: none;
 }
 
+.earnSayPp{
 
+}
 
 
 
@@ -235,6 +237,7 @@
         padding: 10px 15px;
         border: 1px solid #3e3a64;
         border-radius: 10px;
+        height: 250px;
 }
 .SportPredictionL{
     display:flex;
@@ -806,6 +809,7 @@ padding:10px 10px 0px 10px;
 }
 .earnSayPp{
     width:100%;
+    height:auto
 }
 
 .Fitwem {
