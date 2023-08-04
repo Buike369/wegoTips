@@ -13,7 +13,7 @@ import axios from "axios";
 import { useLocation } from "react-router"
 import "./style/background.css"
 
-import background from "./img/sample.PNG";
+import background from "./img/BacKGroundS.svg";
 
 
 
@@ -363,7 +363,7 @@ useEffect(()=>{
 
         {/*======  section3========*/}
 
-        <div  className="fareWo">
+        <div  className="fareWo" style={{backgroundImage:`url(${background})`,backgroundRepeat:'no-repeat',backgroundSize:"100% 100%",width:"100%",height:"auto"}}>
          
       <div className="Rtme">
           <div className="Free">
@@ -1197,6 +1197,7 @@ useEffect(()=>{
     </tbody>
   </table>
 </div>
+ <div className="seeMoreDivLink"><button className="SeeMoreInfo">See More</button></div>
            <div className="sportPetNe gapUp">Forex Predictions</div>
       <div role="region" aria-labelledby="caption" tabindex="0">
   <table className='linema'>
@@ -1244,13 +1245,14 @@ useEffect(()=>{
     </tbody>
   </table>
 </div>
+ <div className="seeMoreDivLink"><button className="SeeMoreInfo">See More</button></div>
 <div className="sportPetNe gapUp">Cryptocurrency Predictions</div>
       <div role="region" aria-labelledby="caption" tabindex="0">
   <table className='linema'>
    
     <thead>
       <tr>
-        <th style={{width:"50px"}}>Date</th>
+        <th style={{width:"50px"}} className="emeka">Date</th>
         <th style={{width:"100px"}}>Pair</th>
          <th style={{width:"150px"}}>Condition</th>
         <th style={{width:"150px"}}>Entry</th>
@@ -1291,6 +1293,7 @@ useEffect(()=>{
     </tbody>
   </table>
 </div>
+    <div className="seeMoreDivLink"><button className="SeeMoreInfo">See More</button></div>
 <div className="sportPetNe gapUp">Binary Predictions</div>
       <div role="region" aria-labelledby="caption" tabindex="0">
   <table className='linema'>
@@ -1331,6 +1334,7 @@ useEffect(()=>{
     </tbody>
   </table>
 </div>
+ <div className="seeMoreDivLink"><button className="SeeMoreInfo">See More</button></div>
 
                 </div>
 

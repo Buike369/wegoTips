@@ -65,7 +65,7 @@ const Navbar= () => {
                 
                 </li>
                 <li className="Affliate_Bet">
-                  <a href="/affliate">Partners Program</a>
+                  <a href="/affliate">Affiliate Program</a>
                 </li>
                 <li className="Contact_Bet">
                   <a href="/betcalculator"> Bet Calculator</a>

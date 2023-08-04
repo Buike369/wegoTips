@@ -33,6 +33,28 @@
         border: 1px solid #50497a;
             background-color: #1c1c46;
 }
+.seeMoreDivLink{
+    display:flex;
+    justify-content: end;
+}
+.SeeMoreInfo{
+    outline:0;
+    border:0;
+    padding:10px 15px;
+    color:#fff;
+    background-color: #0c1034;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor:pointer;
+
+}
+.SeeMoreInfo:hover{
+    background-color: #fff;
+    color:#000
+}
 
 .cardProfileDiv{
     width:98%;
@@ -267,9 +289,10 @@
 .sportPetNe{
     font-size: 20px;
     color:rgb(225 202 59);
-    font-weight: 600;
+    font-weight: 700;
     text-align: center;
     margin-bottom: 10px;
+    letter-spacing: 0.8px;
 }
 .UponT{
     padding:20px 15px;

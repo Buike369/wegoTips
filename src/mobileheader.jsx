@@ -106,7 +106,7 @@ const Mobileheader = () => {
             </div>:""}
             </li>
           <li className="bgstyle"><a href="/premium" onClick={mark} className="derpm"> <span className="mackP">*</span> * Premium Subscription</a></li>
-          <li className="bgstyle"><a href="/affliate" className="derpm" onClick={mark}> <span className="mackP">*</span> * Partners Program</a></li>
+          <li className="bgstyle"><a href="/affliate" className="derpm" onClick={mark}> <span className="mackP">*</span> * Affiliate Program</a></li>
           <li className="dpM bgstyle"><a href="/betcalculator" className="derpm" onClick={mark}><span className="mackP">*</span> * Bet Calculator</a></li>
           <li>
             {currentUser ? <div>
