@@ -83,8 +83,7 @@ const CryptoPage = () => {
   },[])
 
   return (
-    <div style={{ backgroundImage: "linear-gradient(to right, rgba(106, 116, 167, 0.34), rgba(119, 135, 182, 0.95))"
-}} >
+    <div>
         <div className="sportPa">
           <div>
           <img src="/img/earnarsbanner23.png" className="AffliateBanner" alt=""/>

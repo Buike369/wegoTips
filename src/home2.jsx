@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faPlus,faMinus,faVolleyball,faCheckToSlot, faCheckDouble} from '@fortawesome/free-solid-svg-icons'
 import AOS from 'aos';
 import "./style/home2.css"
+import "./style/home.css"
 import axios from "axios";
 import { useLocation } from "react-router"
 import "./style/background.css"
@@ -1140,132 +1141,196 @@ useEffect(()=>{
 
           <div className="youpin">
 
-              <div className="topPrediction">Top Predictions</div>
-              <div className="UponT">
-                <div className="sportPetNe">Sports Predictions</div>
-                <div className="SportPredictionLD">
-          
-                <div>
-                  <table className="predictnB" style={{border:"none",outline:"none"}}>
-                    <thead>
-                       <th >Date</th>
-        <th>Kick off</th>
-        <th>Match</th>
-        <th>Tips</th>
-        <th >odd</th>
-        <th >Stake</th>
-        <th>Profits</th>
-           <th>Results</th>
-        
-                    </thead>
-                    <tbody>
-                      <th>Jan 20</th>
-                      <td>13:00</td>
-                       <td>Eng v Ban Asia Cup T20	</td>
-                        <td>Ban to win</td>
-                         <td>1.72</td>
-                          <td>60.00 GBP</td>
-                          <td>-60.00 GBP</td>
-                          <td>1.72</td>
-                    </tbody>
-                  </table>
-                </div>
-                <div className="viewMorePeopl"><div className="ViewMoreButtons">See More</div></div>
-                </div>
               
 
-               <div className="sportPetNe">Forex Predictions</div>
-                <div className="SportPredictionLD">
-          
-                <div>
-                  <table className="predictnB">
-                    <thead>
-                       <th>Date</th>
-        <th>Kick off</th>
-        <th >Match</th>
-        <th >Tips</th>
-        <th>odd</th>
-        <th>Stake</th>
-        <th>Profits</th>
-           <th>Results</th>
-        
-                    </thead>
-                    <tbody>
-                      <th>Jan 20</th>
-                      <td>13:00</td>
-                       <td>Eng v Ban Asia Cup T20	</td>
-                        <td>Ban to win</td>
-                         <td>1.72</td>
-                          <td>60.00 GBP</td>
-                          <td>-60.00 GBP</td>
-                          <td>1.72</td>
-                    </tbody>
-                  </table>
-                </div>
-                 <div className="viewMorePeopl"><div className="ViewMoreButtons">See More</div></div>
-                </div>
+                 <div className="topPrediction">Top Predictions</div>
+              <div className="UponT">
+                <div className="sportPetNe">Sports Predictions</div>
+               
+              
+       <div role="region" aria-labelledby="caption" tabindex="0">
+  <table className='linema'>
+   
+    <thead>
+      <tr>
+        <th style={{width:"50px"}}>Date</th>
+        <th style={{width:"100px"}}>Time</th>
+         <th style={{width:"150px"}}>League</th>
+        <th style={{width:"150px"}}>Match</th>
+        <th style={{width:"150px"}}>Tips</th>
+        <th style={{width:"150px"}}>Odd</th>
+        <th style={{width:"150px"}}>Stake</th>
+        <th style={{width:"150px"}}>Profits</th>
                 
-                 <div className="sportPetNe">Cryptocurrency Predictions</div>
-                <div className="SportPredictionLD">
-          
-                <div>
-                  <table  className="predictnB">
-                    <thead>
-                       <th >Date</th>
-        <th >Kick off</th>
-        <th >Match</th>
-        <th >Tips</th>
-        <th>odd</th>
-        <th>Stake</th>
-        <th>Profits</th>
-           <th>Results</th>
+      </tr>
+    </thead>
+    <tbody>
+       
+       
+      <tr  className="ADDTimeDbg ">
+        <th className=" ADDTimeDbg">Jan 20</th>
+        <td>13:00</td>
+          <td>English</td>
+        <td>Eng v Ban Asia Cup T20</td>
+        <td>Ban to win</td>
+        <td>1.72</td>
+        <td>60.00 GBP</td>
+         <td>-60.00 GBP</td>
         
-                    </thead>
-                    <tbody>
-                      <th>Jan 20</th>
-                      <td>13:00</td>
-                       <td>Eng v Ban Asia Cup T20	</td>
-                        <td>Ban to win</td>
-                         <td>1.72</td>
-                          <td>60.00 GBP</td>
-                          <td>-60.00 GBP</td>
-                          <td>1.72</td>
-                    </tbody>
-                  </table>
-                </div>
-                 <div className="viewMorePeopl"><div className="ViewMoreButtons">See More</div></div>
-                </div>
-
-                <div className="sportPetNe">Binary Predictions</div>
-                <div className="SportPredictionLD">
-          
-                <div>
-                  <table  className="predictnB">
-                    <thead>
-                       <th>Date</th>
-        <th >Kick off</th>
-        <th >Match</th>
-        <th>Tips</th>
-        <th>odd</th>
-        <th>Stake</th>
-        <th>Profits</th>
-           <th>Results</th>
+      </tr>
+      <tr  className="ADDTimeDbg ">
+        <th className="ADDTimeDbg">Jan 20</th>
+        <td>13:00</td>
+          <td>English</td>
+        <td>Eng v Ban Asia Cup T20</td>
+        <td>Ban to win</td>
+        <td>1.72</td>
+        <td>60.00 GBP</td>
+         <td>-60.00 GBP</td>
         
-                    </thead>
-                    <tbody>
-                      <th>Jan 20</th>
-                      <td>13:00</td>
-                       <td>Eng v Ban Asia Cup T20	</td>
-                        <td>Ban to win</td>
-                         <td>1.72</td>
-                          <td>60.00 GBP</td>
-                          <td>-60.00 GBP</td>
-                          <td>1.72</td>
-                    </tbody>
-                  </table>
-                </div>
-                 <div className="viewMorePeopl"><div className="ViewMoreButtons">See More</div></div>
-                </div>
+      </tr>
+  
+        
+      
+   
+     
+    </tbody>
+  </table>
+</div>
+           <div className="sportPetNe gapUp">Forex Predictions</div>
+      <div role="region" aria-labelledby="caption" tabindex="0">
+  <table className='linema'>
+   
+    <thead>
+      <tr>
+        <th style={{width:"50px"}}>Date</th>
+        <th style={{width:"100px"}}>Pair</th>
+         <th style={{width:"150px"}}>Condition</th>
+        <th style={{width:"150px"}}>Entry</th>
+        <th style={{width:"150px"}}>Take Profit</th>
+        <th style={{width:"150px"}}>Stop Loss</th>
+        
+                
+      </tr>
+    </thead>
+    <tbody>
+       
+       
+      <tr  className="ADDTimeDbg ADDTimeDbg22">
+        <th className=" ADDTimeDbg">Jan 20</th>
+        <td>GBP/USD</td>
+          <td>Long(buy)</td>
+        <td>1.678787</td>
+        <td>1.899765</td>
+        <td>1.456378</td>
+       
+        
+      </tr>
+      <tr  className="ADDTimeDbg ADDTimeDbg22">
+        <th className="ADDTimeDbg">Jan 20</th>
+        <td>GBP/USD</td>
+          <td>Short(buy)</td>
+        <td>1.678787</td>
+        <td>1.678787</td>
+        <td>1.678787</td>
+       
+        
+      </tr>
+  
+        
+      
+   
+     
+    </tbody>
+  </table>
+</div>
+<div className="sportPetNe gapUp">Cryptocurrency Predictions</div>
+      <div role="region" aria-labelledby="caption" tabindex="0">
+  <table className='linema'>
+   
+    <thead>
+      <tr>
+        <th style={{width:"50px"}}>Date</th>
+        <th style={{width:"100px"}}>Pair</th>
+         <th style={{width:"150px"}}>Condition</th>
+        <th style={{width:"150px"}}>Entry</th>
+        <th style={{width:"150px"}}>Take Profit</th>
+        <th style={{width:"150px"}}>Stop Loss</th>
+        
+                
+      </tr>
+    </thead>
+    <tbody>
+       
+       
+      <tr  className="ADDTimeDbg ADDTimeDbg22">
+        <th className=" ADDTimeDbg">Jan 20</th>
+        <td>GBP/USD</td>
+          <td>Long(buy)</td>
+        <td>1.678787</td>
+        <td>1.899765</td>
+        <td>1.456378</td>
+       
+        
+      </tr>
+      <tr  className="ADDTimeDbg ADDTimeDbg22">
+        <th className="ADDTimeDbg">Jan 20</th>
+        <td>GBP/USD</td>
+          <td>Short(buy)</td>
+        <td>1.678787</td>
+        <td>1.678787</td>
+        <td>1.678787</td>
+       
+        
+      </tr>
+  
+        
+      
+   
+     
+    </tbody>
+  </table>
+</div>
+<div className="sportPetNe gapUp">Binary Predictions</div>
+      <div role="region" aria-labelledby="caption" tabindex="0">
+  <table className='linema'>
+   
+    <thead>
+      <tr>
+        <th style={{width:"50px"}}>Date</th>
+        <th style={{width:"100px"}}>Pair</th>
+         <th style={{width:"150px"}}>Condition</th>
+       
+                
+      </tr>
+    </thead>
+    <tbody>
+       
+       
+      <tr  className="ADDTimeDbg ADDTimeDbg22">
+        <th className=" ADDTimeDbg">Jan 20</th>
+        <td>GBP/USD</td>
+          <td>Long(buy)</td>
+        
+       
+        
+      </tr>
+      <tr  className="ADDTimeDbg ADDTimeDbg22">
+        <th className="ADDTimeDbg">Jan 20</th>
+        <td>GBP/USD</td>
+          <td>Short(buy)</td>
+       
+       
+        
+      </tr>
+  
+        
+      
+   
+     
+    </tbody>
+  </table>
+</div>
 
                 </div>
 

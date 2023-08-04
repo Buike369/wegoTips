@@ -10,6 +10,8 @@
     width:50%;
     border-radius: 22px;
     text-align: center;
+        border: 1px solid #9c8feb;
+            background-color: #464693;
       
     z-index: 1;
 
@@ -18,16 +20,18 @@
         background-clip: padding-box;  
      
             
-                border: 1px solid #635b92;
+                /* border: 1px solid #635b92; */
   
 }
 
 .homeChange{
-    border:1px solid #635b92;
+    
     margin-bottom: 8px;
     border-radius: 8px;
     background-color: inherit;
     transition: all 0.5s;
+        border: 1px solid #50497a;
+            background-color: #1c1c46;
 }
 
 .cardProfileDiv{
@@ -40,7 +44,7 @@
             height: auto;
             margin-top: 20px;
             border: 1px solid #5c5489;
-            background-color: #171640;
+            background-color:#36366e;
 }
 .catImgDivProfile{
     width:100%;
@@ -214,7 +218,7 @@
     font-size: 28px;
     font-weight: 800;
 
-    color:#3ba941;
+    color:#000;
     margin-bottom: 1px;
 }
 .AirTime{
@@ -235,9 +239,17 @@
 .earnSayPp{
     width: 100%;
         padding: 10px 15px;
-        border: 1px solid #3e3a64;
-        border-radius: 10px;
+            /* border: 1px solid #382991; */
+                /* background-color: #121255; */
+        /* border-radius: 10px; */
         height: 250px;
+        /* From https://css.glass */
+            background: #0c1034;
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .SportPredictionL{
     display:flex;
@@ -254,14 +266,14 @@
 }
 .sportPetNe{
     font-size: 20px;
-    color:#b4a5cf;
+    color:rgb(225 202 59);
     font-weight: 600;
     text-align: center;
     margin-bottom: 10px;
 }
 .UponT{
     padding:20px 15px;
-    border: 1px solid #2a2852;
+    border: 1px solid #423f74;
     margin-bottom: 30px;
     border-radius: 10px;
 }
@@ -294,13 +306,13 @@ color: #c5c5c5;
             font-size: 20px;
             font-weight: 600;
             margin-bottom: 5px;
-            font-family: sans-serif;
+        
 }
 .country{
         color: #21f350;
             font-size: 18px;
             font-weight: 700;
-            font-family:monospace;
+            
 }
 .RateSuccess{
     font-size: 22px;
@@ -493,7 +505,6 @@ color: #c5c5c5;
 .SealY{
     padding:10px 2px;
     text-align: center;
-    font-family: monospace;
     
     font-size: 20px;
     font-weight: 700;
@@ -509,7 +520,7 @@ color: #c5c5c5;
     font-size: 16px;
     font-weight: 400;
     text-align: center;
-        font-family: 'Source Code Pro';
+        
    
 
 }
@@ -519,7 +530,7 @@ color: #c5c5c5;
 }
 .youpin{
     width:100%;
-    max-width:1000px;
+    /* max-width:1000px; */
     margin:0 auto;
     padding:20px 20px;
 }
@@ -580,7 +591,7 @@ color: #c5c5c5;
     color:#d5d5d5;
     font-weight: 500;
     line-height: 28px;
-    font-family: monospace;
+    
 }
 .Nog{
    font-size: 16px;
@@ -644,7 +655,10 @@ color: #c5c5c5;
     padding:35px 0 0px 0;
 }
 .HomPageBg{
-    background-color: #0f0b34;
+    /* background-color: #0f0b34;
+     */
+    /* background: rgb(13, 11, 48); */
+        /* background: linear-gradient(90deg, rgba(13, 11, 48, 1) 0%, rgba(18, 18, 88, 1) 35%, rgba(40, 37, 119, 1) 70%, rgba(75, 70, 182, 1) 100%); */
      
 }
 .divUnder{
@@ -742,8 +756,9 @@ padding:10px 10px 0px 10px;
     font-weight: 700;
     text-align: center;
     margin-top: 25px;
+    padding:0 10px;
     margin-bottom: 20px;
-    font-family: monospace;
+    
 }
 .displayt{
     display:flex;

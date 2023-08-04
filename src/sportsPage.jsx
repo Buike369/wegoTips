@@ -85,7 +85,7 @@ const SportsPage = () => {
   },[])
 
   return (
-    <div style={{backgroundColor:"#0f0b34"}}>
+    <div>
         <div className="sportPa">
         <div>
           <img src="/img/earnarsBanner34.png" className="AffliateBanner" alt=""/>
@@ -108,8 +108,7 @@ const SportsPage = () => {
         <p className="WhyStart">Why Start Sport Betting</p>
         <div className="ifNi"></div>
         <div className="EasyTi" >
-            <div className="EasyTim" style={{ 
-      background: "rgb(51, 50, 85)",backgroundPosition:"center center",backgroundRepeat:"no-repeat",backgroundSize:"cover"}} data-aos="fade-up" data-aos-duration="3000"
+            <div className="EasyTim"  data-aos="fade-up" data-aos-duration="3000"
              data-aos-easing="linear">
             <div className="onV">
             <img src="/img/icinC1.svg" alt="every source of fund" className="everyday"/>
@@ -128,8 +127,7 @@ or financial commitment
 before you begin staking.
 With $1 dollar or ₦500 naira you can start staking. You also have the chance to bet with the same amount from time to time.</div>
             </div>
-            <div className="EasyTim" style={{ 
-      background: "rgb(51, 50, 85)",backgroundPosition:"center center",backgroundRepeat:"no-repeat",backgroundSize:"cover"}} data-aos="fade-up" data-aos-duration="3000"
+            <div className="EasyTim"  data-aos="fade-up" data-aos-duration="3000"
              data-aos-easing="linear">
             <div className="onV">
             <img src="/img/icinC1.svg" alt="every source of fund" className="everyday"/>
@@ -139,8 +137,7 @@ With $1 dollar or ₦500 naira you can start staking. You also have the chance t
 
 </div>
             </div>
-            <div className="EasyTim" style={{ 
-      background: "rgb(51, 50, 85)",backgroundPosition:"center center",backgroundRepeat:"no-repeat",backgroundSize:"cover"}} data-aos="fade-up" data-aos-duration="3000"
+            <div className="EasyTim"  data-aos="fade-up" data-aos-duration="3000"
              data-aos-easing="linear">
               <div className="onV">
             <img src="/img/icinC1.svg" alt="every source of fund" className="everyday"/>

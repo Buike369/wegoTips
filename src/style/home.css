@@ -230,7 +230,6 @@ ul{
     margin-bottom: 12px;
     margin-top:30px ;
     transition: ease all 2s;
-    font-family: monospace;
 }
 .EarnP:hover{
     font-variation-settings: "wght" 700; 
@@ -361,8 +360,14 @@ ul{
     transition: ease all;
 }
 .ADDTimeDbg{
-    background-color: #384e90;
+    background-color: #25254e;
+    border-bottom: 1px solid gray !important;
 }
+
+/* .ADDTimeDbg22 {
+    border-bottom: 1px solid gray !important;
+    margin-bottom: 10px !important;
+} */
 .ADDTimeDbg1{
     background-color: #5c6989; 
 }
@@ -852,14 +857,14 @@ color:#fff;
 
 .HowFarBro:hover{
 
-    color: gray;
+    color: #b8afd7;
    
 
 }
 .ILOVEK{
     padding:10px 15px;
-    /* background-color: #fff; */
-    color:#93b13b;
+    
+    color:#e2e2e5;
     line-height: 20px;
     font-size: 16px;
 }
@@ -972,7 +977,7 @@ color:#fff;
     }
         .HowFarBro span {
             font-size: 15px;
-            font-family: monospace
+        
         }
                 .ILOVEK {
                   
