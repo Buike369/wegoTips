@@ -111,7 +111,7 @@
     border-collapse: separate;
     border-spacing: 0;
     table-layout: fixed;
-    background-color: #39345c;
+     background-color: #0d0740;
     padding:10px 10px;
  
     /* border: 1px solid black; */
@@ -130,7 +130,7 @@
     z-index: 1;
     font-size: 16px;
     width: 10vw;
-        background-color: #080728bf;
+        background-color: #171054;
 }
 
 

@@ -70,7 +70,7 @@ const Login =()=>{
    }  }   
     }
     return(
-        <div className="BgColor" style={{background:"#0f0b34"}}>
+        <div className="BgColor" >
             {/* backgroundImage: "linear-gradient(to right, rgb(4 7 22), rgb(10 9 22))" */}
             <div className="Form_Divbb">
                 <div style={{padding:"0px 5px"}}>

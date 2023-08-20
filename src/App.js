@@ -22,17 +22,22 @@ import SportPage from "./sportsPage"
 import ForexPage from "./forexPage"
 import CryptoPage from "./cryptoPage"
 import BinaryPage from "./binarypage"
+import TipSterDashboard from "./tipStarDashboard"
 // import Airtime from "./airtime"
 import ForgotPassword from "./forgetpassword"
 import OTP from "./otp"
 import Success from "./success"
+import TipsterWallet from "./tipsterWallet"
 import ResetPassword from "./resetPassword"
+import UsersWallet from "./tipsWallet"
 import { AuthContext } from './context/authContext';
 
 
 import Admin from "./admin"
 import AdminLogin from "./adminLogin"
 import Navbar from "./navbar"
+import TipsWallet from "./tipsterWallet";
+import ProfilePageFile from "./profilePage"
 
 import DashboardHome from "./Dashboard/dashboardHome"
 // import { Link, useLocation } from "react-router-dom";
@@ -79,6 +84,10 @@ function App() {
            <Route path="/termscondition" element={<TermsAndCondition  />} />
           <Route path="/admin" element={<Admin />} />
           <Route path="/admin/login" element={<AdminLogin/>} />
+          <Route path="/tipster" element={<TipSterDashboard />} />
+          <Route path="/tipsterWallet" element={<TipsWallet />} />
+          <Route path="/userWallet" element={<UsersWallet />} />
+          <Route path="/view-profile" element={<ProfilePageFile />} />
          
          
          

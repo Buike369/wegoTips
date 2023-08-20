@@ -87,9 +87,9 @@ const BinaryPage = () => {
      
 
         <div className="sportPa">
-        <div>
+        {/* <div>
           <img src="/img/earnarsBanners3.png" className="AffliateBanner" alt=""/>
-          </div>
+          </div> */}
         <div className="MakingMoney">
         Making Money Daily on <span className="forexy">Binary </span>trading is as easy as following our daily expert predictions
         </div>

@@ -10,7 +10,7 @@ import { Link} from "react-router-dom";
 import Footer from "./footer"
 import "./style/slide.css"
 import { AuthContext } from './context/authContext';
-import background from "./img/sample.PNG";
+import background from "./img/Group.svg";
 
 const SportsPage = () => {
 
@@ -86,10 +86,26 @@ const SportsPage = () => {
 
   return (
     <div>
-        <div className="sportPa">
-        <div>
-          <img src="/img/earnarsBanner34.png" className="AffliateBanner" alt=""/>
-          </div>
+        <div >
+        {/* <div>
+          <img src="/img/earnarsBanner34.png" className="AffliateBanner6" alt=""/>
+          </div> */}
+           <div className="sportPa">
+            <div className="affiliateImage" >
+                    <div className="grace">
+                        <h1 className="Aka">Sports Predictions</h1>
+                        {/* <div><span className="homeSpan">Home</span> <span className="homeSpan">Affiliate program</span></div> */}
+                       <p  className="weAre4">With Upto <span className="withUpto">50% acurrancy<span>.</span></span></p>
+                       <p className='everyWhere'>Everyday is a winning day</p>
+                       <div className='football'>Football, Tennis, Basketball ETC</div>
+                    </div>
+                     <div className="grace"><img src="/img/affiliate-banner.png" className="gracePic" alt="affiliate_banner"/></div>
+                     <img src="/img/StarsME.svg" className="headerAffiliateI" alt="affiliate_banner"/>
+                      <img src="/img/StarsME.svg" className="headerAffiliate2" alt="affiliate_banner"/>
+                 </div>
+                 </div>
+
+<div className='sportsPageColorBg'>
         <div className="MakingMoney">
         Making Money Daily on <span className="forexy">SPORTS</span> trading is as easy as following our daily expert predictions
         </div>
@@ -126,6 +142,9 @@ that you won’t need any tool
 or financial commitment 
 before you begin staking.
 With $1 dollar or ₦500 naira you can start staking. You also have the chance to bet with the same amount from time to time.</div>
+
+   <div className='posTMa ad'></div>
+  <div className='posTMa ab' ></div>
             </div>
             <div className="EasyTim"  data-aos="fade-up" data-aos-duration="3000"
              data-aos-easing="linear">
@@ -136,6 +155,8 @@ With $1 dollar or ₦500 naira you can start staking. You also have the chance t
                 <div className="everyDay">Betting comes with the oppurtunity to make money when some cash is involved. Any amount you have can earn you some profit as long as you bet on wining games or follow our recommended wining games. Some people even quit their jobs to concentrate fully on betting as a means of their survival. when you structure your betting system with proper risk reward ratio you will definitely make a fortune from it.
 
 </div>
+   <div className='posTMa ad'></div>
+  <div className='posTMa ab' ></div>
             </div>
             <div className="EasyTim"  data-aos="fade-up" data-aos-duration="3000"
              data-aos-easing="linear">
@@ -150,10 +171,20 @@ they are too tiring as such
 you cannot play them every 
 day. But with sports betting, it is an affordable hobby that you can play or watch and enjoy every day. The sport betting industry never go to sleep,it functions 24hour a day and 365 days a year. 
 You can also enjoy sports betting anywhere and anytime e.g from the comfort of your home or at any betting shop near you.</div>
+   <div className='posTMa ad'></div>
+  <div className='posTMa ab' ></div>
             </div>
         </div>
         </div>
-
+        <div className='Ems Ems1'>
+          <img src="/img/undrawgoal1.svg" alt="" className='imgFloatSport' />
+        </div>
+         <div className='Ems Ems2'>
+           <img src="/img/soccer2.svg" alt="" className='imgFloatSport' />
+         </div>
+          {/* <div className='Ems Ems3'></div>
+          <div className='Ems Ems4'></div> */}
+</div>
         <div className="AgenciesTy">Sports Betting Agencies</div>
         <div className="ifNi"></div>
         <p className="everyDay Dayok Dayword">Any company that is providing sports betting services can be called a bookmaker, betting agency,sportsbook or bookie.</p>
@@ -230,7 +261,7 @@ You can also enjoy sports betting anywhere and anytime e.g from the comfort of y
 
 
 
-
+<div className="sportPa">
 
         <div className="BettingTu">Sport Betting Tutorial Videos</div>
         <div className='figma'>
@@ -247,7 +278,7 @@ You can also enjoy sports betting anywhere and anytime e.g from the comfort of y
         </div>
         </div>
 
-        <div>
+        <div style={{padding:"0 5px"}}>
           <div id="Faqc" className="faqSportMa" data-aos="fade-up" data-aos-duration="3000"
              data-aos-easing="linear" >
             <div className="firstTom faqSports" data-aos="fade-down" data-aos-duration="3000"
@@ -345,6 +376,7 @@ We do not manage users funds or bet for any user, we only forecast/predicts game
               )}
             </div>
           
+          </div>
           </div>
           </div>
         </div>

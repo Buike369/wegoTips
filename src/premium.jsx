@@ -7,71 +7,109 @@ import { AuthContext } from './context/authContext';
 
 const Premium = () => {
 
+  const card = ["sport","binary","forex","crytptocurrency"]
+
   const {currentUser,login,logout} = useContext(AuthContext);
   return (
-    <div style={{ backgroundImage: "linear-gradient(to right, rgba(106, 116, 167, 0.34), rgba(119, 135, 182, 0.95))"
-}}>
+    <div>
        <div className="PrmiumBanner" >
           <img src="/img/EarnarsBanner16.png" className="AffliateBannertt" alt=""/>
           </div>
         <div className="ApplyFor">
-          <p className="unlock">Premium Subscription Unlocks All Predictions</p>
-            <p className="pageRisk">If you subscribe to our premium expert predictions and  apply all our risk reward  ratio 
-and don't turn profit at the end of the month, we will refund the subscription money you paid or 
-your next month subscription becomes free. </p>
+          <p className="unlock">Premium Membership Unlocks A Tipster Predictions</p>
+            <p className="pageRisk">When you Subscribe to any of our verified tipster membership you get access to the tipster 
+                                            daily, weekly & monthly prediction   </p>
         </div>
-        <div className="freeB">
-            <div className="ButtonQ fff">$50/₦25,000</div>
-            {currentUser?<a href="/wallet" className="yip"><div className="ButtonQ fff33">Subscribe Now</div></a>:<a href="/login" className="yip"><div className="ButtonQ fff33">Subscribe Now</div></a>}
-            
-        </div>
-        <div>
-            <div><p className="AFFORDABLE">PREMIUM PREDICTION ON ALL MARKETS </p></div>
-            <div className="LIne"></div>
-        </div>
+       
 
-        <div className="ShowUp">
-        <div className="AY">
-        <table className="TYPE" >
-        <tr>
-    <th>TYPE</th>
-    <th>SUCCESS RATE</th>
-    <th>GUIDED TRADES</th>
-    <th>DAILY PREDICTION</th>
-    <th>WEEKLY PREDICTION</th>
-  </tr>
-  <tr>
-    <td>SPORT PREDICTION</td>
-    <td>UPTO 95%</td>
-    <td>YES</td>
-    <td>YES</td>
-    <td>YES</td>
-  </tr>
-  <tr>
-    <td>FOREX PREDICTION</td>
-    <td>UPTO 75%</td>
-    <td>YES</td>
-    <td>YES</td>
-    <td>YES</td>
-  </tr>
-  <tr>
-    <td>CRYPTOCURRENCY PREDICTION</td>
-    <td>UPTO 85%</td>
-    <td>YES</td>
-    <td>YES</td>
-    <td>YES</td>
-  </tr>
-  <tr>
-    <td>BINARY PREDICTION</td>
-    <td>UPTO 75%</td>
-    <td>YES</td>
-    <td>YES</td>
-    <td>YES</td>
-  </tr>
-</table>
-        </div>
-        </div>
+<div className='pag'>dropdown</div>
+        <div style={{padding:"10px 15px 25px 15px"}} >
+    <div className="TY1">
+         {card.map((app,id)=>(
+                          <div className="cardProfileDiv TY"  style={{border:"1px solid rgb(61 62 126)"}}>
+          <div className="catImgDivProfile"><img src="/img/kucoin.png" alt="" style={{width:"100%",height:"100%",borderTopRightRadius:"10px",borderTopLeftRadius:"10px"}}/></div>
+           <div className="imgcardPic"><img src="/img/create.png" alt="" className="catImgDivProfile1"/></div>
+          <div className="donKing">Don Knight</div>
+          <div className="ipconFig">
+            <div>
+              <div className="imgWay">
+                <div><img src="/img/followers.png" alt=""/></div>
+                <div>
+                  <p className="followerp1">24k</p>
+                  <p className="followerp" >Followers</p>
+                </div>
+              </div>
+            </div>
+             <div>
+               <div className="imgWay" >
+                <div><img src="/img/following.png" alt=""/></div>
+                <div>
+                  <p className="followerp1">24k</p>
+                  <p className="followerp">Following</p>
+                </div>
+              </div>
+             </div>
+          </div>
+          <div className="typing">
+            <div className="pork1">+4,345</div>
+            <div className="pork">+2,434</div>
+          </div>
+           <div className="findingPP">
+            <div className="followerp">ROI</div>
+            <div className="followerp">Profit</div>
+          </div>
 
+          <div className="houseRuMM">View Profile</div>
+        </div>
+                       ))}
+                       </div>
+                      
+
+     </div>
+      <div style={{padding:"10px 15px 25px 15px"}} >
+    <div className="TY1">
+         {card.map((app,id)=>(
+                          <div className="cardProfileDiv TY"  style={{border:"1px solid rgb(61 62 126)"}}>
+          <div className="catImgDivProfile"><img src="/img/kucoin.png" alt="" style={{width:"100%",height:"100%",borderTopRightRadius:"10px",borderTopLeftRadius:"10px"}}/></div>
+           <div className="imgcardPic"><img src="/img/create.png" alt="" className="catImgDivProfile1"/></div>
+          <div className="donKing">Don Knight</div>
+          <div className="ipconFig">
+            <div>
+              <div className="imgWay">
+                <div><img src="/img/followers.png" alt=""/></div>
+                <div>
+                  <p className="followerp1">24k</p>
+                  <p className="followerp" >Followers</p>
+                </div>
+              </div>
+            </div>
+             <div>
+               <div className="imgWay" >
+                <div><img src="/img/following.png" alt=""/></div>
+                <div>
+                  <p className="followerp1">24k</p>
+                  <p className="followerp">Following</p>
+                </div>
+              </div>
+             </div>
+          </div>
+          <div className="typing">
+            <div className="pork1">+4,345</div>
+            <div className="pork">+2,434</div>
+          </div>
+           <div className="findingPP">
+            <div className="followerp">ROI</div>
+            <div className="followerp">Profit</div>
+          </div>
+
+          <div className="houseRuMM">View Profile</div>
+        </div>
+                       ))}
+                       </div>
+                      
+
+     </div>
+     <p className='pag'>pagination</p>
 
         <Footer/>
     </div>

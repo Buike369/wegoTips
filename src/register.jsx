@@ -112,7 +112,7 @@ const Register =()=>{
 
     
     return(
-        <div className="BgColor" style={{background:"#0f0b34"}}>
+        <div className="BgColor" >
 
             <div className="formDivPAd">
             

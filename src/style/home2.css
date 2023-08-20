@@ -10,15 +10,13 @@
     width:50%;
     border-radius: 22px;
     text-align: center;
-        border: 1px solid #79749b;
-            background-color: #38386ac9;
-      
-    z-index: 1;
-
+    border: 1px solid #3f318f;
+    background-color: #171054;
+    z-index: 2;
     box-shadow: 0 -2px 14px -5px rgb(15 15 36 / 28%), 0px 3px 16px -4px rgb(15 15 15 / 17%);
       
         background-clip: padding-box;  
-     
+     position: relative;
             
                 /* border: 1px solid #635b92; */
   
@@ -30,8 +28,8 @@
     border-radius: 8px;
     background-color: inherit;
     transition: all 0.5s;
-        border: 1px solid #50497a;
-            background-color: #1c1c46;
+        border: 1px solid #302860;
+            background-color: #171054;
 }
 .seeMoreDivLink{
     display:flex;
@@ -42,13 +40,19 @@
     border:0;
     padding:10px 15px;
     color:#fff;
-    background-color: #0c1034;
+    background-color: #0d0740;
     border-radius: 5px;
     margin-top: 10px;
     margin-bottom: 10px;
     font-weight: 600;
     font-size: 16px;
     cursor:pointer;
+
+}
+
+.honeDivGuide{
+    margin-top: 51px !important;
+
 
 }
 .SeeMoreInfo:hover{
@@ -66,7 +70,19 @@
             height: auto;
             margin-top: 20px;
             border: 1px solid #5c5489;
-            background-color:#36366e;
+            background-color: #171054;
+}
+.TY{
+    width:100%;
+    max-width: 280px;
+
+}
+.pag{
+    color:#fff
+}
+.TY1{
+    display:flex;
+    justify-content: space-between;
 }
 .catImgDivProfile{
     width:100%;
@@ -183,6 +199,8 @@
 .fareWo{
     position:relative;
     padding-bottom: 2px;
+    background-repeat: no-repeat
+
 }
 .fareWo1{
     width:200px;
@@ -218,7 +236,7 @@
     padding:10px;
     font-size: 28px;
     font-weight: 800;
-    color:#e1ca3b;
+    color:gold;
 
 }
 .perceT{
@@ -260,13 +278,9 @@
 
 .earnSayPp{
     width: 100%;
-        padding: 10px 15px;
-            /* border: 1px solid #382991; */
-                /* background-color: #121255; */
-        /* border-radius: 10px; */
+        padding: 10px 15px;   
         height: 250px;
-        /* From https://css.glass */
-            background: #0c1034;
+            background: #171054;
             border-radius: 16px;
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(5px);
@@ -288,7 +302,7 @@
 }
 .sportPetNe{
     font-size: 20px;
-    color:rgb(225 202 59);
+    color:gold;
     font-weight: 700;
     text-align: center;
     margin-bottom: 10px;
@@ -562,7 +576,7 @@ color: #c5c5c5;
     font-size:18px;
     font-weight: 700;
     margin-top: 20px;
-    color:#e1ca3b;  
+    color:gold;  
 }
 
 .ye{
@@ -583,9 +597,34 @@ color: #c5c5c5;
     max-width: 1000px;
     padding: 0 10px;
     margin:0 auto;
-    
-  
 
+
+    
+}
+.him{
+    position: relative;
+    z-index: 4;
+    overflow: hidden;
+}
+
+
+.glow {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  
+    background-color: #0f0c4896;
+    z-index: 1;
+    position: absolute;
+   
+} 
+.glowLeft{
+left: -21%;
+    top: 5%;
+}
+.glowRight{
+right: -21%;
+    bottom: 5%;
 }
 .Make15{
     display:flex;
@@ -802,7 +841,7 @@ padding:10px 10px 0px 10px;
 .Great{
     padding-top:60px;
     padding-bottom: 50px;
-        background-color: #0f0b34;
+        background-color: #0d0740;
             height: 300px;
             box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
 
@@ -825,6 +864,13 @@ padding:10px 10px 0px 10px;
     }
 
 }
+
+@media(min-width:768px)  {
+    .lovePa {
+       display: none;
+    }
+
+}
 @media(max-width:768px){
     .fugmu {
         padding: 1px 0 1px 0;
@@ -836,9 +882,24 @@ padding:10px 10px 0px 10px;
         margin: 2px auto 2px auto !important;
     }
     .cardProfileDiv{
-        width:99%
+        width:100%
     }
+    .honeDivGuide{
+margin-top: 0 !important;
+    }
+        .TY1 {
+            flex-direction: column;
+        }
 
+    .TY {
+        
+        max-width: none;
+    
+    }
+.fareWo{
+   
+    background-repeat: repeat !important;
+}
 .pickStuff{
     font-size: 16px;
 }
@@ -877,9 +938,8 @@ padding:10px 10px 0px 10px;
     }
 
 .TrustSeal {
-    background: linear-gradient(258deg, #0f0b33 0%, #221c4c 100%);
-    /* background: linear-gradient(135deg, #0a0846 0%, #353559 100%); */
-    border: 1px solid rgb(61 65 129 / 15%); 
+    background: linear-gradient(258deg, #0d0740 0%, #171054 100%);
+    border: 1px solid rgb(61 65 129 / 37%);
     width: 100%;
     max-width: 530px;
      margin: 0 auto;
@@ -976,8 +1036,7 @@ padding:10px 10px 0px 10px;
 }
 .Great{
     height:auto;
-  
-        background: linear-gradient(206deg, #221c4c 20%, rgb(20 15 63) 62%, rgb(18 14 58) 76%);
+    background: linear-gradient(206deg, #171054 20%, rgb(13 7 62) 62%, rgb(13 7 62) 76%);
             border: 1px solid #635b92;
 
         backdrop-filter: blur(60px);
@@ -1043,7 +1102,7 @@ padding:10px 10px 0px 10px;
 @media(min-width:769px) {
     .home5 {
             width: 100%;
-            background-color:#080728 !important;
+            background-color:#171054 !important;
             padding: 10px 10px 40px 10px
         }
 }

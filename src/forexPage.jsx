@@ -85,11 +85,26 @@ const ForexPage = () => {
 
   return (
     <div>
-        <div className="sportPa">
-        <div>
+        <div >
+        {/* <div>
           <img src="/img/earnarsBanner45.png" className="AffliateBanner" alt="Affliate Banner"/>
-          </div>
-          
+          </div> */}
+          <div className="sportPa">
+            <div className="affiliateImage" >
+                    <div className="grace">
+                        <h1 className="Aka">Forex Predictions</h1>
+                        {/* <div><span className="homeSpan">Home</span> <span className="homeSpan">Affiliate program</span></div> */}
+                       <p  className="weAre4">With Upto <span className="withUpto">85% acurrancy<span>.</span></span></p>
+                       <p className='everyWhere'>Buy low and sell high</p>
+                       <div className='football'>FBS, Octafx, FXTM etc.</div>
+                    </div>
+                     <div className="grace"><img src="/img/affiliate-banner.png" className="gracePic" alt="affiliate_banner"/></div>
+                     <img src="/img/StarsME.svg" className="headerAffiliateI" alt="affiliate_banner"/>
+                      <img src="/img/StarsME.svg" className="headerAffiliate2" alt="affiliate_banner"/>
+                 </div>
+                 </div>
+
+         <div className='sportsPageColorBg'> 
         <div className="MakingMoney">
         Making Money Daily on <span className="forexy">FOREX</span> trading is as easy as following our daily expert forecast.
         </div>
@@ -100,8 +115,7 @@ const ForexPage = () => {
         <div style={{padding:"0px 12px"}} >
         <p className="SportBetting">What Is Forex Trading</p>
         <div className="outcomeBeen1">
-        <div className="outcomeBeen" style={{ 
-      backgroundImage: `url(${background})`,backgroundPosition:"left right bottom top",backgroundRepeat:"no-repeat",padding:"18px 15px",backgroundSize:"cover"}}>
+        <div className="outcomeBeen" >
        <span className="forexy1"> Forex </span>trading or FX trading (also known as foreign exchange) happens 
 when you buy or sell one countries currencies against another 
 (e.g GBP/USD) with the aim of making a profit from the changing 
@@ -114,8 +128,7 @@ liquid asset markets in the world.
         <p className="WhyStart">Why Start Forex Trading</p>
         <div className="ifNi"></div>
         <div className="EasyTi">
-            <div className="EasyTim" style={{ 
- background:"linear-gradient(206deg, rgb(51 50 85) 31%, rgb(50 49 90 / 54%) 62%, rgb(53 56 92 / 44%) 76%)",backgroundPosition:"center center",backgroundRepeat:"no-repeat",backgroundSize:"cover"}} data-aos="fade-up" data-aos-duration="3000"
+            <div className="EasyTim"  data-aos="fade-up" data-aos-duration="3000"
              data-aos-easing="linear">
             <div className="onV">
             <img src="/img/icinC1.svg" alt="every source of fund" className="everyday"/>
@@ -135,9 +148,10 @@ to get you started.
 We are here to help you start 
 making money online by just 
 following our expert forecast.</div>
+ <div className='posTMa ad'></div>
+  <div className='posTMa ab' ></div>
             </div>
-            <div className="EasyTim" style={{ 
-background: "linear-gradient(206deg, rgb(51 50 85) 31%, rgb(50 49 90 / 54%) 62%, rgb(53 56 92 / 44%) 76%)",backgroundPosition:"center center",backgroundRepeat:"no-repeat",backgroundSize:"cover"}} data-aos="fade-up" data-aos-duration="3000"
+            <div className="EasyTim" data-aos="fade-up" data-aos-duration="3000"
              data-aos-easing="linear">
             <div className="onV">
             <img src="/img/icinC1.svg" alt="every source of fund" className="everyday"/>
@@ -160,9 +174,10 @@ trade: morning, noon, night,
 sleep.
 
 </div>
+ <div className='posTMa ad'></div>
+  <div className='posTMa ab' ></div>
             </div>
-            <div className="EasyTim" style={{ 
-     background: "linear-gradient(206deg, rgb(51 50 85) 31%, rgb(50 49 90 / 54%) 62%, rgb(53 56 92 / 44%) 76%)",backgroundPosition:"center center",backgroundRepeat:"no-repeat",backgroundSize:"cover"}} data-aos="fade-up" data-aos-duration="3000"
+            <div className="EasyTim"  data-aos="fade-up" data-aos-duration="3000"
              data-aos-easing="linear">
             <div className="onV">
             <img src="/img/icinC1.svg" alt="every source of fund" className="everyday"/>
@@ -188,8 +203,19 @@ Without proper risk
 management, this high degree
  of leverage can lead to large
  losses as well as gains.</div>
+  <div className='posTMa ad'></div>
+  <div className='posTMa ab' ></div>
             </div>
         </div>
+        </div>
+
+        <div className='Ems Ems1'>
+          <img src="/img/undrawgoal1.svg" alt="" className='imgFloatSport' />
+        </div>
+         <div className='Ems Ems2'>
+           <img src="/img/soccer2.svg" alt="" className='imgFloatSport' />
+         </div>
+
         </div>
 
         <div className="AgenciesTy">Who  Are Forex Brokers</div>
@@ -267,7 +293,7 @@ management, this high degree
 </div>
 </div>
 
-
+<div className="sportPa">
 
         <div className="BettingTu">Forex Trading Tutorial Videos</div>
        <div className="figma">
@@ -284,12 +310,12 @@ management, this high degree
         </div>
         </div>
 
-        <div>
+        <div style={{padding:"0 5px"}}>
           <div id="Faqc" className="faqSportMa" data-aos="fade-up" data-aos-duration="3000"
              data-aos-easing="linear">
             <div className="firstTom faqSports" data-aos="fade-down" data-aos-duration="3000"
              data-aos-easing="linear">FAQ</div>
-            <div>
+            <div className="homeChange">
               <div className="HowFarBro" onClick={drop}>
                 <span>
 How do I register  with a broker?</span>{" "}
@@ -306,7 +332,7 @@ How do I register  with a broker?</span>{" "}
                 ""
               )}
             </div>
-            <div>
+            <div className="homeChange">
               <div className="HowFarBro" onClick={drop1}>
                 <span>I dont Know anything about Forex trading,What should i do?</span>
                 <span className="IconSpace">
@@ -321,7 +347,7 @@ How do I register  with a broker?</span>{" "}
                 ""
               )}
             </div>
-            <div>
+            <div className="homeChange">
               <div className="HowFarBro" onClick={drop2}>
                 <span>How can i fund my account? </span>
                 <span className="IconSpace">
@@ -336,7 +362,7 @@ How do I register  with a broker?</span>{" "}
                 ""
               )}
             </div>
-            <div>
+            <div className="homeChange">
               <div className="HowFarBro" onClick={drop3}>
                 <span> Can your company Trade for me and pay me a percentage monthly? </span>
                 <span className="IconSpace">
@@ -351,7 +377,7 @@ How do I register  with a broker?</span>{" "}
                 ""
               )}
             </div>
-            <div>
+            <div className="homeChange">
               <div className="HowFarBro" onClick={drop4}>
                 <span>How much do i stake in every trade? </span>
                 <span className="IconSpace">
@@ -366,7 +392,7 @@ How do I register  with a broker?</span>{" "}
                 ""
               )}
             </div>
-            <div>
+            <div className="homeChange">
               <div className="HowFarBro" onClick={drop5}>
                 <span>What is the guarantee am going to make money trading forex? </span>
                 <span className="IconSpace">
@@ -385,6 +411,7 @@ How do I register  with a broker?</span>{" "}
              
        
             </div>
+          </div>
           </div>
           </div>
         </div>

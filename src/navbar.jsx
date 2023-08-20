@@ -1,5 +1,6 @@
 import React, {useState,useContext,useEffect} from 'react'
 import "./style/home2.css"
+import "./style/mobileheader.css"
 import "./style/home.css";
 import { Link} from "react-router-dom";
 import axios from "axios"
@@ -8,6 +9,7 @@ import { AuthContext } from './context/authContext';
 const Navbar= () => {
 
     const [register,setRegister] = useState(false)
+    const [feedBack,setFeedBack]=useState("")
     const {currentUser,logout,isPaid} = useContext(AuthContext);
     const tr = window.location.pathname;
 
@@ -30,12 +32,28 @@ const Navbar= () => {
     //    getSubscriptionPay()
 
     //  })
+
+    
+
+
+     const scrollF =()=>{
+          if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
+            setFeedBack('Sapap1')
+          }else{
+            setFeedBack(' ')
+          }
+      }
+    window.onscroll =()=>{
+        scrollF()
+      }
      
 
   return (
     <div>
+    <div >
       {tr === "/dashboard" ? "":
-        <div className="Header_Div_New_Bg">
+        <div className="Header_Div_New_Bg" >
+          <div className={feedBack}>
           <div className="header">
             <div>
               
@@ -48,7 +66,7 @@ const Navbar= () => {
             <div>
               <ul className="header_list">
                 <li className="Prediction_dropDown">
-                  <a href="">Predictions</a>
+                  <a href="">Markets</a>
                   <div className="OverTime_View">
                     <div className="DoubleChancert">
                       <a className="cover_Div"></a>
@@ -60,8 +78,22 @@ const Navbar= () => {
                     </div>
                   </div>
                 </li>
+                 <li className="Prediction_dropDown">
+                  <a href="">Tipster</a>
+                  <div className="OverTime_View">
+                    <div className="DoubleChancert">
+                      <a className="cover_Div"></a>
+                      <a href="/sport">Become a Tipster</a>
+                      <a href="/forex">Find a Tipster</a>
+                      <a href="/cryptocurrency">All Tips </a>
+                      
+                    
+                    </div>
+                  </div>
+                </li>
+               
                 <li className="Premium_Bet">
-                  <a href="/premium">Premium Subscription</a>
+                  <a href="/premium">Premium Prediction</a>
                 
                 </li>
                 <li className="Affliate_Bet">
@@ -113,12 +145,14 @@ const Navbar= () => {
   </>
               }
           </div>
+          </div>
         </div>
         }
 
 
          {register ? <div style={{position:'absolute',top:"50%",left:"50%",transform:"translate(-50%,-50%)",color:"red",zIndex:"500",fontSize:"20px",padding:"5px 10px",backgroundColor:"#fff"}}> Please subscribe to unlock</div>:""}
         {/* <div style={{position:'absolute',top:"400px",left:"50%",transform:"translate(-50%,-50%)",color:"red",zIndex:"500"}}> Please subscribe to unlock</div> */}
+    </div>
     </div>
   )
 }

@@ -13,9 +13,6 @@ import axios from "axios";
 import { useLocation } from "react-router"
 import "./style/background.css"
 
-import background from "./img/BacKGroundS.svg";
-
-
 
 const Home2=() =>{
 
@@ -326,7 +323,7 @@ useEffect(()=>{
     
         {/*======  section2 ========*/}
 
-      <div className="fugmu">
+      {/* <div className="fugmu">
         <div className="CarouseDivDiv ">
         <Carousel
   swipeable={false}
@@ -359,13 +356,37 @@ useEffect(()=>{
             </div>
           </Carousel>
         </div>
-        </div>
+        </div> */}
+
+
+
+
+
+
+
+         <div className="carousel_Div honeDivGuide lovePa">
+              <img src="/img/tom.png" className="ImgDiv" />
+            </div>
+              <div className="sportPa"  >
+            <div className="affiliateImage" >
+                    <div className="grace">
+                        <h1 className="Aka">Navigate the market</h1>
+                        {/* <div><span className="homeSpan">Home</span> <span className="homeSpan">Affiliate program</span></div> */}
+                       <p  className="weAre4">confidently with our  <span className="withUpto">premium forecasts<span>.</span></span></p>
+                       <p className='everyWhere' style={{marginBottom:"10px"}}>and unlock your earning potential.</p>
+                       {/* <div className='football'>Football, Tennis, Basketball ETC</div> */}
+                    </div>
+                     <div className="grace"><img src="/img/predictions2.svg" className="gracePic" alt="affiliate_banner"/></div>
+                     <img src="/img/StarsME.svg" className="headerAffiliateI" alt="affiliate_banner"/>
+                      <img src="/img/StarsME.svg" className="headerAffiliate2" alt="affiliate_banner"/>
+                 </div>
+                 </div>
 
         {/*======  section3========*/}
 
-        <div  className="fareWo" style={{backgroundImage:`url(${background})`,backgroundRepeat:'no-repeat',backgroundSize:"100% 100%",width:"100%",height:"auto"}}>
-         
-      <div className="Rtme">
+        <div  className="fareWo" >
+      <div className="him"> 
+      <div className="Rtme ">
           <div className="Free">
             <div><p className="EarnP">Earn Daily With Us </p>
             <div className="divUnder"></div></div>
@@ -441,6 +462,11 @@ useEffect(()=>{
            </div>
            </div>
            </div>
+
+           <div className="glow glowLeft"></div>
+            <div className="glow glowRight"></div>
+           </div> 
+
            {/*  */}
            </div>
 
@@ -449,7 +475,7 @@ useEffect(()=>{
         
 
            <div className="Rtme">
-               <div className="loud" style={{color:(sports === "cryptocurrency") ? "#5df362":(sports=== "binary")? "#a4a6ef" :(sports ==="sports") ? "#6fffd2a8" : "#e1ca3b"}}>Top Tipsters</div>
+               <div className="loud" style={{color:(sports === "cryptocurrency") ? "#5df362":(sports=== "binary")? "#a4a6ef" :(sports ==="sports") ? "#6fffd2a8" : "gold"}}>Top Tipsters</div>
                <div className="ye"></div>
                <div >
                <div className="faith" >
@@ -1091,7 +1117,7 @@ useEffect(()=>{
            
            <div style={{padding:"0px 10px"}}>
               <div className="TrustSeal" style={{paddingTop:"14px"}} >
-                 <div className="SealY" style={{color:(sports === "cryptocurrency") ? "#5df362":(sports=== "binary")? "#7b7ee2" :(sports ==="sports") ? "#6fffd2a8" : "#e1ca3b"}}>Earnars Trust Seal</div>
+                 <div className="SealY" style={{color:(sports === "cryptocurrency") ? "#5df362":(sports=== "binary")? "#7b7ee2" :(sports ==="sports") ? "#6fffd2a8" : "gold"}}>Earnars Trust Seal</div>
                   <div style={{width:"120px",margin:"0 auto 10px auto",borderBottom:" 1px solid #45527a"}}></div>
                  <p className="ifYou">If you judiciously follow our predictions and apply our risk reward ratio and dont turn profit at the end of the month, We will refund your subscription money or your next month subscription becomes free.</p>
 <p className="ifYou lio">T&C Apply</p>
@@ -1109,7 +1135,7 @@ useEffect(()=>{
            <div className="Make15">
                <div>
                    <div>
-                       <p className="millionM"  style={{color:(sports === "cryptocurrency") ? "#5df362":(sports=== "binary")? "#7b7ee2" :(sports ==="sports") ? "#6fffd2a8" : "#e1ca3b"}} >Make 1 million Naira monthly </p>
+                       <p className="millionM"  style={{color:(sports === "cryptocurrency") ? "#5df362":(sports=== "binary")? "#7b7ee2" :(sports ==="sports") ? "#6fffd2a8" : "gold"}} >Make 1 million Naira monthly </p>
                        <p className="OnRef">On Referral Commission</p>
                    </div>
                </div>
@@ -1361,7 +1387,7 @@ useEffect(()=>{
 
       <div className="WhatD">
          <div className="Rtme">
-         <div className="earnerPeople" style={{color:(sports === "cryptocurrency") ? "#5df362":(sports=== "binary")? "#a4a6ef" :(sports ==="sports") ? "#6fffd2a8" : "#e1ca3b"}}>What Earnars Say About Us</div>
+         <div className="earnerPeople" style={{color:(sports === "cryptocurrency") ? "#5df362":(sports=== "binary")? "#a4a6ef" :(sports ==="sports") ? "#6fffd2a8" : "gold"}}>What Earnars Say About Us</div>
         
          {/* <div className="divUnder1"></div> */}
          <div className=" marginMu fadama ">

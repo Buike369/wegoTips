@@ -1,0 +1,18 @@
+.ParentDivNewHod{
+    width:100%;
+    padding:20px 10px;
+    max-width: 1150px;
+    margin:0 auto;
+}
+.tipsterProfile{
+    font-size: 35px;
+    font-weight: 800;
+    color:#fff;
+}
+.profileCoverDiv{
+    border:1px solid #fff;
+    border-radius: 8px;
+}
+.Kn1{
+    width:100%
+}
