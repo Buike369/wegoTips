@@ -2,7 +2,9 @@
     display:flex;
     justify-content: center;
     gap:20px;
-    padding:0 10px
+    padding:0 10px;
+    position:relative;
+    /* overflow: hidden; */
 
 }
 .commT{
@@ -20,6 +22,9 @@
             
                 /* border: 1px solid #635b92; */
   
+}
+.WEW{
+    margin-left: 50px;
 }
 
 .homeChange{
@@ -134,12 +139,12 @@
 
 }
 .topPrediction{
-    font-size: 22px;
+    font-size: 30px;
         color: #fff;
         font-weight: 600;
         margin-bottom: 10px;
         text-align: center;
-        margin-top: 15px;
+        margin-top: 28px;
 }
 
 .ViewMoreButtons{
@@ -285,7 +290,7 @@
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(5px);
             -webkit-backdrop-filter: blur(5px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
+            border: 1px solid rgb(90 95 163 / 30%);
 }
 .SportPredictionL{
     display:flex;
@@ -581,9 +586,9 @@ color: #c5c5c5;
 
 .ye{
     width:200px;
-    height:4px;
+    height:2px;
     margin: 0 auto 20px auto;
-    background-color: #8f94aac2;
+    background-color: #3a396ec2;
 }
 .with{
     font-size: 28px;
@@ -727,8 +732,8 @@ right: -21%;
     width:55%;
     max-width: 400px;
     margin:0 auto 30px auto;
-    height: 5px;
-    background-color: #758bc9;
+    height: 3px;
+    background-color: #3a396ec2;
 }
 .divUnder1{
     width:30%;
@@ -773,6 +778,7 @@ right: -21%;
 .pickStuff{
     font-size: 18px;
     font-weight: 400;
+    
     color:#fff;
 }
 .carousel .control-next.control-arrow:before {
@@ -788,6 +794,7 @@ right: -21%;
     background:none !important;
 }
 .pairs{
+    
     display:flex;
     align-items: center;
     justify-content: space-between;
@@ -803,7 +810,8 @@ right: -21%;
     margin-bottom: 10px;
     color:#e3e1e1;
 }
-.addpo{
+.add
+po{
     color:#dddd33
 }
 .addpo1{
@@ -818,6 +826,7 @@ padding:10px 10px 0px 10px;
     font-weight: 700;
     text-align: center;
     margin-top: 25px;
+
     padding:0 10px;
     margin-bottom: 20px;
     
@@ -833,6 +842,7 @@ padding:10px 10px 0px 10px;
     border-radius: 3px;
         box-shadow: 1px 2px 121px #a6adc9;
 }
+
 .fadama{
     width:100%;
 
@@ -848,6 +858,7 @@ padding:10px 10px 0px 10px;
     border-radius: 10px;
 }
 .fit{
+
     padding: 5px 5px 5px 10px;
 }
 .fit:hover{
@@ -862,6 +873,7 @@ padding:10px 10px 0px 10px;
     .vap{
         display:none
     }
+
 
 }
 
@@ -878,6 +890,10 @@ padding:10px 10px 0px 10px;
     .IconSpace{
         margin-left: 4px;
     }
+        .WEW {
+            margin-left: 0px;
+        }
+
     .CarouseDivDiv {
         margin: 2px auto 2px auto !important;
     }
@@ -893,6 +909,7 @@ margin-top: 0 !important;
 
     .TY {
         
+
         max-width: none;
     
     }
@@ -908,6 +925,7 @@ margin-top: 0 !important;
 }
 .earnSayPp{
     width:100%;
+
     height:auto
 }
 
@@ -923,6 +941,7 @@ margin-top: 0 !important;
 .OnRef{
     color:#ffffff;
     font-size: 16px;
+
 }
     .Usdj{
         font-size: 14px;
@@ -938,6 +957,7 @@ margin-top: 0 !important;
     }
 
 .TrustSeal {
+
     background: linear-gradient(258deg, #0d0740 0%, #171054 100%);
     border: 1px solid rgb(61 65 129 / 37%);
     width: 100%;
@@ -953,6 +973,7 @@ margin-top: 0 !important;
         padding: 0 6px;
         margin:0 auto
     }
+
     .faith{
         width:100%;
         max-width: 100%;
@@ -968,6 +989,7 @@ margin-top: 0 !important;
         width: 170px;
         margin-bottom: 5px;
     }
+
     .ImgDiv{
         height:auto;
     }
@@ -983,6 +1005,7 @@ margin-top: 0 !important;
     .WhatD{
     padding-bottom: 12px;
     padding-top: 0px;
+
     }
     .change75{
         display: none;
@@ -998,6 +1021,7 @@ margin-top: 0 !important;
 .sport2 {
     width: 100%;
 }
+
 .SealY {
     width: 62%;
 }
@@ -1013,6 +1037,7 @@ margin-top: 0 !important;
        
  
 }
+
 .Make15 {
  
     width: 100%;
@@ -1028,6 +1053,7 @@ margin-top: 0 !important;
 .backthan{
     font-size: 21px;
 }
+
 .UsAbout {
   
     width: 82%;
@@ -1037,12 +1063,13 @@ margin-top: 0 !important;
 .Great{
     height:auto;
     background: linear-gradient(206deg, #171054 20%, rgb(13 7 62) 62%, rgb(13 7 62) 76%);
-            border: 1px solid #635b92;
+            border: 1px solid #221956;
 
         backdrop-filter: blur(60px);
     width: 100%;
         max-width: 530px;
         margin: 0 auto;
+
 }
 .yuri{
     background-color: #7b85a9;
@@ -1058,6 +1085,7 @@ margin-top: 0 !important;
 }
 .you {
     width: 100%;
+
 }
 .divRatT{
     margin-bottom: 0;
@@ -1073,6 +1101,7 @@ margin-top: 0 !important;
             flex-direction: column;
             gap: 0;
          
+
             padding: 0 10px;
         }
         .Make15{
@@ -1088,6 +1117,7 @@ margin-top: 0 !important;
 @media(min-width:1250px){
     .Rtme {
         max-width: 1200px;
+
     } 
    
 }
@@ -1103,6 +1133,7 @@ margin-top: 0 !important;
     .home5 {
             width: 100%;
             background-color:#171054 !important;
+
             padding: 10px 10px 40px 10px
         }
 }
@@ -1113,3 +1144,70 @@ margin-top: 0 !important;
             left: 2%;
         }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

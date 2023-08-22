@@ -254,7 +254,22 @@
     width: 250px;
     z-index: -8;
 }
+.papag3{
+    position: absolute;
+    left: 2%;
+    bottom: -15%;
+    width: 250px;
+    z-index: -8;
+}
 .papag1{
+    position: absolute;
+    right: 2%;
+    top: -15%;
+    width: 250px;
+    z-index: -8;
+    transform: rotate(180deg);
+}
+.papag4 {
     position: absolute;
     right: 2%;
     top: -15%;
@@ -413,6 +428,14 @@
         padding-bottom: 20px;
 
     }
+    .papag3{
+    left: -33%;
+        bottom: 24%;
+    }
+        .papag4 {
+            right: -26%;
+                top: -5%;
+        }
 
     .headerAffiliateI{
     left: -27%;

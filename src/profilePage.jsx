@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import "./style/newProfile.css"
 
 const ProfilePage = () => {
-
+ const [sectionChange,setSectionChange] = useState("tips")
     const  tipDetails = [{name:"Tips",value:"2,633"},{name:"Wins",value:"1,740"},{name:"Profit",value:"+575.06"},{name:"Draw",value:"99"},{name:"Win Rate",value:"66%"},{name:"ROI",value:"21.8%"}]
   return (
     <div style={{marginTop:"70px"}}>
@@ -16,81 +16,83 @@ const ProfilePage = () => {
 
         <div className='profileCoverDiv'>
             <div><img src="/img/tom.png" alt="" className='Kn1'/></div>
-            <div>
-                <img src="" alt=""/>
-            </div>
-            <div>
-                <div>
-                    <div>
-                        <img src="" alt="" />
-                        <img src="" alt="" />
+            {/* <div className="point">
+                <img src="/img/picMan.png" alt="" className="ImgPicMan"/>
+                <img src="/img/picManImg.png" alt="" className="ImgPicMan1"/>
+            </div> */}
+            <div className='holder7'> 
+                <div className='holder2'>
+                    <div className="point">
+                        <img src="/img/picMan.png" alt="" className="ImgPicMan"/>
+                         <img src="/img/picManImg.png" alt="" className="ImgPicMan1"/>
                     </div>
                     <div>
-                        <div>
-                            <p>Amos Rios</p>
-                            <img src="" alt="" />
-                              <img src="" alt="" />
+                        <div className='AmosD'>
+                            <p className='namePad'>Amos Rios</p>
+                            <img src="/img/iconGuide.png" alt="" className='holder3' />
+                              <img src="/img/usaFlag.png" alt="" className='holder3'/>
                         </div>
-                         <div>
-                            <img src="" alt="" />
-                            <p>Joined Jan, 2017</p>
+                         <div className='AmosD'>
+                            <img src="/img/calendar.png" alt="" className='holder4'/>
+                            <p className='holder5'>Joined Jan, 2017</p>
                          </div>
                      
                     </div>
                 </div>
-                <div>
-                    <div><button>Subscribe From</button></div> 
-                       <div><button>Follow</button></div>
+                <div className='AmosD holder8' >
+                    <div><button className='holder6 holder5'>Subscribe From</button></div> 
+                       <div><button  className='holder6 holder5'>Follow</button></div>
                 </div>
             </div>
 
-            <div>
+            <div className='holder7 holder8 msg1' >
                 {tipDetails.map((app,id)=>(
-                <div key={id}>
-                    <p>{app.value}</p>
-                    <p>{app.name}</p>
+                <div key={id} className="msg">
+                    <p className='msg3'>{app.value}</p>
+                    <p className='msg4'>{app.name}</p>
                 </div>
                 ))}
             </div>
-            <div>
-                <div>
-                  <img src="" alt=""/>
-                  <p>Tips</p>
+            <div className='AmosD'>
+                <div className='AmosD IP1'>
+                  <img src="/img/tips.png" alt=""/>
+                  <p className='IP holder3'>Tips</p>
                 </div>
-                  <div>
-                  <img src="" alt=""/>
-                  <p>Statistics</p>
+                  <div className='AmosD IP1'>
+                  <img src="/img/statistics.png" alt=""/>
+                  <p className='IP holder3'>Statistics</p>
                 </div>
-                  <div>
-                  <img src="" alt=""/>
-                  <p>Followers (2400)</p>
+                  <div className='AmosD IP1'>
+                  <img src="/img/followerSecond.png" alt=""/>
+                  <p className='IP holder3'>Followers (2400)</p>
                 </div>
-                  <div>
-                  <img src="" alt=""/>
-                  <p>Following (240)</p>
+                  <div className='AmosD IP1'>
+                  <img src="/img/followingSecond.png" alt=""/>
+                  <p className='IP holder3'>Following (240)</p>
                 </div>
             </div>
         </div>
-// section for tips
+ {/* section for tips */}
 
-    <div>
-        //change here
+    <div className="Above">
+        {/* //change here */}
 
-        // sect 1 change
+        {/* // sect 1 change */}
+        {(sectionChange === "tips") ? 
         <div>
-            <div>
-                <div><button>Active Tips</button></div>
-                   <div><button>Finished Tips</button></div>
+            <div className='AmosD'>
+                <div><button className=' holder6 AC'>Active Tips</button></div>
+                   <div><button className=' holder6 AC'>Finished Tips</button></div>
             </div>
             <div>
-            <p>28th Oct 2021</p>
+            <p className='Oct'>28th Oct 2021</p>
             <div>
                 <div>
-                    <div>
-                        <img src="" alt="" />
-                        <p>ENGLAND Premier League, 15:30 GMT +0</p>
+                    <div className='AmosD' >
+                        <img src="/img/fengland.png" alt="" />
+                        <p className='holder5'>ENGLAND Premier League, 15:30 GMT +0</p>
                     </div>
-                    <p>Middlesbrough FC v Peterborough United</p>
+                    <p className='IP'>Middlesbrough FC v Peterborough United</p>
                 </div>
                   <div>
                     <div><button>Active Tip</button></div>
@@ -99,11 +101,20 @@ const ProfilePage = () => {
             </div>
             </div>
         </div> 
+        :""}
 
-        // sect 2 change
+        {/* // sect 2 change */}
+         {(sectionChange === "tips") ? 
         <div>
 
         </div>
+          :""}
+          // sect 3 change
+               {(sectionChange === "tips") ? 
+        <div>
+
+        </div>
+            :""}
         //end change
           <div>
           

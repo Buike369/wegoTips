@@ -376,7 +376,7 @@ useEffect(()=>{
                        <p className='everyWhere' style={{marginBottom:"10px"}}>and unlock your earning potential.</p>
                        {/* <div className='football'>Football, Tennis, Basketball ETC</div> */}
                     </div>
-                     <div className="grace"><img src="/img/predictions2.svg" className="gracePic" alt="affiliate_banner"/></div>
+                     <div className="grace"><img src="/img/predictions2.svg" className="gracePic WEW" alt="affiliate_banner"/></div>
                      <img src="/img/StarsME.svg" className="headerAffiliateI" alt="affiliate_banner"/>
                       <img src="/img/StarsME.svg" className="headerAffiliate2" alt="affiliate_banner"/>
                  </div>
@@ -428,6 +428,8 @@ useEffect(()=>{
 
                   </div>
                </div>
+               <img src="/img/undrawWorld1.svg" alt="" className="papag3" />
+                <img src="/img/undrawWorld1.svg" alt="" className="papag4" />
            </div>
 
         <div className="divRatT">
@@ -459,6 +461,8 @@ useEffect(()=>{
                    <p className="AirTime">Monthly</p>
                   <div className="successRate100"><p className="RateSuccess">65% Success Rate</p></div>
                </div>
+               <img src="/img/undrawWorld1.svg" alt="" className="papag3" />
+                <img src="/img/undrawWorld1.svg" alt="" className="papag4" />
            </div>
            </div>
            </div>
