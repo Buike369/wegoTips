@@ -367,6 +367,7 @@ useEffect(()=>{
          <div className="carousel_Div honeDivGuide lovePa">
               <img src="/img/tom.png" className="ImgDiv" />
             </div>
+            <div className="Lg">
               <div className="sportPa"  >
             <div className="affiliateImage" >
                     <div className="grace">
@@ -381,6 +382,8 @@ useEffect(()=>{
                       <img src="/img/StarsME.svg" className="headerAffiliate2" alt="affiliate_banner"/>
                  </div>
                  </div>
+                 </div>
+
 
         {/*======  section3========*/}
 
@@ -479,7 +482,7 @@ useEffect(()=>{
         
 
            <div className="Rtme">
-               <div className="loud" style={{color:(sports === "cryptocurrency") ? "#5df362":(sports=== "binary")? "#a4a6ef" :(sports ==="sports") ? "#6fffd2a8" : "gold"}}>Top Tipsters</div>
+               <div className="loud" style={{color: "#d5b405"}}>Top Tipsters</div>
                <div className="ye"></div>
                <div >
                <div className="faith" >
@@ -527,7 +530,7 @@ useEffect(()=>{
               //      </div> 
                 <div style={{padding:"10px 0 25px 0"}}>
                           <div className="cardProfileDiv" key={id} style={{border:"1px solid rgb(78 172 156)"}}>
-          <div className="catImgDivProfile"><img src="/img/kucoin.png" alt="" style={{width:"100%",height:"100%",borderTopRightRadius:"10px",borderTopLeftRadius:"10px"}}/></div>
+          <div className="catImgDivProfile"><img src="/img/sportsBall.jpg" alt="" style={{width:"100%",height:"100%",borderTopRightRadius:"10px",borderTopLeftRadius:"10px"}}/></div>
            <div className="imgcardPic"><img src="/img/create.png" alt="" className="catImgDivProfile1"/></div>
           <div className="donKing">Don Knight</div>
           <div className="ipconFig">
@@ -573,7 +576,7 @@ useEffect(()=>{
                   //  </div>
                     <div style={{padding:"10px 0 25px 0"}}>
                           <div className="cardProfileDiv" key={id} style={{border:"1px solid rgb(78 172 156)"}}>
-          <div className="catImgDivProfile"><img src="/img/kucoin.png" alt="" style={{width:"100%",height:"100%",borderTopRightRadius:"10px",borderTopLeftRadius:"10px"}}/></div>
+          <div className="catImgDivProfile"><img src="/img/sportsBall.jpg" alt="" style={{width:"100%",height:"100%",borderTopRightRadius:"10px",borderTopLeftRadius:"10px"}}/></div>
            <div className="imgcardPic"><img src="/img/create.png" alt="" className="catImgDivProfile1"/></div>
           <div className="donKing">Don Knight</div>
           <div className="ipconFig">
@@ -1121,9 +1124,9 @@ useEffect(()=>{
            
            <div style={{padding:"0px 10px"}}>
               <div className="TrustSeal" style={{paddingTop:"14px"}} >
-                 <div className="SealY" style={{color:(sports === "cryptocurrency") ? "#5df362":(sports=== "binary")? "#7b7ee2" :(sports ==="sports") ? "#6fffd2a8" : "gold"}}>Earnars Trust Seal</div>
+                 <div className="SealY" style={{color: "#5df362"}}>Earnars Trust Seal</div>
                   <div style={{width:"120px",margin:"0 auto 10px auto",borderBottom:" 1px solid #45527a"}}></div>
-                 <p className="ifYou">If you judiciously follow our predictions and apply our risk reward ratio and dont turn profit at the end of the month, We will refund your subscription money or your next month subscription becomes free.</p>
+                 <p className="ifYou">If you judiciously follow our predictions and apply our risk reward ratio and don't turn profit at the end of the month, We will refund your subscription money or your next month subscription becomes free.</p>
 <p className="ifYou lio">T&C Apply</p>
               </div>
               </div>
@@ -1139,7 +1142,7 @@ useEffect(()=>{
            <div className="Make15">
                <div>
                    <div>
-                       <p className="millionM"  style={{color:(sports === "cryptocurrency") ? "#5df362":(sports=== "binary")? "#7b7ee2" :(sports ==="sports") ? "#6fffd2a8" : "gold"}} >Make 1 million Naira monthly </p>
+                       <p className="millionM"  style={{color: "#7b7ee2" }} >Make 1 million Naira monthly </p>
                        <p className="OnRef">On Referral Commission</p>
                    </div>
                </div>
@@ -1183,8 +1186,8 @@ useEffect(()=>{
    
     <thead>
       <tr>
-        <th style={{width:"50px"}}>Date</th>
-        <th style={{width:"100px"}}>Time</th>
+        <th style={{width:"70px"}}>Date</th>
+        <th style={{width:"70px"}}>Time</th>
          <th style={{width:"150px"}}>League</th>
         <th style={{width:"150px"}}>Match</th>
         <th style={{width:"150px"}}>Tips</th>
@@ -1199,7 +1202,7 @@ useEffect(()=>{
        
       <tr  className="ADDTimeDbg ">
         <th className=" ADDTimeDbg">Jan 20</th>
-        <td>13:00</td>
+        <td>13:00pm</td>
           <td>English</td>
         <td>Eng v Ban Asia Cup T20</td>
         <td>Ban to win</td>
@@ -1210,7 +1213,7 @@ useEffect(()=>{
       </tr>
       <tr  className="ADDTimeDbg ">
         <th className="ADDTimeDbg">Jan 20</th>
-        <td>13:00</td>
+        <td>13:00am</td>
           <td>English</td>
         <td>Eng v Ban Asia Cup T20</td>
         <td>Ban to win</td>
@@ -1236,7 +1239,7 @@ useEffect(()=>{
       <tr>
         <th style={{width:"50px"}}>Date</th>
         <th style={{width:"100px"}}>Pair</th>
-         <th style={{width:"150px"}}>Condition</th>
+         <th style={{width:"100px"}}>Condition</th>
         <th style={{width:"150px"}}>Entry</th>
         <th style={{width:"150px"}}>Take Profit</th>
         <th style={{width:"150px"}}>Stop Loss</th>
@@ -1284,7 +1287,7 @@ useEffect(()=>{
       <tr>
         <th style={{width:"50px"}} className="emeka">Date</th>
         <th style={{width:"100px"}}>Pair</th>
-         <th style={{width:"150px"}}>Condition</th>
+         <th style={{width:"100px"}}>Condition</th>
         <th style={{width:"150px"}}>Entry</th>
         <th style={{width:"150px"}}>Take Profit</th>
         <th style={{width:"150px"}}>Stop Loss</th>
@@ -1391,7 +1394,7 @@ useEffect(()=>{
 
       <div className="WhatD">
          <div className="Rtme">
-         <div className="earnerPeople" style={{color:(sports === "cryptocurrency") ? "#5df362":(sports=== "binary")? "#a4a6ef" :(sports ==="sports") ? "#6fffd2a8" : "gold"}}>What Earnars Say About Us</div>
+         <div className="earnerPeople" style={{color: "#d5b405"}}>What Earnars Say About Us</div>
         
          {/* <div className="divUnder1"></div> */}
          <div className=" marginMu fadama ">
@@ -1472,10 +1475,13 @@ useEffect(()=>{
                 </span>
               </div>
               {show ? (
+                  <div>
+                    <div className="Qac"></div>
                 <p className="ILOVEK">
                   {" "}
                   To start trading the forex or cryptocurrency market all you need to know is to understand the basics of trading like, how to Buy/Sell, How to set Stoploss and Takeprofit, How to spot support and Resistance. With this basic knowledge you can follow our expert forecast and achieve success in the market.{" "}
                 </p>
+                </div>
               ) : (
                 ""
               )}
@@ -1488,9 +1494,12 @@ useEffect(()=>{
                 </span>
               </div>
               {show1 ? (
+                <div>
+                  <div className="Qac"></div>
                 <p className="ILOVEK">
                  You dont need to understand much about sport betting to bet. Once you are registered with our recommended bookmaker just copy our coupon code and search for it. With the code your can place your bet.
                 </p>
+                </div>
               ) : (
                 ""
               )}
@@ -1503,9 +1512,12 @@ useEffect(()=>{
                 </span>
               </div>
               {show2 ? (
+                <div>
+                  <div className="Qac"></div>
                 <p className="ILOVEK">
                 Click the prediction button on the header and go through forex section to see recommended brokers
                 </p>
+                </div>
               ) : (
                 ""
               )}
@@ -1518,9 +1530,12 @@ useEffect(()=>{
                 </span>
               </div>
               {show3 ? (
+                <div>
+                  <div className="Qac"></div>
                 <p className="ILOVEK">
                 Click the prediction button on the header and go through Cryptocurrency section to see recommended exchanges
                 </p>
+                </div>
               ) : (
                 ""
               )}
@@ -1533,9 +1548,12 @@ useEffect(()=>{
                 </span>
               </div>
               {show4 ? (
+                <div>
+                  <div className="Qac"></div>
                 <p className="ILOVEK">
                   It cost only $50 or ₦25,000 to subscribe monthly
                 </p>
+                </div>
               ) : (
                 ""
               )}
@@ -1548,9 +1566,12 @@ useEffect(()=>{
                 </span>
               </div>
               {show5 ? (
+                <div>
+                  <div className="Qac"></div>
                 <p className="ILOVEK">
                  If you judiciously follow our predictions and apply our risk reward ratio and dont turn profit at the end of the month, We will refund your subscription money or your next month subscription becomes free.
                 </p>
+                </div>
               ) : (
                 ""
               )}
@@ -1563,9 +1584,12 @@ useEffect(()=>{
                 </span>
               </div>
               {show6 ? (
+                <div>
+                  <div className="Qac"></div>
                 <p className="ILOVEK">
                   We pay 50% commission on any user your refer to our plaform.e.g if Jones refers Emeka and Emeka subscribe to our premium prediction, Jones will recieve 50% ($25 or ₦12,500). if Emeka continue renewing his subscrption every month, Jones will keep earning his referral bonus for life.
                 </p>
+                </div>
               ) : (
                 ""
               )}
@@ -1578,9 +1602,12 @@ useEffect(()=>{
                 </span>
               </div>
               {show7 ? (
+                <div>
+                  <div className="Qac"></div>
                 <p className="ILOVEK">
                   We do not accept or manage users trading/ betting funds, trade or bet for any user. We only forecast the forex, crypto, binary market & predicts games. Users are responsible for managing their money with any brokers or bookies of their choice.
                 </p>
+                </div>
               ) : (
                 ""
               )}
@@ -1592,6 +1619,26 @@ useEffect(()=>{
 
         
       </div>
+
+       <div style={{padding:"0 10px"}}>
+                <div className="MessageDivCov">
+               <div className="Package_Up">
+                   <h1 className="alap">Don't miss out on Fantastic News</h1>
+                   <p className="Each_Time_your">
+                       Subscribe to our newsletter and be the first to receive news.
+                   </p>
+                   <form>
+                    <div className="newsInput">
+                        <input type="email" placeholder="Enter Your Email"  className="newsBro"/>
+                    </div>
+                   </form>
+                   <img src="/img/news.svg" alt=""  className="messageImg"/>
+               </div>
+               <img src="/img/undrawWorld1.svg" alt="" className="papag" />
+                <img src="/img/undrawWorld1.svg" alt="" className="papag1" />
+               
+               </div>
+               </div>
       <Footer />
       </div>
     );

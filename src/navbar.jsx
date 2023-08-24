@@ -102,10 +102,10 @@ const Navbar= () => {
                 <li className="Contact_Bet">
                   <a href="/betcalculator"> Bet Calculator</a>
                 </li>
-                <li className="Contact_Bet vap">
+                {/* <li className="Contact_Bet vap">
                   {tr === "/" ?<a href="#Faqc">FAQ</a> :null}
                   
-                </li>
+                </li> */}
                 {/* <li className="FAQ_Bet">
                   <a href="#Faqc">FAQ</a>
                 </li> */}

@@ -82,6 +82,8 @@
     width: 100%;
     max-width: 500px;
     margin: 30px auto 20px auto;
+    position:relative;
+    z-index: 10;
 }
 .newsBro{
    
@@ -239,7 +241,7 @@
                 border: 1px solid #2d2476;
                 box-shadow: 0px 2px 12px #0f0d328c;
                 position: relative;
-                z-index: -5;
+                z-index: 5;
 
 }
 
