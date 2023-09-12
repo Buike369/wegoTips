@@ -1,9 +1,7 @@
 .Sapap{
-    /* background-color: #001041; */
+ 
     background-color: #0d0740;
-    /* box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px, rgb(0 0 0 / 6%) 0px 2px 4px -1px; */
-    /* border: 1px solid transparent; */
-    /* box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%); */
+  
   
 }
 .derpm{
@@ -39,10 +37,9 @@
   justify-content: space-between;
 }
 .Sapap1{
-    /* background-color: #001041; */
-    /* background-color: #22264c; */
+  
     box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px, rgb(0 0 0 / 6%) 0px 2px 4px -1px;
-    border: 1px solid transparent;
+    border-bottom: 1px solid #2d1f74;
     background-color: #0d0740;
     /* box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%); */
   
@@ -53,10 +50,25 @@
     top:0;
     z-index: 1000;
 }
+
+
+.Sapap60{
+  
+  box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px, rgb(0 0 0 / 6%) 0px 2px 4px -1px;
+  border-bottom: 1px solid #2d1f74;
+  background-color: #0d0740;
+  position: fixed !important;
+  width: 100%;
+  opacity: 1;
+  backdrop-filter: blur(239px);
+  top: 0;
+  left:0;
+  z-index: 8000;
+}
 .mobileH{
     display:flex;
     justify-content: space-between;
-        border-bottom: 1px solid #20294c4f;
+        /* border-bottom: 1px solid #20294c4f; */
    
 }
 

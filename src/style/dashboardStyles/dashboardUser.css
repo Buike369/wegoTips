@@ -143,7 +143,7 @@
 .linema tbody th {
     font-weight: 600;
     font-style: italic;
-    text-align: left;
+    text-align: center;
     position: relative;
     font-size: 14px;
 }
@@ -177,7 +177,7 @@
 }
 
 .linema tbody tr {
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #302b6e;
 }
 .gapUp{
     margin-top: 12px;

@@ -313,7 +313,7 @@ useEffect(()=>{
 },[post1])
 
   useEffect(()=>{
-    AOS.init();
+    AOS.init({once: true});
   },[])
   
 
@@ -373,7 +373,7 @@ useEffect(()=>{
                     <div className="grace">
                         <h1 className="Aka">Navigate the market</h1>
                         {/* <div><span className="homeSpan">Home</span> <span className="homeSpan">Affiliate program</span></div> */}
-                       <p  className="weAre4">confidently with our  <span className="withUpto">premium forecasts<span>.</span></span></p>
+                       <p  className="weAre4">confidently with our  <span className="withUpto">premium forecasts</span></p>
                        <p className='everyWhere' style={{marginBottom:"10px"}}>and unlock your earning potential.</p>
                        {/* <div className='football'>Football, Tennis, Basketball ETC</div> */}
                     </div>
@@ -431,8 +431,8 @@ useEffect(()=>{
 
                   </div>
                </div>
-               <img src="/img/undrawWorld1.svg" alt="" className="papag3" />
-                <img src="/img/undrawWorld1.svg" alt="" className="papag4" />
+               <img src="/img/undrawWorld1.svg" alt="" className="papag3 nub" />
+                <img src="/img/undrawWorld1.svg" alt="" className="papag4 nub1" />
            </div>
 
         <div className="divRatT">
@@ -464,8 +464,8 @@ useEffect(()=>{
                    <p className="AirTime">Monthly</p>
                   <div className="successRate100"><p className="RateSuccess">65% Success Rate</p></div>
                </div>
-               <img src="/img/undrawWorld1.svg" alt="" className="papag3" />
-                <img src="/img/undrawWorld1.svg" alt="" className="papag4" />
+               <img src="/img/undrawWorld1.svg" alt="" className="papag3 nub" />
+                <img src="/img/undrawWorld1.svg" alt="" className="papag4 nub1" />
            </div>
            </div>
            </div>
@@ -562,7 +562,7 @@ useEffect(()=>{
             <div className="followerp">Profit</div>
           </div>
 
-          <div className="houseRuMM">View Profile</div>
+          <a href="/view-profile" className="profileLink"><div className="houseRuMM">View Profile</div></a>
         </div>
                        </div>
                    )): post1.map((app,id)=>(
@@ -608,7 +608,7 @@ useEffect(()=>{
             <div className="followerp">Profit</div>
           </div>
 
-          <div className="houseRuMM">View Profile</div>
+          <a href="/view-profile" className="profileLink"><div className="houseRuMM">View Profile</div></a>
         </div>
                        </div>
                    ))
@@ -711,7 +711,7 @@ useEffect(()=>{
             <div className="followerp">Profit</div>
           </div>
 
-          <div className="houseRuMM">View Profile</div>
+          <a href="/view-profile" className="profileLink"><div className="houseRuMM">View Profile</div></a>
         </div>
                        </div> )) :post.map((app,id)=>(
                         // <div className="sport2 cappin yellowC" key={id}>
@@ -773,7 +773,7 @@ useEffect(()=>{
             <div className="followerp">Profit</div>
           </div>
 
-          <div className="houseRuMM">View Profile</div>
+         <a href="/view-profile" className="profileLink"> <div className="houseRuMM">View Profile</div></a>
         </div></div>
                         ))}
 
@@ -867,7 +867,7 @@ useEffect(()=>{
             <div className="followerp">Profit</div>
           </div>
 
-          <div className="houseRuMM">View Profile</div>
+         <a href="/view-profile"  className="profileLink"> <div className="houseRuMM">View Profile</div> </a>
         </div>
                        </div>
                     )):post3.map((app,id)=>(
@@ -930,7 +930,7 @@ useEffect(()=>{
             <div className="followerp">Profit</div>
           </div>
 
-          <div className="houseRuMM">View Profile</div>
+          <a href="/view-profile"  className="profileLink"><div className="houseRuMM">View Profile</div></a>
         </div>
                        </div>
                     ))}
@@ -1023,7 +1023,7 @@ useEffect(()=>{
             <div className="followerp">Profit</div>
           </div>
 
-          <div className="houseRuMM">View Profile</div>
+         <a href="/view-profile"  className="profileLink"><div className="houseRuMM">View Profile</div></a>
         </div>
                        </div>
                     )):post4.map((app,id)=>(
@@ -1086,7 +1086,7 @@ useEffect(()=>{
             <div className="followerp">Profit</div>
           </div>
 
-          <div className="houseRuMM">View Profile</div>
+         <a href="/view-profile"  className="profileLink"> <div className="houseRuMM">View Profile</div></a>
         </div>
                        </div>
                   
@@ -1126,7 +1126,8 @@ useEffect(()=>{
               <div className="TrustSeal" style={{paddingTop:"14px"}} >
                  <div className="SealY" style={{color: "#5df362"}}>Earnars Trust Seal</div>
                   <div style={{width:"120px",margin:"0 auto 10px auto",borderBottom:" 1px solid #45527a"}}></div>
-                 <p className="ifYou">If you judiciously follow our predictions and apply our risk reward ratio and don't turn profit at the end of the month, We will refund your subscription money or your next month subscription becomes free.</p>
+                 {/* <p className="ifYou">If you judiciously follow our predictions and apply our risk reward ratio and don't turn profit at the end of the month, We will refund your subscription money or your next month subscription becomes free.</p> */}
+                 <p className="ifYou">By diligently adhering to our predictions, utilizing our risk-reward ratio, and not achieving a profit by the end of the month, you are eligible for a refund of your subscription fee or the option for a complimentary subscription for the following month.</p>
 <p className="ifYou lio">T&C Apply</p>
               </div>
               </div>
@@ -1168,6 +1169,7 @@ useEffect(()=>{
                    </div>
                </div>
            </div>
+           <img src="/img/pgf.svg" alt="image"  className="emWike"/>
            </div>
            </div>
            </div>
@@ -1175,33 +1177,43 @@ useEffect(()=>{
           <div className="youpin">
 
               
-
                  <div className="topPrediction">Top Predictions</div>
               <div className="UponT">
                 <div className="sportPetNe">Sports Predictions</div>
                
-              
+           <div className="adaba"> 
        <div role="region" aria-labelledby="caption" tabindex="0">
-  <table className='linema'>
+  <table   style={{borderCollapse: "collapse"}}  className='linema '>
    
     <thead>
       <tr>
-        <th style={{width:"70px"}}>Date</th>
+        <th style={{width:"100px"}}>Date</th>
         <th style={{width:"70px"}}>Time</th>
          <th style={{width:"150px"}}>League</th>
-        <th style={{width:"150px"}}>Match</th>
-        <th style={{width:"150px"}}>Tips</th>
-        <th style={{width:"150px"}}>Odd</th>
-        <th style={{width:"150px"}}>Stake</th>
-        <th style={{width:"150px"}}>Profits</th>
+        <th style={{width:"180px"}}>Match</th>
+        <th style={{width:"180px"}}>Tips</th>
+        <th style={{width:"60px"}}>Odd</th>
+        <th style={{width:"80px"}}>Stake</th>
+        <th style={{width:"80px"}}>Profits</th>
                 
       </tr>
     </thead>
     <tbody>
        
        
-      <tr  className="ADDTimeDbg ">
-        <th className=" ADDTimeDbg">Jan 20</th>
+      <tr  className="ADDTimeDbg " >
+        <th className=" ADDTimeDbg">09/11/2023</th>
+        <td>13:00pm</td>
+          <td>English</td>
+        <td>Eng v Ban Asia Cup T20</td>
+        <td>Ban to win</td>
+        <td>1.72</td>
+        <td>60.00 GBP</td>
+         <td>-60.00 GBP</td>
+        
+      </tr>
+        <tr  className="ADDTimeDbg " >
+        <th className=" ADDTimeDbg">09/11/2023</th>
         <td>13:00pm</td>
           <td>English</td>
         <td>Eng v Ban Asia Cup T20</td>
@@ -1212,7 +1224,7 @@ useEffect(()=>{
         
       </tr>
       <tr  className="ADDTimeDbg ">
-        <th className="ADDTimeDbg">Jan 20</th>
+        <th className="ADDTimeDbg">09/11/2023</th>
         <td>13:00am</td>
           <td>English</td>
         <td>Eng v Ban Asia Cup T20</td>
@@ -1230,19 +1242,21 @@ useEffect(()=>{
     </tbody>
   </table>
 </div>
+</div> 
  <div className="seeMoreDivLink"><button className="SeeMoreInfo">See More</button></div>
            <div className="sportPetNe gapUp">Forex Predictions</div>
+           <div className="adaba">
       <div role="region" aria-labelledby="caption" tabindex="0">
-  <table className='linema'>
+  <table className='linema' style={{borderCollapse: "collapse"}}>
    
     <thead>
       <tr>
-        <th style={{width:"50px"}}>Date</th>
-        <th style={{width:"100px"}}>Pair</th>
+        <th style={{width:"100px"}}>Date</th>
+        <th style={{width:"180px"}}>Pair</th>
          <th style={{width:"100px"}}>Condition</th>
-        <th style={{width:"150px"}}>Entry</th>
-        <th style={{width:"150px"}}>Take Profit</th>
-        <th style={{width:"150px"}}>Stop Loss</th>
+        <th style={{width:"100px"}}>Entry</th>
+        <th style={{width:"100px"}}>Take Profit</th>
+        <th style={{width:"100px"}}>Stop Loss</th>
         
                 
       </tr>
@@ -1251,7 +1265,7 @@ useEffect(()=>{
        
        
       <tr  className="ADDTimeDbg ADDTimeDbg22">
-        <th className=" ADDTimeDbg">Jan 20</th>
+        <th className=" ADDTimeDbg">09/11/2023</th>
         <td>GBP/USD</td>
           <td>Long(buy)</td>
         <td>1.678787</td>
@@ -1261,7 +1275,17 @@ useEffect(()=>{
         
       </tr>
       <tr  className="ADDTimeDbg ADDTimeDbg22">
-        <th className="ADDTimeDbg">Jan 20</th>
+        <th className=" ADDTimeDbg">09/11/2023</th>
+        <td>GBP/USD</td>
+          <td>Long(buy)</td>
+        <td>1.678787</td>
+        <td>1.899765</td>
+        <td>1.456378</td>
+       
+        
+      </tr>
+      <tr  className="ADDTimeDbg ADDTimeDbg22">
+        <th className="ADDTimeDbg">09/11/2023</th>
         <td>GBP/USD</td>
           <td>Short(buy)</td>
         <td>1.678787</td>
@@ -1277,20 +1301,22 @@ useEffect(()=>{
      
     </tbody>
   </table>
+</div>
 </div>
  <div className="seeMoreDivLink"><button className="SeeMoreInfo">See More</button></div>
 <div className="sportPetNe gapUp">Cryptocurrency Predictions</div>
+ <div className="adaba">
       <div role="region" aria-labelledby="caption" tabindex="0">
-  <table className='linema'>
+  <table className='linema' style={{borderCollapse: "collapse"}} >
    
     <thead>
       <tr>
-        <th style={{width:"50px"}} className="emeka">Date</th>
-        <th style={{width:"100px"}}>Pair</th>
+        <th style={{width:"100px"}} className="emeka">Date</th>
+        <th style={{width:"180px"}}>Pair</th>
          <th style={{width:"100px"}}>Condition</th>
-        <th style={{width:"150px"}}>Entry</th>
-        <th style={{width:"150px"}}>Take Profit</th>
-        <th style={{width:"150px"}}>Stop Loss</th>
+        <th style={{width:"100px"}}>Entry</th>
+        <th style={{width:"100px"}}>Take Profit</th>
+        <th style={{width:"100px"}}>Stop Loss</th>
         
                 
       </tr>
@@ -1299,7 +1325,7 @@ useEffect(()=>{
        
        
       <tr  className="ADDTimeDbg ADDTimeDbg22">
-        <th className=" ADDTimeDbg">Jan 20</th>
+        <th className=" ADDTimeDbg">09/11/2023</th>
         <td>GBP/USD</td>
           <td>Long(buy)</td>
         <td>1.678787</td>
@@ -1309,7 +1335,17 @@ useEffect(()=>{
         
       </tr>
       <tr  className="ADDTimeDbg ADDTimeDbg22">
-        <th className="ADDTimeDbg">Jan 20</th>
+        <th className=" ADDTimeDbg">09/11/2023</th>
+        <td>GBP/USD</td>
+          <td>Long(buy)</td>
+        <td>1.678787</td>
+        <td>1.899765</td>
+        <td>1.456378</td>
+       
+        
+      </tr>
+      <tr  className="ADDTimeDbg ADDTimeDbg22">
+        <th className="ADDTimeDbg">09/11/2023</th>
         <td>GBP/USD</td>
           <td>Short(buy)</td>
         <td>1.678787</td>
@@ -1326,16 +1362,18 @@ useEffect(()=>{
     </tbody>
   </table>
 </div>
+</div>
     <div className="seeMoreDivLink"><button className="SeeMoreInfo">See More</button></div>
 <div className="sportPetNe gapUp">Binary Predictions</div>
+ <div className="adaba">
       <div role="region" aria-labelledby="caption" tabindex="0">
-  <table className='linema'>
+  <table className='linema' style={{borderCollapse: "collapse"}} >
    
     <thead>
       <tr>
-        <th style={{width:"50px"}}>Date</th>
-        <th style={{width:"100px"}}>Pair</th>
-         <th style={{width:"150px"}}>Condition</th>
+        <th style={{width:"33%"}}>Date</th>
+        <th style={{width:"33%"}}>Pair</th>
+         <th style={{width:"33%"}}>Condition</th>
        
                 
       </tr>
@@ -1344,7 +1382,15 @@ useEffect(()=>{
        
        
       <tr  className="ADDTimeDbg ADDTimeDbg22">
-        <th className=" ADDTimeDbg">Jan 20</th>
+        <th className=" ADDTimeDbg">09/11/2023</th>
+        <td>GBP/USD</td>
+          <td>Long(buy)</td>
+        
+       
+        
+      </tr>
+         <tr  className="ADDTimeDbg ADDTimeDbg22">
+        <th className=" ADDTimeDbg">09/11/2023</th>
         <td>GBP/USD</td>
           <td>Long(buy)</td>
         
@@ -1352,7 +1398,7 @@ useEffect(()=>{
         
       </tr>
       <tr  className="ADDTimeDbg ADDTimeDbg22">
-        <th className="ADDTimeDbg">Jan 20</th>
+        <th className="ADDTimeDbg">09/11/2023</th>
         <td>GBP/USD</td>
           <td>Short(buy)</td>
        
@@ -1366,6 +1412,7 @@ useEffect(()=>{
      
     </tbody>
   </table>
+</div>
 </div>
  <div className="seeMoreDivLink"><button className="SeeMoreInfo">See More</button></div>
 

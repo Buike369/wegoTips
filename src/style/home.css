@@ -6,7 +6,7 @@
     color: #fff;
     /* background-color:#8080805e ; */
     width:100%;
-    max-width: 1200px;
+    max-width: 1110px;
     margin:auto
 
 }
@@ -361,7 +361,7 @@ ul{
 }
 .ADDTimeDbg{
     background-color: #17105475;
-    border-bottom: 1px solid gray !important;
+    
 }
 
 /* .ADDTimeDbg22 {
