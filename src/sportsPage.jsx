@@ -87,9 +87,7 @@ const SportsPage = () => {
   return (
     <div>
         <div >
-        {/* <div>
-          <img src="/img/earnarsBanner34.png" className="AffliateBanner6" alt=""/>
-          </div> */}
+      
            <div className="sportPa">
             <div className="affiliateImage" >
                     <div className="grace">
@@ -107,19 +105,25 @@ const SportsPage = () => {
 
 <div className='sportsPageColorBg'>
         <div className="MakingMoney">
-        Making Money Daily on <span className="forexy">SPORTS</span> trading is as easy as following our daily expert predictions
+       Discover how easy it is to make money daily with <span className='forexy'> SPORTS </span>trading by simply following our expert predictions
         </div>
         
-        {/* <Link to="/login" className="ifi"><div className="NowUpSign">  SIGN UP NOW</div></Link> */}
+       
         {currentUser ? " " :  <div style={{display:"flex",justifyContent:"center",alignItems:"center"}}><Link to="/login" className="ifi"> <button className="NowUpSign" >SIGN UP NOW</button></Link> </div>}  
         <div style={{padding:"0px 12px"}}>
-        <p className="SportBetting">What Is Sports Betting</p>
-        <div className="outcomeBeen1">
-        <div className="outcomeBeen" >
-        <span className="forexy1"> Sports </span>betting is the activity of predicting sports results and placing a wager on the outcome.  <span className="forexy1">Sport </span>betting is legally recognized across the world and has actually been an alternative source of income for millions of sport fans across the world.  
+       
+        <div className="cardTin">
+        <div className="cardTin1" ><div className='nDi'><img src="/img/sports.svg" alt="" className='spIm' /></div></div>
+        <div className="cardTin1" >
+          <div className="cardTin3">
+           <p className="SportBetting">What Is Sports Betting</p>
+          <p className="cardTin2" >
+        <span className="forexy1"> Sports</span> betting, legally recognized across the world, is the activity of predicting sports results and placing a wager on the outcome. It has actually become an alternative source of income for millions of sports fans worldwide. </p>
         </div>
         </div>
         </div>
+        </div>
+        <div className='sportPa'>
         <div style={{padding:"0px 12px"}}>
         <p className="WhyStart">Why Start Sport Betting</p>
         <div className="ifNi"></div>
@@ -176,10 +180,17 @@ You can also enjoy sports betting anywhere and anytime e.g from the comfort of y
             </div>
         </div>
         </div>
+        </div>
         <div className='Ems Ems1'>
           <img src="/img/undrawgoal1.svg" alt="" className='imgFloatSport' />
         </div>
          <div className='Ems Ems2'>
+           <img src="/img/soccer2.svg" alt="" className='imgFloatSport' />
+         </div>
+         <div className='Ems Ems3'>
+           <img src="/img/soccer2.svg" alt="" className='imgFloatSport' />
+         </div>
+         <div className='Ems Ems4'>
            <img src="/img/soccer2.svg" alt="" className='imgFloatSport' />
          </div>
           {/* <div className='Ems Ems3'></div>

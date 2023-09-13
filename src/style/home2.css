@@ -643,6 +643,15 @@
     margin: -14px auto 0px auto;
 
 }
+.ahh{
+    width:700px;
+    height:700px;
+    background-color: #171054;
+    border-bottom-left-radius: 900px;
+    position: absolute;
+    top:0;
+    right:-30px
+}
 
 .ifYou {
     width: 60%;
@@ -651,6 +660,7 @@
     font-size: 16px;
     font-weight: 400;
     text-align: center;
+    line-height: 20px;
 
 
 
@@ -840,6 +850,9 @@
 }
 
 .HomPageBg {
+    /* position: sticky; */
+    overflow-x: hidden;
+    /* position: relative; */
     /* background-color: #0f0b34;
      */
     /* background: rgb(13, 11, 48); */
@@ -1072,12 +1085,24 @@ left:0px;
     .fugmu {
         padding: 1px 0 1px 0;
     }
+    .ahh{
+        width:400px;
+        height:400px;
+        border-bottom-left-radius: 400px;
+    }
     .emWike{
         display:none;
+    }
+    .sportPetNe{
+        font-size: 17px;
     }
         .nub {
             left: -100px
         }
+                .lovePa {
+                 position: relative;
+                 z-index: 2;
+                }
                  .nub1 {
                      right: -100px
                  }

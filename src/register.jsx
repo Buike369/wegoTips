@@ -117,18 +117,18 @@ const Register =()=>{
             <div className="formDivPAd">
             
       
-              <div style={{padding:"0px 5px"}}>
+              <div style={{padding:"0px 5px"}} className="DivForming">
             <div className="Form_Div page">
                 <form>
       {/* {message && <div style={{color:"#fff",position:"absolute",zIndex:"500",left:"50%",right:"50%",top:"-5%",padding:"5px 10px",backgroundColor:"#20263a",width:"100%",transform:"translate(-50%,-50%)",textAlign:"center",borderRadius:"5px"}}>{message}</div>} */}
 
                      <p className="New_Account textAdmin">Create an Account</p>
-                      {/* {message && <p style={{color:"#fff"}}>{message}</p>} */}
-                    <div> <input type="text" placeholder="User_name"  className="Full_Name inpupage page" onChange={handleChange} name="username"/></div>
-                    <div> <input type="email" placeholder="Email" className="Full_Name inpupage page" onChange={handleChange} name="email"/></div>
-                  {/* {isValid ? "": <p style={{color:"#fff"}}>invalid email </p>} */}
+                     
+                    <div> <input type="text" placeholder="User_name"  className="Full_Name inpupage page10 page11" onChange={handleChange} name="username"/></div>
+                    <div> <input type="email" placeholder="Email" className="Full_Name inpupage page10 page11" onChange={handleChange} name="email"/></div>
+                
 
-                    <div className="sers"> <input type={inputs50.showPassword ? "text":"password"} placeholder="Password" className="Full_Name inpupage page" onChange ={handleChange} name="password" value={inputs.password}
+                    <div className="sers"> <input type={inputs50.showPassword ? "text":"password"} placeholder="Password" className="Full_Name inpupage page10 page11" onChange ={handleChange} name="password" value={inputs.password}
                   />
                   {inputs50.showPassword ?<FontAwesomeIcon icon={faEye} className="PlusIcon plusIcon2 ser1" onClick={handleClickShowPassword}/>:<FontAwesomeIcon icon={faEyeSlash} className="PlusIcon plusIcon2 ser1" onClick={handleClickShowPassword}/> }</div>
                   {err && <p className="errpage">{err}</p>}
@@ -139,7 +139,7 @@ const Register =()=>{
                     
                     <div className="Checkbox_div"> <input type="checkbox" className="Bym" name="term" onChange={handleChange2}/><p className="Over_18 adColor">By checking this box you agree to all our Terms & Conditions.Click to  <a href="/termscondition" className="trems1">here</a> to read.</p></div>
 
-                     <button disabled={!over18 || !term} className={over18 && term?" RegisterM regmin":"RegisterM page"} onClick={handleSumit}>Register</button>
+                     <button disabled={!over18 || !term || (inputs.password.length === 0) || (inputs.password.length === 0) || (inputs.email.length === 0)} className={over18 && term && (inputs.password.length > 0) && (inputs.password.length > 0) && (inputs.email.length > 0) ? " RegisterM regmin":"RegisterM page10 page11"} onClick={handleSumit}>Register</button>
                      <div className="Or_with2">
                          <div className="Or_With"></div>
                          <p className="adColor">Or register with</p>
@@ -147,7 +147,7 @@ const Register =()=>{
                          <div className="Or_With"></div>
                      </div>
                      {/* <GoogleLogin clientId ="451426581815-ms0de6c6i4mk58d9k5d3e44q9ipqufq7.apps.googleusercontent.com" buttonText="Login with google" onSuccess={responseGoogle} onFailure={responseGoogle} cookiePolicy = {`single_host_origin`}/> */}
-                     <div className="Googgle page"><FontAwesomeIcon icon={faGooglePlusG} className="gooleI" style={{width:"20%"}}/><div>Google</div><div  style={{width:"20%"}}><FontAwesomeIcon  className="goole" /></div></div>
+                     <div className="Googgle page10 page12"><FontAwesomeIcon icon={faGooglePlusG} className="gooleI" style={{width:"20%"}}/><div>Google</div><div  style={{width:"20%"}}><FontAwesomeIcon  className="goole" /></div></div>
                      <p className="Already_Account adColor">Already have an account?</p>
                      <div className="LOGIN_HERE_NOW"><Link to="/login" className="p_LoGIn trems1">Login Here</Link></div>
 

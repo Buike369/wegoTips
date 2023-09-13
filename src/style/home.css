@@ -7,7 +7,9 @@
     /* background-color:#8080805e ; */
     width:100%;
     max-width: 1110px;
-    margin:auto
+    margin:auto;
+    position: relative;
+    z-index: 400;
 
 }
 .Free_ExportTT{
@@ -149,12 +151,12 @@ ul{
     margin-top: 12px;
     margin-bottom: 12px;
     margin-left: 20px;
-    border-left: 1px solid #fff;
+    border-left: 1px solid #413a78;
     padding-left: 10px;
 }
 
 .header_list li a{
-    color:#e8e8ef;
+    color:#d1d1e1;
     font-family: 'Roboto Serif', serif;;
     text-decoration: none;
     font-size: 15px;
@@ -165,18 +167,20 @@ ul{
     color:#ffc804;
 }
 .Login{
-    border:0;
-    padding:6px 15px;
-    border-radius: 4px;
-    font-weight: 600;
-    background-color: #fff;
-    color:rgb(20, 3, 3);
+padding: 6px 25px;
+    border-radius: 35px;
+    font-weight: 500;
+    text-align: center;
+    background-color: #0d0740;
+    color: #b1acd9;
+    border: 1px solid #8d85c96b;
     cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    box-shadow: rgb(88 86 151 / 7%) 0px 1px 2px, rgb(88 90 153 / 7%) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgb(78 89 179 / 7%) 0px 8px 16px, rgb(114 105 183 / 7%) 0px 16px 32px, rgb(53 55 139 / 7%) 0px 32px 64px;
 }
 .Login:hover{
-    background-color:#001041;;
+    background-color:#464195;;
     color:#fff;
+    border: 1px solid #617dcd;
     /* border:1px solid #fff; */
 }
 .ImgDiv{

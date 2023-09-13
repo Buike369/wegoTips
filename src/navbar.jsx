@@ -34,7 +34,7 @@ const Navbar= () => {
     //  })
 
     
-
+const locationBy = ( (tr === "/register") || (tr === "/login") || (tr === "/forgotpassword"))
 
      const scrollF =()=>{
           if(document.body.scrollTop > 140 || document.documentElement.scrollTop > 140){
@@ -46,7 +46,7 @@ const Navbar= () => {
     window.onscroll =()=>{
         scrollF()
       }
-     
+    
 
   return (
     <div>
@@ -62,7 +62,7 @@ const Navbar= () => {
                 </a>
               
             </div>
-             {(tr === "/register") || (tr === "/login") ? " " :<>
+             {locationBy ? " " :<>
             <div>
               <ul className="header_list">
                 <li className="Prediction_dropDown">

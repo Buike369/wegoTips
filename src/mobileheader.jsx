@@ -96,7 +96,7 @@ const Mobileheader = () => {
         <div className="IfeY">
           <div>
           <ul className="Mobile_menu12">
-          <li className="bgstyle"><div className="derr" onClick={()=>setShowMe(!showMe)}><span className="derpm"><span className="mackP">*</span> * Predictions</span> <span>{showMe?<FontAwesomeIcon icon={faAngleUp} className="PlusIcon plusIcon2" />:<FontAwesomeIcon icon={faAngleDown} className="PlusIcon plusIcon2" />}</span></div>
+          <li className="bgstyle"><div className="derr" onClick={()=>setShowMe(!showMe)}><span className="derpm"><span className="mackP">*</span> * Markets</span> <span>{showMe?<FontAwesomeIcon icon={faAngleUp} className="PlusIcon plusIcon2" />:<FontAwesomeIcon icon={faAngleDown} className="PlusIcon plusIcon2" />}</span></div>
           {showMe? 
             <div className="Forexmm">
                       <a  className="fit" href="/sport" onClick={mark}> <span className="mackP1">*</span> Sports</a>
@@ -105,7 +105,16 @@ const Mobileheader = () => {
                       <a  className="fit" href="/binary" onClick={mark}><span className="mackP1">*</span> Binary</a> 
             </div>:""}
             </li>
-          <li className="bgstyle"><a href="/premium" onClick={mark} className="derpm"> <span className="mackP">*</span> * Premium Subscription</a></li>
+              <li className="bgstyle"><div className="derr" onClick={()=>setShowMe(!showMe)}><span className="derpm"><span className="mackP">*</span> * Tipster</span> <span>{showMe?<FontAwesomeIcon icon={faAngleUp} className="PlusIcon plusIcon2" />:<FontAwesomeIcon icon={faAngleDown} className="PlusIcon plusIcon2" />}</span></div>
+          {showMe? 
+            <div className="Forexmm">
+                      <a  className="fit" href="/sport" onClick={mark}> <span className="mackP1">*</span> Sports</a>
+                      <a  className="fit" href="/forex" onClick={mark}><span className="mackP1">*</span> Forex</a>
+                      <a  className="fit" href="cryptocurrency" onClick={mark}> <span className="mackP1">*</span> Cryptocurrency </a>
+                      <a  className="fit" href="/binary" onClick={mark}><span className="mackP1">*</span> Binary</a> 
+            </div>:""}
+            </li>
+          <li className="bgstyle"><a href="/premium" onClick={mark} className="derpm"> <span className="mackP">*</span> * Premium Prediction</a></li>
           <li className="bgstyle"><a href="/affliate" className="derpm" onClick={mark}> <span className="mackP">*</span> * Affiliate Program</a></li>
           <li className="dpM bgstyle"><a href="/betcalculator" className="derpm" onClick={mark}><span className="mackP">*</span> * Bet Calculator</a></li>
           <li>

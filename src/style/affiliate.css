@@ -46,11 +46,11 @@
     left: 45%;
     top: -10%;
     width: 150px;
-    z-index: -1;
+    z-index: 0;
 }
 .Aka{
     font-size: 70px;
-    color:#fff;
+    color:#dadaeb;
     font-weight: 800;
     letter-spacing: 3px;
         margin-top: 30px;
@@ -264,6 +264,7 @@
     bottom: -15%;
     width: 250px;
     z-index: -8;
+    animation:rotate 5s linear infinite;
 }
 .papag1{
     position: absolute;
@@ -280,6 +281,7 @@
     width: 250px;
     z-index: -8;
     transform: rotate(180deg);
+    animation: rotate 5s linear infinite;
 }
 
 .messageImg{
@@ -458,6 +460,8 @@
         font-size: 40px;
         text-align: center;
         margin-top: 5px;
+        position: relative;
+        z-index: 4;
     }
     .Create_account_holder_Div {
         flex-direction: column;
@@ -473,6 +477,7 @@
 .alap {
     font-size: 26px;
     margin: 20px auto 14px auto;
+    max-width:100%
 }
  .grace {
      width: 100%
@@ -561,3 +566,11 @@
        
      }
 
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+         to{
+             transform: rotate(360deg);
+         }
+}

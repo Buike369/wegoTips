@@ -71,18 +71,19 @@ const Login =()=>{
     }
     return(
         <div className="BgColor" >
-            {/* backgroundImage: "linear-gradient(to right, rgb(4 7 22), rgb(10 9 22))" */}
+          
+           
             <div className="Form_Divbb">
-                <div style={{padding:"0px 5px"}}>
+                <div style={{padding:"0px 5px"}} className="DivForming">
            <div className="Form_Div renttt page">
                <form>
                   
                   <div className="welcome4 textAdmin">Login to Earnars</div>
-                  <div> <input type="email" placeholder="Email" className="Full_Name inpupage page " name="email" onChange={handleChange}/></div>
-                  <div className="sers"> <input type={inputs2.showPassword ? "text":"password"} placeholder="Password" className="Full_Name inpupage page" onChange ={handleChange} name="password" 
+                  <div> <input type="email" placeholder="Email" className="Full_Name inpupage page10 page11" name="email" onChange={handleChange}/></div>
+                  <div className="sers"> <input type={inputs2.showPassword ? "text":"password"} placeholder="Password" className="Full_Name inpupage page10 page11" onChange ={handleChange} name="password" 
                   />
                   {inputs2.showPassword ?<FontAwesomeIcon icon={faEye} className="PlusIcon plusIcon2 ser1" onClick={handleClickShowPassword}/>:<FontAwesomeIcon icon={faEyeSlash} className="PlusIcon plusIcon2 ser1" onClick={handleClickShowPassword}/> }</div>
-                  <div onClick={handleSumit1} className="loginn page">LOGIN</div>
+                  <div onClick={handleSumit1} className="loginn page10">Log In</div>
                   {err && <p className="errorP">{err}</p>}
                   <p className="FofD">Forget password ? <a href="/forgotpassword" className="sesetP"><span className="ClickMe">Click Here</span></a> </p>
                   <div className="Or_with2">
@@ -90,15 +91,15 @@ const Login =()=>{
                          <p className="adColor">Or login with</p>
                          <div className="Or_With"></div>
                      </div>
-                     <div className="Googgle1 page" >Google</div>
-                     {/* <GoogleLogin clientId="451426581815-pp6r4p2ao4p9pmntdfjqn2arug1ojr31.apps.googleusercontent.com" buttonText="login wih Google" onSuccess={responseGoogle} onFailure={responseGoogle} cookiePolicy={`single_host_origin`}/> */}
+                     <div className="Googgle1 page10 page11" >Google</div>
+                    
                      <p className="Have_An adColor">Don't have an account?</p>
                      <div className="LOGIN_HERE_NOW"><Link to="/register" className="p_LoGIn">Register Here</Link></div>
                </form>
            </div>
            </div>
            </div>
-             {/* <SuccessN/> */}
+             
         </div>
     )
 }

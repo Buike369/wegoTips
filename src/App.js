@@ -38,6 +38,7 @@ import AdminLogin from "./adminLogin"
 import Navbar from "./navbar"
 import TipsWallet from "./tipsterWallet";
 import ProfilePageFile from "./profilePage"
+import "./App.css"
 
 import DashboardHome from "./Dashboard/dashboardHome"
 // import { Link, useLocation } from "react-router-dom";
@@ -50,7 +51,7 @@ function App() {
   const tr = window.location.pathname;
   // const navigate = useLocation();
   return (
-    <div>
+    <div className="kingsley_the_coder">
        <BrowserRouter>
         {tr === "/dashboard" ? " " : <> <Navbar/>
        <Mobile/></>}

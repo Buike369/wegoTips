@@ -76,15 +76,15 @@ const ForgotPassword =()=>{
     
     }
     return(
-        <div className="BgColor" style={{backgroundColor:"#0f0b34"}}>
+        <div className="BgColor" >
             <div className="Form_Divbb">
-              <div style={{padding:"0 5px"}}>
-           <div className="Form_Div page ">
+              <div style={{padding:"0 5px"}} className="DivForming">
+           <div className="Form_Div page mD">
                <form>
                    {err && <p style={{color:"#fff",textAlign:"center",padding:"6px 4px",background:"#6d7aa8",borderRadius:"5px"}}>{err}</p>}
-                  <div className="welcome4">Forgot Password</div>
+                  <div className="welcome4">Email Address</div>
                   <div  className="forgotText">Enter Your Email Address </div>
-                  <div> <input type="email" placeholder="Enter Your Email" className="Full_Name inpupage page" name="email" onChange={handleChange}/></div>
+                  <div> <input type="email" placeholder="Enter Your Email" className="Full_Name inpupage page10" name="email" onChange={handleChange}/></div>
                   
                  <a className="otpLink" onClick={handleSumit1}> <div  className="loginn">Send Reset Link</div></a>
 

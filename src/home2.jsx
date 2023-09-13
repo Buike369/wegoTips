@@ -319,51 +319,9 @@ useEffect(()=>{
 
     return (
       <div  className="HomPageBg">
+        <div className="ahh"></div>
       <div className="Home_Bg_Bg" >
-    
-        {/*======  section2 ========*/}
-
-      {/* <div className="fugmu">
-        <div className="CarouseDivDiv ">
-        <Carousel
-  swipeable={false}
-  draggable={false}
-  showDots={true}
-  responsive={responsive}
-  ssr={true} // means to render carousel on server-side.
-  infinite={true}
-  // autoPlay={this.props.deviceType !== "mobile" ? true : false}
-  autoPlay={true}
-  autoPlaySpeed={3000}
-  keyBoardControl={true}
-  customTransition="all .5"
-  transitionDuration={500}
-  containerClass="carousel-container"
-  removeArrowOnDeviceType={["tablet", "mobile"]}
-  // deviceType={this.props.deviceType}
-  className="kiln"
-  dotListClass="custom-dot-list-style"
-  itemClass="carousel-item-padding-40-px"
->
-            <div className="carousel_Div">
-              <img src="/img/eanner.png" className="ImgDiv" />
-            </div>
-            <div className="carousel_Div">
-              <img src="/img/tom.png" className="ImgDiv" />
-            </div>
-            <div className="carousel_Div">
-              <img src="/img/eanner.png" className="ImgDiv" />
-            </div>
-          </Carousel>
-        </div>
-        </div> */}
-
-
-
-
-
-
-
+  
          <div className="carousel_Div honeDivGuide lovePa">
               <img src="/img/tom.png" className="ImgDiv" />
             </div>
