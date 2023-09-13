@@ -264,7 +264,7 @@
     bottom: -15%;
     width: 250px;
     z-index: -8;
-    animation:rotate 5s linear infinite;
+   
 }
 .papag1{
     position: absolute;
@@ -281,7 +281,7 @@
     width: 250px;
     z-index: -8;
     transform: rotate(180deg);
-    animation: rotate 5s linear infinite;
+    
 }
 
 .messageImg{
@@ -566,11 +566,3 @@
        
      }
 
-@keyframes rotate{
-    from{
-        transform: rotate(0deg);
-    }
-         to{
-             transform: rotate(360deg);
-         }
-}
