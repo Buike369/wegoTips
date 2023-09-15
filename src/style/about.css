@@ -1,8 +1,4 @@
-/* .About_Dive_Page{
-    width:100vw;
-    height:100vh;
-    position:relative
-} */
+
 
 .About_Us{
     width: 100%;
@@ -17,18 +13,17 @@
     font-size: 21px;
     margin-bottom: 40px;
     font-weight: 700;
-        color: #e1ca3b;
+        color: gold;
 
 
 }
 .About_paragraph{
 
-    /* background-color: #001041; */
-    background-color: #fff;
-    padding:35px 20px;
-    border-radius: 5px;
-
-    box-shadow: 0px 0px 3px #051442;
+    background-color: #171054;
+        padding: 35px 20px;
+        border-radius: 8px;
+        border: 1px solid #433e83;
+        box-shadow: 0px 0px 3px #22232c;
     
  
 
@@ -38,19 +33,22 @@
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 20px;
+    color:#fff
 }
 
-/* about terms */
+
 .A_Branch{
     font-weight: 700;
     font-size: 22px;
     margin-bottom: 8px;
+    color:gold
 }
 .termspad{
     padding:10px 15px;
 }
 .conditionsp{
     margin-bottom: 10px;
+    color:#fff;
 }
 .Notepad{
     font-weight: 700;

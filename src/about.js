@@ -8,7 +8,7 @@ const About=()=>{
 
     const [register,setRegister] = useState(false)
     return(
-        <div className="About_Dive_Page" style={{backgroundImage:"linear-gradient(to right, rgba(106, 116, 167, 0.34), rgba(119, 135, 182, 0.95))",paddingTop:"10px"}}>
+        <div className="About_Dive_Page" >
              <div className="About_Dive_Page1">
 
     <div style={{padding:"0 10px"}}>
@@ -23,6 +23,27 @@ const About=()=>{
                  </div>
              </div>
             </div>
+                <div className="bkFR">
+                    <div style={{ padding: "0 10px" }}>
+                        <div className="MessageDivCov">
+                            <div className="Package_Up">
+                                <h1 className="alap">Don't miss out on Fantastic News</h1>
+                                <p className="Each_Time_your">
+                                    Subscribe to our newsletter and be the first to receive news.
+                                </p>
+                                <form>
+                                    <div className="newsInput">
+                                        <input type="email" placeholder="Enter Your Email" className="newsBro" />
+                                    </div>
+                                </form>
+                                <img src="/img/news.svg" alt="" className="messageImg" />
+                            </div>
+                            <img src="/img/undrawWorld1.svg" alt="" className="papag" />
+                            <img src="/img/undrawWorld1.svg" alt="" className="papag1" />
+
+                        </div>
+                    </div>
+                </div>
             <div className="Foot_VH"><Footer /></div> 
 
             </div>

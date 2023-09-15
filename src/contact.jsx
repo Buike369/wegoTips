@@ -12,7 +12,7 @@ const Contact =()=>{
     const [register,setRegister] = useState(false)
 
     return(
-        <div className="About_Dive_Page" style={{    backgroundImage: "linear-gradient(to right, rgba(106, 116, 167, 0.34), rgba(119, 135, 182, 0.95))",paddingTop:"10px"}} >
+        <div className="About_Dive_Page" >
              <div className="About_Dive_Page1">
 
                <div style={{padding:"0 10px"}}>
@@ -27,13 +27,13 @@ const Contact =()=>{
                                <p className="contact_p_c">For general enquiries:</p>
                                <p className="infoTrY">info@earnars.com</p>
                                <p className="infoTrY fontWW">Or</p>
-                               <p> <FontAwesomeIcon icon={faWhatsapp} className="icon_brand_size" /> <span className="WhattsZ"><a href="https://wa.me/08059279660">+234 805 927 9660</a></span></p>
+                               <p> <FontAwesomeIcon icon={faWhatsapp} className="icon_brand_size foodI" /> <span className="WhattsZ"><a href="https://wa.me/08059279660" className="phoneNm">+234 805 927 9660</a></span></p>
                            </div> 
                            <div className="For_General_Div">
                                <p className="contact_p_c">For advert and sponsorship:</p>
                                <p className="infoTrY">advert@earnars.com</p>
                                <p className="infoTrY fontWW">Or</p>
-                               <p><a href="#" className="ClickHereMe">Click here to Chat on Skype</a></p>
+                               <p><a href="#" className="ClickHereMe hereTo">Click here to Chat on Skype</a></p>
                            </div> 
                        </div>
                        <p className="monday" style={{fontWeight:"700",fontSize:"18px"}}>Working Hours :</p>
@@ -43,7 +43,30 @@ const Contact =()=>{
 
                  </div>
              </div>
+             
              </div>
+
+             <div className="bkFR">
+       <div style={{padding:"0 10px"}}>
+                <div className="MessageDivCov">
+               <div className="Package_Up">
+                   <h1 className="alap">Don't miss out on Fantastic News</h1>
+                   <p className="Each_Time_your">
+                       Subscribe to our newsletter and be the first to receive news.
+                   </p>
+                   <form>
+                    <div className="newsInput">
+                        <input type="email" placeholder="Enter Your Email"  className="newsBro"/>
+                    </div>
+                   </form>
+                   <img src="/img/news.svg" alt=""  className="messageImg"/>
+               </div>
+               <img src="/img/undrawWorld1.svg" alt="" className="papag" />
+                <img src="/img/undrawWorld1.svg" alt="" className="papag1" />
+               
+               </div>
+               </div>
+               </div>
             <div className="Foot_VH"><Footer /></div> 
 
             </div>

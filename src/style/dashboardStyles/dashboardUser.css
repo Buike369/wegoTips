@@ -179,6 +179,10 @@
 .linema tbody tr {
     border-bottom: 1px solid #302b6e;
 }
+tbody tr :hover{
+  
+    cursor: pointer;
+}
 .gapUp{
     margin-top: 12px;
 }

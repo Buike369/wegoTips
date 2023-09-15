@@ -84,7 +84,7 @@ const ForgotPassword =()=>{
                    {err && <p style={{color:"#fff",textAlign:"center",padding:"6px 4px",background:"#6d7aa8",borderRadius:"5px"}}>{err}</p>}
                   <div className="welcome4">Email Address</div>
                   <div  className="forgotText">Enter Your Email Address </div>
-                  <div> <input type="email" placeholder="Enter Your Email" className="Full_Name inpupage page10" name="email" onChange={handleChange}/></div>
+                  <div> <input type="email" placeholder="Enter Your Email" className="Full_Name inpupage page10 page11" name="email" onChange={handleChange}/></div>
                   
                  <a className="otpLink" onClick={handleSumit1}> <div  className="loginn">Send Reset Link</div></a>
 

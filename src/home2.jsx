@@ -1624,7 +1624,7 @@ useEffect(()=>{
 
         
       </div>
-
+<div className="bkFR">
        <div style={{padding:"0 10px"}}>
                 <div className="MessageDivCov">
                <div className="Package_Up">
@@ -1642,6 +1642,7 @@ useEffect(()=>{
                <img src="/img/undrawWorld1.svg" alt="" className="papag" />
                 <img src="/img/undrawWorld1.svg" alt="" className="papag1" />
                
+               </div>
                </div>
                </div>
       <Footer />

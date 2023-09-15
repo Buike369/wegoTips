@@ -12,6 +12,11 @@
     word-spacing: 0.2px;
 
 }
+.PGuideE{
+    width:100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
 .yip{
     text-decoration: none;
 }
@@ -78,7 +83,26 @@
 
 
 }
+.tenT{
+    display:flex;
+    justify-content: space-between;
+    align-self: center;
+    width:100%;
+    max-width:600px;
+    margin: 20px auto;
+}
+.mikeW{
+    padding:7px 10px;
+        border: 1px solid #3d3491;
+            color: #fff;
+            background-color: #171054;
+    border-radius: 50px;
+    width:140px;
+    text-align: center;
+  
 
+
+}
 .TYPE{
     width:100%;
     position:relative;
@@ -112,6 +136,12 @@ td{
     td{
         font-size: 13px;
     } 
+}
+
+@media(min-width:1250px){
+    .PGuideE{
+        max-width: 1200px;
+    }
 }
 @media(min-width:769px) and (max-width:1024px){
     .TYPE,.ApplyFor{

@@ -12,7 +12,8 @@ const Affliate =()=>{
         <div>
        
 
-         <div className="AffliateDiv34">
+         <div >
+            <div className="AffliateDiv34 AffDD">
                  <div className="affiliateImage" >
                     <div className="grace">
                         <h1 className="Aka">Affiliate</h1>
@@ -23,9 +24,10 @@ const Affliate =()=>{
                      <img src="/img/StarsME.svg" className="headerAffiliateI" alt="affiliate_banner"/>
                       <img src="/img/StarsME.svg" className="headerAffiliate2" alt="affiliate_banner"/>
                  </div>
+                 </div>
                 
              <div className="earnPMN">
-                <div className="inviteFr">Get €20 - Invite Your Friends to Earnars</div>
+                <div className="inviteFr">Get $20 - Invite Your Friends to Earnars</div>
 
 
                 {/* <Link to="/login" className="ifi"> <div className="NowUpSign">Watch Now</div></Link> */}
@@ -54,7 +56,7 @@ const Affliate =()=>{
 
 </div>
 
-              
+              <div className="bkFR">
                <div style={{padding:"0 10px"}}>
                 <div className="MessageDivCov">
                <div className="Package_Up">
@@ -72,6 +74,7 @@ const Affliate =()=>{
                <img src="/img/undrawWorld1.svg" alt="" className="papag" />
                 <img src="/img/undrawWorld1.svg" alt="" className="papag1" />
                
+               </div>
                </div>
                </div>
 

@@ -22,7 +22,13 @@ const Premium = () => {
         </div>
        
 
-<div className='pag'>dropdown</div>
+<div className='PGuideE'>
+<div className="tenT">
+  <div className='mikeW'>Forex</div>
+  <div  className='mikeW'>Sports</div>
+  <div  className='mikeW'>Cryptocurrency</div>
+  <div  className='mikeW'>Binary</div>
+</div>
         <div style={{padding:"10px 15px 25px 15px"}} >
     <div className="TY1">
          {card.map((app,id)=>(
@@ -109,8 +115,30 @@ const Premium = () => {
                       
 
      </div>
+     </div>
      <p className='pag'>pagination</p>
-
+         
+         <div className="bkFR">
+       <div style={{padding:"0 10px"}}>
+                <div className="MessageDivCov">
+               <div className="Package_Up">
+                   <h1 className="alap">Don't miss out on Fantastic News</h1>
+                   <p className="Each_Time_your">
+                       Subscribe to our newsletter and be the first to receive news.
+                   </p>
+                   <form>
+                    <div className="newsInput">
+                        <input type="email" placeholder="Enter Your Email"  className="newsBro"/>
+                    </div>
+                   </form>
+                   <img src="/img/news.svg" alt=""  className="messageImg"/>
+               </div>
+               <img src="/img/undrawWorld1.svg" alt="" className="papag" />
+                <img src="/img/undrawWorld1.svg" alt="" className="papag1" />
+               
+               </div>
+               </div>
+               </div>
         <Footer/>
     </div>
   )
