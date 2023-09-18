@@ -17,6 +17,7 @@ const Mobileheader = () => {
      const [open1,setOpen1]=useState(true)
  const [register,setRegister] = useState(false)
     const [showMe,setShowMe] = useState(false)
+        const [showMe4,setShowMe4] = useState(false)
     const [showMe1,setShowMe1] = useState(false)
 
      const tr = window.location.pathname;
@@ -101,17 +102,17 @@ const Mobileheader = () => {
             <div className="Forexmm">
                       <a  className="fit" href="/sport" onClick={mark}> <span className="mackP1">*</span> Sports</a>
                       <a  className="fit" href="/forex" onClick={mark}><span className="mackP1">*</span> Forex</a>
-                      <a  className="fit" href="cryptocurrency" onClick={mark}> <span className="mackP1">*</span> Cryptocurrency </a>
+                      <a  className="fit" href="/cryptocurrency" onClick={mark}> <span className="mackP1">*</span> Cryptocurrency </a>
                       <a  className="fit" href="/binary" onClick={mark}><span className="mackP1">*</span> Binary</a> 
             </div>:""}
             </li>
-              <li className="bgstyle"><div className="derr" onClick={()=>setShowMe(!showMe)}><span className="derpm"><span className="mackP">*</span> * Tipster</span> <span>{showMe?<FontAwesomeIcon icon={faAngleUp} className="PlusIcon plusIcon2" />:<FontAwesomeIcon icon={faAngleDown} className="PlusIcon plusIcon2" />}</span></div>
-          {showMe? 
+              <li className="bgstyle"><div className="derr" onClick={()=>setShowMe4(!showMe4)}><span className="derpm"><span className="mackP">*</span> * Tipster</span> <span>{showMe4?<FontAwesomeIcon icon={faAngleUp} className="PlusIcon plusIcon2" />:<FontAwesomeIcon icon={faAngleDown} className="PlusIcon plusIcon2" />}</span></div>
+          {showMe4? 
             <div className="Forexmm">
-                      <a  className="fit" href="/sport" onClick={mark}> <span className="mackP1">*</span> Sports</a>
-                      <a  className="fit" href="/forex" onClick={mark}><span className="mackP1">*</span> Forex</a>
-                      <a  className="fit" href="cryptocurrency" onClick={mark}> <span className="mackP1">*</span> Cryptocurrency </a>
-                      <a  className="fit" href="/binary" onClick={mark}><span className="mackP1">*</span> Binary</a> 
+                      <a  className="fit" href="" onClick={mark}> <span className="mackP1">*</span> Become a Tipster</a>
+                      <a  className="fit" href="" onClick={mark}><span className="mackP1">*</span> Find a Tipster</a>
+                      <a  className="fit" href="" onClick={mark}> <span className="mackP1">*</span> All Tips</a>
+                      
             </div>:""}
             </li>
           <li className="bgstyle"><a href="/premium" onClick={mark} className="derpm"> <span className="mackP">*</span> * Premium Prediction</a></li>

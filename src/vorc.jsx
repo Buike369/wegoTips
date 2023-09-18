@@ -93,7 +93,7 @@ const Vic = () => {
 
   }
   return (
-    <div className="Cover_BackgroundColor" style={{backgroundImage: "linear-gradient(to right, rgba(106, 116, 167, 0.34), rgba(119, 135, 182, 0.95))"}}>
+    <div className="Cover_BackgroundColor">
   
       {/* mobile view */}
       
@@ -133,11 +133,11 @@ const Vic = () => {
         <div className="Enter_Expected_Profit">
           <p className="ExposeMass">Enter Expected profit</p>
           <div className="ExposeMass1">
-            <div className="infu1">
-              <span className="infu13">Recommended :</span>
+            <div className="infu1 ">
+            <span className="Editj">Recommended:</span>
             </div>
             <div className="nfu2">
-              <input type="text" placeholder="₦50" className="infu3" />
+              <input type="text" placeholder="₦50" className="infu42" />
             </div>
             <div className="infu1">
               <span className="Editj">Edit</span>
@@ -387,20 +387,20 @@ const Vic = () => {
             <form>
               <div className="ChangeFracDi">
                 <div className="outYre2">
-                  <label className="" id="">
+                  <label className="thisR" id="">
                     Bonus Bet
                   </label>
                   <input type="number" placeholder=" " className="AMQ lin" />
                 </div>
                 <div className="outYre2">
-                  <label className="" id="">
+                  <label className="thisR" id="">
                     Outcome 1
                   </label>
                   <input type="number" placeholder=" " className="AMQ lin" />
                 </div>
 
                 <div className="outYre2">
-                  <label className="" id="">
+                  <label className="thisR" id="">
                     Odds
                   </label>
                   <input type="number" placeholder=" " className="AMQ lin" />
@@ -409,14 +409,14 @@ const Vic = () => {
               <div className="ChangeFracDi">
                 <div className="outYre2"></div>
                 <div className="outYre2">
-                  <label className="" id="">
+                  <label className="thisR" id="">
                     Outcome 2
                   </label>
                   <input type="number" placeholder=" " className="AMQ lin" />
                 </div>
 
                 <div className="outYre2">
-                  <label className="" id="">
+                  <label className="thisR" id="">
                     Odds
                   </label>
                   <input type="number" placeholder=" " className="AMQ lin" />
@@ -474,7 +474,7 @@ const Vic = () => {
               {odd1.map((rate) => (
                 <div className="foorms" key={rate.id}>
                   <div className="Stake_Dive">
-                    <label>Back Stake</label>
+                    <label className="thisR">Back Stake</label>
                     <input
                       type="number"
                       placeholder={rate.selection}
@@ -482,7 +482,7 @@ const Vic = () => {
                     />
                   </div>
                   <div className="Stake_Dive">
-                    <label>Back Price</label>
+                    <label  className="thisR">Back Price</label>
                     <input
                       type="number"
                       placeholder={rate.selection}
@@ -510,21 +510,21 @@ const Vic = () => {
             <form>
               <div className="ChangeFracDi">
                 <div className="outYre2">
-                  <label className="" id="">
+                  <label className="thisR" id="">
                     {" "}
                     Bet Stake*
                   </label>
                   <input type="number" placeholder="" className="AMQ lin" />
                 </div>
                 <div className="outYre2">
-                  <label className="" id="">
+                  <label className="thisR" id="">
                     Back odds*
                   </label>
                   <input type="number" placeholder=" " className="AMQ lin " />
                 </div>
 
                 <div className="outYre2">
-                  <label className="" id="">
+                  <label className="thisR" id="">
                     Back Commission*
                   </label>
                   <input type="number" placeholder=" " className="AMQ lin" />
@@ -533,14 +533,14 @@ const Vic = () => {
               <div className="ChangeFracDi">
                 <div className="outYre2"></div>
                 <div className="outYre2">
-                  <label className="" id="">
+                  <label className="thisR" id="">
                     Lay Odds*
                   </label>
                   <input type="number" placeholder=" " className="AMQ lin" />
                 </div>
 
                 <div className="outYre2">
-                  <label className="" id="">
+                  <label className="thisR" id="">
                     Lay Commission*
                   </label>
                   <input type="number" placeholder=" " className="AMQ lin" />
@@ -564,7 +564,7 @@ const Vic = () => {
             <form>
               <div className="foorms">
                 <div className="Stake_Dive">
-                  <label>Bank Balance</label>
+                  <label className="thisR">Bank Balance</label>
                   <input
                     type="number"
                     placeholder=""
@@ -572,7 +572,7 @@ const Vic = () => {
                   />
                 </div>
                 <div className="Stake_Dive">
-                  <label>Aggressive</label>
+                  <label className="thisR">Aggressive</label>
                   <input
                     type="number"
                     placeholder=""
