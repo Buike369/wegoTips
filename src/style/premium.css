@@ -129,6 +129,15 @@
     flex-wrap: wrap;
 
 }
+.daysB{
+    border: 1px solid #4e4f99;
+        background-color: #484e87;
+    border-radius: 6px;
+    padding:4px 8px;
+}
+.houseRuMM:hover{
+    cursor: pointer;
+}
 .TY30{
     width:100%;
     max-width: 24%;

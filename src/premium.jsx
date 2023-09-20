@@ -101,8 +101,9 @@ const [itemOffset, setItemOffset] = useState(0);
             <div className="pork">+2,434</div>
           </div>
            <div className="findingPP">
-            <div className="followerp">ROI</div>
-            <div className="followerp">Profit</div>
+            <div className="followerp daysB">1<sub>day</sub></div>
+             <div className="followerp daysB">7<sub>days</sub></div>
+            <div className="followerp daysB">30<sub>days</sub></div>
           </div>
 
           <div className="houseRuMM">View Profile</div>

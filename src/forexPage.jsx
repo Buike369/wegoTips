@@ -105,6 +105,7 @@ const ForexPage = () => {
                  </div>
 
          <div className='sportsPageColorBg'> 
+         <div className='yoofKin'>
         <div className="MakingMoney">
         Making Money Daily on <span className="forexy">FOREX</span> trading is as easy as following our daily expert forecast.
         </div>
@@ -124,6 +125,10 @@ liquid asset markets in the world.
         </div>
         </div>
         </div>
+
+        
+
+        <div className="sportPa">
         <div style={{padding:"0px 12px"}}>
         <p className="WhyStart">Why Start Forex Trading</p>
         <div className="ifNi"></div>
@@ -208,6 +213,7 @@ management, this high degree
             </div>
         </div>
         </div>
+        </div>
 
         <div className='Ems Ems1'>
           <img src="/img/undrawgoal1.svg" alt="" className='imgFloatSport' />
@@ -215,7 +221,13 @@ management, this high degree
          <div className='Ems Ems2'>
            <img src="/img/soccer2.svg" alt="" className='imgFloatSport' />
          </div>
-
+          <div className='Ems Ems3'>
+           <img src="/img/soccer2.svg" alt="" className='imgFloatSport' />
+         </div>
+         <div className='Ems Ems4'>
+           <img src="/img/soccer2.svg" alt="" className='imgFloatSport' />
+         </div>
+         </div>
         </div>
 
         <div className="AgenciesTy">Who  Are Forex Brokers</div>
@@ -324,10 +336,13 @@ How do I register  with a broker?</span>{" "}
                 </span>
               </div>
               {show ? (
+                <div>
+                   <div className="Qac"></div>
                 <p className="ILOVEK">
                   {" "}
                   To register with a forex broker,visit any forex broker of your choice and click on their signup button to register with them. You can register with more than one broker.{" "}
                 </p>
+                </div>
               ) : (
                 ""
               )}
@@ -340,9 +355,12 @@ How do I register  with a broker?</span>{" "}
                 </span>
               </div>
               {show1 ? (
+                <div>
+                   <div className="Qac"></div>
                 <p className="ILOVEK">
                  Not knowing about Forex Trading doesnt stops you from making money from Forex Market. All you need to know is to know how to buy/sell using our expert forecast daily. Watch our tutorial video on how to Buy/Sell to give you the required knowledge you need to start trading immediately.
                 </p>
+                </div>
               ) : (
                 ""
               )}
@@ -355,9 +373,12 @@ How do I register  with a broker?</span>{" "}
                 </span>
               </div>
               {show2 ? (
+                <div>
+                   <div className="Qac"></div>
                 <p className="ILOVEK">
                  To fund your account on earnars.com after registeration, go to "My Wallet" section and click on deposit and enter the amount you want to fund your account with, This will redirect you to flutter wave secure payment channel that gives you various payment options. To fund your account with a forex brooker watch the tutorial video.
                 </p>
+                </div>
               ) : (
                 ""
               )}
@@ -370,9 +391,12 @@ How do I register  with a broker?</span>{" "}
                 </span>
               </div>
               {show3 ? (
+                <div>
+                   <div className="Qac"></div>
                 <p className="ILOVEK">
                We do not manage users funds or bet for any user, we only forecast wining trades. Users are responsible for for any amount of money they wish to stake with the trading platform they are registered with.
                 </p>
+                </div>
               ) : (
                 ""
               )}
@@ -385,9 +409,12 @@ How do I register  with a broker?</span>{" "}
                 </span>
               </div>
               {show4 ? (
+                <div>
+                   <div className="Qac"></div>
                 <p className="ILOVEK">
                 Your are responsible for any amount you wish to stake on any trading portal but we advice users to risk between 1% to 5% of their capital on any trade forecasted.
                 </p>
+                </div>
               ) : (
                 ""
               )}
@@ -400,9 +427,12 @@ How do I register  with a broker?</span>{" "}
                 </span>
               </div>
               {show5 ? (
+                <div>
+                   <div className="Qac"></div>
                 <p className="ILOVEK">
                   We do not guarantee any trade forecast made by our experts, however we guarantee the refund of users subscription fees if at the end of any particular month they dont turn profit by following all our prediction. This refund policy is subject to our "Refund Policy Terms and Condition"
                 </p>
+                </div>
               ) : (
                 ""
               )}
@@ -415,6 +445,28 @@ How do I register  with a broker?</span>{" "}
           </div>
           </div>
         </div>
+
+        <div className="bkFR">
+       <div style={{padding:"0 10px"}}>
+                <div className="MessageDivCov">
+               <div className="Package_Up">
+                   <h1 className="alap">Don't miss out on Fantastic News</h1>
+                   <p className="Each_Time_your">
+                       Subscribe to our newsletter and be the first to receive news.
+                   </p>
+                   <form>
+                    <div className="newsInput">
+                        <input type="email" placeholder="Enter Your Email"  className="newsBro"/>
+                    </div>
+                   </form>
+                   <img src="/img/news.svg" alt=""  className="messageImg"/>
+               </div>
+               <img src="/img/undrawWorld1.svg" alt="" className="papag" />
+                <img src="/img/undrawWorld1.svg" alt="" className="papag1" />
+               
+               </div>
+               </div>
+               </div>
         <Footer />
     </div>
   )

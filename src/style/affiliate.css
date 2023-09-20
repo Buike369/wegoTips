@@ -53,7 +53,7 @@
 }
 .Aka{
     font-size: 70px;
-    color:#dadaeb;
+    color:#fff;
     font-weight: 800;
     letter-spacing: 3px;
         margin-top: 30px;
@@ -81,7 +81,7 @@
 }
 .earnPMN{
     background-color:#171054 ;
-    padding: 20px  10px 40px;
+    padding: 20px  10px 90px;
 }
 .newsInput{
     width: 100%;
@@ -353,6 +353,34 @@
 .cap{
     margin-bottom: 70px;
 }
+.InviteBI{
+    width:100%;
+    max-width: 280px;
+    margin: -56px  auto 0 auto;
+    padding:40px 10px;
+    background-color: #2d2476;
+    border-radius: 10px;
+    text-align: center;
+}
+.inviteFrs{
+ display:flex;
+ align-items: center;
+ justify-content: space-between;
+ width:100%;
+ max-width: 200px;
+ margin: 0 auto;
+}
+.PInvite{
+    color:#fff;
+    font-size: 15px;
+    font-weight: 500;
+}
+.bscY{
+    color:#fff !important;
+}
+.bscY:hover{
+    color: gray !important;
+}
 .grace{
     width:50%;
 }
@@ -466,7 +494,7 @@
     display:none
 }
     .Aka{
-        font-size: 40px;
+        font-size: 30px;
         text-align: center;
         margin-top: 5px;
         position: relative;

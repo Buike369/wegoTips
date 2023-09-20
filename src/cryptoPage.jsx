@@ -84,20 +84,35 @@ const CryptoPage = () => {
 
   return (
     <div>
-        <div className="sportPa">
+        <div >
+          <div className="sportPa">
+           <div className="affiliateImage" >
+                    <div className="grace">
+                        <h1 className="Aka">Cryptocurrency Predictions</h1>
+                     
+                       <p  className="weAre4">With Upto <span className="withUpto">50% acurrancy<span>.</span></span></p>
+                       <p className='everyWhere'>Everyday is a winning day</p>
+                       <div className='football'>Football, Tennis, Basketball ETC</div>
+                    </div>
+                     <div className="grace"><img src="/img/affiliate-banner.png" className="gracePic" alt="affiliate_banner"/></div>
+                     <img src="/img/StarsME.svg" className="headerAffiliateI" alt="affiliate_banner"/>
+                      <img src="/img/StarsME.svg" className="headerAffiliate2" alt="affiliate_banner"/>
+                 </div>
+                 </div>
           {/* <div>
           <img src="/img/earnarsbanner23.png" className="AffliateBanner" alt=""/>
           </div> */}
+          <div className='sportsPageColorBg'>
+              <div className='yoofKin'>
         <div className="MakingMoney">
         Making Money Daily on <span className="forexy">CRYPTOCURRENCY</span> trading is as easy as following our daily expert predictions
         </div>
         {currentUser ? " " :  <div style={{display:"flex",justifyContent:"center",alignItems:"center"}}><Link to="/login" className="ifi"> <button className="NowUpSign" >SIGN UP NOW</button></Link> </div>}  
-      {/* <div style={{display:"flex",justifyContent:"center",alignItems:"center"}}><Link to="/login" className="ifi"> <button className="NowUpSign" >SIGN UP NOW</button></Link> </div> */}
+    
         <div style={{padding:"0px 12px"}} >
         <p className="SportBetting">What Is Cryptocurrency Trading</p>
         <div className="outcomeBeen1">
-        <div className="outcomeBeen" style={{ 
-      backgroundImage: `url(${background})`,backgroundPosition:"left right bottom top",backgroundRepeat:"no-repeat",padding:"18px 15px",backgroundSize:"cover"}}>
+        <div className="outcomeBeen" >
         <span className="forexy1">   Cryptocurrency </span>trading happens when you buy or sell digital 
 currencies with the aim of making a profit when their is change in value 
 of the underlying asset. There are two main ways to trade 
@@ -106,12 +121,14 @@ dedicated cryptocurrency exchange.
         </div>
         </div>
         </div>
+
+       
+        <div className='sportPa'>
         <div  style={{padding:"0px 12px"}}>
         <p className="WhyStart">Why Start  Cryptocurreny Trading</p>
         <div className="ifNi"></div>
         <div className="EasyTi">
-            <div className="EasyTim" style={{ 
-     background: "linear-gradient(206deg, rgb(51 50 85) 31%, rgb(50 49 90 / 54%) 62%, rgb(53 56 92 / 44%) 76%)",backgroundPosition:"center center",backgroundRepeat:"no-repeat",backgroundSize:"cover"}} data-aos="fade-up" data-aos-duration="3000"
+            <div className="EasyTim"  data-aos="fade-up" data-aos-duration="3000"
              data-aos-easing="linear">
             <div className="onV">
             <img src="/img/icinC1.svg" alt="every source of fund" className="everyday"/>
@@ -130,9 +147,10 @@ explore the cryptocurrency
 market, make sure that you have 
 done your research and developed 
 a risk management strategy.</div>
+  <div className='posTMa ad'></div>
+  <div className='posTMa ab' ></div>
             </div>
-            <div className="EasyTim" style={{ 
-  background: "linear-gradient(206deg, rgb(51 50 85) 31%, rgb(50 49 90 / 54%) 62%, rgb(53 56 92 / 44%) 76%)",backgroundPosition:"center center",backgroundRepeat:"no-repeat",backgroundSize:"cover"}} data-aos="fade-up" data-aos-duration="3000"
+            <div className="EasyTim"  data-aos="fade-up" data-aos-duration="3000"
              data-aos-easing="linear">
             <div className="onV">
             <img src="/img/icinC1.svg" alt="every source of fund" className="everyday"/>
@@ -151,9 +169,10 @@ trade: morning, noon, night,
 sleep.
 
 </div>
+  <div className='posTMa ad'></div>
+  <div className='posTMa ab' ></div>
             </div>
-            <div className="EasyTim" style={{ 
-     background: "linear-gradient(206deg, rgb(51 50 85) 31%, rgb(50 49 90 / 54%) 62%, rgb(53 56 92 / 44%) 76%)",backgroundPosition:"center center",backgroundRepeat:"no-repeat",backgroundSize:"cover"}} data-aos="fade-up" data-aos-duration="3000"
+            <div className="EasyTim"  data-aos="fade-up" data-aos-duration="3000"
              data-aos-easing="linear">
             <div className="onV">
             <img src="/img/icinC1.svg" alt="every source of fund" className="everyday"/>
@@ -172,8 +191,27 @@ to get you started.
 We are here to help you start 
 making money online by just 
 following our expert prediction.</div>
+  <div className='posTMa ad'></div>
+  <div className='posTMa ab' ></div>
             </div>
         </div>
+        </div>
+        </div>
+
+ <div className='Ems Ems1'>
+          <img src="/img/undrawgoal1.svg" alt="" className='imgFloatSport' />
+        </div>
+         <div className='Ems Ems2'>
+           <img src="/img/soccer2.svg" alt="" className='imgFloatSport' />
+         </div>
+         <div className='Ems Ems3'>
+           <img src="/img/soccer2.svg" alt="" className='imgFloatSport' />
+         </div>
+         <div className='Ems Ems4'>
+           <img src="/img/soccer2.svg" alt="" className='imgFloatSport' />
+         </div>
+         </div>
+
         </div>
 
         <div className="AgenciesTy">What Are Cryptocurrency Exchanges</div>
@@ -252,7 +290,7 @@ for another
 </div>
 
 
-
+ <div className="sportPa">
         <div className="BettingTu">Crypto Trading Tutorial Videos</div>
         <div className="figma rengma">
         <div className="firey fora rengma2">
@@ -278,24 +316,14 @@ for another
         </div>
         </div>
 
-        {/* <div className="firey">
-            <div className="firey1">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/BUjRz9SS3LY" title="Section 6 - How to Withdraw Funds" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-            <div className="firey1">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/C-Lso4v0Rew" title="Beginner&#39;s guide to trading on Binance Spot" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-            <div className="firey1">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/he3W11XtCGo" title="Section 2 - How to Verify your Account" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-        </div> */}
+        
 
         <div>
           <div id="Faqc" className="faqSportMa" data-aos="fade-up" data-aos-duration="3000"
              data-aos-easing="linear">
             <div className="firstTom faqSports" data-aos="fade-down" data-aos-duration="3000"
              data-aos-easing="linear">FAQ</div>
-            <div>
+            <div className="homeChange">
               <div className="HowFarBro" onClick={drop}>
                 <span>How do resgister  with an Exchange?</span>{" "}
                 <span className="IconSpace">
@@ -303,15 +331,18 @@ for another
                 </span>
               </div>
               {show ? (
+                <div>
+                   <div className="Qac"></div>
                 <p className="ILOVEK">
                   {" "}
                   To register with a Crypto Exchange,visit any Exchange of your choice and click on their signup button to register with them. You can register with more than one cryptocurrency exchange.{" "}
                 </p>
+                </div>
               ) : (
                 ""
               )}
             </div>
-            <div>
+            <div className="homeChange">
               <div className="HowFarBro" onClick={drop1}>
                 <span>I dont Know anything about crypto trading,What should i do?</span>
                 <span className="IconSpace">
@@ -319,14 +350,17 @@ for another
                 </span>
               </div>
               {show1 ? (
+                <div>
+                   <div className="Qac"></div>
                 <p className="ILOVEK">
                  Not knowing about Crypto Trading doesn't stops you from making money from Crypto Market. All you need to know is  how to buy/sell using our expert forecast daily. Watch our tutorial video on how to Buy/Sell to give you the required knowledge you need to start trading immediately.
                 </p>
+                </div>
               ) : (
                 ""
               )}
             </div>
-            <div>
+            <div className="homeChange">
               <div className="HowFarBro" onClick={drop2}>
                 <span>How can i fund my account? </span>
                 <span className="IconSpace">
@@ -334,14 +368,17 @@ for another
                 </span>
               </div>
               {show2 ? (
+                <div>
+                   <div className="Qac"></div>
                 <p className="ILOVEK">
                  To fund your account on earnars.com after registration, go to "My Wallet" section and click on deposit and enter the amount you want to fund your account with, This will redirect you to flutter wave secure payment channel that gives you various payment options. To fund your account with an exchange watch the tutorial video.
                 </p>
+                </div>
               ) : (
                 ""
               )}
             </div>
-            <div>
+            <div className="homeChange">
               <div className="HowFarBro" onClick={drop3}>
                 <span> Can your company Trade for me and pay me a percentage monthly? </span>
                 <span className="IconSpace">
@@ -349,14 +386,17 @@ for another
                 </span>
               </div>
               {show3 ? (
+                <div>
+                   <div className="Qac"></div>
                 <p className="ILOVEK">
                 We do not manage users funds or trade for any user, we only forecast wining trades. Users are responsible for  any amount of money they wish to stake with the trading platform they are registered with.
                 </p>
+                </div>
               ) : (
                 ""
               )}
             </div>
-            <div>
+            <div className="homeChange">
               <div className="HowFarBro" onClick={drop4}>
                 <span> How much do i stake in every trade? </span>
                 <span className="IconSpace">
@@ -364,14 +404,17 @@ for another
                 </span>
               </div>
               {show4 ? (
+                <div>
+                   <div className="Qac"></div>
                 <p className="ILOVEK">
                   Your are responsible for any amount you wish to stake on any trading portal but we advice users to risk between 1% to 5% of their capital on any trade forecasted.
                 </p>
+                </div>
               ) : (
                 ""
               )}
             </div>
-            <div>
+            <div className="homeChange">
               <div className="HowFarBro" onClick={drop5}>
                 <span> What is the guarantee am going to make money trading Crypto?</span>
                 <span className="IconSpace">
@@ -379,9 +422,12 @@ for another
                 </span>
               </div>
               {show5 ? (
+                <div>
+                  <div className="Qac"></div> 
                 <p className="ILOVEK">
                  We do not guarantee any trade forecast made by our experts, however we guarantee the refund of users subscription fees if at the end of any particular month they don't turn profit by following all our prediction. This refund policy is subject to our "Refund Policy Terms and Condition"
                 </p>
+                </div>
               ) : (
                 ""
               )}
@@ -392,7 +438,30 @@ for another
             </div>
           </div>
           </div>
+          </div>
         </div>
+
+        <div className="bkFR">
+       <div style={{padding:"0 10px"}}>
+                <div className="MessageDivCov">
+               <div className="Package_Up">
+                   <h1 className="alap">Don't miss out on Fantastic News</h1>
+                   <p className="Each_Time_your">
+                       Subscribe to our newsletter and be the first to receive news.
+                   </p>
+                   <form>
+                    <div className="newsInput">
+                        <input type="email" placeholder="Enter Your Email"  className="newsBro"/>
+                    </div>
+                   </form>
+                   <img src="/img/news.svg" alt=""  className="messageImg"/>
+               </div>
+               <img src="/img/undrawWorld1.svg" alt="" className="papag" />
+                <img src="/img/undrawWorld1.svg" alt="" className="papag1" />
+               
+               </div>
+               </div>
+               </div>
         <Footer />
     </div>
   )

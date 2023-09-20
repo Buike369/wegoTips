@@ -4,6 +4,9 @@ import "./style/affiliate.css"
 import Footer from "./footer";
 import { Link} from "react-router-dom";
 import { AuthContext } from './context/authContext';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+import {faFacebook,faTwitter,faLinkedin,faTelegram,faYoutube,}from '@fortawesome/free-brands-svg-icons'
 
 const Affliate =()=>{
 
@@ -57,6 +60,15 @@ const Affliate =()=>{
 </div>
 
               <div className="bkFR">
+                <div className="InviteBI">
+                    <div className="inviteFrs">
+                        <p className="PInvite">invite</p>
+                        <a href=""><FontAwesomeIcon icon={faFacebook} className="icon_brand_size bscY"/></a>
+                        <a href=""><FontAwesomeIcon icon={faTwitter} className="icon_brand_size bscY" /></a>
+                         <a href=""><FontAwesomeIcon icon={faLinkedin} className="icon_brand_size bscY" /></a>
+                          <a href=""><FontAwesomeIcon icon={faTelegram} className="icon_brand_size bscY" /></a>
+                    </div>
+                </div>
                <div style={{padding:"0 10px"}}>
                 <div className="MessageDivCov">
                <div className="Package_Up">

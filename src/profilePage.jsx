@@ -4,6 +4,9 @@ import "./style/newProfile.css"
 const ProfilePage = () => {
  const [sectionChange,setSectionChange] = useState("tips")
     const  tipDetails = [{name:"Tips",value:"2,633"},{name:"Wins",value:"1,740"},{name:"Profit",value:"+575.06"},{name:"Draw",value:"99"},{name:"Win Rate",value:"66%"},{name:"ROI",value:"21.8%"}]
+
+
+
   return (
     <div style={{marginTop:"70px"}}>
 <div className='ParentDivNewHod'>
@@ -56,19 +59,19 @@ const ProfilePage = () => {
             <div className='AmosD'>
                 <div className='AmosD IP1'>
                   <img src="/img/tips.png" alt=""/>
-                  <p className='IP holder3'>Tips</p>
+                  <p className='IP holder3' onClick={()=>setSectionChange("tips")}>Tips</p>
                 </div>
                   <div className='AmosD IP1'>
                   <img src="/img/statistics.png" alt=""/>
-                  <p className='IP holder3'>Statistics</p>
+                  <p className='IP holder3' onClick={()=>setSectionChange("tips3")}>Statistics</p>
                 </div>
                   <div className='AmosD IP1'>
                   <img src="/img/followerSecond.png" alt=""/>
-                  <p className='IP holder3'>Followers (2400)</p>
+                  <p className='IP holder3' onClick={()=>setSectionChange("tips1")}>Followers (2400)</p>
                 </div>
                   <div className='AmosD IP1'>
                   <img src="/img/followingSecond.png" alt=""/>
-                  <p className='IP holder3'>Following (240)</p>
+                  <p className='IP holder3' onClick={()=>setSectionChange("tips2")}>Following (240)</p>
                 </div>
             </div>
         </div>
@@ -76,6 +79,8 @@ const ProfilePage = () => {
 
     <div className="Above">
         {/* //change here */}
+
+        <div className='myDivb1'>
 
         {/* // sect 1 change */}
         {(sectionChange === "tips") ? 
@@ -86,17 +91,17 @@ const ProfilePage = () => {
             </div>
             <div>
             <p className='Oct'>28th Oct 2021</p>
-            <div>
+            <div className='divDEDE'>
                 <div>
                     <div className='AmosD' >
                         <img src="/img/fengland.png" alt="" />
                         <p className='holder5'>ENGLAND Premier League, 15:30 GMT +0</p>
                     </div>
-                    <p className='IP'>Middlesbrough FC v Peterborough United</p>
+                    <p className='IPYT'>Middlesbrough FC v Peterborough United</p>
                 </div>
-                  <div>
-                    <div><button>Active Tip</button></div>
-                    <div><button></button>image</div>
+                  <div className='ImageTip'>
+                    <div><button className='TipsActiveBu'>Active Tip</button></div>
+                    <div><button className='TipsActiveBu'>Active Tip</button></div>
                   </div>
             </div>
             </div>
@@ -104,19 +109,22 @@ const ProfilePage = () => {
         :""}
 
         {/* // sect 2 change */}
-         {(sectionChange === "tips") ? 
+         {(sectionChange === "tips1") ? 
         <div>
 
         </div>
           :""}
-          // sect 3 change
-               {(sectionChange === "tips") ? 
+     
+               {(sectionChange === "tips2") ? 
         <div>
 
         </div>
             :""}
-        //end change
-          <div>
+
+            </div>
+
+    
+          <div className='myDivb2'>
           
             <div>
                 <form>

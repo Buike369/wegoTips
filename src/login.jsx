@@ -72,7 +72,7 @@ const Login =()=>{
     return(
         <div className="BgColor" >
           
-           
+          
             <div className="Form_Divbb">
                 <div style={{padding:"0px 5px"}} className="DivForming">
            <div className="Form_Div renttt page">
@@ -99,6 +99,7 @@ const Login =()=>{
            </div>
            </div>
            </div>
+        
              
         </div>
     )

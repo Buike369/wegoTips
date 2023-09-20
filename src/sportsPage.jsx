@@ -81,7 +81,7 @@ const SportsPage = () => {
     }
 
    useEffect(()=>{
-    AOS.init();
+    AOS.init({once: true});
   },[])
 
   return (
@@ -104,6 +104,7 @@ const SportsPage = () => {
                  </div>
 
 <div className='sportsPageColorBg'>
+  <div className='yoofKin'>
         <div className="MakingMoney">
        Discover how easy it is to make money daily with <span className='forexy'> SPORTS </span>trading by simply following our expert predictions
         </div>
@@ -120,6 +121,14 @@ const SportsPage = () => {
           <p className="cardTin2" >
         <span className="forexy1"> Sports</span> betting, legally recognized across the world, is the activity of predicting sports results and placing a wager on the outcome. It has actually become an alternative source of income for millions of sports fans worldwide. </p>
         </div>
+        </div>
+        </div>
+
+        <div  className='NMPM'>
+             <div className="cardTin3">
+           <p className="SportBetting">What Is Sports Betting</p>
+          <p className="cardTin2" >
+        <span className="forexy1"> Sports</span> betting, legally recognized across the world, is the activity of predicting sports results and placing a wager on the outcome. It has actually become an alternative source of income for millions of sports fans worldwide. </p>
         </div>
         </div>
         </div>
@@ -181,6 +190,8 @@ You can also enjoy sports betting anywhere and anytime e.g from the comfort of y
         </div>
         </div>
         </div>
+
+        
         <div className='Ems Ems1'>
           <img src="/img/undrawgoal1.svg" alt="" className='imgFloatSport' />
         </div>
@@ -193,8 +204,8 @@ You can also enjoy sports betting anywhere and anytime e.g from the comfort of y
          <div className='Ems Ems4'>
            <img src="/img/soccer2.svg" alt="" className='imgFloatSport' />
          </div>
-          {/* <div className='Ems Ems3'></div>
-          <div className='Ems Ems4'></div> */}
+         </div>
+        
 </div>
         <div className="AgenciesTy">Sports Betting Agencies</div>
         <div className="ifNi"></div>
@@ -302,10 +313,13 @@ You can also enjoy sports betting anywhere and anytime e.g from the comfort of y
                 </span>
               </div>
               {show ? (
+                <div>
+                   <div className="Qac"></div>
                 <p className="ILOVEK">
                To register with a sports betting broker,visit any sports bookmarker of your choice and click on their signup button to register with them. You can register
 with more than one broker.
                 </p>
+                </div>
               ) : (
                 ""
               )}
@@ -318,9 +332,12 @@ with more than one broker.
                 </span>
               </div>
               {show1 ? (
+                <div>
+                   <div className="Qac"></div>
                 <p className="ILOVEK">
                Not knowing about sports bettng doesn't stops you from making money from sports betting. All you need to know is how to place bet using our coupon code for each prediction we make. Watch our tutorial video on how to bet to give you the required knowledge you need to place a bet.
                 </p>
+                </div>
               ) : (
                 ""
               )}
@@ -333,9 +350,12 @@ with more than one broker.
                 </span>
               </div>
               {show2 ? (
+                <div>
+                   <div className="Qac"></div>
                 <p className="ILOVEK">
                  To fund your account on earnars.com after registeration, go to "My Wallet" section and click on deposit and enter the amount you want to fund your account with, This will redirect you to flutter wave secure payment channel that gives you various payment options. To fund your account with a sport betting book maker watch the tutorial video.
                 </p>
+                </div>
               ) : (
                 ""
               )}
@@ -348,10 +368,13 @@ with more than one broker.
                 </span>
               </div>
               {show3 ? (
+                <div>
+                   <div className="Qac"></div>
                 <p className="ILOVEK">
               
 We do not manage users funds or bet for any user, we only forecast/predicts games. Users are responsible for  any amount of money they wish to stake with the bookies they register with.
                 </p>
+                </div>
               ) : (
                 ""
               )}
@@ -364,9 +387,12 @@ We do not manage users funds or bet for any user, we only forecast/predicts game
                 </span>
               </div>
               {show4 ? (
+                <div>
+                    <div className="Qac"></div>
                 <p className="ILOVEK">
                  Your are responsible for any amount you wish to bet on any bookmaker portal but we advice users to risk between 1% to 5% of their capital on any game.
                 </p>
+                </div>
               ) : (
                 ""
               )}
@@ -379,9 +405,12 @@ We do not manage users funds or bet for any user, we only forecast/predicts game
                 </span>
               </div>
               {show5 ? (
+                <div>
+                    <div className="Qac"></div>
                 <p className="ILOVEK">
               We do not guarantee any prediction made by our experts, however we guarantee the refund of users subscription fees if at the end of any particular month they dont turn profit by following all our prediction. This refund policy is subject to our "Refund Policy Terms and Condition"
                 </p>
+                </div>
               ) : (
                 ""
               )}
@@ -391,6 +420,28 @@ We do not manage users funds or bet for any user, we only forecast/predicts game
           </div>
           </div>
         </div>
+
+        <div className="bkFR">
+       <div style={{padding:"0 10px"}}>
+                <div className="MessageDivCov">
+               <div className="Package_Up">
+                   <h1 className="alap">Don't miss out on Fantastic News</h1>
+                   <p className="Each_Time_your">
+                       Subscribe to our newsletter and be the first to receive news.
+                   </p>
+                   <form>
+                    <div className="newsInput">
+                        <input type="email" placeholder="Enter Your Email"  className="newsBro"/>
+                    </div>
+                   </form>
+                   <img src="/img/news.svg" alt=""  className="messageImg"/>
+               </div>
+               <img src="/img/undrawWorld1.svg" alt="" className="papag" />
+                <img src="/img/undrawWorld1.svg" alt="" className="papag1" />
+               
+               </div>
+               </div>
+               </div>
         <Footer />
     </div>
   )

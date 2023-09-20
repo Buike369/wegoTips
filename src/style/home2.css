@@ -1029,6 +1029,13 @@ left:0px;
     position: relative;
   
 }
+.Qac {
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+    border-bottom: 1px solid #2a2864;
+    margin-top: 8px;
+}
 
 .fit {
 
@@ -1318,13 +1325,7 @@ left:0px;
         font-size: 21px;
     }
 
-    .Qac {
-        width: 100%;
-        max-width: 80%;
-        margin: 0 auto;
-        border-bottom: 1px solid #2a2864;
-        margin-top: 8px;
-    }
+   
 
     .UsAbout {
 

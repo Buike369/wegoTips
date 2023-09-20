@@ -31,6 +31,7 @@ import TipsterWallet from "./tipsterWallet"
 import ResetPassword from "./resetPassword"
 import UsersWallet from "./tipsWallet"
 import { AuthContext } from './context/authContext';
+import AllTips from "./allTips"
 
 
 import Admin from "./admin"
@@ -75,6 +76,7 @@ function App() {
           {currentUser ? <Route path="/tip" element={<Mytip />} /> : <Route path="/" element={<SampleHome />} /> } 
            <Route path="/betcalculator" element={<Virc/>} />
            <Route path="/about" element={<About/>} />
+          <Route path="/allTips" element={<AllTips />} />
            <Route path="/premium" element={<Premium/>} />
            <Route path="/" element={<SampleHome/>} />
           	<Route path="*" element={<Navigate to="/" />} />
