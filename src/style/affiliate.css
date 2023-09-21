@@ -91,9 +91,6 @@
     z-index: 10;
 }
 .newsBro{
-   
-
-
     width: 100%;
         padding: 18px 18px 18px 24px;
         font-size: 16px;
@@ -102,6 +99,9 @@
         outline: 0;
         border: 1px solid #2d2476;
         border-radius: 200px;
+        position: relative;
+        z-index: 14;
+        color:#fff;
 }
 .alap{
     font-size: 41px;
@@ -249,10 +249,19 @@
                 z-index: 5;
 
 }
+.EmailSentIcon{
+    position: absolute;
+    top:24%;
+    right:27px;
+    color:#bcbad7;
+    font-size: 26px;
+    z-index: 18;
+
+}
 
 .MessageDivCov{
     position:relative;
-    z-index: -7;
+    z-index: 0;
 }
 .papag{
     position: absolute;

@@ -1,7 +1,7 @@
 import React,{useState,useContext,useEffect} from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import "./style/sportPage.css"
-import {  faPlus,faMinus} from '@fortawesome/free-solid-svg-icons'
+import {  faPlus,faMinus,faPaperPlane} from '@fortawesome/free-solid-svg-icons'
 import "./style/home.css";
 import "./style/home2.css"
 import "./style/sportsP.css"
@@ -457,6 +457,7 @@ How do I register  with a broker?</span>{" "}
                    <form>
                     <div className="newsInput">
                         <input type="email" placeholder="Enter Your Email"  className="newsBro"/>
+                         <FontAwesomeIcon icon={faPaperPlane} className="EmailSentIcon" />
                     </div>
                    </form>
                    <img src="/img/news.svg" alt=""  className="messageImg"/>

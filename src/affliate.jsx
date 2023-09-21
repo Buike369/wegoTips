@@ -5,6 +5,7 @@ import Footer from "./footer";
 import { Link} from "react-router-dom";
 import { AuthContext } from './context/authContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPaperPlane} from '@fortawesome/free-solid-svg-icons'
 
 import {faFacebook,faTwitter,faLinkedin,faTelegram,faYoutube,}from '@fortawesome/free-brands-svg-icons'
 
@@ -79,6 +80,7 @@ const Affliate =()=>{
                    <form>
                     <div className="newsInput">
                         <input type="email" placeholder="Enter Your Email"  className="newsBro"/>
+                         <FontAwesomeIcon icon={faPaperPlane} className="EmailSentIcon" />
                     </div>
                    </form>
                    <img src="/img/news.svg" alt=""  className="messageImg"/>

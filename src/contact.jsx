@@ -3,6 +3,7 @@ import Footer from "./footer"
 import "./style/about.css"
 import "./style/contact.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPaperPlane} from '@fortawesome/free-solid-svg-icons'
 import {faWhatsapp} from '@fortawesome/free-brands-svg-icons'
 
 
@@ -24,13 +25,13 @@ const Contact =()=>{
                        <p className="We_areF">We are at the tip of your finger! Get in touch with us via our email addresses below.</p>
                        <div className="For_general_Advert">
                            <div className="For_General_Div">
-                               <p className="contact_p_c">For general enquiries:</p>
+                               <p className="contact_p_c">For General Enquiries:</p>
                                <p className="infoTrY">info@earnars.com</p>
                                <p className="infoTrY fontWW">Or</p>
                                <p> <FontAwesomeIcon icon={faWhatsapp} className="icon_brand_size foodI" /> <span className="WhattsZ"><a href="https://wa.me/08059279660" className="phoneNm">+234 805 927 9660</a></span></p>
                            </div> 
                            <div className="For_General_Div">
-                               <p className="contact_p_c">For advert and sponsorship:</p>
+                               <p className="contact_p_c">For Advert and Sponsorship:</p>
                                <p className="infoTrY">advert@earnars.com</p>
                                <p className="infoTrY fontWW">Or</p>
                                <p><a href="#" className="ClickHereMe hereTo">Click here to Chat on Skype</a></p>
@@ -57,6 +58,7 @@ const Contact =()=>{
                    <form>
                     <div className="newsInput">
                         <input type="email" placeholder="Enter Your Email"  className="newsBro"/>
+                        <FontAwesomeIcon icon={faPaperPlane} className="EmailSentIcon" />
                     </div>
                    </form>
                    <img src="/img/news.svg" alt=""  className="messageImg"/>

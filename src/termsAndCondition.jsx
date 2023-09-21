@@ -1,6 +1,8 @@
 import React from "react"
 import Footer from "./footer"
 import "./style/about.css"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPaperPlane} from '@fortawesome/free-solid-svg-icons'
 
 const TermsAndCondition=()=>{
 
@@ -60,6 +62,7 @@ Earnars does not accept any liability for any damages, liabilities or losses whi
                    <form>
                     <div className="newsInput">
                         <input type="email" placeholder="Enter Your Email"  className="newsBro"/>
+                        <FontAwesomeIcon icon={faPaperPlane} className="EmailSentIcon" />
                     </div>
                    </form>
                    <img src="/img/news.svg" alt=""  className="messageImg"/>

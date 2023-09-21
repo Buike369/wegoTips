@@ -1,22 +1,43 @@
 import React,{useState} from 'react'
 import "./style/newProfile.css"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {  faPaperPlane} from '@fortawesome/free-solid-svg-icons'
+import Footer from "./footer"
+import ReactPaginate from 'react-paginate';
 
 const ProfilePage = () => {
+  const items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
+const [itemsPerPage,setItemsPerPage] = useState(6)
+const [itemOffset, setItemOffset] = useState(0);
  const [sectionChange,setSectionChange] = useState("tips")
     const  tipDetails = [{name:"Tips",value:"2,633"},{name:"Wins",value:"1,740"},{name:"Profit",value:"+575.06"},{name:"Draw",value:"99"},{name:"Win Rate",value:"66%"},{name:"ROI",value:"21.8%"}]
 
+ const card = ["sport","binary","forex","crytptocurrency","sport","binary","forex","crytptocurrency"]
 
+ const endOffset = itemOffset + itemsPerPage;
+  console.log(`Loading items from ${itemOffset} to ${endOffset}`);
+  const currentItems = items.slice(itemOffset, endOffset);
+  const pageCount = Math.ceil(items.length / itemsPerPage);
+
+  // Invoke when user click to request another page.
+  const handlePageClick = (event) => {
+    const newOffset = (event.selected * itemsPerPage) % items.length;
+    console.log(
+      `User requested page number ${event.selected}, which is offset ${newOffset}`
+    );
+    setItemOffset(newOffset);
+  };
 
   return (
-    <div style={{marginTop:"70px"}}>
+    <div className='lookUp'>
 <div className='ParentDivNewHod'>
     <div className='tipsterProfile'>
         Tipster Profile
     </div>
 
 
-  // section
-
+ 
+  <div style={{padding:"6px 8px"}}>
         <div className='profileCoverDiv'>
             <div><img src="/img/tom.png" alt="" className='Kn1'/></div>
             {/* <div className="point">
@@ -29,7 +50,7 @@ const ProfilePage = () => {
                         <img src="/img/picMan.png" alt="" className="ImgPicMan"/>
                          <img src="/img/picManImg.png" alt="" className="ImgPicMan1"/>
                     </div>
-                    <div>
+                    <div className='kingManU'>
                         <div className='AmosD'>
                             <p className='namePad'>Amos Rios</p>
                             <img src="/img/iconGuide.png" alt="" className='holder3' />
@@ -43,12 +64,12 @@ const ProfilePage = () => {
                     </div>
                 </div>
                 <div className='AmosD holder8' >
-                    <div><button className='holder6 holder5'>Subscribe From</button></div> 
-                       <div><button  className='holder6 holder5'>Follow</button></div>
+                    <div><button className='holder6 holder5 Um'>Subscribe From</button></div> 
+                       <div><button  className='holder6 holder5' style={{color:"gold"}}>Follow</button></div>
                 </div>
             </div>
 
-            <div className='holder7 holder8 msg1' >
+            <div className='holder7 holder8 msg1 mikeTin' >
                 {tipDetails.map((app,id)=>(
                 <div key={id} className="msg">
                     <p className='msg3'>{app.value}</p>
@@ -57,24 +78,28 @@ const ProfilePage = () => {
                 ))}
             </div>
             <div className='AmosD'>
-                <div className='AmosD IP1'>
-                  <img src="/img/tips.png" alt=""/>
+                <div className='AmosD IP1' style={{borderBottom:sectionChange === "tips" ? "1px solid #00ff66" :""}}>
+                  <img src="/img/tips.png" alt="" onClick={()=>setSectionChange("tips")}/>
                   <p className='IP holder3' onClick={()=>setSectionChange("tips")}>Tips</p>
                 </div>
-                  <div className='AmosD IP1'>
-                  <img src="/img/statistics.png" alt=""/>
+                  <div className='AmosD IP1'  style={{borderBottom:sectionChange === "tips3" ?  "1px solid #00ff66" :""}}>
+                  <img src="/img/statistics.png" alt="" onClick={()=>setSectionChange("tips3")}/>
                   <p className='IP holder3' onClick={()=>setSectionChange("tips3")}>Statistics</p>
+                  
                 </div>
-                  <div className='AmosD IP1'>
-                  <img src="/img/followerSecond.png" alt=""/>
+                  <div className='AmosD IP1' style={{borderBottom:sectionChange === "tips1" ?  "1px solid  #00ff66" :""}}>
+                  <img src="/img/followerSecond.png" alt="" onClick={()=>setSectionChange("tips1")}/>
                   <p className='IP holder3' onClick={()=>setSectionChange("tips1")}>Followers (2400)</p>
+               
                 </div>
-                  <div className='AmosD IP1'>
-                  <img src="/img/followingSecond.png" alt=""/>
-                  <p className='IP holder3' onClick={()=>setSectionChange("tips2")}>Following (240)</p>
+                  <div className='AmosD IP1' style={{borderBottom:sectionChange === "tips2" ?  "1px solid  #00ff66" :""}}>
+                  <img src="/img/followingSecond.png" alt="" onClick={()=>setSectionChange("tips2")}/>
+                  <p className='IP holder3' onClick={()=>setSectionChange("tips2")}>Following (240) </p>
+           
                 </div>
             </div>
         </div>
+        ></div>
  {/* section for tips */}
 
     <div className="Above">
@@ -95,9 +120,75 @@ const ProfilePage = () => {
                 <div>
                     <div className='AmosD' >
                         <img src="/img/fengland.png" alt="" />
-                        <p className='holder5'>ENGLAND Premier League, 15:30 GMT +0</p>
+                        <p className='holder5'><span className="ENGLand">ENGLAND </span>Premier League, 15:30 GMT +0</p>
                     </div>
-                    <p className='IPYT'>Middlesbrough FC v Peterborough United</p>
+                    <p className='IPYT'>Middlesbrough FC vs Peterborough United</p>
+                </div>
+                  <div className='ImageTip'>
+                    <div><button className='TipsActiveBu'>Active Tip</button></div>
+                    <div><button className='TipsActiveBu'>Active Tip</button></div>
+                  </div>
+            </div>
+             <div className='divDEDE'>
+                <div>
+                    <div className='AmosD' >
+                        <img src="/img/fengland.png" alt="" />
+                        <p className='holder5'><span className="ENGLand">ENGLAND </span>Premier League, 15:30 GMT +0</p>
+                    </div>
+                    <p className='IPYT'>Middlesbrough FC vs Peterborough United</p>
+                </div>
+                  <div className='ImageTip'>
+                    <div><button className='TipsActiveBu'>Active Tip</button></div>
+                    <div><button className='TipsActiveBu'>Active Tip</button></div>
+                  </div>
+            </div>
+             <div className='divDEDE'>
+                <div>
+                    <div className='AmosD' >
+                        <img src="/img/fengland.png" alt="" />
+                        <p className='holder5'><span className="ENGLand">ENGLAND </span>Premier League, 15:30 GMT +0</p>
+                    </div>
+                    <p className='IPYT'>Middlesbrough FC vs Peterborough United</p>
+                </div>
+                  <div className='ImageTip'>
+                    <div><button className='TipsActiveBu'>Active Tip</button></div>
+                    <div><button className='TipsActiveBu'>Active Tip</button></div>
+                  </div>
+            </div>
+             <p className='Oct'>28th Oct 2021</p>
+            <div className='divDEDE'>
+                <div>
+                    <div className='AmosD' >
+                        <img src="/img/fengland.png" alt="" />
+                        <p className='holder5'><span className="ENGLand">ENGLAND </span>Premier League, 15:30 GMT +0</p>
+                    </div>
+                    <p className='IPYT'>Middlesbrough FC vs Peterborough United</p>
+                </div>
+                  <div className='ImageTip'>
+                    <div><button className='TipsActiveBu'>Active Tip</button></div>
+                    <div><button className='TipsActiveBu'>Active Tip</button></div>
+                  </div>
+            </div>
+             <div className='divDEDE'>
+                <div>
+                    <div className='AmosD' >
+                        <img src="/img/fengland.png" alt="" />
+                        <p className='holder5'><span className="ENGLand">ENGLAND </span>Premier League, 15:30 GMT +0</p>
+                    </div>
+                    <p className='IPYT'>Middlesbrough FC vs Peterborough United</p>
+                </div>
+                  <div className='ImageTip'>
+                    <div><button className='TipsActiveBu'>Active Tip</button></div>
+                    <div><button className='TipsActiveBu'>Active Tip</button></div>
+                  </div>
+            </div>
+             <div className='divDEDE'>
+                <div>
+                    <div className='AmosD' >
+                        <img src="/img/fengland.png" alt="" />
+                        <p className='holder5'><span className="ENGLand">ENGLAND </span>Premier League, 15:30 GMT +0</p>
+                    </div>
+                    <p className='IPYT'>Middlesbrough FC vs Peterborough United</p>
                 </div>
                   <div className='ImageTip'>
                     <div><button className='TipsActiveBu'>Active Tip</button></div>
@@ -111,12 +202,122 @@ const ProfilePage = () => {
         {/* // sect 2 change */}
          {(sectionChange === "tips1") ? 
         <div>
+                  <div className="TY9">
+         {card.map((app,id)=>(
+                          <div className="cardProfileDiv TY33"  style={{border:"1px solid rgb(61 62 126)"}}>
+          <div className="catImgDivProfile"><img src="/img/kucoin.png" alt="" style={{width:"100%",height:"100%",borderTopRightRadius:"10px",borderTopLeftRadius:"10px"}}/></div>
+           <div className="imgcardPic"><img src="/img/create.png" alt="" className="catImgDivProfile1"/></div>
+          <div className="donKing">Don Knight</div>
+          <div className="ipconFig">
+            <div>
+              <div className="imgWay">
+                <div><img src="/img/followers.png" alt=""/></div>
+                <div>
+                  <p className="followerp1">24k</p>
+                  <p className="followerp" >Followers</p>
+                </div>
+              </div>
+            </div>
+             <div>
+               <div className="imgWay" >
+                <div><img src="/img/following.png" alt=""/></div>
+                <div>
+                  <p className="followerp1">24k</p>
+                  <p className="followerp">Following</p>
+                </div>
+              </div>
+             </div>
+          </div>
+          <div className="typing">
+            <div className="pork1">+4,345</div>
+            <div className="pork">+2,434</div>
+          </div>
+           <div className="findingPP">
+            <div className="followerp daysB"> <span className='textPre'>1</span> <sub>day</sub></div>
+             <div className="followerp daysB"><span className='textPre'>7</span> <sub>days</sub></div>
+            <div className="followerp daysB"><span className='textPre'>30</span> <sub>days</sub></div>
+          </div>
 
+          <div className="houseRuMM">View Profile</div>
+        </div>
+                       ))}
+                       </div>
+                        <div className='IfUNA'>
+
+    <ReactPaginate
+        breakLabel="..."
+        nextLabel="next"
+        onPageChange={handlePageClick}
+        pageRangeDisplayed={6}
+        pageCount={pageCount}
+        previousLabel={`previous`}
+        renderOnZeroPageCount={null}
+        className='paginate'
+        onClick={handlePageClick}
+      />
+  
+  </div>
         </div>
           :""}
      
                {(sectionChange === "tips2") ? 
         <div>
+
+           <div className="TY9">
+         {card.map((app,id)=>(
+                          <div className="cardProfileDiv TY33"  style={{border:"1px solid rgb(61 62 126)"}}>
+          <div className="catImgDivProfile"><img src="/img/kucoin.png" alt="" style={{width:"100%",height:"100%",borderTopRightRadius:"10px",borderTopLeftRadius:"10px"}}/></div>
+           <div className="imgcardPic"><img src="/img/create.png" alt="" className="catImgDivProfile1"/></div>
+          <div className="donKing">Don Knight</div>
+          <div className="ipconFig">
+            <div>
+              <div className="imgWay">
+                <div><img src="/img/followers.png" alt=""/></div>
+                <div>
+                  <p className="followerp1">24k</p>
+                  <p className="followerp" >Followers</p>
+                </div>
+              </div>
+            </div>
+             <div>
+               <div className="imgWay" >
+                <div><img src="/img/following.png" alt=""/></div>
+                <div>
+                  <p className="followerp1">24k</p>
+                  <p className="followerp">Following</p>
+                </div>
+              </div>
+             </div>
+          </div>
+          <div className="typing">
+            <div className="pork1">+4,345</div>
+            <div className="pork">+2,434</div>
+          </div>
+           <div className="findingPP">
+            <div className="followerp daysB"> <span className='textPre'>1</span> <sub>day</sub></div>
+             <div className="followerp daysB"><span className='textPre'>7</span> <sub>days</sub></div>
+            <div className="followerp daysB"><span className='textPre'>30</span> <sub>days</sub></div>
+          </div>
+
+          <div className="houseRuMM">View Profile</div>
+        </div>
+                       ))}
+                       </div>
+                        <div className='IfUNA'>
+
+    <ReactPaginate
+        breakLabel="..."
+        nextLabel="next"
+        onPageChange={handlePageClick}
+        pageRangeDisplayed={6}
+        pageCount={pageCount}
+        previousLabel={`previous`}
+        renderOnZeroPageCount={null}
+        className='paginate'
+        onClick={handlePageClick}
+      />
+  
+  </div>
 
         </div>
             :""}
@@ -125,76 +326,112 @@ const ProfilePage = () => {
 
     
           <div className='myDivb2'>
-          
+          <div className='fireMan'>
             <div>
                 <form>
                     <div>
-                        <p>Subscribe To This Tipster</p>
-                        <div>
-                            <div>
-                                <div></div>
-                                <div>1 Day <span>$1900</span></div>
+                        <p className='subscribeToThis'>Subscribe To This Tipster</p>
+                        <div className='paw'>
+                            <div className='paw1'>
+                                <div className='cic'></div>
+                                <div className='bkInT'>1 Day <span className='moneyColor'>$10</span></div>
                             </div>
-                             <div>
-                                <div></div> 
-                                <div>7 Day <span>$1900</span></div>
-                             </div>
+                             <div className='paw1'>
+                                <div className='cic'></div>
+                                <div className='bkInT'>7 Days <span  className='moneyColor'>$50</span></div>
+                            </div>
+                             <div className='paw1'>
+                                <div className='cic'></div>
+                                <div className='bkInT'>7 Days <span  className='moneyColor'>$50</span></div>
+                            </div>
+                            
                         </div>
-                        <div></div>
-                        <p>Payment method</p>
+                        <div className='pY'></div>
+                        <p className='name1'>Payment method</p>
 
-                        //pay 1
-                        <div>
-                            <div>
-                                <div>.</div>
-                                <p>Card</p>
+
+                        <div className='ppinkl'>
+                            <div className='cicK'>
+                                <div className='cic'></div>
+                                <p className='cicK1'>Card</p>
                             </div>
                              <div>
-                                <img src="" alt="" />
-                                 <img src="" alt="" />
-                                  <img src="" alt="" />
+                                <img src="/img/dow1.png" alt="" className='tuya' />
+                                 <img src="/img/dow2.png" alt="" className='tuya'/>
+                                  <img src="/img/dow3.png" alt="" className='tuya' />
                              </div>
                         </div>
-                        //pay 2
-                         <div>
-                            <div>
-                                <div>.</div>
-                                <p>Card</p>
+                          <div className='ppinkl'>
+                            <div className='cicK'>
+                                <div className='cic'></div>
+                                <p className='cicK1'>Paypal</p>
                             </div>
                              <div>
-                                <img src="" alt="" />
-                                
+                              
+                                  <img src="/img/dow4.png" alt="" />
                              </div>
                         </div>
-                        //pay3
-                            <div>
-                            <div>
-                                <div>.</div>
-                                <p>Card</p>
+                          <div className='ppinkl'>
+                            <div className='cicK'>
+                                <div className='cic'></div>
+                                <p className='cicK1'>Bitcoin</p>
                             </div>
                              <div>
-                                <img src="" alt="" />
-                                
+                               
+                                  <img src="/img/dow5.png" alt="" />
                              </div>
                         </div>
-                        <div>
+                      
+                     
+
+                      
+                        <div className='buttonBu'>
                             Buy Now
                         </div>
                     </div>
                 </form>
             </div>
           
-            <div>
-                <div><img src="" alt="" /></div>
-                  <div>
-                    <p>2400</p>
-                     <p>Subscribers</p>
+            </div>
+            <div className='circleTT1'>
+                <div className="circleTT"><img src="/img/dow7.png" alt="" /></div>
+                  <div className='SubMan'>
+                    <p className='SubMan1'>2400</p>
+                     <p className='subSubC'>Subscribers</p>
                   </div>
             </div>
+
           </div>
 
    </div>
 </div>
+
+ <div className="bkFR">
+       <div style={{padding:"0 10px"}}>
+                <div className="MessageDivCov">
+               <div className="Package_Up">
+                   <h1 className="alap">Don't miss out on Fantastic News</h1>
+                   <p className="Each_Time_your">
+                       Subscribe to our newsletter and be the first to receive news.
+                   </p>
+                   <form>
+                    <div className="newsInput">
+                        <input type="email" placeholder="Enter Your Email"  className="newsBro"/>
+                         <FontAwesomeIcon icon={faPaperPlane} className="EmailSentIcon" />
+                    </div>
+                   </form>
+                   <img src="/img/news.svg" alt=""  className="messageImg"/>
+               </div>
+               <img src="/img/undrawWorld1.svg" alt="" className="papag" />
+                <img src="/img/undrawWorld1.svg" alt="" className="papag1" />
+               
+               </div>
+               </div>
+               </div>
+
+         
+
+                  <Footer />
             </div>
   )
 }

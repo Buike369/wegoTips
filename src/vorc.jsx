@@ -93,21 +93,22 @@ const Vic = () => {
 
   }
   return (
-    <div className="Cover_BackgroundColor">
+    <div className="Cov</div>er_BackgroundColor">
+      <div style={{padding:"0 10px"}}>
   
       {/* mobile view */}
       
       <div className="Du">
         <ul className="Bet_CC">
-          <li className="VirtualP" onClick={()=>setShow1( "ultimate")}>Ultimate Virtual Bet</li>
+          <li className="VirtualP" style={{backgroundColor:show1 === "ultimate" ? "#3d3491" :""}} onClick={()=>setShow1( "ultimate")}>Ultimate Virtual Bet</li>
          
-          <li className="VirtualP" onClick={()=>setShow1("backbet")} >Arbitrage Bet </li>
-          <li className="VirtualP" onClick={()=>setShow1("bonusBet")}>Bonus Bet</li>
-          <li className="VirtualP" onClick={()=>setShow1("dutching")} >Dutching Bet</li>
-          <li className="VirtualP" onClick={()=>setShow1("hedging")} >Hedging Bet</li>
-          <li className="VirtualP" onClick={()=>setShow1("staking")} >Staking Bet</li>
-          <li className="VirtualP" onClick={()=>setShow1("lay")}>Lay Bet</li>
-          <li className="VirtualP"  onClick={()=>setShow1("odd")}>Odd Calculator</li>
+          <li className="VirtualP" style={{backgroundColor:show1 === "backbet" ? "#3d3491" :""}} onClick={()=>setShow1("backbet")} >Arbitrage Bet </li>
+          <li className="VirtualP" style={{backgroundColor:show1 === "bonusBet" ? "#3d3491" :""}}  onClick={()=>setShow1("bonusBet")}>Bonus Bet</li>
+          <li className="VirtualP" style={{backgroundColor:show1 === "dutching" ? "#3d3491" :""}} onClick={()=>setShow1("dutching")} >Dutching Bet</li>
+          <li className="VirtualP" style={{backgroundColor:show1 === "hedging" ? "#3d3491" :""}} onClick={()=>setShow1("hedging")} >Hedging Bet</li>
+          <li className="VirtualP" style={{backgroundColor:show1 === "staking" ? "#3d3491" :""}} onClick={()=>setShow1("staking")} >Staking Bet</li>
+          <li className="VirtualP"  style={{backgroundColor:show1 === "lay" ? "#3d3491" :""}}  onClick={()=>setShow1("lay")}>Lay Bet</li>
+          <li className="VirtualP" style={{backgroundColor:show1 === "odd" ? "#3d3491" :""}} onClick={()=>setShow1("odd")}>Odd Calculator</li>
         </ul>
       </div>
       <div className="pink">
@@ -593,6 +594,7 @@ const Vic = () => {
         :""}
       </div>
       <div></div>
+      </div>
 
       <Footer />
     </div>

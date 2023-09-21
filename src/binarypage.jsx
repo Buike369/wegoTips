@@ -1,7 +1,7 @@
 import React,{useState,useEffect,useContext} from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import "./style/sportPage.css"
-import {  faPlus,faMinus} from '@fortawesome/free-solid-svg-icons'
+import {  faPlus,faMinus,faPaperPlane} from '@fortawesome/free-solid-svg-icons'
 import "./style/home.css";
 import AOS from 'aos';
 import "./style/home2.css"
@@ -301,7 +301,7 @@ and offer some fixed percentage return in case of in-the-money settlement.</p>
         </div>
         </div>
 
-        <div>
+        <div style={{padding:"0 5px"}}>
           <div id="Faqc"  data-aos="fade-up" data-aos-duration="3000"
              data-aos-easing="linear" className="faqSportMa">
             <div className="firstTom faqSports"  data-aos="fade-down" data-aos-duration="3000"
@@ -431,6 +431,7 @@ We do not guarantee any trade forecast made by our experts, however we guarantee
                    <form>
                     <div className="newsInput">
                         <input type="email" placeholder="Enter Your Email"  className="newsBro"/>
+                        <FontAwesomeIcon icon={faPaperPlane} className="EmailSentIcon" />
                     </div>
                    </form>
                    <img src="/img/news.svg" alt=""  className="messageImg"/>

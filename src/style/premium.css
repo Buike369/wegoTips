@@ -120,7 +120,12 @@
     border-radius: 50px;
     width:140px;
     text-align: center;
+    cursor:pointer;
   
+}
+.mikeW:hover{
+background-color: #3d3491;
+border: 1px solid #171054;;
 }
 
 .TY9{
@@ -133,7 +138,12 @@
     border: 1px solid #4e4f99;
         background-color: #484e87;
     border-radius: 6px;
-    padding:4px 8px;
+    padding:4px 10px;
+}
+.textPre{
+    color:#fff;
+    font-weight: 700;
+    font-size: 16px;
 }
 .houseRuMM:hover{
     cursor: pointer;

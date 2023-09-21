@@ -2,6 +2,8 @@ import React,{useContext,useState,useEffect} from 'react'
 import "./style/premium.css"
 import Footer from "./footer"
 import ReactPaginate from 'react-paginate';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faPaperPlane} from '@fortawesome/free-solid-svg-icons'
 
 import { AuthContext } from './context/authContext';
 
@@ -15,6 +17,8 @@ const Premium = () => {
 const items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
 const [itemsPerPage,setItemsPerPage] = useState(6)
 const [itemOffset, setItemOffset] = useState(0);
+
+const [changeState,setChangeState] = useState("Tips")
 
   // Simulate fetching items from another resources.
   // (This could be items from props; or items loaded in a local state
@@ -33,6 +37,38 @@ const [itemOffset, setItemOffset] = useState(0);
     setItemOffset(newOffset);
   };
 
+
+   const  onChangeHandler =(e)=>{
+
+    const val = e.target.value;
+   
+
+    switch(val) {
+      case "Forex":
+        // code block
+        setChangeState("Tips")
+
+        break;
+      case "Sports":
+        // code block
+        setChangeState("Tips1")
+        break;
+      case "Cryptocurrency":
+          // code block
+          setChangeState("Tips2")
+        break;
+      case "Binary":
+            // code block
+            setChangeState("Tips3")
+        break;
+    
+      default:
+        // code block
+         setChangeState("Tips")
+    }
+    
+
+  }
   
   const card = ["sport","binary","forex","crytptocurrency","sport","binary","forex","crytptocurrency"]
 
@@ -51,24 +87,25 @@ const [itemOffset, setItemOffset] = useState(0);
 
 <div className='PGuideE'>
 <div className="tenT">
-  <div className='mikeW'>Forex</div>
-  <div  className='mikeW'>Sports</div>
-  <div  className='mikeW'>Cryptocurrency</div>
-  <div  className='mikeW'>Binary</div>
+  <div className='mikeW' style={{backgroundColor:changeState === "Tips" ? "#3d3491" :""}} onClick={()=>setChangeState("Tips")}>Forex</div>
+  <div  className='mikeW' style={{backgroundColor:changeState === "Tips1" ? "#3d3491" :""}} onClick={()=>setChangeState("Tips1")}>Sports</div>
+  <div  className='mikeW' style={{backgroundColor:changeState === "Tips2" ? "#3d3491" :""}} onClick={()=>setChangeState("Tips2")}>Cryptocurrency</div>
+  <div  className='mikeW' style={{backgroundColor:changeState === "Tips3" ? "#3d3491" :""}} onClick={()=>setChangeState("Tips3")}>Binary</div>
 </div>
 <div className='carTy'>
   <div className="Car">
-      <select id="cars" name="cars" className="Car2"  >
-           <option value="ultimate" id={1}>Forex</option>
+      <select  className="Car2"  onChange={onChangeHandler} >
+           <option value="Forex" id={1}>Forex</option>
           
-           <option value="Arbitrage" id={2}>Sports</option>
-           <option value="bonusBet" id={3}>Cryptocurrency</option>
-           <option value="dutchingBet" id={4}>Binary</option>
+           <option value="Sports" id={2}>Sports</option>
+           <option value="Cryptocurrency" id={3}>Cryptocurrency</option>
+           <option value="Binary" id={4}>Binary</option>
          
            
   </select>
       </div>
       </div>
+      {changeState === "Tips" ? (
         <div style={{padding:"10px 15px 25px 15px"}} >
     <div className="TY9">
          {card.map((app,id)=>(
@@ -101,9 +138,9 @@ const [itemOffset, setItemOffset] = useState(0);
             <div className="pork">+2,434</div>
           </div>
            <div className="findingPP">
-            <div className="followerp daysB">1<sub>day</sub></div>
-             <div className="followerp daysB">7<sub>days</sub></div>
-            <div className="followerp daysB">30<sub>days</sub></div>
+            <div className="followerp daysB"> <span className='textPre'>1</span> <sub>day</sub></div>
+             <div className="followerp daysB"><span className='textPre'>7</span> <sub>days</sub></div>
+            <div className="followerp daysB"><span className='textPre'>30</span> <sub>days</sub></div>
           </div>
 
           <div className="houseRuMM">View Profile</div>
@@ -113,6 +150,152 @@ const [itemOffset, setItemOffset] = useState(0);
                       
 
      </div>
+     )
+      : ""}
+
+      {changeState === "Tips1" ? (
+        <div style={{padding:"10px 15px 25px 15px"}} >
+    <div className="TY9">
+         {card.map((app,id)=>(
+                          <div className="cardProfileDiv TY30"  style={{border:"1px solid rgb(61 62 126)"}}>
+          <div className="catImgDivProfile"><img src="/img/kucoin.png" alt="" style={{width:"100%",height:"100%",borderTopRightRadius:"10px",borderTopLeftRadius:"10px"}}/></div>
+           <div className="imgcardPic"><img src="/img/create.png" alt="" className="catImgDivProfile1"/></div>
+          <div className="donKing">Don Knight</div>
+          <div className="ipconFig">
+            <div>
+              <div className="imgWay">
+                <div><img src="/img/followers.png" alt=""/></div>
+                <div>
+                  <p className="followerp1">24k</p>
+                  <p className="followerp" >Followers</p>
+                </div>
+              </div>
+            </div>
+             <div>
+               <div className="imgWay" >
+                <div><img src="/img/following.png" alt=""/></div>
+                <div>
+                  <p className="followerp1">24k</p>
+                  <p className="followerp">Following</p>
+                </div>
+              </div>
+             </div>
+          </div>
+          <div className="typing">
+            <div className="pork1">+4,345</div>
+            <div className="pork">+2,434</div>
+          </div>
+           <div className="findingPP">
+            <div className="followerp daysB"> <span className='textPre'>1</span> <sub>day</sub></div>
+             <div className="followerp daysB"><span className='textPre'>7</span> <sub>days</sub></div>
+            <div className="followerp daysB"><span className='textPre'>30</span> <sub>days</sub></div>
+          </div>
+
+          <div className="houseRuMM">View Profile</div>
+        </div>
+                       ))}
+                       </div>
+                      
+
+     </div>
+     )
+      : ""}
+
+      {changeState === "Tips2" ? (
+        <div style={{padding:"10px 15px 25px 15px"}} >
+    <div className="TY9">
+         {card.map((app,id)=>(
+                          <div className="cardProfileDiv TY30"  style={{border:"1px solid rgb(61 62 126)"}}>
+          <div className="catImgDivProfile"><img src="/img/kucoin.png" alt="" style={{width:"100%",height:"100%",borderTopRightRadius:"10px",borderTopLeftRadius:"10px"}}/></div>
+           <div className="imgcardPic"><img src="/img/create.png" alt="" className="catImgDivProfile1"/></div>
+          <div className="donKing">Don Knight</div>
+          <div className="ipconFig">
+            <div>
+              <div className="imgWay">
+                <div><img src="/img/followers.png" alt=""/></div>
+                <div>
+                  <p className="followerp1">24k</p>
+                  <p className="followerp" >Followers</p>
+                </div>
+              </div>
+            </div>
+             <div>
+               <div className="imgWay" >
+                <div><img src="/img/following.png" alt=""/></div>
+                <div>
+                  <p className="followerp1">24k</p>
+                  <p className="followerp">Following</p>
+                </div>
+              </div>
+             </div>
+          </div>
+          <div className="typing">
+            <div className="pork1">+4,345</div>
+            <div className="pork">+2,434</div>
+          </div>
+           <div className="findingPP">
+            <div className="followerp daysB"> <span className='textPre'>1</span> <sub>day</sub></div>
+             <div className="followerp daysB"><span className='textPre'>7</span> <sub>days</sub></div>
+            <div className="followerp daysB"><span className='textPre'>30</span> <sub>days</sub></div>
+          </div>
+
+          <div className="houseRuMM">View Profile</div>
+        </div>
+                       ))}
+                       </div>
+                      
+
+     </div>
+     )
+      : ""}
+
+      {changeState === "Tips3" ? (
+        <div style={{padding:"10px 15px 25px 15px"}} >
+    <div className="TY9">
+         {card.map((app,id)=>(
+                          <div className="cardProfileDiv TY30"  style={{border:"1px solid rgb(61 62 126)"}}>
+          <div className="catImgDivProfile"><img src="/img/kucoin.png" alt="" style={{width:"100%",height:"100%",borderTopRightRadius:"10px",borderTopLeftRadius:"10px"}}/></div>
+           <div className="imgcardPic"><img src="/img/create.png" alt="" className="catImgDivProfile1"/></div>
+          <div className="donKing">Don Knight</div>
+          <div className="ipconFig">
+            <div>
+              <div className="imgWay">
+                <div><img src="/img/followers.png" alt=""/></div>
+                <div>
+                  <p className="followerp1">24k</p>
+                  <p className="followerp" >Followers</p>
+                </div>
+              </div>
+            </div>
+             <div>
+               <div className="imgWay" >
+                <div><img src="/img/following.png" alt=""/></div>
+                <div>
+                  <p className="followerp1">24k</p>
+                  <p className="followerp">Following</p>
+                </div>
+              </div>
+             </div>
+          </div>
+          <div className="typing">
+            <div className="pork1">+4,345</div>
+            <div className="pork">+2,434</div>
+          </div>
+           <div className="findingPP">
+            <div className="followerp daysB"> <span className='textPre'>1</span> <sub>day</sub></div>
+             <div className="followerp daysB"><span className='textPre'>7</span> <sub>days</sub></div>
+            <div className="followerp daysB"><span className='textPre'>30</span> <sub>days</sub></div>
+          </div>
+
+          <div className="houseRuMM">View Profile</div>
+        </div>
+                       ))}
+                       </div>
+                      
+
+     </div>
+     )
+      : ""}
   
   <div>
 
@@ -144,6 +327,7 @@ const [itemOffset, setItemOffset] = useState(0);
                    <form>
                     <div className="newsInput">
                         <input type="email" placeholder="Enter Your Email"  className="newsBro"/>
+                         <FontAwesomeIcon icon={faPaperPlane} className="EmailSentIcon" />
                     </div>
                    </form>
                    <img src="/img/news.svg" alt=""  className="messageImg"/>

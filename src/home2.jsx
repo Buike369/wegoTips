@@ -5,7 +5,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Footer from "./footer"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {  faPlus,faMinus,faVolleyball,faCheckToSlot, faCheckDouble} from '@fortawesome/free-solid-svg-icons'
+import {  faPlus,faMinus, faPaperPlane,faVolleyball,faCheckToSlot, faCheckDouble} from '@fortawesome/free-solid-svg-icons'
 import AOS from 'aos';
 import "./style/home2.css"
 import "./style/home.css"
@@ -515,9 +515,10 @@ useEffect(()=>{
             <div className="pork1">+4,345</div>
             <div className="pork">+2,434</div>
           </div>
-           <div className="findingPP">
-            <div className="followerp">ROI</div>
-            <div className="followerp">Profit</div>
+          <div className="findingPP">
+            <div className="followerp daysB"> <span className='textPre'>1</span> <sub>day</sub></div>
+             <div className="followerp daysB"><span className='textPre'>7</span> <sub>days</sub></div>
+            <div className="followerp daysB"><span className='textPre'>30</span> <sub>days</sub></div>
           </div>
 
           <a href="/view-profile" className="profileLink"><div className="houseRuMM">View Profile</div></a>
@@ -561,9 +562,10 @@ useEffect(()=>{
             <div className="pork1">+4,345</div>
             <div className="pork">+2,434</div>
           </div>
-           <div className="findingPP">
-            <div className="followerp">ROI</div>
-            <div className="followerp">Profit</div>
+          <div className="findingPP">
+            <div className="followerp daysB"> <span className='textPre'>1</span> <sub>day</sub></div>
+             <div className="followerp daysB"><span className='textPre'>7</span> <sub>days</sub></div>
+            <div className="followerp daysB"><span className='textPre'>30</span> <sub>days</sub></div>
           </div>
 
           <a href="/view-profile" className="profileLink"><div className="houseRuMM">View Profile</div></a>
@@ -665,8 +667,9 @@ useEffect(()=>{
             <div className="pork">+2,434</div>
           </div>
            <div className="findingPP">
-            <div className="followerp">ROI</div>
-            <div className="followerp">Profit</div>
+            <div className="followerp daysB"> <span className='textPre'>1</span> <sub>day</sub></div>
+             <div className="followerp daysB"><span className='textPre'>7</span> <sub>days</sub></div>
+            <div className="followerp daysB"><span className='textPre'>30</span> <sub>days</sub></div>
           </div>
 
           <a href="/view-profile" className="profileLink"><div className="houseRuMM">View Profile</div></a>
@@ -726,9 +729,10 @@ useEffect(()=>{
             <div className="pork1">+4,345</div>
             <div className="pork">+2,434</div>
           </div>
-           <div className="findingPP">
-            <div className="followerp">ROI</div>
-            <div className="followerp">Profit</div>
+          <div className="findingPP">
+            <div className="followerp daysB"> <span className='textPre'>1</span> <sub>day</sub></div>
+             <div className="followerp daysB"><span className='textPre'>7</span> <sub>days</sub></div>
+            <div className="followerp daysB"><span className='textPre'>30</span> <sub>days</sub></div>
           </div>
 
          <a href="/view-profile" className="profileLink"> <div className="houseRuMM">View Profile</div></a>
@@ -821,8 +825,9 @@ useEffect(()=>{
             <div className="pork">+2,434</div>
           </div>
            <div className="findingPP">
-            <div className="followerp">ROI</div>
-            <div className="followerp">Profit</div>
+            <div className="followerp daysB"> <span className='textPre'>1</span> <sub>day</sub></div>
+             <div className="followerp daysB"><span className='textPre'>7</span> <sub>days</sub></div>
+            <div className="followerp daysB"><span className='textPre'>30</span> <sub>days</sub></div>
           </div>
 
          <a href="/view-profile"  className="profileLink"> <div className="houseRuMM">View Profile</div> </a>
@@ -884,8 +889,9 @@ useEffect(()=>{
             <div className="pork">+2,434</div>
           </div>
            <div className="findingPP">
-            <div className="followerp">ROI</div>
-            <div className="followerp">Profit</div>
+            <div className="followerp daysB"> <span className='textPre'>1</span> <sub>day</sub></div>
+             <div className="followerp daysB"><span className='textPre'>7</span> <sub>days</sub></div>
+            <div className="followerp daysB"><span className='textPre'>30</span> <sub>days</sub></div>
           </div>
 
           <a href="/view-profile"  className="profileLink"><div className="houseRuMM">View Profile</div></a>
@@ -976,9 +982,10 @@ useEffect(()=>{
             <div className="pork1">+4,345</div>
             <div className="pork">+2,434</div>
           </div>
-           <div className="findingPP">
-            <div className="followerp">ROI</div>
-            <div className="followerp">Profit</div>
+          <div className="findingPP">
+            <div className="followerp daysB"> <span className='textPre'>1</span> <sub>day</sub></div>
+             <div className="followerp daysB"><span className='textPre'>7</span> <sub>days</sub></div>
+            <div className="followerp daysB"><span className='textPre'>30</span> <sub>days</sub></div>
           </div>
 
          <a href="/view-profile"  className="profileLink"><div className="houseRuMM">View Profile</div></a>
@@ -1040,8 +1047,9 @@ useEffect(()=>{
             <div className="pork">+2,434</div>
           </div>
            <div className="findingPP">
-            <div className="followerp">ROI</div>
-            <div className="followerp">Profit</div>
+            <div className="followerp daysB"> <span className='textPre'>1</span> <sub>day</sub></div>
+             <div className="followerp daysB"><span className='textPre'>7</span> <sub>days</sub></div>
+            <div className="followerp daysB"><span className='textPre'>30</span> <sub>days</sub></div>
           </div>
 
          <a href="/view-profile"  className="profileLink"> <div className="houseRuMM">View Profile</div></a>
@@ -1635,6 +1643,7 @@ useEffect(()=>{
                    <form>
                     <div className="newsInput">
                         <input type="email" placeholder="Enter Your Email"  className="newsBro"/>
+                        <FontAwesomeIcon icon={faPaperPlane} className="EmailSentIcon" />
                     </div>
                    </form>
                    <img src="/img/news.svg" alt=""  className="messageImg"/>

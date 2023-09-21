@@ -12,6 +12,8 @@
     padding: 50px 10px 40px 10px;
 
     color: #c7c3c3;
+    position: relative;
+    z-index: 2;
 }
 
 .Footer_Div_item {

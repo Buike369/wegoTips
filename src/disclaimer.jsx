@@ -2,6 +2,8 @@ import React,{useState} from "react"
 import Footer from "./footer"
 import "./style/about.css"
 import { Link} from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {  faPaperPlane} from '@fortawesome/free-solid-svg-icons'
 
 
 const Disclaimer=()=>{
@@ -36,6 +38,7 @@ const Disclaimer=()=>{
                    <form>
                     <div className="newsInput">
                         <input type="email" placeholder="Enter Your Email"  className="newsBro"/>
+                        <FontAwesomeIcon icon={faPaperPlane} className="EmailSentIcon" />
                     </div>
                    </form>
                    <img src="/img/news.svg" alt=""  className="messageImg"/>
