@@ -99,7 +99,7 @@ const [itemOffset, setItemOffset] = useState(0);
                 </div>
             </div>
         </div>
-        ></div>
+        </div>
  {/* section for tips */}
 
     <div className="Above">
