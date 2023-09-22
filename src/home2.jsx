@@ -511,15 +511,21 @@ useEffect(()=>{
               </div>
              </div>
           </div>
-          <div className="typing">
+            <div className="typing">
+            <div className='ROILING'>
             <div className="pork1">+4,345</div>
+            <p className='ROIL'>ROI</p>
+            </div>
+            <div className='ROILING'>
             <div className="pork">+2,434</div>
+            <p className='ROIL'>Profit</p>
+            </div>
+             <div className='ROILING'>
+            <div className="pork">+2,434</div>
+            <p className='ROIL'>Win Rate</p>
+            </div>
           </div>
-          <div className="findingPP">
-            <div className="followerp daysB"> <span className='textPre'>1</span> <sub>day</sub></div>
-             <div className="followerp daysB"><span className='textPre'>7</span> <sub>days</sub></div>
-            <div className="followerp daysB"><span className='textPre'>30</span> <sub>days</sub></div>
-          </div>
+       
 
           <a href="/view-profile" className="profileLink"><div className="houseRuMM">View Profile</div></a>
         </div>
@@ -558,15 +564,21 @@ useEffect(()=>{
               </div>
              </div>
           </div>
-          <div className="typing">
+            <div className="typing">
+            <div className='ROILING'>
             <div className="pork1">+4,345</div>
+            <p className='ROIL'>ROI</p>
+            </div>
+            <div className='ROILING'>
             <div className="pork">+2,434</div>
+            <p className='ROIL'>Profit</p>
+            </div>
+             <div className='ROILING'>
+            <div className="pork">+2,434</div>
+            <p className='ROIL'>Win Rate</p>
+            </div>
           </div>
-          <div className="findingPP">
-            <div className="followerp daysB"> <span className='textPre'>1</span> <sub>day</sub></div>
-             <div className="followerp daysB"><span className='textPre'>7</span> <sub>days</sub></div>
-            <div className="followerp daysB"><span className='textPre'>30</span> <sub>days</sub></div>
-          </div>
+        
 
           <a href="/view-profile" className="profileLink"><div className="houseRuMM">View Profile</div></a>
         </div>
@@ -662,15 +674,21 @@ useEffect(()=>{
               </div>
              </div>
           </div>
-          <div className="typing">
+            <div className="typing">
+            <div className='ROILING'>
             <div className="pork1">+4,345</div>
+            <p className='ROIL'>ROI</p>
+            </div>
+            <div className='ROILING'>
             <div className="pork">+2,434</div>
+            <p className='ROIL'>Profit</p>
+            </div>
+             <div className='ROILING'>
+            <div className="pork">+2,434</div>
+            <p className='ROIL'>Win Rate</p>
+            </div>
           </div>
-           <div className="findingPP">
-            <div className="followerp daysB"> <span className='textPre'>1</span> <sub>day</sub></div>
-             <div className="followerp daysB"><span className='textPre'>7</span> <sub>days</sub></div>
-            <div className="followerp daysB"><span className='textPre'>30</span> <sub>days</sub></div>
-          </div>
+        
 
           <a href="/view-profile" className="profileLink"><div className="houseRuMM">View Profile</div></a>
         </div>
@@ -725,15 +743,21 @@ useEffect(()=>{
               </div>
              </div>
           </div>
-          <div className="typing">
+           <div className="typing">
+            <div className='ROILING'>
             <div className="pork1">+4,345</div>
+            <p className='ROIL'>ROI</p>
+            </div>
+            <div className='ROILING'>
             <div className="pork">+2,434</div>
+            <p className='ROIL'>Profit</p>
+            </div>
+             <div className='ROILING'>
+            <div className="pork">+2,434</div>
+            <p className='ROIL'>Win Rate</p>
+            </div>
           </div>
-          <div className="findingPP">
-            <div className="followerp daysB"> <span className='textPre'>1</span> <sub>day</sub></div>
-             <div className="followerp daysB"><span className='textPre'>7</span> <sub>days</sub></div>
-            <div className="followerp daysB"><span className='textPre'>30</span> <sub>days</sub></div>
-          </div>
+        
 
          <a href="/view-profile" className="profileLink"> <div className="houseRuMM">View Profile</div></a>
         </div></div>
@@ -820,17 +844,23 @@ useEffect(()=>{
               </div>
              </div>
           </div>
-          <div className="typing">
+             <div className="typing">
+            <div className='ROILING'>
             <div className="pork1">+4,345</div>
+            <p className='ROIL'>ROI</p>
+            </div>
+            <div className='ROILING'>
             <div className="pork">+2,434</div>
+            <p className='ROIL'>Profit</p>
+            </div>
+             <div className='ROILING'>
+            <div className="pork">+2,434</div>
+            <p className='ROIL'>Win Rate</p>
+            </div>
           </div>
-           <div className="findingPP">
-            <div className="followerp daysB"> <span className='textPre'>1</span> <sub>day</sub></div>
-             <div className="followerp daysB"><span className='textPre'>7</span> <sub>days</sub></div>
-            <div className="followerp daysB"><span className='textPre'>30</span> <sub>days</sub></div>
-          </div>
+          
 
-         <a href="/view-profile"  className="profileLink"> <div className="houseRuMM">View Profile</div> </a>
+         <a href="/view-profile"  className="profileLink"> <div className="houseRuMM  WonB">View Profile</div> </a>
         </div>
                        </div>
                     )):post3.map((app,id)=>(
@@ -885,16 +915,22 @@ useEffect(()=>{
              </div>
           </div>
           <div className="typing">
+            <div className='ROILING'>
             <div className="pork1">+4,345</div>
+            <p className='ROIL'>ROI</p>
+            </div>
+            <div className='ROILING'>
             <div className="pork">+2,434</div>
+            <p className='ROIL'>Profit</p>
+            </div>
+             <div className='ROILING'>
+            <div className="pork">+2,434</div>
+            <p className='ROIL'>Win Rate</p>
+            </div>
           </div>
-           <div className="findingPP">
-            <div className="followerp daysB"> <span className='textPre'>1</span> <sub>day</sub></div>
-             <div className="followerp daysB"><span className='textPre'>7</span> <sub>days</sub></div>
-            <div className="followerp daysB"><span className='textPre'>30</span> <sub>days</sub></div>
-          </div>
+          
 
-          <a href="/view-profile"  className="profileLink"><div className="houseRuMM">View Profile</div></a>
+          <a href="/view-profile"  className="profileLink"><div className="houseRuMM  WonB">View Profile</div></a>
         </div>
                        </div>
                     ))}
@@ -978,17 +1014,23 @@ useEffect(()=>{
               </div>
              </div>
           </div>
-          <div className="typing">
+           <div className="typing">
+            <div className='ROILING'>
             <div className="pork1">+4,345</div>
+            <p className='ROIL'>ROI</p>
+            </div>
+            <div className='ROILING'>
             <div className="pork">+2,434</div>
+            <p className='ROIL'>Profit</p>
+            </div>
+             <div className='ROILING'>
+            <div className="pork">+2,434</div>
+            <p className='ROIL'>Win Rate</p>
+            </div>
           </div>
-          <div className="findingPP">
-            <div className="followerp daysB"> <span className='textPre'>1</span> <sub>day</sub></div>
-             <div className="followerp daysB"><span className='textPre'>7</span> <sub>days</sub></div>
-            <div className="followerp daysB"><span className='textPre'>30</span> <sub>days</sub></div>
-          </div>
+          
 
-         <a href="/view-profile"  className="profileLink"><div className="houseRuMM">View Profile</div></a>
+         <a href="/view-profile"  className="profileLink  WonB"><div className="houseRuMM">View Profile</div></a>
         </div>
                        </div>
                     )):post4.map((app,id)=>(
@@ -1042,17 +1084,23 @@ useEffect(()=>{
               </div>
              </div>
           </div>
-          <div className="typing">
+            <div className="typing">
+            <div className='ROILING'>
             <div className="pork1">+4,345</div>
+            <p className='ROIL'>ROI</p>
+            </div>
+            <div className='ROILING'>
             <div className="pork">+2,434</div>
+            <p className='ROIL'>Profit</p>
+            </div>
+             <div className='ROILING'>
+            <div className="pork">+2,434</div>
+            <p className='ROIL'>Win Rate</p>
+            </div>
           </div>
-           <div className="findingPP">
-            <div className="followerp daysB"> <span className='textPre'>1</span> <sub>day</sub></div>
-             <div className="followerp daysB"><span className='textPre'>7</span> <sub>days</sub></div>
-            <div className="followerp daysB"><span className='textPre'>30</span> <sub>days</sub></div>
-          </div>
+         
 
-         <a href="/view-profile"  className="profileLink"> <div className="houseRuMM">View Profile</div></a>
+         <a href="/view-profile"  className="profileLink"> <div className="houseRuMM  WonB">View Profile</div></a>
         </div>
                        </div>
                   
@@ -1475,7 +1523,7 @@ useEffect(()=>{
 
 
 
-                   <div style={{padding:"0 5px"}}>
+                   <div style={{padding:"0 10px"}}>
           <div id="Faqc" data-aos="fade-up" data-aos-duration="3000"
              data-aos-easing="linear">
             <div className="firstTom" data-aos="fade-down" data-aos-duration="3000"

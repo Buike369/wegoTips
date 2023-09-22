@@ -90,9 +90,9 @@ const CryptoPage = () => {
                     <div className="grace">
                         <h1 className="Aka">Cryptocurrency Predictions</h1>
                      
-                       <p  className="weAre4">With Upto <span className="withUpto">50% acurrancy<span>.</span></span></p>
-                       <p className='everyWhere'>Everyday is a winning day</p>
-                       <div className='football'>Football, Tennis, Basketball ETC</div>
+                       <p  className="weAre4">With Upto <span className="withUpto">58% accuracy<span>.</span></span></p>
+                       <p className='everyWhere'>Buy low and sell high</p>
+                       <div className='football'>BTC,ETH,TRB,USDT,USDC etc.</div>
                     </div>
                      <div className="grace"><img src="/img/affiliate-banner.png" className="gracePic" alt="affiliate_banner"/></div>
                      <img src="/img/StarsME.svg" className="headerAffiliateI" alt="affiliate_banner"/>
@@ -109,7 +109,7 @@ const CryptoPage = () => {
         </div>
         {currentUser ? " " :  <div style={{display:"flex",justifyContent:"center",alignItems:"center"}}><Link to="/login" className="ifi"> <button className="NowUpSign" >SIGN UP NOW</button></Link> </div>}  
     
-        <div style={{padding:"0px 12px"}} >
+        <div >
         <p className="SportBetting">What Is Cryptocurrency Trading</p>
         <div className="outcomeBeen1">
         <div className="outcomeBeen" >
@@ -124,7 +124,7 @@ dedicated cryptocurrency exchange.
 
        
         <div className='sportPa'>
-        <div  style={{padding:"0px 12px"}}>
+        <div >
         <p className="WhyStart">Why Start  Cryptocurreny Trading</p>
         <div className="ifNi"></div>
         <div className="EasyTi">
@@ -183,7 +183,7 @@ trading has one of the
  lowest barrier of entry. This 
 means it wont cost you time 
 and a tone of money to start 
-trading cyrpto. With
+trading crypto. With
 $10 dollars you can register 
 an account with an exchange and start trading. There are several high powered 
 knowledge available online 
@@ -226,62 +226,62 @@ for another
 <div className="slider">
 <div className="slide-track">
    <div className="slide">
-    <div style={{height:"80px",width:"180px"}}>
+    <div style={{height:"50px",width:"160px"}}>
     <img src="/img/binance.webp" alt="" title="" className="marqueelogo" style={{width: "100%", height:"100%"}}/>
       </div>
     </div>
      <div className="slide">
-          <div style={{height:"80px",width:"180px"}}>
+          <div style={{height:"50px",width:"160px"}}>
    <img src="/img/coinbase.png" alt="" title="" className="marqueelogo" style={{width:"100%",  height:"100%"}}/>
    </div>
     </div>
     <div className="slide">
-      <div style={{height:"80px",width:"180px"}}>
+      <div style={{height:"50px",width:"160px"}}>
    <img src="/img/biti.jpg" alt="" title="" className="marqueelogo" style={{width: "100%",  height:"100%"}}/>
    </div>
    </div>
    <div className="slide">
-       <div style={{height:"80px",width:"180px"}}>
+       <div style={{height:"50px",width:"160px"}}>
     <img src="/img/BYbit.png" alt="" title="" className="marqueelogo" style={{width: "100%",  height:"100%"}}/>
    </div>
    </div>
     <div className="slide">
-       <div style={{height:"80px",width:"180px"}}>
+       <div style={{height:"50px",width:"160px"}}>
    <img src="/img/kucoin.png" alt="" title="" className="marqueelogo" style={{width: "100%",  height:"100%"}}/>
    </div>
    </div>
     <div className="slide">
-      <div style={{height:"80px",width:"180px"}}>
+      <div style={{height:"50px",width:"160px"}}>
    <img src="/img/hfm.svg" alt="" title="" className="marqueelogo" style={{width: "100%",  height:"100%"}}/>
    </div>
    </div>
        <div className="slide">
-        <div style={{height:"80px",width:"180px"}}>
+        <div style={{height:"50px",width:"160px"}}>
    <img src="/img/binance.webp" alt="" title="" className="marqueelogo" style={{width: "100%",  height:"100%"}}/>
    </div>
    </div>
        <div className="slide">
-         <div style={{height:"80px",width:"180px"}}>
+         <div style={{height:"50px",width:"160px"}}>
            <img src="/img/coinbase.png" alt="" title="" className="marqueelogo" style={{width: "100%",  height:"100%"}}/>
    </div>
    </div>
        <div className="slide">
-        <div style={{height:"80px",width:"180px"}}>
+        <div style={{height:"50px",width:"160px"}}>
    <img src="/img/biti.jpg" alt="" title="" className="marqueelogo" style={{width: "100%",  height:"100%"}}/>
    </div>
    </div>
        <div className="slide">
-        <div style={{height:"80px",width:"180px"}}>
+        <div style={{height:"50px",width:"160px"}}>
    <img src="/img/BYbit.png" alt="" title="" className="marqueelogo" style={{width: "100%", height:"100%"}}/>
    </div>
    </div>
        <div className="slide">
-         <div style={{height:"80px",width:"180px"}}>
+         <div style={{height:"50px",width:"160px"}}>
          <img src="/img/kucoin.png" alt="" title="" className="marqueelogo" style={{width: "100%",  height:"100%"}}/>
   </div>
    </div>
        <div className="slide">
-                 <div style={{height:"80px",width:"180px"}}>
+                 <div style={{height:"50px",width:"160px"}}>
    <img src="/img/hfm.svg" alt="" title="" className="marqueelogo" style={{width: "100%", height:"100%"}}/>
    </div>
    </div>
@@ -318,14 +318,14 @@ for another
 
         
 
-        <div style={{padding:"0 5px"}}>
+        <div style={{padding:"0 10px"}}>
           <div id="Faqc" className="faqSportMa" data-aos="fade-up" data-aos-duration="3000"
              data-aos-easing="linear">
             <div className="firstTom faqSports" data-aos="fade-down" data-aos-duration="3000"
              data-aos-easing="linear">FAQ</div>
             <div className="homeChange">
               <div className="HowFarBro" onClick={drop}>
-                <span>How do resgister  with an Exchange?</span>{" "}
+                <span>How do register  with an Exchange?</span>{" "}
                 <span className="IconSpace">
                 {show? <FontAwesomeIcon icon={faMinus} className="PlusIcon" />:<FontAwesomeIcon icon={faPlus} className="PlusIcon" />}
                 </span>
@@ -335,7 +335,7 @@ for another
                    <div className="Qac"></div>
                 <p className="ILOVEK">
                   {" "}
-                  To register with a Crypto Exchange,visit any Exchange of your choice and click on their signup button to register with them. You can register with more than one cryptocurrency exchange.{" "}
+                  To register with a Crypto Exchange,visit any Exchange of your choice and click on their sign up button to register with them. You can register with more than one cryptocurrency exchange.{" "}
                 </p>
                 </div>
               ) : (
@@ -344,7 +344,7 @@ for another
             </div>
             <div className="homeChange">
               <div className="HowFarBro" onClick={drop1}>
-                <span>I dont Know anything about crypto trading,What should i do?</span>
+                <span>I don't Know anything about crypto trading,What should i do?</span>
                 <span className="IconSpace">
                 {show1? <FontAwesomeIcon icon={faMinus} className="PlusIcon" />:<FontAwesomeIcon icon={faPlus} className="PlusIcon" />}
                 </span>

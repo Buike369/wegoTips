@@ -94,7 +94,7 @@ const ForexPage = () => {
                     <div className="grace">
                         <h1 className="Aka">Forex Predictions</h1>
                         {/* <div><span className="homeSpan">Home</span> <span className="homeSpan">Affiliate program</span></div> */}
-                       <p  className="weAre4">With Upto <span className="withUpto">85% acurrancy<span>.</span></span></p>
+                       <p  className="weAre4">With Upto <span className="withUpto">85% accuracy<span>.</span></span></p>
                        <p className='everyWhere'>Buy low and sell high</p>
                        <div className='football'>FBS, Octafx, FXTM etc.</div>
                     </div>
@@ -113,7 +113,7 @@ const ForexPage = () => {
       <Link to="/login" className="ifi"> <div className="NowUpSign"> SIGN UP NOW
       </div></Link> */}
        {currentUser ? " " :  <div style={{display:"flex",justifyContent:"center",alignItems:"center"}}><Link to="/login" className="ifi"><button className="NowUpSign" >SIGN UP NOW</button></Link> </div>}  
-        <div style={{padding:"0px 12px"}} >
+        <div  >
         <p className="SportBetting">What Is Forex Trading</p>
         <div className="outcomeBeen1">
         <div className="outcomeBeen" >
@@ -129,7 +129,7 @@ liquid asset markets in the world.
         
 
         <div className="sportPa">
-        <div style={{padding:"0px 12px"}}>
+        <div >
         <p className="WhyStart">Why Start Forex Trading</p>
         <div className="ifNi"></div>
         <div className="EasyTi">
@@ -192,10 +192,10 @@ sleep.
 small amount to control 
 larger amount of money.If 
 you deposit $50 on forex 
-plaform you can decide to 
+platform you can decide to 
 use that $50 and borrow 
 $50,000 to trade the 
-market inorder to make 
+market in order to make 
 serious profit and at the 
 same time you can decide 
 to keep your risk reward ratio to 
@@ -241,62 +241,62 @@ management, this high degree
 <div className="slider">
 <div className="slide-track">
    <div className="slide">
-      <div style={{height:"80px",width:"180px"}}>
+      <div style={{height:"50px",width:"160px"}}>
     <img src="/img/apari.png" alt="" title="" className="marqueelogo" style={{width: "100%", height:"100%"}}/>
   </div>
     </div>
      <div className="slide">
-       <div style={{height:"80px",width:"180px"}}>
+       <div style={{height:"50px",width:"160px"}}>
    <img src="/img/fxtm.svg" alt="" title="" className="marqueelogo" style={{width: "100%",height:"100%"}}/>
    </div>
    </div>
     <div className="slide">
-         <div style={{height:"80px",width:"180px"}}>
+         <div style={{height:"50px",width:"160px"}}>
    <img src="/img/ex.svg" alt="" title="" className="marqueelogo" style={{width: "100%", height:"100%"}}/>
    </div>
    </div>
    <div className="slide">
-       <div style={{height:"80px",width:"180px"}}>
+       <div style={{height:"50px",width:"160px"}}>
     <img src="/img/oct.svg" alt="" title="" className="marqueelogo" style={{width: "100%", height:"100%"}}/>
    </div>
    </div>
     <div className="slide">
-        <div style={{height:"80px",width:"180px"}}>
+        <div style={{height:"50px",width:"160px"}}>
    <img src="/img/fbs.svg" alt="" title="" className="marqueelogo" style={{width: "100%",height:"100%"}}/>
    </div>
    </div>
     <div className="slide">
-       <div style={{height:"80px",width:"180px"}}>
+       <div style={{height:"50px",width:"160px"}}>
    <img src="/img/hfm.svg" alt="" title="" className="marqueelogo" style={{width: "100%",height:"100%"}}/>
    </div>
    </div>
        <div className="slide">
-          <div style={{height:"80px",width:"180px"}}>
+          <div style={{height:"50px",width:"160px"}}>
    <img src="/img/oct.svg" alt="" title="" className="marqueelogo" style={{width: "100%",height:"100%"}}/>
    </div>
    </div>
        <div className="slide">
-         <div style={{height:"80px",width:"180px"}}>
+         <div style={{height:"50px",width:"160px"}}>
            <img src="/img/fbs.svg" alt="" title="" className="marqueelogo" style={{width: "100%", height:"100%"}}/>
    </div>
    </div>
        <div className="slide">
-          <div style={{height:"80px",width:"180px"}}>
+          <div style={{height:"50px",width:"160px"}}>
    <img src="/img/ex.svg" alt="" title="" className="marqueelogo" style={{width: "100%", height:"100%"}}/>
    </div>
    </div>
        <div className="slide">
-          <div style={{height:"80px",width:"180px"}}>
+          <div style={{height:"50px",width:"160px"}}>
    <img src="/img/apari.png" alt="" title="" className="marqueelogo" style={{width: "100%",height:"100%"}}/>
    </div>
    </div>
        <div className="slide">
-         <div style={{height:"80px",width:"180px"}}>
+         <div style={{height:"50px",width:"160px"}}>
          <img src="/img/fxtm.svg" alt="" title="" className="marqueelogo" style={{width: "100%",height:"100%"}}/>
  </div>
    </div>
        <div className="slide">
-        <div style={{height:"80px",width:"180px"}}>
+        <div style={{height:"50px",width:"160px"}}>
         
    <img src="/img/hfm.svg" alt="" title="" className="marqueelogo" style={{width: "100%",height:"100%"}}/>
    </div>
@@ -322,7 +322,7 @@ management, this high degree
         </div>
         </div>
 
-        <div style={{padding:"0 5px"}}>
+        <div style={{padding:"0 10px"}}>
           <div id="Faqc" className="faqSportMa" data-aos="fade-up" data-aos-duration="3000"
              data-aos-easing="linear">
             <div className="firstTom faqSports" data-aos="fade-down" data-aos-duration="3000"
@@ -340,7 +340,7 @@ How do I register  with a broker?</span>{" "}
                    <div className="Qac"></div>
                 <p className="ILOVEK">
                   {" "}
-                  To register with a forex broker,visit any forex broker of your choice and click on their signup button to register with them. You can register with more than one broker.{" "}
+                  To register with a forex broker,visit any forex broker of your choice and click on their sign up button to register with them. You can register with more than one broker.{" "}
                 </p>
                 </div>
               ) : (
@@ -349,7 +349,7 @@ How do I register  with a broker?</span>{" "}
             </div>
             <div className="homeChange">
               <div className="HowFarBro" onClick={drop1}>
-                <span>I dont Know anything about Forex trading,What should i do?</span>
+                <span>I don't Know anything about Forex trading,What should i do?</span>
                 <span className="IconSpace">
                 {show1? <FontAwesomeIcon icon={faMinus} className="PlusIcon" />:<FontAwesomeIcon icon={faPlus} className="PlusIcon" />}
                 </span>
@@ -358,7 +358,7 @@ How do I register  with a broker?</span>{" "}
                 <div>
                    <div className="Qac"></div>
                 <p className="ILOVEK">
-                 Not knowing about Forex Trading doesnt stops you from making money from Forex Market. All you need to know is to know how to buy/sell using our expert forecast daily. Watch our tutorial video on how to Buy/Sell to give you the required knowledge you need to start trading immediately.
+                 Not knowing about Forex Trading doesn't stops you from making money from Forex Market. All you need to know is to know how to buy/sell using our expert forecast daily. Watch our tutorial video on how to Buy/Sell to give you the required knowledge you need to start trading immediately.
                 </p>
                 </div>
               ) : (
@@ -376,7 +376,7 @@ How do I register  with a broker?</span>{" "}
                 <div>
                    <div className="Qac"></div>
                 <p className="ILOVEK">
-                 To fund your account on earnars.com after registeration, go to "My Wallet" section and click on deposit and enter the amount you want to fund your account with, This will redirect you to flutter wave secure payment channel that gives you various payment options. To fund your account with a forex brooker watch the tutorial video.
+                 To fund your account on earnars.com after registration, go to "My Wallet" section and click on deposit and enter the amount you want to fund your account with, This will redirect you to flutter wave secure payment channel that gives you various payment options. To fund your account with a forex broker watch the tutorial video.
                 </p>
                 </div>
               ) : (
@@ -430,7 +430,7 @@ How do I register  with a broker?</span>{" "}
                 <div>
                    <div className="Qac"></div>
                 <p className="ILOVEK">
-                  We do not guarantee any trade forecast made by our experts, however we guarantee the refund of users subscription fees if at the end of any particular month they dont turn profit by following all our prediction. This refund policy is subject to our "Refund Policy Terms and Condition"
+                  We do not guarantee any trade forecast made by our experts, however we guarantee the refund of users subscription fees if at the end of any particular month they don't turn profit by following all our prediction. This refund policy is subject to our "Refund Policy Terms and Condition"
                 </p>
                 </div>
               ) : (

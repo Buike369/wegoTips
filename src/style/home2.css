@@ -42,6 +42,8 @@
     transition: all 0.5s;
     border: 1px solid #302860;
     background-color: #171054;
+    position: relative;
+    z-index: 10;
 }
 
 .seeMoreDivLink {

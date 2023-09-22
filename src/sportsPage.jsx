@@ -93,9 +93,9 @@ const SportsPage = () => {
                     <div className="grace">
                         <h1 className="Aka">Sports Predictions</h1>
                         {/* <div><span className="homeSpan">Home</span> <span className="homeSpan">Affiliate program</span></div> */}
-                       <p  className="weAre4">With Upto <span className="withUpto">50% acurrancy<span>.</span></span></p>
+                       <p  className="weAre4">With Upto <span className="withUpto">50% accuracy<span>.</span></span></p>
                        <p className='everyWhere'>Everyday is a winning day</p>
-                       <div className='football'>Football, Tennis, Basketball ETC</div>
+                       <div className='football'>Football, Tennis, Basketball,Running etc.</div>
                     </div>
                      <div className="grace"><img src="/img/affiliate-banner.png" className="gracePic" alt="affiliate_banner"/></div>
                      <img src="/img/StarsME.svg" className="headerAffiliateI" alt="affiliate_banner"/>
@@ -111,7 +111,7 @@ const SportsPage = () => {
         
        
         {currentUser ? " " :  <div style={{display:"flex",justifyContent:"center",alignItems:"center"}}><Link to="/login" className="ifi"> <button className="NowUpSign" >SIGN UP NOW</button></Link> </div>}  
-        <div style={{padding:"0px 12px"}}>
+        <div>
        
         <div className="cardTin">
         <div className="cardTin1" ><div className='nDi'><img src="/img/sports.svg" alt="" className='spIm' /></div></div>
@@ -133,7 +133,7 @@ const SportsPage = () => {
         </div>
         </div>
         <div className='sportPa'>
-        <div style={{padding:"0px 12px"}}>
+        <div >
         <p className="WhyStart">Why Start Sport Betting</p>
         <div className="ifNi"></div>
         <div className="EasyTi" >
@@ -146,7 +146,7 @@ const SportsPage = () => {
                 <div className="everyDay">
                 A lot of money making 
 sites require you to follow specific rules and may even require you to have high level skills or go through 
-regorious learning to get 
+rigorous learning to get 
 started. This may lead to 
 challenges if your schedule is too tight  or you lack 
 the resources. The good 
@@ -165,7 +165,7 @@ With $1 dollar or ₦500 naira you can start staking. You also have the chance t
             <img src="/img/icinC1.svg" alt="every source of fund" className="everyday"/>
                 <p className="startedf">Alternative Source of Income</p>
                 </div>
-                <div className="everyDay">Betting comes with the oppurtunity to make money when some cash is involved. Any amount you have can earn you some profit as long as you bet on wining games or follow our recommended wining games. Some people even quit their jobs to concentrate fully on betting as a means of their survival. when you structure your betting system with proper risk reward ratio you will definitely make a fortune from it.
+                <div className="everyDay">Betting comes with the opportunity to make money when some cash is involved. Any amount you have can earn you some profit as long as you bet on wining games or follow our recommended wining games. Some people even quit their jobs to concentrate fully on betting as a means of their survival. when you structure your betting system with proper risk reward ratio you will definitely make a fortune from it.
 
 </div>
    <div className='posTMa ad'></div>
@@ -175,7 +175,7 @@ With $1 dollar or ₦500 naira you can start staking. You also have the chance t
              data-aos-easing="linear">
               <div className="onV">
             <img src="/img/icinC1.svg" alt="every source of fund" className="everyday"/>
-                <p className="startedf">Convinience & Non Stop</p>
+                <p className="startedf">Convenience & Non Stop</p>
                 </div>
                 <div className="everyDay">Most games can’t be played
 every day, maybe because 
@@ -209,7 +209,7 @@ You can also enjoy sports betting anywhere and anytime e.g from the comfort of y
 </div>
         <div className="AgenciesTy">Sports Betting Agencies</div>
         <div className="ifNi"></div>
-        <p className="everyDay Dayok Dayword">Any company that is providing sports betting services can be called a bookmaker, betting agency,sportsbook or bookie.</p>
+        <p className="everyDay Dayok Dayword">Any company that is providing sports betting services can be called a bookmaker, betting agency,sports book or bookie.</p>
       
 
 
@@ -218,62 +218,62 @@ You can also enjoy sports betting anywhere and anytime e.g from the comfort of y
 <div className="slider">
    <div className="slide-track">
     <div className="slide">
-          <div style={{height:"80px",width:"180px"}}>
+          <div style={{height:"50px",width:"160px"}}>
    <img src="/img/images.jpg" alt="" title="" className="marqueelogo" style={{width: "160px",height:"100%"}}/>
    </div>
    </div>
    <div className="slide">
-     <div style={{height:"80px",width:"180px"}}>
+     <div style={{height:"50px",width:"160px"}}>
    <img src="/img/bett.svg" alt="" title="" className="marqueelogo" style={{width: "160px",height:"100%"}}/>
    </div>
    </div>
    <div className="slide">
-     <div style={{height:"80px",width:"180px"}}>
+     <div style={{height:"50px",width:"160px"}}>
    <img src="/img/Betway.png" alt="" title="" className="marqueelogo" style={{width: "160px",height:"100%"}}/>
    </div>
    </div>
    <div className="slide">
-     <div style={{height:"80px",width:"180px"}}>
+     <div style={{height:"50px",width:"160px"}}>
    <img src="/img/kingK.png" alt="" title="" className="marqueelogo" style={{width: "110px", height:"100%"}}/>
    </div>
    </div>
    <div className="slide">
-    <div style={{height:"80px",width:"180px"}}>
+    <div style={{height:"50px",width:"160px"}}>
    <img src="/img/betKing.svg" alt="" title="" className="marqueelogo" style={{width: "160px", height:"100%"}}/>
    </div>
    </div>
    <div className="slide">
-    <div style={{height:"80px",width:"180px"}}>
+    <div style={{height:"50px",width:"160px"}}>
    <img src="/img/images.jpg" alt="" title="" className="marqueelogo" style={{width: "160px",height:"100%"}}/>
    </div>
    </div>
     <div className="slide">
-      <div style={{height:"80px",width:"180px"}}>
+      <div style={{height:"50px",width:"160px"}}>
    <img src="/img/Betway.png" alt="" title="" className="marqueelogo" style={{width: "160px",height:"100%"}}/>
    </div>
    </div>
    <div  className="slide">
-     <div style={{height:"80px",width:"180px"}}>
+     <div style={{height:"50px",width:"160px"}}>
    <img src="/img/bett.svg" alt="" title="" className="marqueelogo" style={{width: "160px", height:"100%"}}/>
    </div>
    </div>
    <div className="slide">
-        <div style={{height:"80px",width:"180px"}}>
+        <div style={{height:"50px",width:"160px"}}>
    <img src="/img/images.jpg" alt="" title="" className="marqueelogo" style={{width: "160px",height:"100%"}}/>
    </div>
    </div>
    <div className="slide">
-    <div style={{height:"80px",width:"180px"}}>
+    <div style={{height:"50px",width:"160px"}}>
    <img src="/img/kingK.png" alt="" title="" className="marqueelogo" style={{width: "110px", height:"100%"}}/>
    </div>
    </div>
    <div className="slide">
-    <div style={{height:"80px",width:"180px"}}>
+    <div style={{height:"50px",width:"160px"}}>
    <img src="/img/betKing.svg" alt="" title="" className="marqueelogo" style={{width: "160px", height:"100%"}}/>
    </div>
    </div>
    <div className="slide">
-    <div style={{height:"80px",width:"180px"}}>
+    <div style={{height:"50px",width:"160px"}}>
    <img src="/img/images.jpg" alt="" title="" className="marqueelogo" style={{width: "100%", height:"100%"}}/>
    </div>
    </div>
@@ -300,7 +300,7 @@ You can also enjoy sports betting anywhere and anytime e.g from the comfort of y
         </div>
         </div>
 
-        <div style={{padding:"0 5px"}}>
+        <div style={{padding:"0 10px"}}>
           <div id="Faqc" className="faqSportMa" data-aos="fade-up" data-aos-duration="3000"
              data-aos-easing="linear" >
             <div className="firstTom faqSports" data-aos="fade-down" data-aos-duration="3000"
@@ -326,7 +326,7 @@ with more than one broker.
             </div>
             <div  className="homeChange">
               <div className="HowFarBro" onClick={drup1}>
-                <span>I dont Know anything about betting,What should I do?</span>
+                <span>I don't Know anything about betting,What should I do?</span>
                 <span className="IconSpace">
                 {show1? <FontAwesomeIcon icon={faMinus} className="PlusIcon" />:<FontAwesomeIcon icon={faPlus} className="PlusIcon" />}
                 </span>
@@ -335,7 +335,7 @@ with more than one broker.
                 <div>
                    <div className="Qac"></div>
                 <p className="ILOVEK">
-               Not knowing about sports bettng doesn't stops you from making money from sports betting. All you need to know is how to place bet using our coupon code for each prediction we make. Watch our tutorial video on how to bet to give you the required knowledge you need to place a bet.
+               Not knowing about sports betting doesn't stops you from making money from sports betting. All you need to know is how to place bet using our coupon code for each prediction we make. Watch our tutorial video on how to bet to give you the required knowledge you need to place a bet.
                 </p>
                 </div>
               ) : (
@@ -353,7 +353,7 @@ with more than one broker.
                 <div>
                    <div className="Qac"></div>
                 <p className="ILOVEK">
-                 To fund your account on earnars.com after registeration, go to "My Wallet" section and click on deposit and enter the amount you want to fund your account with, This will redirect you to flutter wave secure payment channel that gives you various payment options. To fund your account with a sport betting book maker watch the tutorial video.
+                 To fund your account on earnars.com after registration, go to "My Wallet" section and click on deposit and enter the amount you want to fund your account with, This will redirect you to flutter wave secure payment channel that gives you various payment options. To fund your account with a sport betting book maker watch the tutorial video.
                 </p>
                 </div>
               ) : (
@@ -408,7 +408,7 @@ We do not manage users funds or bet for any user, we only forecast/predicts game
                 <div>
                     <div className="Qac"></div>
                 <p className="ILOVEK">
-              We do not guarantee any prediction made by our experts, however we guarantee the refund of users subscription fees if at the end of any particular month they dont turn profit by following all our prediction. This refund policy is subject to our "Refund Policy Terms and Condition"
+              We do not guarantee any prediction made by our experts, however we guarantee the refund of users subscription fees if at the end of any particular month they don't turn profit by following all our prediction. This refund policy is subject to our "Refund Policy Terms and Condition"
                 </p>
                 </div>
               ) : (

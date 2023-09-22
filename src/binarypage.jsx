@@ -92,9 +92,9 @@ const BinaryPage = () => {
                     <div className="grace">
                         <h1 className="Aka">Binary Predictions</h1>
                         {/* <div><span className="homeSpan">Home</span> <span className="homeSpan">Affiliate program</span></div> */}
-                       <p  className="weAre4">With Upto <span className="withUpto">50% acurrancy<span>.</span></span></p>
+                       <p  className="weAre4">With Upto <span className="withUpto">75% accuracy<span>.</span></span></p>
                        <p className='everyWhere'>Everyday is a winning day</p>
-                       <div className='football'>Football, Tennis, Basketball ETC</div>
+                       <div className='football'>Football, Tennis, Basketball etc.</div>
                     </div>
                      <div className="grace"><img src="/img/affiliate-banner.png" className="gracePic" alt="affiliate_banner"/></div>
                      <img src="/img/StarsME.svg" className="headerAffiliateI" alt="affiliate_banner"/>
@@ -112,7 +112,7 @@ const BinaryPage = () => {
         </div>
       {currentUser ? " " :  <div style={{display:"flex",justifyContent:"center",alignItems:"center"}}><Link to="/login" className="ifi"> <button className="NowUpSign" >SIGN UP NOW</button></Link> </div>}  
         {/* <Link to="/login" className="ifi"><div className="NowUpSign">SIGN UP NOW</div></Link> */}
-        <div style={{padding:"0px 12px"}}>
+        <div>
         <p className="SportBetting">What Is Binary Trading</p>
         <div className="outcomeBeen1">
         <div className="outcomeBeen" >
@@ -126,7 +126,7 @@ only two outcomes – win or lose.
         </div>
 
         <div className="sportPa">
-        <div style={{padding:"0px 12px"}}>
+        <div >
         <p className="WhyStart">Why Start Binary Trading</p>
         <div className="ifNi"></div>
         <div className="EasyTi" >
@@ -222,62 +222,62 @@ and offer some fixed percentage return in case of in-the-money settlement.</p>
 <div className="slider">
 <div className="slide-track">
    <div className="slide">
-    <div style={{height:"80px",width:"180px"}}>
+    <div style={{height:"50px",width:"160px"}}>
     <img src="/img/ipop.png" alt="" title="" className="marqueelogo" style={{width: "100%", height:"100%"}}/>
       </div>
     </div>
      <div className="slide">
-          <div style={{height:"80px",width:"180px"}}>
+          <div style={{height:"50px",width:"160px"}}>
    <img src="/img/padad.png" alt="" title="" className="marqueelogo" style={{width:"100%",  height:"100%"}}/>
    </div>
     </div>
     <div className="slide">
-      <div style={{height:"80px",width:"180px"}}>
+      <div style={{height:"50px",width:"160px"}}>
    <img src="/img/cent.jpg" alt="" title="" className="marqueelogo" style={{width: "100%",  height:"100%"}}/>
    </div>
    </div>
    <div className="slide">
-       <div style={{height:"80px",width:"180px"}}>
+       <div style={{height:"50px",width:"160px"}}>
     <img src="/img/derv.svg" alt="" title="" className="marqueelogo" style={{width: "100%",  height:"100%"}}/>
    </div>
    </div>
     <div className="slide">
-       <div style={{height:"80px",width:"180px"}}>
+       <div style={{height:"50px",width:"160px"}}>
    <img src="/img/kucoin.png" alt="" title="" className="marqueelogo" style={{width: "100%",  height:"100%"}}/>
    </div>
    </div>
     <div className="slide">
-      <div style={{height:"80px",width:"180px"}}>
+      <div style={{height:"50px",width:"160px"}}>
    <img src="/img/hfm.svg" alt="" title="" className="marqueelogo" style={{width: "100%",  height:"100%"}}/>
    </div>
    </div>
        <div className="slide">
-        <div style={{height:"80px",width:"180px"}}>
+        <div style={{height:"50px",width:"160px"}}>
    <img src="/img/ipop.png" alt="" title="" className="marqueelogo" style={{width: "100%",  height:"100%"}}/>
    </div>
    </div>
        <div className="slide">
-         <div style={{height:"80px",width:"180px"}}>
+         <div style={{height:"50px",width:"160px"}}>
            <img src="/img/padad.png" alt="" title="" className="marqueelogo" style={{width: "100%",  height:"100%"}}/>
    </div>
    </div>
        <div className="slide">
-        <div style={{height:"80px",width:"180px"}}>
+        <div style={{height:"50px",width:"160px"}}>
    <img src="/img/cent.jpg" alt="" title="" className="marqueelogo" style={{width: "100%",  height:"100%"}}/>
    </div>
    </div>
        <div className="slide">
-        <div style={{height:"80px",width:"180px"}}>
+        <div style={{height:"50px",width:"160px"}}>
    <img src="/img/derv.svg" alt="" title="" className="marqueelogo" style={{width: "100%", height:"100%"}}/>
    </div>
    </div>
        <div className="slide">
-         <div style={{height:"80px",width:"180px"}}>
+         <div style={{height:"50px",width:"160px"}}>
          <img src="/img/kucoin.png" alt="" title="" className="marqueelogo" style={{width: "100%",  height:"100%"}}/>
   </div>
    </div>
        <div className="slide">
-                 <div style={{height:"80px",width:"180px"}}>
+                 <div style={{height:"50px",width:"160px"}}>
    <img src="/img/hfm.svg" alt="" title="" className="marqueelogo" style={{width: "100%", height:"100%"}}/>
    </div>
    </div>
@@ -301,14 +301,14 @@ and offer some fixed percentage return in case of in-the-money settlement.</p>
         </div>
         </div>
 
-        <div style={{padding:"0 5px"}}>
+        <div style={{padding:"0 10px"}}>
           <div id="Faqc"  data-aos="fade-up" data-aos-duration="3000"
              data-aos-easing="linear" className="faqSportMa">
             <div className="firstTom faqSports"  data-aos="fade-down" data-aos-duration="3000"
              data-aos-easing="linear">FAQ</div>
             <div className="homeChange">
               <div className="HowFarBro" onClick={dropping}>
-                <span>How do resgister  with a Binary Option Broker?</span>{" "}
+                <span>How do register  with a Binary Option Broker?</span>{" "}
                 <span className="IconSpace">
                 {show? <FontAwesomeIcon icon={faMinus} className="PlusIcon" />:<FontAwesomeIcon icon={faPlus} className="PlusIcon" />}
                 </span>
@@ -318,7 +318,7 @@ and offer some fixed percentage return in case of in-the-money settlement.</p>
                     <div className="Qac"></div>
                 <p className="ILOVEK">
                   {" "}
-                  To register with a Binary Option Borker,visit any broker of your choice and click on their signup button to register with them. You can register with more than one broker{" "}
+                  To register with a Binary Option Broker,visit any broker of your choice and click on their sign up button to register with them. You can register with more than one broker{" "}
                 </p>
                 </div>
               ) : (
@@ -327,7 +327,7 @@ and offer some fixed percentage return in case of in-the-money settlement.</p>
             </div>
             <div className="homeChange">
               <div className="HowFarBro" onClick={dropping1}>
-                <span>I dont Know anything about Binary trading,What should i do?</span>
+                <span>I don't Know anything about Binary trading,What should i do?</span>
                 <span className="IconSpace">
                 {show1? <FontAwesomeIcon icon={faMinus} className="PlusIcon" />:<FontAwesomeIcon icon={faPlus} className="PlusIcon" />}
                 </span>
@@ -336,7 +336,7 @@ and offer some fixed percentage return in case of in-the-money settlement.</p>
                 <div>
                     <div className="Qac"></div>
                 <p className="ILOVEK">
-                  Not knowing about Bianry Trading doesnt stops you from making money from trading the Market. All you need to know is to know how to buy/sell using our expert forecast daily. Watch our tutorial video on how to Buy/Sell to give you the required knowledge you need to starttrading immediately.
+                  Not knowing about Binary Trading doesn't stops you from making money from trading the Market. All you need to know is to know how to buy/sell using our expert forecast daily. Watch our tutorial video on how to Buy/Sell to give you the required knowledge you need to start trading immediately.
                 </p>
                 </div>
               ) : (
@@ -354,7 +354,7 @@ and offer some fixed percentage return in case of in-the-money settlement.</p>
                 <div>
                     <div className="Qac"></div>
                 <p className="ILOVEK">
-                  To fund your account on earnars.com after registeration, go to "My Wallet" section and click on deposit and enter the amount you want to fund your account with, This will redirect you to flutter wave secure payment channel that gives you various payment options. To fund your account with a Broker watch the tutorial video
+                  To fund your account on earnars.com after registration, go to "My Wallet" section and click on deposit and enter the amount you want to fund your account with, This will redirect you to flutter wave secure payment channel that gives you various payment options. To fund your account with a Broker watch the tutorial video
                 </p>
                 </div>
               ) : (
@@ -408,7 +408,7 @@ and offer some fixed percentage return in case of in-the-money settlement.</p>
                 <div>
                   <div className="Qac"></div>
                 <p className="ILOVEK">              
-We do not guarantee any trade forecast made by our experts, however we guarantee the refund of users subscription fees if at the end of any particular month they dont turn profit by following all our prediction. This refund policy is subject to our "Refund Policy Terms and Condition"
+We do not guarantee any trade forecast made by our experts, however we guarantee the refund of users subscription fees if at the end of any particular month they don't turn profit by following all our prediction. This refund policy is subject to our "Refund Policy Terms and Condition"
                 </p>
                 </div>
               ) : (

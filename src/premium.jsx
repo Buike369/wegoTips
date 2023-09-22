@@ -111,7 +111,7 @@ const [changeState,setChangeState] = useState("Tips")
          {card.map((app,id)=>(
                           <div className="cardProfileDiv TY30"  style={{border:"1px solid rgb(61 62 126)"}}>
           <div className="catImgDivProfile"><img src="/img/kucoin.png" alt="" style={{width:"100%",height:"100%",borderTopRightRadius:"10px",borderTopLeftRadius:"10px"}}/></div>
-           <div className="imgcardPic"><img src="/img/create.png" alt="" className="catImgDivProfile1"/></div>
+           <div className="imgcardPic"><img src="/img/create.png" alt="" className="catImgDivProfile1 TY38"/></div>
           <div className="donKing">Don Knight</div>
           <div className="ipconFig">
             <div>
@@ -134,16 +134,40 @@ const [changeState,setChangeState] = useState("Tips")
              </div>
           </div>
           <div className="typing">
+            <div className='ROILING'>
             <div className="pork1">+4,345</div>
+            <p className='ROIL'>ROI</p>
+            </div>
+            <div className='ROILING'>
             <div className="pork">+2,434</div>
+            <p className='ROIL'>Profit</p>
+            </div>
+             <div className='ROILING'>
+            <div className="pork">+2,434</div>
+            <p className='ROIL'>Win Rate</p>
+            </div>
           </div>
-           <div className="findingPP">
-            <div className="followerp daysB"> <span className='textPre'>1</span> <sub>day</sub></div>
-             <div className="followerp daysB"><span className='textPre'>7</span> <sub>days</sub></div>
-            <div className="followerp daysB"><span className='textPre'>30</span> <sub>days</sub></div>
-          </div>
-
-          <div className="houseRuMM">View Profile</div>
+          <div className='weNeed'>
+       <div className='weNeed1'>
+         <p className='weNeed2'>Choose Membership period</p>
+         <div>
+           <div className='paw1'>
+                                <div className='cic'></div>
+                                <div className='bkInT'>1 Day <span className='moneyColor'>$100</span></div>
+                            </div>
+                             <div className='paw1'>
+                                <div className='cic'></div>
+                                <div className='bkInT'>7 Days <span className='moneyColor'>$150</span></div>
+                            </div>
+                             <div className='paw1'>
+                                <div className='cic'></div>
+                                <div className='bkInT'>30 Days <span className='moneyColor'>$200</span></div>
+                            </div>
+         
+         </div>
+         <div className="houseRuMM WonB">Buy Now</div>
+       </div>
+       </div>
         </div>
                        ))}
                        </div>
@@ -159,7 +183,7 @@ const [changeState,setChangeState] = useState("Tips")
          {card.map((app,id)=>(
                           <div className="cardProfileDiv TY30"  style={{border:"1px solid rgb(61 62 126)"}}>
           <div className="catImgDivProfile"><img src="/img/kucoin.png" alt="" style={{width:"100%",height:"100%",borderTopRightRadius:"10px",borderTopLeftRadius:"10px"}}/></div>
-           <div className="imgcardPic"><img src="/img/create.png" alt="" className="catImgDivProfile1"/></div>
+           <div className="imgcardPic"><img src="/img/create.png" alt="" className="catImgDivProfile1  TY38"/></div>
           <div className="donKing">Don Knight</div>
           <div className="ipconFig">
             <div>
@@ -182,16 +206,42 @@ const [changeState,setChangeState] = useState("Tips")
              </div>
           </div>
           <div className="typing">
+            <div className='ROILING'>
             <div className="pork1">+4,345</div>
+            <p className='ROIL'>ROI</p>
+            </div>
+            <div className='ROILING'>
             <div className="pork">+2,434</div>
+            <p className='ROIL'>Profit</p>
+            </div>
+             <div className='ROILING'>
+            <div className="pork">+2,434</div>
+            <p className='ROIL'>Win Rate</p>
+            </div>
           </div>
-           <div className="findingPP">
-            <div className="followerp daysB"> <span className='textPre'>1</span> <sub>day</sub></div>
-             <div className="followerp daysB"><span className='textPre'>7</span> <sub>days</sub></div>
-            <div className="followerp daysB"><span className='textPre'>30</span> <sub>days</sub></div>
-          </div>
+          <div className='weNeed'>
+       <div className='weNeed1'>
+         <p className='weNeed2'>Choose Membership period</p>
+         <div>
+           <div className='paw1'>
+                                <div className='cic'></div>
+                                <div className='bkInT'>1 Day <span className='moneyColor'>$100</span></div>
+                            </div>
+                             <div className='paw1'>
+                                <div className='cic'></div>
+                                <div className='bkInT'>7 Days <span className='moneyColor'>$150</span></div>
+                            </div>
+                             <div className='paw1'>
+                                <div className='cic'></div>
+                                <div className='bkInT'>30 Days <span className='moneyColor'>$200</span></div>
+                            </div>
+         
+         </div>
+         <div className="houseRuMM WonB">Buy Now</div>
+       </div>
+       </div>
 
-          <div className="houseRuMM">View Profile</div>
+         
         </div>
                        ))}
                        </div>
@@ -207,7 +257,7 @@ const [changeState,setChangeState] = useState("Tips")
          {card.map((app,id)=>(
                           <div className="cardProfileDiv TY30"  style={{border:"1px solid rgb(61 62 126)"}}>
           <div className="catImgDivProfile"><img src="/img/kucoin.png" alt="" style={{width:"100%",height:"100%",borderTopRightRadius:"10px",borderTopLeftRadius:"10px"}}/></div>
-           <div className="imgcardPic"><img src="/img/create.png" alt="" className="catImgDivProfile1"/></div>
+           <div className="imgcardPic"><img src="/img/create.png" alt="" className="catImgDivProfile1 TY38"/></div>
           <div className="donKing">Don Knight</div>
           <div className="ipconFig">
             <div>
@@ -229,17 +279,41 @@ const [changeState,setChangeState] = useState("Tips")
               </div>
              </div>
           </div>
-          <div className="typing">
+            <div className="typing">
+            <div className='ROILING'>
             <div className="pork1">+4,345</div>
+            <p className='ROIL'>ROI</p>
+            </div>
+            <div className='ROILING'>
             <div className="pork">+2,434</div>
+            <p className='ROIL'>Profit</p>
+            </div>
+             <div className='ROILING'>
+            <div className="pork">+2,434</div>
+            <p className='ROIL'>Win Rate</p>
+            </div>
           </div>
-           <div className="findingPP">
-            <div className="followerp daysB"> <span className='textPre'>1</span> <sub>day</sub></div>
-             <div className="followerp daysB"><span className='textPre'>7</span> <sub>days</sub></div>
-            <div className="followerp daysB"><span className='textPre'>30</span> <sub>days</sub></div>
-          </div>
-
-          <div className="houseRuMM">View Profile</div>
+          <div className='weNeed'>
+       <div className='weNeed1'>
+         <p className='weNeed2'>Choose Membership period</p>
+         <div>
+           <div className='paw1'>
+                                <div className='cic'></div>
+                                <div className='bkInT'>1 Day <span className='moneyColor'>$100</span></div>
+                            </div>
+                             <div className='paw1'>
+                                <div className='cic'></div>
+                                <div className='bkInT'>7 Days <span className='moneyColor'>$150</span></div>
+                            </div>
+                             <div className='paw1'>
+                                <div className='cic'></div>
+                                <div className='bkInT'>30 Days <span className='moneyColor'>$200</span></div>
+                            </div>
+         
+         </div>
+         <div className="houseRuMM WonB">Buy Now</div>
+       </div>
+       </div>
         </div>
                        ))}
                        </div>
@@ -255,7 +329,7 @@ const [changeState,setChangeState] = useState("Tips")
          {card.map((app,id)=>(
                           <div className="cardProfileDiv TY30"  style={{border:"1px solid rgb(61 62 126)"}}>
           <div className="catImgDivProfile"><img src="/img/kucoin.png" alt="" style={{width:"100%",height:"100%",borderTopRightRadius:"10px",borderTopLeftRadius:"10px"}}/></div>
-           <div className="imgcardPic"><img src="/img/create.png" alt="" className="catImgDivProfile1"/></div>
+           <div className="imgcardPic"><img src="/img/create.png" alt="" className="catImgDivProfile1 TY38"/></div>
           <div className="donKing">Don Knight</div>
           <div className="ipconFig">
             <div>
@@ -277,17 +351,41 @@ const [changeState,setChangeState] = useState("Tips")
               </div>
              </div>
           </div>
-          <div className="typing">
+           <div className="typing">
+            <div className='ROILING'>
             <div className="pork1">+4,345</div>
+            <p className='ROIL'>ROI</p>
+            </div>
+            <div className='ROILING'>
             <div className="pork">+2,434</div>
+            <p className='ROIL'>Profit</p>
+            </div>
+             <div className='ROILING'>
+            <div className="pork">+2,434</div>
+            <p className='ROIL'>Win Rate</p>
+            </div>
           </div>
-           <div className="findingPP">
-            <div className="followerp daysB"> <span className='textPre'>1</span> <sub>day</sub></div>
-             <div className="followerp daysB"><span className='textPre'>7</span> <sub>days</sub></div>
-            <div className="followerp daysB"><span className='textPre'>30</span> <sub>days</sub></div>
-          </div>
-
-          <div className="houseRuMM">View Profile</div>
+          <div className='weNeed'>
+       <div className='weNeed1'>
+         <p className='weNeed2'>Choose Membership period</p>
+         <div>
+           <div className='paw1'>
+                                <div className='cic'></div>
+                                <div className='bkInT'>1 Day <span className='moneyColor'>$100</span></div>
+                            </div>
+                             <div className='paw1'>
+                                <div className='cic'></div>
+                                <div className='bkInT'>7 Days <span className='moneyColor'>$150</span></div>
+                            </div>
+                             <div className='paw1'>
+                                <div className='cic'></div>
+                                <div className='bkInT'>30 Days <span className='moneyColor'>$200</span></div>
+                            </div>
+         
+         </div>
+         <div className="houseRuMM WonB">Buy Now</div>
+       </div>
+       </div>
         </div>
                        ))}
                        </div>
