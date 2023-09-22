@@ -151,21 +151,21 @@ const [changeState,setChangeState] = useState("Tips")
        <div className='weNeed1'>
          <p className='weNeed2'>Choose Membership period</p>
          <div>
-           <div className='paw1'>
+           <div className='paw1 weNeed6'>
                                 <div className='cic'></div>
                                 <div className='bkInT'>1 Day <span className='moneyColor'>$100</span></div>
                             </div>
-                             <div className='paw1'>
+                             <div className='paw1 weNeed6'>
                                 <div className='cic'></div>
                                 <div className='bkInT'>7 Days <span className='moneyColor'>$150</span></div>
                             </div>
-                             <div className='paw1'>
+                             <div className='paw1 weNeed6'>
                                 <div className='cic'></div>
                                 <div className='bkInT'>30 Days <span className='moneyColor'>$200</span></div>
                             </div>
          
          </div>
-         <div className="houseRuMM WonB">Buy Now</div>
+         <div className="houseRuMM WonB  mainMa">Buy Now</div>
        </div>
        </div>
         </div>
@@ -223,21 +223,21 @@ const [changeState,setChangeState] = useState("Tips")
        <div className='weNeed1'>
          <p className='weNeed2'>Choose Membership period</p>
          <div>
-           <div className='paw1'>
+           <div className='paw1 weNeed6'>
                                 <div className='cic'></div>
                                 <div className='bkInT'>1 Day <span className='moneyColor'>$100</span></div>
                             </div>
-                             <div className='paw1'>
+                             <div className='paw1 weNeed6'>
                                 <div className='cic'></div>
                                 <div className='bkInT'>7 Days <span className='moneyColor'>$150</span></div>
                             </div>
-                             <div className='paw1'>
+                             <div className='paw1 weNeed6'>
                                 <div className='cic'></div>
                                 <div className='bkInT'>30 Days <span className='moneyColor'>$200</span></div>
                             </div>
          
          </div>
-         <div className="houseRuMM WonB">Buy Now</div>
+         <div className="houseRuMM WonB  mainMa">Buy Now</div>
        </div>
        </div>
 
@@ -297,21 +297,21 @@ const [changeState,setChangeState] = useState("Tips")
        <div className='weNeed1'>
          <p className='weNeed2'>Choose Membership period</p>
          <div>
-           <div className='paw1'>
+           <div className='paw1 weNeed6'>
                                 <div className='cic'></div>
                                 <div className='bkInT'>1 Day <span className='moneyColor'>$100</span></div>
                             </div>
-                             <div className='paw1'>
+                             <div className='paw1 weNeed6'>
                                 <div className='cic'></div>
                                 <div className='bkInT'>7 Days <span className='moneyColor'>$150</span></div>
                             </div>
-                             <div className='paw1'>
+                             <div className='paw1 weNeed6'>
                                 <div className='cic'></div>
                                 <div className='bkInT'>30 Days <span className='moneyColor'>$200</span></div>
                             </div>
          
          </div>
-         <div className="houseRuMM WonB">Buy Now</div>
+         <div className="houseRuMM WonB  mainMa">Buy Now</div>
        </div>
        </div>
         </div>
@@ -369,21 +369,21 @@ const [changeState,setChangeState] = useState("Tips")
        <div className='weNeed1'>
          <p className='weNeed2'>Choose Membership period</p>
          <div>
-           <div className='paw1'>
+           <div className='paw1 weNeed6'>
                                 <div className='cic'></div>
                                 <div className='bkInT'>1 Day <span className='moneyColor'>$100</span></div>
                             </div>
-                             <div className='paw1'>
+                             <div className='paw1 weNeed6'>
                                 <div className='cic'></div>
                                 <div className='bkInT'>7 Days <span className='moneyColor'>$150</span></div>
                             </div>
-                             <div className='paw1'>
+                             <div className='paw1 weNeed6'>
                                 <div className='cic'></div>
                                 <div className='bkInT'>30 Days <span className='moneyColor'>$200</span></div>
                             </div>
          
          </div>
-         <div className="houseRuMM WonB">Buy Now</div>
+         <div className="houseRuMM WonB mainMa">Buy Now</div>
        </div>
        </div>
         </div>
@@ -395,7 +395,7 @@ const [changeState,setChangeState] = useState("Tips")
      )
       : ""}
   
-  <div>
+  <div className='mainDe'>
 
     <ReactPaginate
         breakLabel="..."

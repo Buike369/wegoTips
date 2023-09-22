@@ -22,7 +22,7 @@ const Affliate =()=>{
                     <div className="grace">
                         <h1 className="Aka">Affiliate</h1>
                         {/* <div><span className="homeSpan">Home</span> <span className="homeSpan">Affiliate program</span></div> */}
-                       <p  className="weAre">We Are Excited to Share Our Revenue with you</p>
+                       <p  className="weAre mainDe">We Are Excited to Share Our Revenue with you</p>
                     </div>
                      <div className="grace"><img src="/img/affiliate-banner.png" className="gracePic" alt="affiliate_banner"/></div>
                      <img src="/img/StarsME.svg" className="headerAffiliateI" alt="affiliate_banner"/>
@@ -61,7 +61,7 @@ const Affliate =()=>{
 </div>
 
               <div className="bkFR">
-                <div className="InviteBI">
+                <div className="InviteBI mainDe">
                     <div className="inviteFrs">
                         <p className="PInvite">invite</p>
                         <a href=""><FontAwesomeIcon icon={faFacebook} className="icon_brand_size bscY"/></a>

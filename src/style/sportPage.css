@@ -150,11 +150,20 @@ height: 300px;
     margin-bottom: 8px;
 
 }
+.mainDe{
+    position: relative;
+    z-index: 9;
+}
+.mainMa{
+    width:100%;
+}
 .weAre4{
     color:gold;
     font-size: 38px;
     font-weight: 700;
     margin-bottom: 10px;
+    position:relative;
+    z-index: 6;
 }
 .everyWhere{
     color:#a5a9af;

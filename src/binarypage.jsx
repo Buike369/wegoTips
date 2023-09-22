@@ -93,8 +93,8 @@ const BinaryPage = () => {
                         <h1 className="Aka">Binary Predictions</h1>
                         {/* <div><span className="homeSpan">Home</span> <span className="homeSpan">Affiliate program</span></div> */}
                        <p  className="weAre4">With Upto <span className="withUpto">75% accuracy<span>.</span></span></p>
-                       <p className='everyWhere'>Everyday is a winning day</p>
-                       <div className='football'>Football, Tennis, Basketball etc.</div>
+                       <p className='everyWhere'>Buy low and sell high</p>
+                       <div className='football'>BinaryCent,Derive,ip option etc.</div>
                     </div>
                      <div className="grace"><img src="/img/affiliate-banner.png" className="gracePic" alt="affiliate_banner"/></div>
                      <img src="/img/StarsME.svg" className="headerAffiliateI" alt="affiliate_banner"/>
@@ -301,7 +301,7 @@ and offer some fixed percentage return in case of in-the-money settlement.</p>
         </div>
         </div>
 
-        <div style={{padding:"0 10px"}}>
+        <div style={{padding:"0 10px"}} className='mainDe'>
           <div id="Faqc"  data-aos="fade-up" data-aos-duration="3000"
              data-aos-easing="linear" className="faqSportMa">
             <div className="firstTom faqSports"  data-aos="fade-down" data-aos-duration="3000"

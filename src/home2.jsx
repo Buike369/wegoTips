@@ -487,7 +487,7 @@ useEffect(()=>{
 
               //      </div> 
                 <div style={{padding:"10px 0 25px 0"}}>
-                          <div className="cardProfileDiv" key={id} style={{border:"1px solid rgb(78 172 156)"}}>
+                          <div className="cardProfileDiv" key={id} style={{border:"1px solid #3c2f8b"}}>
           <div className="catImgDivProfile"><img src="/img/sportsBall.jpg" alt="" style={{width:"100%",height:"100%",borderTopRightRadius:"10px",borderTopLeftRadius:"10px"}}/></div>
            <div className="imgcardPic"><img src="/img/create.png" alt="" className="catImgDivProfile1"/></div>
           <div className="donKing">Don Knight</div>
@@ -527,7 +527,7 @@ useEffect(()=>{
           </div>
        
 
-          <a href="/view-profile" className="profileLink"><div className="houseRuMM">View Profile</div></a>
+          <a href="/view-profile" className="profileLink"><div className="houseRuMM WonB">View Profile</div></a>
         </div>
                        </div>
                    )): post1.map((app,id)=>(
@@ -540,7 +540,7 @@ useEffect(()=>{
 
                   //  </div>
                     <div style={{padding:"10px 0 25px 0"}}>
-                          <div className="cardProfileDiv" key={id} style={{border:"1px solid rgb(78 172 156)"}}>
+                          <div className="cardProfileDiv" key={id} style={{border:"1px solid #3c2f8b"}}>
           <div className="catImgDivProfile"><img src="/img/sportsBall.jpg" alt="" style={{width:"100%",height:"100%",borderTopRightRadius:"10px",borderTopLeftRadius:"10px"}}/></div>
            <div className="imgcardPic"><img src="/img/create.png" alt="" className="catImgDivProfile1"/></div>
           <div className="donKing">Don Knight</div>
@@ -580,7 +580,7 @@ useEffect(()=>{
           </div>
         
 
-          <a href="/view-profile" className="profileLink"><div className="houseRuMM">View Profile</div></a>
+          <a href="/view-profile" className="profileLink"><div className="houseRuMM WonB">View Profile</div></a>
         </div>
                        </div>
                    ))
@@ -650,7 +650,7 @@ useEffect(()=>{
      
                         // </div>
                         <div style={{padding:"10px 0 25px 0"}}>
-                          <div className="cardProfileDiv" key={id} >
+                          <div className="cardProfileDiv" key={id} style={{border:"1px solid #3c2f8b"}}>
           <div className="catImgDivProfile"><img src="/img/kucoin.png" alt="" style={{width:"100%",height:"100%",borderTopRightRadius:"10px",borderTopLeftRadius:"10px"}}/></div>
            <div className="imgcardPic"><img src="/img/create.png" alt="" className="catImgDivProfile1"/></div>
           <div className="donKing">Don Knight</div>
@@ -690,7 +690,7 @@ useEffect(()=>{
           </div>
         
 
-          <a href="/view-profile" className="profileLink"><div className="houseRuMM">View Profile</div></a>
+          <a href="/view-profile" className="profileLink"><div className="houseRuMM WonB">View Profile</div></a>
         </div>
                        </div> )) :post.map((app,id)=>(
                         // <div className="sport2 cappin yellowC" key={id}>
@@ -719,7 +719,7 @@ useEffect(()=>{
      
                         // </div>
                         <div style={{padding:"10px 0 25px 0"}}>
-                          <div className="cardProfileDiv" key={id} >
+                          <div className="cardProfileDiv" key={id} style={{border:"1px solid #3c2f8b"}}>
           <div className="catImgDivProfile"><img src="/img/kucoin.png" alt="" style={{width:"100%",height:"100%",borderTopRightRadius:"10px",borderTopLeftRadius:"10px"}}/></div>
            <div className="imgcardPic"><img src="/img/create.png" alt="" className="catImgDivProfile1"/></div>
           <div className="donKing">Don Knight</div>
@@ -759,7 +759,7 @@ useEffect(()=>{
           </div>
         
 
-         <a href="/view-profile" className="profileLink"> <div className="houseRuMM">View Profile</div></a>
+         <a href="/view-profile" className="profileLink"> <div className="houseRuMM WonB">View Profile</div></a>
         </div></div>
                         ))}
 
@@ -820,7 +820,7 @@ useEffect(()=>{
  
                     // </div>
                       <div style={{padding:"10px 0 25px 0"}}>
-                          <div className="cardProfileDiv" key={id} style={{border:"1px solid #5df362"}}>
+                          <div className="cardProfileDiv" key={id} style={{border:"1px solid #3c2f8b"}}>
           <div className="catImgDivProfile"><img src="/img/kucoin.png" alt="" style={{width:"100%",height:"100%",borderTopRightRadius:"10px",borderTopLeftRadius:"10px"}}/></div>
            <div className="imgcardPic"><img src="/img/create.png" alt="" className="catImgDivProfile1"/></div>
           <div className="donKing">Don Knight</div>
@@ -890,7 +890,7 @@ useEffect(()=>{
  
                     // </div>
                       <div style={{padding:"10px 0 25px 0"}}>
-                          <div className="cardProfileDiv" key={id} style={{border:"1px solid #5df362"}}>
+                          <div className="cardProfileDiv" key={id} style={{border:"1px solid #3c2f8b"}}>
           <div className="catImgDivProfile"><img src="/img/kucoin.png" alt="" style={{width:"100%",height:"100%",borderTopRightRadius:"10px",borderTopLeftRadius:"10px"}}/></div>
            <div className="imgcardPic"><img src="/img/create.png" alt="" className="catImgDivProfile1"/></div>
           <div className="donKing">Don Knight</div>
@@ -990,7 +990,7 @@ useEffect(()=>{
  
                     // </div>
                       <div style={{padding:"10px 0 25px 0"}}>
-                          <div className="cardProfileDiv" key={id} style={{border:"1px solid rgb(164 166 239)"}}>
+                          <div className="cardProfileDiv" key={id} style={{border:"1px solid #3c2f8b"}}>
           <div className="catImgDivProfile"><img src="/img/kucoin.png" alt="" style={{width:"100%",height:"100%",borderTopRightRadius:"10px",borderTopLeftRadius:"10px"}}/></div>
            <div className="imgcardPic"><img src="/img/create.png" alt="" className="catImgDivProfile1"/></div>
           <div className="donKing">Don Knight</div>
@@ -1030,7 +1030,7 @@ useEffect(()=>{
           </div>
           
 
-         <a href="/view-profile"  className="profileLink  WonB"><div className="houseRuMM">View Profile</div></a>
+         <a href="/view-profile"  className="profileLink "><div className="houseRuMM WonB">View Profile</div></a>
         </div>
                        </div>
                     )):post4.map((app,id)=>(
@@ -1060,7 +1060,7 @@ useEffect(()=>{
  
                     // </div>
                       <div style={{padding:"10px 0 25px 0"}}>
-                          <div className="cardProfileDiv" key={id} style={{border:"1px solid rgb(164 166 239)"}}>
+                          <div className="cardProfileDiv" key={id} style={{border:"1px solid #3c2f8b"}}>
           <div className="catImgDivProfile"><img src="/img/kucoin.png" alt="" style={{width:"100%",height:"100%",borderTopRightRadius:"10px",borderTopLeftRadius:"10px"}}/></div>
            <div className="imgcardPic"><img src="/img/create.png" alt="" className="catImgDivProfile1"/></div>
           <div className="donKing">Don Knight</div>

@@ -1,12 +1,13 @@
 import React,{useState} from 'react'
 
+
 const BecomeATipster = () => {
 
  const valuesText = [{h2:"Add Tips",text:`Create your tip and it’ll immediately be added to our “today’s tips” database for buyers to purchase.`},{h2:"Bettors buy from you",text:"Once your tip is live we’ll promote it to over 10,000+ bettors.If they purchase tip then you will earn"},{h2:"Get Paid",text:"60% of every Sale is given directly to you. Assuming a bettor buys the minimum bronze membership."}]
   return (
     <div>
         <div>
-            //section 1
+            
             <div>
                 <div>
                     <p>Keep attracting buyers and earn unlimited cash</p>
@@ -30,7 +31,7 @@ const BecomeATipster = () => {
                  </div>
             </div>
 
-   // section2
+  
             <div>
                 <div>
                     <div>
@@ -42,7 +43,7 @@ const BecomeATipster = () => {
                 </div>
             </div>
 
-            //section3
+            
             <div>
                 <div>
                     <div>
@@ -55,7 +56,7 @@ const BecomeATipster = () => {
                     </div>
                 </div>
             </div>
-            //section4
+           
             <div>
                 <div>
                     <div>
@@ -76,7 +77,7 @@ const BecomeATipster = () => {
                     </div>
                 </div>
             </div>
-            //section5
+           
             <div>
                 <p>Zero set-up or registration fee</p>
                 <h2>Ready To Become A Tipster?</h2>
@@ -95,7 +96,7 @@ const BecomeATipster = () => {
                     </form>
                 </div>
             </div>
-            //section6
+          
             <div>
                 <p>They are talking about us</p>
                 <h2>Don't Take Our Word For It.</h2>
@@ -109,7 +110,7 @@ const BecomeATipster = () => {
                      </div>
                 </div>
             </div>
-            //section7
+           
             <div>
                 <h2>Don't miss out on Fantastic News</h2>
                 <p>Subscribe to our newsletter and be the first to receive news</p>

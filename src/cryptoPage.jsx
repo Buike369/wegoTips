@@ -318,7 +318,7 @@ for another
 
         
 
-        <div style={{padding:"0 10px"}}>
+        <div style={{padding:"0 10px"}} className='mainDe'>
           <div id="Faqc" className="faqSportMa" data-aos="fade-up" data-aos-duration="3000"
              data-aos-easing="linear">
             <div className="firstTom faqSports" data-aos="fade-down" data-aos-duration="3000"

@@ -300,7 +300,7 @@ You can also enjoy sports betting anywhere and anytime e.g from the comfort of y
         </div>
         </div>
 
-        <div style={{padding:"0 10px"}}>
+        <div style={{padding:"0 10px"}} className='mainDe'>
           <div id="Faqc" className="faqSportMa" data-aos="fade-up" data-aos-duration="3000"
              data-aos-easing="linear" >
             <div className="firstTom faqSports" data-aos="fade-down" data-aos-duration="3000"
@@ -397,7 +397,7 @@ We do not manage users funds or bet for any user, we only forecast/predicts game
                 ""
               )}
             </div>
-            <div className="homeChange">
+            <div className="homeChange mainDe">
               <div className="HowFarBro" onClick={drup5}>
                 <span> What is the guarantee am going to make money betting?</span>
                 <span className="IconSpace">
