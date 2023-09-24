@@ -1,6 +1,8 @@
 import React ,{useContext} from "react";
 import "./style/home.css"
 import "./style/affiliate.css"
+import Carousel from "react-multi-carousel"
+import "react-multi-carousel/lib/styles.css";
 import Footer from "./footer";
 import { Link} from "react-router-dom";
 import { AuthContext } from './context/authContext';
@@ -9,9 +11,28 @@ import { faPaperPlane} from '@fortawesome/free-solid-svg-icons'
 
 import {faFacebook,faTwitter,faLinkedin,faTelegram,faYoutube,}from '@fortawesome/free-brands-svg-icons'
 
-const Affliate =()=>{
+const Affiliate =()=>{
 
-    const {currentUser} = useContext(AuthContext);
+ const {currentUser} = useContext(AuthContext);
+     const responsive2 = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 2,
+      slidesToSlide: 1// optional, default to 1.
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+      slidesToSlide: 1 // optional, default to 1.
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+      slidesToSlide: 1 // optional, default to 1.
+    }
+  }
+
+    
     return(
         <div>
        
@@ -70,7 +91,77 @@ const Affliate =()=>{
                           <a href=""><FontAwesomeIcon icon={faTelegram} className="icon_brand_size bscY" /></a>
                     </div>
                 </div>
-               <div style={{padding:"0 10px"}}>
+
+                <div className="Rtme">
+                    <p className="TheyAre">They are talking about us</p>
+                     <div className="DonTake" style={{color: "#fff"}}>Don't Take Our Word For It.</div>
+                    <p className="seeWhat">See what my customers have to say.Find out what our clients are saying below</p>
+         {/* <div className="divUnder1"></div> */}
+         <div className=" marginMu fadama ">
+         <Carousel
+  swipeable={false}
+  draggable={false}
+  showDots={false}
+  responsive={responsive2}
+  ssr={true} // means to render carousel on server-side.
+  infinite={true}
+  // autoPlay={this.props.deviceType !== "mobile" ? true : false}
+  autoPlay={true}
+  autoPlaySpeed={3000}
+  keyBoardControl={true}
+  customTransition="all .5"
+  transitionDuration={500}
+  containerClass="carousel-container"
+  removeArrowOnDeviceType={["tablet", "mobile"]}
+  // deviceType={this.props.deviceType}
+  dotListClass="custom-dot-list-style"
+  itemClass="carousel-item-padding-40-px"
+  
+>
+ <div style={{padding:"4px 10px"}}>      
+<div className="earnSayPp">
+  <p className="partnerShip">"Through Earnars partnership program I made 250k in just two weeks by referring 20friends to the platform."</p>
+  <div className="favourPath">
+    <div><img src="/img/create.png" alt="" className="popopo"/></div>
+     <div>
+      <div className="amakaDiv">-Chukwubuike Amogu</div>
+      <div className="country">Nigeria</div>
+     </div>
+  </div>
+</div>
+</div> 
+ <div style={{padding:"4px 10px"}}>           
+<div className="earnSayPp">
+  <p className="partnerShip">"I made Over 1 Million in Less Than 30 Days by just following Earnars.com prediction on Sports and Forex Trading.I would recommend earnars to any body any time."</p>
+  <div className="favourPath">
+    <div><img src="/img/create.png" alt="" className="popopo"/></div>
+     <div>
+      <div className="amakaDiv">-Amaka Ngozi</div>
+      <div className="country">Nigeria</div>
+     </div>
+  </div>
+</div>
+</div>
+<div style={{padding:"4px 10px"}}>
+<div className="earnSayPp">
+  <p className="partnerShip">"Your company is truly upstanding and is behind its product 100%. Keep up the excellent work. Earnars is the most valuable prediction portal i have EVER come across. I love your system."</p>
+  <div className="favourPath">
+    <div><img src="/img/create.png" alt="" className="popopo"/></div>
+     <div>
+      <div className="amakaDiv">-Amaka Amogu</div>
+      <div className="country">Nigeria</div>
+     </div>
+  </div>
+</div>
+</div>
+         
+          </Carousel>
+        </div>
+
+                </div>
+
+
+                               <div style={{padding:"0 10px"}}>
                 <div className="MessageDivCov">
                <div className="Package_Up">
                    <h1 className="alap">Don't miss out on Fantastic News</h1>
@@ -108,4 +199,4 @@ const Affliate =()=>{
     )
 }
 
-export default Affliate;
+export default Affiliate;

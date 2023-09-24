@@ -39,6 +39,8 @@ import AdminLogin from "./adminLogin"
 import Navbar from "./navbar"
 import TipsWallet from "./tipsterWallet";
 import ProfilePageFile from "./profilePage"
+import BecomeATipster from "./becomeATipster";
+import FindTipster from "./findTipster";
 import "./App.css"
 
 import DashboardHome from "./Dashboard/dashboardHome"
@@ -91,6 +93,8 @@ function App() {
           <Route path="/tipsterWallet" element={<TipsWallet />} />
           <Route path="/userWallet" element={<UsersWallet />} />
           <Route path="/view-profile" element={<ProfilePageFile />} />
+          <Route path="/become-tipster" element={<BecomeATipster />} />
+          <Route path="/find-tipster" element={<FindTipster />} />
          
          
          

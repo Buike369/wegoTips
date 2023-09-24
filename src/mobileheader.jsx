@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDown,faAngleUp} from '@fortawesome/free-solid-svg-icons'
 import { AuthContext } from './context/authContext';
 
-const Mobileheader = () => {
+const MobileHeader = () => {
 
     const [show21, setShow21] = useState(false);
     const [show22, setShow22] = useState("Sapap");
@@ -109,9 +109,9 @@ const Mobileheader = () => {
               <li className="bgstyle"><div className="derr" onClick={()=>setShowMe4(!showMe4)}><span className="derpm"><span className="mackP">*</span> * Tipster</span> <span>{showMe4?<FontAwesomeIcon icon={faAngleUp} className="PlusIcon plusIcon2" />:<FontAwesomeIcon icon={faAngleDown} className="PlusIcon plusIcon2" />}</span></div>
           {showMe4? 
             <div className="Forexmm">
-                      <a  className="fit" href="" onClick={mark}> <span className="mackP1">*</span> Become a Tipster</a>
-                      <a  className="fit" href="" onClick={mark}><span className="mackP1">*</span> Find a Tipster</a>
-                      <a  className="fit" href="" onClick={mark}> <span className="mackP1">*</span> All Tips</a>
+                      <a  className="fit" href="/become-tipster" onClick={mark}> <span className="mackP1">*</span> Become a Tipster</a>
+                      <a  className="fit" href="/find-tipster" onClick={mark}><span className="mackP1">*</span> Find a Tipster</a>
+                      <a  className="fit" href="/allTips" onClick={mark}> <span className="mackP1">*</span> All Tips</a>
                       
             </div>:""}
             </li>
@@ -147,4 +147,4 @@ const Mobileheader = () => {
   )
 }
 
-export default Mobileheader
+export default MobileHeader

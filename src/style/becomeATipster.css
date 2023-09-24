@@ -1,0 +1,184 @@
+.becomeTipster{
+
+    margin: 100px  auto 20px auto;
+    color:#fff
+
+}
+.beTipster{
+    width: 100%;
+        max-width: 1180px;
+        padding: 0 10px 200px 0;
+        margin:0 auto
+}
+
+.beTipster90 {
+    width: 100%;
+    max-width: 1180px;
+    padding: 0 10px 40px 0;
+    margin: 0 auto
+}
+.psp{
+    padding:40px 10px;
+    background-color: #322b74;
+}
+.psp1{
+    position: relative;
+}
+.psp2{
+position: absolute;
+    bottom: -38px;;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    background-color: #322b74;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+}
+
+.BecomeTipsterPerson{
+    font-size: 70px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.earnMoneyBy{
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  margin-bottom: 15px;
+  width:90%;
+}
+.keepAttract{
+    color:gold;
+    font-size: 24px;
+    font-weight: 600;
+}
+.becomeTipster61{
+    background-color: #221c5a;
+        border: 1px solid #32278b;
+        padding: 20px 15px;
+        border-radius: 10px;
+}
+.becomeRegister{
+    font-size: 28px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.becomeRegister1{
+  font-size: 16px;
+  text-align: center;
+  width:70%;
+  margin:0 auto 20px auto;
+}
+.betStor{
+    display:flex;
+    justify-content: space-between;
+        margin-top: -240px;
+            z-index: 5;
+            position: relative;
+}
+.PoNoV{
+    position: relative;
+}
+.iconDevH{
+    position:absolute;
+    top:30%;
+    left:10px
+}
+.becomeRegister2{
+ width:100%;
+ border-radius: 6px;
+    padding: 14px 15px 14px 40px;
+        background-color: #171054;
+        border: none;
+        outline: 0;
+        color: #fff;
+        border: 1px solid #605a91;
+ margin-bottom: 8px;
+}
+.iconDevH2{
+    padding: 10px 15px;
+        border-radius: 30px;
+        background-color: #0d0740;
+        width: 100%;
+        border: 0;
+        font-size: 20px;
+        font-weight: 500;
+        color:gold;
+        margin-top: 12px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 3px -2px #2f2162;
+        outline: 0;
+        border: 1px solid #221c5a;
+}
+.YouAgreeToF{
+    width:50%;
+    margin:0 auto;
+    text-align: center;
+    font-size: 15px;
+    color:#a0a0c7;
+}
+.smRet{
+    color:#0bf921;
+    text-decoration: none;
+}
+.becomeTipster1{
+    display:flex;
+    justify-content:space-between ;
+    margin-bottom: 100px;
+}
+.becomeTipster2{
+    width:60%
+}
+.becomeTipster3{
+    width: 36%
+}
+.bettors{
+    width:32%;
+    background-color: #0d0740;
+    padding: 30px 20px 30px 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    flex-direction: column;
+   border: 1px solid #574ea5;
+}
+.bettorsDiv{
+    position:relative;
+    width:200px;
+    text-align: center;
+
+}
+.bettors1{
+ position:absolute;
+ background-color: #0bf921;
+    top: 42%;
+ right: 7px;
+ padding:10px 10px;
+ border-radius: 50%;
+ border:1px solid gray;
+}
+
+.cancaV{
+    display:flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.cancaV1{
+    margin-left: 8px;
+    font-size: 16px;
+    color:#d5cff9;
+}
+.AddTip{
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 50px;
+}
+.itWell{
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 15px;
+    color: #929295
+}

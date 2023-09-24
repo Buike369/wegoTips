@@ -53,6 +53,7 @@ const locationBy = ( (tr === "/register") || (tr === "/login") || (tr === "/forg
     <div >
       {tr === "/dashboard" ? "":
         <div className={`"Header_Div_New_Bg"  ${feedBack}`}>
+          {/* <div style={{color:"#fff",textAlign:'center'}}> Please be patient, as some of our pages are undergoing updates for improved functionality.</div> */}
           <div >
           <div className="header">
             <div >
@@ -83,9 +84,9 @@ const locationBy = ( (tr === "/register") || (tr === "/login") || (tr === "/forg
                   <div className="OverTime_View">
                     <div className="DoubleChancert">
                       <a className="cover_Div"></a>
-                      <a href="/sport">Become a Tipster</a>
-                      <a href="/forex">Find a Tipster</a>
-                      <a href="/cryptocurrency">All Tips </a>
+                      <a href="/become-tipster">Become a Tipster</a>
+                      <a href="/find-tipster">Find a Tipster</a>
+                      <a href="/allTips">All Tips </a>
                       
                     
                     </div>

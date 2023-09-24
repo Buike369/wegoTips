@@ -165,7 +165,7 @@ const [changeState,setChangeState] = useState("Tips")
                             </div>
          
          </div>
-         <div className="houseRuMM WonB  mainMa">Buy Now</div>
+         <div className="houseRuMM WonB  mainMa">Subscribe Now</div>
        </div>
        </div>
         </div>
@@ -237,7 +237,7 @@ const [changeState,setChangeState] = useState("Tips")
                             </div>
          
          </div>
-         <div className="houseRuMM WonB  mainMa">Buy Now</div>
+         <div className="houseRuMM WonB  mainMa">Subscribe Now</div>
        </div>
        </div>
 
@@ -311,7 +311,7 @@ const [changeState,setChangeState] = useState("Tips")
                             </div>
          
          </div>
-         <div className="houseRuMM WonB  mainMa">Buy Now</div>
+         <div className="houseRuMM WonB  mainMa">Subscribe Now</div>
        </div>
        </div>
         </div>
@@ -383,7 +383,7 @@ const [changeState,setChangeState] = useState("Tips")
                             </div>
          
          </div>
-         <div className="houseRuMM WonB mainMa">Buy Now</div>
+         <div className="houseRuMM WonB mainMa">Subscribe Now</div>
        </div>
        </div>
         </div>

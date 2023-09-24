@@ -3,6 +3,8 @@
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 10px;
+    position:relative;
+    z-index: 5;
 }
 
 .Footer_Bg_Color {
@@ -14,6 +16,15 @@
     color: #c7c3c3;
     position: relative;
     z-index: 2;
+   
+}
+.FootBike{
+    position:absolute;
+    top:0;
+    left: 0;
+    width:100%;
+    bottom: 0;
+    background-color:#0c0a22f5 ;
 }
 
 .Footer_Div_item {
@@ -42,7 +53,7 @@
 .Footer_Copyright {
     text-align: center;
     padding: 20px 0 0 0;
-    border-top: 1px solid #16182e;
+    border-top: 1px solid #252848;
     width: 58%;
     margin: 60px auto 0 auto;
     color: #4f4f56;

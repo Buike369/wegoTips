@@ -64,7 +64,7 @@ const [itemOffset, setItemOffset] = useState(0);
                     </div>
                 </div>
                 <div className='AmosD holder8' >
-                    <div><button className='holder6 holder5 Um'>Subscribe From</button></div> 
+                    <div><button className='holder6 holder5 Um'>Subscribe From </button></div> 
                        <div><button  className='holder6 holder5' style={{color:"gold"}}>Follow</button></div>
                 </div>
             </div>
@@ -228,9 +228,19 @@ const [itemOffset, setItemOffset] = useState(0);
               </div>
              </div>
           </div>
-          <div className="typing">
+           <div className="typing">
+            <div className='ROILING'>
             <div className="pork1">+4,345</div>
+            <p className='ROIL'>ROI</p>
+            </div>
+            <div className='ROILING'>
             <div className="pork">+2,434</div>
+            <p className='ROIL'>Profit</p>
+            </div>
+             <div className='ROILING'>
+            <div className="pork">+2,434</div>
+            <p className='ROIL'>Win Rate</p>
+            </div>
           </div>
            <div className="findingPP">
             <div className="followerp daysB"> <span className='textPre'>1</span> <sub>day</sub></div>
@@ -289,9 +299,19 @@ const [itemOffset, setItemOffset] = useState(0);
               </div>
              </div>
           </div>
-          <div className="typing">
+           <div className="typing">
+            <div className='ROILING'>
             <div className="pork1">+4,345</div>
+            <p className='ROIL'>ROI</p>
+            </div>
+            <div className='ROILING'>
             <div className="pork">+2,434</div>
+            <p className='ROIL'>Profit</p>
+            </div>
+             <div className='ROILING'>
+            <div className="pork">+2,434</div>
+            <p className='ROIL'>Win Rate</p>
+            </div>
           </div>
            <div className="findingPP">
             <div className="followerp daysB"> <span className='textPre'>1</span> <sub>day</sub></div>

@@ -19,7 +19,8 @@ const Footer =()=>{
         setFooterShow(!footerShow)
       }
     return(
-        <div className="Footer_Bg_Color">
+        <div className="Footer_Bg_Color" style={{backgroundImage:"url(/img/comesK.svg)"}}>
+            <div className="FootBike"></div>
               
           <div className="Footer_Div">
               <div className="Footer_Div_item">
