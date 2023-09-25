@@ -256,7 +256,7 @@ const pageNumber3 = [];
 
         <div className="allNewTips">
 
-                    
+    <div className='allNewTips1'>              
 <div className="Sports23 MyTipUp">
              <div className={tip === "Tip"?"sportsAt people2 gamings":"sportsAt people2"} onClick ={()=>setTip("Tip")}>Sports</div>
              <div className={tip === "forex"?"sportsAt people2 gamings":"sportsAt people2"} onClick ={forexChange}>Forex</div>
@@ -1617,6 +1617,8 @@ const pageNumber3 = [];
   </div>
                    :""
                }
+
+               </div>  
 
         </div>
             <div className="bkFR">

@@ -74,6 +74,11 @@ z-index: 6;
     background-color: #171054;
     padding:10px 10px;
 }
+.allNewTips1{
+    width:100%;
+    max-width: 1100px;
+    margin:0 auto;
+}
 .apple4{
     position: absolute;
     bottom: -40px;
