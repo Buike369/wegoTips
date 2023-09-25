@@ -52,7 +52,7 @@ const locationBy = ( (tr === "/register") || (tr === "/login") || (tr === "/forg
     <div>
     <div >
       {tr === "/dashboard" ? "":
-        <div className={`"Header_Div_New_Bg"  ${feedBack}`}>
+        <div className={`"Header_Div_New_Bg"  ${feedBack}`} style={{borderBottom:tr ==="/register" || tr ==="/login"  ? "1px solid #312d72":""}}>
           {/* <div style={{color:"#fff",textAlign:'center'}}> Please be patient, as some of our pages are undergoing updates for improved functionality.</div> */}
           <div >
           <div className="header">

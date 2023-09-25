@@ -30,15 +30,19 @@ const BecomeATipster = () => {
         <div className="becomeTipster">
 
            <div className='psp1'>
+            <div className="aBe"></div>
+            <div className="aBe1">
+            </div>
+              <img src="/img/iiisometric.svg" alt="" className='aBe2' />
             <div className='beTipster'>
             <div className='becomeTipster1'>
                 <div className='becomeTipster2'>
                     <p className='keepAttract'>Keep attracting buyers and earn unlimited cash</p>
-                    <div className='BecomeTipsterPerson'>Become a Tipster and Earn Money!</div>
-                    <p className='earnMoneyBy'>Earn money by selling your tips to help others win! Those tips help bettors place better bets to win more cash.</p>
-                    <div className='cancaV'> <div className='cic'></div> <p className='cancaV1'>Keep attracting buyers and earn unlimited cash</p></div>
-                    <div className='cancaV'> <div className='cic'></div><p className='cancaV1'>Withdraw your funds any time, any place</p></div>
-                    <div className='cancaV'> <div className='cic'></div> <p className='cancaV1'>Earn a stable income with no risk</p></div>
+                    <div className='BecomeTipsterPerson'>Join us, share your expertise, and earn today</div>
+                    <p className='earnMoneyBy'>Unlock your earning potential by sharing your winning tips with fellow bettors and traders! Your insights can help others make smarter bets and boost their trading profits.</p>
+                    <div className='cancaV'> <div className='cic'></div> <p className='cancaV1'>Attract buyers, earn unlimited cash!</p></div>
+                    <div className='cancaV'> <div className='cic'></div><p className='cancaV1'>Withdraw anytime, anywhere!</p></div>
+                    <div className='cancaV'> <div className='cic'></div> <p className='cancaV1'>Earn a stable income with low risk</p></div>
                 </div>
                  <div className='becomeTipster3'>
                     <form>
@@ -58,13 +62,15 @@ const BecomeATipster = () => {
              </div>
              <div className='psp2'></div>
              </div> 
-         <div className='psp'>
+         <div className ='psp' style={{backgroundImage:"url(/img/qqquad.svg)"}}>
+        
+          <div className='psp80'></div>
          <div className='beTipster90'>
             <div className='betStor'>
                   
                     <div className='bettors'>
                     <div className='bettorsDiv'>
-                        <img src="/img/gain2.png" alt="" />
+                        <img src="/img/gain2.png" alt=""  />
                         <p className='bettors1' >01</p>
                     </div>
                     <div className='AddTip'>Add Tips</div>
@@ -77,8 +83,8 @@ const BecomeATipster = () => {
                         <img src="/img/gain3.png" alt="" />
                         <p className='bettors1' >02</p>
                     </div>
-                    <div className='AddTip'>Bettors buy from you</div>
-                    <p className='itWell'>Create your tip and it’ll immediately be added to our “today’s tips” database for buyers to purchase.</p>
+                    <div className='AddTip'>Market players buy from you</div>
+                    <p className='itWell'>Once your tip is live we’ll promote it to over 10,000+ market players.If they purchase tip then you will earn</p>
                     </div>
                
                
@@ -88,20 +94,36 @@ const BecomeATipster = () => {
                         <p className='bettors1' >03</p>
                     </div>
                     <div className='AddTip'>Get Paid</div>
-                    <p className='itWell'>Create your tip and it’ll immediately be added to our “today’s tips” database for buyers to purchase.</p>
+                    <p className='itWell'>60% of every Sale is given directly to you. Assuming a market players buys the minimum bronze membership.</p>
                     </div>
                
             </div>
 
              <div>
-                <div>
-                    <div>
-                        <div><img src="" alt="" /></div>
+                <div className='beb2'>
+                    <div className='beb5'>
+                        <div className='beb'><img src="/img/features.png" alt=""  className='beb1'/></div>
                     </div>
-                    <div>
-                        <p>Skilled bettors earn moneythrough selling tips</p>
-                        <h2>Serious Tips For Serious Bettors</h2>
-                        <p>You can earn an unlimited amount. bitips is full of serious bettors. Bettors who are happy to pay for tips because they know our tipsters provide a high return on investment for them. If you’re serious about your tips, you need to find the serious bettors, and bitips is the place for you</p>
+                    <div  className='beb6'>
+                        <p className='SkilledBet'>Skilled market players earn money through selling tips</p>
+                        <h2 className='SkilledBet2'>Serious Tips For Serious Market Players</h2>
+                        <p className='SkilledBet3'>You can earn an unlimited amount. Earnars is full of serious market players. Market players who are happy to pay for tips because they know our tipsters provide a high return on investment for them. If you’re serious about your tips, you need to find the serious market players, and earnars is the place for you</p>
+                    </div>
+                </div>
+            </div>
+
+
+              <div>
+                <div className='beb2 beb22'>
+                    <div  className='beb6'>
+                      <div >
+                        <p className='SkilledBet'>Earn a stable income with low risk</p>
+                        <h2 className='SkilledBet2'>We Want You To Succeed</h2>
+                        <p className='SkilledBet3 aEarn'>Most tip sites don’t look after their tipsters Offering tipsters less than 50% of their earnings and no assistance.we do everything we can to help you get started and attract more market players.</p>
+                        </div>
+                    </div>
+                    <div className='beb5'>
+                        <div className='beb'><img src="/img/marketP.png" alt=""  className='beb1'/></div>
                     </div>
                 </div>
             </div>

@@ -1,140 +1,203 @@
-.becomeTipster{
+.becomeTipster {
 
-    margin: 100px  auto 20px auto;
-    color:#fff
-
+    margin: 100px auto 20px auto;
+    color: #fff
 }
-.beTipster{
+
+.beTipster {
     width: 100%;
-        max-width: 1180px;
-        padding: 0 10px 200px 0;
-        margin:0 auto
+    max-width: 1180px;
+    padding: 0 10px 240px 0;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
 }
 
 .beTipster90 {
     width: 100%;
     max-width: 1180px;
     padding: 0 10px 40px 0;
-    margin: 0 auto
+    margin: 0 auto;
+    position: relative;
+        z-index: 10;
 }
-.psp{
-    padding:40px 10px;
-    background-color: #322b74;
+
+.aBe {
+    width: 200px;
+    height: 400px;
+    position: absolute;
+        top: 0px;
+            left: 2px;
+            background-color: #221c5a;
+            filter: blur(70px);
 }
-.psp1{
+
+.aBe1 {
+    width: 200px;
+    height: 400px;
+    position: absolute;
+    top: 0px;
+    right: 2px;
+    background-color: #221c5a; 
+    filter: blur(70px);
+}
+.aBe2{
+position: absolute;
+top: -174px;
+    right: -416px
+}
+
+.aEarn{
+    width:100% !important;
+}
+.psp {
+    padding: 40px 10px;
+    /* background-color: #171054; */
+    position:relative;
+   
+}
+.psp80{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    bottom: 0;
+    background-color: #171054e3;
+}
+
+.psp1 {
     position: relative;
 }
-.psp2{
-position: absolute;
-    bottom: -38px;;
+
+.psp2 {
+    position: absolute;
+    bottom: -38px;
+    
     left: 0;
     height: 100px;
     width: 100%;
-    background-color: #322b74;
+    background-color: #171054;
     border-top-right-radius: 50%;
     border-top-left-radius: 50%;
 }
 
-.BecomeTipsterPerson{
-    font-size: 70px;
+.BecomeTipsterPerson {
+    font-size: 46px;
     font-weight: 800;
     margin-bottom: 20px;
 }
-.earnMoneyBy{
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 30px;
-  margin-bottom: 15px;
-  width:90%;
+
+.earnMoneyBy {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 15px;
+    width: 90%;
+    color: #918bcb;
 }
-.keepAttract{
-    color:gold;
+
+.keepAttract {
+    color: gold;
     font-size: 24px;
     font-weight: 600;
 }
-.becomeTipster61{
+
+.becomeTipster61 {
     background-color: #221c5a;
-        border: 1px solid #32278b;
-        padding: 20px 15px;
-        border-radius: 10px;
+    border: 1px solid #32278b;
+    padding: 20px 15px;
+    border-radius: 10px;
 }
-.becomeRegister{
+
+.becomeRegister {
     font-size: 28px;
     font-weight: 800;
     text-align: center;
     margin-bottom: 20px;
 }
-.becomeRegister1{
-  font-size: 16px;
-  text-align: center;
-  width:70%;
-  margin:0 auto 20px auto;
+
+.becomeRegister1 {
+    font-size: 16px;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto 20px auto;
 }
-.betStor{
-    display:flex;
+
+.betStor {
+    display: flex;
     justify-content: space-between;
-        margin-top: -240px;
-            z-index: 5;
-            position: relative;
-}
-.PoNoV{
+    margin-top: -240px;
+    z-index: 5;
     position: relative;
 }
-.iconDevH{
-    position:absolute;
-    top:30%;
-    left:10px
+
+.PoNoV {
+    position: relative;
 }
-.becomeRegister2{
- width:100%;
- border-radius: 6px;
+
+.iconDevH {
+    position: absolute;
+    top: 30%;
+    left: 10px
+}
+
+.becomeRegister2 {
+    width: 100%;
+    border-radius: 6px;
     padding: 14px 15px 14px 40px;
-        background-color: #171054;
-        border: none;
-        outline: 0;
-        color: #fff;
-        border: 1px solid #605a91;
- margin-bottom: 8px;
+    background-color: #171054;
+    border: none;
+    outline: 0;
+    color: #fff;
+    border: 1px solid #605a91;
+    margin-bottom: 8px;
 }
-.iconDevH2{
+
+.iconDevH2 {
     padding: 10px 15px;
-        border-radius: 30px;
-        background-color: #0d0740;
-        width: 100%;
-        border: 0;
-        font-size: 20px;
-        font-weight: 500;
-        color:gold;
-        margin-top: 12px;
-        margin-bottom: 20px;
-        box-shadow: 0 2px 3px -2px #2f2162;
-        outline: 0;
-        border: 1px solid #221c5a;
+    border-radius: 30px;
+    background-color: #0d0740;
+    width: 100%;
+    border: 0;
+    font-size: 20px;
+    font-weight: 500;
+    color: gold;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 3px -2px #2f2162;
+    outline: 0;
+    border: 1px solid #221c5a;
 }
-.YouAgreeToF{
-    width:50%;
-    margin:0 auto;
+
+.YouAgreeToF {
+    width: 50%;
+    margin: 0 auto;
     text-align: center;
     font-size: 15px;
-    color:#a0a0c7;
+    color: #a0a0c7;
 }
-.smRet{
-    color:#0bf921;
+
+.smRet {
+    color: #0bf921;
     text-decoration: none;
 }
-.becomeTipster1{
-    display:flex;
-    justify-content:space-between ;
+
+.becomeTipster1 {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 100px;
 }
-.becomeTipster2{
-    width:60%
+
+.becomeTipster2 {
+    width: 60%
 }
-.becomeTipster3{
+
+.becomeTipster3 {
     width: 36%
 }
-.bettors{
-    width:32%;
+
+.bettors {
+    width: 32%;
     background-color: #0d0740;
     padding: 30px 20px 30px 20px;
     border-radius: 15px;
@@ -143,42 +206,241 @@ position: absolute;
     justify-content: center;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
     flex-direction: column;
-   border: 1px solid #574ea5;
+    border: 1px solid #574ea5;
 }
-.bettorsDiv{
-    position:relative;
-    width:200px;
+
+.bettorsDiv {
+    position: relative;
+    width: 200px;
     text-align: center;
 
 }
-.bettors1{
- position:absolute;
- background-color: #0bf921;
+
+.bettors1 {
+    position: absolute;
+    background-color: #0bf921;
     top: 42%;
- right: 7px;
- padding:10px 10px;
- border-radius: 50%;
- border:1px solid gray;
+    right: 7px;
+    padding: 10px 10px;
+    border-radius: 50%;
+    border: 1px solid gray;
 }
 
-.cancaV{
-    display:flex;
+.cancaV {
+    display: flex;
     align-items: center;
     margin-bottom: 15px;
 }
-.cancaV1{
+
+.cancaV1 {
     margin-left: 8px;
     font-size: 16px;
-    color:#d5cff9;
+    color: #d5cff9;
 }
-.AddTip{
+
+.AddTip {
     font-size: 28px;
     font-weight: 700;
-    line-height: 50px;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 10px;
+    min-height: 70px;
 }
-.itWell{
+
+.itWell {
     text-align: center;
     padding: 5px 10px;
     font-size: 15px;
     color: #929295
+}
+
+.beb {
+    width: 500px;
+    height: 500px;
+}
+
+.beb1 {
+    width: 100%;
+    height: 100%;
+}
+
+.beb2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 80px;
+}
+
+.SkilledBet {
+    font-size: 20px;
+    font-family: 500;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.SkilledBet2 {
+    font-size: 32px;
+    font-weight: 800;
+    color: gold;
+    width: 90%;
+    margin-bottom: 15px
+}
+
+.SkilledBet3 {
+    font-size: 15px;
+    color: #b2b4c9;
+    font-weight: 300;
+    width: 90%
+}
+
+.beb5 {
+    width: 46%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.beb6 {
+    width: 46%;
+}
+
+@media(max-width:768px){
+    .becomeTipster {
+            margin: 47px auto 20px auto;
+        }
+                .psp1 {
+                    width: 100%;
+                }
+        .aBe2 {
+          
+            top: -93px;
+            right: -286px;
+        }
+
+     .beTipster {
+        padding: 0 0px 240px 0;
+   overflow: hidden;
+                }
+    
+                .becomeTipster1 {
+                   
+                    flex-direction: column;
+                    width: 100%;
+                    padding: 1px 15px;
+                    max-width: 450px;
+                    margin: 0 auto 100px auto;
+                }
+.becomeTipster2 {
+    width: 100%;
+    padding: 2px 1px;
+    text-align: center;
+}
+.keepAttract {
+  
+    font-size: 18px;
+    font-weight: 600;
+}
+.BecomeTipsterPerson {
+    font-size: 28px;
+    font-weight: 600;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+}
+
+
+.earnMoneyBy {
+    font-size: 18px;
+    line-height:25px;
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 3px 8px;
+   
+}
+.cancaV {
+    padding-left: 20px;
+}
+.becomeTipster3 {
+    width: 100%;
+}
+.psp{
+    padding: 40px 15px;
+}
+.beTipster90 {
+   
+    padding: 0 0px 5px 0;
+}
+.cancaV1 {
+    
+    font-size: 14px;
+    font-weight: 200;
+   
+}
+
+
+.betStor {
+  
+    
+    flex-direction: column;
+    width: 100%;
+    margin: -347px auto 0 auto;
+   
+    max-width: 450px;
+   
+}
+.bettors{
+    width:100%;
+    margin-bottom: 10px;
+}
+.beb2 {
+    
+  
+    flex-direction: column;
+    margin-top: 40px;
+}
+.beb22{
+    flex-direction: column-reverse;
+}
+.beb5 {
+    width: 100%;
+   
+}
+.beb6 {
+    width: 100%;
+}
+.SkilledBet {
+    font-size: 20px;
+    font-family: 500;
+    padding: 2px 10px;
+    text-align: center;
+    margin-top: 10px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.SkilledBet2 {
+    font-size: 26px;
+   
+    width: 100%;
+    text-align: center;
+    padding: 2px 10px;
+    margin-bottom: 15px;
+}
+.SkilledBet3 {
+   
+    width: 100%;
+    padding: 2px 10px;
+    text-align: center;
+}
+.beb {
+    width: 300px;
+    height: 300px;
+}
+.SkilledBet {
+    font-size: 20px;
+    
+    padding: 2px 10px;
+    text-align: center;
+    margin-top: 10px;
+  
+}
+                
 }

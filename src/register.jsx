@@ -117,7 +117,7 @@ const Register =()=>{
             <div className="formDivPAd">
             
       
-              <div style={{padding:"0px 5px"}} className="DivForming">
+              <div style={{padding:"0px 7px"}} className="DivForming">
             <div className="Form_Div page">
                 <form>
       {/* {message && <div style={{color:"#fff",position:"absolute",zIndex:"500",left:"50%",right:"50%",top:"-5%",padding:"5px 10px",backgroundColor:"#20263a",width:"100%",transform:"translate(-50%,-50%)",textAlign:"center",borderRadius:"5px"}}>{message}</div>} */}

@@ -64,7 +64,7 @@ const MobileHeader = () => {
     <div className={show22}>
      <div className={feedBack}>
         {/* <div className="special"></div> */}
-      <div className="mobileH">
+      <div className="mobileH" style={{borderBottom:tr ==="/register" || tr ==="/login"  ? "1px solid #312d72":""}}>
         <div>
         <a href="/"  onClick={()=>setShow21(false)} >
                   <img src="/img/Earnars1@72x1.png" className="emanu"/>
