@@ -12,7 +12,8 @@ width:45%
 }
 .kim{
     width:100%;
-    overflow-x: scroll;
+    border-bottom: 1px solid #362d7c;
+    /* overflow-x: scroll; */
 }
 .do{
     width: 100%;

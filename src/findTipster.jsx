@@ -7,7 +7,7 @@ const FindTipster = () => {
   return (
     <div>
        
-        <div>
+        {/* <div>
             <div>
                <h1>Find Tipster</h1>
                <div>
@@ -95,10 +95,10 @@ const FindTipster = () => {
                  <div><button>Filter All</button></div>
               </div>
           </div>
-        </div>
-
+        </div> */}
+   <div style={{color:"#fff",textAlign:'center'}}>page is undergoing an update</div>
       
-        <div>
+        {/* <div>
             <div>
                 <p>Showing 4740 tipster</p>
                 <div>
@@ -181,7 +181,7 @@ const FindTipster = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div> */}
 
          <div className="bkFR">
        <div style={{padding:"0 10px"}}>

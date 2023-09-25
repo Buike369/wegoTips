@@ -21,10 +21,10 @@ font-weight: 500;
 
 }
 .TatotalResult{
-    background-color:#1d284869 ;
+    background-color: #29226873 !important;
 }
 .TatotalResult:hover{
-    background-color:#001041 
+    background-color:#19115c;
 }
 .ImportantRep{
     background-color:#001041 ;
@@ -117,18 +117,18 @@ style={{backgroundImage:"url(/img/save.svg)",backgroundRepeat:"no-repeat ", back
     gap: 20px;
 }
 .Dop{
-    font-size: 22px;
+    font-size: 28px;
     font-weight: 600;
-    /* color:#001041 */
-    color:#e5de0b;
+    margin-bottom: 10px;
+
+    color:gold;
 }
 .GameN{
     display:flex;
     justify-content: space-between;
     padding:10px 16px;
-    background-color: #5c6989;
-    /* margin-top: 10px; */
-    /* margin-bottom: 4px; */
+    background-color: #0d0740;
+ 
     
 }
 .kim{
@@ -156,7 +156,7 @@ style={{backgroundImage:"url(/img/save.svg)",backgroundRepeat:"no-repeat ", back
     background-color: #fff;
 }
 .pays{
-    background-color: #00104199;
+    background-color: #0d0740;
     color:#fff;
     text-align: center;
     margin-top: 40px;
@@ -179,9 +179,9 @@ style={{backgroundImage:"url(/img/save.svg)",backgroundRepeat:"no-repeat ", back
     text-align: center;
 }
 .people2{
-    background-color:#001041;
-    border-radius: 30px;
-    box-shadow: 0px 2px 2px #464d62;
+    background-color: #0d0740;
+        border-radius: 30px;
+        border: 1px solid #321383;
     color:#fff;
     cursor:pointer;
 }
@@ -189,16 +189,14 @@ style={{backgroundImage:"url(/img/save.svg)",backgroundRepeat:"no-repeat ", back
     display:none
 }
 .people2:hover{
-    background-color: #fff;
-    color:#001041;
+    background-color: #afadd9;
+        color: #000000;
 }
 .Clas{
     padding:10px 15px;
-    /* border:1px solid #7687b6; */
     width: 200px;
     margin: -30px auto 15px auto;
-    /* background-color:#001041;  */
-    background-color: #ffffff;
+    background-color: #292268;
     color:#d38b8b;
     font-weight: 600;
     font-size: 16px;
@@ -224,9 +222,9 @@ width:50%;
 margin:0 auto;
 color:#c7c3c3;
 }
-.gt1{
+/* .gt1{
     border-top:1px solid #8f99b8;
-}
+} */
 @media(max-width:1200px){
     .MyTip {
         width: 96%;

@@ -168,6 +168,10 @@ const [changeState,setChangeState] = useState("Tips")
          <div className="houseRuMM WonB  mainMa">Subscribe Now</div>
        </div>
        </div>
+       <div className="tips34h"> 
+         <a href=""><div className="tips33h">+33 Tips</div></a>
+         <a href="/view-profile"><div className="tips33h">view profile</div></a> 
+       </div>
         </div>
                        ))}
                        </div>
@@ -239,6 +243,10 @@ const [changeState,setChangeState] = useState("Tips")
          </div>
          <div className="houseRuMM WonB  mainMa">Subscribe Now</div>
        </div>
+       </div>
+        <div className="tips34h"> 
+         <a href=""><div className="tips33h">+33 Tips</div></a>
+         <a href="/view-profile"><div className="tips33h">view profile</div></a> 
        </div>
 
          
@@ -314,6 +322,10 @@ const [changeState,setChangeState] = useState("Tips")
          <div className="houseRuMM WonB  mainMa">Subscribe Now</div>
        </div>
        </div>
+        <div className="tips34h"> 
+         <a href=""><div className="tips33h">+33 Tips</div></a>
+         <a href="/view-profile"><div className="tips33h">view profile</div></a> 
+       </div>
         </div>
                        ))}
                        </div>
@@ -385,6 +397,10 @@ const [changeState,setChangeState] = useState("Tips")
          </div>
          <div className="houseRuMM WonB mainMa">Subscribe Now</div>
        </div>
+       </div>
+        <div className="tips34h"> 
+         <a href=""><div className="tips33h">+33 Tips</div></a>
+         <a href="/view-profile"><div className="tips33h">view profile</div></a> 
        </div>
         </div>
                        ))}

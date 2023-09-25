@@ -123,9 +123,26 @@ border: 1px solid #19194e;
 .TY38{
  top:18%
 }
+.tips34h{
+    display:flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding:2px 10px
+}
+.tips33h{
+padding: 8px 13px;
+    color: #c4c5d1;
+    background-color: #0d0740;
+    border-radius: 10px;
+    border: 1px solid #3d3e7e;
+    box-shadow: 0 0px 2px 1px #171054;
+    font-size: 14px;
+    font-weight: 300;
+}
 .ROIL{
     color:#beb6c9;
     font-size: 12px;
+    font-weight: 200;
 }
 .ROILING{
     text-align: center;
@@ -134,8 +151,8 @@ border: 1px solid #19194e;
     margin-top: 20px;
 }
 .weNeed2{
-    color:#fff;
-    font-weight: 600;
+color: #fbfbfb;
+    font-size: 15px;
     text-align: center;
     line-height: 40px;
     font-size: 15px;
