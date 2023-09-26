@@ -42,9 +42,9 @@
     filter: blur(70px);
 }
 .aBe2{
-position: absolute;
-top: -174px;
-    right: -416px
+    position: absolute;
+        right: -379px;
+        top: -125px
 }
 
 .aEarn{
@@ -67,6 +67,7 @@ top: -174px;
 
 .psp1 {
     position: relative;
+        padding-top: 42px;
 }
 
 .psp2 {
@@ -316,6 +317,11 @@ top: -174px;
             top: -93px;
             right: -286px;
         }
+
+                .psp1 {
+            
+                    padding-top: 1px;
+                }
 
      .beTipster {
         padding: 0 0px 240px 0;
