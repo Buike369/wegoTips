@@ -1133,7 +1133,454 @@ useEffect(()=>{
    
 
             <div className="containerT">
-             <div className="fear">
+
+               <div className="youpin">
+
+              
+                 <div className="topPrediction">Top Predictions</div>
+              <div className="UponT">
+                <div className="sportPetNe">Sports Predictions</div>
+               
+           <div className="adaba"> 
+       <div role="region" aria-labelledby="caption" tabindex="0">
+  <table   style={{borderCollapse: "collapse"}}  className='linema '>
+   
+    <thead>
+      <tr>
+        <th style={{width:"100px"}}>Date</th>
+        <th style={{width:"70px"}}>Time</th>
+         <th style={{width:"150px"}}>League</th>
+        <th style={{width:"180px"}}>Match</th>
+        <th style={{width:"180px"}}>Tips</th>
+        <th style={{width:"60px"}}>Odd</th>
+        <th style={{width:"80px"}}>Stake</th>
+        <th style={{width:"80px"}}>Results</th>
+
+                
+      </tr>
+    </thead>
+    <tbody>
+       
+       
+     
+        <tr  className="ADDTimeDbg " >
+        <th className=" ADDTimeDbg">09/11/2023</th>
+        <td>13:00pm</td>
+          <td>English</td>
+        <td>Eng v Ban Asia Cup T20</td>
+        <td>Ban to win</td>
+        <td>1.72</td>
+        <td>+30.45</td>
+         <td>G icon</td>
+    
+        
+      </tr>
+      <tr  className="ADDTimeDbg ">
+        <th className="ADDTimeDbg">09/11/2023</th>
+        <td>13:00am</td>
+          <td>English</td>
+        <td>Eng v Ban Asia Cup T20</td>
+        <td>Ban to win</td>
+        <td>1.72</td>
+        <td>+45.50</td>
+         <td>G icon</td>
+        
+      </tr>
+  
+        
+      
+   
+     
+    </tbody>
+  </table>
+</div>
+</div> 
+       <div className="sportPetNe gapUp">Forex Predictions</div>
+           <div className="adaba">
+      <div role="region" aria-labelledby="caption" tabindex="0">
+  <table className='linema' style={{borderCollapse: "collapse"}}>
+   
+    <thead>
+      <tr>
+        <th style={{width:"100px"}}>Date</th>
+        <th style={{width:"180px"}}>Pair</th>
+         <th style={{width:"100px"}}>Condition</th>
+        <th style={{width:"100px"}}>Entry</th>
+        <th style={{width:"100px"}}>Take Profit</th>
+        <th style={{width:"100px"}}>Stop Loss</th>
+        
+                
+      </tr>
+    </thead>
+    <tbody>
+       
+       
+     
+      <tr  className="ADDTimeDbg ADDTimeDbg22">
+        <th className=" ADDTimeDbg">09/11/2023</th>
+        <td>NGN/USD</td>
+          <td>Long(buy)</td>
+        <td>1.678787</td>
+        <td>1.899765</td>
+        <td>1.456378</td>
+       
+        
+      </tr>
+      <tr  className="ADDTimeDbg ADDTimeDbg22">
+        <th className="ADDTimeDbg">09/11/2023</th>
+        <td>CED/USD</td>
+          <td>Short(buy)</td>
+        <td>1.678787</td>
+        <td>1.678787</td>
+        <td>1.678787</td>
+       
+        
+      </tr>
+  
+        
+      
+   
+     
+    </tbody>
+  </table>
+</div>
+</div>
+ {/* <div className="seeMoreDivLink"><button className="SeeMoreInfo">See More</button></div> */}
+<div className="sportPetNe gapUp">Cryptocurrency Predictions</div>
+ <div className="adaba">
+      <div role="region" aria-labelledby="caption" tabindex="0">
+  <table className='linema' style={{borderCollapse: "collapse"}} >
+   
+    <thead>
+      <tr>
+        <th style={{width:"100px"}} className="emeka">Date</th>
+        <th style={{width:"180px"}}>Pair</th>
+         <th style={{width:"100px"}}>Condition</th>
+        <th style={{width:"100px"}}>Entry</th>
+        <th style={{width:"100px"}}>Take Profit</th>
+        <th style={{width:"100px"}}>Stop Loss</th>
+        
+                
+      </tr>
+    </thead>
+    <tbody>
+       
+       
+     
+      <tr  className="ADDTimeDbg ADDTimeDbg22">
+        <th className=" ADDTimeDbg">09/11/2023</th>
+        <td>GBP/USD</td>
+          <td>Long(buy)</td>
+        <td>1.678787</td>
+        <td>1.899765</td>
+        <td>1.456378</td>
+       
+        
+      </tr>
+      <tr  className="ADDTimeDbg ADDTimeDbg22">
+        <th className="ADDTimeDbg">09/11/2023</th>
+        <td>GBP/USD</td>
+          <td>Short(buy)</td>
+        <td>1.678787</td>
+        <td>1.678787</td>
+        <td>1.678787</td>
+       
+        
+      </tr>
+  
+        
+      
+   
+     
+    </tbody>
+  </table>
+</div>
+</div>
+    {/* <div className="seeMoreDivLink"><button className="SeeMoreInfo">See More</button></div> */}
+<div className="sportPetNe gapUp">Binary Predictions</div>
+ <div className="adaba">
+      <div role="region" aria-labelledby="caption" tabindex="0">
+  <table className='linema' style={{borderCollapse: "collapse"}} >
+   
+    <thead>
+      <tr>
+        <th style={{width:"33%"}}>Date</th>
+        <th style={{width:"33%"}}>Pair</th>
+         <th style={{width:"33%"}}>Condition</th>
+       
+                
+      </tr>
+    </thead>
+    <tbody>
+       
+       
+      
+         <tr  className="ADDTimeDbg ADDTimeDbg22">
+        <th className=" ADDTimeDbg">09/11/2023</th>
+        <td>GBP/USD</td>
+          <td>Long(buy)</td>
+        
+       
+        
+      </tr>
+      <tr  className="ADDTimeDbg ADDTimeDbg22">
+        <th className="ADDTimeDbg">09/11/2023</th>
+        <td>GBP/USD</td>
+          <td>Short(buy)</td>
+       
+       
+        
+      </tr>
+  
+        
+      
+   
+     
+    </tbody>
+  </table>
+</div>
+</div>
+ <div className="seeMoreDivLink"><a href="/market-predictions"><button className="SeeMoreInfo">See More</button></a></div>
+
+                </div>
+
+              
+               </div>
+
+             
+
+          <div className="youpin">
+
+              
+                 <div className="topPrediction">Recent Tips From Tipsters</div>
+              <div className="UponT">
+                <div className="sportPetNe">Sports Predictions</div>
+               
+           <div className="adaba"> 
+       <div role="region" aria-labelledby="caption" tabindex="0">
+  <table   style={{borderCollapse: "collapse"}}  className='linema '>
+   
+    <thead>
+      <tr>
+        <th style={{width:"100px"}}>Date</th>
+        <th style={{width:"80px"}}>Tipster</th>
+        <th style={{width:"80px"}}>Time</th>
+         <th style={{width:"150px"}}>League</th>
+        <th style={{width:"180px"}}>Match</th>
+        <th style={{width:"80px"}}>Odd</th>
+        <th style={{width:"80px"}}>Stake</th>
+        <th style={{width:"80px"}}>Yeild</th>
+        <th style={{width:"80px"}}></th>
+                
+      </tr>
+    </thead>
+    <tbody>
+       
+       
+      
+        
+    
+        <tr  className="ADDTimeDbg " >
+        <th className=" ADDTimeDbg">09/11/2023</th>
+         <td><img src="/img/create.png" alt="" className="tipImage"/></td>
+        <td>13:00pm</td>
+          <td>English</td>
+        <td>Eng v Ban Asia Cup T20</td>
+        <td>1.72</td>
+        <td>+20.45</td>
+        <td>+3%</td>
+          <td><button className="tipPurc">view</button></td>
+        
+      </tr>
+      <tr  className="ADDTimeDbg ">
+        <th className="ADDTimeDbg">09/11/2023</th>
+         <td><img src="/img/create.png" alt="" className="tipImage"/></td>
+        <td>13:00am</td>
+          <td>English</td>
+        <td>Eng v Ban Asia Cup T20</td>
+        <td>1.72</td>
+        <td>+20.25</td>
+        <td>+4.5%</td>
+         <td><button className="tipPurc">view</button></td>
+        
+      </tr>
+  
+        
+      
+   
+     
+    </tbody>
+  </table>
+</div>
+</div> 
+ {/* <div className="seeMoreDivLink"><button className="SeeMoreInfo">See More</button></div> */}
+           <div className="sportPetNe gapUp">Forex Predictions</div>
+           <div className="adaba">
+      <div role="region" aria-labelledby="caption" tabindex="0">
+  <table className='linema' style={{borderCollapse: "collapse"}}>
+   
+    <thead>
+      <tr>
+        <th style={{width:"100px"}}>Date</th>
+        <th style={{width:"180px"}}>Tipster</th>
+         <th style={{width:"100px"}}>Condition</th>
+        <th style={{width:"100px"}}>Entry</th>
+        <th style={{width:"100px"}}>Take Profit</th>
+        <th style={{width:"100px"}}>Stop Loss</th>
+        <th style={{width:"100px"}}></th>
+        
+        
+                
+      </tr>
+    </thead>
+    <tbody>
+       
+       
+      <tr  className="ADDTimeDbg ADDTimeDbg22">
+        <th className=" ADDTimeDbg">09/11/2023</th>
+        <td><img src="/img/create.png" alt="" className="tipImage"/></td>
+          <td>Long(buy)</td>
+        <td>1.678787</td>
+        <td>1.899765</td>
+        <td>1.456378</td>
+         <td><button className="tipPurc">view</button></td>
+       
+        
+      </tr>
+   
+      <tr  className="ADDTimeDbg ADDTimeDbg22">
+        <th className="ADDTimeDbg">09/11/2023</th>
+        <td><img src="/img/create.png" alt="" className="tipImage"/></td>
+          <td>Short(buy)</td>
+        <td>1.678787</td>
+        <td>1.678787</td>
+        <td>1.678787</td>
+         <td><button className="tipPurc">view</button></td>
+        
+       
+        
+      </tr>
+  
+        
+      
+   
+     
+    </tbody>
+  </table>
+</div>
+</div>
+ {/* <div className="seeMoreDivLink"><button className="SeeMoreInfo">See More</button></div> */}
+<div className="sportPetNe gapUp">Cryptocurrency Predictions</div>
+ <div className="adaba">
+      <div role="region" aria-labelledby="caption" tabindex="0">
+  <table className='linema' style={{borderCollapse: "collapse"}} >
+   
+    <thead>
+      <tr>
+        <th style={{width:"100px"}} className="emeka">Date</th>
+        <th style={{width:"180px"}}>Tipser</th>
+         <th style={{width:"100px"}}>Condition</th>
+        <th style={{width:"100px"}}>Entry</th>
+        <th style={{width:"100px"}}>Take Profit</th>
+        <th style={{width:"100px"}}>Stop Loss</th>
+        <th style={{width:"100px"}}></th>
+
+        
+                
+      </tr>
+    </thead>
+    <tbody>
+       
+       
+     
+      <tr  className="ADDTimeDbg ADDTimeDbg22">
+        <th className=" ADDTimeDbg">09/11/2023</th>
+        <td><img src="/img/create.png" alt="" className="tipImage"/></td>
+          <td>Long(buy)</td>
+        <td>1.678787</td>
+        <td>1.899765</td>
+        <td>1.456378</td>
+          <td><button className="tipPurc">view</button></td>
+       
+        
+      </tr>
+      <tr  className="ADDTimeDbg ADDTimeDbg22">
+        <th className="ADDTimeDbg">09/11/2023</th>
+        <td><img src="/img/create.png" alt="" className="tipImage"/></td>
+          <td>Short(buy)</td>
+        <td>1.678787</td>
+        <td>1.678787</td>
+        <td>1.678787</td>
+         <td><button className="tipPurc">view</button></td>
+       
+        
+      </tr>
+  
+        
+      
+   
+     
+    </tbody>
+  </table>
+</div>
+</div>
+    {/* <div className="seeMoreDivLink"><button className="SeeMoreInfo">See More</button></div> */}
+<div className="sportPetNe gapUp">Binary Predictions</div>
+ <div className="adaba">
+      <div role="region" aria-labelledby="caption" tabindex="0">
+  <table className='linema' style={{borderCollapse: "collapse"}} >
+   
+    <thead>
+      <tr>
+        <th style={{width:"25%"}}>Date</th>
+        <th style={{width:"25%"}}>Pair</th>
+         <th style={{width:"25%"}}>Condition</th>
+          <th style={{width:"25%"}}></th>
+       
+                
+      </tr>
+    </thead>
+    <tbody>
+       
+       
+     
+         <tr  className="ADDTimeDbg ADDTimeDbg22">
+        <th className=" ADDTimeDbg">09/11/2023</th>
+        <td>GBP/USD</td>
+          <td>Long(buy)</td>
+           <td>buy</td>
+        
+       
+        
+      </tr>
+      <tr  className="ADDTimeDbg ADDTimeDbg22">
+        <th className="ADDTimeDbg">09/11/2023</th>
+        <td>GBP/USD</td>
+          <td>Short(buy)</td>
+           <td>buy</td>
+       
+       
+        
+      </tr>
+  
+        
+      
+   
+     
+    </tbody>
+  </table>
+</div>
+</div>
+ <div className="seeMoreDivLink"><a href="/recent-predictions"><button className="SeeMoreInfo">See More</button></a></div>
+
+                </div>
+
+              
+               </div>
+
+
+
+                                <div className="fear">
               <div className="Rtme" >
            
            <div style={{padding:"0px 10px"}}>
@@ -1187,260 +1634,12 @@ useEffect(()=>{
            </div>
            </div>
            </div>
-
-          <div className="youpin">
-
-              
-                 <div className="topPrediction">Top Predictions</div>
-              <div className="UponT">
-                <div className="sportPetNe">Sports Predictions</div>
-               
-           <div className="adaba"> 
-       <div role="region" aria-labelledby="caption" tabindex="0">
-  <table   style={{borderCollapse: "collapse"}}  className='linema '>
-   
-    <thead>
-      <tr>
-        <th style={{width:"100px"}}>Date</th>
-        <th style={{width:"70px"}}>Time</th>
-         <th style={{width:"150px"}}>League</th>
-        <th style={{width:"180px"}}>Match</th>
-        <th style={{width:"180px"}}>Tips</th>
-        <th style={{width:"60px"}}>Odd</th>
-        <th style={{width:"80px"}}>Stake</th>
-        <th style={{width:"80px"}}>Profits</th>
-                
-      </tr>
-    </thead>
-    <tbody>
-       
-       
-      <tr  className="ADDTimeDbg " >
-        <th className=" ADDTimeDbg">09/11/2023</th>
-        <td>13:00pm</td>
-          <td>English</td>
-        <td>Eng v Ban Asia Cup T20</td>
-        <td>Ban to win</td>
-        <td>1.72</td>
-        <td>60.00 GBP</td>
-         <td>-60.00 GBP</td>
-        
-      </tr>
-        <tr  className="ADDTimeDbg " >
-        <th className=" ADDTimeDbg">09/11/2023</th>
-        <td>13:00pm</td>
-          <td>English</td>
-        <td>Eng v Ban Asia Cup T20</td>
-        <td>Ban to win</td>
-        <td>1.72</td>
-        <td>60.00 GBP</td>
-         <td>-60.00 GBP</td>
-        
-      </tr>
-      <tr  className="ADDTimeDbg ">
-        <th className="ADDTimeDbg">09/11/2023</th>
-        <td>13:00am</td>
-          <td>English</td>
-        <td>Eng v Ban Asia Cup T20</td>
-        <td>Ban to win</td>
-        <td>1.72</td>
-        <td>60.00 GBP</td>
-         <td>-60.00 GBP</td>
-        
-      </tr>
-  
-        
-      
-   
-     
-    </tbody>
-  </table>
-</div>
-</div> 
- <div className="seeMoreDivLink"><button className="SeeMoreInfo">See More</button></div>
-           <div className="sportPetNe gapUp">Forex Predictions</div>
-           <div className="adaba">
-      <div role="region" aria-labelledby="caption" tabindex="0">
-  <table className='linema' style={{borderCollapse: "collapse"}}>
-   
-    <thead>
-      <tr>
-        <th style={{width:"100px"}}>Date</th>
-        <th style={{width:"180px"}}>Pair</th>
-         <th style={{width:"100px"}}>Condition</th>
-        <th style={{width:"100px"}}>Entry</th>
-        <th style={{width:"100px"}}>Take Profit</th>
-        <th style={{width:"100px"}}>Stop Loss</th>
-        
-                
-      </tr>
-    </thead>
-    <tbody>
-       
-       
-      <tr  className="ADDTimeDbg ADDTimeDbg22">
-        <th className=" ADDTimeDbg">09/11/2023</th>
-        <td>GBP/USD</td>
-          <td>Long(buy)</td>
-        <td>1.678787</td>
-        <td>1.899765</td>
-        <td>1.456378</td>
-       
-        
-      </tr>
-      <tr  className="ADDTimeDbg ADDTimeDbg22">
-        <th className=" ADDTimeDbg">09/11/2023</th>
-        <td>GBP/USD</td>
-          <td>Long(buy)</td>
-        <td>1.678787</td>
-        <td>1.899765</td>
-        <td>1.456378</td>
-       
-        
-      </tr>
-      <tr  className="ADDTimeDbg ADDTimeDbg22">
-        <th className="ADDTimeDbg">09/11/2023</th>
-        <td>GBP/USD</td>
-          <td>Short(buy)</td>
-        <td>1.678787</td>
-        <td>1.678787</td>
-        <td>1.678787</td>
-       
-        
-      </tr>
-  
-        
-      
-   
-     
-    </tbody>
-  </table>
-</div>
-</div>
- <div className="seeMoreDivLink"><button className="SeeMoreInfo">See More</button></div>
-<div className="sportPetNe gapUp">Cryptocurrency Predictions</div>
- <div className="adaba">
-      <div role="region" aria-labelledby="caption" tabindex="0">
-  <table className='linema' style={{borderCollapse: "collapse"}} >
-   
-    <thead>
-      <tr>
-        <th style={{width:"100px"}} className="emeka">Date</th>
-        <th style={{width:"180px"}}>Pair</th>
-         <th style={{width:"100px"}}>Condition</th>
-        <th style={{width:"100px"}}>Entry</th>
-        <th style={{width:"100px"}}>Take Profit</th>
-        <th style={{width:"100px"}}>Stop Loss</th>
-        
-                
-      </tr>
-    </thead>
-    <tbody>
-       
-       
-      <tr  className="ADDTimeDbg ADDTimeDbg22">
-        <th className=" ADDTimeDbg">09/11/2023</th>
-        <td>GBP/USD</td>
-          <td>Long(buy)</td>
-        <td>1.678787</td>
-        <td>1.899765</td>
-        <td>1.456378</td>
-       
-        
-      </tr>
-      <tr  className="ADDTimeDbg ADDTimeDbg22">
-        <th className=" ADDTimeDbg">09/11/2023</th>
-        <td>GBP/USD</td>
-          <td>Long(buy)</td>
-        <td>1.678787</td>
-        <td>1.899765</td>
-        <td>1.456378</td>
-       
-        
-      </tr>
-      <tr  className="ADDTimeDbg ADDTimeDbg22">
-        <th className="ADDTimeDbg">09/11/2023</th>
-        <td>GBP/USD</td>
-          <td>Short(buy)</td>
-        <td>1.678787</td>
-        <td>1.678787</td>
-        <td>1.678787</td>
-       
-        
-      </tr>
-  
-        
-      
-   
-     
-    </tbody>
-  </table>
-</div>
-</div>
-    <div className="seeMoreDivLink"><button className="SeeMoreInfo">See More</button></div>
-<div className="sportPetNe gapUp">Binary Predictions</div>
- <div className="adaba">
-      <div role="region" aria-labelledby="caption" tabindex="0">
-  <table className='linema' style={{borderCollapse: "collapse"}} >
-   
-    <thead>
-      <tr>
-        <th style={{width:"33%"}}>Date</th>
-        <th style={{width:"33%"}}>Pair</th>
-         <th style={{width:"33%"}}>Condition</th>
-       
-                
-      </tr>
-    </thead>
-    <tbody>
-       
-       
-      <tr  className="ADDTimeDbg ADDTimeDbg22">
-        <th className=" ADDTimeDbg">09/11/2023</th>
-        <td>GBP/USD</td>
-          <td>Long(buy)</td>
-        
-       
-        
-      </tr>
-         <tr  className="ADDTimeDbg ADDTimeDbg22">
-        <th className=" ADDTimeDbg">09/11/2023</th>
-        <td>GBP/USD</td>
-          <td>Long(buy)</td>
-        
-       
-        
-      </tr>
-      <tr  className="ADDTimeDbg ADDTimeDbg22">
-        <th className="ADDTimeDbg">09/11/2023</th>
-        <td>GBP/USD</td>
-          <td>Short(buy)</td>
-       
-       
-        
-      </tr>
-  
-        
-      
-   
-     
-    </tbody>
-  </table>
-</div>
-</div>
- <div className="seeMoreDivLink"><button className="SeeMoreInfo">See More</button></div>
-
-                </div>
-
-              
-               </div>
                {/* </div> */}
                </div>
 
            </div>
 
-               {/*  */}
-               {/*  */}
+              
 
                
                </div>

@@ -60,19 +60,7 @@
 }
 
 
-.Sapap60 {
 
-  box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px, rgb(0 0 0 / 6%) 0px 2px 4px -1px;
-  border-bottom: 1px solid #2d1f74 !important;
-  background-color: #0d0740 !important;
-  position: fixed !important;
-  width: 100%;
-  /* opacity: 1; */
-  backdrop-filter: blur(239px);
-  top: 0;
-  /* left: 0; */
-  z-index: 8000;
-}
 
 .mobileH {
   display: flex;

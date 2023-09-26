@@ -8,16 +8,7 @@
 .AffDD{
     max-width: 1100px;
 }
-.Header_Div_New_Bg{
-    /* background-color:#0d0740; */
-    
-    position: absolute;
-    width: 100%;
-    top:0;
-    left:0;
-    /* right:0; */
-    z-index: 6000;
-}
+
 
 /* .AffliateBanner{
     margin: 46px auto 0 auto;

@@ -41,6 +41,8 @@ import TipsWallet from "./tipsterWallet";
 import ProfilePageFile from "./profilePage"
 import BecomeATipster from "./becomeATipster";
 import FindTipster from "./findTipster";
+import MarketPrediction from "./marketPrediction";
+import RecentPrediction from "./recentPrediction";
 import "./App.css"
 
 import DashboardHome from "./Dashboard/dashboardHome"
@@ -96,6 +98,8 @@ function App() {
           <Route path="/view-profile" element={<ProfilePageFile />} />
           <Route path="/become-tipster" element={<BecomeATipster />} />
           <Route path="/find-tipster" element={<FindTipster />} />
+          <Route path="/market-predictions" element={<MarketPrediction />} />
+          <Route path="/recent-predictions" element={<RecentPrediction />} />
          
          
          

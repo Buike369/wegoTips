@@ -115,7 +115,7 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-color: #1e2854;
+    background-color: #0d0740;
     padding: 7px;
     border: 1px solid #5455ad;
     position: absolute;
@@ -1040,6 +1040,24 @@ left:0px;
     border-bottom: 1px solid #2a2864;
     margin-top: 8px;
 }
+.tipImage{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    border:2px solid #7271b3;
+    padding:2px
+}
+.tipPurc{
+    border:0;
+    outline: 0;
+        padding: 5px 15px;
+        border: 1px solid #302b6e;
+        width: 60px;
+        color: #fff;
+        background-color: #120b4a;
+        border-radius: 7px;
+
+}
 
 .fit {
 
@@ -1106,6 +1124,10 @@ left:0px;
         height:400px;
         border-bottom-left-radius: 400px;
     }
+
+        .topPrediction{
+            font-size: 24px;
+        }
     .emWike{
         display:none;
     }

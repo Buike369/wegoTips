@@ -324,6 +324,18 @@ padding: 6px 25px;
     width:16.6%;
     text-align: center;
 }
+.Header_Div_New_Bg {
+
+
+    position: fixed;
+    /* width: 100%; */
+    top: 0;
+    left: 0;
+    right:0;
+    /* height:100px; */
+
+    z-index: 8000;
+}
 
 .Leaque{
     width:100%;
@@ -365,11 +377,21 @@ padding: 6px 25px;
         border-bottom: 1px solid #2a206b;
     
 }
+.sap60 {
 
-/* .ADDTimeDbg22 {
-    border-bottom: 1px solid gray !important;
-    margin-bottom: 10px !important;
-} */
+    /* box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px, rgb(0 0 0 / 6%) 0px 2px 4px -1px; */
+    border-bottom: 1px solid #2d1f74 !important;
+    background-color: #0d0740 !important;
+    /* position: fixed !important; */
+    /* width: 100%; */
+
+    /* backdrop-filter: blur(239px); */
+    /* top: 0;
+   
+    z-index: 8000; */
+}
+
+
 .ADDTimeDbg1{
     background-color: #1710548c;
         border-bottom: 1px solid #4b3c976b;

@@ -95,7 +95,7 @@ const Affiliate =()=>{
                 <div className="Rtme">
                     <p className="TheyAre">They are talking about us</p>
                      <div className="DonTake" style={{color: "#fff"}}>Don't Take Our Word For It.</div>
-                    <p className="seeWhat">See what my customers have to say.Find out what our clients are saying below</p>
+                    <p className="seeWhat">See what our customers have to say.Find out what our clients are saying below</p>
          {/* <div className="divUnder1"></div> */}
          <div className=" marginMu fadama ">
          <Carousel

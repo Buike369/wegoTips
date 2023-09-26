@@ -7,9 +7,9 @@ import axios from "axios"
 import { AuthContext } from './context/authContext';
 
 const Navbar= () => {
-
+      //  const [scrollY, setScrollY] = useState(10);
     const [register,setRegister] = useState(false)
-    const [feedBack,setFeedBack]=useState("")
+    const [feedBack4,setFeedBack4]=useState("")
     const {currentUser,logout,isPaid} = useContext(AuthContext);
     const tr = window.location.pathname;
 
@@ -31,28 +31,55 @@ const Navbar= () => {
 
     //    getSubscriptionPay()
 
-    //  })
-
+    //  })   window.onscroll =()=>{
+    
+  // window.onscroll=()=>{
+  //       scrollM()
+  //     }
     
 const locationBy = ( (tr === "/register") || (tr === "/login") || (tr === "/forgotpassword"))
 
-     const scrollF =()=>{
-          if(document.body.scrollTop > 140 || document.documentElement.scrollTop > 140){
-            setFeedBack('Sapap60')
-          }else{
-            setFeedBack(' ')
-          }
+    //  const scrollM =()=>{
+    //       if(document.body.scrollTop > 10 || document.documentElement.scrollTop > 10){
+    //         setFeedBack4('sap60')
+    //       }else{
+    //        setFeedBack4('')
+    //       }
+    //   }
+   
+
+// useEffect(()=>{
+//   window.onscroll=()=>{
+//          scrollM()
+//        }
+
+// },[])
+useEffect(() => {
+const handleScroll = () => {
+      if(window.scrollY > 10){
+
+        setFeedBack4('sap60')
+      }else{
+         setFeedBack4('')
       }
-    window.onscroll =()=>{
-        scrollF()
-      }
-    
+    };
+
+    // Attach the scroll event listener when the component mounts
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up the listener when the component unmounts
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [])
+   
 
   return (
     <div>
     <div >
       {tr === "/dashboard" ? "":
-        <div className={`"Header_Div_New_Bg"  ${feedBack}`} style={{borderBottom:tr ==="/register" || tr ==="/login"  ? "1px solid #312d72":""}}>
+     
+        <div className={`Header_Div_New_Bg ${feedBack4}` } style={{borderBottom:tr ==="/register" || tr ==="/login"  ? "1px solid #312d72":""}}>
           {/* <div style={{color:"#fff",textAlign:'center'}}> Please be patient, as some of our pages are undergoing updates for improved functionality.</div> */}
           <div >
           <div className="header">
@@ -148,6 +175,7 @@ const locationBy = ( (tr === "/register") || (tr === "/login") || (tr === "/forg
           </div>
           </div>
         </div>
+      
         }
 
 
