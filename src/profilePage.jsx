@@ -13,6 +13,7 @@ const [itemOffset, setItemOffset] = useState(0);
     const  tipDetails = [{name:"Tips",value:"2,633"},{name:"Wins",value:"1,740"},{name:"Profit",value:"+575.06"},{name:"Draw",value:"99"},{name:"Win Rate",value:"66%"},{name:"ROI",value:"21.8%"}]
 
  const card = ["sport","binary","forex","crytptocurrency","sport","binary","forex","crytptocurrency"]
+ const [tipsLevel,setTipsLever] = useState("ActiveTips")
 
  const endOffset = itemOffset + itemsPerPage;
   console.log(`Loading items from ${itemOffset} to ${endOffset}`);
@@ -111,9 +112,10 @@ const [itemOffset, setItemOffset] = useState(0);
         {(sectionChange === "tips") ? 
         <div>
             <div className='AmosD'>
-                <div><button className=' holder6 AC'>Active Tips</button></div>
-                   <div><button className=' holder6 AC'>Finished Tips</button></div>
+                <div><button className=' holder6 AC' onClick={()=>setTipsLever("ActiveTips")}>Active Tips</button></div>
+                   <div><button className=' holder6 AC' onClick={()=>setTipsLever("FinishTips")}>Finished Tips</button></div>
             </div>
+            {tipsLevel === "ActiveTips"? 
             <div>
             <p className='Oct'>28th Oct 2021</p>
             <div className='divDEDE'>
@@ -196,6 +198,98 @@ const [itemOffset, setItemOffset] = useState(0);
                   </div>
             </div>
             </div>
+            :""}
+
+             {tipsLevel === "FinishTips"? 
+            <div>
+            <p className='Oct'>28th Oct 2022</p>
+            <div className='divDEDE'>
+                <div>
+                    <div className='AmosD' >
+                        <img src="/img/fengland.png" alt="" />
+                        <p className='holder5'><span className="ENGLand">ENGLAND </span>Premier League, 15:30 GMT +0</p>
+                    </div>
+                    <p className='IPYT'>Middlesbrough FC vs Peterborough United</p>
+                   <p style={{marginTop:"6px"}}><span className='oddNum80'>Odd:1.5</span><span></span></p>
+                </div>
+                  <div className='ImageTip'>
+                    <div><button className='TipsActiveBu Bubuking'>Middlesbrough</button></div>
+                    <div><button className='TipsActiveBu'><div style={{display:"flex",alignItems:'center'}}><img src ="/img/good.png" alt=""  style={{width:"20px"}}/><span style={{marginLeft:"4px"}}>FT 1:1</span></div></button></div>
+                  </div>
+            </div>
+             <div className='divDEDE'>
+                <div>
+                    <div className='AmosD' >
+                        <img src="/img/fengland.png" alt="" />
+                        <p className='holder5'><span className="ENGLand">ENGLAND </span>Premier League, 15:30 GMT +0</p>
+                    </div>
+                    <p className='IPYT'>Middlesbrough FC vs Peterborough United</p>
+                 <p style={{marginTop:"6px"}}><span className='oddNum80'>Odd:1.5</span><span></span></p>
+                </div>
+                  <div className='ImageTip'>
+                    <div><button className='TipsActiveBu Bubuking'>Middlesbrough</button></div>
+                    <div><button className='TipsActiveBu'><div style={{display:"flex",alignItems:'center'}}><img src ="/img/fail.png" alt=""  style={{width:"20px"}}/><span style={{marginLeft:"4px"}}>FT 1:1</span></div></button></div>
+                  </div>
+            </div>
+             <div className='divDEDE'>
+                <div>
+                    <div className='AmosD' >
+                        <img src="/img/fengland.png" alt="" />
+                        <p className='holder5'><span className="ENGLand">ENGLAND </span>Premier League, 15:30 GMT +0</p>
+                    </div>
+                    <p className='IPYT'>Middlesbrough FC vs Peterborough United</p>
+                 <p style={{marginTop:"6px"}}><span className='oddNum80'>Odd:1.5</span><span></span></p>
+                </div>
+                  <div className='ImageTip'>
+                    <div><button className='TipsActiveBu Bubuking'>Middlesbrough</button></div>
+                    <div><button className='TipsActiveBu'><div style={{display:"flex",alignItems:'center'}}><img src ="/img/good.png" alt=""  style={{width:"20px"}}/><span style={{marginLeft:"4px"}}>FT 1:1</span></div></button></div>
+                  </div>
+            </div>
+             <p className='Oct'>28th Oct 2021</p>
+            <div className='divDEDE'>
+                <div>
+                    <div className='AmosD' >
+                        <img src="/img/fengland.png" alt="" />
+                        <p className='holder5'><span className="ENGLand">ENGLAND </span>Premier League, 15:30 GMT +0</p>
+                    </div>
+                    <p className='IPYT'>Middlesbrough FC vs Peterborough United</p>
+                 <p style={{marginTop:"6px"}}><span className='oddNum80'>Odd:1.5</span><span></span></p>
+                </div>
+                  <div className='ImageTip'>
+                    <div><button className='TipsActiveBu Bubuking'>Middlesbrough</button></div>
+                    <div><button className='TipsActiveBu'><div style={{display:"flex",alignItems:'center'}}><img src ="/img/fail.png" alt=""  style={{width:"20px"}}/><span style={{marginLeft:"4px"}}>FT 1:1</span></div></button></div>
+                  </div>
+            </div>
+             <div className='divDEDE'>
+                <div>
+                    <div className='AmosD' >
+                        <img src="/img/fengland.png" alt="" />
+                        <p className='holder5'><span className="ENGLand">ENGLAND </span>Premier League, 15:30 GMT +0</p>
+                    </div>
+                    <p className='IPYT'>Middlesbrough FC vs Peterborough United</p>
+                 <p style={{marginTop:"6px"}}><span className='oddNum80'>Odd:1.5</span><span></span></p>
+                </div>
+                  <div className='ImageTip'>
+                    <div><button className='TipsActiveBu Bubuking'>Middlesbrough</button></div>
+                    <div><button className='TipsActiveBu'><div style={{display:"flex",alignItems:'center'}}><img src ="/img/good.png" alt=""  style={{width:"20px"}}/><span style={{marginLeft:"4px"}}>FT 1:1</span></div></button></div>
+                  </div>
+            </div>
+             <div className='divDEDE'>
+                <div>
+                    <div className='AmosD' >
+                        <img src="/img/fengland.png" alt="" />
+                        <p className='holder5'><span className="ENGLand">ENGLAND </span>Premier League, 15:30 GMT +0</p>
+                    </div>
+                    <p className='IPYT'>Middlesbrough FC vs Peterborough United</p>
+                 <p style={{marginTop:"6px"}}><span className='oddNum80'>Odd:1.5</span><span></span></p>
+                </div>
+                  <div className='ImageTip'>
+                    <div><button className='TipsActiveBu Bubuking'>Middlesbrough</button></div>
+                    <div><button className='TipsActiveBu'><div style={{display:"flex",alignItems:'center'}}><img src ="/img/fail.png" alt=""  style={{width:"20px"}}/><span style={{marginLeft:"4px"}}>FT 1:1</span></div></button></div>
+                  </div>
+            </div>
+            </div>
+            :""}
         </div> 
         :""}
 

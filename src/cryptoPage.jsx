@@ -79,7 +79,7 @@ const CryptoPage = () => {
     }
 
       useEffect(()=>{
-    AOS.init();
+    AOS.init({once: true});
   },[])
 
   return (
@@ -94,7 +94,7 @@ const CryptoPage = () => {
                        <p className='everyWhere'>Buy low and sell high</p>
                        <div className='football'>BTC,ETH,TRB,USDT,USDC etc.</div>
                     </div>
-                     <div className="grace"><img src="/img/affiliate-banner.png" className="gracePic" alt="affiliate_banner"/></div>
+                     <div className="grace"><img src="/img/upgo3.svg" className="gracePic" alt="affiliate_banner"/></div>
                      <img src="/img/StarsME.svg" className="headerAffiliateI" alt="affiliate_banner"/>
                       <img src="/img/StarsME.svg" className="headerAffiliate2" alt="affiliate_banner"/>
                  </div>

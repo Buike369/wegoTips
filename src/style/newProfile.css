@@ -145,10 +145,22 @@
     margin-bottom: 10px;
 
 }
+.Bubuking{
+ font-weight: 700;
+ font-size: 16px;
+}
+
+.oddNum80{
+    color:#7f829d;
+  
+    font-size: 16px;
+    font-weight: 600;
+}
 
 .ImageTip {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 15px;
 }
 
@@ -370,6 +382,11 @@
     font-size: 14px;
     font-weight: 500;
     margin-right: 10px;
+    cursor:pointer;
+}
+.AC:hover{
+    background-color: #221c5a;
+    color:#fff;
 }
 .tipsterProfile{
     margin-bottom: 10px;

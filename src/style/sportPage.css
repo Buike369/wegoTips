@@ -664,6 +664,11 @@ margin-right: 8px;
         position: relative;
         overflow-x: scroll;
     }
+
+
+.rengma::-webkit-scrollbar {
+    display: none;
+}    
     .NMPM{
         display:none;
     }

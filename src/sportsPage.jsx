@@ -97,7 +97,7 @@ const SportsPage = () => {
                        <p className='everyWhere'>Everyday is a winning day</p>
                        <div className='football'>Football, Tennis, Basketball,Running etc.</div>
                     </div>
-                     <div className="grace"><img src="/img/affiliate-banner.png" className="gracePic" alt="affiliate_banner"/></div>
+                     <div className="grace"><img src="/img/upgo1.svg" className="gracePic" alt="affiliate_banner"/></div>
                      <img src="/img/StarsME.svg" className="headerAffiliateI" alt="affiliate_banner"/>
                       <img src="/img/StarsME.svg" className="headerAffiliate2" alt="affiliate_banner"/>
                  </div>

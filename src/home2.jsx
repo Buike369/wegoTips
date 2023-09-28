@@ -1155,6 +1155,7 @@ useEffect(()=>{
         <th style={{width:"60px"}}>Odd</th>
         <th style={{width:"80px"}}>Stake</th>
         <th style={{width:"80px"}}>Results</th>
+           <th style={{width:"80px"}}>Tipster</th>
 
                 
       </tr>
@@ -1171,7 +1172,8 @@ useEffect(()=>{
         <td>Ban to win</td>
         <td>1.72</td>
         <td>+30.45</td>
-         <td>G icon</td>
+         <td><img src="/img/good.png" alt="" /></td>
+         <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
     
         
       </tr>
@@ -1183,7 +1185,8 @@ useEffect(()=>{
         <td>Ban to win</td>
         <td>1.72</td>
         <td>+45.50</td>
-         <td>G icon</td>
+         <td><img src="/img/good.png" alt="" /></td>
+         <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
         
       </tr>
   
@@ -1203,11 +1206,13 @@ useEffect(()=>{
     <thead>
       <tr>
         <th style={{width:"100px"}}>Date</th>
-        <th style={{width:"180px"}}>Pair</th>
+        <th style={{width:"100px"}}>Pair</th>
          <th style={{width:"100px"}}>Condition</th>
-        <th style={{width:"100px"}}>Entry</th>
-        <th style={{width:"100px"}}>Take Profit</th>
-        <th style={{width:"100px"}}>Stop Loss</th>
+        <th style={{width:"80px"}}>Entry</th>
+        <th style={{width:"80px"}}>Take Profit</th>
+        <th style={{width:"80px"}}>Stop Loss</th>
+         <th style={{width:"80px"}}>Result</th>
+         <th style={{width:"80px"}}>Tipster</th>
         
                 
       </tr>
@@ -1223,6 +1228,8 @@ useEffect(()=>{
         <td>1.678787</td>
         <td>1.899765</td>
         <td>1.456378</td>
+         <td><img src="/img/good.png" alt="" /></td>
+        <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
        
         
       </tr>
@@ -1233,6 +1240,8 @@ useEffect(()=>{
         <td>1.678787</td>
         <td>1.678787</td>
         <td>1.678787</td>
+         <td><img src="/img/good.png" alt="" /></td>
+        <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
        
         
       </tr>
@@ -1254,11 +1263,14 @@ useEffect(()=>{
     <thead>
       <tr>
         <th style={{width:"100px"}} className="emeka">Date</th>
-        <th style={{width:"180px"}}>Pair</th>
+        <th style={{width:"100px"}}>Pair</th>
          <th style={{width:"100px"}}>Condition</th>
-        <th style={{width:"100px"}}>Entry</th>
-        <th style={{width:"100px"}}>Take Profit</th>
-        <th style={{width:"100px"}}>Stop Loss</th>
+        <th style={{width:"80px"}}>Entry</th>
+        <th style={{width:"80px"}}>Take Profit</th>
+        <th style={{width:"80px"}}>Stop Loss</th>
+          <th style={{width:"80px"}}>Result</th>
+         
+        <th style={{width:"80px"}}>Tipster</th>
         
                 
       </tr>
@@ -1274,6 +1286,8 @@ useEffect(()=>{
         <td>1.678787</td>
         <td>1.899765</td>
         <td>1.456378</td>
+         <td><img src="/img/good.png" alt="" /></td>
+        <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
        
         
       </tr>
@@ -1284,6 +1298,8 @@ useEffect(()=>{
         <td>1.678787</td>
         <td>1.678787</td>
         <td>1.678787</td>
+         <td><img src="/img/good.png" alt="" /></td>
+        <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
        
         
       </tr>
@@ -1304,9 +1320,11 @@ useEffect(()=>{
    
     <thead>
       <tr>
-        <th style={{width:"33%"}}>Date</th>
-        <th style={{width:"33%"}}>Pair</th>
-         <th style={{width:"33%"}}>Condition</th>
+        <th style={{width:"80px"}}>Date</th>
+        <th style={{width:"80px"}}>Pair</th>
+         <th style={{width:"80px"}}>Condition</th>
+          <th style={{width:"80px"}}>Result</th>
+         <th style={{width:"80px"}}>Tipster</th>
        
                 
       </tr>
@@ -1319,6 +1337,8 @@ useEffect(()=>{
         <th className=" ADDTimeDbg">09/11/2023</th>
         <td>GBP/USD</td>
           <td>Long(buy)</td>
+          <td><img src="/img/good.png" alt="" /></td>
+           <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
         
        
         
@@ -1327,6 +1347,8 @@ useEffect(()=>{
         <th className="ADDTimeDbg">09/11/2023</th>
         <td>GBP/USD</td>
           <td>Short(buy)</td>
+          <td><img src="/img/good.png" alt="" /></td>
+           <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
        
        
         
@@ -1363,14 +1385,14 @@ useEffect(()=>{
     <thead>
       <tr>
         <th style={{width:"100px"}}>Date</th>
-        <th style={{width:"80px"}}>Tipster</th>
+        
         <th style={{width:"80px"}}>Time</th>
          <th style={{width:"150px"}}>League</th>
         <th style={{width:"180px"}}>Match</th>
         <th style={{width:"80px"}}>Odd</th>
         <th style={{width:"80px"}}>Stake</th>
         <th style={{width:"80px"}}>Yeild</th>
-        <th style={{width:"80px"}}></th>
+        <th style={{width:"80px"}}>Tipster</th>
                 
       </tr>
     </thead>
@@ -1382,26 +1404,26 @@ useEffect(()=>{
     
         <tr  className="ADDTimeDbg " >
         <th className=" ADDTimeDbg">09/11/2023</th>
-         <td><img src="/img/create.png" alt="" className="tipImage"/></td>
+        
         <td>13:00pm</td>
           <td>English</td>
         <td>Eng v Ban Asia Cup T20</td>
         <td>1.72</td>
         <td>+20.45</td>
         <td>+3%</td>
-          <td><button className="tipPurc">view</button></td>
+         <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
         
       </tr>
       <tr  className="ADDTimeDbg ">
         <th className="ADDTimeDbg">09/11/2023</th>
-         <td><img src="/img/create.png" alt="" className="tipImage"/></td>
+        
         <td>13:00am</td>
           <td>English</td>
         <td>Eng v Ban Asia Cup T20</td>
         <td>1.72</td>
         <td>+20.25</td>
         <td>+4.5%</td>
-         <td><button className="tipPurc">view</button></td>
+         <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
         
       </tr>
   
@@ -1422,12 +1444,12 @@ useEffect(()=>{
     <thead>
       <tr>
         <th style={{width:"100px"}}>Date</th>
-        <th style={{width:"180px"}}>Tipster</th>
+       
          <th style={{width:"100px"}}>Condition</th>
         <th style={{width:"100px"}}>Entry</th>
         <th style={{width:"100px"}}>Take Profit</th>
         <th style={{width:"100px"}}>Stop Loss</th>
-        <th style={{width:"100px"}}></th>
+        <th style={{width:"100px"}}>Tipster</th>
         
         
                 
@@ -1438,24 +1460,24 @@ useEffect(()=>{
        
       <tr  className="ADDTimeDbg ADDTimeDbg22">
         <th className=" ADDTimeDbg">09/11/2023</th>
-        <td><img src="/img/create.png" alt="" className="tipImage"/></td>
+        
           <td>Long(buy)</td>
         <td>1.678787</td>
         <td>1.899765</td>
         <td>1.456378</td>
-         <td><button className="tipPurc">view</button></td>
+         <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
        
         
       </tr>
    
       <tr  className="ADDTimeDbg ADDTimeDbg22">
         <th className="ADDTimeDbg">09/11/2023</th>
-        <td><img src="/img/create.png" alt="" className="tipImage"/></td>
+        
           <td>Short(buy)</td>
         <td>1.678787</td>
         <td>1.678787</td>
         <td>1.678787</td>
-         <td><button className="tipPurc">view</button></td>
+        <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
         
        
         
@@ -1478,12 +1500,12 @@ useEffect(()=>{
     <thead>
       <tr>
         <th style={{width:"100px"}} className="emeka">Date</th>
-        <th style={{width:"180px"}}>Tipser</th>
+       
          <th style={{width:"100px"}}>Condition</th>
         <th style={{width:"100px"}}>Entry</th>
         <th style={{width:"100px"}}>Take Profit</th>
         <th style={{width:"100px"}}>Stop Loss</th>
-        <th style={{width:"100px"}}></th>
+        <th style={{width:"100px"}}>Tipster</th>
 
         
                 
@@ -1495,23 +1517,25 @@ useEffect(()=>{
      
       <tr  className="ADDTimeDbg ADDTimeDbg22">
         <th className=" ADDTimeDbg">09/11/2023</th>
-        <td><img src="/img/create.png" alt="" className="tipImage"/></td>
+       
           <td>Long(buy)</td>
         <td>1.678787</td>
         <td>1.899765</td>
         <td>1.456378</td>
-          <td><button className="tipPurc">view</button></td>
+       
+          <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
        
         
       </tr>
       <tr  className="ADDTimeDbg ADDTimeDbg22">
         <th className="ADDTimeDbg">09/11/2023</th>
-        <td><img src="/img/create.png" alt="" className="tipImage"/></td>
+        
           <td>Short(buy)</td>
         <td>1.678787</td>
         <td>1.678787</td>
         <td>1.678787</td>
-         <td><button className="tipPurc">view</button></td>
+      
+        <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
        
         
       </tr>
@@ -1532,10 +1556,11 @@ useEffect(()=>{
    
     <thead>
       <tr>
-        <th style={{width:"25%"}}>Date</th>
-        <th style={{width:"25%"}}>Pair</th>
-         <th style={{width:"25%"}}>Condition</th>
-          <th style={{width:"25%"}}></th>
+        <th style={{width:"100px"}}>Date</th>
+       
+         <th style={{width:"100px"}}>Condition</th>
+
+           <th style={{width:"70px"}}>Tipster</th>
        
                 
       </tr>
@@ -1546,18 +1571,18 @@ useEffect(()=>{
      
          <tr  className="ADDTimeDbg ADDTimeDbg22">
         <th className=" ADDTimeDbg">09/11/2023</th>
-        <td>GBP/USD</td>
+       
           <td>Long(buy)</td>
-           <td>buy</td>
+           <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
         
        
         
       </tr>
       <tr  className="ADDTimeDbg ADDTimeDbg22">
         <th className="ADDTimeDbg">09/11/2023</th>
-        <td>GBP/USD</td>
+       
           <td>Short(buy)</td>
-           <td>buy</td>
+           <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
        
        
         
