@@ -4,6 +4,8 @@ import "./style/mobileheader.css"
 import "./style/home.css";
 import { Link} from "react-router-dom";
 import axios from "axios"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faBell} from '@fortawesome/free-solid-svg-icons'
 import { AuthContext } from './context/authContext';
 
 const Navbar= () => {
@@ -141,6 +143,7 @@ const handleScroll = () => {
             </div>
 
             <div>
+             <FontAwesomeIcon icon={faBell} className="bell" />
               {currentUser ? (
               <div>
               <ul>

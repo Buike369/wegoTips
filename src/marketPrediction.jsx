@@ -32,7 +32,7 @@ const [itemOffset, setItemOffset] = useState(0);
 
          <div >
           <div className='allNewTips MAA'>
-
+             <p style={{color:"#fff",textAlign:"center"}}> Page on development</p>
             <div className="youpin">
 
               

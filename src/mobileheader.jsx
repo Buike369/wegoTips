@@ -4,7 +4,7 @@ import "./style/mobileheader.css"
 import "./style/footer.css"
 import { Link,NavLink} from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleDown,faAngleUp} from '@fortawesome/free-solid-svg-icons'
+import { faAngleDown,faAngleUp,faBell} from '@fortawesome/free-solid-svg-icons'
 import { AuthContext } from './context/authContext';
 
 const MobileHeader = () => {
@@ -71,8 +71,12 @@ const MobileHeader = () => {
                 </a>
         </div>
          {(tr === "/register") || (tr === "/login") || (tr === "/otp") || (tr === "/resetpassword/:id") || (tr === "/forgotpassword") || (tr === "/referral/:id") ? " " :
+         <>
+         <div style={{display:'flex',alignItems:'center',}}>
+          <span><FontAwesomeIcon icon={faBell} className="bell" /></span>
         <div>
-       
+
+     
   
  <button className={open1?"menu bg":"opened bg"} onClick={ open1?seOpen : seOpen4} aria-label="Main Menu">
       <svg width="50" height="50" viewBox="0 0 100 100">
@@ -82,6 +86,8 @@ const MobileHeader = () => {
       </svg>
     </button>
         </div>
+        </div>
+        </>
 }
 
 

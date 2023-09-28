@@ -61,11 +61,21 @@
 }
 
 .Footer_list_space a {
-    color: #c7c3c3;
+    color: #7b7b8f;
     text-decoration: none;
 }
 
 .Footer_list_space a:hover {
+    color: #fff;
+}
+
+.FooterColor{
+    color:#7b7b8f
+}
+.footerHomeLink{
+    color: #7b7b8f;
+}
+.footerHomeLink:hover {
     color: #fff;
 }
 
@@ -92,15 +102,21 @@
     font-size: 22px;
     /* margin-right: 10px; */
 }
-
+.DesktopFooter li a{
+   font-size: 14px;
+   font-weight: 100;
+}
 .visitUs {
-    color: #c6b6d2
+    color: #7b7b8f;
 }
 
 .MobileFooter {
     display: none;
 }
-
+.MobileFooter li a {
+    font-size: 14px;
+    font-weight: 100;
+}
 @media (max-width:1024px) {
     .Footer_Div {
         max-width: 768px;

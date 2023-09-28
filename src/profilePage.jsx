@@ -65,7 +65,7 @@ const [itemOffset, setItemOffset] = useState(0);
                     </div>
                 </div>
                 <div className='AmosD holder8' >
-                    <div><button className='holder6 holder5 Um'>Subscribe From </button></div> 
+                    <div><button className='holder6 holder5 Um'>Subscribe From <span>$10</span> </button></div> 
                        <div><button  className='holder6 holder5' style={{color:"gold"}}>Follow</button></div>
                 </div>
             </div>

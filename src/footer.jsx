@@ -68,9 +68,9 @@ const Footer =()=>{
                      <ul>
                           <li className="Footer_header_title">CONTACT US</li>
                           {/* <li className="Footer_list_space"><a href="#">Terms & Conditions</a></li> */}
-                          <li className="Footer_list_space"><p> WhatsApp:<a href="https://wa.me/08059279660">+234 805 927 9660</a></p></li>
-                          <li className="Footer_list_space"><p>Email Us: <a href="mailto:service@earnars.com">service@earnars.com</a></p></li>
-                          <li className="Footer_list_space"><p>Advert: <a href="mailto:advert@earnars.com">advert@earnars.com</a></p></li>
+                          <li className="Footer_list_space"><p className="FooterColor"> WhatsApp:<a href="https://wa.me/08059279660">+234 805 927 9660</a></p></li>
+                          <li className="Footer_list_space"><p className="FooterColor">Email Us: <a href="mailto:service@earnars.com">service@earnars.com</a></p></li>
+                          <li className="Footer_list_space"><p className="FooterColor">Advert: <a href="mailto:advert@earnars.com">advert@earnars.com</a></p></li>
                       </ul>
                   </div>
                   <div>
@@ -90,7 +90,7 @@ const Footer =()=>{
                   </div>
               </div>
               
-              <div className="Footer_Copyright">© 2023 Earnars. All rights reserved.</div>
+              <div className="Footer_Copyright">© 2023 <a href="/" className="footerHomeLink">Earnars</a>. All rights reserved.</div>
           </div>
         </div>
     )
