@@ -143,7 +143,7 @@ const handleScroll = () => {
             </div>
 
             <div>
-             <FontAwesomeIcon icon={faBell} className="bell" />
+            { tr === "/user-dashboard" ? <FontAwesomeIcon icon={faBell} className="bell" /> :""}  
               {currentUser ? (
               <div>
               <ul>
@@ -154,7 +154,7 @@ const handleScroll = () => {
                       <li className="paulmy_man">{currentUser?.username} </li>
                       <li className="Email_Like"><div className="Email_Like2">{currentUser?.email}</div></li>
                       <li className="paulmy_man">ID:00000{currentUser?.id}</li>
-                      <a href="/wallet" className="FeedDiv"><li className="LogOutDiv_UN">My Wallet</li></a>
+                      <a href="/user-dashboard" className="FeedDiv"><li className="LogOutDiv_UN">Dashboard</li></a>
                       <a href="/profile" className="FeedDiv"><li className="LogOutDiv_UN">My Profile</li></a>
                       {isPaid === 1? <a href="/tip" className="FeedDiv"><li className="LogOutDiv_UN">My Tips(Premium)</li></a> :<div onClick={()=>setRegister(!register)} className="FeedDiv" ><li className="LogOutDiv_UN">My Tips(Subscribe)</li></div>}
                      

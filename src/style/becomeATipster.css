@@ -247,12 +247,30 @@
     margin-top: 10px;
     min-height: 70px;
 }
-
+.from1{
+    display: flex;
+    align-items: center;
+}
+.from2{
+    width:50%;
+    margin-bottom: 8px;
+}
+.from3{
+    margin-bottom: 8px;
+    color:#848291
+}
+.from4{
+    margin-left:6px ;
+    color:#b5b1d9;
+    font-size: 14px;
+    font-weight: 300;
+}
 .itWell {
     text-align: center;
     padding: 5px 10px;
     font-size: 15px;
-    color: #929295
+    color: #929295;
+    font-weight: 300;
 }
 
 .beb {

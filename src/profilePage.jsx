@@ -336,13 +336,9 @@ const [itemOffset, setItemOffset] = useState(0);
             <p className='ROIL'>Win Rate</p>
             </div>
           </div>
-           <div className="findingPP">
-            <div className="followerp daysB"> <span className='textPre'>1</span> <sub>day</sub></div>
-             <div className="followerp daysB"><span className='textPre'>7</span> <sub>days</sub></div>
-            <div className="followerp daysB"><span className='textPre'>30</span> <sub>days</sub></div>
-          </div>
+         
 
-          <div className="houseRuMM">View Profile</div>
+          <div className="houseRuMM MMM">View Profile</div>
         </div>
                        ))}
                        </div>
@@ -407,13 +403,9 @@ const [itemOffset, setItemOffset] = useState(0);
             <p className='ROIL'>Win Rate</p>
             </div>
           </div>
-           <div className="findingPP">
-            <div className="followerp daysB"> <span className='textPre'>1</span> <sub>day</sub></div>
-             <div className="followerp daysB"><span className='textPre'>7</span> <sub>days</sub></div>
-            <div className="followerp daysB"><span className='textPre'>30</span> <sub>days</sub></div>
-          </div>
+         
 
-          <div className="houseRuMM">View Profile</div>
+          <div className="houseRuMM MMM" >View Profile</div>
         </div>
                        ))}
                        </div>

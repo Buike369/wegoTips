@@ -32,7 +32,7 @@ import ResetPassword from "./resetPassword"
 import UsersWallet from "./tipsWallet"
 import { AuthContext } from './context/authContext';
 import AllTips from "./allTips"
-
+import UserDashBoard from "./userDashboard"
 
 import Admin from "./admin"
 import AdminLogin from "./adminLogin"
@@ -58,7 +58,7 @@ function App() {
   return (
     <div className="kingsley_the_coder">
        <BrowserRouter>
-        {tr === "/dashboard" ? " " : <> <Navbar/>
+        {tr === "/dashboard" || tr === "/user-dashboard" ? " " : <> <Navbar/>
        <Mobile/></>}
     
         <Routes>
@@ -100,6 +100,7 @@ function App() {
           <Route path="/find-tipster" element={<FindTipster />} />
           <Route path="/market-predictions" element={<MarketPrediction />} />
           <Route path="/recent-predictions" element={<RecentPrediction />} />
+          {currentUser ? <Route path="/user-dashboard" element={<UserDashBoard />} /> : <Route path="/" element={<SampleHome />} />}
          
          
          

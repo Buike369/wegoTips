@@ -373,6 +373,7 @@ font-size: 16px;
     border: 1px solid #423f74;
     margin-bottom: 30px;
     border-radius: 10px;
+
 }
 
 .predictnB thead,
@@ -457,13 +458,14 @@ font-size: 16px;
     font-size: 16px;
     font-weight: 400;
     z-index: 1;
-
     background: #fff;
     border-radius: 26px;
-    box-shadow: 0 2px 8px rgb(18 14 56 / 32%);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    color: #000;
+    background-image: linear-gradient(to bottom right, #302876, #100b3c);
+        box-shadow: rgb(10 11 54 / 31%) 0px 15px 25px,
+            rgb(13 7 68) 0px 5px 10px;
+    /* backdrop-filter: blur(5px); */
+    /* -webkit-backdrop-filter: blur(5px); */
+    color:gold;
     cursor: pointer;
 
 }
@@ -685,6 +687,7 @@ font-size: 16px;
     max-width:1130px;
     margin: 0 auto;
     padding: 20px 20px;
+      
 }
 
 .lio {

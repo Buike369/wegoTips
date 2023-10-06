@@ -74,6 +74,7 @@
 }
 .footerHomeLink{
     color: #7b7b8f;
+    text-decoration: none;
 }
 .footerHomeLink:hover {
     color: #fff;

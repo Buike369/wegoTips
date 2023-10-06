@@ -51,6 +51,64 @@
         position:relative;
         z-index: 6;
 }
+.ghFi{
+        
+            margin-top: 10px !important;
+            padding:30px  15px 100px 15px;
+            width:100%;
+            max-width: 1150px;
+            margin: 10px auto 10px  auto
+            
+}
+.ghFii1{
+    color:#fff;
+}
+.ghFii12{
+    min-height: 100px;
+}
+.goods{
+    font-size: 38px !important;
+}
+.goods1{
+    position: relative;
+}
+.goods2{
+    position: relative;
+    z-index: 5;
+}
+.goods3{
+position: absolute;
+    width: 150px;
+    /* height: 402px; */
+    background-color: #362d83;
+    filter: blur(190px);
+   
+    top: 0;
+    bottom: 0;
+}
+.goods4{
+    left: 0;
+}
+.goods5{
+    right: 0;
+}
+.goods6{
+    width:100%;
+    max-width:1150px;
+  
+    margin: 0 auto;
+}
+.ghFii13{
+    width: 140px;
+        height: 140px;
+        margin: 0 auto;
+        background: #231b63;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+}
 .homeSpan{
     color:gray
 }
@@ -61,12 +119,12 @@
     color:gold;
 }
 .inviteFr{
-    font-size: 52px;
-    font-weight: 700;
-    color:#fff;
-        line-height: 74.1px;
-        width:100%;
-        max-width: 900px;
+    font-size: 42px;
+        font-weight: 700;
+        color: #fff;
+        line-height: 50.1px;
+        width: 100%;
+        max-width: 620px;
         margin:0 auto;
         text-align: center;
         margin-bottom: 16px;
@@ -501,6 +559,9 @@
         padding-bottom: 20px;
 
     }
+    .goods{
+        font-size: 32px !important;
+    }
     .papag3{
     left: -33%;
         bottom: 24%;
@@ -561,7 +622,7 @@
  }
 .inviteFr {
     line-height: 45.1px;
-    font-size: 40px;
+    font-size: 34px;
 }
   
     .AffliateBanner {

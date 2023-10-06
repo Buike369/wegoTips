@@ -114,9 +114,9 @@
             background-color: #4e4789 !important;
 }
 .weNeed1{
-border: 1px solid #19194e;
-    background-color: #0d0740;
-    border-radius: 8px;
+    border: 1px solid #51499f;
+        background-color: #221a62;
+        border-radius: 10px;
     padding:15px 15px;
     margin-top: 15px;
 }
@@ -277,7 +277,7 @@ td{
         margin-bottom: 55px;
     }
     .PrmiumBanner{
-        margin:-40px auto 0 auto;
+        margin:2px auto 0 auto;
         width:100%;
         max-width: 1500px;
         padding-bottom: 10px;

@@ -43,6 +43,7 @@
 .allNewTips70{
     background-color: #171054;
     position:relative;
+    z-index: 6;
 }
 .MAA{
     padding-top: 100px !important;

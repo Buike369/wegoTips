@@ -1,4 +1,4 @@
-import React,{useState}  from 'react'
+import React, {useState}  from 'react'
 import "./style/allTips.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPaperPlane} from '@fortawesome/free-solid-svg-icons'
