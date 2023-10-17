@@ -33,10 +33,12 @@ const [itemOffset, setItemOffset] = useState(0);
          <div >
           <div className='allNewTips MAA'>
              <p style={{color:"#fff",textAlign:"center"}}> Page on development</p>
-            <div className="youpin">
+             <div className="containerT">
+
+               <div className="youpin">
 
               
-                 <div className="topPrediction">Predictions Breakdown</div>
+                 <div className="topPrediction">Top Predictions</div>
               <div className="UponT">
                 <div className="sportPetNe">Sports Predictions</div>
                
@@ -47,15 +49,15 @@ const [itemOffset, setItemOffset] = useState(0);
     <thead>
       <tr>
         <th style={{width:"100px"}}>Date</th>
-          <th style={{width:"80px"}}>Tipster</th>
         <th style={{width:"70px"}}>Time</th>
          <th style={{width:"150px"}}>League</th>
         <th style={{width:"180px"}}>Match</th>
         <th style={{width:"180px"}}>Tips</th>
         <th style={{width:"60px"}}>Odd</th>
         <th style={{width:"80px"}}>Stake</th>
-        <th style={{width:"80px"}}>Profits</th>
-        <th style={{width:"80px"}}>Result</th>
+        <th style={{width:"80px"}}>Results</th>
+           <th style={{width:"80px"}}>Tipster</th>
+
                 
       </tr>
     </thead>
@@ -63,70 +65,65 @@ const [itemOffset, setItemOffset] = useState(0);
        
        
      
-      
-       <tr  className="ADDTimeDbg " >
-        <th className=" ADDTimeDbg">09/11/2023</th>
-           <td>icon</td>
-        <td>13:00pm</td>
-          <td>English</td>
-        <td>Eng v Ban Asia Cup T20</td>
-        <td>Ban to win</td>
-        <td>1.72</td>
-        <td>+20.45</td>
-         <td>+4%</td>
-            <td>icon</td>
-        
-      </tr>
-       <tr  className="ADDTimeDbg " >
-        <th className=" ADDTimeDbg">09/11/2023</th>
-           <td>icon</td>
-        <td>13:00pm</td>
-          <td>English</td>
-        <td>Eng v Ban Asia Cup T20</td>
-        <td>Ban to win</td>
-        <td>1.72</td>
-        <td>+40.50</td>
-         <td>-3.5%</td>
-        <td>icon</td>
-        
-      </tr>
-       <tr  className="ADDTimeDbg " >
-        <th className=" ADDTimeDbg">09/11/2023</th>
-           <td>icon</td>
-        <td>13:00pm</td>
-          <td>English</td>
-        <td>Eng v Ban Asia Cup T20</td>
-        <td>Ban to win</td>
-        <td>1.72</td>
-        <td>+20.60</td>
-         <td>+4%</td>
-            <td>icon</td>
-        
-      </tr>
         <tr  className="ADDTimeDbg " >
         <th className=" ADDTimeDbg">09/11/2023</th>
-           <td>icon</td>
         <td>13:00pm</td>
           <td>English</td>
         <td>Eng v Ban Asia Cup T20</td>
         <td>Ban to win</td>
         <td>1.72</td>
-        <td>+6.25</td>
-         <td>-4%</td>
-            <td>icon</td>
+        <td>+30.45</td>
+         <td><img src="/img/good.png" alt="" /></td>
+         <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
+    
         
       </tr>
       <tr  className="ADDTimeDbg ">
         <th className="ADDTimeDbg">09/11/2023</th>
-           <td>icon</td>
         <td>13:00am</td>
           <td>English</td>
         <td>Eng v Ban Asia Cup T20</td>
         <td>Ban to win</td>
         <td>1.72</td>
-        <td>+67.90</td>
-         <td>+5%</td>
-            <td>icon</td>
+        <td>+45.50</td>
+         <td><img src="/img/good.png" alt="" /></td>
+         <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
+        
+      </tr>
+        <tr  className="ADDTimeDbg ">
+        <th className="ADDTimeDbg">09/11/2023</th>
+        <td>13:00am</td>
+          <td>English</td>
+        <td>Eng v Ban Asia Cup T20</td>
+        <td>Ban to win</td>
+        <td>1.72</td>
+        <td>+45.50</td>
+         <td><img src="/img/good.png" alt="" /></td>
+         <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
+        
+      </tr>
+        <tr  className="ADDTimeDbg ">
+        <th className="ADDTimeDbg">09/11/2023</th>
+        <td>13:00am</td>
+          <td>English</td>
+        <td>Eng v Ban Asia Cup T20</td>
+        <td>Ban to win</td>
+        <td>1.72</td>
+        <td>+45.50</td>
+         <td><img src="/img/good.png" alt="" /></td>
+         <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
+        
+      </tr>
+        <tr  className="ADDTimeDbg ">
+        <th className="ADDTimeDbg">09/11/2023</th>
+        <td>13:00am</td>
+          <td>English</td>
+        <td>Eng v Ban Asia Cup T20</td>
+        <td>Ban to win</td>
+        <td>1.72</td>
+        <td>+45.50</td>
+         <td><img src="/img/good.png" alt="" /></td>
+         <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
         
       </tr>
   
@@ -138,24 +135,7 @@ const [itemOffset, setItemOffset] = useState(0);
   </table>
 </div>
 </div> 
-
- <div className='mainDe allNewPaginate'>
-
-    <ReactPaginate
-        breakLabel="..."
-        nextLabel=">>"
-        onPageChange={handlePageClick}
-        pageRangeDisplayed={6}
-        pageCount={pageCount}
-        previousLabel={`<pre`}
-        renderOnZeroPageCount={null}
-        className='paginate'
-        onClick={handlePageClick}
-      />
-  
-  </div>
- {/* <div className="seeMoreDivLink"><button className="SeeMoreInfo">See More</button></div> */}
-           <div className="sportPetNe gapUp">Forex Predictions</div>
+       <div className="sportPetNe gapUp">Forex Predictions</div>
            <div className="adaba">
       <div role="region" aria-labelledby="caption" tabindex="0">
   <table className='linema' style={{borderCollapse: "collapse"}}>
@@ -163,13 +143,13 @@ const [itemOffset, setItemOffset] = useState(0);
     <thead>
       <tr>
         <th style={{width:"100px"}}>Date</th>
-        <th style={{width:"100px"}}>Tipster</th>
         <th style={{width:"100px"}}>Pair</th>
-         <th style={{width:"80px"}}>Condition</th>
+         <th style={{width:"100px"}}>Condition</th>
         <th style={{width:"80px"}}>Entry</th>
         <th style={{width:"80px"}}>Take Profit</th>
         <th style={{width:"80px"}}>Stop Loss</th>
          <th style={{width:"80px"}}>Result</th>
+         <th style={{width:"80px"}}>Tipster</th>
         
                 
       </tr>
@@ -177,65 +157,64 @@ const [itemOffset, setItemOffset] = useState(0);
     <tbody>
        
        
-      
      
       <tr  className="ADDTimeDbg ADDTimeDbg22">
         <th className=" ADDTimeDbg">09/11/2023</th>
-            <td>1.456378</td>
-        <td>GBP/USD</td>
+        <td>NGN/USD</td>
           <td>Long(buy)</td>
         <td>1.678787</td>
         <td>1.899765</td>
         <td>1.456378</td>
-        <td>1.456378</td>
-       
-        
-      </tr>
-      <tr  className="ADDTimeDbg ADDTimeDbg22">
-        <th className=" ADDTimeDbg">09/11/2023</th>
-            <td>1.456378</td>
-        <td>GBP/USD</td>
-          <td>Long(buy)</td>
-        <td>1.678787</td>
-        <td>1.899765</td>
-        <td>1.456378</td>
-        <td>1.456378</td>
-       
-        
-      </tr>
-      <tr  className="ADDTimeDbg ADDTimeDbg22">
-        <th className=" ADDTimeDbg">09/11/2023</th>
-            <td>1.456378</td>
-        <td>GBP/USD</td>
-          <td>Long(buy)</td>
-        <td>1.678787</td>
-        <td>1.899765</td>
-        <td>1.456378</td>
-        <td>1.456378</td>
-       
-        
-      </tr>
-      <tr  className="ADDTimeDbg ADDTimeDbg22">
-        <th className=" ADDTimeDbg">09/11/2023</th>
-            <td>1.456378</td>
-        <td>GBP/USD</td>
-          <td>Long(buy)</td>
-        <td>1.678787</td>
-        <td>1.899765</td>
-        <td>1.456378</td>
-        <td>1.456378</td>
+         <td><img src="/img/good.png" alt="" /></td>
+        <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
        
         
       </tr>
       <tr  className="ADDTimeDbg ADDTimeDbg22">
         <th className="ADDTimeDbg">09/11/2023</th>
-            <td>1.456378</td>
-        <td>GBP/USD</td>
+        <td>CED/USD</td>
           <td>Short(buy)</td>
         <td>1.678787</td>
         <td>1.678787</td>
         <td>1.678787</td>
-        <td>1.456378</td>
+         <td><img src="/img/good.png" alt="" /></td>
+        <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
+       
+        
+      </tr>
+        <tr  className="ADDTimeDbg ADDTimeDbg22">
+        <th className="ADDTimeDbg">09/11/2023</th>
+        <td>CED/USD</td>
+          <td>Short(buy)</td>
+        <td>1.678787</td>
+        <td>1.678787</td>
+        <td>1.678787</td>
+         <td><img src="/img/good.png" alt="" /></td>
+        <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
+       
+        
+      </tr>
+        <tr  className="ADDTimeDbg ADDTimeDbg22">
+        <th className="ADDTimeDbg">09/11/2023</th>
+        <td>CED/USD</td>
+          <td>Short(buy)</td>
+        <td>1.678787</td>
+        <td>1.678787</td>
+        <td>1.678787</td>
+         <td><img src="/img/good.png" alt="" /></td>
+        <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
+       
+        
+      </tr>
+        <tr  className="ADDTimeDbg ADDTimeDbg22">
+        <th className="ADDTimeDbg">09/11/2023</th>
+        <td>CED/USD</td>
+          <td>Short(buy)</td>
+        <td>1.678787</td>
+        <td>1.678787</td>
+        <td>1.678787</td>
+         <td><img src="/img/good.png" alt="" /></td>
+        <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
        
         
       </tr>
@@ -248,22 +227,6 @@ const [itemOffset, setItemOffset] = useState(0);
   </table>
 </div>
 </div>
-
- <div className='mainDe allNewPaginate'>
-
-    <ReactPaginate
-        breakLabel="..."
-        nextLabel=">>"
-        onPageChange={handlePageClick}
-        pageRangeDisplayed={6}
-        pageCount={pageCount}
-        previousLabel={`<pre`}
-        renderOnZeroPageCount={null}
-        className='paginate'
-        onClick={handlePageClick}
-      />
-  
-  </div>
  {/* <div className="seeMoreDivLink"><button className="SeeMoreInfo">See More</button></div> */}
 <div className="sportPetNe gapUp">Cryptocurrency Predictions</div>
  <div className="adaba">
@@ -273,14 +236,14 @@ const [itemOffset, setItemOffset] = useState(0);
     <thead>
       <tr>
         <th style={{width:"100px"}} className="emeka">Date</th>
-         <th style={{width:"100px"}}>Tipster</th>
-        
         <th style={{width:"100px"}}>Pair</th>
-         <th style={{width:"80px"}}>Condition</th>
+         <th style={{width:"100px"}}>Condition</th>
         <th style={{width:"80px"}}>Entry</th>
         <th style={{width:"80px"}}>Take Profit</th>
         <th style={{width:"80px"}}>Stop Loss</th>
-        <th style={{width:"80px"}}>Result</th>
+          <th style={{width:"80px"}}>Result</th>
+         
+        <th style={{width:"80px"}}>Tipster</th>
         
                 
       </tr>
@@ -289,64 +252,63 @@ const [itemOffset, setItemOffset] = useState(0);
        
        
      
-     
       <tr  className="ADDTimeDbg ADDTimeDbg22">
         <th className=" ADDTimeDbg">09/11/2023</th>
-          <td>1.456378</td>
         <td>GBP/USD</td>
           <td>Long(buy)</td>
         <td>1.678787</td>
         <td>1.899765</td>
         <td>1.456378</td>
-         <td>1.456378</td>
-       
-        
-      </tr>
-      <tr  className="ADDTimeDbg ADDTimeDbg22">
-        <th className=" ADDTimeDbg">09/11/2023</th>
-          <td>1.456378</td>
-        <td>GBP/USD</td>
-          <td>Long(buy)</td>
-        <td>1.678787</td>
-        <td>1.899765</td>
-        <td>1.456378</td>
-         <td>1.456378</td>
-       
-        
-      </tr>
-      <tr  className="ADDTimeDbg ADDTimeDbg22">
-        <th className=" ADDTimeDbg">09/11/2023</th>
-          <td>1.456378</td>
-        <td>GBP/USD</td>
-          <td>Long(buy)</td>
-        <td>1.678787</td>
-        <td>1.899765</td>
-        <td>1.456378</td>
-         <td>1.456378</td>
-       
-        
-      </tr>
-      <tr  className="ADDTimeDbg ADDTimeDbg22">
-        <th className=" ADDTimeDbg">09/11/2023</th>
-          <td>1.456378</td>
-        <td>GBP/USD</td>
-          <td>Long(buy)</td>
-        <td>1.678787</td>
-        <td>1.899765</td>
-        <td>1.456378</td>
-         <td>1.456378</td>
+         <td><img src="/img/good.png" alt="" /></td>
+        <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
        
         
       </tr>
       <tr  className="ADDTimeDbg ADDTimeDbg22">
         <th className="ADDTimeDbg">09/11/2023</th>
-          <td>1.456378</td>
         <td>GBP/USD</td>
           <td>Short(buy)</td>
         <td>1.678787</td>
         <td>1.678787</td>
         <td>1.678787</td>
-         <td>1.456378</td>
+         <td><img src="/img/good.png" alt="" /></td>
+        <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
+       
+        
+      </tr>
+        <tr  className="ADDTimeDbg ADDTimeDbg22">
+        <th className="ADDTimeDbg">09/11/2023</th>
+        <td>GBP/USD</td>
+          <td>Short(buy)</td>
+        <td>1.678787</td>
+        <td>1.678787</td>
+        <td>1.678787</td>
+         <td><img src="/img/good.png" alt="" /></td>
+        <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
+       
+        
+      </tr>
+        <tr  className="ADDTimeDbg ADDTimeDbg22">
+        <th className="ADDTimeDbg">09/11/2023</th>
+        <td>GBP/USD</td>
+          <td>Short(buy)</td>
+        <td>1.678787</td>
+        <td>1.678787</td>
+        <td>1.678787</td>
+         <td><img src="/img/good.png" alt="" /></td>
+        <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
+       
+        
+      </tr>
+        <tr  className="ADDTimeDbg ADDTimeDbg22">
+        <th className="ADDTimeDbg">09/11/2023</th>
+        <td>GBP/USD</td>
+          <td>Short(buy)</td>
+        <td>1.678787</td>
+        <td>1.678787</td>
+        <td>1.678787</td>
+         <td><img src="/img/good.png" alt="" /></td>
+        <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
        
         
       </tr>
@@ -359,22 +321,6 @@ const [itemOffset, setItemOffset] = useState(0);
   </table>
 </div>
 </div>
-
- <div className='mainDe allNewPaginate'>
-
-    <ReactPaginate
-        breakLabel="..."
-        nextLabel=">>"
-        onPageChange={handlePageClick}
-        pageRangeDisplayed={6}
-        pageCount={pageCount}
-        previousLabel={`<pre`}
-        renderOnZeroPageCount={null}
-        className='paginate'
-        onClick={handlePageClick}
-      />
-  
-  </div>
     {/* <div className="seeMoreDivLink"><button className="SeeMoreInfo">See More</button></div> */}
 <div className="sportPetNe gapUp">Binary Predictions</div>
  <div className="adaba">
@@ -383,11 +329,11 @@ const [itemOffset, setItemOffset] = useState(0);
    
     <thead>
       <tr>
-        <th style={{width:"20%"}}>Date</th>
-        <th style={{width:"20%"}}>Tipster</th>
-        <th style={{width:"20%"}}>Pair</th>
-         <th style={{width:"20%"}}>Condition</th>
-         <th style={{width:"20%"}}>Result</th>
+        <th style={{width:"80px"}}>Date</th>
+        <th style={{width:"80px"}}>Pair</th>
+         <th style={{width:"80px"}}>Condition</th>
+          <th style={{width:"80px"}}>Result</th>
+         <th style={{width:"80px"}}>Tipster</th>
        
                 
       </tr>
@@ -395,54 +341,53 @@ const [itemOffset, setItemOffset] = useState(0);
     <tbody>
        
        
-      <tr  className="ADDTimeDbg ADDTimeDbg22">
-        <th className=" ADDTimeDbg">09/11/2023</th>
-           <td>Long(buy)</td>
-        <td>GBP/USD</td>
-          <td>Long(buy)</td>
-          <td>Long(buy)</td>
-        
-       
-        
-      </tr>
-       
-        
-        <tr  className="ADDTimeDbg ADDTimeDbg22">
-        <th className=" ADDTimeDbg">09/11/2023</th>
-           <td>Long(buy)</td>
-        <td>GBP/USD</td>
-          <td>Long(buy)</td>
-          <td>Long(buy)</td>
-        
-       
-        
-      </tr>
-        <tr  className="ADDTimeDbg ADDTimeDbg22">
-        <th className=" ADDTimeDbg">09/11/2023</th>
-           <td>Long(buy)</td>
-        <td>GBP/USD</td>
-          <td>Long(buy)</td>
-          <td>Long(buy)</td>
-        
-       
-        
-      </tr>
+      
          <tr  className="ADDTimeDbg ADDTimeDbg22">
         <th className=" ADDTimeDbg">09/11/2023</th>
-           <td>Long(buy)</td>
         <td>GBP/USD</td>
           <td>Long(buy)</td>
-          <td>Long(buy)</td>
+          <td><img src="/img/good.png" alt="" /></td>
+           <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
         
        
         
       </tr>
       <tr  className="ADDTimeDbg ADDTimeDbg22">
         <th className="ADDTimeDbg">09/11/2023</th>
-           <td>Long(buy)</td>
         <td>GBP/USD</td>
           <td>Short(buy)</td>
-          <td>Long(buy)</td>
+          <td><img src="/img/good.png" alt="" /></td>
+           <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
+       
+       
+        
+      </tr>
+       <tr  className="ADDTimeDbg ADDTimeDbg22">
+        <th className="ADDTimeDbg">09/11/2023</th>
+        <td>GBP/USD</td>
+          <td>Short(buy)</td>
+          <td><img src="/img/good.png" alt="" /></td>
+           <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
+       
+       
+        
+      </tr>
+       <tr  className="ADDTimeDbg ADDTimeDbg22">
+        <th className="ADDTimeDbg">09/11/2023</th>
+        <td>GBP/USD</td>
+          <td>Short(buy)</td>
+          <td><img src="/img/good.png" alt="" /></td>
+           <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
+       
+       
+        
+      </tr>
+       <tr  className="ADDTimeDbg ADDTimeDbg22">
+        <th className="ADDTimeDbg">09/11/2023</th>
+        <td>GBP/USD</td>
+          <td>Short(buy)</td>
+          <td><img src="/img/good.png" alt="" /></td>
+           <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
        
        
         
@@ -456,26 +401,25 @@ const [itemOffset, setItemOffset] = useState(0);
   </table>
 </div>
 </div>
- <div className='mainDe allNewPaginate'>
-
-    <ReactPaginate
-        breakLabel="..."
-        nextLabel=">>"
-        onPageChange={handlePageClick}
-        pageRangeDisplayed={6}
-        pageCount={pageCount}
-        previousLabel={`<pre`}
-        renderOnZeroPageCount={null}
-        className='paginate'
-        onClick={handlePageClick}
-      />
-  
-  </div>
- {/* <div className="seeMoreDivLink"><button className="SeeMoreInfo">See More</button></div> */}
+ <div className="seeMoreDivLink"><a href="/market-predictions"><button className="SeeMoreInfo">See More</button></a></div>
 
                 </div>
 
               
+               </div>
+
+             
+
+
+
+
+                                <div className="fear">
+              
+               </div> 
+
+
+           
+               {/* </div> */}
                </div>
 
         </div>

@@ -27,6 +27,7 @@ const Home2=() =>{
 
   const [sports,setSports]= useState("Forex")
   const [loading,setLoading] = useState(true)
+  
 
  
   const sportItem = [{game_no:1,profit:"20",odd:"2.5",action:"loss"},{game_no:2,profit:"35",odd:"4.5",action:"earned"},{game_no:3,profit:"55",odd:"0.5",action:"earned"},{game_no:4,profit:"70",odd:"4.5",action:"earned"}]
@@ -490,7 +491,7 @@ useEffect(()=>{
                           <div className="cardProfileDiv" key={id} style={{border:"1px solid #3c2f8b"}}>
           <div className="catImgDivProfile"><img src="/img/sportsBall.jpg" alt="" style={{width:"100%",height:"100%",borderTopRightRadius:"10px",borderTopLeftRadius:"10px"}}/></div>
            <div className="imgcardPic"><img src="/img/create.png" alt="" className="catImgDivProfile1"/></div>
-          <div className="donKing">Don Knight</div>
+          <div className="donKing">Samuel453</div>
           <div className="ipconFig">
             <div>
               <div className="imgWay">
@@ -543,7 +544,7 @@ useEffect(()=>{
                           <div className="cardProfileDiv" key={id} style={{border:"1px solid #3c2f8b"}}>
           <div className="catImgDivProfile"><img src="/img/sportsBall.jpg" alt="" style={{width:"100%",height:"100%",borderTopRightRadius:"10px",borderTopLeftRadius:"10px"}}/></div>
            <div className="imgcardPic"><img src="/img/create.png" alt="" className="catImgDivProfile1"/></div>
-          <div className="donKing">Don Knight</div>
+          <div className="donKing">Samuel453</div>
           <div className="ipconFig">
             <div>
               <div className="imgWay">
@@ -653,7 +654,7 @@ useEffect(()=>{
                           <div className="cardProfileDiv" key={id} style={{border:"1px solid #3c2f8b"}}>
           <div className="catImgDivProfile"><img src="/img/kucoin.png" alt="" style={{width:"100%",height:"100%",borderTopRightRadius:"10px",borderTopLeftRadius:"10px"}}/></div>
            <div className="imgcardPic"><img src="/img/create.png" alt="" className="catImgDivProfile1"/></div>
-          <div className="donKing">Don Knight</div>
+          <div className="donKing">Samuel453</div>
           <div className="ipconFig">
             <div>
               <div className="imgWay">
@@ -722,7 +723,7 @@ useEffect(()=>{
                           <div className="cardProfileDiv" key={id} style={{border:"1px solid #3c2f8b"}}>
           <div className="catImgDivProfile"><img src="/img/kucoin.png" alt="" style={{width:"100%",height:"100%",borderTopRightRadius:"10px",borderTopLeftRadius:"10px"}}/></div>
            <div className="imgcardPic"><img src="/img/create.png" alt="" className="catImgDivProfile1"/></div>
-          <div className="donKing">Don Knight</div>
+          <div className="donKing">Samuel453</div>
           <div className="ipconFig">
             <div>
               <div className="imgWay">
@@ -823,7 +824,7 @@ useEffect(()=>{
                           <div className="cardProfileDiv" key={id} style={{border:"1px solid #3c2f8b"}}>
           <div className="catImgDivProfile"><img src="/img/kucoin.png" alt="" style={{width:"100%",height:"100%",borderTopRightRadius:"10px",borderTopLeftRadius:"10px"}}/></div>
            <div className="imgcardPic"><img src="/img/create.png" alt="" className="catImgDivProfile1"/></div>
-          <div className="donKing">Don Knight</div>
+          <div className="donKing">Samuel453</div>
           <div className="ipconFig">
             <div>
               <div className="imgWay">
@@ -893,7 +894,7 @@ useEffect(()=>{
                           <div className="cardProfileDiv" key={id} style={{border:"1px solid #3c2f8b"}}>
           <div className="catImgDivProfile"><img src="/img/kucoin.png" alt="" style={{width:"100%",height:"100%",borderTopRightRadius:"10px",borderTopLeftRadius:"10px"}}/></div>
            <div className="imgcardPic"><img src="/img/create.png" alt="" className="catImgDivProfile1"/></div>
-          <div className="donKing">Don Knight</div>
+          <div className="donKing">Samuel453</div>
           <div className="ipconFig">
             <div>
               <div className="imgWay">
@@ -993,7 +994,7 @@ useEffect(()=>{
                           <div className="cardProfileDiv" key={id} style={{border:"1px solid #3c2f8b"}}>
           <div className="catImgDivProfile"><img src="/img/kucoin.png" alt="" style={{width:"100%",height:"100%",borderTopRightRadius:"10px",borderTopLeftRadius:"10px"}}/></div>
            <div className="imgcardPic"><img src="/img/create.png" alt="" className="catImgDivProfile1"/></div>
-          <div className="donKing">Don Knight</div>
+          <div className="donKing">Samuel453</div>
           <div className="ipconFig">
             <div>
               <div className="imgWay">
@@ -1063,7 +1064,7 @@ useEffect(()=>{
                           <div className="cardProfileDiv" key={id} style={{border:"1px solid #3c2f8b"}}>
           <div className="catImgDivProfile"><img src="/img/kucoin.png" alt="" style={{width:"100%",height:"100%",borderTopRightRadius:"10px",borderTopLeftRadius:"10px"}}/></div>
            <div className="imgcardPic"><img src="/img/create.png" alt="" className="catImgDivProfile1"/></div>
-          <div className="donKing">Don Knight</div>
+          <div className="donKing">Samuel453</div>
           <div className="ipconFig">
             <div>
               <div className="imgWay">
@@ -1134,7 +1135,7 @@ useEffect(()=>{
 
             <div className="containerT">
 
-               <div className="youpin">
+               <div className="youpin carU ">
 
               
                  <div className="topPrediction">Top Predictions</div>
@@ -1371,7 +1372,7 @@ useEffect(()=>{
 
              
 
-          <div className="youpin">
+          <div className="youpin carU">
 
               
                  <div className="topPrediction">Recent Tips From Tipsters</div>
@@ -1605,20 +1606,7 @@ useEffect(()=>{
 
 
 
-                                <div className="fear">
-              <div className="Rtme" >
-           
-           <div style={{padding:"0px 10px"}}>
-              <div className="TrustSeal" style={{paddingTop:"14px"}} >
-                 <div className="SealY" style={{color: "#5df362"}}>Earnars Trust Seal</div>
-                  <div style={{width:"120px",margin:"0 auto 10px auto",borderBottom:" 1px solid #45527a"}}></div>
-                 {/* <p className="ifYou">If you judiciously follow our predictions and apply our risk reward ratio and don't turn profit at the end of the month, We will refund your subscription money or your next month subscription becomes free.</p> */}
-                 <p className="ifYou">By diligently adhering to our predictions, utilizing our risk-reward ratio, and not achieving a profit by the end of the month, you are eligible for a refund of your subscription fee or the option for a complimentary subscription for the following month.</p>
-<p className="ifYou lio">T&C Apply</p>
-              </div>
-              </div>
-              </div>
-              </div>
+              
 
 
            <div className="Rtme">
@@ -1631,12 +1619,13 @@ useEffect(()=>{
                    <div>
                        <p className="millionM"  style={{color: "#7b7ee2" }} >Make 1 million Naira monthly </p>
                        <p className="OnRef">On Referral Commission</p>
+                        <div className="visitMe"><a href="/affliate"><button className="visitMe3">Visit</button></a></div>
                    </div>
                </div>
                <div>
                  <div className="yuri2">
                  <div className="yuri"></div>
-                 <p className="Onref1">50%  Commission</p>
+                 <p className="Onref1">75%  Commission</p>
                  </div>
                   
                   <div className="yuri2">
@@ -1656,6 +1645,7 @@ useEffect(()=>{
                </div>
            </div>
            <img src="/img/pgf.svg" alt="image"  className="emWike"/>
+          
            </div>
            </div>
            </div>
@@ -1764,7 +1754,7 @@ useEffect(()=>{
                     <div className="Qac"></div>
                 <p className="ILOVEK">
                   {" "}
-                  To start trading the forex or cryptocurrency market all you need to know is to understand the basics of trading like, how to Buy/Sell, How to set Stoploss and Takeprofit, How to spot support and Resistance. With this basic knowledge you can follow our expert forecast and achieve success in the market.{" "}
+                  To start trading the forex or cryptocurrency market all you need to know is to understand the basics of trading like, how to Buy/Sell, How to set Stoploss and Takeprofit, How to spot support and Resistance. With this basic knowledge you can follow our Tipsters expert forecast and achieve success in the market.{" "}
                 </p>
                 </div>
               ) : (
@@ -1782,7 +1772,7 @@ useEffect(()=>{
                 <div>
                   <div className="Qac"></div>
                 <p className="ILOVEK">
-                 You dont need to understand much about sport betting to bet. Once you are registered with our recommended bookmaker just copy our coupon code and search for it. With the code your can place your bet.
+                 You don't need to understand much about sport betting to bet. Once you are registered with our recommended bookmaker, subscribe to any tipster membership and copy their coupon code to place your bet with the bookmaker specified by the tipster.
                 </p>
                 </div>
               ) : (
@@ -1800,7 +1790,7 @@ useEffect(()=>{
                 <div>
                   <div className="Qac"></div>
                 <p className="ILOVEK">
-                Click the prediction button on the header and go through forex section to see recommended brokers
+                Click the market button on the header and go through forex section to see recommended brokers
                 </p>
                 </div>
               ) : (
@@ -1809,7 +1799,7 @@ useEffect(()=>{
             </div>
             <div className="homeChange">
               <div className="HowFarBro" onClick={drop3}>
-                <span> I am not registered with any cryptocurrency trading platform. Can I get any recommendations? </span>
+                <span> How much does it cost to subscribe monthly? </span>
                 <span className="IconSpace">
                   {show3? <FontAwesomeIcon icon={faMinus} className="PlusIcon" />:<FontAwesomeIcon icon={faPlus} className="PlusIcon" />}
                 </span>
@@ -1818,14 +1808,14 @@ useEffect(()=>{
                 <div>
                   <div className="Qac"></div>
                 <p className="ILOVEK">
-                Click the prediction button on the header and go through Cryptocurrency section to see recommended exchanges
+                Purchasing a membership Subscription from any tipster is flexible. You can either buy daily, weekly or monthly subscription
                 </p>
                 </div>
               ) : (
                 ""
               )}
             </div>
-            <div className="homeChange">
+            {/* <div className="homeChange">
               <div className="HowFarBro" onClick={drop4}>
                 <span> How much does it cost to subscribe monthly? </span>
                 <span className="IconSpace">
@@ -1842,25 +1832,8 @@ useEffect(()=>{
               ) : (
                 ""
               )}
-            </div>
-            <div className="homeChange">
-              <div className="HowFarBro" onClick={drop5}>
-                <span>What if I don't make a profit at the end of the month with your predictions? </span>
-                <span className="IconSpace">
-                  {show5? <FontAwesomeIcon icon={faMinus} className="PlusIcon" />:<FontAwesomeIcon icon={faPlus} className="PlusIcon" />}
-                </span>
-              </div>
-              {show5 ? (
-                <div>
-                  <div className="Qac"></div>
-                <p className="ILOVEK">
-                 If you judiciously follow our predictions and apply our risk reward ratio and dont turn profit at the end of the month, We will refund your subscription money or your next month subscription becomes free.
-                </p>
-                </div>
-              ) : (
-                ""
-              )}
-            </div>
+            </div> */}
+          
             <div className="homeChange">
               <div className="HowFarBro" onClick={drop6}>
                 <span> If my referral subscribes every month will I still get paid my referral commission? </span>
@@ -1872,7 +1845,7 @@ useEffect(()=>{
                 <div>
                   <div className="Qac"></div>
                 <p className="ILOVEK">
-                  We pay 50% commission on any user your refer to our plaform.e.g if Jones refers Emeka and Emeka subscribe to our premium prediction, Jones will recieve 50% ($25 or ₦12,500). if Emeka continue renewing his subscrption every month, Jones will keep earning his referral bonus for life.
+                  Yes, you earn upto 75% commission on any user your refer to our plaform.e.g if Tola refers Emeka and Emeka subscribe to our yearly affiliate program, Tola will recieve 75%( ₦7,500) and if it's a monthly subscription Tola will receive ₦750. if Emeka continue renewing his subscrption every mont or year Tola will keep earning his referral bonus for life.
                 </p>
                 </div>
               ) : (
@@ -1881,7 +1854,7 @@ useEffect(()=>{
             </div>
             <div className="homeChange">
               <div className="HowFarBro" onClick={drop7}>
-                <span> Can i invest my money with your company so you trade & bet for me and pay me percentage monthly?</span>
+                <span>  Can i invest my money with your company so you trade & bet for me and pay me percentage monthly?</span>
                 <span className="IconSpace">
                   {show7? <FontAwesomeIcon icon={faMinus} className="PlusIcon" />:<FontAwesomeIcon icon={faPlus} className="PlusIcon" />}
                 </span>
@@ -1890,7 +1863,7 @@ useEffect(()=>{
                 <div>
                   <div className="Qac"></div>
                 <p className="ILOVEK">
-                  We do not accept or manage users trading/ betting funds, trade or bet for any user. We only forecast the forex, crypto, binary market & predicts games. Users are responsible for managing their money with any brokers or bookies of their choice.
+                 We or our Tipsters do not accept or manage users trading/ betting funds, trade or bet for any user. We only forecast the forex, crypto, binary market & predicts games. Users are responsible for managing their money with any brokers or bookies of their choice.
                 </p>
                 </div>
               ) : (

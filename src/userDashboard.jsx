@@ -2,6 +2,8 @@ import React, {useState} from  'react'
 import Footer from "./footer"
 import "./style/userDashboard.css"
 import ReactPaginate from 'react-paginate';
+import Demo1 from "./Dashboard/dashboardSports"
+import Demo2 from "./Dashboard/dashboardPostResult"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faPlus,faMinus, faPaperPlane,faVolleyball,faCheckToSlot, faCheckDouble} from '@fortawesome/free-solid-svg-icons'
 
@@ -14,6 +16,7 @@ const [section3, setSection3] = useState("tipsterOver")
 const [itemsPerPage,setItemsPerPage] = useState(6)
 const [itemOffset, setItemOffset] = useState(0);
 const [isTipster,setIsTipster] = useState(true)
+const [dashboardMenu,setDashboardMenu] = useState(false)
 
 // Simulate fetching items from another resources.
   // (This could be items from props; or items loaded in a local state
@@ -31,6 +34,46 @@ const [isTipster,setIsTipster] = useState(true)
     );
     setItemOffset(newOffset);
   };
+
+
+ const Goma =()=>{
+  setSection1('userSection')
+  setDashboardMenu(!dashboardMenu)
+ }
+ const Goma1 =()=>{
+  setSection1('userSection2')
+  setDashboardMenu(!dashboardMenu)
+ }
+ const Goma2 =()=>{
+  setSection1('userSection3')
+  setDashboardMenu(!dashboardMenu)
+ }
+  const Goma3 =()=>{
+  setSection1('userSection1')
+  setDashboardMenu(!dashboardMenu)
+ }
+  const Goma4 =()=>{
+  setSection1('userSection4')
+  setDashboardMenu(!dashboardMenu)
+ }
+  const Goma5 =()=>{
+  setSection1('userSection5')
+  setDashboardMenu(!dashboardMenu)
+ }
+  const Goma6 =()=>{
+  setSection1('userSection6')
+  setDashboardMenu(!dashboardMenu)
+ }
+  const Goma7 =()=>{
+  setSection1('userSection7')
+  setDashboardMenu(!dashboardMenu)
+ }
+  const Goma8 =()=>{
+  setSection1('userSection')
+  setDashboardMenu(!dashboardMenu)
+ }
+
+
 
 
      const card = ["sport","binary","forex","crytptocurrency","sport","binary","forex","crytptocurrency"]
@@ -59,8 +102,8 @@ const [isTipster,setIsTipster] = useState(true)
                       <div className=' dvd1 JohnKen5' onClick={()=>setSection1('userSection')} style={{backgroundColor:section1 === "userSection" ? "#0d0740": "", borderLeft: section1 === "userSection" ? "2px solid #5157ab":"" }}><img src="/img/dashboard-icon1.png" alt=""/> <span className='JohnKen7'>Dashboard</span></div>
                       <div className='dvd1 JohnKen5' onClick={()=>setSection1('userSection2')}  style={{backgroundColor:section1 === "userSection2" ? "#0d0740": "", borderLeft: section1 === "userSection2" ? "2px solid #5157ab":"" }}><img src="/img/settings.png" alt=""/> <span className='JohnKen7'>Tipster Wallet</span></div>
                        <div className='dvd1 JohnKen5' onClick={()=>setSection1('userSection3')}  style={{backgroundColor:section1 === "userSection3" ? "#0d0740": "", borderLeft: section1 === "userSection3" ? "2px solid #5157ab":"" }}><img src="/img/settings.png" alt=""/> <span className='JohnKen7'>Affiliate Wallet</span></div>
-                         <div className='dvd1 JohnKen5 '><img src="/img/settings.png" alt=""/> <span className='JohnKen7'>Post Tip</span></div>
-                           <div className='dvd1 JohnKen5 '><img src="/img/settings.png" alt=""/> <span className='JohnKen7'>Post Result</span></div>
+                         <div className='dvd1 JohnKen5 ' onClick={()=>setSection1('userSection6')}><img src="/img/settings.png" alt=""/> <span className='JohnKen7'>Post Tip</span></div>
+                           <div className='dvd1 JohnKen5 ' onClick={()=>setSection1('userSection7')}><img src="/img/settings.png" alt=""/> <span className='JohnKen7'>Post Result</span></div>
                              <div className='dvd1 JohnKen5 '><img src="/img/settings.png" alt=""/> <span className='JohnKen7'>Delete Post</span></div>
                              <div className='dvd1 JohnKen5 ' onClick={()=>setSection1('userSection1')}  style={{backgroundColor:section1 === "userSection1" ? "#0d0740": "", borderLeft: section1 === "userSection1" ? "2px solid #5157ab":"" }}><img src="/img/subscriptions.png" alt=""/> <span className='JohnKen7' >Subscription</span></div>
                         <div className='dvd1 JohnKen5'  onClick={()=>setSection1('userSection4')}  style={{backgroundColor:section1 === "userSection4" ? "#0d0740": "", borderLeft: section1 === "userSection4" ? "2px solid #5157ab":"" }}><img src="/img/settings.png" alt=""/> <span className='JohnKen7'>Pricing</span></div>
@@ -97,6 +140,7 @@ const [isTipster,setIsTipster] = useState(true)
       <div className='emekaUs'>
       <div>
         <div className='Fa1'>
+          <div className="prIconCl" onClick={()=>setDashboardMenu(!dashboardMenu)}>BK</div>
            <div className='Fa2'><input type="" placeholder="Search"  className='Fa4'/></div>
            <div className='Fa3'><a href="/" style={{color:"#fff", textDecoration:"none",fontSize:'18px',fontWeight:'700'}}>Earnars</a></div>
         </div>
@@ -338,22 +382,58 @@ const [isTipster,setIsTipster] = useState(true)
     </div>
         <div className="ManB">
            <div  className="ManB1 ManB30">
-             <div className='mainVm34'>
-              <div className='likeYou'>
-               <div className='MainVm'>Main Wallet</div>
-               <div className='MainVm1'>$5000</div>
-               </div>
-            </div>
+            <div className="Firet">
+                      <div className="Main_WALL1">
+                          <p className="Is_KB">Main Wallet</p>
+                          <p className="Is_KB1">₦70.00</p>
+                      </div>
+                      <div className="Depost">
+                          <p className="dep1 add1" >Deposit</p>
+                          <p className="dep1 add2" >Withdraw</p>
+                      </div>
+                      </div>
            </div>
            <div  className="ManB1 ManB30">
              <div className='DataBoundle2'>
               <div  className='DataTo tipUp'>Tipster Wallet</div>
-              <div className='tipWall tipUp'>#2000</div>
+              <div className='tipWall tipUp'>₦2000</div>
 
              <div className='TransferTip'>Transfer</div>
              </div>
            </div>
-           <div  className="ManB1">
+           <div  className="ManB1 ManB30">
+            <div >
+                          <div className="With_upto">
+                          <div className="Pay_Bills">Pay bills with upto 5% discount</div>
+                          <div className="Data"> 
+                            <div className="Betting1">
+                                <div className="AIR_I" >Airtime</div>
+                                <div className="AIR_I" >Data</div>
+                                <div className="AIR_I">Betting</div>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+          
+           </div>
+           
+          
+        </div>
+        <div className='ManB Fa110'>
+           <div className='ManB2'>
+                 <div className='EarningBolo' >Daily Earning</div>
+                 <div className='EarningBolo1'>₦120</div>
+               </div>
+               <div className='ManB2'>
+                <div className='EarningBolo'>Weekly Earning</div>
+                 <div className='EarningBolo1'>₦200</div>
+              </div>
+              <div className='ManB2'>
+                      <div className='EarningBolo'>Monthly Earning</div>
+                 <div className='EarningBolo1'>₦200</div>
+               </div>
+        </div>
+          {/* <div  className="ManB1">
             <div className='ManB ManB5'>
               <div className='ManB2'>
                <div className='DataBoundle'><span className='DataTo'>Data</span></div>
@@ -376,15 +456,13 @@ const [isTipster,setIsTipster] = useState(true)
                </div>
             </div>
 
-            </div>
-          
-        </div>
+            </div> */}
 
     <div className='ManUm'>
            {section3 === "tipsterOver" ? <>
           <div className='allNewTips ManUm1'>
 
-            <div className="youpin">
+            <div className="youpin youpinTete">
 
               
                  
@@ -509,11 +587,11 @@ const [isTipster,setIsTipster] = useState(true)
            {section3 === "tipsterOver1" ? <>
           <div className='allNewTips ManUm1'>
 
-            <div className="youpin">
+            <div className="youpin youpinTete">
 
               
                  
-              <div className="UponT">
+              <div className="UponT ">
                 <div>
                   <div className="sactions">Transactions </div>
                   <div></div>
@@ -646,7 +724,7 @@ const [isTipster,setIsTipster] = useState(true)
             <div className='mainVm34'>
               <div className='likeYou'>
                <div className='MainVm'>Main Wallet</div>
-               <div className='MainVm1'>$5000</div>
+               <div className='MainVm1'>₦5000</div>
                </div>
             </div>
            </div>
@@ -654,7 +732,7 @@ const [isTipster,setIsTipster] = useState(true)
                 <div className='mainVm34'>
               <div className='likeYou'>
                <div className='MainVm'>Affiliate Wallet</div>
-               <div className='MainVm1'>$7000</div>
+               <div className='MainVm1'>₦7000</div>
                </div>
             </div>
            </div>
@@ -955,7 +1033,7 @@ const [isTipster,setIsTipster] = useState(true)
             <button className='PriceButton'>Enter</button>
            </div>
           </div>
-          <div className="pricingL">
+          <div className="pricingL pricingL12">
             <div className="pricingL1"><span className='gameDay'> 1 day</span> <span className='gameDay'> $500</span> <button className="RemoveButton">Remove</button></div>
             <div className="pricingL1"> <span className='gameDay'> 7 days</span><span className='gameDay'> $1000</span> <button className="RemoveButton">Remove</button></div>
             <div className="pricingL1"><span className='gameDay'> 30 days</span> <span className='gameDay'>$1500</span> <button className="RemoveButton">Remove</button></div>
@@ -1009,41 +1087,41 @@ const [isTipster,setIsTipster] = useState(true)
                     <div className='SetAE'>Billing Information</div>
                     <div className='bAcount SetAE1'>
                       <div className='WonDiv'>
-                        <div style={{width:"48%"}}>
+                        <div className="jum">
                        <div className='ddE'>Full name</div>
                        <div className=''><input type="text" placeholder='enter your email' className='ddE1'/></div>
                        </div>
-                       <div style={{width:"48%"}}>
+                       <div className="jum">
                        <div className='ddE'>Phone number</div>
                        <div className=''><input type="number" placeholder='enter your email' className='ddE1'/></div>
                        </div>
                        </div>
                         <div className='WonDiv'>
-                        <div style={{width:"48%"}}>
+                        <div className="jum">
                        <div className='ddE'>Country</div>
                        <div className=''><input type="email" placeholder='enter your email' className='ddE1'/></div>
                        </div>
-                       <div style={{width:"48%"}}>
+                       <div className="jum">
                        <div className='ddE'>Address</div>
                        <div className=''><input type="text" placeholder='enter your email' className='ddE1'/></div>
                        </div>
                        </div>
                         <div className='WonDiv'>
-                        <div style={{width:"48%"}}>
+                        <div className="jum">
                        <div className='ddE'>State/Province</div>
                        <div className=''><input type="text" placeholder='enter your email' className='ddE1'/></div>
                        </div>
-                       <div style={{width:"48%"}}>
+                       <div className="jum">
                        <div className='ddE'>City</div>
                        <div className=''><input type="text" placeholder='enter your email' className='ddE1'/></div>
                        </div>
                        </div>
                         <div className='WonDiv'>
-                        <div style={{width:"48%"}}>
+                        <div className="jum">
                        <div className='ddE'>ZIP or postal code</div>
                        <div className=''><input type="text" placeholder='enter your email' className='ddE1'/></div>
                        </div>
-                       <div style={{width:"48%"}}>
+                       <div className="jum">
                        <div className='ddE'>Company name (if applicable)</div>
                        <div className=''><input type="text" placeholder='enter your email' className='ddE1'/></div>
                        </div>
@@ -1058,11 +1136,11 @@ const [isTipster,setIsTipster] = useState(true)
                     <div className='SetAE'>Mobile Notifications / Text Messaging</div>
                     <div className='bAcount SetAE1'>
                       <div className='WonDiv'>
-                        <div style={{width:"48%"}}>
+                        <div className="jum">
                        <div className='ddE'>Country</div>
                        <div className=''><input type="text" placeholder='enter your email' className='ddE1'/></div>
                        </div>
-                       <div style={{width:"48%"}}>
+                       <div className="jum">
                        <div className='ddE'>Phone number</div>
                        <div className=''><input type="number" placeholder='enter your email' className='ddE1'/></div>
                        </div>
@@ -1079,7 +1157,7 @@ const [isTipster,setIsTipster] = useState(true)
                        <div className='ddE'>Email Address</div>
                        <div className=''><input type="email" placeholder='enter your email' className='ddE1'/></div>
                        <div><button className='Ch'>Save Changes</button></div>
-                       <div>This phone number is not shared with anyone. It will be used only to receive sms notifications.</div>
+                       <div className="Pnum">This phone number is not shared with anyone. It will be used only to receive sms notifications.</div>
                     </div>
                   </div>
                   </> :""}
@@ -1141,13 +1219,63 @@ const [isTipster,setIsTipster] = useState(true)
                   </> :""}
 
                          </div> </>: ""}
+                         {section1 === "userSection6" ?<>
+                         <Demo1/>
+                         </>:""}
+                           {section1 === "userSection7" ?<>
+                         <Demo2/>
+                         </>:""}
       </div>
     </div>
     </div>
 
   </div>
 
+{dashboardMenu ?
+<div className="pKFin">
+        <div className="kingYOU">
+   <div className='Fa4'>
+    <div  className="Fa41">
+          <div className="prIconCl" onClick={()=>setDashboardMenu(!dashboardMenu)}>BK</div>
+          <p className='NameBB'>samuel345</p>
+          </div>
+           <div className='Fa'>
+             <div className='JohnKen4 KOMKN'> <div className='JohnKen5'><img src="/img/followers.png" alt=""/><span className='JohnKen7 JohnKMKM '>Followers</span></div><div className='JohnKen6 figi'>2400</div></div>
+                     <div className='JohnKen4 KOMKN'> <div className='JohnKen5'><img src="/img/following.png" alt=""/><span className='JohnKen7 JohnKMKM '>Following</span></div><div className='JohnKen6 figi'>2600</div></div>
+                     </div>
+           
+        </div>
 
+        
+         {isTipster ? 
+                    <>
+                    <div className='userD50'>
+                      <div className=' dvd1 JohnKen5' onClick={Goma} style={{backgroundColor:section1 === "userSection" ? "#0d0740": "", borderLeft: section1 === "userSection" ? "2px solid #5157ab":"" }}><img src="/img/dashboard-icon1.png" alt=""/> <span className='JohnKen7'>Dashboard</span></div>
+                      <div className='dvd1 JohnKen5' onClick={Goma1}  style={{backgroundColor:section1 === "userSection2" ? "#0d0740": "", borderLeft: section1 === "userSection2" ? "2px solid #5157ab":"" }}><img src="/img/settings.png" alt=""/> <span className='JohnKen7'>Tipster Wallet</span></div>
+                       <div className='dvd1 JohnKen5' onClick={Goma2}  style={{backgroundColor:section1 === "userSection3" ? "#0d0740": "", borderLeft: section1 === "userSection3" ? "2px solid #5157ab":"" }}><img src="/img/settings.png" alt=""/> <span className='JohnKen7'>Affiliate Wallet</span></div>
+                         <div className='dvd1 JohnKen5 ' onClick={Goma6}><img src="/img/settings.png" alt=""/> <span className='JohnKen7'>Post Tip</span></div>
+                           <div className='dvd1 JohnKen5 ' onClick={Goma7}><img src="/img/settings.png" alt=""/> <span className='JohnKen7'>Post Result</span></div>
+                             <div className='dvd1 JohnKen5 '><img src="/img/settings.png" alt=""/> <span className='JohnKen7'>Delete Post</span></div>
+                             <div className='dvd1 JohnKen5 ' onClick={Goma3}  style={{backgroundColor:section1 === "userSection1" ? "#0d0740": "", borderLeft: section1 === "userSection1" ? "2px solid #5157ab":"" }}><img src="/img/subscriptions.png" alt=""/> <span className='JohnKen7' >Subscription</span></div>
+                        <div className='dvd1 JohnKen5'  onClick={Goma4}  style={{backgroundColor:section1 === "userSection4" ? "#0d0740": "", borderLeft: section1 === "userSection4" ? "2px solid #5157ab":"" }}><img src="/img/settings.png" alt=""/> <span className='JohnKen7'>Pricing</span></div>
+                          <div className='dvd1 JohnKen5 ' onClick={Goma5}  style={{backgroundColor:section1 === "userSection5" ? "#0d0740": "", borderLeft: section1 === "userSection5" ? "2px solid #5157ab":"" }}><img src="/img/settings.png" alt=""/> <span className='JohnKen7'>Setting</span></div>
+                          </div>
+                          </>
+                          :
+                          <>
+                          <div className='userD50'>
+                      <div className='dvd1 JohnKen5' onClick={()=>setSection1('userSection')}><img src="/img/dashboard-icon1.png" alt=""/> <span className='JohnKen5'> Dashboard</span></div>
+                      <div className='dvd1 JohnKen5 '><img src="" alt=""/> <span className='JohnKen5'> Main Wallet</span></div>
+                       <div className='dvd1 JohnKen5 'onClick={()=>setSection1('userSection3')}><img src="" alt=""/> <span className='JohnKen5' > Affiliate Wallet</span></div>
+            
+                             <div className='dvd1 JohnKen5 '><img src="/img/subscriptions.png" alt=""/> <span className='JohnKen5'>Subscription</span></div>
+                          <div className='dvd1 JohnKen5 '><img src="/img/settings.png" alt=""/> <span className='JohnKen5'>Setting</span></div>
+                          <div className='dvd1 JohnKen5 '><img src="" alt=""/> <span className='JohnKen5'>Become a Tipster</span></div>
+                           </div>
+                          </>}
+                          </div>
+</div>
+ :""}
      
 
             {/* <div className="bkFR">

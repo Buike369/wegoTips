@@ -291,11 +291,29 @@
     padding: 8px 20px;
     background-color: #0d0740;
     border-top-right-radius: 10px;
+   
+}
+.figi{
+    margin-left: 8px;
+}
+.Fa4 {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 8px 20px;
 
+    border-top-right-radius: 10px;
+
+}
+.Fa41{
+    margin-right: 20px;
+}
+.lom{
+    background-color: inherit !important;
 }
 
 .Fa2 {
-    width: 70%;
+    width: 55%;
 }
 
 .Fa3 {
@@ -315,6 +333,9 @@
 
 .Fa10 {
     padding: 20px
+}
+.Fa110{
+    margin-top: 15px;
 }
 
 .ManB {
@@ -382,11 +403,7 @@
     right: 0px;
     top: 0px;
     border: none !important;
-    /* max-width: 1276px;
-            margin: 18px auto 0 auto;
-            position: relative; */
-    /* height: 100%;
-            max-height: calc(100% - 10vh); */
+    
 }
 
 .UnlockAff1 {
@@ -468,7 +485,9 @@
     background-color: #575095;
     margin: 15px auto 0 auto
 }
-
+.TransferTip:hover{
+        background-color: #120b4a;
+}
 .DataTo {
     color: #b7b4f1;
     font-size: 16px;
@@ -556,7 +575,14 @@
     text-align: center;
     margin-top: 5px;
 }
-
+.pKFin{
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    width:100%;
+    background-color: #120b4a;
+}
 .usContact {
     text-align: center;
     color: gold;
@@ -573,6 +599,23 @@
     border: 1px solid #3b347e;
     color: #fff;
 }
+.prIconCl{
+    padding: 5px;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    color: #fff;
+    margin-right: 8px;
+    border: 1px solid #32278b;
+    cursor:pointer;
+display:flex;
+justify-content: center;
+align-items: center;
+}
+.NameBB{
+    color:#a3a6b7;
+    margin-top:5px;
+}
 
 .MembershipP {
     color: gold;
@@ -580,12 +623,16 @@
     font-size: 18px;
     margin-bottom: 10px;
 }
+.Pnum{
+    color:#9897b3;
+    margin-top: 5px;
+}
 
 .PriceButton {
     padding: 8px 20px;
     outline: 0;
     border: 1px solid #4c518d;
-    border-radius: 10px;
+    border-radius: 28px;
     background-color: inherit;
     color: #fff;
 }
@@ -669,6 +716,17 @@
     border: 1px solid #4e4e83;
 
 }
+.KOMKN{
+    margin-bottom: 4px;
+}
+
+.JohnKMKM {
+    color: #c3c3db;
+    font-size: 12px;
+}
+.jum{
+    width:48%;
+}
 
 .uploadText {
     font-weight: 700;
@@ -691,4 +749,126 @@
     padding: 20px;
     border-radius: 50%;
     margin-right: 30px;
+}
+
+@media(max-width:768px){
+    .userD3{
+        display:none;
+    }
+    .userD4{
+        width:100%;
+    }
+    .carU{
+  padding:0px 0px !important;
+    }
+        .Fa10 {
+            margin-top: 60px;
+        }
+        .eretYem {
+          
+            flex-basis: 100%;
+        }
+     .TY44 {
+   
+    max-width: 500px;
+    margin: 20px auto 1px auto;
+    }
+    .youpin{
+            padding: 3px 5px;
+    }
+    .OfReferral2{
+        text-align: center;
+    }
+    .UponT{
+     margin-bottom: 5px;
+    }
+    .Fa1 {
+       
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1200;
+    }
+    .UponT{
+    padding: 20px 4px;
+    }
+
+        .Great {
+         
+            margin-top: 15px;}
+    .ManMMb {
+        width: 45%;
+    }
+        .MainVm {
+            font-size: 17px;
+            text-align: center;
+           
+        }
+
+        .PR1 {
+           display:none
+        }
+        .pricingL12 {
+            flex-direction: column;
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+      
+        
+        .pricingL1{
+            width:100%;
+                margin-bottom: 3px;
+        }
+                .pricing {
+                    padding: 10px 8px;  
+                }
+        .PriceButton {
+            width: 100%;
+        }
+              
+     .PR3 {
+         width: 30%;
+    }
+ .PR2 {
+     width: 65%;
+}
+.SetAE {
+    font-size: 17px;
+    margin-bottom: 10px;
+    line-height: 22px
+}
+.UponT {
+   
+    margin-bottom: 2px;
+   
+}
+.ManUm1 {
+    border-radius: 10px;
+}
+
+.allNewTips {
+    
+    padding: 2px 2px;
+}
+
+}
+
+@media(max-width:425px){
+    .jum{
+        width:100%;
+    }
+        .WonDiv {
+    
+            flex-direction: column;
+        }
+}
+@media(min-width:769px){
+    .prIconCl{
+        display:none;
+    }
+        .pKFin {
+            display: none;
+        }
 }

@@ -108,7 +108,7 @@ background-color:#00104180;
 
 }
 .Is_KB1{
-    padding:32px 10px;
+    padding:35px 10px;
     width:80%;
     text-align: center;
     font-size: 32px;
@@ -130,17 +130,17 @@ background-color:#00104180;
     cursor:pointer
 }
 .add1:hover{
-    background-color:#00104180;
+    background-color:#575095;
     color:#fff;
 }
 .add1{
-    background-color: #556fbd3b;
+    background-color: #120b4a;
     color: #d8d7db;
     border-bottom-left-radius: 10px;
     cursor:pointer
 }
 .add2{
-    /* background-color:#001041; */
+    background-color:#171054;
     color:#fff;
     border-bottom-right-radius: 10px;
 }
@@ -149,7 +149,7 @@ background-color:#00104180;
 }
 
 .add2:hover{
-    background-color:#32498ae8;
+    background-color:#575095;
 }
 .Trans{
     padding:10px;
@@ -166,7 +166,9 @@ background-color:#00104180;
 }
 .Pay_Bills{
     width:30%;
-    background-color:#262834;
+    background-color:#19134c;
+    height:148px;
+    padding:5px 6px;
     color:#bfc0c7;
     text-align: center;
     display:flex;
@@ -197,8 +199,8 @@ background-color:#00104180;
     margin-top: 30px;
 }
 .AIR_I{
-    /* padding:20px 25px;  */
-    background-color:#53608763;
+  
+    background-color:#575095;
     color:#fff;
     margin: 31px 0;
     width: 75px;
@@ -632,8 +634,8 @@ margin: 20px 0 ;
     
     }
     .AIR_I {
-        width: 60px;
-        height: 60px;
+        width: 56px;
+        height:56px;
     }
     .Pay_Bills {
         width: 36%;

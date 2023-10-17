@@ -56,12 +56,13 @@
             margin-top: 10px !important;
             padding:30px  15px 100px 15px;
             width:100%;
-            max-width: 1150px;
+            max-width: 1120px;
             margin: 10px auto 10px  auto
             
 }
 .ghFii1{
     color:#fff;
+    font-size: 24px !important;
 }
 .ghFii12{
     min-height: 100px;
@@ -94,7 +95,7 @@ position: absolute;
 }
 .goods6{
     width:100%;
-    max-width:1150px;
+    max-width:1120px;
   
     margin: 0 auto;
 }
@@ -121,7 +122,7 @@ position: absolute;
 .inviteFr{
     font-size: 42px;
         font-weight: 700;
-        color: #fff;
+        color:#f9d511;
         line-height: 50.1px;
         width: 100%;
         max-width: 620px;
@@ -132,7 +133,7 @@ position: absolute;
 }
 .earnPMN{
     background-color:#171054 ;
-    padding: 20px  10px 90px;
+    padding: 20px  10px 36px;
 }
 .newsInput{
     width: 100%;

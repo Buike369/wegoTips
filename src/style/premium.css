@@ -121,7 +121,7 @@
     margin-top: 15px;
 }
 .TY38{
- top:18%
+ top:15%
 }
 .tips34h{
     display:flex;
@@ -133,11 +133,13 @@
 padding: 8px 13px;
     color: #c4c5d1;
     background-color: #0d0740;
-    border-radius: 10px;
+    border-radius: 6px;
     border: 1px solid #3d3e7e;
-    box-shadow: 0 0px 2px 1px #171054;
+    /* box-shadow: 0 0px 2px 1px #171054; */
     font-size: 14px;
     font-weight: 300;
+    background-image: linear-gradient(to bottom right, #302876, #100b3c);
+        box-shadow: rgb(10 11 54 / 31%) 0px 15px 25px, rgb(31 26 70 / 54%) 0px 5px 10px;
 }
 .ROIL{
     color:#beb6c9;

@@ -194,7 +194,7 @@ const Affiliate =()=>{
                         <p className='bettors1' >01</p>
                     </div>
                     <div className='AddTip ghFii1'>Unlimited Earning Possibility</div>
-                    <p className='itWell ghFii12'>Earn 75% of your referral affiliate wallet subscription and 20% of Each time they purchase a membership from any of our tipster.</p>
+                    <p className='itWell ghFii12'>Earn 75% of your referral affiliate wallet subscription and 20%  Each time they purchase a membership from any of our tipster.</p>
                     </div>
                 
                  
@@ -214,7 +214,7 @@ const Affiliate =()=>{
                         <p className='bettors1' >03</p>
                     </div>
                     <div className='AddTip ghFii1'>Residual Income for life</div>
-                    <p className='itWell ghFii12'>You can build I lifetime income through our affiliate program. Search time your referrals renew their affiliate Subscription or tipster membership subscription you earn commission.</p>
+                    <p className='itWell ghFii12'>You can build a lifetime income through our affiliate program. Each time your referrals renew their affiliate Subscription or tipster membership subscription you earn commission.</p>
                     </div>
                
             </div>
@@ -241,7 +241,7 @@ const Affiliate =()=>{
              data-aos-easing="linear" style={{color:"#fff"}}>FAQ</div>
             <div className="homeChange">
               <div className="HowFarBro" onClick={drop}>
-                <span>I have never traded the forex or crypto market before. How do I Start?</span>{" "}
+                <span> How do I join and subscribe to the  affiliate program?</span>{" "}
                 <span className="IconSpace">
                 {show? <FontAwesomeIcon icon={faMinus} className="PlusIcon" />:<FontAwesomeIcon icon={faPlus} className="PlusIcon" />}
                 </span>
@@ -251,7 +251,7 @@ const Affiliate =()=>{
                     <div className="Qac"></div>
                 <p className="ILOVEK">
                   {" "}
-                  To start trading the forex or cryptocurrency market all you need to know is to understand the basics of trading like, how to Buy/Sell, How to set Stoploss and Takeprofit, How to spot support and Resistance. With this basic knowledge you can follow our expert forecast and achieve success in the market.{" "}
+                 To join our affiliate program, Register as a user, go to your dashboard and subscribe by unlocking your affiliate wallet.{" "}
                 </p>
                 </div>
               ) : (
@@ -260,7 +260,7 @@ const Affiliate =()=>{
             </div>
             <div className="homeChange">
               <div className="HowFarBro" onClick={drop1}>
-                <span>I don't know how to bet on sports. How do I start?</span>
+                <span>How much is the subscription?</span>
                 <span className="IconSpace">
                 {show1? <FontAwesomeIcon icon={faMinus} className="PlusIcon" />:<FontAwesomeIcon icon={faPlus} className="PlusIcon" />}
                 </span>
@@ -269,7 +269,7 @@ const Affiliate =()=>{
                 <div>
                   <div className="Qac"></div>
                 <p className="ILOVEK">
-                 You dont need to understand much about sport betting to bet. Once you are registered with our recommended bookmaker just copy our coupon code and search for it. With the code your can place your bet.
+                 Affiliate subscription is flexible. You can either subscribe for a monthly plan or yearly plan.
                 </p>
                 </div>
               ) : (
@@ -278,7 +278,7 @@ const Affiliate =()=>{
             </div>
             <div className="homeChange">
               <div className="HowFarBro" onClick={drop2}>
-                <span> I don't Have an account with any forex platform. Can I get any recommendations? </span>
+                <span>  when I subscribe will I get daily tips? </span>
                 <span className="IconSpace">
                   {show2? <FontAwesomeIcon icon={faMinus} className="PlusIcon" />:<FontAwesomeIcon icon={faPlus} className="PlusIcon" />}
                 </span>
@@ -287,7 +287,7 @@ const Affiliate =()=>{
                 <div>
                   <div className="Qac"></div>
                 <p className="ILOVEK">
-                Click the prediction button on the header and go through forex section to see recommended brokers
+               No, Affiliate subscription only give you access to your affiliate dashboard and enable you to earn from your referrals when they unlock their affiliate wallet or subscribe to any Tipsters membership
                 </p>
                 </div>
               ) : (
@@ -296,7 +296,7 @@ const Affiliate =()=>{
             </div>
             <div className="homeChange">
               <div className="HowFarBro" onClick={drop3}>
-                <span> I am not registered with any cryptocurrency trading platform. Can I get any recommendations? </span>
+                <span> what's my percentage share when when I refer an affiliate member? </span>
                 <span className="IconSpace">
                   {show3? <FontAwesomeIcon icon={faMinus} className="PlusIcon" />:<FontAwesomeIcon icon={faPlus} className="PlusIcon" />}
                 </span>
@@ -305,7 +305,7 @@ const Affiliate =()=>{
                 <div>
                   <div className="Qac"></div>
                 <p className="ILOVEK">
-                Click the prediction button on the header and go through Cryptocurrency section to see recommended exchanges
+                You can earn upto 75% when your referrals unlock their affiliate wallet and 20% each time they subscribe to any tipster membership.
                 </p>
                 </div>
               ) : (
@@ -314,7 +314,7 @@ const Affiliate =()=>{
             </div>
             <div className="homeChange">
               <div className="HowFarBro" onClick={drop4}>
-                <span> How much does it cost to subscribe monthly? </span>
+                <span>  If my referral renew their affiliate Subscription will I still earn? </span>
                 <span className="IconSpace">
                   {show4? <FontAwesomeIcon icon={faMinus} className="PlusIcon" />:<FontAwesomeIcon icon={faPlus} className="PlusIcon" />}
                 </span>
@@ -323,7 +323,7 @@ const Affiliate =()=>{
                 <div>
                   <div className="Qac"></div>
                 <p className="ILOVEK">
-                  It cost only $50 or ₦25,000 to subscribe monthly
+                  Yes, you will continue to earn from any of your referral that renews his affiliate subscription.
                 </p>
                 </div>
               ) : (
@@ -332,7 +332,7 @@ const Affiliate =()=>{
             </div>
             <div className="homeChange">
               <div className="HowFarBro" onClick={drop5}>
-                <span>What if I don't make a profit at the end of the month with your predictions? </span>
+                <span>when I refer  users who buys membership subscription from  tipsters  without unlocking his affiliate wallet will I earn from their purchase? </span>
                 <span className="IconSpace">
                   {show5? <FontAwesomeIcon icon={faMinus} className="PlusIcon" />:<FontAwesomeIcon icon={faPlus} className="PlusIcon" />}
                 </span>
@@ -341,49 +341,14 @@ const Affiliate =()=>{
                 <div>
                   <div className="Qac"></div>
                 <p className="ILOVEK">
-                 If you judiciously follow our predictions and apply our risk reward ratio and dont turn profit at the end of the month, We will refund your subscription money or your next month subscription becomes free.
+                 Yes, You earn upto 20% of their membership subscription to any tipster.
                 </p>
                 </div>
               ) : (
                 ""
               )}
             </div>
-            <div className="homeChange">
-              <div className="HowFarBro" onClick={drop6}>
-                <span> If my referral subscribes every month will I still get paid my referral commission? </span>
-                <span className="IconSpace">
-                  {show6? <FontAwesomeIcon icon={faMinus} className="PlusIcon" />:<FontAwesomeIcon icon={faPlus} className="PlusIcon" />}
-                </span>
-              </div>
-              {show6 ? (
-                <div>
-                  <div className="Qac"></div>
-                <p className="ILOVEK">
-                  We pay 50% commission on any user your refer to our plaform.e.g if Jones refers Emeka and Emeka subscribe to our premium prediction, Jones will recieve 50% ($25 or ₦12,500). if Emeka continue renewing his subscrption every month, Jones will keep earning his referral bonus for life.
-                </p>
-                </div>
-              ) : (
-                ""
-              )}
-            </div>
-            <div className="homeChange">
-              <div className="HowFarBro" onClick={drop7}>
-                <span> Can i invest my money with your company so you trade & bet for me and pay me percentage monthly?</span>
-                <span className="IconSpace">
-                  {show7? <FontAwesomeIcon icon={faMinus} className="PlusIcon" />:<FontAwesomeIcon icon={faPlus} className="PlusIcon" />}
-                </span>
-              </div>
-              {show7 ? (
-                <div>
-                  <div className="Qac"></div>
-                <p className="ILOVEK">
-                  We do not accept or manage users trading/ betting funds, trade or bet for any user. We only forecast the forex, crypto, binary market & predicts games. Users are responsible for managing their money with any brokers or bookies of their choice.
-                </p>
-                </div>
-              ) : (
-                ""
-              )}
-            </div>
+
           </div>
           </div>
           </div>

@@ -82,8 +82,8 @@ const Footer =()=>{
                           <li><ul className="footer_brand_icon">
                               <li><a href="https://www.facebook.com/Earnarshub?mibextid=ZbWKwL" className="twww"><FontAwesomeIcon icon={faFacebook} className="icon_brand_size"/></a></li>
                               <li><a href="https://twitter.com/EranarsC?t=PS1iorx90FTh_zG6FMqHVg&s=09" className="twww"><FontAwesomeIcon icon={faTwitter} className="icon_brand_size" /></a></li>
-                              <li><FontAwesomeIcon icon={faLinkedin} className="icon_brand_size" /></li>
-                              <li><a href="https://t.me/earnarshub" className="twww"><FontAwesomeIcon icon={faTelegram} className="icon_brand_size" /></a></li>
+                            
+                              {/* <li><a href="https://t.me/earnarshub" className="twww"><FontAwesomeIcon icon={faTelegram} className="icon_brand_size" /></a></li> */}
                               <li><a href="https://www.youtube.com/@Earnars" className="twww"><FontAwesomeIcon icon={faYoutube} className="icon_brand_size" /></a></li>
                               </ul></li>
                       </ul>

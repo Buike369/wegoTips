@@ -85,7 +85,7 @@
 }
 
 .twww {
-    color: #fff
+    color: #54536d;
 }
 
 .twww:hover {
@@ -94,14 +94,14 @@
 
 .footer_brand_icon {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     /* gap:8px; */
     margin-top: 10px;
 }
 
 .icon_brand_size {
     font-size: 22px;
-    /* margin-right: 10px; */
+    margin-right: 8px;
 }
 .DesktopFooter li a{
    font-size: 14px;
