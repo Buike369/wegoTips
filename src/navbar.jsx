@@ -114,7 +114,7 @@ const handleScroll = () => {
                     <div className="DoubleChancert">
                       <a className="cover_Div"></a>
                       <a href="/become-tipster">Become a Tipster</a>
-                      <a href="/find-tipster">Find a Tipster</a>
+                      <a href="/">Find a Tipster</a>
                       <a href="/allTips">All Tips </a>
                       
                     
@@ -155,8 +155,8 @@ const handleScroll = () => {
                       <li className="Email_Like"><div className="Email_Like2">{currentUser?.email}</div></li>
                       <li className="paulmy_man">ID:00000{currentUser?.id}</li>
                       <a href="/user-dashboard" className="FeedDiv"><li className="LogOutDiv_UN">Dashboard</li></a>
-                      <a href="/profile" className="FeedDiv"><li className="LogOutDiv_UN">My Profile</li></a>
-                      {isPaid === 1? <a href="/tip" className="FeedDiv"><li className="LogOutDiv_UN">My Tips(Premium)</li></a> :<div onClick={()=>setRegister(!register)} className="FeedDiv" ><li className="LogOutDiv_UN">My Tips(Subscribe)</li></div>}
+                     
+                      {isPaid === 1? <a href="/tip" className="FeedDiv"><li className="LogOutDiv_UN">Subscription</li></a> :<div onClick={()=>setRegister(!register)} className="FeedDiv" ><li className="LogOutDiv_UN">My Tips(Subscribe)</li></div>}
                      
                      
                       {currentUser?  <Link to="" className="FeedDiv"><li className="LogOutDiv_UN AMKING" onClick={logout}>Logout</li></Link>:""}

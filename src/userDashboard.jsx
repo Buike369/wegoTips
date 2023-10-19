@@ -1,13 +1,69 @@
-import React, {useState} from  'react'
+import React, {useState,useEffect,useContext} from  'react'
 import Footer from "./footer"
 import "./style/userDashboard.css"
+import "./style/walletOverView.css"
+import axios from "axios"
+import Mytip from "./mytip"
+import { useFlutterwave, closePaymentModal } from 'flutterwave-react-v3';
+import { AuthContext } from './context/authContext';
 import ReactPaginate from 'react-paginate';
 import Demo1 from "./Dashboard/dashboardSports"
 import Demo2 from "./Dashboard/dashboardPostResult"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faPlus,faMinus, faPaperPlane,faVolleyball,faCheckToSlot, faCheckDouble} from '@fortawesome/free-solid-svg-icons'
+import {faCircleCheck} from '@fortawesome/free-solid-svg-icons'
+
 
 const UserDashboard = () => {
+
+    const [wallet,setWallet]=useState('wallets')
+    const [subscription,setSubscription]=useState('')
+    const [refferal,setRefferal]=useState('')
+    const [modal,setModal]= useState(false)
+    const [deposit,setDeposit]= useState("")
+    const [subAmount,setSubAmount]=useState(25000)
+    const [withdraw,setWithdraw]= useState("")
+    const [transfer,setTransfer]= useState("")
+     const [message5,setMessage5]= useState("")
+    const [pinAmount,setPinAmount]=useState("Enter Amount")
+    const [move,setMove] = useState(true)
+    const [active,setActive] = useState(true)
+    const [affliateWallet,setAffliateWallet]=useState(0)
+    const [affliateAcount,setAffliateAccount]=useState("000")
+    const [amount,setAmount] =useState(0)
+     const [amount1,setAmount1] =useState(0)
+    const {currentUser,setIsPaid} = useContext(AuthContext);
+    const[divFlex,setDivFlex]=useState("")
+        let pars = 0;
+      const [moneyDeposit,setMoneyDeposit] = useState([])
+    const [duration,setDuration] = useState();
+    const [mainWallet,setMainWallet] = useState(0)
+    const [visit,setVisit] = useState()
+    const [subscriptionAmount,setSubscriptionAmount] = useState(2500)
+     const [error,setError]= useState("")
+    //  const [successSub,setSuccessSub] = useState()
+    // const [referralId,setRefferalId] = useState(0)
+    //  const [referredId,setRefferedId] = useState(1)
+     const [walletOverview,setWalletOverview] = useState([])
+    const [depositCash,setDepositCash]= useState([])
+    const [referrals2,setReferrals2] = useState([])
+    // const [Active,setActivem] = useState("active")
+    const [subActive,setSubActive]=useState("inActive")
+    const [message,setMessage]=useState("")
+    const [withdrawalInfo,setWithdrawalInfo] = useState({
+        withdrawalAmount:"",
+       accountName:"",
+        accountNo:""
+    })
+    
+    const [iconShow,setIconShow]=useState('circleDisplay')
+      const [network,setNetwork]=useState('airtel')
+
+      const [airtimeInfo,setAirtimeInfo]=useState({
+        mobileNumber:"",
+        amount:"",
+        network:network
+      })
 const [section1, setSection1] = useState("userSection")
 const [accountSetting, setAccountSetting] = useState("edit")
 const [section2, setSection2] = useState("AffiliateSection")
@@ -72,8 +128,339 @@ const [dashboardMenu,setDashboardMenu] = useState(false)
   setSection1('userSection')
   setDashboardMenu(!dashboardMenu)
  }
+  const iconD2 =()=>{
+    setIconShow('circleDisplay')
+    setNetwork("airtel")
+    setAirtimeInfo({
+        mobileNumber:"",
+        amount:""
+     })
+ } 
+ const setGo=()=>{
+        setSubscription('going');
+        setWallet("")
+        setRefferal("")
+        setDivFlex("Amam")
+    }
+   const setGo1=()=>{
+        setSubscription('');
+        setWallet("wallets")
+        setRefferal("")
+        setDivFlex("")
+    }
+ const setGo2=()=>{
+        setSubscription('');
+        setWallet("")
+        setRefferal("fort")
+        setDivFlex("")
+    }
+
+  const iconD1 =()=>{
+    setIconShow("circleDisplay")
+     setNetwork("MTN")
+     setAirtimeInfo({
+        mobileNumber:"",
+        amount:""
+     })
+ } 
+     const handleChanges4 =(e)=>{
+        setAirtimeInfo(prev =>({...prev,[e.target.name]:e.target.value,network:network}))
+    }
+ const iconD =()=>{
+    setIconShow("circleDisplay")
+     setNetwork("Glo");
+     setAirtimeInfo({
+        mobileNumber:"",
+        amount:""
+     })
+ } 
+ const ego = [{amount:depositCash.amount,id:currentUser.id,mainA:mainWallet},depositCash.customer]
+
+  const depositT =()=>{
+     setDeposit('depositMe')
+     setWithdraw('')
+     setModal(!modal)
+     setTransfer("")
+      document.body.classList.add('hou')
+
+ }
+  const subscript =()=>{
+    setDeposit('subScriptionP')
+    setWithdraw('')
+    setModal(!modal)
+    setTransfer("")
+     document.body.classList.add('hou')
+}
+ const transferT =()=>{
+    setWithdraw('')
+    setDeposit('')
+    setTransfer("transferMe")
+    setModal(!modal)
+    document.body.classList.add('hou')
+}
+
+ const withdrawT =()=>{
+    setWithdraw('withdrawMe')
+    setDeposit('')
+    setModal(!modal)
+    setTransfer("")
+    document.body.classList.add('hou')
+}
+const airtimePurchase =()=>{
+    setWithdraw('airtime')
+    setDeposit('')
+    setModal(!modal)
+    setTransfer("")
+    document.body.classList.add('hou')
+}
+ const dataPurchase =()=>{
+    setWithdraw('data')
+    setDeposit('')
+    setModal(!modal)
+    setTransfer("")
+    document.body.classList.add('hou')
+}
+
+const trig =()=>{
+    setPinAmount("Enter Amount")
+    setMove(false)
+    setActive(!active)
+}
+const reOpen =()=>{
+    setModal(!modal);
+    document.body.classList.remove('hou')
+}
+const handleChanges =(e)=>{
+        setWithdrawalInfo(prev =>({...prev,[e.target.name]:e.target.value}))
+    }
+const airtimePurchase2=(e)=>{
+    e.preventDefault()
+   console.log(airtimeInfo)
+    
+   const pass =[airtimeInfo,{main:mainWallet,id:currentUser.id}]
+
+   if((airtimeInfo.amount === "") || (airtimeInfo. mobileNumber === "")){
+      console.log("amount or phone_number field is empty")
+   }
+
+   if(parseInt(mainWallet) > parseInt(airtimeInfo.amount)){
+ 
+     axios.post("https://tea.earnars.com/api/flutterwave/airtime",pass).then((response)=>{
+
+     }).catch((err)=>{
+        console.log(err)
+     })
+
+ 
+  
+   }else{
+   console.log("insufficient fund for airtime purchase")
+   }
+ 
+}
+
+  const handleWithdrawal =(e) =>{
+                    e.preventDefault()
+                  
+                    if(parseInt(mainWallet) > parseInt(withdrawalInfo.withdrawalAmount )){
+                        const mainWallet1 = mainWallet;
+                        const mon1 = [withdrawalInfo,{main:mainWallet1,id:currentUser.id}]   
+         
+                   axios.post("https://tea.earnars.com/api/user/withdrawal",mon1).then((response)=>{
+                              setMessage5(response.data.msg)
+                    setTimeout(()=>{
+                         setMessage5("")
+                         setModal(!modal);
+                    },8000)
+                   }).catch((err)=>{
+                    //  setError(err)
+                    console.log(err)
+                   })
+
+                   }else{
+                    setMessage5("your main wallet is low for transaction")
+                     setTimeout(()=>{
+                         setMessage5("")
+                        
+                    },3000)
+                   }
+                    }
+                       const handleTransfer =(e) =>{
+                    e.preventDefault()
+
+                    if(parseInt(affliateWallet) === 0){
+                        setError("Insuffient Fund")
+                        setTimeout(()=>{
+                          setError("")
+                        },3000)
+                    }else if(parseInt(affliateWallet) < parseInt(amount1)){
+                        setError("low balance for transaction")
+                         setTimeout(()=>{
+                          setError("")
+                        },3000)
+                    }else{
+                       
+                    axios.post("https://tea.earnars.com/api/user/transfer",{amountTransferred:amount1,main:mainWallet,affliateAmount:affliateWallet,id:currentUser.id}).then((response)=>{
+
+                    }).catch((err)=>{
+                            console.log(err)
+                            // setError(err)
+                     setTimeout(()=>{
+                          setError("")
+                        },3000)
+                    })
+                    }
+      
+                    }
+
+                       const handleSubscription = (e)=>{
+ 
+     if(parseInt(subscriptionAmount) > parseInt(mainWallet)){
+        setMessage("Low Balance pls deposit")
+          setTimeout(()=>{
+             setMessage("")
+        },5000)
+    
+         console.log("Low Balance pls deposit")
+     }else if(parseInt(mainWallet) <= parseInt(subscriptionAmount)){
+        setMessage("main Wallet cannot be empty")
+        setTimeout(()=>{
+             setMessage("")
+        },5000)
+        
+             console.log("main Wallet cannot be empty")
+     }else{
+          
+            axios.post("https://tea.earnars.com/api/user/subscription",{
+            id:currentUser.id,amount:subscriptionAmount,mainWallet:mainWallet
+           }).then((response)=>{
+             setMessage("Subscription was successful")
+              setTimeout(()=>{
+            setMessage("")
+         setModal(!modal)
+           },3000)
+         
+           }).catch((err)=>{
+            //   setError(err)
+              console.log(err)
+           })
+      
+     }
+
+     }
+
+     const config = {
+    public_key: 'FLWPUBK-a2e5c30edf925c9bfb96e5c540c22fb9-X',
+    tx_ref: Date.now(),
+    amount: parseInt(amount),
+    currency: 'NGN',
+    payment_options: 'card,mobilemoney,ussd',
+    customer: {
+      email: currentUser.email,
+       phone_number:currentUser.phone_number,
+      name: currentUser.username,
+    },
+    customizations: {
+      title: 'Deposit',
+      description: 'Payment to fund ur main wallet',
+      logo: 'https://earnars.com/public/img/Earnars1@72x1.png',
+    },
+  };
+
+  const handleFlutterPayment = useFlutterwave(config);
 
 
+  const flut =()=>{
+     handleFlutterPayment({
+            callback: (response) => {
+                // console.log(response)
+              setDepositCash(response)
+                closePaymentModal()
+                 setTimeout(()=>{
+                     setModal(!modal)
+                      },1000) // this will close the modal programmatically
+            },
+            onClose: () => {
+                
+            },
+          });
+  }
+
+    useEffect(()=>{
+    const handleDeposit = () =>{
+                      axios.post("https://tea.earnars.com/api/user/deposit-money",ego ).then((response)=>{
+
+                      }).catch((err)=>{
+                          console.log(err)
+                      })
+                    }
+           if(depositCash.length > 0){
+            handleDeposit()
+           }
+
+  },[depositCash])
+
+   useEffect(()=>{
+    const pala = ()=>{
+  axios.get(`https://tea.earnars.com/api/user/main-wallet/${currentUser?.id}`).then((response)=>{
+     setMainWallet(response.data[0].amount)
+  }).catch((err)=>{
+    // setError(err)
+    console.log(err)
+  })   
+    }
+    pala()
+  },[mainWallet])
+
+     useEffect(()=>{
+    const pala1 =()=>{
+   
+  axios.get(`https://tea.earnars.com/api/user/affiliate-wallet/${currentUser?.id}`).then((response)=>{
+   setAffliateWallet(response.data[0].amount)
+  }).catch((err)=>{
+//   setError(err)
+  console.log(err)
+  })      
+    }
+    pala1()
+  },[affliateWallet])
+
+   useEffect(()=>{
+    const pala2 = ()=>{
+  axios.get(`https://tea.earnars.com/api/user/referral-user/${currentUser?.id}`).then((response)=>{
+   setReferrals2(response.data)
+  }).catch((err)=>{
+     setError(err)
+     console.log(err)
+  })
+   }
+    pala2()
+  },[referrals2])
+
+  useEffect(()=>{
+    const pala3 = ()=>{
+      
+    axios.get(`https://tea.earnars.com/api/user/wallet-overview/${currentUser.id}`).then((response)=>{
+     setWalletOverview(response.data)
+    }).catch((err)=>{
+ setError(err)
+ console.log(err)
+    })  
+    }
+    pala3()
+  },[walletOverview])
+
+  useEffect(()=>{
+      const getSubscriptionStatus =()=>{
+    axios.get(`https://tea.earnars.com/api/user/subscription-status/${currentUser.id}`).then((response)=>{
+   setSubActive(response.data.pop().status)
+    }).catch((err)=>{
+ console.log(err)
+    })
+     }
+      getSubscriptionStatus()
+
+   },[])
 
 
      const card = ["sport","binary","forex","crytptocurrency","sport","binary","forex","crytptocurrency"]
@@ -87,10 +474,10 @@ const [dashboardMenu,setDashboardMenu] = useState(false)
                     <div className='userD50'>
                     <div className='dvd2 dvd23'>
                     <div className='userD6'><img src="/img/dashboard-profile3.png" alt="" className='profileDImg'/></div>
-                    <div className='JohnKen1'>John Doe</div>
+                    <div className='JohnKen1'>Samuel245</div>
                     <div className='JohnKen2'> <img src="/img/map-icon.png" alt=""/><span className='JohnKen3'>Nigeria</span></div>
                     <div  className='JohnKen2'><img src="/img/calendar-icon2.png" alt=""/><span className='JohnKen3'>Joined Oct, 2021</span></div>
-                    <button className='EMMAN'><div className=' JohnKen5'><img src="/img/edit-icon.png" alt=""/><span className='JohnKen7'>Edit Your Profile</span></div></button> 
+                    <button className='EMMAN y45' onClick={()=>setSection1('userSection5')}><div className=' JohnKen5'><img src="/img/edit-icon.png" alt=""/><span className='JohnKen7'>Edit Your Profile</span></div></button> 
                     <div className='JohnKen4 JohnKen8'> <div className='JohnKen5'><img src="/img/followers.png" alt=""/><span className='JohnKen7 JohnKen6'>Followers</span></div><div className='JohnKen6'>2400</div></div>
                      <div className='JohnKen4 JohnKen8'> <div className='JohnKen5'><img src="/img/following.png" alt=""/><span className='JohnKen7 JohnKen6'>Following</span></div><div className='JohnKen6'>2600</div></div>
                     
@@ -104,8 +491,8 @@ const [dashboardMenu,setDashboardMenu] = useState(false)
                        <div className='dvd1 JohnKen5' onClick={()=>setSection1('userSection3')}  style={{backgroundColor:section1 === "userSection3" ? "#0d0740": "", borderLeft: section1 === "userSection3" ? "2px solid #5157ab":"" }}><img src="/img/settings.png" alt=""/> <span className='JohnKen7'>Affiliate Wallet</span></div>
                          <div className='dvd1 JohnKen5 ' onClick={()=>setSection1('userSection6')}><img src="/img/settings.png" alt=""/> <span className='JohnKen7'>Post Tip</span></div>
                            <div className='dvd1 JohnKen5 ' onClick={()=>setSection1('userSection7')}><img src="/img/settings.png" alt=""/> <span className='JohnKen7'>Post Result</span></div>
-                             <div className='dvd1 JohnKen5 '><img src="/img/settings.png" alt=""/> <span className='JohnKen7'>Delete Post</span></div>
-                             <div className='dvd1 JohnKen5 ' onClick={()=>setSection1('userSection1')}  style={{backgroundColor:section1 === "userSection1" ? "#0d0740": "", borderLeft: section1 === "userSection1" ? "2px solid #5157ab":"" }}><img src="/img/subscriptions.png" alt=""/> <span className='JohnKen7' >Subscription</span></div>
+                           
+                             <div className='dvd1 JohnKen5 ' onClick={()=>setSection1('userSection1')}  style={{backgroundColor:section1 === "userSection1" ? "#0d0740": "", borderLeft: section1 === "userSection1" ? "2px solid #5157ab":"" }}><img src="/img/subscriptions.png" alt=""/> <span className='JohnKen7' >My Tips</span></div>
                         <div className='dvd1 JohnKen5'  onClick={()=>setSection1('userSection4')}  style={{backgroundColor:section1 === "userSection4" ? "#0d0740": "", borderLeft: section1 === "userSection4" ? "2px solid #5157ab":"" }}><img src="/img/settings.png" alt=""/> <span className='JohnKen7'>Pricing</span></div>
                           <div className='dvd1 JohnKen5 ' onClick={()=>setSection1('userSection5')}  style={{backgroundColor:section1 === "userSection5" ? "#0d0740": "", borderLeft: section1 === "userSection5" ? "2px solid #5157ab":"" }}><img src="/img/settings.png" alt=""/> <span className='JohnKen7'>Setting</span></div>
                           </div>
@@ -117,7 +504,7 @@ const [dashboardMenu,setDashboardMenu] = useState(false)
                       <div className='dvd1 JohnKen5 '><img src="" alt=""/> <span className='JohnKen5'> Main Wallet</span></div>
                        <div className='dvd1 JohnKen5 'onClick={()=>setSection1('userSection3')}><img src="" alt=""/> <span className='JohnKen5' > Affiliate Wallet</span></div>
             
-                             <div className='dvd1 JohnKen5 '><img src="/img/subscriptions.png" alt=""/> <span className='JohnKen5'>Subscription</span></div>
+                             <div className='dvd1 JohnKen5 '><img src="/img/subscriptions.png" alt=""/> <span className='JohnKen5'>My Tips</span></div>
                           <div className='dvd1 JohnKen5 '><img src="/img/settings.png" alt=""/> <span className='JohnKen5'>Setting</span></div>
                           <div className='dvd1 JohnKen5 '><img src="" alt=""/> <span className='JohnKen5'>Become a Tipster</span></div>
                            </div>
@@ -195,6 +582,8 @@ const [dashboardMenu,setDashboardMenu] = useState(false)
         </div>
 
     <div className='ManUm'>
+
+      <div className="subsub">Active Subscriber</div>
         <div className="wereAre">
           {card.map((app,id)=>(
                                 <div className="cardProfileDiv TY44 eretYem"  style={{border:"1px solid rgb(61 62 126)"}}>
@@ -228,7 +617,7 @@ const [dashboardMenu,setDashboardMenu] = useState(false)
          <div>
            <div className='paw1 weNeed6 jd'>
                                 <div className='cic'></div>
-                                <div className='bkInT'>1 Day <span className='moneyColor'>$100</span></div>
+                                <div className='bkInT'>1 Day <span className='moneyColor'>₦100</span></div>
                             </div>
                            <div className="StartDate">Start Date: 03/02/2022</div>
                            <div className="StartDate">End Date: 03/02/2022</div>
@@ -375,10 +764,13 @@ const [dashboardMenu,setDashboardMenu] = useState(false)
         </div>
         </> :""}
            {section1 === "userSection2"? 
-        <>
+    
+    <>
+    <div className="BKOver2">
     <div className='BKOver'>
       <div className="BkOver1"  style={{backgroundColor: section3 === "tipsterOver" ? "#fff" :"#0d0740", color: section3 === "tipsterOver" ? "#000" :"gold"}}  onClick={()=>setSection3("tipsterOver")}>Wallet Overview</div>
        <div className="BkOver1"  style={{backgroundColor: section3 === "tipsterOver1" ? "#fff" :"#0d0740", color: section3 === "tipsterOver1" ? "#000" :"gold"}} onClick={()=>setSection3("tipsterOver1")}>Membership Subscription</div>
+    </div>
     </div>
         <div className="ManB">
            <div  className="ManB1 ManB30">
@@ -388,8 +780,8 @@ const [dashboardMenu,setDashboardMenu] = useState(false)
                           <p className="Is_KB1">₦70.00</p>
                       </div>
                       <div className="Depost">
-                          <p className="dep1 add1" >Deposit</p>
-                          <p className="dep1 add2" >Withdraw</p>
+                          <p className="dep1 add1" onClick={ depositT} >Deposit</p>
+                          <p className="dep1 add2" onClick={withdrawT}>Withdraw</p>
                       </div>
                       </div>
            </div>
@@ -398,7 +790,7 @@ const [dashboardMenu,setDashboardMenu] = useState(false)
               <div  className='DataTo tipUp'>Tipster Wallet</div>
               <div className='tipWall tipUp'>₦2000</div>
 
-             <div className='TransferTip'>Transfer</div>
+             <div className='TransferTip' onClick={transferT}>Transfer</div>
              </div>
            </div>
            <div  className="ManB1 ManB30">
@@ -407,9 +799,9 @@ const [dashboardMenu,setDashboardMenu] = useState(false)
                           <div className="Pay_Bills">Pay bills with upto 5% discount</div>
                           <div className="Data"> 
                             <div className="Betting1">
-                                <div className="AIR_I" >Airtime</div>
-                                <div className="AIR_I" >Data</div>
-                                <div className="AIR_I">Betting</div>
+                                <div className="AIR_I"   onClick={airtimePurchase}>Airtime</div>
+                                <div className="AIR_I" onClick={dataPurchase}>Data</div>
+                                <div className="AIR_I">Bills</div>
                               </div>
                           </div>
                           </div>
@@ -715,11 +1107,46 @@ const [dashboardMenu,setDashboardMenu] = useState(false)
 
          {section1 === "userSection3"? 
         <>
+          <div className="BKOver2">
     <div className='BKOver'>
       <div className="BkOver1" style={{backgroundColor: section2 === "AffiliateSection" ? "#fff" :"#0d0740", color: section2 === "AffiliateSection" ? "#000" :"#fff"}} onClick={()=>setSection2('AffiliateSection')}>Affiliate Overview</div>
-       <div className="BkOver1" style={{backgroundColor: section2 === "AffiliateSection1" ? "#fff" :"#0d0740", color: section2 === "AffiliateSection1" ? "#000" :"#fff"}} onClick={()=>setSection2('AffiliateSection1')}>Transactions/Referrals Subscription</div>
+       <div className="BkOver1" style={{backgroundColor: section2 === "AffiliateSection1" ? "#fff" :"#0d0740", color: section2 === "AffiliateSection1" ? "#000" :"#fff"}} onClick={()=>setSection2('AffiliateSection1')}>Transmission/Referral Subscription</div>
     </div>
-        <div className="ManB">
+    </div>
+     <div className="ManB">
+           <div  className="ManB1 ManB30">
+            <div className="Firet">
+                      <div className="Main_WALL1">
+                          <p className="Is_KB">Main Wallet</p>
+                          <p className="Is_KB1">₦70.00</p>
+                      </div>
+                      <div className="Depost">
+                          <p className="dep1 add1" onClick={ depositT} >Deposit</p>
+                          <p className="dep1 add2" onClick={withdrawT} >Withdraw</p>
+                      </div>
+                      </div>
+           </div>
+           <div  className="ManB1 ManB30">
+             <div className='DataBoundle2'>
+              <div  className='DataTo tipUp'>Affiliate Wallet</div>
+              <div className='tipWall tipUp'>₦2000</div>
+
+             <div className='TransferTip'  onClick={transferT}>Transfer</div>
+             </div>
+           </div>
+           <div  className="ManB1 ManB30">
+            <div >
+                            <div className='ManMMb2'>
+                 <div className='UnLockAff'>Unlock Your Affiliate wallet and get access to tons of opportunity to make money  </div>
+                 <div className='UnlockAff1'> Click to Unlock Now</div>
+              </div>
+                      </div>
+          
+           </div>
+           
+          
+        </div>
+        {/* <div className="ManB">
            <div  className="ManB1 ManB30 ManMMb">
             <div className='mainVm34'>
               <div className='likeYou'>
@@ -744,7 +1171,7 @@ const [dashboardMenu,setDashboardMenu] = useState(false)
            </div>
            
           
-        </div>
+        </div> */}
             
 
             {section2 === "AffiliateSection" ? 
@@ -1014,6 +1441,19 @@ const [dashboardMenu,setDashboardMenu] = useState(false)
           <div className='MembershipP'>
             Set Your Membership Price Tag
           </div>
+           <div className='PR17'>
+              <select className='Sel'>
+                <option>
+                  daily
+                </option>
+                  <option>
+                  weekly
+                </option>
+                  <option>
+                  Monthly
+                </option>
+              </select>
+            </div>
           <div className="pricingL PR">
             <div className='PR1'>
               <select className='Sel'>
@@ -1034,21 +1474,23 @@ const [dashboardMenu,setDashboardMenu] = useState(false)
            </div>
           </div>
           <div className="pricingL pricingL12">
-            <div className="pricingL1"><span className='gameDay'> 1 day</span> <span className='gameDay'> $500</span> <button className="RemoveButton">Remove</button></div>
-            <div className="pricingL1"> <span className='gameDay'> 7 days</span><span className='gameDay'> $1000</span> <button className="RemoveButton">Remove</button></div>
-            <div className="pricingL1"><span className='gameDay'> 30 days</span> <span className='gameDay'>$1500</span> <button className="RemoveButton">Remove</button></div>
+            <div className="pricingL1"><span className='gameDay'> 1 day</span> <span className='gameDay'> ₦500</span> <button className="RemoveButton">Remove</button></div>
+            <div className="pricingL1"> <span className='gameDay'> 7 days</span><span className='gameDay'> ₦1000</span> <button className="RemoveButton">Remove</button></div>
+            <div className="pricingL1"><span className='gameDay'> 30 days</span> <span className='gameDay'>₦1500</span> <button className="RemoveButton">Remove</button></div>
           </div>
         </div>
         </>:""}
              {section1 === "userSection5"? <>
                    <div className='bAcount'>
-             <div className='Mu1'>
+                    <div className="goms40">
+             <div className='Mu1 goms'>
                      <div className=' dvd1 JohnKen5 minYU'  onClick={()=>setAccountSetting("edit")}><img src="/img/dashboard-icon1.png" alt=""/> <span className='JohnKen7'>Edit Profile</span></div>
                       <div className=' dvd1 JohnKen5 minYU' onClick={()=>setAccountSetting("Notification")} ><img src="/img/dashboard-icon1.png" alt=""/> <span className='JohnKen7'>Notification</span></div>
-                       <div className=' dvd1 JohnKen5 minYU'  ><img src="/img/dashboard-icon1.png" alt=""/> <span className='JohnKen7'>Deposit</span></div>
+                      
                         <div className=' dvd1 JohnKen5 minYU' onClick={()=>setAccountSetting("MemberShip")} ><img src="/img/dashboard-icon1.png" alt=""/> <span className='JohnKen7'>Membership</span></div>
-                         <div className=' dvd1 JohnKen5 minYU' onClick={()=>setAccountSetting("edit")} ><img src="/img/dashboard-icon1.png" alt=""/> <span className='JohnKen7'>Transaction</span></div>
+                       
                     
+             </div>
              </div>
                   {accountSetting === "edit" ? <>
                   <div>
@@ -1084,7 +1526,7 @@ const [dashboardMenu,setDashboardMenu] = useState(false)
                     </div>
                   </div>
                      <div>
-                    <div className='SetAE'>Billing Information</div>
+                    <div className='SetAE'>Personal Information</div>
                     <div className='bAcount SetAE1'>
                       <div className='WonDiv'>
                         <div className="jum">
@@ -1121,12 +1563,19 @@ const [dashboardMenu,setDashboardMenu] = useState(false)
                        <div className='ddE'>ZIP or postal code</div>
                        <div className=''><input type="text" placeholder='enter your email' className='ddE1'/></div>
                        </div>
-                       <div className="jum">
-                       <div className='ddE'>Company name (if applicable)</div>
-                       <div className=''><input type="text" placeholder='enter your email' className='ddE1'/></div>
-                       </div>
+                      
                        </div>
                        <div><button className='Ch'>Save Changes</button></div>
+                    </div>
+                    <div className='SetAE'>Add Bank Information</div>
+                    <div className='bAcount SetAE1'>
+                       <div className='ddE'>Bank Name</div>
+                       <div className=''><input type="text" placeholder='enter your email' className='ddE1'/></div>
+                       <div className='ddE'>Account Name</div>
+                       <div className=''><input type="text" placeholder='enter your email' className='ddE1'/></div>
+                       <div className='ddE'>Account Number</div>
+                       <div className=''><input type="number" placeholder='enter your email' className='ddE1'/></div>
+                       <div><button className='Ch'>Confirm</button></div>
                     </div>
                   </div>
                   </> :""}
@@ -1199,7 +1648,7 @@ const [dashboardMenu,setDashboardMenu] = useState(false)
          <div>
            <div className='paw1 weNeed6 jd'>
                                 <div className='cic'></div>
-                                <div className='bkInT'>1 Day <span className='moneyColor'>$100</span></div>
+                                <div className='bkInT'>1 Day <span className='moneyColor'>₦100</span></div>
                             </div>
                            <div className="StartDate">Start Date: 03/02/2022</div>
                            <div className="StartDate">End Date: 03/02/2022</div>
@@ -1255,8 +1704,8 @@ const [dashboardMenu,setDashboardMenu] = useState(false)
                        <div className='dvd1 JohnKen5' onClick={Goma2}  style={{backgroundColor:section1 === "userSection3" ? "#0d0740": "", borderLeft: section1 === "userSection3" ? "2px solid #5157ab":"" }}><img src="/img/settings.png" alt=""/> <span className='JohnKen7'>Affiliate Wallet</span></div>
                          <div className='dvd1 JohnKen5 ' onClick={Goma6}><img src="/img/settings.png" alt=""/> <span className='JohnKen7'>Post Tip</span></div>
                            <div className='dvd1 JohnKen5 ' onClick={Goma7}><img src="/img/settings.png" alt=""/> <span className='JohnKen7'>Post Result</span></div>
-                             <div className='dvd1 JohnKen5 '><img src="/img/settings.png" alt=""/> <span className='JohnKen7'>Delete Post</span></div>
-                             <div className='dvd1 JohnKen5 ' onClick={Goma3}  style={{backgroundColor:section1 === "userSection1" ? "#0d0740": "", borderLeft: section1 === "userSection1" ? "2px solid #5157ab":"" }}><img src="/img/subscriptions.png" alt=""/> <span className='JohnKen7' >Subscription</span></div>
+                           
+                             <div className='dvd1 JohnKen5 ' onClick={Goma3}  style={{backgroundColor:section1 === "userSection1" ? "#0d0740": "", borderLeft: section1 === "userSection1" ? "2px solid #5157ab":"" }}><img src="/img/subscriptions.png" alt=""/> <span className='JohnKen7' >My Tips</span></div>
                         <div className='dvd1 JohnKen5'  onClick={Goma4}  style={{backgroundColor:section1 === "userSection4" ? "#0d0740": "", borderLeft: section1 === "userSection4" ? "2px solid #5157ab":"" }}><img src="/img/settings.png" alt=""/> <span className='JohnKen7'>Pricing</span></div>
                           <div className='dvd1 JohnKen5 ' onClick={Goma5}  style={{backgroundColor:section1 === "userSection5" ? "#0d0740": "", borderLeft: section1 === "userSection5" ? "2px solid #5157ab":"" }}><img src="/img/settings.png" alt=""/> <span className='JohnKen7'>Setting</span></div>
                           </div>
@@ -1278,29 +1727,175 @@ const [dashboardMenu,setDashboardMenu] = useState(false)
  :""}
      
 
-            {/* <div className="bkFR">
-       <div style={{padding:"0 10px"}}>
-                <div className="MessageDivCov">
-               <div className="Package_Up">
-                   <h1 className="alap">Don't miss out on Fantastic News</h1>
-                   <p className="Each_Time_your">
-                       Subscribe to our newsletter and be the first to receive news.
-                   </p>
-                   <form>
-                    <div className="newsInput">
-                        <input type="email" placeholder="Enter Your Email"  className="newsBro"/>
-                        <FontAwesomeIcon icon={faPaperPlane} className="EmailSentIcon" />
+
+             {modal ? 
+            <div>
+
+            <div className="Deposit_Modal" onClick={reOpen}>
+            </div>
+                <div className="Deposit_Modal_Div_Div">
+                  
+                    {(deposit === "depositMe") ||(deposit ==="subScriptionP")? 
+                    <div className="FirstDivFolder">
+                        <div className="popo">
+                    <div className="DepositY">{deposit === "depositMe"? "Deposit" :deposit === "subScriptionP" ? "Subscrpition Payment" :"" }</div>
+                     {message && <p className="popo1">{message}</p>}
+                    <p className="AnyPay">{deposit === "depositMe"?"Convinient payment method for You.":""}</p>
+                    {deposit === "depositMe"? 
+                    <div className="DivflutterWave">
+                        <div className="Wave1">
+                            <p className="PinW">Flutterwave Secured Payment.</p>
+                            <div className="Wave2" onClick={trig}>
+                                <p className="payWithY">Pay with</p>
+                                <p className="CardBankTM">Card,Bank Transfer,Bank Deposit,USSD Code Mobile Money,Paga,Paypal</p>
+                            </div>
+                        </div>
+                    
                     </div>
-                   </form>
-                   <img src="/img/news.svg" alt=""  className="messageImg"/>
-               </div>
-               <img src="/img/undrawWorld1.svg" alt="" className="papag" />
-                <img src="/img/undrawWorld1.svg" alt="" className="papag1" />
-               
-               </div>
-               </div>
-               </div> */}
-        {/* <Footer/> */}
+                    :<div>
+<p className="PinW">Available Balance</p>
+                        <p className="WidrawMoney">₦{mainWallet}.00</p>
+                        </div>}
+                    <form>
+                        {/* {active? 
+                        <div className="ProccedRent">
+                            <input type="text" placeholder={pinAmount} className={move? "ProccedRent1":"ProccedRent1 addFine"} disabled/></div>
+                            :<div className="ProccedRent">
+                            <input type="text" placeholder={pinAmount} className={move? "ProccedRent1":"ProccedRent1 addFine"} /></div>
+                            } */}
+
+                        <div className="ProccedRent">
+                            <input type="number" placeholder={pinAmount} className={move? "ProccedRent1":"ProccedRent1 addFine"} value={ deposit === "subScriptionP"? subscriptionAmount:amount} onChange={(e)=>setAmount(e.target.value)}/></div>
+
+                        <div className="MMMYE"   onClick={ deposit === "subScriptionP"? handleSubscription : flut}>Proceed</div>
+                    </form>
+                    </div>
+                    </div>
+                    :" "}
+
+                    {withdraw === 'withdrawMe' ? 
+                    <div className="SecondDivFolder">
+                        <div className="popo">
+                        <p className="DepositY">Withdraw</p>
+                        {message5 && <p className="popo1">{message5}</p>}
+                        <p className="PinW">Available Balance</p>
+                        <p className="WidrawMoney">₦{mainWallet}.00</p>
+                        <form>
+                            <p>Amount to withdraw</p>
+                            <div className="ProccedRent fback"><input type="number" placeholder="EnterAmount"
+                            className="ProccedRent1 loo"  name="withdrawalAmount" onChange={handleChanges}/></div>
+                            <p style={{textAlign:"center",margin:"5px 2px"}}>to</p>
+                            <p>Account name</p>
+                            <div className="ProccedRent fback"><input type="text" placeholder="Account name"
+                            className="ProccedRent1 loo" name="accountName" onChange={handleChanges}/></div>
+                            <p style={{marginTop:"4px"}}>Account no</p>
+                            <div className="ProccedRent fback"><input type="number" placeholder="Account no"
+                            className="ProccedRent1 loo" name="accountNo" onChange={handleChanges}/></div>
+                            <div className="MMMYE" onClick={handleWithdrawal}>Withdraw</div>
+                            <p className="WithdrawTextIn">Note : All withdrawals are processed authomatically within 24hrs.</p>
+                        </form>
+                     </div>
+                    </div>
+
+                    : ""}
+
+                     {withdraw === 'airtime' ? 
+                    <div className="SecondDivFolder">
+                        <div className="popo">
+                        <p className="DepositY">Airtime Recharge</p>
+                        {message && <p className="popo1">{message}</p>}
+                        <p className="PinW">Available Balance:<span style={{color:"#26b991",fontSize:"19px",fontWeight:"600"}}>Main Wallet</span></p>
+                        <p className="WidrawMoney">₦{mainWallet}.00</p>
+                        <form>
+                              <div className="OTPDIV1">
+                                <p style={{color:"gray",fontSize:"14px",marginBottom:"5px"}}>Choose your network:</p>
+                 <div className="OTPDiv">
+                   <div className="codePP" onClick={iconD2}> <img src="/img/Airtel-logo.jpg" alt="" style={{width:"100%",borderRadius:"10px",height:"100%"}} /> <FontAwesomeIcon icon={faCircleCheck} className={network === "airtel"? `circleCheck ${iconShow}`:"circleCheck"}/> </div> 
+                    <div className="codePP" onClick={iconD1}> <img src="/img/New-mtn-logo.jpg" alt="" style={{width:"100%",borderRadius:"10px",height:"100%"}} /><FontAwesomeIcon icon={faCircleCheck} className={network === "MTN"? `circleCheck ${iconShow}`:"circleCheck"} /> </div> 
+                     <div className="codePP" onClick={iconD}><img src="/img/Glo2.jpg" alt="" style={{width:"100%",borderRadius:"10px",height:"100%"}} />
+                     <FontAwesomeIcon icon={faCircleCheck} className={network === "Glo"? `circleCheck ${iconShow}`:"circleCheck"} /> </div> 
+                    
+
+                 </div>
+                 </div>
+                           
+                            <p>Mobile Number</p>
+                            <div className="ProccedRent fback"><input type="number" placeholder="Mobile Number"
+                            className="ProccedRent1 loo" name="mobileNumber" value={airtimeInfo.mobileNumber} onChange={handleChanges4}/></div>
+                            <p style={{marginTop:"8px"}}>Amount</p>
+                            <div className="ProccedRent fback"><input type="number" placeholder="₦  0.00"
+                            className="ProccedRent1 loo" name="amount" value={airtimeInfo.amount} onChange={handleChanges4}/></div>
+                            <div className="MMMYE" onClick={airtimePurchase2}>Continue</div>
+                        
+                        </form>
+                     </div>
+                    </div>
+
+                    : ""}
+
+                     {withdraw === 'data' ? 
+                    <div className="SecondDivFolder">
+                        <div className="popo">
+                        <p className="DepositY">Data Bundles</p>
+                        {message && <p className="popo1">{message}</p>}
+                        <p className="PinW">Available Balance:<span style={{color:"#26b991",fontSize:"19px",fontWeight:"600"}}>Main Wallet</span></p>
+                        <p className="WidrawMoney">₦{mainWallet}.00</p>
+                        <form>
+                              <div className="OTPDIV1">
+                                <p style={{color:"gray",fontSize:"14px",marginBottom:"5px"}}>Choose your network:</p>
+                 <div className="OTPDiv">
+                   <div className="codePP" onClick={iconD2}> <img src="/img/Airtel-logo.jpg" alt="" style={{width:"100%",borderRadius:"10px",height:"100%"}} /> <FontAwesomeIcon icon={faCircleCheck} className={network === "airtel"? `circleCheck ${iconShow}`:"circleCheck"}/> </div> 
+                    <div className="codePP" onClick={iconD1} > <img src="/img/New-mtn-logo.jpg" alt="" style={{width:"100%",borderRadius:"10px",height:"100%"}} /><FontAwesomeIcon icon={faCircleCheck} className={network === "MTN"? `circleCheck ${iconShow}`:"circleCheck"} /> </div> 
+                     <div className="codePP" onClick={iconD}><img src="/img/Glo2.jpg" alt="" style={{width:"100%",borderRadius:"10px",height:"100%"}} />
+                     <FontAwesomeIcon icon={faCircleCheck} className={network === "Glo"? `circleCheck ${iconShow}`:"circleCheck"} /> </div> 
+                    
+
+                 </div>
+                 </div>
+                           <select style={{width:"100%",padding:"8px 2px"}}>
+                            <option>MTN</option>
+                             <option>Glo</option>
+                              <option>Airtel</option>
+                           </select>
+                            <p>Mobile Number</p>
+                            <div className="ProccedRent fback"><input type="number" placeholder="Mobile Number"
+                            className="ProccedRent1 loo" name="mobileNumber" value={airtimeInfo.mobileNumber} onChange={handleChanges4}/></div>
+                            <p style={{marginTop:"8px"}}>Amount</p>
+                            <div className="ProccedRent fback"><input type="number" placeholder="₦  0.00"
+                            className="ProccedRent1 loo" name="amount" value={airtimeInfo.amount} onChange={handleChanges4}/></div>
+                            <div className="MMMYE" onClick={airtimePurchase2}>Continue</div>
+                        
+                        </form>
+                     </div>
+                    </div>
+
+                    : ""}
+
+                    {transfer === "transferMe"? 
+                    <div className="ThirdDivFolder">
+                        <p className="DepositY">Transfer</p>
+                        {error && <p className="popo1">{error}</p>}
+                        <p className="PinW">Affliaite Balance</p>
+                        <p className="WidrawMoney">₦{affliateWallet}</p>
+                        <form>
+                            <div className="ProccedRent"><input type="text" placeholder="EnterAmount"
+                            className="ProccedRent1"
+                            value={amount1}
+                            onChange={(e)=>setAmount1(e.target.value)}/></div>
+                            <div className="MMMYE" onClick={handleTransfer}>Proceed</div>
+                            
+                        </form>
+
+                    </div>
+                    :""}
+                </div>
+
+                <div>
+
+                </div>
+            </div>
+           :"" }  
+
     </div>
   )
 }

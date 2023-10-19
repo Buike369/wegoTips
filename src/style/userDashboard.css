@@ -15,7 +15,7 @@
 
     width: 25%;
     background-color: #120b4a;
-    height: calc(100%-20%);
+    height: 100%;
     position: relative;
     top: 0;
     left: 0;
@@ -44,8 +44,9 @@
         overflow-y: auto; */
 }
 
-.userD4,
-.userD3 {
+/* .userD3 */
+
+.userD4 {
     /* Hide the scrollbar track */
     scrollbar-width: none;
     /* Firefox */
@@ -55,13 +56,22 @@
     /* Firefox */
 }
 
-.userD4::-webkit-scrollbar,
-.userD3::-webkit-scrollbar {
+
+.userD3::-webkit-scrollbar{
+ background: #30296c;
+ padding:2px 5px;
+}
+.userD3::-webkit-scrollbar-thumb {
+    background: #4a4293;
+    border-radius:8px
+}
+
+.userD4::-webkit-scrollbar {
     width: 0.2em;
 }
 
-.userD4::-webkit-scrollbar-thumb,
-.userD3::-webkit-scrollbar-thumb {
+/* .userD3::-webkit-scrollbar-thumb */
+.userD4::-webkit-scrollbar-thumb {
     background-color: transparent;
 }
 
@@ -305,6 +315,13 @@
     border-top-right-radius: 10px;
 
 }
+
+.subsub{
+    color:gold;
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 10px;
+}
 .Fa41{
     margin-right: 20px;
 }
@@ -390,6 +407,8 @@
     font-size: 15px;
     font-weight: 300;
     margin-top: 15px;
+    width:250px;
+    margin:0 auto;
 }
 
 .uderDD {
@@ -504,6 +523,16 @@
     gap: 10px;
     justify-content: space-between;
     margin-bottom: 10px;
+  
+    margin:0 auto 10px auto;
+    overflow: hidden;
+}
+.BKOver2{
+    width:100%;
+    overflow: scroll;
+}
+.BKOver2::-webkit-scrollbar {
+    display: none;
 }
 
 .BkOver1 {
@@ -673,6 +702,18 @@ align-items: center;
     line-height: 40px;
     margin-top: 20px;
 }
+.goms40{
+    width:100%;
+    overflow-x: auto;
+}
+.goms40::-webkit-scrollbar{
+    display:none;
+}
+.goms{
+    width:500px;
+    margin:1px auto;
+    overflow: hidden;
+}
 
 .Mu1 {
     display: flex;
@@ -738,6 +779,7 @@ align-items: center;
     color: #fff;
 }
 
+
 .Ch45 {
     justify-content: flex-start;
     padding: 2px 20px;
@@ -749,6 +791,9 @@ align-items: center;
     padding: 20px;
     border-radius: 50%;
     margin-right: 30px;
+}
+.y45{
+    cursor: pointer;
 }
 
 @media(max-width:768px){
@@ -863,6 +908,12 @@ align-items: center;
     
             flex-direction: column;
         }
+
+                .BKOver {
+                  
+                    width: 600px;
+                 
+                }
 }
 @media(min-width:769px){
     .prIconCl{
@@ -871,4 +922,7 @@ align-items: center;
         .pKFin {
             display: none;
         }
+                .PR17 {
+                    display:none;
+                }
 }

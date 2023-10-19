@@ -1151,7 +1151,7 @@ useEffect(()=>{
         <th style={{width:"100px"}}>Date</th>
         <th style={{width:"70px"}}>Time</th>
          <th style={{width:"150px"}}>League</th>
-        <th style={{width:"180px"}}>Match</th>
+        <th style={{width:"180px"}}>Team</th>
         <th style={{width:"180px"}}>Tips</th>
         <th style={{width:"60px"}}>Odd</th>
         <th style={{width:"80px"}}>Stake</th>
@@ -1168,11 +1168,11 @@ useEffect(()=>{
         <tr  className="ADDTimeDbg " >
         <th className=" ADDTimeDbg">09/11/2023</th>
         <td>13:00pm</td>
-          <td>English</td>
-        <td>Eng v Ban Asia Cup T20</td>
-        <td>Ban to win</td>
+          <td>Champions league</td>
+        <td>Chealse vs AsRoma</td>
+        <td>x2</td>
         <td>1.72</td>
-        <td>+30.45</td>
+        <td>10,000</td>
          <td><img src="/img/good.png" alt="" /></td>
          <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
     
@@ -1181,11 +1181,11 @@ useEffect(()=>{
       <tr  className="ADDTimeDbg ">
         <th className="ADDTimeDbg">09/11/2023</th>
         <td>13:00am</td>
-          <td>English</td>
-        <td>Eng v Ban Asia Cup T20</td>
-        <td>Ban to win</td>
-        <td>1.72</td>
-        <td>+45.50</td>
+          <td>France League1</td>
+        <td>PSG Vs Strasbourg</td>
+        <td>1x</td>
+        <td>1.56</td>
+        <td>5,000</td>
          <td><img src="/img/good.png" alt="" /></td>
          <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
         
@@ -1282,11 +1282,11 @@ useEffect(()=>{
      
       <tr  className="ADDTimeDbg ADDTimeDbg22">
         <th className=" ADDTimeDbg">09/11/2023</th>
-        <td>GBP/USD</td>
+        <td>BTC/USD</td>
           <td>Long(buy)</td>
-        <td>1.678787</td>
-        <td>1.899765</td>
-        <td>1.456378</td>
+        <td>30000.05</td>
+        <td>76000.00</td>
+        <td>29500.00</td>
          <td><img src="/img/good.png" alt="" /></td>
         <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
        
@@ -1294,11 +1294,11 @@ useEffect(()=>{
       </tr>
       <tr  className="ADDTimeDbg ADDTimeDbg22">
         <th className="ADDTimeDbg">09/11/2023</th>
-        <td>GBP/USD</td>
-          <td>Short(buy)</td>
-        <td>1.678787</td>
-        <td>1.678787</td>
-        <td>1.678787</td>
+        <td>ETH/USD</td>
+          <td>Long(buy)</td>
+        <td>1750.05</td>
+        <td>15000.00</td>
+        <td>1650.00</td>
          <td><img src="/img/good.png" alt="" /></td>
         <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
        
@@ -1389,7 +1389,7 @@ useEffect(()=>{
         
         <th style={{width:"80px"}}>Time</th>
          <th style={{width:"150px"}}>League</th>
-        <th style={{width:"180px"}}>Match</th>
+        <th style={{width:"180px"}}>Team</th>
         <th style={{width:"80px"}}>Odd</th>
         <th style={{width:"80px"}}>Stake</th>
         <th style={{width:"80px"}}>Yeild</th>
@@ -1520,9 +1520,9 @@ useEffect(()=>{
         <th className=" ADDTimeDbg">09/11/2023</th>
        
           <td>Long(buy)</td>
-        <td>1.678787</td>
-        <td>1.899765</td>
-        <td>1.456378</td>
+        <td>9.0615</td>
+        <td>12.0500</td>
+        <td>8.5000</td>
        
           <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
        
@@ -1532,9 +1532,9 @@ useEffect(()=>{
         <th className="ADDTimeDbg">09/11/2023</th>
         
           <td>Short(buy)</td>
-        <td>1.678787</td>
-        <td>1.678787</td>
-        <td>1.678787</td>
+        <td>4.5678</td>
+        <td>6.8410</td>
+        <td>4.3215</td>
       
         <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
        
@@ -1619,7 +1619,7 @@ useEffect(()=>{
                    <div>
                        <p className="millionM"  style={{color: "#7b7ee2" }} >Make 1 million Naira monthly </p>
                        <p className="OnRef">On Referral Commission</p>
-                        <div className="visitMe"><a href="/affliate"><button className="visitMe3">Visit</button></a></div>
+                        <div className="visitMe"><a href="/affliate"><button className="visitMe3">See More</button></a></div>
                    </div>
                </div>
                <div>

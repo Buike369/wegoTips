@@ -130,8 +130,8 @@ const MobileHeader = () => {
           {showMe1? 
             <div className="Forexmm">
                       <Link  className="fit" to="/user-dashboard" onClick={mark}>My Dashboard</Link>
-                      <Link  className="fit" to="/profile" onClick={mark}>My Profile</Link>
-                       {isPaid === 1? <a href="/tip" className="fit">My Tips(Premium)</a> :<Link onClick={()=>setRegister(!register)} className="fit" >My Tips(Subscribe)</Link>}
+                   
+                       {isPaid === 1? <a href="/tip" className="fit">My Tips(Premium)</a> :<Link onClick={()=>setRegister(!register)} className="fit" >Subscription</Link>}
                       <Link  className="fit appjo tef" to="" onClick={logout}>Log Out</Link> 
             </div>:""}</div>:  <Link to="/register" className="LogIn" onClick={mark}>Login/Register</Link>}
            </li>
