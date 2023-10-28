@@ -28,7 +28,7 @@ const Footer =()=>{
                       <ul className="MobileFooter">
                           <li className="Footer_header_title   titleFott" onClick={dropdown1}><span>NAVIGATION </span><span>{footerShow?<FontAwesomeIcon icon={faAngleUp} className="PlusIcon plusIcon2" />:<FontAwesomeIcon icon={faAngleDown} className="PlusIcon plusIcon2" />}</span></li>
                           {footerShow ? (<div>
-                          <li className="Footer_list_space"><a href="#">Blog</a></li>
+                          <li className="Footer_list_space"><a href="#">CoinMarketCap</a></li>
                           <li className="Footer_list_space"><a href="https://www.livescore.com/en/" target="_blank" rel="noopener noreferrer">LiveScores</a></li>
                           <li className="Footer_list_space"><a href="https://www.forexfactory.com/calendar" target="_blank" rel="noopener noreferrer">Forex Calender</a></li>
                           <li className="Footer_list_space"><a href="https://www.coingecko.com" target="_blank" rel="noopener noreferrer">Coingecko</a></li>
@@ -38,7 +38,7 @@ const Footer =()=>{
                       <ul className="DesktopFooter">
                           <li className="Footer_header_title" >NAVIGATION</li>
                           
-                          <li className="Footer_list_space"><a href="#">Blog</a></li>
+                          <li className="Footer_list_space"><a href="#">CoinMarketCap</a></li>
                           <li className="Footer_list_space"><a href="https://www.livescore.com/en/" target="_blank" rel="noopener noreferrer">LiveScores</a></li>
                           <li className="Footer_list_space"><a href="https://www.forexfactory.com/calendar" target="_blank" rel="noopener noreferrer">Forex Calender</a></li>
                           <li className="Footer_list_space"><a href="https://www.coingecko.com" target="_blank" rel="noopener noreferrer">Coingecko</a></li>
@@ -47,7 +47,7 @@ const Footer =()=>{
                   </div>
                   <div>
                   <ul className="MobileFooter">
-                          <li className="Footer_header_title titleFott" onClick={dropdown}><span>INFORMATION </span><span>{footerShow1?<FontAwesomeIcon icon={faAngleUp} className="PlusIcon plusIcon2" />:<FontAwesomeIcon icon={faAngleDown} className="PlusIcon plusIcon2" />}</span></li>
+                          <li className="Footer_header_title titleFott" onClick={dropdown}><span>COMPANY </span><span>{footerShow1?<FontAwesomeIcon icon={faAngleUp} className="PlusIcon plusIcon2" />:<FontAwesomeIcon icon={faAngleDown} className="PlusIcon plusIcon2" />}</span></li>
                           {footerShow1 ? (<div>
                           <li className="Footer_list_space"><a href="/termscondition">Terms & Conditions</a></li>
                           <li className="Footer_list_space"><a href="/disclaimer">Disclaimer</a></li>
@@ -57,7 +57,7 @@ const Footer =()=>{
                       </ul>
 
                       <ul className="DesktopFooter">
-                          <li className="Footer_header_title">INFORMATION</li>
+                          <li className="Footer_header_title">COMPANY</li>
                           <li className="Footer_list_space"><a href="/termscondition">Terms & Conditions</a></li>
                           <li className="Footer_list_space"><a href="/disclaimer">Disclaimer</a></li>
                           <li className="Footer_list_space"><a href="/about">About Us</a></li>
@@ -66,17 +66,24 @@ const Footer =()=>{
                   </div>
                   <div>
                      <ul>
-                          <li className="Footer_header_title">CONTACT US</li>
+                          <li className="Footer_header_title">RESOURCES</li>
                           {/* <li className="Footer_list_space"><a href="#">Terms & Conditions</a></li> */}
-                          <li className="Footer_list_space"><p className="FooterColor"> WhatsApp:<a href="https://wa.me/08059279660">+234 805 927 9660</a></p></li>
+                          {/* <li className="Footer_list_space"><p className="FooterColor"> WhatsApp:<a href="https://wa.me/08059279660">+234 805 927 9660</a></p></li>
                           <li className="Footer_list_space"><p className="FooterColor">Email Us: <a href="mailto:service@earnars.com">service@earnars.com</a></p></li>
-                          <li className="Footer_list_space"><p className="FooterColor">Advert: <a href="mailto:advert@earnars.com">advert@earnars.com</a></p></li>
+                          <li className="Footer_list_space"><p className="FooterColor">Advert: <a href="mailto:advert@earnars.com">advert@earnars.com</a></p></li> */}
+                                  <li className="Footer_list_space"><a href="#">Blog</a></li>
+                          <li className="Footer_list_space"><a href="/exchange">Exchange</a></li>
+                                                    {/* <li className="Footer_list_space"><a href="/">Support</a></li> */}
+                                  <li className="Footer_list_space"><a href="#">Help Center</a></li>
+                          <li className="Footer_list_space"><a href="#">Supports</a></li>
                       </ul>
                   </div>
                   <div>
                   <ul>
-                          <li className="Footer_header_title">MOBILE APP</li>
-                          <li><div className ="visitUs">Visit our social handles</div>
+                          <li className="Footer_header_title">LEGAL</li>
+                                  <li className="Footer_list_space"><a href="#">Terms</a></li>
+                          <li className="Footer_list_space"><a href="#">Privacy</a></li>
+                          <li><div className ="visitUs">Visit Our Social Handles</div>
                           <i className="fa fa-facebook footerGo"></i>
                           </li>
                           <li><ul className="footer_brand_icon">

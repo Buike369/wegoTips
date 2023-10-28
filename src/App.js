@@ -37,6 +37,8 @@ import UserDashBoard from "./userDashboard"
 import Admin from "./admin"
 import AdminLogin from "./adminLogin"
 import Navbar from "./navbar"
+import Exchange from "./exchange"
+import BuyAndSellEnar from "./buyAndSellEnar"
 import TipsWallet from "./tipsterWallet";
 import ProfilePageFile from "./profilePage"
 import BecomeATipster from "./becomeATipster";
@@ -98,6 +100,8 @@ function App() {
           <Route path="/view-profile" element={<ProfilePageFile />} />
           <Route path="/become-tipster" element={<BecomeATipster />} />
           <Route path="/find-tipster" element={<FindTipster />} />
+          <Route path="/exchange" element={<Exchange />} />
+          <Route path="/buy-and-sell-enar" element={< BuyAndSellEnar />} />
           <Route path="/market-predictions" element={<MarketPrediction />} />
           <Route path="/recent-predictions" element={<RecentPrediction />} />
           {currentUser ? <Route path="/user-dashboard" element={<UserDashBoard />} /> : <Route path="/" element={<SampleHome />} />}

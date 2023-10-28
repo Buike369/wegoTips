@@ -9,6 +9,8 @@ export const AuthContextProvider = ({children})=>{
     const [currentUser,setCurrentUser] = useState(JSON.parse(localStorage.getItem("user")) || null)
     const [forgotEmail,setForgotEmail] = useState((localStorage.getItem("email")) || null)
     const [isPaid,setIsPaid] = useState(1)
+     const [coin,setCoin] = useState("NGN")
+    const [purchaseType,setPurchaseType] = useState("Buy")
 
     const login = async(inputs)=>{
        const res = await axios.post("https://tea.earnars.com/api/auth/login",inputs);
@@ -62,5 +64,5 @@ export const AuthContextProvider = ({children})=>{
 
    
      
-     return <AuthContext.Provider value={{currentUser,forgotEmail,isPaid,setIsPaid,login,logout,forgotPassword}}>{children}</AuthContext.Provider>
+     return <AuthContext.Provider value={{currentUser,forgotEmail,isPaid,setIsPaid,login,logout,forgotPassword,purchaseType,setPurchaseType,coin,setCoin}}>{children}</AuthContext.Provider>
 }

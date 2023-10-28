@@ -130,7 +130,7 @@ const handleScroll = () => {
                   <a href="/affliate">Affiliate Program</a>
                 </li>
                 <li className="Contact_Bet">
-                  <a href="/betcalculator"> Bet Calculator</a>
+                  <a href="/exchange"> Buy/sell ENAR </a>
                 </li>
                 {/* <li className="Contact_Bet vap">
                   {tr === "/" ?<a href="#Faqc">FAQ</a> :null}

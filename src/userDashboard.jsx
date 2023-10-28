@@ -584,7 +584,7 @@ const airtimePurchase2=(e)=>{
     <div className='ManUm'>
 
       <div className="subsub">Active Subscriber</div>
-        <div className="wereAre">
+        <div className="wereAre AreWere">
           {card.map((app,id)=>(
                                 <div className="cardProfileDiv TY44 eretYem"  style={{border:"1px solid rgb(61 62 126)"}}>
           <div className="catImgDivProfile"><img src="/img/kucoin.png" alt="" style={{width:"100%",height:"100%",borderTopRightRadius:"10px",borderTopLeftRadius:"10px"}}/></div>
@@ -1474,9 +1474,9 @@ const airtimePurchase2=(e)=>{
            </div>
           </div>
           <div className="pricingL pricingL12">
-            <div className="pricingL1"><span className='gameDay'> 1 day</span> <span className='gameDay'> ₦500</span> <button className="RemoveButton">Remove</button></div>
-            <div className="pricingL1"> <span className='gameDay'> 7 days</span><span className='gameDay'> ₦1000</span> <button className="RemoveButton">Remove</button></div>
-            <div className="pricingL1"><span className='gameDay'> 30 days</span> <span className='gameDay'>₦1500</span> <button className="RemoveButton">Remove</button></div>
+            <div className="pricingL1"><span className='gameDay'> 1 day</span> <span className='gameDay ffDay'> ₦500</span> <button className="RemoveButton">Remove</button></div>
+            <div className="pricingL1"> <span className='gameDay'> 7 days</span><span className='gameDay  ffDay'> ₦1000</span> <button className="RemoveButton">Remove</button></div>
+            <div className="pricingL1"><span className='gameDay'> 30 days</span> <span className='gameDay ffDay'>₦1500</span> <button className="RemoveButton">Remove</button></div>
           </div>
         </div>
         </>:""}
@@ -1615,7 +1615,7 @@ const airtimePurchase2=(e)=>{
                   </> :""}
 
                      {accountSetting === "MemberShip" ? <>
-                        <div className="wereAre">
+                        <div className="wereAre AreWere">
           {card.map((app,id)=>(
                                 <div className="cardProfileDiv TY44 eretYem"  style={{border:"1px solid rgb(61 62 126)"}}>
           <div className="catImgDivProfile"><img src="/img/kucoin.png" alt="" style={{width:"100%",height:"100%",borderTopRightRadius:"10px",borderTopLeftRadius:"10px"}}/></div>

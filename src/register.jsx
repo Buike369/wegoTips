@@ -124,7 +124,7 @@ const Register =()=>{
 
                      <p className="New_Account textAdmin">Create an Account</p>
                      
-                    <div> <input type="text" placeholder="User_name"  className="Full_Name inpupage page10 page11" onChange={handleChange} name="username"/></div>
+                    <div> <input type="text" placeholder="Full Name"  className="Full_Name inpupage page10 page11" onChange={handleChange} name="username"/></div>
                     <div> <input type="email" placeholder="Email" className="Full_Name inpupage page10 page11" onChange={handleChange} name="email"/></div>
                 
 

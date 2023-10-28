@@ -55,7 +55,9 @@
     scrollbar-color: transparent transparent;
     /* Firefox */
 }
-
+.AreWere{
+    justify-content: space-between;
+}
 
 .userD3::-webkit-scrollbar{
  background: #30296c;
@@ -137,7 +139,7 @@
 
 .TY44 {
     width: 100%;
-    max-width: 32%;
+    max-width: 31%;
 }
 
 .mainVm34 {
@@ -690,9 +692,12 @@ align-items: center;
 }
 
 .gameDay {
-    color: #fff;
+    color: #bbbce5;
     font-size: 16px;
     font-weight: 600;
+}
+.ffDay{
+    color:#fff;
 }
 
 .SetAE {
