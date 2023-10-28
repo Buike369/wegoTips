@@ -1,6 +1,7 @@
-import React ,{useState,useContext} from 'react'
+import React ,{useState,useContext,useEffect} from 'react'
 import Footer from "./footer";
 import "./style/buyAndSell.css"
+import AOS from 'aos';
 import {AuthContext}from "./context/authContext"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -11,6 +12,61 @@ const BuyEnar = () => {
       const [currencyAmount ,setCurrencyAmount] = useState(50)
         const {purchaseType}  = useContext(AuthContext)
         const {coin}  = useContext(AuthContext)
+         const [show,setShow]= useState(false)
+  const [show1,setShow1]= useState(false)
+  const [show2,setShow2]= useState(false)
+  const [show3,setShow3]= useState(false)
+  const [show4,setShow4]= useState(false)
+
+   const drop =()=>{
+     setShow(!show)
+     setShow1(false)
+     setShow2(false)
+     setShow3(false)
+     setShow4(false)
+    
+  }
+  const drop1 =()=>{
+    setShow(false)
+    setShow1(!show1)
+    setShow2(false)
+    setShow3(false)
+    setShow4(false)
+    
+    
+  }
+  const drop2 =()=>{
+
+    setShow(false)
+    setShow1(false)
+    setShow2(!show2)
+    setShow3(false)
+    setShow4(false)
+   
+    
+  }
+  const drop3 =()=>{
+    setShow(false)
+    setShow1(false)
+    setShow2(false)
+    setShow3(!show3)
+    setShow4(false)
+    
+  }
+  const drop4 =()=>{
+
+    setShow(false)
+    setShow1(false)
+    setShow2(false)
+    setShow3(false)
+    setShow4(!show4)
+   
+    
+  }
+
+  useEffect(()=>{
+    AOS.init({once: true});
+  },[])
   return (
     <div>
 
@@ -78,7 +134,7 @@ const BuyEnar = () => {
                 </div>
             </div>
         </div>
-
+                     <div className='IFAE'>
                  <div style={{padding:"0 10px"}}>
           <div id="Faqc" data-aos="fade-up" data-aos-duration="3000"
              data-aos-easing="linear">
@@ -157,61 +213,10 @@ const BuyEnar = () => {
                 ""
               )}
             </div>
-            {/* <div className="homeChange">
-              <div className="HowFarBro" onClick={drop4}>
-                <span> How much does it cost to subscribe monthly? </span>
-                <span className="IconSpace">
-                  {show4? <FontAwesomeIcon icon={faMinus} className="PlusIcon" />:<FontAwesomeIcon icon={faPlus} className="PlusIcon" />}
-                </span>
-              </div>
-              {show4 ? (
-                <div>
-                  <div className="Qac"></div>
-                <p className="ILOVEK">
-                  It cost only $50 or ₦25,000 to subscribe monthly
-                </p>
-                </div>
-              ) : (
-                ""
-              )}
-            </div> */}
+            
           
-            <div className="homeChange">
-              <div className="HowFarBro" onClick={drop6}>
-                <span> If my referral subscribes every month will I still get paid my referral commission? </span>
-                <span className="IconSpace">
-                  {show6? <FontAwesomeIcon icon={faMinus} className="PlusIcon" />:<FontAwesomeIcon icon={faPlus} className="PlusIcon" />}
-                </span>
-              </div>
-              {show6 ? (
-                <div>
-                  <div className="Qac"></div>
-                <p className="ILOVEK">
-                  Yes, you earn upto 75% commission on any user your refer to our plaform.e.g if Tola refers Emeka and Emeka subscribe to our yearly affiliate program, Tola will recieve 75%( ₦7,500) and if it's a monthly subscription Tola will receive ₦750. if Emeka continue renewing his subscrption every mont or year Tola will keep earning his referral bonus for life.
-                </p>
-                </div>
-              ) : (
-                ""
-              )}
-            </div>
-            <div className="homeChange">
-              <div className="HowFarBro" onClick={drop7}>
-                <span>  Can i invest my money with your company so you trade & bet for me and pay me percentage monthly?</span>
-                <span className="IconSpace">
-                  {show7? <FontAwesomeIcon icon={faMinus} className="PlusIcon" />:<FontAwesomeIcon icon={faPlus} className="PlusIcon" />}
-                </span>
-              </div>
-              {show7 ? (
-                <div>
-                  <div className="Qac"></div>
-                <p className="ILOVEK">
-                 We or our Tipsters do not accept or manage users trading/ betting funds, trade or bet for any user. We only forecast the forex, crypto, binary market & predicts games. Users are responsible for managing their money with any brokers or bookies of their choice.
-                </p>
-                </div>
-              ) : (
-                ""
-              )}
-            </div>
+          
+          </div>
           </div>
           </div>
 
