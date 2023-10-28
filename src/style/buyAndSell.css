@@ -124,3 +124,19 @@
 
 
 }
+
+@media(max-width:768px){
+    .AdDe{
+            margin: 30px auto 0 auto;
+         flex-direction: column-reverse;
+    }
+        .AdDe1 {
+            width: 100%;
+            padding: 2px 15px;
+        }
+        .AdDe2 {
+            width: 2px;
+            margin: 10px 0;
+            height: 40px;
+        }
+}

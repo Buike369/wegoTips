@@ -166,7 +166,9 @@ border: 1px solid #df4b4b;
     margin:0 auto;
     position:absolute;
     top:32%;
-    transform: translate(50%);
+left: 50%;
+    right: 50%;
+    transform: translate(-50%);
 }
 .cncnc{
     display:flex;
@@ -304,4 +306,71 @@ a{
         color: #afb7df;
             margin-bottom: 9px;
             text-align: center;
+}
+@media(max-width:768px){
+    .Am1n{
+        display:none;
+    }
+    .Ena21{
+        flex-direction: column;
+          padding:2px 15px;
+          max-width: 500px;
+          margin:0 auto;
+            position:relative;
+                 transform: translate(0); 
+                 left:0;
+                 right:0;
+    }
+    .Ena1{
+    max-width: 500px;
+     margin-bottom: 10px;
+    }
+    .buySELL{
+         font-size: 20px;
+        text-align: center;
+
+    }
+    .dfdff{
+flex-direction: column;
+    }
+    .dfdff1{
+ width:100%;
+ flex-direction: row;
+ border-radius: 30px;
+    }
+        .dfdff2 {
+            width: 100%;
+            margin-top:15px ;
+        }
+                .Am1nAd {
+                    margin-top: 20px;
+                }
+  .popoUy{
+    margin-top: 30px;
+   padding:24px 10px;
+  } 
+  .kikiay{
+    font-size: 18px;
+  }
+  .earnarsCoin{
+    font-size: 16px;
+  }
+  .cncnc34{
+    font-size: 22px;
+  }
+}
+
+@media(min-width:769px) and (max-width:835px){
+    .Am1n1{
+        width:270px;
+        height:270px
+    }
+    .Am1n2{
+        width:300px;
+        height:300px;
+    }
+        .Am1nAd {
+          
+            margin-top: 100px;
+        }
 }

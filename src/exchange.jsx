@@ -13,7 +13,7 @@ const Exchange = () => {
      const navigate = useNavigate()
     const {purchaseType,setPurchaseType}  = useContext(AuthContext)
     const {coin,setCoin}  = useContext(AuthContext)
-
+     const [pipDeposit, setPipDeposit] = useState(false)
 
 
      const wentTo = ()=>{
@@ -128,9 +128,9 @@ const Exchange = () => {
       <tr>
         <th style={{width:"140px"}}>Advertiser</th>
        
-         <th style={{width:"180px"}}>Price/Limit Available</th>
-        <th style={{width:"180px"}}>Payment</th>
-        <th style={{width:"80px"}}>Action</th>
+         <th style={{width:"220px"}}>Price/Limit Available</th>
+        <th style={{width:"220px"}}>Payment</th>
+        <th style={{width:"120px"}}>Action</th>
        
         
         
@@ -201,9 +201,9 @@ const Exchange = () => {
       <tr>
         <th style={{width:"140px"}}>Advertiser</th>
        
-         <th style={{width:"180px"}}>Price/Limit Available</th>
-        <th style={{width:"180px"}}>Payment</th>
-        <th style={{width:"80px"}}>Action</th>
+         <th style={{width:"220px"}}>Price/Limit Available</th>
+        <th style={{width:"220px"}}>Payment</th>
+        <th style={{width:"120px"}}>Action</th>
        
         
         
@@ -259,6 +259,13 @@ const Exchange = () => {
 </div>
 </div>
 </div>
+
+ {pipDeposit ? 
+   <div>
+
+   </div>
+:" " }
+
 
   <div className="bkFR">
        <div style={{padding:"0 10px"}}>
