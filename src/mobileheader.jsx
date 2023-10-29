@@ -72,8 +72,9 @@ const MobileHeader = () => {
         </div>
          {(tr === "/register") || (tr === "/login") || (tr === "/otp") || (tr === "/resetpassword/:id") || (tr === "/forgotpassword") || (tr === "/referral/:id") ? " " :
          <>
-         <div style={{display:'flex',alignItems:'center',}}>
-          <span><FontAwesomeIcon icon={faBell} className="bell" /></span>
+         {/* <div style={{display:'flex',alignItems:'center',}}> */}
+          <div>
+          {/* <span><FontAwesomeIcon icon={faBell} className="bell" /></span> */}
         <div>
 
      
@@ -126,14 +127,16 @@ const MobileHeader = () => {
           <li className="dpM bgstyle"><a href="/exchange" className="derpm" onClick={mark}><span className="mackP">*</span> * Buy/Sell ENAR</a></li>
           <li>
             {currentUser ? <div>
-            <div className="derr" onClick={()=>setShowMe1(!showMe1)}><span className="derpm appjo">{currentUser?.username}</span> <span>{showMe1?<FontAwesomeIcon icon={faAngleUp} className="PlusIcon plusIcon2" />:<FontAwesomeIcon icon={faAngleDown} className="PlusIcon plusIcon2" />}</span></div>
-          {showMe1? 
+            {/* <div className="derr" onClick={()=>setShowMe1(!showMe1)}><span className="derpm appjo">{currentUser?.username}</span> <span>{showMe1?<FontAwesomeIcon icon={faAngleUp} className="PlusIcon plusIcon2" />:<FontAwesomeIcon icon={faAngleDown} className="PlusIcon plusIcon2" />}</span></div> */}
+          {/* {showMe1?  */}
             <div className="Forexmm">
-                      <Link  className="fit" to="/user-dashboard" onClick={mark}>My Dashboard</Link>
+                      <Link  className="fit" to="/user-dashboard" onClick={mark}> <span className="mackP">*</span> * My Dashboard</Link>
                    
-                       {isPaid === 1? <a href="/tip" className="fit">My Tips(Premium)</a> :<Link onClick={()=>setRegister(!register)} className="fit" >Subscription</Link>}
+                       {isPaid === 1? <a href="/tip" className="fit">  <span className="mackP">*</span> * My Tips(Premium)</a> :<Link onClick={()=>setRegister(!register)} className="fit" >Subscription</Link>}
                       <Link  className="fit appjo tef" to="" onClick={logout}>Log Out</Link> 
-            </div>:""}</div>:  <Link to="/register" className="LogIn" onClick={mark}>Login/Register</Link>}
+            </div>
+             {/* :""} */}
+            </div> :  <Link to="/register" className="LogIn" onClick={mark}>Login/Register</Link>}
            </li>
         </ul>
           </div>
