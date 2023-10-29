@@ -3,7 +3,7 @@ import "./style/exchange.css"
 import Footer from "./footer";
 import { useNavigate} from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPaperPlane} from '@fortawesome/free-solid-svg-icons'
+import { faPaperPlane,faXmark} from '@fortawesome/free-solid-svg-icons'
 import {AuthContext}from "./context/authContext"
 
 const Exchange = () => {
@@ -13,8 +13,10 @@ const Exchange = () => {
      const navigate = useNavigate()
     const {purchaseType,setPurchaseType}  = useContext(AuthContext)
     const {coin,setCoin}  = useContext(AuthContext)
-     const [pipDeposit, setPipDeposit] = useState(false)
-
+     const [pipDeposit, setPipDeposit] = useState("deposit")
+     const [modal, setModal] = useState(false)
+      const [pipTransfer, setPipTransfer] = useState(false)
+  const [wallets,setWallets] = useState("main")
 
      const wentTo = ()=>{
        setPurchaseType("Sell")
@@ -26,6 +28,26 @@ const Exchange = () => {
 
        setCoin(coin)
        navigate('/buy-and-sell-enar')
+     }
+
+     const open =()=>{
+       setModal(!modal)
+       document.body.classList.add("houne")
+       setPipDeposit("deposit")
+     }
+      const open1 =()=>{
+       setModal(!modal)
+       document.body.classList.add("houne");
+       setPipDeposit("transfer")
+     }
+       const open2 =()=>{
+       setModal(!modal)
+       document.body.classList.add("houne");
+        setPipDeposit("withdrawal")
+     }
+      const reOpen =()=>{
+       setModal(!modal)
+       document.body.classList.remove("houne")
      }
   return (
     <div>
@@ -66,9 +88,9 @@ const Exchange = () => {
              </div>
         </div>
         <div className="pode23">
-            <div  className="pode pode2">Deposit</div>
-             <div className="pode pode3">Withdraw</div>
-              <div className="pode pode4">Transfer</div>
+            <div  className="pode pode2" onClick={open}>Deposit</div>
+             <div className="pode pode3" onClick={open2}>Withdraw</div>
+              <div className="pode pode4" onClick={open1}>Transfer</div>
         </div>
 
     </div>
@@ -259,13 +281,162 @@ const Exchange = () => {
 </div>
 </div>
 </div>
+{modal ? 
+<>
+ {pipDeposit === "deposit"? 
+   <div className="dep">
+    <div className='epv'>
+     <div className="epv1">
+      <div className="vipn">
+      <div className="epv2">P2p Deposit</div>
+      <FontAwesomeIcon icon={faXmark} className="ravs" onClick={reOpen} />
+      </div>
+             <div className="epv3">Select Token</div>
+             <div className="">
+               <select className="epv4">
+                <option>ENAR</option>
+                 <option>USDT</option>
+                  <option>NGN</option>
+                   <option>CFA</option>
+                    <option>GHS</option>
+                     <option>ZAR</option>
+               </select>
+             </div>
+             <div className="epv3">
+               Select Network
+             </div>
+             <div className="">
+              <select className="epv4">
+                <option>Binance Smart Chain</option>
+              </select>
+             </div>
+             <div className="epv3">
+              Amount
+             </div>
+             <div className="">
+              <form>
+                <input type=""  placeholder ="" className="epv4" />
+              </form>
+             </div>
+             <div  className="epv5" >
+              Proceed
+             </div>
 
- {pipDeposit ? 
-   <div>
+     </div>
+     </div>
 
    </div>
 :" " }
 
+{
+  pipDeposit === "transfer"? 
+  <div className='dep' >
+    <div className='epv' >
+  <div className="epv1">
+     <div className="vipn">
+      <div className="epv2">P2p Transfer</div>
+      <FontAwesomeIcon icon={faXmark} className="ravs" onClick={reOpen} />
+      </div>
+    <div className="vipn">
+      <div onClick={()=>setWallets("main")} className="epv5 vipn1" style={{color:wallets === "main" ?"gold":"#fff", border:wallets === "main" ? "1px solid #8f8346": null}} >MainWallet</div>
+       <div onClick={()=>setWallets("user")} className="epv5 vipn1" style={{color:wallets === "user" ?"gold":"#fff",border: wallets === "user" ? "1px solid #8f8346" : null}}> user</div>
+    </div>
+    {wallets === "main" ?
+    <div>
+   <div className="epv3">Amount</div>
+   <div>
+    <form>
+      <input type="" placeholder ="" className="epv4"/>
+    </form>
+   </div>
+   <div className="epv5">Proceed</div>
+    </div>: ""}
+     {wallets === "user" ?
+    <div>
+      <div className="epv3">Email/Username</div>
+      <div>
+    <form>
+      <input type="" placeholder ="" className="epv4"/>
+    </form>
+   </div>
+     <div className="epv3">Amount</div>
+   <div>
+    <form>
+      <input type="" placeholder =""  className="epv4"/>
+    </form>
+   </div>
+   <div className="epv5">Proceed</div>
+
+    </div>: ""}
+
+  </div>
+  </div>
+  </div>
+  : ""
+}
+
+
+{
+ pipDeposit  === "withdrawal"? <>
+  <div className="dep" >
+    <div className='epv'>
+     <div  className="epv1">
+      <div className="vipn">
+      <div className="epv2">P2p Withdrawal</div>
+      <FontAwesomeIcon icon={faXmark} className="ravs" onClick={reOpen} />
+      </div>
+             <div className="epv3">Select Token</div>
+             <div>
+               <select className="epv4">
+                <option>ENAR</option>
+                 <option>USDT</option>
+                  <option>NGN</option>
+                   <option>CFA</option>
+                    <option>GHS</option>
+                     <option>ZAR</option>
+               </select>
+             </div>
+             <div className="epv3">
+               Select Network
+             </div>
+             <div>
+              <select className="epv4">
+                <option>Binance Smart Chain</option>
+              </select>
+             </div>
+             <div  className="epv3">
+              Amount
+             </div>
+             <div>
+              <form>
+                <input type=""  placeholder =""  className="epv4"/>
+              </form>
+             </div>
+              <div className="epv3">
+              Wallet Address
+             </div>
+             <div>
+              <form>
+                <input type=""  placeholder ="" className="epv4" />
+              </form>
+             </div>
+             <p className="warnE"><span className='ning'>Warning!</span> make sure your put 
+   the write address or you 
+   token will be lost forever.</p>
+             <div className="epv5">
+              Proceed
+             </div>
+
+     </div>
+     </div>
+
+
+  </div>
+  </>: ""
+}
+
+</>
+: ""}
 
   <div className="bkFR">
        <div style={{padding:"0 10px"}}>

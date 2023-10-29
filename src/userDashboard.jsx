@@ -2,6 +2,7 @@ import React, {useState,useEffect,useContext} from  'react'
 import Footer from "./footer"
 import "./style/userDashboard.css"
 import "./style/walletOverView.css"
+import "./style/exchange.css"
 import axios from "axios"
 import Mytip from "./mytip"
 import { useFlutterwave, closePaymentModal } from 'flutterwave-react-v3';
@@ -10,12 +11,12 @@ import ReactPaginate from 'react-paginate';
 import Demo1 from "./Dashboard/dashboardSports"
 import Demo2 from "./Dashboard/dashboardPostResult"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {  faPlus,faMinus, faPaperPlane,faVolleyball,faCheckToSlot, faCheckDouble} from '@fortawesome/free-solid-svg-icons'
-import {faCircleCheck} from '@fortawesome/free-solid-svg-icons'
+// import {  faPlus,faMinus, faPaperPlane,faVolleyball,faCheckToSlot, faCheckDouble} from '@fortawesome/free-solid-svg-icons'
+import {faCircleCheck,faXmark} from '@fortawesome/free-solid-svg-icons'
 
 
 const UserDashboard = () => {
-
+  const [wallets,setWallets] = useState("main")
     const [wallet,setWallet]=useState('wallets')
     const [subscription,setSubscription]=useState('')
     const [refferal,setRefferal]=useState('')
@@ -41,13 +42,11 @@ const UserDashboard = () => {
     const [visit,setVisit] = useState()
     const [subscriptionAmount,setSubscriptionAmount] = useState(2500)
      const [error,setError]= useState("")
-    //  const [successSub,setSuccessSub] = useState()
-    // const [referralId,setRefferalId] = useState(0)
-    //  const [referredId,setRefferedId] = useState(1)
+   
      const [walletOverview,setWalletOverview] = useState([])
     const [depositCash,setDepositCash]= useState([])
     const [referrals2,setReferrals2] = useState([])
-    // const [Active,setActivem] = useState("active")
+    
     const [subActive,setSubActive]=useState("inActive")
     const [message,setMessage]=useState("")
     const [withdrawalInfo,setWithdrawalInfo] = useState({
@@ -73,10 +72,9 @@ const [itemsPerPage,setItemsPerPage] = useState(6)
 const [itemOffset, setItemOffset] = useState(0);
 const [isTipster,setIsTipster] = useState(true)
 const [dashboardMenu,setDashboardMenu] = useState(false)
+ const [pipDeposit, setPipDeposit] = useState("depositL")
+     const [modal5, setModal5] = useState(false)
 
-// Simulate fetching items from another resources.
-  // (This could be items from props; or items loaded in a local state
-  // from an API endpoint with useEffect and useState)
   const endOffset = itemOffset + itemsPerPage;
   console.log(`Loading items from ${itemOffset} to ${endOffset}`);
   const currentItems = items.slice(itemOffset, endOffset);
@@ -163,6 +161,32 @@ const [dashboardMenu,setDashboardMenu] = useState(false)
         amount:""
      })
  } 
+
+
+  const lan =()=>{
+       setModal5(!modal5)
+       document.body.classList.add("houne")
+       setPipDeposit("depositL")
+     }
+      const lan1 =()=>{
+       setModal5(!modal5)
+       document.body.classList.add("houne");
+       setPipDeposit("transferL")
+     }
+       const lan2 =()=>{
+       setModal5(!modal5)
+       document.body.classList.add("houne");
+        setPipDeposit("withdrawalL")
+     }
+      const reLpen =()=>{
+       setModal5(!modal5)
+       document.body.classList.remove("houne")
+     }
+
+
+
+
+
      const handleChanges4 =(e)=>{
         setAirtimeInfo(prev =>({...prev,[e.target.name]:e.target.value,network:network}))
     }
@@ -509,8 +533,7 @@ const airtimePurchase2=(e)=>{
                           <div className='dvd1 JohnKen5 '><img src="" alt=""/> <span className='JohnKen5'>Become a Tipster</span></div>
                            </div>
                           </>}
-                     {/* <div>Last Sign In</div> */}
-                     {/* <div><img src="" alt=""/><span>8 Oct 2021, 16:28 PM GMT +0</span></div> */}
+                    
                 </div>
                 <div className='dvd3'>
                 <div  className='dvd2'>
@@ -780,8 +803,8 @@ const airtimePurchase2=(e)=>{
                           <p className="Is_KB1">₦70.00</p>
                       </div>
                       <div className="Depost">
-                          <p className="dep1 add1" onClick={ depositT} >Deposit</p>
-                          <p className="dep1 add2" onClick={withdrawT}>Withdraw</p>
+                          <p className="dep1 add1" onClick={lan} >Deposit</p>
+                          <p className="dep1 add2"  onClick={lan2}>Withdraw</p>
                       </div>
                       </div>
            </div>
@@ -790,7 +813,7 @@ const airtimePurchase2=(e)=>{
               <div  className='DataTo tipUp'>Tipster Wallet</div>
               <div className='tipWall tipUp'>₦2000</div>
 
-             <div className='TransferTip' onClick={transferT}>Transfer</div>
+             <div className='TransferTip' onClick={lan1}>Transfer</div>
              </div>
            </div>
            <div  className="ManB1 ManB30">
@@ -825,30 +848,7 @@ const airtimePurchase2=(e)=>{
                  <div className='EarningBolo1'>₦200</div>
                </div>
         </div>
-          {/* <div  className="ManB1">
-            <div className='ManB ManB5'>
-              <div className='ManB2'>
-               <div className='DataBoundle'><span className='DataTo'>Data</span></div>
-              </div>
-               <div className='ManB2'>
-                 <div className='EarningBolo' >Daily Earning</div>
-                 <div className='EarningBolo1'>$120</div>
-               </div>
-            </div>
-           </div>
-            <div  className="ManB1">
-               <div className='ManB ManB5'>
-              <div className='ManB2'>
-                <div className='EarningBolo'>Weekly Earning</div>
-                 <div className='EarningBolo1'>$200</div>
-              </div>
-               <div className='ManB2'>
-                      <div className='EarningBolo'>Monthly Earning</div>
-                 <div className='EarningBolo1'>$200</div>
-               </div>
-            </div>
-
-            </div> */}
+         
 
     <div className='ManUm'>
            {section3 === "tipsterOver" ? <>
@@ -1121,8 +1121,8 @@ const airtimePurchase2=(e)=>{
                           <p className="Is_KB1">₦70.00</p>
                       </div>
                       <div className="Depost">
-                          <p className="dep1 add1" onClick={ depositT} >Deposit</p>
-                          <p className="dep1 add2" onClick={withdrawT} >Withdraw</p>
+                          <p className="dep1 add1"  >Deposit</p>
+                          <p className="dep1 add2"  >Withdraw</p>
                       </div>
                       </div>
            </div>
@@ -1131,7 +1131,7 @@ const airtimePurchase2=(e)=>{
               <div  className='DataTo tipUp'>Affiliate Wallet</div>
               <div className='tipWall tipUp'>₦2000</div>
 
-             <div className='TransferTip'  onClick={transferT}>Transfer</div>
+             <div className='TransferTip' >Transfer</div>
              </div>
            </div>
            <div  className="ManB1 ManB30">
@@ -1146,32 +1146,7 @@ const airtimePurchase2=(e)=>{
            
           
         </div>
-        {/* <div className="ManB">
-           <div  className="ManB1 ManB30 ManMMb">
-            <div className='mainVm34'>
-              <div className='likeYou'>
-               <div className='MainVm'>Main Wallet</div>
-               <div className='MainVm1'>₦5000</div>
-               </div>
-            </div>
-           </div>
-           <div  className="ManB1 ManB30 ManMMb">
-                <div className='mainVm34'>
-              <div className='likeYou'>
-               <div className='MainVm'>Affiliate Wallet</div>
-               <div className='MainVm1'>₦7000</div>
-               </div>
-            </div>
-           </div>
-           <div  className="ManB1 ManMMb1 ManB30">
-              <div className='ManMMb2'>
-                 <div className='UnLockAff'>Unlock Your Affiliate wallet and get access to tons of opportunity to make money  </div>
-                 <div className='UnlockAff1'> Click to Unlock Now</div>
-              </div>
-           </div>
-           
-          
-        </div> */}
+       
             
 
             {section2 === "AffiliateSection" ? 
@@ -1757,12 +1732,7 @@ const airtimePurchase2=(e)=>{
                         <p className="WidrawMoney">₦{mainWallet}.00</p>
                         </div>}
                     <form>
-                        {/* {active? 
-                        <div className="ProccedRent">
-                            <input type="text" placeholder={pinAmount} className={move? "ProccedRent1":"ProccedRent1 addFine"} disabled/></div>
-                            :<div className="ProccedRent">
-                            <input type="text" placeholder={pinAmount} className={move? "ProccedRent1":"ProccedRent1 addFine"} /></div>
-                            } */}
+                      
 
                         <div className="ProccedRent">
                             <input type="number" placeholder={pinAmount} className={move? "ProccedRent1":"ProccedRent1 addFine"} value={ deposit === "subScriptionP"? subscriptionAmount:amount} onChange={(e)=>setAmount(e.target.value)}/></div>
@@ -1894,7 +1864,145 @@ const airtimePurchase2=(e)=>{
 
                 </div>
             </div>
-           :"" }  
+           :"" } 
+
+
+           {modal5 ? 
+<>
+ {pipDeposit === "depositL"? 
+   <div className="dep">
+    <div className='epv'>
+     <div className="epv1">
+      <div className="vipn">
+      <div className="epv2">Deposit To MainWallet</div>
+      <FontAwesomeIcon icon={faXmark} className="ravs" onClick={reLpen} />
+      </div>
+             
+             <div className="epv3">
+               Select Network
+             </div>
+             <div className="">
+              <select className="epv4">
+                <option>Binance Smart Chain</option>
+              </select>
+             </div>
+             <div className="epv3">
+              Amount
+             </div>
+             <div className="">
+              <form>
+                <input type=""  placeholder ="" className="epv4" />
+              </form>
+             </div>
+             <div  className="epv5" >
+              Proceed
+             </div>
+
+     </div>
+     </div>
+
+   </div>
+:" " }
+
+{
+  pipDeposit === "transferL"? 
+  <div className='dep' >
+    <div className='epv' >
+  <div className="epv1">
+     <div className="vipn">
+      <div className="epv2">P2p Transfer</div>
+      <FontAwesomeIcon icon={faXmark} className="ravs" onClick={reLpen} />
+      </div>
+    <div className="vipn">
+      <div onClick={()=>setWallets("main")} className="epv5 vipn1" style={{color:wallets === "main" ?"gold":"#fff", border:wallets === "main" ? "1px solid #8f8346": null}} >MainWallet</div>
+       <div onClick={()=>setWallets("user")} className="epv5 vipn1" style={{color:wallets === "user" ?"gold":"#fff",border: wallets === "user" ? "1px solid #8f8346" : null}}> user</div>
+    </div>
+    {wallets === "main" ?
+    <div>
+   <div className="epv3">Amount</div>
+   <div>
+    <form>
+      <input type="" placeholder ="" className="epv4"/>
+    </form>
+   </div>
+   <div className="epv5">Proceed</div>
+    </div>: ""}
+     {wallets === "user" ?
+    <div>
+      <div className="epv3">Email/Username</div>
+      <div>
+    <form>
+      <input type="" placeholder ="" className="epv4"/>
+    </form>
+   </div>
+     <div className="epv3">Amount</div>
+   <div>
+    <form>
+      <input type="" placeholder =""  className="epv4"/>
+    </form>
+   </div>
+   <div className="epv5">Proceed</div>
+
+    </div>: ""}
+
+  </div>
+  </div>
+  </div>
+  : ""
+}
+
+
+{
+ pipDeposit  === "withdrawalL"? <>
+  <div className="dep" >
+    <div className='epv'>
+     <div  className="epv1">
+      <div className="vipn">
+      <div className="epv2"> Withdrawal From MainWallet</div>
+      <FontAwesomeIcon icon={faXmark} className="ravs" onClick={reLpen} />
+      </div>
+             
+             <div className="epv3">
+               Select Network
+             </div>
+             <div>
+              <select className="epv4">
+                <option>Binance Smart Chain</option>
+              </select>
+             </div>
+             <div  className="epv3">
+              Amount
+             </div>
+             <div>
+              <form>
+                <input type=""  placeholder =""  className="epv4"/>
+              </form>
+             </div>
+              <div className="epv3">
+              Wallet Address
+             </div>
+             <div>
+              <form>
+                <input type=""  placeholder ="" className="epv4" />
+              </form>
+             </div>
+             <p className="warnE"><span className='ning'>Warning!</span> make sure your put 
+   the write address or you 
+   token will be lost forever.</p>
+             <div className="epv5">
+              Proceed
+             </div>
+
+     </div>
+     </div>
+
+
+  </div>
+  </>: ""
+}
+
+</>
+: ""} 
 
     </div>
   )

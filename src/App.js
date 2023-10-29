@@ -1,9 +1,9 @@
-import React, {useContext,useState} from "react"
-import { BrowserRouter,Routes, Route,Navigate,Redirect } from "react-router-dom";
+import React, { useContext, useState } from "react"
+import { BrowserRouter, Routes, Route, Navigate, Redirect,useLocation } from "react-router-dom";
 
 import Register from "./register"
 import Login from "./login";
-import WalletOverView  from "./walletOverview";
+import WalletOverView from "./walletOverview";
 import Affliate from "./affliate"
 import Profile from "./profile"
 import Referral from "./referral";
@@ -51,49 +51,50 @@ import DashboardHome from "./Dashboard/dashboardHome"
 // import { Link, useLocation } from "react-router-dom";
 
 function App() {
-
-  const [admin,setAdmin] = useState(true)
+  
+  const [admin, setAdmin] = useState(true)
   const { currentUser } = useContext(AuthContext);
 
+  // const isLoginRoute = location.pathname;
   const tr = window.location.pathname;
   // const navigate = useLocation();
   return (
     <div className="kingsley_the_coder">
-       <BrowserRouter>
-        {tr === "/dashboard" || tr === "/user-dashboard" ? " " : <> <Navbar/>
-       <Mobile/></>}
-    
+      <BrowserRouter>
+        {tr === "/dashboard" || tr === "/user-dashboard" ? null : <> <Navbar />
+          <Mobile /></>}
+
         <Routes>
-           <Route path="/" element={<SampleHome/>} />
-           <Route path="/register" element={<Register/>} />
-           <Route path="/login" element={<Login/>} />
-          {currentUser ? <Route path="/wallet" element={<WalletOverView />} /> : <Route path="/" element={<SampleHome />} />}   
-           <Route path="/affliate" element={<Affliate/>} />
-          {currentUser ? <Route path="/profile" element={<Profile />} /> : <Route path="/" element={<SampleHome />} /> } 
-          {!currentUser ? <Route path="/forgotpassword" element={<ForgotPassword />} /> : <Route path="/" element={<SampleHome />} /> } 
-          {!currentUser ? <Route path="/otp" element={<OTP />} /> : <Route path="/" element={<SampleHome />} />} 
-          {!currentUser ? <Route path="/success" element={<Success />} /> : <Route path="/" element={<SampleHome />} />} 
+          <Route path="/" element={<SampleHome />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
+          {currentUser ? <Route path="/wallet" element={<WalletOverView />} /> : <Route path="/" element={<SampleHome />} />}
+          <Route path="/affliate" element={<Affliate />} />
+          {currentUser ? <Route path="/profile" element={<Profile />} /> : <Route path="/" element={<SampleHome />} />}
+          {!currentUser ? <Route path="/forgotpassword" element={<ForgotPassword />} /> : <Route path="/" element={<SampleHome />} />}
+          {!currentUser ? <Route path="/otp" element={<OTP />} /> : <Route path="/" element={<SampleHome />} />}
+          {!currentUser ? <Route path="/success" element={<Success />} /> : <Route path="/" element={<SampleHome />} />}
           <Route path="/referral/:id" element={<Referral />} />
-        <Route path="/resetpassword/:id" element={<ResetPassword />} />
-           <Route path="/forex" element={<ForexPage/>} />
-           <Route path="/cryptocurrency" element={<CryptoPage/>} />
-            <Route path="/binary" element={<BinaryPage/>} />
+          <Route path="/resetpassword/:id" element={<ResetPassword />} />
+          <Route path="/forex" element={<ForexPage />} />
+          <Route path="/cryptocurrency" element={<CryptoPage />} />
+          <Route path="/binary" element={<BinaryPage />} />
           <Route path="/sport" element={<SportPage />} />
-          {currentUser ? <Route path="/tip" element={<Mytip />} /> : <Route path="/" element={<SampleHome />} /> } 
-           <Route path="/tips" element={<Mytip />} /> 
-           <Route path="/betcalculator" element={<Virc/>} />
-           <Route path="/about" element={<About/>} />
+          {currentUser ? <Route path="/tip" element={<Mytip />} /> : <Route path="/" element={<SampleHome />} />}
+          <Route path="/tips" element={<Mytip />} />
+          <Route path="/betcalculator" element={<Virc />} />
+          <Route path="/about" element={<About />} />
           <Route path="/allTips" element={<AllTips />} />
-           <Route path="/premium" element={<Premium/>} />
-           <Route path="/" element={<SampleHome/>} />
-          	<Route path="*" element={<Navigate to="/" />} />
-          {admin === true ? <Route path="/dashboard" element={< DashboardHome />} /> : <Route path="/" element={<SampleHome />} />} 
-           <Route path="/contact" element={< Contact />} />
-           <Route path="/disclaimer" element={< Disclaimer/>} />
+          <Route path="/premium" element={<Premium />} />
+          <Route path="/" element={<SampleHome />} />
+          <Route path="*" element={<Navigate to="/" />} />
+          {admin === true ? <Route path="/dashboard" element={< DashboardHome />} /> : <Route path="/" element={<SampleHome />} />}
+          <Route path="/contact" element={< Contact />} />
+          <Route path="/disclaimer" element={< Disclaimer />} />
           {/* <Route path="/airtime" element={<Airtime />} /> */}
-           <Route path="/termscondition" element={<TermsAndCondition  />} />
+          <Route path="/termscondition" element={<TermsAndCondition />} />
           <Route path="/admin" element={<Admin />} />
-          <Route path="/admin/login" element={<AdminLogin/>} />
+          <Route path="/admin/login" element={<AdminLogin />} />
           <Route path="/tipster" element={<TipSterDashboard />} />
           <Route path="/tipsterWallet" element={<TipsWallet />} />
           <Route path="/userWallet" element={<UsersWallet />} />
@@ -105,16 +106,16 @@ function App() {
           <Route path="/market-predictions" element={<MarketPrediction />} />
           <Route path="/recent-predictions" element={<RecentPrediction />} />
           {currentUser ? <Route path="/user-dashboard" element={<UserDashBoard />} /> : <Route path="/" element={<SampleHome />} />}
-         
-         
-         
-         
+
+
+
+
         </Routes>
-       
-       </BrowserRouter>
-      
-       </div>
- 
+
+      </BrowserRouter>
+
+    </div>
+
   )
 
 }
