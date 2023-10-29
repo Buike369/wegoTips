@@ -130,7 +130,7 @@ const handleScroll = () => {
                   <a href="/affliate">Affiliate Program</a>
                 </li>
                 <li className="Contact_Bet">
-                  <a href="/exchange"> Buy/sell ENAR </a>
+                  <a href="/exchange"> Buy/Sell ENAR </a>
                 </li>
                 {/* <li className="Contact_Bet vap">
                   {tr === "/" ?<a href="#Faqc">FAQ</a> :null}
@@ -148,7 +148,7 @@ const handleScroll = () => {
               <div>
               <ul>
                 <li className="pauling">
-                  <a style={{padding:"5px 5px",background:"#6975a2"}}>{currentUser ?"Login":""}</a>
+                  <a >{currentUser ? <div><img src="/img/create.png" alt=""  style={{width:"35px",height:"35px",borderRadius:"50%", border:"2px solid #6156bd",padding:"3px"}}/></div> :""}</a>
                   <ul className="paulFr">
                       <li className="padup_Guide"></li>
                       <li className="paulmy_man">{currentUser?.username} </li>

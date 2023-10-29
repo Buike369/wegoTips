@@ -1,9 +1,15 @@
-import React,{useState,useContext} from 'react'
+import React,{useState,useContext,useEffect} from 'react'
 import "./style/exchange.css"
+import AOS from 'aos';
 import Footer from "./footer";
-import { useNavigate} from "react-router-dom";
+import "./style/premium.css"
+import ReactPaginate from 'react-paginate';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPaperPlane,faXmark} from '@fortawesome/free-solid-svg-icons'
+
+import {  faPlus,faMinus,faXmark, faPaperPlane,faVolleyball,faCheckToSlot, faCheckDouble} from '@fortawesome/free-solid-svg-icons'
+import { useNavigate} from "react-router-dom";
+
+// import { faPaperPlane,faXmark} from '@fortawesome/free-solid-svg-icons'
 import {AuthContext}from "./context/authContext"
 
 const Exchange = () => {
@@ -18,6 +24,77 @@ const Exchange = () => {
       const [pipTransfer, setPipTransfer] = useState(false)
   const [wallets,setWallets] = useState("main")
 
+
+
+
+   const [show,setShow]= useState(false)
+    const [show1,setShow1]= useState(false)
+  const [show2,setShow2]= useState(false)
+  const [show3,setShow3]= useState(false)
+  const [show4,setShow4]= useState(false)
+
+
+
+
+
+  const items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
+const [itemsPerPage,setItemsPerPage] = useState(6)
+const [itemOffset, setItemOffset] = useState(0);
+
+
+
+  // Simulate fetching items from another resources.
+  // (This could be items from props; or items loaded in a local state
+  // from an API endpoint with useEffect and useState)
+  const endOffset = itemOffset + itemsPerPage;
+  console.log(`Loading items from ${itemOffset} to ${endOffset}`);
+  const currentItems = items.slice(itemOffset, endOffset);
+  const pageCount = Math.ceil(items.length / itemsPerPage);
+
+  // Invoke when user click to request another page.
+  const handlePageClick = (event) => {
+    const newOffset = (event.selected * itemsPerPage) % items.length;
+    console.log(
+      `User requested page number ${event.selected}, which is offset ${newOffset}`
+    );
+    setItemOffset(newOffset);
+  };
+
+   const drop =()=>{
+     setShow(!show)
+     setShow1(false)
+     setShow2(false)
+     setShow3(false)
+     setShow4(false)
+    
+  }
+  const drop1 =()=>{
+    setShow(false)
+    setShow1(!show1)
+    setShow2(false)
+    setShow3(false)
+    setShow4(false)
+    
+    
+  }
+  const drop2 =()=>{
+
+    setShow(false)
+    setShow1(false)
+    setShow2(!show2)
+    setShow3(false)
+    setShow4(false)
+   
+    
+  }
+  const drop3 =()=>{
+    setShow(false)
+    setShow1(false)
+    setShow2(false)
+    setShow3(!show3)
+    setShow4(false)
+    
+  }
      const wentTo = ()=>{
        setPurchaseType("Sell")
        navigate('/buy-and-sell-enar')
@@ -49,6 +126,11 @@ const Exchange = () => {
        setModal(!modal)
        document.body.classList.remove("houne")
      }
+
+      useEffect(()=>{
+    AOS.init({once: true});
+  },[])
+
   return (
     <div>
 
@@ -267,6 +349,22 @@ const Exchange = () => {
     </tbody>
   </table>
 </div>
+
+ <div className='mainDe'>
+
+    <ReactPaginate
+        breakLabel="..."
+        nextLabel="next"
+        onPageChange={handlePageClick}
+        pageRangeDisplayed={6}
+        pageCount={pageCount}
+        previousLabel={`previous`}
+        renderOnZeroPageCount={null}
+        className='paginate'
+        onClick={handlePageClick}
+      />
+  
+  </div>
 </div>
 
     
@@ -437,6 +535,93 @@ const Exchange = () => {
 
 </>
 : ""}
+
+
+          <div className='IFAE'>
+                 <div style={{padding:"0 10px"}}>
+          <div id="Faqc" data-aos="fade-up" data-aos-duration="3000"
+             data-aos-easing="linear">
+            <div className="firstTom" data-aos="fade-down" data-aos-duration="3000"
+             data-aos-easing="linear" style={{color:"#fff"}}>FAQ</div>
+            <div className="homeChange">
+              <div className="HowFarBro" onClick={drop}>
+                <span>What is a  Peer to peer (p2p)  exchange?</span>{" "}
+                <span className="IconSpace">
+                {show? <FontAwesomeIcon icon={faMinus} className="PlusIcon" />:<FontAwesomeIcon icon={faPlus} className="PlusIcon" />}
+                </span>
+              </div>
+              {show ? (
+                  <div>
+                    <div className="Qac"></div>
+                <p className="ILOVEK">
+                  {" "}
+                 Cryptocurrency peer to peer (p2p) exchange is a digital marketplace that enable users to buy and sell cryptocurrencies like ENAR and Tether directly from each other. 
+                </p>
+                </div>
+              ) : (
+                ""
+              )}
+            </div>
+            <div className="homeChange">
+              <div className="HowFarBro" onClick={drop1}>
+                <span>How do I buy USDT or ENAR ? </span>
+                <span className="IconSpace">
+                {show1? <FontAwesomeIcon icon={faMinus} className="PlusIcon" />:<FontAwesomeIcon icon={faPlus} className="PlusIcon" />}
+                </span>
+              </div>
+              {show1 ? (
+                <div>
+                  <div className="Qac"></div>
+                <p className="ILOVEK">
+                 To buy USDT or ENAR Just click the buy button and follow the procedure and make sure you have cash to transfer to the seller who you want to buy from.
+                </p>
+                </div>
+              ) : (
+                ""
+              )}
+            </div>
+            <div className="homeChange">
+              <div className="HowFarBro" onClick={drop2}>
+                <span>  Can I Sell my ENAR On the exchange immediately?</span>
+                <span className="IconSpace">
+                  {show2? <FontAwesomeIcon icon={faMinus} className="PlusIcon" />:<FontAwesomeIcon icon={faPlus} className="PlusIcon" />}
+                </span>
+              </div>
+              {show2 ? (
+                <div>
+                  <div className="Qac"></div>
+                <p className="ILOVEK">
+                 Yes, You can sell your ENARS instantly through the exchange.
+                </p>
+                </div>
+              ) : (
+                ""
+              )}
+            </div>
+            <div className="homeChange">
+              <div className="HowFarBro" onClick={drop3}>
+                <span> How much does it cost to subscribe monthly? </span>
+                <span className="IconSpace">
+                  {show3? <FontAwesomeIcon icon={faMinus} className="PlusIcon" />:<FontAwesomeIcon icon={faPlus} className="PlusIcon" />}
+                </span>
+              </div>
+              {show3 ? (
+                <div>
+                  <div className="Qac"></div>
+                <p className="ILOVEK">
+                Purchasing a membership Subscription from any tipster is flexible. You can either buy daily, weekly or monthly subscription
+                </p>
+                </div>
+              ) : (
+                ""
+              )}
+            </div>
+            
+          
+          
+          </div>
+          </div>
+          </div>
 
   <div className="bkFR">
        <div style={{padding:"0 10px"}}>

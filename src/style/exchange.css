@@ -66,13 +66,10 @@ bottom: 55px;
     font-weight: 500;
 }
 .BuyEn22{
-    border: 1px solid #3ddf67;
+    border: 1px solid #11ef19;
         color: #11ef19;
 }
-/* .BuyEn20 {
-border: 1px solid #df4b4b;
-    color: #ef4848;
-} */
+
 .popoUy{
     padding:50px 10px;
     margin-top: 50px;
@@ -146,7 +143,7 @@ border: 1px solid #df4b4b;
 }
 .BuyNUME{
     padding:5px 15px;
-    /* background-color: #129936; */
+    
     border: 1px solid #3ddf67;
     color:#11ef19;
     font-weight: 600;
@@ -172,7 +169,7 @@ left: 50%;
 }
 .cncnc{
     display:flex;
-    /* align-items: center; */
+
     height:100px
 }
 .bbAs{
@@ -284,8 +281,7 @@ a{
 .Am1n2{
     width:350px;
     height:350px;
-    /* border: 1px solid #2d24769e;
-        background-color: #1710544a; */
+   
             background-image: linear-gradient(to bottom right, #302876, #100b3c);
                 box-shadow: rgb(10 11 54 / 31%) 0px 15px 25px, rgb(13 7 68) 0px 5px 10px;
     border-radius: 50%;

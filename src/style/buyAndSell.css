@@ -117,11 +117,11 @@
     margin: 10px auto;
     padding: 8px 10px;
     color: gold;
+    cursor: pointer;
     border-radius: 35px;
     border: 1px solid #5d5ca5;
     background-image: linear-gradient(to bottom right, #302876, #100b3c);
     box-shadow: rgb(10 11 54 / 31%) 0px 15px 25px, rgb(13 7 68) 0px 5px 10px;
-
 
 }
 

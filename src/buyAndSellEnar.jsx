@@ -17,6 +17,7 @@ const BuyEnar = () => {
   const [show2,setShow2]= useState(false)
   const [show3,setShow3]= useState(false)
   const [show4,setShow4]= useState(false)
+  const [accountCheckModal,setAccountCheckModal]= useState(false)
 
    const drop =()=>{
      setShow(!show)
@@ -242,7 +243,24 @@ const BuyEnar = () => {
                </div>
                </div>
                </div>
+
+
+               {accountCheckModal ? <>
+               <div>
+                 <div>
+                   <div>
+                    <div>Confirmation</div>
+                    <div>Your NGN balance is insuffient to start the trade. Do you want to deposit?</div>
+                    <div>
+                      <div>No</div>
+                      <div>Yes</div>
+                    </div>
+                   </div>
+                 </div>
+               </div>
+               </> : ""}
     <Footer/>
+
     </div>
   )
 }
