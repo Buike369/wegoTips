@@ -276,6 +276,21 @@ const [itemOffset, setItemOffset] = useState(0);
     </tbody>
   </table>
 </div>
+<div className='mainDe eTi'>
+
+    <ReactPaginate
+        breakLabel="..."
+        nextLabel="next"
+        onPageChange={handlePageClick}
+        pageRangeDisplayed={6}
+        pageCount={pageCount}
+        previousLabel={`previous`}
+        renderOnZeroPageCount={null}
+        className='paginate'
+        onClick={handlePageClick}
+      />
+  
+  </div>
 </div>
 
     
@@ -350,7 +365,7 @@ const [itemOffset, setItemOffset] = useState(0);
   </table>
 </div>
 
- <div className='mainDe'>
+ <div className='mainDe eTi'>
 
     <ReactPaginate
         breakLabel="..."
@@ -386,7 +401,7 @@ const [itemOffset, setItemOffset] = useState(0);
     <div className='epv'>
      <div className="epv1">
       <div className="vipn">
-      <div className="epv2">P2p Deposit</div>
+      <div className="epv2"></div>
       <FontAwesomeIcon icon={faXmark} className="ravs" onClick={reOpen} />
       </div>
              <div className="epv3">Select Token</div>
@@ -432,7 +447,7 @@ const [itemOffset, setItemOffset] = useState(0);
     <div className='epv' >
   <div className="epv1">
      <div className="vipn">
-      <div className="epv2">P2p Transfer</div>
+      <div className="epv2"></div>
       <FontAwesomeIcon icon={faXmark} className="ravs" onClick={reOpen} />
       </div>
     <div className="vipn">
@@ -480,7 +495,7 @@ const [itemOffset, setItemOffset] = useState(0);
     <div className='epv'>
      <div  className="epv1">
       <div className="vipn">
-      <div className="epv2">P2p Withdrawal</div>
+      <div className="epv2"></div>
       <FontAwesomeIcon icon={faXmark} className="ravs" onClick={reOpen} />
       </div>
              <div className="epv3">Select Token</div>

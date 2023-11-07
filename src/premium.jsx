@@ -153,15 +153,15 @@ const [changeState,setChangeState] = useState("Tips")
          <div>
            <div className='paw1 weNeed6'>
                                 <div className='cic'></div>
-                                <div className='bkInT'>1 Day <span className='moneyColor'>₦100</span></div>
+                                <div className='bkInT'>1 Day <span className='moneyColor'>$1</span></div>
                             </div>
                              <div className='paw1 weNeed6'>
                                 <div className='cic'></div>
-                                <div className='bkInT'>7 Days <span className='moneyColor'>₦150</span></div>
+                                <div className='bkInT'>7 Days <span className='moneyColor'>$2</span></div>
                             </div>
                              <div className='paw1 weNeed6'>
                                 <div className='cic'></div>
-                                <div className='bkInT'>30 Days <span className='moneyColor'>₦200</span></div>
+                                <div className='bkInT'>30 Days <span className='moneyColor'>$4</span></div>
                             </div>
          
          </div>
@@ -229,15 +229,15 @@ const [changeState,setChangeState] = useState("Tips")
          <div>
            <div className='paw1 weNeed6'>
                                 <div className='cic'></div>
-                                <div className='bkInT'>1 Day <span className='moneyColor'>₦100</span></div>
+                                <div className='bkInT'>1 Day <span className='moneyColor'>$1</span></div>
                             </div>
                              <div className='paw1 weNeed6'>
                                 <div className='cic'></div>
-                                <div className='bkInT'>7 Days <span className='moneyColor'>₦150</span></div>
+                                <div className='bkInT'>7 Days <span className='moneyColor'>$2</span></div>
                             </div>
                              <div className='paw1 weNeed6'>
                                 <div className='cic'></div>
-                                <div className='bkInT'>30 Days <span className='moneyColor'>₦200</span></div>
+                                <div className='bkInT'>30 Days <span className='moneyColor'>$4</span></div>
                             </div>
          
          </div>
@@ -383,15 +383,15 @@ const [changeState,setChangeState] = useState("Tips")
          <div>
            <div className='paw1 weNeed6'>
                                 <div className='cic'></div>
-                                <div className='bkInT'>1 Day <span className='moneyColor'>₦100</span></div>
+                                <div className='bkInT'>1 Day <span className='moneyColor'>$1</span></div>
                             </div>
                              <div className='paw1 weNeed6'>
                                 <div className='cic'></div>
-                                <div className='bkInT'>7 Days <span className='moneyColor'>₦150</span></div>
+                                <div className='bkInT'>7 Days <span className='moneyColor'>$2</span></div>
                             </div>
                              <div className='paw1 weNeed6'>
                                 <div className='cic'></div>
-                                <div className='bkInT'>30 Days <span className='moneyColor'>₦200</span></div>
+                                <div className='bkInT'>30 Days <span className='moneyColor'>$4</span></div>
                             </div>
          
          </div>

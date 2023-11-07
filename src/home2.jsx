@@ -27,6 +27,8 @@ const Home2=() =>{
 
   const [sports,setSports]= useState("Forex")
   const [loading,setLoading] = useState(true)
+  const [prediction,setPrediction] = useState("sportsPre")
+  const [currentPrediction,setCurrentPrediction] = useState("cuForexPre")
   
 
  
@@ -435,6 +437,8 @@ useEffect(()=>{
 
            {/*  */}
            </div>
+
+
 
 
          <div style={{paddingBottom:"20px",position:"relative"}}>
@@ -1139,9 +1143,22 @@ useEffect(()=>{
 
               
                  <div className="topPrediction">Top Predictions</div>
-              <div className="UponT">
-                <div className="sportPetNe">Sports Predictions</div>
+                 <div style={{padding: "1px  5px"}}>
+              <div className="UponT" >
+                    <div  className="market">
+               <div className="faith" >
+               <div className="Forex1">
+                   <div className={prediction==="forexPre"?"Forex12 pin":"Forex12"} onClick={()=>setPrediction("forexPre")}>Forex</div>
+                   <div className={prediction === "sportsPre"?"Forex12 pin":"Forex12"} onClick={()=>setPrediction("sportsPre")}>Sports</div>
+                   
+                   <div className={prediction === "cryptoPre"?"Forex12 pin":"Forex12"} onClick={()=>setPrediction("cryptoPre")}>Cryptocurrency</div>
+                   <div className={prediction === "binaryPre"?"Forex12 pin":"Forex12"} onClick={()=>setPrediction("binaryPre")}>Binary</div>
+               </div>
+               </div>
+               </div>
+                {/* <div className="sportPetNe">Sports Predictions</div> */}
                
+               {prediction === "sportsPre" ? <>
            <div className="adaba"> 
        <div role="region" aria-labelledby="caption" tabindex="0">
   <table   style={{borderCollapse: "collapse"}}  className='linema '>
@@ -1190,6 +1207,44 @@ useEffect(()=>{
          <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
         
       </tr>
+
+            <tr  className="ADDTimeDbg ">
+        <th className="ADDTimeDbg">09/11/2023</th>
+        <td>13:00am</td>
+          <td>France League1</td>
+        <td>PSG Vs Strasbourg</td>
+        <td>1x</td>
+        <td>1.56</td>
+        <td>5,000</td>
+         <td><img src="/img/good.png" alt="" /></td>
+         <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
+        
+      </tr>
+
+            <tr  className="ADDTimeDbg ">
+        <th className="ADDTimeDbg">09/11/2023</th>
+        <td>13:00am</td>
+          <td>France League1</td>
+        <td>PSG Vs Strasbourg</td>
+        <td>1x</td>
+        <td>1.56</td>
+        <td>5,000</td>
+         <td><img src="/img/good.png" alt="" /></td>
+         <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
+        
+      </tr>
+            <tr  className="ADDTimeDbg ">
+        <th className="ADDTimeDbg">09/11/2023</th>
+        <td>13:00am</td>
+          <td>France League1</td>
+        <td>PSG Vs Strasbourg</td>
+        <td>1x</td>
+        <td>1.56</td>
+        <td>5,000</td>
+         <td><img src="/img/good.png" alt="" /></td>
+         <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
+        
+      </tr>
   
         
       
@@ -1199,7 +1254,9 @@ useEffect(()=>{
   </table>
 </div>
 </div> 
-       <div className="sportPetNe gapUp">Forex Predictions</div>
+</> :""}
+      
+       {prediction === "forexPre" ? <>
            <div className="adaba">
       <div role="region" aria-labelledby="caption" tabindex="0">
   <table className='linema' style={{borderCollapse: "collapse"}}>
@@ -1246,6 +1303,42 @@ useEffect(()=>{
        
         
       </tr>
+         <tr  className="ADDTimeDbg ADDTimeDbg22">
+        <th className="ADDTimeDbg">09/11/2023</th>
+        <td>CED/USD</td>
+          <td>Short(buy)</td>
+        <td>1.678787</td>
+        <td>1.678787</td>
+        <td>1.678787</td>
+         <td><img src="/img/good.png" alt="" /></td>
+        <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
+       
+        
+      </tr>
+         <tr  className="ADDTimeDbg ADDTimeDbg22">
+        <th className="ADDTimeDbg">09/11/2023</th>
+        <td>CED/USD</td>
+          <td>Short(buy)</td>
+        <td>1.678787</td>
+        <td>1.678787</td>
+        <td>1.678787</td>
+         <td><img src="/img/good.png" alt="" /></td>
+        <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
+       
+        
+      </tr>
+         <tr  className="ADDTimeDbg ADDTimeDbg22">
+        <th className="ADDTimeDbg">09/11/2023</th>
+        <td>CED/USD</td>
+          <td>Short(buy)</td>
+        <td>1.678787</td>
+        <td>1.678787</td>
+        <td>1.678787</td>
+         <td><img src="/img/good.png" alt="" /></td>
+        <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
+       
+        
+      </tr>
   
         
       
@@ -1255,8 +1348,11 @@ useEffect(()=>{
   </table>
 </div>
 </div>
+</> : ""}
+
  {/* <div className="seeMoreDivLink"><button className="SeeMoreInfo">See More</button></div> */}
-<div className="sportPetNe gapUp">Cryptocurrency Predictions</div>
+
+   {prediction === "cryptoPre" ? <>
  <div className="adaba">
       <div role="region" aria-labelledby="caption" tabindex="0">
   <table className='linema' style={{borderCollapse: "collapse"}} >
@@ -1292,6 +1388,42 @@ useEffect(()=>{
        
         
       </tr>
+        <tr  className="ADDTimeDbg ADDTimeDbg22">
+        <th className=" ADDTimeDbg">09/11/2023</th>
+        <td>BTC/USD</td>
+          <td>Long(buy)</td>
+        <td>30000.05</td>
+        <td>76000.00</td>
+        <td>29500.00</td>
+         <td><img src="/img/good.png" alt="" /></td>
+        <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
+       
+        
+      </tr>
+        <tr  className="ADDTimeDbg ADDTimeDbg22">
+        <th className=" ADDTimeDbg">09/11/2023</th>
+        <td>BTC/USD</td>
+          <td>Long(buy)</td>
+        <td>30000.05</td>
+        <td>76000.00</td>
+        <td>29500.00</td>
+         <td><img src="/img/good.png" alt="" /></td>
+        <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
+       
+        
+      </tr>
+        <tr  className="ADDTimeDbg ADDTimeDbg22">
+        <th className=" ADDTimeDbg">09/11/2023</th>
+        <td>BTC/USD</td>
+          <td>Long(buy)</td>
+        <td>30000.05</td>
+        <td>76000.00</td>
+        <td>29500.00</td>
+         <td><img src="/img/good.png" alt="" /></td>
+        <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
+       
+        
+      </tr>
       <tr  className="ADDTimeDbg ADDTimeDbg22">
         <th className="ADDTimeDbg">09/11/2023</th>
         <td>ETH/USD</td>
@@ -1313,8 +1445,10 @@ useEffect(()=>{
   </table>
 </div>
 </div>
+</>  : "" }
     {/* <div className="seeMoreDivLink"><button className="SeeMoreInfo">See More</button></div> */}
-<div className="sportPetNe gapUp">Binary Predictions</div>
+
+ {prediction === "binaryPre" ? <>
  <div className="adaba">
       <div role="region" aria-labelledby="caption" tabindex="0">
   <table className='linema' style={{borderCollapse: "collapse"}} >
@@ -1354,6 +1488,47 @@ useEffect(()=>{
        
         
       </tr>
+  <tr  className="ADDTimeDbg ADDTimeDbg22">
+        <th className="ADDTimeDbg">09/11/2023</th>
+        <td>GBP/USD</td>
+          <td>Short(buy)</td>
+          <td><img src="/img/good.png" alt="" /></td>
+           <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
+       
+       
+        
+      </tr>
+      <tr  className="ADDTimeDbg ADDTimeDbg22">
+        <th className="ADDTimeDbg">09/11/2023</th>
+        <td>GBP/USD</td>
+          <td>Short(buy)</td>
+          <td><img src="/img/good.png" alt="" /></td>
+           <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
+       
+       
+        
+      </tr>
+  <tr  className="ADDTimeDbg ADDTimeDbg22">
+        <th className="ADDTimeDbg">09/11/2023</th>
+        <td>GBP/USD</td>
+          <td>Short(buy)</td>
+          <td><img src="/img/good.png" alt="" /></td>
+           <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
+       
+       
+        
+      </tr>
+  
+  <tr  className="ADDTimeDbg ADDTimeDbg22">
+        <th className="ADDTimeDbg">09/11/2023</th>
+        <td>GBP/USD</td>
+          <td>Short(buy)</td>
+          <td><img src="/img/good.png" alt="" /></td>
+           <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
+       
+       
+        
+      </tr>
   
         
       
@@ -1363,8 +1538,10 @@ useEffect(()=>{
   </table>
 </div>
 </div>
- <div className="seeMoreDivLink"><a href="/market-predictions"><button className="SeeMoreInfo">See More</button></a></div>
+</> : "" }
+ {/* <div className="seeMoreDivLink"><a href="/market-predictions"><button className="SeeMoreInfo">See More</button></a></div> */}
 
+                </div>
                 </div>
 
               
@@ -1376,9 +1553,21 @@ useEffect(()=>{
 
               
                  <div className="topPrediction">Recent Tips From Tipsters</div>
-              <div className="UponT">
-                <div className="sportPetNe">Sports Predictions</div>
-               
+                 <div style={{padding: "1px  5px"}}>
+              <div className="UponT" >
+                     <div className="market">
+               <div className="faith" >
+               <div className="Forex1">
+                   <div className={currentPrediction ==="cuForexPre"?"Forex12 pin":"Forex12"} onClick={()=>setCurrentPrediction("cuForexPre")}>Forex</div>
+                   <div className={currentPrediction === "cuSportsPre"?"Forex12 pin":"Forex12"} onClick={()=>setCurrentPrediction("cuSportsPre")}>Sports</div>
+                   
+                   <div className={currentPrediction === "cuCryptoPre"?"Forex12 pin":"Forex12"} onClick={()=>setCurrentPrediction("cuCryptoPre")}>Cryptocurrency</div>
+                   <div className={currentPrediction === "cuBinaryPre"?"Forex12 pin":"Forex12"} onClick={()=>setCurrentPrediction("cuBinaryPre")}>Binary</div>
+               </div>
+               </div>
+               </div>
+                
+             {currentPrediction  ===  "cuSportsPre" ? <> 
            <div className="adaba"> 
        <div role="region" aria-labelledby="caption" tabindex="0">
   <table   style={{borderCollapse: "collapse"}}  className='linema '>
@@ -1415,6 +1604,42 @@ useEffect(()=>{
          <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
         
       </tr>
+         <tr  className="ADDTimeDbg " >
+        <th className=" ADDTimeDbg">09/11/2023</th>
+        
+        <td>13:00pm</td>
+          <td>English</td>
+        <td>Eng v Ban Asia Cup T20</td>
+        <td>1.72</td>
+        <td>+20.45</td>
+        <td>+3%</td>
+         <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
+        
+      </tr>
+         <tr  className="ADDTimeDbg " >
+        <th className=" ADDTimeDbg">09/11/2023</th>
+        
+        <td>13:00pm</td>
+          <td>English</td>
+        <td>Eng v Ban Asia Cup T20</td>
+        <td>1.72</td>
+        <td>+20.45</td>
+        <td>+3%</td>
+         <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
+        
+      </tr>
+         <tr  className="ADDTimeDbg " >
+        <th className=" ADDTimeDbg">09/11/2023</th>
+        
+        <td>13:00pm</td>
+          <td>English</td>
+        <td>Eng v Ban Asia Cup T20</td>
+        <td>1.72</td>
+        <td>+20.45</td>
+        <td>+3%</td>
+         <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
+        
+      </tr>
       <tr  className="ADDTimeDbg ">
         <th className="ADDTimeDbg">09/11/2023</th>
         
@@ -1436,8 +1661,10 @@ useEffect(()=>{
   </table>
 </div>
 </div> 
+</> : ""} 
  {/* <div className="seeMoreDivLink"><button className="SeeMoreInfo">See More</button></div> */}
-           <div className="sportPetNe gapUp">Forex Predictions</div>
+          
+           {currentPrediction  ===  "cuForexPre" ? <> 
            <div className="adaba">
       <div role="region" aria-labelledby="caption" tabindex="0">
   <table className='linema' style={{borderCollapse: "collapse"}}>
@@ -1470,6 +1697,39 @@ useEffect(()=>{
        
         
       </tr>
+       <tr  className="ADDTimeDbg ADDTimeDbg22">
+        <th className=" ADDTimeDbg">09/11/2023</th>
+        
+          <td>Long(buy)</td>
+        <td>1.678787</td>
+        <td>1.899765</td>
+        <td>1.456378</td>
+         <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
+       
+        
+      </tr>
+       <tr  className="ADDTimeDbg ADDTimeDbg22">
+        <th className=" ADDTimeDbg">09/11/2023</th>
+        
+          <td>Long(buy)</td>
+        <td>1.678787</td>
+        <td>1.899765</td>
+        <td>1.456378</td>
+         <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
+       
+        
+      </tr>
+       <tr  className="ADDTimeDbg ADDTimeDbg22">
+        <th className=" ADDTimeDbg">09/11/2023</th>
+        
+          <td>Long(buy)</td>
+        <td>1.678787</td>
+        <td>1.899765</td>
+        <td>1.456378</td>
+         <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
+       
+        
+      </tr>
    
       <tr  className="ADDTimeDbg ADDTimeDbg22">
         <th className="ADDTimeDbg">09/11/2023</th>
@@ -1492,8 +1752,10 @@ useEffect(()=>{
   </table>
 </div>
 </div>
+</> : ""}
  {/* <div className="seeMoreDivLink"><button className="SeeMoreInfo">See More</button></div> */}
-<div className="sportPetNe gapUp">Cryptocurrency Predictions</div>
+
+ {currentPrediction  ===  "cuCryptoPre" ? <> 
  <div className="adaba">
       <div role="region" aria-labelledby="caption" tabindex="0">
   <table className='linema' style={{borderCollapse: "collapse"}} >
@@ -1528,6 +1790,42 @@ useEffect(()=>{
        
         
       </tr>
+       <tr  className="ADDTimeDbg ADDTimeDbg22">
+        <th className=" ADDTimeDbg">09/11/2023</th>
+       
+          <td>Long(buy)</td>
+        <td>9.0615</td>
+        <td>12.0500</td>
+        <td>8.5000</td>
+       
+          <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
+       
+        
+      </tr>
+       <tr  className="ADDTimeDbg ADDTimeDbg22">
+        <th className=" ADDTimeDbg">09/11/2023</th>
+       
+          <td>Long(buy)</td>
+        <td>9.0615</td>
+        <td>12.0500</td>
+        <td>8.5000</td>
+       
+          <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
+       
+        
+      </tr>
+       <tr  className="ADDTimeDbg ADDTimeDbg22">
+        <th className=" ADDTimeDbg">09/11/2023</th>
+       
+          <td>Long(buy)</td>
+        <td>9.0615</td>
+        <td>12.0500</td>
+        <td>8.5000</td>
+       
+          <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
+       
+        
+      </tr>
       <tr  className="ADDTimeDbg ADDTimeDbg22">
         <th className="ADDTimeDbg">09/11/2023</th>
         
@@ -1549,8 +1847,10 @@ useEffect(()=>{
   </table>
 </div>
 </div>
+</> :""}
     {/* <div className="seeMoreDivLink"><button className="SeeMoreInfo">See More</button></div> */}
-<div className="sportPetNe gapUp">Binary Predictions</div>
+
+ {currentPrediction  ===  "cuBinaryPre" ? <> 
  <div className="adaba">
       <div role="region" aria-labelledby="caption" tabindex="0">
   <table className='linema' style={{borderCollapse: "collapse"}} >
@@ -1579,7 +1879,34 @@ useEffect(()=>{
        
         
       </tr>
+       <tr  className="ADDTimeDbg ADDTimeDbg22">
+        <th className=" ADDTimeDbg">09/11/2023</th>
+       
+          <td>Long(buy)</td>
+           <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
+        
+       
+        
+      </tr>
+       <tr  className="ADDTimeDbg ADDTimeDbg22">
+        <th className=" ADDTimeDbg">09/11/2023</th>
+       
+          <td>Long(buy)</td>
+           <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
+        
+       
+        
+      </tr>
       <tr  className="ADDTimeDbg ADDTimeDbg22">
+        <th className="ADDTimeDbg">09/11/2023</th>
+       
+          <td>Short(buy)</td>
+           <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
+       
+       
+        
+      </tr>
+       <tr  className="ADDTimeDbg ADDTimeDbg22">
         <th className="ADDTimeDbg">09/11/2023</th>
        
           <td>Short(buy)</td>
@@ -1597,8 +1924,10 @@ useEffect(()=>{
   </table>
 </div>
 </div>
- <div className="seeMoreDivLink"><a href="/recent-predictions"><button className="SeeMoreInfo">See More</button></a></div>
+</> : ""}
+ {/* <div className="seeMoreDivLink"><a href="/recent-predictions"><button className="SeeMoreInfo">See More</button></a></div> */}
 
+                </div>
                 </div>
 
               

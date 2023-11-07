@@ -470,6 +470,20 @@ font-size: 16px;
 
 }
 
+
+/* .Forex17 {
+    padding: 10px 2px;
+    width: 12%;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    z-index: 1;
+
+    color: gold;
+    cursor: pointer;
+
+} */
+
 .Forex12:hover {
     background: #2e295ce8;
     color: #fff
@@ -957,9 +971,14 @@ font-size: 16px;
     margin-bottom: 10px;
 }
 
+
+
+
 .pin {
     background-color: #2e295ce8;
     color: #fff;
+    border-bottom: 1px solid #514f95;
+   
 }
 
 .Usdj {
@@ -1049,6 +1068,9 @@ left:0px;
     border-radius: 50%;
     border:2px solid #7271b3;
     padding:2px
+}
+.market{
+    margin-bottom: 20px;
 }
   .houseRuMM:hover {
       background-color: #171054;
