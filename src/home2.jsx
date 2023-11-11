@@ -162,7 +162,7 @@ const Home2=() =>{
   const responsive1 = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3,
+      items: 4,
       slidesToSlide: 1// optional, default to 1.
     },
     tablet: {
@@ -352,51 +352,61 @@ useEffect(()=>{
       <div className="him"> 
       <div className="Rtme ">
           <div className="Free">
-            <div><p className="EarnP">Earn Daily With Us </p>
+            <div><p className="EarnP">How It works </p>
             <div className="divUnder"></div></div>
           
           </div>
           {/*======  section4 ========*/}
 
+          
+                  <div className="goods1">
+                    <div className="goods2">
+                    <div className="inviteFr goods liom">Get Started with Easiest Steps</div>
+                    <p className="proF">
+Get accurate winning tips from professional betting tipsters across sports, forex and cryptocurrency.</p>
+           <div className='betStor ghFi likl'>
+                  
+                    <div className='bettors wanNy'>
+                    <div className='bettorsDiv'>
+                       <div className="ghFii13 cvcvcnc"><img src="/img/light.png" alt=""  className="withTyb"/></div>
+                        <p className='bettors1' >01</p>
+                    </div>
+                    <div className='AddTip ghFii1 amGet'>Find your tipster</div>
+                    <p className='itWell ghFii12'>Explore thousands of exprienced tipsters with verified picks and statistics.</p>
+                    </div>
+                
+                 
+                    <div className='bettors wanNy'>
+                    <div className='bettorsDiv'>
+                       <div className="ghFii13 cvcvcnc"><img src="/img/light1.png" alt="" className="withTyb"  /></div>
+                        <p className='bettors1' >02</p>
+                    </div>
+                    <div className='AddTip ghFii1 amGet'>Get your tips in your dashboard</div>
+                    <p className='itWell ghFii12'>Select your tipsters and subscribe to get betting and trading tips on your dashboard.</p>
+                    </div>
+               
+               
+                    <div className='bettors wanNy'>
+                    <div className='bettorsDiv'>
+                       <div className="ghFii13 cvcvcnc"> <img src="/img/light3.png" alt="" className="withTyb"/></div>
+                        <p className='bettors1' >03</p>
+                    </div>
+                    <div className='AddTip ghFii1 amGet'>Place a bet & win</div>
+                    <p className='itWell ghFii12'>When you receive a tip, open your favourite bookmaker's website or trading platform and place the bet or trade.</p>
+                    </div>
+               
+            </div>
+            </div>
+            <div className="goods3  goods4"></div>
+                 <div className="goods3 goods5"></div>
+            </div>
+            
+   
           {/* secton5   */}
 
-           <div className="teleCom turu">
-              
-               <div className="commT"  data-aos="fade-up" data-aos-duration="3000"
-             data-aos-easing="linear" >
-                   <div className="FreeComm">Forex Trading</div>
-                  <div style={{padding:"0 40px"}}><div style={{width:"100%",borderBottom:"1px solid rgb(99 91 146)",margin:"0 auto 10px auto"}}></div></div>
-                   <img src="/img/forexIcon.png" alt="not found" className="ballSport1 ffoo"/>
-                   <img src="/img/forex12.png" alt="not found" className="ballSport ffoo"/>
-                   <p className="Saving">Earn</p>
-                   <p className="perceT">25 - 100%</p>
-                   <p className="dailyOn">Profits</p>
-                   <p className="AirTime">Monthly</p>
-                   <div className="successRate100">
-                       <p className="RateSuccess">75% Success Rate</p>
-                   </div>
-               </div>
-               <div className="commT dese bg-white-box " data-aos="fade-up" data-aos-duration="3000"
-             data-aos-easing="linear" > 
-                   <div className="FreeComm">Sports Prediction</div>
-                   <div style={{padding:"0 40px"}}><div style={{width:"100%",borderBottom:"1px solid rgb(99 91 146)",margin:"0 auto 10px auto"}}></div></div>
-                   <img src="/img/sport.png" alt="not found" className="ballSport1 ffoo"/>
-                   <img src="/img/sports1.png" alt="not found" className="ballSport ffoo"/>
+        
 
-                   <p className="Saving">Earn</p>
-                   <p className="perceT">50-100%</p>
-                   <p className="dailyOn">Profits</p>
-                   <p className="AirTime">Weekly</p>
-                  <div className="successRate100"><p className="RateSuccess">95% Success Rate</p></div>
-                  <div>
-
-                  </div>
-               </div>
-               <img src="/img/undrawWorld1.svg" alt="" className="papag3 nub" />
-                <img src="/img/undrawWorld1.svg" alt="" className="papag4 nub1" />
-           </div>
-
-        <div className="divRatT">
+        {/* <div className="divRatT">
            <div className="teleCom turu">
                
                <div className="commT bg-yellow-box" data-aos="fade-up" data-aos-duration="3000"
@@ -428,7 +438,10 @@ useEffect(()=>{
                <img src="/img/undrawWorld1.svg" alt="" className="papag3 nub" />
                 <img src="/img/undrawWorld1.svg" alt="" className="papag4 nub1" />
            </div>
-           </div>
+           </div> */}
+
+           
+          
            </div>
 
            <div className="glow glowLeft"></div>
@@ -447,13 +460,14 @@ useEffect(()=>{
            <div className="Rtme">
                <div className="loud" style={{color: "#d5b405"}}>Top Tipsters</div>
                <div className="ye"></div>
+               <div  className="GetP">See our professional  tipsters across all markets. Sports, Crypto, & Forex.</div>
                <div >
                <div className="faith" >
                <div className="Forex1">
                    <div className={sports==="Forex"?"Forex12 pin":"Forex12"} onClick={forf}>Forex</div>
                    <div className={sports === "sports"?"Forex12 pin":"Forex12"} onClick={Sports1}>Sports</div>
                    
-                   <div className={sports === "cryptocurrency"?"Forex12 pin":"Forex12"} onClick={crypto}>Cryptocurrency</div>
+                   <div className={sports === "cryptocurrency"?"Forex12 pin":"Forex12"} onClick={crypto}>Crypto</div>
                    <div className={sports === "binary"?"Forex12 pin":"Forex12"} onClick={bina}>Binary</div>
                </div>
                </div>
@@ -1143,6 +1157,7 @@ useEffect(()=>{
 
               
                  <div className="topPrediction">Top Predictions</div>
+                  <div  className="GetP">Discover the top predictions crafted by our expert tipsters.</div>
                  <div style={{padding: "1px  5px"}}>
               <div className="UponT" >
                     <div  className="market">
@@ -1548,6 +1563,19 @@ useEffect(()=>{
                </div>
 
              
+<div className="limba">
+<div className="gos">
+  <div className="gos1">
+    <div className="gos2"><div className="jimk"><img src="/img/earnv.jpeg" alt="" className="gos5" /></div></div>
+     <div className="gos3"><div className="limba2">
+      <div className="ET">Earnars Token</div>
+      <p className="gos4"><span className="goemJK">$ENAR</span> Token allows you to pay for services within the platform with ease or leverage on the ever increasing price for arbitrage purposes.</p></div></div>
+  </div>
+</div>
+</div>
+
+
+
 
           <div className="youpin carU">
 
@@ -1946,7 +1974,7 @@ useEffect(()=>{
            <div className="Make15">
                <div>
                    <div>
-                       <p className="millionM"  style={{color: "#7b7ee2" }} >Make 1 million Naira monthly </p>
+                       <p className="millionM"  style={{color: "#7b7ee2" }} >Make $1,000 on referral commission monthly </p>
                        <p className="OnRef">On Referral Commission</p>
                         <div className="visitMe"><a href="/affliate"><button className="visitMe3">See More</button></a></div>
                    </div>

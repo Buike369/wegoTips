@@ -160,15 +160,15 @@ height: 300px;
 }
 .weAre4{
     color:gold;
-    font-size: 38px;
-    font-weight: 700;
+    font-size: 54px;
+    font-weight: 500;
     margin-bottom: 10px;
     position:relative;
     z-index: 6;
 }
 .everyWhere{
-    color:#a5a9af;
-    font-size: 18px;
+    color:#dadfe7;
+    font-size: 26px;
     letter-spacing: 0.8px;
 }
 .football{
@@ -186,7 +186,7 @@ background-color: #111153;
     overflow: hidden;
 }
 .withUpto{
-    font-size: 38px;
+    font-size: 54px;
     color:#6c63ff;
 }
 .imgFloatSport{
@@ -495,6 +495,10 @@ scrollbar-color: #007 #bada55 !important;
                   }
     .weAre4, .everyWhere, .football{
         text-align: center;
+    }
+    .everyWhere{
+        padding:1px 10px;
+        font-size: 24px;
     }
     .weAre4, .withUpto{
         font-size: 30px;
