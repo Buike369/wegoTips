@@ -450,8 +450,18 @@ Get accurate winning tips from professional betting tipsters across sports, fore
 
            {/*  */}
            </div>
-
-
+<div style={{backgroundImage:"url(/img/earnar.PNG)", backgroundRepeat:"no-repeat",backgroundSize:"100% 100%"}}>
+   <div className="limba">
+<div className="gos">
+  <div className="gos1">
+    {/* <div className="gos2"><div className="jimk"><img src="/img/earnv.jpeg" alt="" className="gos5" /></div></div> */}
+     <div className="gos3"><div className="limba2">
+      <div className="ET">Earnars Token</div>
+      <p className="gos4"><span className="goemJK">$ENAR</span> allows you to pay for services within the platform with ease or leverage on the ever increasing price for arbitrage purposes.</p></div></div>
+  </div>
+</div>
+</div>
+</div>
 
 
          <div style={{paddingBottom:"20px",position:"relative"}}>
@@ -1157,7 +1167,7 @@ Get accurate winning tips from professional betting tipsters across sports, fore
 
               
                  <div className="topPrediction">Top Predictions</div>
-                  <div  className="GetP">Discover the top predictions crafted by our expert tipsters.</div>
+                  <div  className="GetP">Discover the top predictions predicted by our expert tipsters.</div>
                  <div style={{padding: "1px  5px"}}>
               <div className="UponT" >
                     <div  className="market">
@@ -1166,7 +1176,7 @@ Get accurate winning tips from professional betting tipsters across sports, fore
                    <div className={prediction==="forexPre"?"Forex12 pin":"Forex12"} onClick={()=>setPrediction("forexPre")}>Forex</div>
                    <div className={prediction === "sportsPre"?"Forex12 pin":"Forex12"} onClick={()=>setPrediction("sportsPre")}>Sports</div>
                    
-                   <div className={prediction === "cryptoPre"?"Forex12 pin":"Forex12"} onClick={()=>setPrediction("cryptoPre")}>Cryptocurrency</div>
+                   <div className={prediction === "cryptoPre"?"Forex12 pin":"Forex12"} onClick={()=>setPrediction("cryptoPre")}>Crypto</div>
                    <div className={prediction === "binaryPre"?"Forex12 pin":"Forex12"} onClick={()=>setPrediction("binaryPre")}>Binary</div>
                </div>
                </div>
@@ -1563,16 +1573,16 @@ Get accurate winning tips from professional betting tipsters across sports, fore
                </div>
 
              
-<div className="limba">
+{/* <div className="limba">
 <div className="gos">
   <div className="gos1">
     <div className="gos2"><div className="jimk"><img src="/img/earnv.jpeg" alt="" className="gos5" /></div></div>
      <div className="gos3"><div className="limba2">
       <div className="ET">Earnars Token</div>
-      <p className="gos4"><span className="goemJK">$ENAR</span> Token allows you to pay for services within the platform with ease or leverage on the ever increasing price for arbitrage purposes.</p></div></div>
+      <p className="gos4"><span className="goemJK">$ENAR</span> allows you to pay for services within the platform with ease or leverage on the ever increasing price for arbitrage purposes.</p></div></div>
   </div>
 </div>
-</div>
+</div> */}
 
 
 
@@ -1589,7 +1599,7 @@ Get accurate winning tips from professional betting tipsters across sports, fore
                    <div className={currentPrediction ==="cuForexPre"?"Forex12 pin":"Forex12"} onClick={()=>setCurrentPrediction("cuForexPre")}>Forex</div>
                    <div className={currentPrediction === "cuSportsPre"?"Forex12 pin":"Forex12"} onClick={()=>setCurrentPrediction("cuSportsPre")}>Sports</div>
                    
-                   <div className={currentPrediction === "cuCryptoPre"?"Forex12 pin":"Forex12"} onClick={()=>setCurrentPrediction("cuCryptoPre")}>Cryptocurrency</div>
+                   <div className={currentPrediction === "cuCryptoPre"?"Forex12 pin":"Forex12"} onClick={()=>setCurrentPrediction("cuCryptoPre")}>Crypto</div>
                    <div className={currentPrediction === "cuBinaryPre"?"Forex12 pin":"Forex12"} onClick={()=>setCurrentPrediction("cuBinaryPre")}>Binary</div>
                </div>
                </div>
@@ -2026,8 +2036,9 @@ Get accurate winning tips from professional betting tipsters across sports, fore
 
       <div className="WhatD">
          <div className="Rtme">
-         <div className="earnerPeople" style={{color: "#d5b405"}}>What Earnars Say About Us</div>
-        
+        <div className='TheyAre'>They are talking about us</div>
+          <div className='DonTake'>Don't Take Our Word For It.</div>
+          <div className='seeWhat'>See what our customers have to say.Find out what our clients are saying below</div>
          {/* <div className="divUnder1"></div> */}
          <div className=" marginMu fadama ">
          <Carousel
@@ -2038,7 +2049,7 @@ Get accurate winning tips from professional betting tipsters across sports, fore
   ssr={true} // means to render carousel on server-side.
   infinite={true}
   // autoPlay={this.props.deviceType !== "mobile" ? true : false}
-  autoPlay={true}
+  autoPlay={false}
   autoPlaySpeed={3000}
   keyBoardControl={true}
   customTransition="all .5"

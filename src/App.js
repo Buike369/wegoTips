@@ -45,6 +45,7 @@ import BecomeATipster from "./becomeATipster";
 import FindTipster from "./findTipster";
 import MarketPrediction from "./marketPrediction";
 import RecentPrediction from "./recentPrediction";
+import Token from "./token";
 import "./App.css"
 
 import DashboardHome from "./Dashboard/dashboardHome"
@@ -66,6 +67,7 @@ function App() {
 
         <Routes>
           <Route path="/" element={<SampleHome />} />
+          <Route path="/token" element={<Token />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
           {currentUser ? <Route path="/wallet" element={<WalletOverView />} /> : <Route path="/" element={<SampleHome />} />}

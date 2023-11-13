@@ -448,6 +448,7 @@ position: absolute;
     max-width: 350px;
     margin: 0 auto 15px auto;
     text-align: center;
+    color:#fff;
 }
 
 .gos{
@@ -467,8 +468,19 @@ position: absolute;
     max-width: 350px;
 }
 .gos3{
-    width: 100%;
+    /* width: 100%;
         max-width: 350px;
+            background: #393089; */
+                height: auto;
+                    background: linear-gradient(206deg, #171054 20%, rgb(13 7 62) 62%, rgb(13 7 62) 76%);
+                    border: 1px solid #7567c9;
+                    -webkit-backdrop-filter: blur(60px);
+                    backdrop-filter: blur(60px);
+                    width: 100%;
+                    max-width: 350px;
+                    margin: 0 auto;
+                padding: 10px 2px 15px 2px;
+                border-radius: 8px;
 }
 .jimk{
     width:100%;
@@ -483,19 +495,24 @@ position: absolute;
     color:#f7f7f7;
     font-size: 16px;
     font-weight: 400;
+    text-align: center;
 }
 .goemJK{
     color:#b8c0ff
 }
 .limba{
-    background-color: #312a7a;
-    padding:40px 10px;
+height: 500px;
+    display: flex;
+    padding: 40px 10px;
+    justify-content: center;
+    align-items: center
 }
 .ET{
     font-size: 30px;
     font-weight: 600;
     color:gold;
     margin-bottom: 20px;
+    text-align: center;
 }
 .limba2{
     width:100%;
@@ -617,6 +634,13 @@ position: absolute;
         padding-bottom: 20px;
 
     }
+        .limba {
+            height: auto;
+            display: flex;
+            padding: 40px 10px;
+            justify-content: center;
+            align-items: center
+        }
     .goods{
         font-size: 32px !important;
     }
@@ -626,10 +650,16 @@ position: absolute;
     .jimk{
      height: 380px;
     }
-    .limba2{
-            margin-top: -90px;
-                text-align: center;
-                background: #312a7a;
+    .gos3{
+        height: auto;
+            background: linear-gradient(206deg, #171054 20%, rgb(13 7 62) 62%, rgb(13 7 62) 76%);
+            border: 1px solid #7567c9;
+            -webkit-backdrop-filter: blur(60px);
+            backdrop-filter: blur(60px);
+            width: 100%;
+            /* max-width: 530px; */
+            padding:10px 8px 15px 8px;
+            margin: 0 auto;
     }
     .papag3{
     left: -33%;
