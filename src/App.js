@@ -33,6 +33,7 @@ import UsersWallet from "./tipsWallet"
 import { AuthContext } from './context/authContext';
 import AllTips from "./allTips"
 import UserDashBoard from "./userDashboard"
+import HomeYou from "./home"
 
 import Admin from "./admin"
 import AdminLogin from "./adminLogin"

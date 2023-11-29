@@ -57,7 +57,7 @@ const Footer =()=>{
                       </ul>
 
                       <ul className="DesktopFooter">
-                          <li className="Footer_header_title">COMPANY</li>
+                          <li className="Footer_header_title">About Us</li>
                           <li className="Footer_list_space"><a href="/termscondition">Terms & Conditions</a></li>
                           <li className="Footer_list_space"><a href="/disclaimer">Disclaimer</a></li>
                           <li className="Footer_list_space"><a href="/about">About Us</a></li>
