@@ -153,7 +153,7 @@ const [changeState,setChangeState] = useState("Tips")
          <div>
            <div className='paw1 weNeed6'>
                                 <div className='cic'></div>
-                                <div className='bkInT'>1 Day <span className='moneyColor'>$1</span></div>
+                                <div className='bkInT'>1 Day <span className='moneyColor'></span></div>
                             </div>
                              <div className='paw1 weNeed6'>
                                 <div className='cic'></div>
