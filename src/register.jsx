@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEye,faEyeSlash} from '@fortawesome/free-solid-svg-icons'
 import { faGooglePlusG}from '@fortawesome/free-brands-svg-icons'
 import validator from 'validator';
-import { GoogleLogin } from "react-google-login"
+
 import SuccessN from "./success1"
 import "./style/admin.css"
 
