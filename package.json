@@ -1,6 +1,6 @@
 {
   "name": "client",
-  "homepage": "https://earnars.com/",
+  "homepage": "https://wegotips.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -54,6 +54,12 @@
       "last 1 safari version"
     ]
   },
+  
+    "engines": {
+      "node": "18.16.0",
+      "npm":"9.6.7"
+    }
+ ,
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
