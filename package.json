@@ -13,16 +13,16 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "aos": "^2.3.4",
-    "axios": "^1.2.1",
+    "axios": "^1.7.2",
     "flutterwave-react-v3": "^1.0.7",
     "font-awesome": "^4.7.0",
     "react": "^18.2.0",
     "react-burger-menu": "^3.0.8",
     "react-dom": "^18.2.0",
-    "react-multi-carousel": "^2.8.2",
+    "react-multi-carousel": "^2.8.5",
     "react-paginate": "^8.2.0",
-    "react-router-dom": "^6.3.0",
-    "react-scripts": "^3.0.1",
+    "react-router-dom": "^6.24.0",
+    "react-scripts": "^5.0.1",
     "react-select": "^5.7.0",
     "react-select-country-list": "^2.2.3",
     "recharts": "^2.4.3",
@@ -31,6 +31,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "build:digitalocean": "npm install --production=false && npm run build && npm ci",
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
@@ -54,12 +55,6 @@
       "last 1 safari version"
     ]
   },
-  
-    "engines": {
-      "node": ">=0.10.3 < 20"
-    
-    }
- ,
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
